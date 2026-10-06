@@ -1,94 +1,228 @@
-# Detailed functionality / 機能の詳細
+# User guide / 使い方
 
 [English README](../README.md) · [日本語README](../README.ja.md)
 
-For the current implementation classifications and verification limits, see
-[current-status.md](current-status.md). Version changes are in
-[CHANGELOG.md](../CHANGELOG.md) / [CHANGELOG.ja.md](../CHANGELOG.ja.md).
+[English](#english) · [日本語](#日本語)
 
 ## English
 
-- File / Edit / View / Favorites / Tools / Help menus and official Add / Extract / Test / Copy / Move / Delete / Info toolbar assets.
-- Shared official registry: 61 handlers / 138 extensions, declared as alternate document types. [All 151 registration tests](format-coverage.md) distinguish successful operations from upstream checksum limitations.
-- Filesystem and archive-folder browsing, nested archives in the same panel, virtual-path Favorites, parent navigation, sorting, multiple selection, four view modes, Flat View, two panels, saved columns, timestamps, automatic refresh and history. Nested changes support confirmed, one-level-at-a-time parent write-back on Up, address navigation and close. Failed updates retain a recoverable edited copy.
-- Original natural/typed/raw sorting, first-sort directions and stable row ties, complete filesystem metadata columns, and property-keyed column preferences across Flat View and both panels. [Source reuse, grouped checks and limits](panel-sort-port.md).
-- Create 7z / ZIP / TAR / WIM / XZ / gzip / bzip2, plus SHA-256 / SHA-1 checksum manifests; Test and extract. Stream-format creation accepts one regular file. **RAR compression is not provided.**
-- Compression method, dictionary, word/order, solid size, threads, memory, update/path modes, volumes, parameters, timestamps, supported link-storage flags and encryption. Passwords are neither logged nor saved.
-- Automatic compression choices and memory estimates reuse official Windows GUI arithmetic; manual/automatic choices persist separately. Official English Help provides all 70 pages, Contents/Index, navigation and contextual dialog topics. [Scope and tests](compression-help-port.md).
-- Compression controls now reuse official format/method tables and numeric builders, with format drafts, level/dictionary resets, method-aware restore, hardware-bounded threads and last-format/history behavior. [Source reuse and tests](compression-controls-port.md).
-- Progress receives real official-engine callbacks through bundled `7zz-progress`: file counts, processed/packed bytes, compression ratio, speed and remaining time. Help adds asynchronous full-text Search, topic/subtopic printing and the upstream-style About dialog. [Implementation, checks and limits](native-progress-help.md). The original Progress presentation, control and completion paths are reused through Qt adapters. Successful jobs close automatically; Test shows original statistics and CRC/SHA opens the original property list. See the [completion batch and executed validation](progress-completion-port.md).
-- 7z encryption including encrypted filenames; ZIP AES-256 / ZipCrypto. Upstream ZIP passwords are restricted to ASCII.
-- Extraction destination/history, selection/all, three path modes, five overwrite modes, a shared six-choice per-file replacement dialog and root-folder elimination. Absolute extraction requires explicit confirmation.
-- Extraction paths and metadata now come from the original archive callback. Safe symbolic/hard links, folder modes/times and available creation times are retained during guarded installation. [Source reuse, tests and remaining gaps](extraction-metadata-port.md).
-- Nonblocking archive jobs, progress/logs, Pause / Continue, cancellation and detailed exit-code failures. New archive/extraction output is staged. Generic Split / Combine report actual bytes and clean staged files on cancellation. [Pause and nested-archive scope](nested-archives-progress.md).
-- Filesystem copy/move, Trash deletion, rename, new folder/file and properties; existing transfer outputs prompt individually, with Yes/No, All and Auto Rename choices. Skipped move sources are retained. [Overwrite behavior and limits](overwrite-dialog-spec.md). Archive deletion/rename require confirmation. Empty folders can be created in writable 7z/ZIP/TAR/WIM, including internal subfolders and multiple WIM images. The official Agent CreateFolder body retains existing packed streams; staged folder properties are checked before replacement. Working-folder preferences and cross-volume installation are supported; archive permissions and extended attributes are retained. [Official folder updates and tests](native-folder-update.md).
-- Split / Combine with `.001`-style numbering, wider numbering when needed, multiple sizes and repetition of the last size; missing parts are errors instead of silently truncated output.
-- Hard links and relative/absolute file or directory symbolic links, guarded existing-symlink editing, raw-target display and both folder browse controls. Ordinary existing files/directories are protected. [Link behavior and limits](link-dialog-spec.md).
-- Select / Deselect by Type, dynamic Favorites and archive-folder bookmarks. Alt+digit / Alt+Shift+digit and native RightCtrl handling preserve the upstream keys; physical-key validation remains pending.
-- Official-engine Benchmark GUI with the Windows callback path, 3/2 dictionary choices, live Current/Resulting values, full-precision accumulation, Size/GIPS/CPU/system display and Restart / Stop. A fresh dialog defaults to 10 passes; existing port choices are retained. [Implementation and checks](benchmark-port.md).
-- Tools → Delete Temporary Files browses the original temporary-name patterns and this port's Qt names, using the imported bounded counter/size formatter. Navigation, sorting, context actions, settings and confirmed Trash deletion are available; live/changed data is protected. [Scope and checks](temporary-files-port.md).
-- Filesystem / Flat View enumeration and metadata run on a worker, with cancellable GUI row batches and protection against stale navigation. Text is formatted on demand, large-list comparisons and native icons run on workers, and original names remain distinct from display markers. Final row insertion/reordering and metadata parsing still include GUI work. See [the callback display batch](panel-listing-port.md).
-- Open Inside * and # match the official one-level detection and parser-region modes, retaining the chosen mode through Refresh, extraction, Test, CRC and nested parent navigation. See [mode semantics and limits](archive-open-modes.md).
-- Focused-item Comment / Ctrl+Z: compatible UTF-8 `descript.ion` comments and ZIP entry comments, including ZIP64 and supported encrypted ZIPs. ZIP updates now import the official Agent CommentItem body and real-index selection, including same-name siblings and Flat descendants. Packed data is retained without an unrelated password requirement. Saves are staged and guarded against external changes. See [source reuse and tests](native-agent-comments.md) and [limits](file-comments-spec.md).
-- F3 recursively fills filesystem folder Size / Folders / Files, with asynchronous Pause / Cancel and numeric sorting. See [folder statistics](folder-statistics.md).
-- Upstream-style two-column Properties: one/many/no selection, cached folder/Flat totals and CRC, nested archive layers, Ctrl+A/copy and full-value display. Typed/raw properties, format-specific columns and folder totals now reuse official handlers, formatters and Agent proxies. Parent metadata is refreshed after nested write-back. [Native bridge and remaining scope](native-metadata.md).
-- Native archive rows and Properties now use original Agent directory/item identities and imported property methods. Implicit folders, Flat ordering and archive alternate-stream navigation are verified with genuine duplicate ZIP entries and an NTFS image. [Source reuse, test command and limits](native-agent-properties.md).
-- Selected Extract/Test/archive hashes and focused temporary opening now reuse the official Agent selection methods, including independent same-name entries and normal/Flat folder policies. A 64 MiB selected operation verifies Pause/Cancel and reuse. [Selection port and remaining update scope](native-agent-selection.md).
-- Delete/Rename in 7z/ZIP/TAR/WIM import the official Agent update bodies and select native item indices, including same-name ZIP siblings, Flat folders and multi-image WIM. Atomic installation, encrypted solid repacking and Cancel/original retention are tested. [Source reuse and limits](native-agent-item-updates.md).
-- Official Agent UpdateOneFile now handles editor/nested file replacement by native item identity, including same-name siblings and single streams. Pending sessions, ancestor/Flat folder addresses and native row selection are rebound after supported mutations ([refresh checks](archive-refresh-port.md)); decoded replacement size/SHA-256 are verified without an unrelated whole-archive Test. [Source reuse and checks](native-agent-replacement.md).
-- Single-stream Rename/Delete also use original Agent operations and handler behavior. Renamed pending editors and nested parents retain their native targets, selection and focus. [Behavior table and GUI/console comparison](single-stream-updates.md).
-- Open/Outside import the original multiple-item policy, including the 20-item limit, folder stopping rule and single-item internal attempt. Separate native-index temporary extractions allow same-name ZIP siblings to open and write back independently. [Source and checks](panel-open-port.md).
-- Default Open detects archive contents with an unknown or absent extension. The official external-opening extension table and misleading-filename warnings are imported. Password cancellation and permission errors do not fall back externally. [Source and checks](open-profile-port.md).
-- External editing imports the official same-executable process-discovery loop, covering independent launcher hand-off and confirmed ZIP write-back; existing seven-format and encrypted/nested checks pass. [Source and observation limits](external-process-port.md).
-- Configurable viewer/editor/diff, confirmed archive-file editor write-back, persistent six-page Options and 92 official translations plus English. The official language parser and translator/missing-entry information are ported; bundled Lang files are editable. Menus and primary dialog controls use official resource IDs. Apply/Cancel behavior is tested; some Port-specific text remains English. [Source scope and tests](language-settings-port.md).
-- All 11 upstream CRC/hash menu choices for filesystem files and selected archive contents, including folders and the all-methods choice. Archive hashing streams through the official engine without writing extracted files. Encrypted 7z/ZIP inputs are tested.
-- Alternative selection imports the original File Manager mark, Insert, Ctrl/Shift-click and Shift-arrow bodies. Pink operation marks and native focus remain independent in both views and panels; refresh and Options Apply preserve them. [Source and checks](panel-selection-port.md).
-- Ctrl+C copies marked names as CRLF-separated text, matching the upstream File Manager; alternative mode does not fall back to an unmarked focused row. Upstream Ctrl+X/Ctrl+V handlers are empty; they do not transfer files.
-- File Manager right-click menus now import the official ordinary File-menu filtering, with CRC/Diff and one creation group. Configured 7-Zip shell commands remain shared with Open With. Internal filesystem drag Copy/Move, right-drag menus, target subfolders and asynchronous encrypted archive drag-out are tested; accepted temporary files survive Manager exit. [Source, checks and native interaction limits](panel-menu-drag-port.md).
-- Finder **Open With** displays a configurable 7-Zip action menu. Its bottom File Manager entry is always available. [Finder integration](finder-integration.md) explains scope and known association behavior.
-- Original Windows File Manager application icon: unmodified official `FM.ico`, PNG/ICNS format conversion reproduced by `scripts/make-icon.sh`.
+### Browse files and archives
 
-- Filesystem Copy / Move can target the other open archive panel and its internal folder, using official handler defaults. Archive-folder drops accept different input parents; verified Move uses Trash. [Behavior and limitations](archive-transfer.md).
-- Single-layer archive updates preserve leading prefixes using the original Agent/console stream boundary and official handlers. Folder creation, replacement, ZIP comments and nested write-back verify prefix bytes before replacement. [Source reuse and tests](archive-prefix-updates.md).
-- Same-volume filesystem Move now tries rename first, including folders, links and all overwrite choices. Cross-device/SMB transfers have a guarded copy fallback. Delete-after verification supports Pause/Cancel and callback/local progress. [Scope, OS limits and executed tests](filesystem-transfer.md).
+Launch **7-Zip Mac** to open the File Manager. Enter a folder path in the address bar and press Enter to navigate.
+Double-click folders to open them; use the Up button or Backspace to return to the parent folder.
+
+Double-click a `.7z`, `.zip`, or other archive to browse it without extracting everything.
+You can also open folders and nested archives inside it.
+To open an archived file in another application, use **File → Open Outside**.
+The file is extracted to a temporary folder first.
+
+Use Ctrl-click or Shift-click to select multiple items. Click a column heading to sort the list.
+The **View** menu controls display modes and columns. **Flat View** shows subfolder contents together;
+**2 Panels** displays two locations side by side. Save frequently used locations in **Favorites**.
+
+### Create an archive
+
+1. Select the files or folders to compress.
+2. Click **Add** on the toolbar.
+3. Enter the archive's filename and destination, and choose a format.
+4. Adjust the compression settings if needed, then click **OK**.
+
+| Format | What you can create |
+|---|---|
+| 7z, ZIP | Archives containing multiple files and folders; password protection is available. |
+| TAR, WIM | Archives containing multiple files and folders. |
+| XZ, gzip, bzip2 | A compressed stream from one regular file. |
+
+RAR can be opened and extracted, but cannot be created.
+See the [format coverage](archive-formats.md) for other readable formats and tested variants.
+
+The Add dialog provides compression level, method, dictionary size, solid block size, CPU threads,
+update mode, path mode, and volume sizes. Unavailable controls are disabled for the chosen format and method.
+The dialog's **Options** button provides timestamp and supported link settings.
+
+### Passwords and encryption
+
+Choose 7z or ZIP in the Add dialog, then enter and confirm a password.
+For 7z, enable **Encrypt file names** to hide the names as well as the contents.
+ZIP offers AES-256 and ZipCrypto; ZIP passwords are restricted to ASCII characters.
+
+When opening, testing, or extracting an encrypted archive, enter the password when requested.
+Passwords are not saved in preferences or written to logs.
+
+### Extract and test
+
+Select an archive and click **Extract**. Choose a destination, then review how folder paths and existing files will be handled.
+You can preserve paths, omit them, or request absolute paths. Absolute-path extraction requires confirmation.
+Existing files can prompt, be overwritten, be skipped, or be renamed automatically.
+
+To extract only part of an archive, open it, select the items you need, and click **Extract**.
+Click **Test** to check the selected archive or selected items inside it for corruption.
+The result reports success or the errors found. Test does not save extracted files.
+The progress dialog shows the current file and progress and offers **Pause** and **Cancel**.
+
+### Use Finder's action menu
+
+Right-click a file in Finder and choose **Open With → 7-Zip Mac**, then choose an action:
+
+| Action | What it does |
+|---|---|
+| Extract files… | Lets you choose the destination and extraction settings. |
+| Extract Here | Extracts into the archive's folder. |
+| Extract to "name/" | Extracts into a subfolder named after the archive. |
+| Test archive | Checks the archive for corruption. |
+| Add to archive… | Opens the Add dialog. |
+| Add to "name.7z" / "name.zip" | Compresses using that format's saved compression settings. |
+| CRC SHA | Calculates checksums or hashes. |
+| Open in 7-Zip File Manager | Opens archive contents, or selects an ordinary file in its parent folder. |
+
+The quick 7z/ZIP actions do not reuse password, volume-splitting, or delete-after settings.
+For password protection or split volumes, choose **Add to archive…**.
+
+The actions shown depend on the selected files and your settings.
+Choose which actions to show in **Tools → Options → 7-Zip**.
+The File Manager action always appears at the bottom.
+This menu opens in the app's own window; a direct Finder right-click submenu is not yet implemented.
+
+### Files, settings, and other tools
+
+- **Copy / Move:** Select items and use the toolbar buttons to choose a destination. With two panels,
+  you can transfer files to the other panel, including into a writable archive.
+- **Delete:** Ordinary files go to the macOS Trash. Deleting items inside an archive updates the archive after confirmation.
+- **Rename / New Folder / Properties:** Use the File menu or the item's right-click menu.
+- **View / Edit:** For files, F3 and F4 use the applications configured under **Tools → Options → Editor**.
+  After an archived file is edited, the app asks whether to save changes back to the archive.
+  F3 on an ordinary folder calculates its size and file count.
+- **Split / Combine:** Split an ordinary file into numbered parts, or combine an existing set of parts.
+- **CRC SHA:** Calculate checksums and hashes, including SHA-256, for files or archive contents.
+- **Benchmark:** Use **Tools → Benchmark** to measure compression performance.
+- **Help:** Open the bundled official English 7-Zip help.
+
+**Tools → Options** changes language, file-list behavior, working folders, external applications, and Finder menu items.
+**Apply** saves without closing the dialog; **OK** saves and closes it; **Cancel** discards changes made since the last Apply.
+Some app-specific explanations remain in English even when another language is selected.
+
+Shortcuts retain Windows-style Control keys. F2 renames, F5 copies, F6 moves, and F7 creates a folder.
+Ctrl+C copies selected filenames as text; Ctrl+X and Ctrl+V do not transfer files.
+Depending on macOS keyboard settings, function keys may require Fn.
+See the [Windows comparison](windows-parity.md) for limitations.
 
 ## 日本語
 
-- File / Edit / View / Favorites / Tools / Helpと、Add / Extract / Test / Copy / Move / Delete / Infoツールバー。
-- 通常フォルダー、7z / ZIP等のアーカイブ内フォルダーの閲覧、親へ移動、複数選択、ソート。Large Icons / Small Icons / List / Details、Flat View、2 Panels、列幅・列順・表示列・日時精度・UTC・自動更新・フォルダー履歴を保存できます。
-- 7z / ZIP / TAR / WIM / XZ / gzip / bzip2の作成とTest・展開。Hash形式でSHA-256 / SHA-1のチェックサムファイル作成・Test。XZ / gzip / bzip2の入力は通常ファイル1件。RAR圧縮は提供しません。
-- 辞書・Word size / PPMd order・solid・スレッド数・圧縮メモリー・分割・圧縮プロパティ・更新モード・相対／Full／絶対パスを指定。詳細Optionsで日時精度・日時の保存・最新ファイル日時・アクセス日時保持、対応形式でsymbolic / hard link保存を設定できます。
-- 全体／選択項目の展開、出力先履歴と名前付きサブフォルダー、Full / No / Absolute pathnames、root folder重複除去、Ask / Overwrite / Skip / Auto rename / Auto rename existing。絶対パス展開は確認付きです。
-- Test、暗号化7z（ファイル名暗号化を含む）、ZIP AES-256 / ZipCrypto。ZIPのパスワードは上流と同じくASCIIに制限。
-- 非同期処理、進捗・ログ・Cancel、終了コードを含む結果表示。圧縮／展開後の不完全な新規出力はステージングから片づけます。
-- 通常ファイルから、別パネルで開いているarchiveと内部folderへCopy／Moveできます。WindowsのCopyFromと同じ既定圧縮・同名置換を使い、Moveは検証後にTrashへ移します。異なる親から内部folderへのdropにも対応します。[仕様と残差](archive-transfer.md)。
-- 通常ファイルのCopy / Move / Trash / Rename / Create Folder / Create File / Properties。コピー・移動と展開で、Yes / No / Yes to All / No to All / Auto Rename / Cancelの個別上書き確認を共用します。スキップした移動元は保持します。[仕様と制限](overwrite-dialog-spec.md)。
-- アーカイブ内の削除・リネーム。削除前に確認します。
-- 通常フォルダー／Flat Viewの列挙とmetadata取得をworkerで行い、一覧の行生成も分割します。読み込み中の移動・Escキャンセル、旧一覧保持、2panelに対応。表示文字列は必要時に取得し、大量項目の比較とnative icon取得はworkerへ移しました。最後の行挿入／並べ替え反映・metadata解析には同期処理が残ります。[元実装・検証・制限](panel-listing-port.md)。
-- F3で通常フォルダーの合計サイズ・子フォルダー数・ファイル数を集計します。複数folder選択、数値ソート、非同期Pause／Cancelに対応。[仕様・制限](folder-statistics.md)。
-- Propertiesは上流に近い2列modalで、単体／複数／未選択、通常／Flatのfolder集計・CRC、ネストしたarchive階層、Ctrl+A・コピー・全文表示に対応。型付き／raw属性、形式別の列、集計は公式handler・formatter・Agent proxyを再利用します。nested保存後は親の属性も更新します。[実装と残差](native-metadata.md)。
-- archive一覧とPropertiesは、公式Agentのフォルダー・項目番号と、移植した属性取得処理を使います。暗黙folder、Flat順序、archive内の代替ストリーム閲覧を、同名ZIP項目と実NTFS imageで検証しました。[移植・テスト方法・残差](native-agent-properties.md)。同名項目のRename／Deleteもnative indexで処理します。
-- 選択展開・Test・archiveハッシュ・focused項目の一時展開も、公式Agentの選択処理を移植しました。同名項目の個別処理、通常／Flatのフォルダー選択、64MiB展開のPause／Cancelと再実行を検証しました。[移植と残る更新処理](native-agent-selection.md)。
-- 7z／ZIP／TAR／WIM内のDelete／Renameは公式Agentの処理を移植し、native項目番号で操作します。同名ZIP、Flat folder、複数image WIM、暗号化solid再圧縮、Cancel時の元データ保持を検証しました。[移植範囲と制限](native-agent-item-updates.md)。
-- gzip／bzip2／XZのDelete／Renameも公式Agentへ接続しました。名前を保存しない形式や削除失敗、XZの空streamは上流と同じ挙動です。編集中のRename、2panelで開いた子archiveの親側Renameと書き戻し、選択・focus保持も検証しました。[仕様表とGUI／console比較](single-stream-updates.md)。
-- editor／nested書き戻しは公式AgentのUpdateOneFileを移植し、同名項目もnative番号で更新します。更新後のsession／選択を引き継ぎ、置換した内容のサイズとSHA-256を検証します。7形式・暗号化・先頭prefixを含む101件の対象検証が成功しました。[移植範囲と実行記録](native-agent-replacement.md)。
-- Open／Open Outsideの複数選択処理を公式bodyから移植しました。20項目の上限、フォルダーで停止する順序、同名ZIP項目の個別起動・編集・書き戻しを検証しました。[範囲と残差](panel-open-port.md)。
-- 不明な拡張子・拡張子なしでも、通常のOpenから内容を判定してアーカイブを開きます。外部起動の拡張子一覧・紛らわしい名前の警告は公式bodyを移植。権限エラーとpassword取消では外部起動しません。[移植と検証](open-profile-port.md)。
-- アーカイブ内ファイルの一時展開と外部アプリでのOpen Outside／View／Edit。終了後の変更を確認して書き戻し、失敗・Cancelでは回復用copyを残します。実行中editorはManager終了後も停止・削除しません。
-- Tools → Optionsから設定を保存・変更できます。System / 7-Zip / Folders / Editor / Settings / Languageの順は上流と同じです。OKで保存して閉じ、Applyで即時反映、Cancelで最後のApply以降の変更を破棄します。
-- OptionsのSettingsで親項目、実ファイルアイコン、行全体選択、グリッド、単一クリック、代替選択、Test／展開のメモリー上限を指定。Foldersで作業用フォルダーを指定し、EditorでF3 View／F4 Edit／2ファイルのDiffに使う外部アプリやコマンドを設定できます。設定は再起動後も保持します。
-- Languageで公式の92翻訳＋Englishを選択して即時反映できます。圧縮・展開設定も保存しますが、パスワードは保存しません。圧縮後削除は確認後、完成アーカイブのTestと元データ照合が成功したものをmacOSのTrashへ移動します。
-- 右クリックは公式Fileメニューの通常filterを移植し、CRC／Diffと作成項目の重複を修正。パネル間ドラッグのCopy／Move・対象folder・右ボタンmenuと、暗号化archiveの非同期drag-outを自動検証しました。受け取り側のため、承認済み一時fileはManager終了後も保持します。[移植範囲・116件の検証・未確認事項](panel-menu-drag-port.md)。
-- FinderからのファイルドロップによるAdd、アーカイブのドロップによるOpen。アーカイブ内ドラッグは一時展開後にファイルURLを渡す実装がありますが、Finderへの実ドロップは未検証です。
-- F2 / F3 / F4 / F5 / F6 / F7、Enter、Backspace、Ctrl+A、Ctrl+R、Ctrl+PgDown、Alt+Enter等。物理Controlを維持し、Commandへの自動置換を抑止。
-- 通常ファイルと選択したarchive内部のCRC-32 / CRC-64 / XXH64 / MD5 / SHA-1 / SHA-256 / SHA-384 / SHA-512 / SHA3-256 / BLAKE2sp / 全方式。folderも対象になり、archive内部は公式engineで展開ファイルを作らず計算します。暗号化7z／ZIPも自動検証しました。
-- Ctrl+Cで選択した名前をCRLF区切りのテキストへコピー。上流同様、Ctrl+X／Ctrl+Vは空の処理でファイルを転送しません。
-- 書き込み可能な7z／ZIP／TAR／WIM内へ空folderを作成。公式AgentのCreateFolderを移植し、内部subfolder・複数image WIM・暗号化に対応。既存packed streamを保持し、コピー上で追加・一覧照合後に元を置換します。作業folder設定、SSD／SMB間の更新、権限・拡張属性保持を確認しました。旧データのpassword要求も上流と同じ必要時のみです。[移植と検証](native-folder-update.md)。ネスト内の変更も、退出時の確認を経て階層ごとに親へ書き戻します。先頭prefix付きarchiveは公式Agent／consoleのstream処理を再利用して更新し、置換前にprefixの一致を検証します。[仕様と検証](archive-prefix-updates.md)。tail／複数層の更新はWindows Agent自体も禁止しています。
-- Finderの「このアプリケーションで開く」で選ぶと、Windowsの7-Zipコンテキストメニューに対応する操作メニューを表示します。圧縮・展開・Test・CRC SHAの表示をOptions → 7-Zipで選択できます。最下段の「7-Zip ファイルマネージャーで開く」は常に表示します。[使い方](finder-integration.md)。
-- `.7z` / `.zip`等と通常ファイル・フォルダーをAlternate ViewerとしてInfo.plistに宣言。既定アプリのシステム設定は変更しません。
+### ファイルやアーカイブを見る
 
-- 通常ファイルのSplit / Combine、hard / file symbolic / directory symbolic link作成、既存symlinkのguard付き編集。raw targetと両folder browse、Flat／2panelの既定値を再現し、通常file／folderは保護します。[仕様と制限](link-dialog-spec.md)。分割番号はWindows同様001から始め、1000件以上なら桁数を増やします。
-- Select by Type / Deselect by Type、Alt＋数字のFavorite呼出、Alt＋Shift＋数字の保存、RightCtrl＋数字のキー処理。物理RightCtrlは未確認ですが、ネイティブキーコードを含む自動検証は成功しました。
-- Tools → Benchmarkは公式のcallback経路でCurrent／Resulting、Size・CPU使用率・GIPS・CPU／OS情報を表示します。中間辞書サイズ、丸める前の累積、初期10パス、Restart／Stopに対応。[実装・検証](benchmark-port.md)。Help検索には履歴選択とAND／OR／NOT／NEARの挿入メニューもあります。
-- 圧縮設定の`*`自動値とメモリー見積もりに、Windows版の計算処理を利用します。自動／手入力の選択を保存します。Helpは公式英語70ページ、目次・索引・履歴と各dialogの対応ページを開けます。[仕様・検証・残差](compression-help-port.md)。
-- Helpの非同期全文検索、topic／subtopic印刷、上流に近いAboutを追加しました。印刷の自動試験は専用PDFへの出力です。実プリンターは未確認です。[実装と確認範囲](native-progress-help.md)。
+7-Zip Macを起動すると、ファイルマネージャーが開きます。
+アドレスバーにフォルダーのパスを入力し、Enterを押すと移動できます。
+フォルダーはダブルクリックで開き、上へ移動するボタンやBackspaceで1つ上の階層へ戻ります。
+
+`.7z`や`.zip`をダブルクリックすると、全体を展開せずに中身を確認できます。
+アーカイブ内のフォルダーや、その中にある別のアーカイブも開けます。
+中のファイルを別のアプリで開くときは、「ファイル → 関連付けで開く（Open Outside）」を使います。
+必要なファイルを一時フォルダーに取り出してから開きます。
+
+Ctrlを押しながらクリックすると複数の項目を選べます。Shiftを押しながらクリックすると範囲を選べます。
+列の見出しをクリックすると、名前やサイズなどで並べ替えられます。
+「表示」メニューでは、表示方法や列を変更できます。
+「フラット ビュー」はサブフォルダーの中身をまとめて表示し、「2 分割画面」は2つの場所を並べて表示します。
+よく使う場所は「お気に入り」に登録できます。
+
+### 圧縮する
+
+1. 圧縮したいファイルやフォルダーを選びます。
+2. ツールバーの「追加（Add）」を押します。
+3. 作成するアーカイブの名前、保存先、形式を指定します。
+4. 必要に応じて圧縮設定を変え、「OK」を押します。
+
+| 形式 | 作成できるもの |
+|---|---|
+| 7z・ZIP | 複数のファイルやフォルダーをまとめたアーカイブ。パスワードも設定できます。 |
+| TAR・WIM | 複数のファイルやフォルダーをまとめたアーカイブ。 |
+| XZ・gzip・bzip2 | 通常ファイル1つを圧縮したもの。 |
+
+RARは開いたり展開したりできますが、作成はできません。
+そのほかの読み取り形式と、テストした範囲は[形式対応表](archive-formats.md)にあります。
+
+圧縮レベル、圧縮方式、辞書サイズ、ソリッドブロックのサイズ、CPUスレッド数などを指定できます。
+更新方法、保存するパス、分割するサイズも選べます。
+選んだ形式や圧縮方式で使えない設定は無効になります。
+ダイアログ内の「オプション」では、日時の保存方法や、対応する形式でのリンクの保存方法を設定できます。
+
+### パスワードを設定する
+
+圧縮するときに7zかZIPを選び、パスワードを入力して、確認用にもう一度入力します。
+7zで「ファイル名を暗号化」を有効にすると、ファイル名もパスワードなしでは見えなくなります。
+ZIPではAES-256とZipCryptoを選べます。ZIPのパスワードに使える文字は半角英数字と記号です。
+
+暗号化されたアーカイブを開く・テストする・展開するときは、入力を求められたらパスワードを入力します。
+パスワードは設定に保存せず、ログにも記録しません。
+
+### 展開する・破損を調べる
+
+アーカイブを選んで「展開（Extract）」を押し、保存先を指定します。
+続いて、フォルダー構成を残すか、同名のファイルがあったときにどうするかを選びます。
+フォルダー構成を省いて取り出すこともできます。絶対パスを使う展開には確認が必要です。
+
+同名のファイルがある場合は、確認する・上書きする・スキップする・自動で名前を変える、から選べます。
+一部のファイルだけ必要なときは、アーカイブを開いて対象を選び、「展開」を押してください。
+
+破損を調べるには、アーカイブか、その中の項目を選んで「テスト（Test）」を押します。
+成功したか、どんなエラーがあったかを結果画面に表示します。テストでは展開先にファイルを保存しません。
+時間のかかる処理では進捗画面が開き、処理中のファイルや進み具合を確認できます。
+「一時停止（Pause）」や「キャンセル（Cancel）」も使えます。
+
+### Finderから操作する
+
+Finderでファイルを右クリックし、「このアプリケーションで開く → 7-Zip Mac」を選びます。
+表示されたウインドウで、次のような操作を選べます。
+
+| 操作 | 内容 |
+|---|---|
+| 展開… | 保存先や展開方法を選びます。 |
+| ここに展開 | アーカイブと同じフォルダーに展開します。 |
+| 「名前/」に展開 | アーカイブ名のサブフォルダーを作って展開します。 |
+| アーカイブをテスト | 破損がないか調べます。 |
+| 圧縮…（Add to archive…） | 圧縮設定の画面を開きます。 |
+| 「名前.7z」「名前.zip」に圧縮 | その形式の保存済み圧縮設定を使って圧縮します。 |
+| CRC SHA | チェックサムやハッシュ値を計算します。 |
+| 7-Zip ファイルマネージャーで開く | アーカイブの中身を表示します。通常ファイルの場合は、親フォルダーでそのファイルを選びます。 |
+
+「名前.7z」「名前.zip」に圧縮する操作では、パスワード・分割・圧縮後の削除設定は引き継ぎません。
+パスワードや分割を指定する場合は、「圧縮…（Add to archive…）」を選んでください。
+
+選んだファイルや設定によって、表示される操作が変わります。
+「ツール → オプション → 7-Zip」で、表示する操作を選べます。
+ファイルマネージャーで開く項目は、常に一番下に表示します。
+このメニューはアプリ側のウインドウで開きます。Finderの右クリックへ直接追加する機能はまだありません。
+
+### ファイル操作・設定・その他の機能
+
+- コピー・移動: 対象を選び、ツールバーのボタンから保存先を指定します。
+  2分割画面では、もう一方の場所へ転送できます。書き込み可能なアーカイブへの追加もできます。
+- 削除: 通常ファイルはmacOSのゴミ箱に移します。アーカイブ内の項目は、確認してからアーカイブを更新して削除します。
+- 名前変更・新しいフォルダー・プロパティ: ファイルメニューや右クリックメニューから操作します。
+- 表示・編集: ファイルを選んでF3・F4を押すと、「ツール → オプション → 外部ツール」で指定したアプリを使います。
+  アーカイブ内のファイルを編集した後は、変更を書き戻すか確認します。
+  通常フォルダーでF3を押すと、サイズやファイル数を集計します。
+- ファイル分割・結合: 通常ファイルを連番のファイルに分割したり、分割済みのファイルを結合したりできます。
+- CRC SHA: 通常ファイルやアーカイブの中身について、SHA-256などのチェックサム・ハッシュ値を計算できます。
+- ベンチマーク: 「ツール → ベンチマーク」で圧縮性能を測定します。
+- ヘルプ: 同梱している公式7-Zipの英語ヘルプを開きます。
+
+「ツール → オプション」では、表示言語、一覧の動作、作業用フォルダー、外部アプリ、Finderの操作メニューを設定できます。
+「適用（Apply）」は画面を閉じずに保存し、「OK」は保存して閉じます。
+「キャンセル」は最後の適用以降に行った変更を取り消します。
+日本語を選んでも、このアプリ独自の説明の一部は英語で表示されます。
+
+ショートカットはWindows版と同じくControlキーを使います。
+F2は名前変更、F5はコピー、F6は移動、F7は新しいフォルダーの作成です。
+Ctrl+Cは選んだファイル名を文字列としてコピーします。Ctrl+X・Ctrl+Vではファイルを転送しません。
+macOSのキーボード設定によっては、Fキーを使う際にFnキーも押す必要があります。
+詳しい制限は[Windows版との比較](windows-parity.md)を参照してください。
+
+## Implementation and verification records / 実装・検証の記録
+
+Implementation details and test limits are in the [current inventory](current-status.md),
+[Windows comparison](windows-parity.md), and [test results](test-results.md).
+Version changes are in the [changelog](../CHANGELOG.md).
+
+移植したコードや実際の確認範囲は、[実装一覧](current-status.md)、[Windows版との比較](windows-parity.md)、
+[テスト結果](test-results.md)に記載しています。バージョンごとの変更は[更新履歴](../CHANGELOG.ja.md)を参照してください。

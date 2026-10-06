@@ -1,129 +1,110 @@
-# 7-Zip Mac Port
+# 7-Zip4Mac
 
-[English](README.md) · [更新履歴](CHANGELOG.ja.md) · [機能の詳細](docs/features.md#日本語)
+[English](README.md) · [使い方](docs/features.md#日本語) · [更新履歴](CHANGELOG.ja.md)
 
-Windows版 **7-Zip File Manager** の画面構成と操作手順を、C++ / Qt 6 Widgetsで
-再現する非公式のmacOSアプリです。圧縮エンジンは公式 **7-Zip 26.03** のソースから
-ビルドして同梱します。
+7-Zip4Macは、Windows版7-Zipの使い方に合わせたMac用の圧縮・展開アプリです。
+7zやZIPの作成に対応しています。圧縮ファイル（アーカイブ）の中身を確認し、必要なファイルだけ取り出すこともできます。
+メニュー、ツールバー、圧縮設定の画面は、Windows版7-Zip File Managerに近づけています。
 
-**現在のローカルアプリ版: 0.2.5。** ソースは
-[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しています。
-バージョンごとの変更と確認記録は[更新履歴](CHANGELOG.ja.md)を参照してください。
+7-Zip公式とは別の、非公式のオープンソースプロジェクトです。
+圧縮・展開には公式7-Zipのエンジンを使っています。
 
-## 動作環境
+## できること
 
-- 実機確認: **macOS 26.6.2、Apple M3、arm64**、Command Line Tools / Apple Clang 21.0.0。
-- ビルドの最低macOS: **15.0**。macOS 15とIntel Macの実機確認は未実施です。
-  上流のx86_64用ビルド設定は選択できます。
-- GUI: **Qt 6.11.3固定**。QtBase Core / Gui / Widgets / Concurrent / PrintSupportを
-  動的リンクし、対応する公式ソースから修正版Cocoa pluginをビルドします。
-  QtTestは開発者用テストでのみ必要です。
-- CMake、Ninja、Python 3、make、curl、Git。
-  確認済みのツール版はCMake 3.31.6、Ninja 1.11.1.4です。
-  **Xcode.app / `.xcodeproj` は不要です。**
+- 7z・ZIPの圧縮と展開。RARなど、7-Zipが読み取れる形式の展開。
+- アーカイブの中身の閲覧、選んだファイルだけの展開、破損の検査。
+- パスワード付きアーカイブの作成と展開。7zではファイル名の暗号化も可能。
+- 圧縮レベルや圧縮方式の指定、大きなアーカイブの分割。
+- ファイルのコピー・移動・名前変更、2分割画面、お気に入り。
+- Finderから呼び出す、圧縮・展開用の操作メニュー。
 
-## ビルド・起動
+**RARは展開のみで、RAR形式への圧縮はできません。**
+そのほかの形式や操作は[使い方](docs/features.md#日本語)を参照してください。
 
-ソースディレクトリで実行します。
+## 対応環境
+
+macOS 15以降を対象にしています。動作確認した環境は、macOS 26.6.2のApple Silicon Macです。
+macOS 15とIntel Macでは、まだ実機で確認していません。
+
+## インストール
+
+現在は、ソースコードからアプリを作成して使います。ビルド済みアプリの配布はまだありません。
+Apple Command Line Tools、Git、Python 3が必要です。Xcode.appは必要ありません。
+
+ターミナルで次を実行してください。
 
 ```bash
+git clone https://github.com/muracoco/7-Zip4Mac.git
+cd 7-Zip4Mac
 ./scripts/bootstrap.sh
 ./scripts/build.sh
-./scripts/run.sh
-```
-
-`bootstrap.sh` は不足するツールと公式依存ソースを `~/.cache/7zip-mac-port` に取得します。
-sudoやシステムPythonの変更は行いません。Command Line Toolsがなければ
-`xcode-select --install` を実行してください。既存のQt 6.11.3は `QT_PREFIX` で指定できます。
-
-通常の生成先は `build/7-Zip Mac.app` です。SMB共有上のcheckoutでは、ローカルの
-`~/.cache/7zip-mac-port/build/7-Zip Mac.app` を使います。
-
-Finderに登録する1つのアプリを `/Applications` へインストール・更新します。
-
-```bash
 ./scripts/install.sh
 ```
 
-再ビルド・package・更新前に対象アプリを終了してください。旧版は復元用に保持し、
-既定のファイル関連付けは変更しません。[インストールと復元](docs/finder-registration.md)、
-[ビルドの詳細](docs/building.md#日本語)に、別ディレクトリ、直接CMake、クリーンビルド、
-packageの手順があります。
+初回は、必要なツールと7-Zip・Qtをダウンロードしてビルドします。
+完了すると、アプリケーションフォルダーに7-Zip Mac.appが入ります。
+7-ZipやQtを別途インストールする必要はありません。
 
-## 主な機能
+Command Line Toolsがない場合は、先に `xcode-select --install` を実行してください。
+別の場所へのインストールやビルドで困った場合は、[詳しいビルド手順](docs/building.md#日本語)を参照してください。
 
-- Windows版に近いメニュー、ツールバー、一覧、ショートカット、Add / Extract /
-  Progress / Options。公式アイコンと92翻訳＋Englishを利用します。
-- ファイルシステムとアーカイブ内部の閲覧、ネストしたアーカイブ、ソート、複数選択、
-  Flat View、2パネル、Favorites、列設定、Properties。
-- **7z / ZIP / TAR / WIM / XZ / gzip / bzip2** の作成、Test、展開。
-  読み取り形式と実際の確認範囲は[形式対応表](docs/archive-formats.md)へ記録しています。
-  **RAR圧縮はありません。**
-- 圧縮・暗号化設定、分割volume、更新・path・overwrite方式。
-  7zのファイル名暗号化とZIPのAES-256 / ZipCryptoに対応します。
-- 非同期の進捗、Pause / Cancel、詳細なエラー表示と保護付きのアーカイブ更新。
-  パスワードは保存・ログ出力しません。
-- Copy / Move / Trash / Rename、ファイル・フォルダー作成、link、Split / Combine、
-  Comment、外部閲覧・編集と確認付きのアーカイブ書き戻し。
-- CRC / hash、Benchmark、一時ファイル管理、公式Helpの検索・印刷。
-- Finderの「このアプリケーションで開く」から設定可能な7-Zip操作メニューを表示し、
-  最下段に「7-Zip ファイルマネージャーで開く」を常に置きます。
-  [Finder連携](docs/finder-integration.md)を参照してください。
+更新するときはアプリを終了し、ソースを更新してから上記の3つのスクリプトを実行します。
 
-個々の操作と実装・確認記録へのリンクは[機能の詳細](docs/features.md#日本語)にまとめています。
+## 基本の使い方
 
-## テスト
+### Finderから展開する
 
-開発者用テストは任意です。完全なリポジトリのcheckout、または開発者向けのソースarchiveで実行します。
+1. アーカイブを右クリックします。
+2. **このアプリケーションで開く → 7-Zip Mac** を選びます。
+3. 表示された操作メニューで、同じフォルダーに取り出すなら **ここに展開**、保存先を選ぶなら **展開…** を選びます。
+
+中身だけ確認したいときは、メニューの一番下にある **7-Zip ファイルマネージャーで開く** を選びます。
+
+### ファイルマネージャーで圧縮・展開する
+
+アプリケーションフォルダーから7-Zip Macを起動します。
+
+- 圧縮: ファイルやフォルダーを選んで **追加（Add）** を押し、保存先と7z・ZIPなどの形式を指定します。
+- 展開: アーカイブを選んで **展開（Extract）** を押し、保存先を指定します。
+- 中身を見る: 一覧のアーカイブをダブルクリックします。
+- 破損を調べる: アーカイブを選んで **テスト（Test）** を押します。
+
+操作の詳しい説明は[使い方](docs/features.md#日本語)にあります。
+
+## Windows版との違い
+
+Finderの右クリックメニューに、直接「7-Zip」を追加する機能はまだありません。
+現在は **このアプリケーションで開く** から操作メニューを呼び出します。
+ウインドウの操作やゴミ箱はmacOSの仕組みを使います。
+
+一部の説明やエラーメッセージは英語です。Windows用の自己解凍ファイルの作成や、Explorer専用の機能には対応していません。
+現在のビルドはDeveloper ID署名・Appleの公証を行っていません。
+詳しい違いと未実装の機能は[Windows版との比較](docs/windows-parity.md)に記載しています。
+
+## 不具合の報告
+
+[GitHubのIssues](https://github.com/muracoco/7-Zip4Mac/issues)に、macOSとアプリのバージョン、操作手順、表示されたエラーを記載してください。
+パスワードや個人情報を含むファイルは添付しないでください。
+
+## 開発に参加する方へ
+
+現在のアプリのバージョンは0.2.5、圧縮エンジンは7-Zip 26.03、GUIはQt 6.11.3です。
+C++とQt Widgetsを使い、CMake・Ninja・Apple Clangでビルドします。
+開発者用テストは、リポジトリのルートで次のコマンドを実行します。
 
 ```bash
 PORT_BUILD_TESTS=ON ./scripts/build.sh
 ./scripts/test.sh
 ```
 
-デスクトップを解除できない場合は `./scripts/test.sh --no-focus` を使います。
-ネイティブのfocus・menu確認には解除済みのデスクトップが必要です。
-fixtureは専用の一時ディレクトリで扱います。[実行結果](docs/test-results.md)では
-自動検証と実際のデスクトップ確認を区別しています。[詳細手順](docs/building.md#日本語)には
-対象を絞る方法、形式fixture、一括release確認のコマンドがあります。
+[ビルド・起動・テストの詳細](docs/building.md#日本語) · [開発の進め方](docs/development-workflow.md) ·
+[7-Zip本家の更新を取り込む手順](docs/upstream-updates.md)
 
-## Windows版との違い・残る課題
+## ライセンス
 
-- Registry / Explorer連携、MAPI、PE SFX作成、ホストへのNTFS security / ADS適用は
-  OSの差です。NTFS / PEのアーカイブ読み取り機能は含みます。
-- macOSのウインドウ操作、Trash、権限、署名、function key設定を使います。
-  Finder Extension / Quick Action / Servicesは未実装です。
-- Port固有の説明・エラーの一部は英語です。大量一覧の最終model反映とmetadata解析には
-  GUIスレッドの処理が残ります。
-- 追加のpath・更新保護はWindows版と動作が異なります。不正な `../` と出力先の親symlinkを
-  拒否します。最終配置中のCancel / I/O失敗では配置済みのファイルが残り、結果へ表示します。
-- 物理的なFinder drag、Fn / RightCtrl / Option、実プリンター、macOS 15 / Intel実機、
-  Windows画面とのピクセル比較は未確認です。
+このアプリの移植部分は [LGPL-3.0-or-later](LICENSE) です。
+7-ZipとQtには、それぞれのライセンスが適用されます。
+7-ZipのRAR展開コードにはunRARの利用制限も含まれます。
 
-分類と確認範囲は[現行の実装一覧](docs/current-status.md)、[Windows差分](docs/windows-parity.md)、
-[コマンド監査](docs/final-audit.md)、[設定対応表](docs/settings-coverage.md)を参照してください。
-
-## 設計・ライセンス
-
-`GUI → ArchiveBackend → SevenZipProcessBackend → 同梱7-Zip実行ファイル`。
-修正版 `7zz-progress` が公式のcallback / Agent処理を接続します。QProcessはシェルを使わず
-起動し、UTF-8を増分デコードします。パスワードは標準入力で渡し、argvや設定へ保存しません。
-
-- Port: **LGPL-3.0-or-later**。[LICENSE](LICENSE)。
-- 7-Zip: LGPL-2.1-or-later、BSD-2-Clause / BSD-3-Clause、RAR展開部分のunRAR制限。
-  [License.txt](licenses/License.txt)。
-- Qt: LGPL-3.0の動的リンク。[Qtのライセンス文書](licenses/Qt)。
-- 公式アイコン・翻訳と第三者fixtureの原著作権表示を保持しています。
-  [構成要素のNOTICE](licenses/NOTICE.md)。Microsoftのフォント・システム資産は同梱しません。
-
-アプリにはライセンス文書、7-Zip・QtBase・Portの対応ソースとQt patchを含めます。
-Qtの差し替え・再ビルドを制限しません。現在のローカル版はad-hoc署名を使い、
-Developer ID署名、notarization、App Store公開は今後の課題です。[配布内容](docs/distribution.md)を参照してください。
-
-上流: [7-Zip公式](https://www.7-zip.org/download.html)、
-[26.03のソース](https://github.com/ip7z/7zip/releases/tag/26.03)。
-
-## 開発
-
-[実装の進め方](docs/development-workflow.md) · [上流の差分更新](docs/upstream-updates.md) ·
-[公開・メール情報の検査](docs/git-privacy.md) · [ライセンス確認](docs/license-audit-follow-up.md)
+[7-Zipのライセンス](licenses/License.txt) · [Qtのライセンス](licenses/Qt) ·
+[同梱する構成要素と著作権表示](licenses/NOTICE.md)

@@ -9,7 +9,8 @@ Current behavior and limits are described in the README and
 
 ## Unreleased
 
-- Separate the project overview, detailed usage/features and version history.
+- Rewrite the English and Japanese README and user guide around installation and
+  everyday use; keep development records and version history separate.
 - Add repository-local GitHub noreply configuration, author/committer checks,
   commit/push hooks and verification of outgoing/remote metadata. Historical
   metadata repairs are tracked separately from future-commit checks.

@@ -15,7 +15,7 @@ Add, compression Options, Extract and Progress were implemented together from un
 
 ## Executed validation
 
-Environment: Apple Silicon macOS 26.6.2, Apple Clang, Qt 6.11.3. CMake/Ninja built the app and test executables. The [raw log](dialog-resources-test.log) retains both initial failures and targeted reruns.
+Environment: Apple Silicon macOS 26.6.2, Apple Clang, Qt 6.11.3. CMake/Ninja built the app and test executables. The [raw log](distribution.md) retains both initial failures and targeted reruns.
 
 Latest result for each selected case, counting setup/cleanup once per suite: **96 passed, 1 failed due to unavailable Cocoa focus, 0 skipped**. Dialog resources: 8 passed; language/settings: 10; compression/help: 46; native progress: 15; version/menu/time: 11; selected integration: 6 passed and 1 focus failure. This is not a claim that every case was rerun after every change or that physical desktop input passed.
 
@@ -35,7 +35,7 @@ ctest --test-dir "$BUILD" --output-on-failure -R '^(dialog_resources|language_se
 
 The ordinary `scripts/test.sh --no-focus` selection also includes `dialog_resources`. Test executables explicitly select English as their fixture locale; production first-run detection is unchanged.
 
-Packaging completed for `/DEPS/build-comments-20261004/7-Zip Mac.app`. The bundle checker found 15 Mach-O files with only system/@rpath dependencies; deep/strict ad-hoc signature verification passed. With development Qt/DYLD paths removed and owned temporary preferences, the bundled executable remained alive for three seconds with empty stderr. Only that owned process was stopped. The [packaging/startup log](dialog-resources-bundle.log) records this check; it does not establish physical Finder operation or a final clean build.
+Packaging completed for `/DEPS/build-comments-20261004/7-Zip Mac.app`. The bundle checker found 15 Mach-O files with only system/@rpath dependencies; deep/strict ad-hoc signature verification passed. With development Qt/DYLD paths removed and owned temporary preferences, the bundled executable remained alive for three seconds with empty stderr. Only that owned process was stopped. The [packaging/startup log](distribution.md) records this check; it does not establish physical Finder operation or a final clean build.
 
 ## Remaining scope
 

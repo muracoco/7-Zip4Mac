@@ -233,8 +233,8 @@ AboutDialog::AboutDialog(QWidget *parent) : QDialog(parent) {
     setObjectName("aboutDialog"); setWindowTitle("About 7-Zip"); UiLanguage::bindTitle(this, OfficialUi::IDD_ABOUT);
     auto label = [this](const char *name, const QString &text, bool literal = true) { auto widget = new QLabel(text, this); widget->setObjectName(name); widget->setTextFormat(Qt::PlainText); widget->setProperty("uiLiteral", literal); widget->setProperty("resourceTextFit", true); return widget; };
     auto logo = label("aboutLogo", {}); logo->setPixmap(QPixmap(":/icons/7zipLogo.ico"));
-    auto version = label("aboutVersion", "7-Zip 26.03 (" + QSysInfo::buildCpuArchitecture() + ")");
-    auto date = label("aboutDate", "2026-09-03"), copyright = label("aboutCopyright", "Copyright (c) 1999-2026 Igor Pavlov");
+    auto version = label("aboutVersion", "7-Zip " PORT_UPSTREAM_VERSION " (" + QSysInfo::buildCpuArchitecture() + ")");
+    auto date = label("aboutDate", PORT_UPSTREAM_DATE), copyright = label("aboutCopyright", PORT_UPSTREAM_COPYRIGHT);
     auto info = label("aboutInfo", "7-Zip is free software", false); UiLanguage::bind(info, OfficialUi::IDT_ABOUT_INFO);
     auto port = label("aboutPortInfo", "Unofficial Mac Port " + QString::fromLatin1(PORT_PROJECT_VERSION) + "\nQt " + QString(qVersion()) + " / LGPL 3.0\n© The Qt Company Ltd.\nand other contributors"); auto font = port->font(); font.setPointSizeF(8); port->setFont(font); port->setWordWrap(true); port->setAlignment(Qt::AlignLeft | Qt::AlignTop);
     port->setToolTip("Qt Copyright (C) The Qt Company Ltd. and other contributors. Qt: LGPL 3.0; Port: LGPL 3.0 or later. GPL/LGPL license texts and corresponding source: Contents/Resources in the application bundle");

@@ -51,7 +51,7 @@ Nine new actual-file cases run the native helper, not a re-created policy:
 
 Affected suites: metadata **274**, progress **15** — **289 passed, no failures
 or skips**, including setup/cleanup. The native helper and Qt application target
-build successfully. [Executed output](native-output-state-test.log).
+build successfully. [Executed output](distribution.md).
 
 This increment does not claim an application pre-stream overwrite switch,
 new packaged-app launch, physical GUI verification or completed Windows parity.

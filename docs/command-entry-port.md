@@ -42,15 +42,15 @@ runs are not added to the count. The cross-volume move case requires
 
 | Suite | Passed | Skipped | Latest evidence |
 | --- | ---: | ---: | --- |
-| Command entry | 27 | 0 | [command-entry-test.log](command-entry-test.log) |
+| Command entry | 27 | 0 | [command-entry-test.log](distribution.md) |
 | File listing | 11 | 0 | same log |
 | Selection | 16 | 0 | same log |
-| Native Agent GUI selection/update | 11 | 0 | [command-entry-agent-test.log](command-entry-agent-test.log) |
-| File-operation selections | 6 | 0 | [command-entry-fileops-test.log](command-entry-fileops-test.log) |
-| Comments | 31 | 0 | [first grouped run](command-entry-first-test.log) |
+| Native Agent GUI selection/update | 11 | 0 | [command-entry-agent-test.log](distribution.md) |
+| File-operation selections | 6 | 0 | [command-entry-fileops-test.log](distribution.md) |
+| Comments | 31 | 0 | [first grouped run](distribution.md) |
 | Dialog resources | 10 | 0 | same log |
 | Progress completion / result controls | 15 | 0 | same log |
-| Overwrite / move | 19 | 1 | [repair run](command-entry-repair-test.log) |
+| Overwrite / move | 19 | 1 | [repair run](distribution.md) |
 
 The first grouped run exposed a file-worker completion gap: `busy()` became
 false before the GUI handled its completion and refreshed the list. The
@@ -66,8 +66,8 @@ by the source list adapter: `QTreeWidgetItem::isSelected()` and
 `selectedRows()` do not cover cell selection with Full Row disabled. The
 adapter now converts Qt's selected items into the original item-status
 vector and selected-item count. The same-name external-editor/rename/
-write-back checks then passed. [Original Agent results](command-entry-agent-first-test.log)
-and [diagnostic failure](command-entry-agent-repair-test.log) are retained.
+write-back checks then passed. [Original Agent results](distribution.md)
+and [diagnostic failure](distribution.md) are retained.
 
 Confirmed: English source defaults, editable combo geometry/resizing,
 literal-bracket/case/UTF-16 wildcard semantics, all four rename views with
@@ -90,7 +90,7 @@ by this milestone. Bundle/startup evidence is recorded separately.
 
 The rebuilt local app is
 `/DEPS/build-comments-20261004/7-Zip Mac.app`.
-[Bundle and owned-startup evidence](command-entry-bundle.log) confirms 15
+[Bundle and owned-startup evidence](distribution.md) confirms 15
 Mach-O files with system / bundle-relative dependencies, valid deep strict
 ad-hoc signing, and an owned startup alive after three seconds with empty
 stdout/stderr. Development Qt/DYLD paths were removed and a temporary

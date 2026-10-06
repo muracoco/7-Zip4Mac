@@ -58,12 +58,12 @@ names instead of native `Warnings` / `Errors`, and the GUI assertion initially
 watched the filesystem-only signal rather than archive completion. Both test
 assertions were corrected. The independently selected `errorsAndRecovery` case
 also depended on another case's archive; it now creates its own small fixture.
-All first failures remain in [writable-update-tests.log](writable-update-tests.log).
+All first failures remain in [writable-update-tests.log](distribution.md).
 
 The application was relinked, bundled and ad-hoc signed. Strict dependency
 verification passed for 15 Mach-O files and isolated bundled startup passed
 without stdout/stderr or changed user preferences. This is an affected
 incremental build, not a new empty final release build or physical Finder
 acceptance. Source/payload hashes and report provenance are recorded in
-[writable-update-evidence.json](writable-update-evidence.json). The full format
+[writable-update-evidence.json](distribution.md). The full format
 matrix and unaffected native menu tests were not rerun for this update policy.

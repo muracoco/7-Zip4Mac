@@ -70,7 +70,7 @@ checks remain open in the full parity inventory.
 ## Verification
 
 Final scoped results and commands are recorded in
-[test-results.md](test-results.md) and [the execution log](native-folder-update-test.log).
+[test-results.md](test-results.md) and [the execution log](distribution.md).
 The 18 integration checks and six affected suites total 154 passing checks,
 including setup/cleanup. Reproduce them after building with
 `./scripts/test.sh --no-focus`, or run the affected suites alone:

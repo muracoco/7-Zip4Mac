@@ -45,6 +45,6 @@ explicit latest-time false persistence and real output bytes/timestamps.
 Progress covers failure/Cancel/Pause and reuse. Passing formatter/progress checks
 were not repeated after the console-switch-only correction.
 
-See [compression-options-test.log](compression-options-test.log). This is an
+See [compression-options-test.log](distribution.md). This is an
 incremental build and affected validation, not the final empty-directory release
 build or the physical desktop acceptance gate.

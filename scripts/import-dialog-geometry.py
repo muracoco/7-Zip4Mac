@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: LGPL-3.0-or-later
 """Expand pinned official desktop RC geometry; import the original progress resize body."""
+from upstream_support import VERSION, source_hash, aggregate_hash, artifact_hash, output_root, write_generated
 import argparse
 import ast
 import csv
@@ -15,40 +16,40 @@ parser.add_argument('source', type=Path)
 args = parser.parse_args()
 base = args.source / 'CPP/7zip'
 hashes = {
-    'UI/FileManager/CopyDialog.rc': '11c3a43bc915b6af9cd93db5e84127df48c32bf0761c116db4e98f443922626f',
-    'UI/FileManager/CopyDialogRes.h': '31d0959eadb952045239af35605cc6137924963672f6d481eb05b4b668290d61',
-    'UI/FileManager/CopyDialog.cpp': '45225d946ae53560b1123689ab23a89afc1ce1501209f680deefbdd71d9d9c3d',
-    'UI/FileManager/ComboDialog.rc': '5d19b865c8687aed8cbf64ec8670f3cb96a3e86aea92076c4f63fcb17f91f4ec',
-    'UI/FileManager/ComboDialogRes.h': '2c29eec7f17714ee5611c1a63fe2d73b56560f6287649475f4054776cc671947',
-    'UI/FileManager/ComboDialog.cpp': 'ad1cc78050e8857a9709172cfb356c9e2e06238321b2cf6e11dcc39d8500fcc2',
+    'UI/FileManager/CopyDialog.rc': source_hash('CPP/7zip/UI/FileManager/CopyDialog.rc'),
+    'UI/FileManager/CopyDialogRes.h': source_hash('CPP/7zip/UI/FileManager/CopyDialogRes.h'),
+    'UI/FileManager/CopyDialog.cpp': source_hash('CPP/7zip/UI/FileManager/CopyDialog.cpp'),
+    'UI/FileManager/ComboDialog.rc': source_hash('CPP/7zip/UI/FileManager/ComboDialog.rc'),
+    'UI/FileManager/ComboDialogRes.h': source_hash('CPP/7zip/UI/FileManager/ComboDialogRes.h'),
+    'UI/FileManager/ComboDialog.cpp': source_hash('CPP/7zip/UI/FileManager/ComboDialog.cpp'),
 
-    'UI/FileManager/AboutDialog.rc': '58994341ab7bb1ee0583c28af210b38e6835a3192814049f617b73faf0f9b945',
-    'UI/FileManager/AboutDialogRes.h': 'fac097828013a0cd8b01eac6c9e2c2270620981bfbc273ec2b5aef9c36b63e6d',
-    'UI/FileManager/AboutDialog.cpp': 'f4051a85a47bc589447000f7c7810dfa98e9d04e1e0a8a9b18348609af46161c',
-    'UI/FileManager/BrowseDialog2.rc': 'a36ee446d5141ac16034e2dedce9a642b6ff7e7454827cc2acf103523ba99298',
-    'UI/FileManager/BrowseDialog2Res.h': 'c391e7be131e53bb70b075e6bb8a9fcfab44bfe51a29f8eae274952af526450c',
-    'UI/FileManager/BrowseDialog2.cpp': 'd78eb24bc0a27fd49143a612c779d5d5d91a3ce6885249e3d8f4fe987288648e',
-    'UI/FileManager/resource.h': '6ef6f65599b1b3be0c7ab9813caa72eaab246f0aedf572fb04ec33a8695b65d1',
-    'UI/FileManager/EditDialog.cpp': '321f876711cb308e5173906567c02ffdc82d87cbaa02674fbc911360dde615ab',
-    'UI/FileManager/EditDialog.rc': 'fe930051ca7fdef8aa9dc89901fd2ac63837e0fb27c638b6e5d426270a015bb4',
-    'UI/FileManager/EditDialogRes.h': '222aa8d0c78c2cb19390a96a9985db74bb3faa04fdeff3bc73843bbe4bd882bd',
-    'UI/FileManager/ListViewDialog.cpp': '30a3a0da1b2e44400e899a1326361c9712378da42e259861e482ae5b7f6f45a8',
-    'UI/FileManager/ListViewDialog.rc': '1be34ca073c82d1a0b3a57bf6980e2d30f2932d57eec801fbbf2dd4af629f753',
-    'UI/FileManager/ListViewDialogRes.h': 'c4328344b964ce3ec9f6b94f546b7b6063aa0ace2c6a6563ca22f60a5a9ef672',
-    'UI/GUI/CompressDialog.cpp': '53d673d78e7936880481be1017c37ca95a1e4b64419d74d32035ce703d06c7d4',
-    'GuiCommon.rc': 'c17108e4ab45e3271f612c4601e0c777d48b1e4cf481a5d14d48230cb2260294',
-    'UI/GUI/CompressDialog.rc': 'ccd2e79bb379e9e566391358eafca7d97917b1c9c69b93598a50328d379d552e',
-    'UI/GUI/CompressDialogRes.h': 'a100dd6a66b7b225c34d4dc94cb16f65e4770a88d0aee3774f2a800daba70c81',
-    'UI/GUI/CompressOptionsDialog.rc': '4049ce5f235603bf85db5084a22cc45403e84db1ac823d2a92ab8484c1b7bcf7',
-    'UI/GUI/ExtractDialog.rc': 'ca9900868fc55e432f7103a8e979afe43416abd69e2ebc5be46dad6a64b7fd93',
-    'UI/GUI/ExtractDialogRes.h': 'f2cac932157d0340570b292ed784c81a400cdefff512f31ea18e8492851e376c',
-    'UI/FileManager/ProgressDialog2.rc': 'f8edd9cdb944c7981e95a6e457d52497a315f39cf2975527a3f21dbad3141eb2',
-    'UI/FileManager/ProgressDialog2a.rc': '2e112f7d8461720f21b290049067c078da138071988370f17b79c7ac3bea9e03',
-    'UI/FileManager/ProgressDialog2Res.h': 'c8b4dc687a5d45b17713e13ec562e91c4eb8a04c8b4b7a09c5c462407e382681',
-    'UI/FileManager/ProgressDialog2.cpp': '8d8af91caad471317aa2cea29474ec623405aa0dc4c22f95c100504815073cdc',
+    'UI/FileManager/AboutDialog.rc': source_hash('CPP/7zip/UI/FileManager/AboutDialog.rc'),
+    'UI/FileManager/AboutDialogRes.h': source_hash('CPP/7zip/UI/FileManager/AboutDialogRes.h'),
+    'UI/FileManager/AboutDialog.cpp': source_hash('CPP/7zip/UI/FileManager/AboutDialog.cpp'),
+    'UI/FileManager/BrowseDialog2.rc': source_hash('CPP/7zip/UI/FileManager/BrowseDialog2.rc'),
+    'UI/FileManager/BrowseDialog2Res.h': source_hash('CPP/7zip/UI/FileManager/BrowseDialog2Res.h'),
+    'UI/FileManager/BrowseDialog2.cpp': source_hash('CPP/7zip/UI/FileManager/BrowseDialog2.cpp'),
+    'UI/FileManager/resource.h': source_hash('CPP/7zip/UI/FileManager/resource.h'),
+    'UI/FileManager/EditDialog.cpp': source_hash('CPP/7zip/UI/FileManager/EditDialog.cpp'),
+    'UI/FileManager/EditDialog.rc': source_hash('CPP/7zip/UI/FileManager/EditDialog.rc'),
+    'UI/FileManager/EditDialogRes.h': source_hash('CPP/7zip/UI/FileManager/EditDialogRes.h'),
+    'UI/FileManager/ListViewDialog.cpp': source_hash('CPP/7zip/UI/FileManager/ListViewDialog.cpp'),
+    'UI/FileManager/ListViewDialog.rc': source_hash('CPP/7zip/UI/FileManager/ListViewDialog.rc'),
+    'UI/FileManager/ListViewDialogRes.h': source_hash('CPP/7zip/UI/FileManager/ListViewDialogRes.h'),
+    'UI/GUI/CompressDialog.cpp': source_hash('CPP/7zip/UI/GUI/CompressDialog.cpp'),
+    'GuiCommon.rc': source_hash('CPP/7zip/GuiCommon.rc'),
+    'UI/GUI/CompressDialog.rc': source_hash('CPP/7zip/UI/GUI/CompressDialog.rc'),
+    'UI/GUI/CompressDialogRes.h': source_hash('CPP/7zip/UI/GUI/CompressDialogRes.h'),
+    'UI/GUI/CompressOptionsDialog.rc': source_hash('CPP/7zip/UI/GUI/CompressOptionsDialog.rc'),
+    'UI/GUI/ExtractDialog.rc': source_hash('CPP/7zip/UI/GUI/ExtractDialog.rc'),
+    'UI/GUI/ExtractDialogRes.h': source_hash('CPP/7zip/UI/GUI/ExtractDialogRes.h'),
+    'UI/FileManager/ProgressDialog2.rc': source_hash('CPP/7zip/UI/FileManager/ProgressDialog2.rc'),
+    'UI/FileManager/ProgressDialog2a.rc': source_hash('CPP/7zip/UI/FileManager/ProgressDialog2a.rc'),
+    'UI/FileManager/ProgressDialog2Res.h': source_hash('CPP/7zip/UI/FileManager/ProgressDialog2Res.h'),
+    'UI/FileManager/ProgressDialog2.cpp': source_hash('CPP/7zip/UI/FileManager/ProgressDialog2.cpp'),
 }
 texts = {}
-notice = '// Copyright (C) 1999-2026 Igor Pavlov. GNU LGPL-2.1-or-later.\n// Official 7-Zip 26.03 desktop resources, generated by import-dialog-geometry.py.\n'
+notice = f'// Copyright (C) 1999-2026 Igor Pavlov. GNU LGPL-2.1-or-later.\n// Official 7-Zip {VERSION} desktop resources, generated by import-dialog-geometry.py.\n'
 for name, digest in hashes.items():
     raw = (base / name).read_bytes()
     if hashlib.sha256(raw).hexdigest() != digest:
@@ -74,8 +75,8 @@ with tempfile.TemporaryDirectory(prefix='7zip-rc-preprocess-') as folder:
     work = Path(folder)
     # Only numeric dialog button identities are supplied. No Windows SDK, font
     # files or system assets are copied; unknown style names stay textual.
-    (work / 'windows.h').write_text('#define IDOK 1\n#define IDCANCEL 2\n#define IDCLOSE 8\n#define IDHELP 9\n')
-    (work / 'CommCtrl.h').write_text('')
+    write_generated(work / 'windows.h', '#define IDOK 1\n#define IDCANCEL 2\n#define IDCLOSE 8\n#define IDHELP 9\n')
+    write_generated(work / 'CommCtrl.h', '')
     for source, resource_header in [('UI/FileManager/CopyDialog.rc', 'UI/FileManager/CopyDialogRes.h'), ('UI/FileManager/ComboDialog.rc', 'UI/FileManager/ComboDialogRes.h'), ('UI/GUI/CompressDialog.rc', 'UI/GUI/CompressDialogRes.h'), ('UI/GUI/ExtractDialog.rc', 'UI/GUI/ExtractDialogRes.h'), ('UI/FileManager/ProgressDialog2.rc', 'UI/FileManager/ProgressDialog2Res.h'), ('UI/FileManager/ListViewDialog.rc', 'UI/FileManager/ListViewDialogRes.h'), ('UI/FileManager/EditDialog.rc', 'UI/FileManager/EditDialogRes.h'), ('UI/FileManager/AboutDialog.rc', 'UI/FileManager/AboutDialogRes.h'), ('UI/FileManager/BrowseDialog2.rc', 'UI/FileManager/BrowseDialog2Res.h')]:
         extra = ['-include', str(base / 'UI/FileManager/resource.h')] if 'BrowseDialog2' in source else []
         expanded = subprocess.check_output(['clang', '-E', '-P', '-x', 'c', '-I', str(work)] + extra + [str(base / source)], text=True)
@@ -114,8 +115,8 @@ for ident, size, controls, names in definitions:
         body += '    {"' + name + '", ' + str(value) + '},\n'
     body += '}};\n'
 body += 'static const ResourceDialog *const dialogs[]{' + ', '.join('&dialog_' + str(d[0]) for d in definitions) + '};\n'
-destination = Path(__file__).resolve().parents[1] / 'src/upstream'
-(destination / 'DialogGeometry.inc').write_text(notice + body)
+destination = output_root() / 'src/upstream'
+write_generated(destination / 'DialogGeometry.inc', notice + body)
 
 progress = texts['UI/FileManager/ProgressDialog2.cpp']
 def function(signature):
@@ -129,17 +130,17 @@ def function(signature):
 array = re.search(r'static const (?:unsigned|UInt32|UINT|int) kIDs\[\]\s*=\s*\{.*?\};', progress, re.S)
 if not array:
     parser.error('Original progress control-pair table not found')
-(destination / 'ProgressLayout.inc').write_text(notice + array.group() + '\n' + function('bool CProgressDialog::OnSize(') + '\n')
+write_generated(destination / 'ProgressLayout.inc', notice + array.group() + '\n' + function('bool CProgressDialog::OnSize(') + '\n')
 progress = texts['UI/FileManager/ListViewDialog.cpp']
-(destination / 'ListViewLayout.inc').write_text(notice + function('bool CListViewDialog::OnSize(') + '\n')
+write_generated(destination / 'ListViewLayout.inc', notice + function('bool CListViewDialog::OnSize(') + '\n')
 progress = texts['UI/FileManager/EditDialog.cpp']
-(destination / 'EditLayout.inc').write_text(notice + '#define MY_CLOSE_BUTTON_ID IDCLOSE\n' + function('bool CEditDialog::OnSize(') + '\n#undef MY_CLOSE_BUTTON_ID\n')
+write_generated(destination / 'EditLayout.inc', notice + '#define MY_CLOSE_BUTTON_ID IDCLOSE\n' + function('bool CEditDialog::OnSize(') + '\n#undef MY_CLOSE_BUTTON_ID\n')
 progress = texts['UI/FileManager/ComboDialog.cpp']
-(destination / 'ComboLayout.inc').write_text(notice + function('bool CComboDialog::OnSize(') + '\n')
+write_generated(destination / 'ComboLayout.inc', notice + function('bool CComboDialog::OnSize(') + '\n')
 progress = texts['UI/FileManager/CopyDialog.cpp']
-(destination / 'CopyLayout.inc').write_text(notice + function('bool CCopyDialog::OnSize(') + '\n')
+write_generated(destination / 'CopyLayout.inc', notice + function('bool CCopyDialog::OnSize(') + '\n')
 progress = texts['UI/FileManager/BrowseDialog2.cpp']
-(destination / 'TempBrowseLayout.inc').write_text(notice + function('bool CBrowseDialog2::OnSize(') + '\n')
+write_generated(destination / 'TempBrowseLayout.inc', notice + function('bool CBrowseDialog2::OnSize(') + '\n')
 progress = texts['UI/FileManager/ProgressDialog2.cpp']
 print('Imported desktop dialog IDs:', ', '.join(str(d[0]) for d in definitions))
 
@@ -149,7 +150,7 @@ def compression_function(signature):
     while depth:
         depth += (compression[cursor] == '{') - (compression[cursor] == '}'); cursor += 1
     return compression[start:cursor]
-(destination / 'CompressOptionsText.inc').write_text(notice + '\n'.join(compression_function(name) for name in ['static void AddText_from_BoolPair(', 'static void AddText_from_Bool1(', 'void CCompressDialog::ShowOptionsString()']) + '\n')
+write_generated(destination / 'CompressOptionsText.inc', notice + '\n'.join(compression_function(name) for name in ['static void AddText_from_BoolPair(', 'static void AddText_from_Bool1(', 'void CCompressDialog::ShowOptionsString()']) + '\n')
 
 macro = next(line for line in progress.splitlines() if line.startswith('#define UINT_TO_STR_2'))
 speed_start = progress.index('        Byte c = 0;', progress.index('UInt64 v = (completed * 1000)'))
@@ -157,4 +158,4 @@ speed_end = progress.index('        if (moveBits != _prevSpeed_MoveBits', speed_
 format_start = progress.index('          ConvertUInt64ToString(v, s);', speed_end)
 format_end = progress.index('          SetItemText(IDT_PROGRESS_SPEED_VAL, s);', format_start)
 speed_body = 'static void ConvertSpeedToString(UInt64 v, wchar_t *s)\n{\n' + progress[speed_start:speed_end] + progress[format_start:format_end] + '}\n'
-(destination / 'ProgressText.inc').write_text(notice + macro + '\n' + function('void GetTimeString(UInt64 timeValue, wchar_t *s)\n{') + '\n' + function('static void ConvertSizeToString(') + '\n' + speed_body + '#undef UINT_TO_STR_2\n')
+write_generated(destination / 'ProgressText.inc', notice + macro + '\n' + function('void GetTimeString(UInt64 timeValue, wchar_t *s)\n{') + '\n' + function('static void ConvertSizeToString(') + '\n' + speed_body + '#undef UINT_TO_STR_2\n')

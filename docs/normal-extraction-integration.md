@@ -29,7 +29,7 @@ canonical existing paths, so /var and /private/var refer to the same fixture.
 - Archive Open modes: 24 passed, 0 failures/skips.
 
 Total: **391 passing checks**, including setup/cleanup. Application and affected
-test targets build successfully. [Captured output](normal-extraction-integration-test.log).
+test targets build successfully. [Captured output](distribution.md).
 The first activated scoped run failed; case-sensitive spelling rebinding,
 Cancel reporting, retained previous outputs and the fixture's canonical path
 comparison were corrected before these final runs.

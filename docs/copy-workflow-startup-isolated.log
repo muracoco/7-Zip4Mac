@@ -1,7 +1,0 @@
-Owned bundle executable alive after 3 seconds: True
-Private INI files created: 1
-Existing matching native user preferences unchanged: True
-stdout bytes: 0 stderr bytes: 0
-Invalid explicit profile rejected without native fallback: True
-Native user preferences remain unchanged: True
-Only owned processes terminated; physical Finder/Fn/menu input not checked.

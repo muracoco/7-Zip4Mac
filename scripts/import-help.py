@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: LGPL-3.0-or-later
-"""Import unchanged English HTML Help from the official 7-Zip 26.03 Windows CHM."""
+"""Import unchanged English HTML Help from the official 7-Zip pinned release Windows CHM."""
+from upstream_support import VERSION, source_hash, aggregate_hash, artifact_hash, output_root, write_generated
 import argparse
 import hashlib
 from html.parser import HTMLParser
@@ -14,9 +15,9 @@ parser.add_argument("engine", type=Path)
 parser.add_argument("chm", type=Path)
 args = parser.parse_args()
 digest = hashlib.sha256(args.chm.read_bytes()).hexdigest()
-if digest != "e0b70a83b79c938d7a868013ef94a0b1d34ff145f1e67bb7bf9a56aa913622cb":
-    parser.error("Not the pinned official 7-Zip 26.03 7-zip.chm")
-root = Path(__file__).resolve().parent.parent / "resources"
+if digest != artifact_hash('windows-help'):
+    parser.error(f"Not the pinned official 7-Zip {VERSION} 7-zip.chm")
+root = output_root() / "resources"
 output = root / "help"
 listing = subprocess.check_output([str(args.engine), "l", "-slt", str(args.chm)], text=True)
 paths = sorted(line[7:] for line in listing.splitlines() if line.startswith("Path = ") and Path(line[7:]).suffix in {".htm", ".css", ".hhc", ".hhk"})
@@ -55,7 +56,7 @@ def sitemap(suffix):
     parsed.feed((output / source).read_bytes().decode("cp1252"))
     return parsed.nodes
 
-manifest = {"upstream": "7-Zip 26.03", "chmSha256": digest, "files": files, "contents": sitemap(".hhc"), "index": sitemap(".hhk")}
+manifest = {"upstream": f"7-Zip {VERSION}", "chmSha256": digest, "files": files, "contents": sitemap(".hhc"), "index": sitemap(".hhk")}
 if len(manifest["contents"]) != 70 or len(manifest["index"]) != 69: parser.error("Unexpected sitemap inventory")
 (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 resource = ET.Element("RCC")

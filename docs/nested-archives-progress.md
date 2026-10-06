@@ -129,4 +129,4 @@ cannot start a competing List, and completion checks operation and target.
 Tests expire the real debounce inside the question. Synchronous exits restore
 action state, and close is deferred outside the original close event. No/Cancel,
 unmodified close, common-ancestor navigation and panel removal are regressed.
-See [clean results](test-results.md) and [raw log](nested-writeback-test.log).
+See [clean results](test-results.md) and [raw log](distribution.md).

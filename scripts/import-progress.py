@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: LGPL-3.0-or-later
 """Create a pinned adapter overlay without editing the official source tree."""
+from upstream_support import VERSION, source_hash, aggregate_hash, artifact_hash, output_root, write_generated
 import hashlib
 import pathlib
 import sys
@@ -8,21 +9,21 @@ import sys
 source, output = map(lambda value: pathlib.Path(value).resolve(), sys.argv[1:])
 base = "CPP/7zip/UI/"
 hashes = {
-    "../Archive/Zip/ZipUpdate.cpp": "3db0ee77bd56217722cab13582958964bf76071d481e69447b238aea9113bc7f",
-    "Common/LoadCodecs.cpp": "7e1bbdd635be44cf86eafd35790830ae2c3fac4844d0767d79d5453f23e5526b",
-    "../Common/FilePathAutoRename.cpp": "92af840c16598d207a1280da01bb4b2c86f15863fd75724d1070ecfebff4c437",
-    "Common/ArchiveExtractCallback.cpp": "f8bc44e06d292d82213652a6ee5b776310998e097c8c475036fe217b4d7fbc5f",
-    "Console/BenchCon.cpp": "4d30dba0ef4cbcd828a7d3dc3956068aee76528af723ae278b59cbe4f2496280",
-    "Agent/AgentProxy.cpp": "4777e8387ac233706a9ece832f88e52225513a942b061cc59104c939292151ff",
-    "Console/List.cpp": "17b3c2e9337e2611a58925038308e402411f274207932e0725023e4feaa5ee09",
-    "Console/Main.cpp": "2a4de34ba33d6010f261f5f464ee9789a961b2d9215687a12bdfb24ee7322a59",
-    "Console/UpdateCallbackConsole.cpp": "8cd1c9cf17f0c45b3db840c0f4bec9870f78f17ed39308ad76f37998640b0c08",
-    "Console/ExtractCallbackConsole.cpp": "54d4889c869fdfdce58141f1725395ae033e56c5d0df7a037079ab7e1e6189ec",
-    "Console/ExtractCallbackConsole.h": "ecf0fbf9ef77fb48820d9aa0b4caa04303a11c1dc6a6d9c4f784387dd0908975",
-    "Console/HashCon.cpp": "7cd5737e40e063a5b526c193cf1c7a9f5f006f8216968714dc936be1a4a1de3b",
-    "Common/Extract.cpp": "ec2cfe143d2ba7d5a08cab6c20952f66981698aa6309d73b13f73e82cf3fa278",
-    "Common/Update.cpp": "7d4931f7cef31855586d8b264956d041d6e56218d5d90d5dfda2aeda84c15288",
-    "Common/UpdateCallback.cpp": "f2c1594fa1691649650dd37b233b6bdb7eed622e45ef302dee4ce7036afb4608",
+    "../Archive/Zip/ZipUpdate.cpp": source_hash('CPP/7zip/Archive/Zip/ZipUpdate.cpp'),
+    "Common/LoadCodecs.cpp": source_hash('CPP/7zip/UI/Common/LoadCodecs.cpp'),
+    "../Common/FilePathAutoRename.cpp": source_hash('CPP/7zip/Common/FilePathAutoRename.cpp'),
+    "Common/ArchiveExtractCallback.cpp": source_hash('CPP/7zip/UI/Common/ArchiveExtractCallback.cpp'),
+    "Console/BenchCon.cpp": source_hash('CPP/7zip/UI/Console/BenchCon.cpp'),
+    "Agent/AgentProxy.cpp": source_hash('CPP/7zip/UI/Agent/AgentProxy.cpp'),
+    "Console/List.cpp": source_hash('CPP/7zip/UI/Console/List.cpp'),
+    "Console/Main.cpp": source_hash('CPP/7zip/UI/Console/Main.cpp'),
+    "Console/UpdateCallbackConsole.cpp": source_hash('CPP/7zip/UI/Console/UpdateCallbackConsole.cpp'),
+    "Console/ExtractCallbackConsole.cpp": source_hash('CPP/7zip/UI/Console/ExtractCallbackConsole.cpp'),
+    "Console/ExtractCallbackConsole.h": source_hash('CPP/7zip/UI/Console/ExtractCallbackConsole.h'),
+    "Console/HashCon.cpp": source_hash('CPP/7zip/UI/Console/HashCon.cpp'),
+    "Common/Extract.cpp": source_hash('CPP/7zip/UI/Common/Extract.cpp'),
+    "Common/Update.cpp": source_hash('CPP/7zip/UI/Common/Update.cpp'),
+    "Common/UpdateCallback.cpp": source_hash('CPP/7zip/UI/Common/UpdateCallback.cpp'),
 }
 files = {}
 for path, expected in hashes.items():
@@ -253,7 +254,7 @@ def overlay(relative=pathlib.Path()):
             if target.is_symlink():
                 target.unlink()
             if not target.exists() or target.read_bytes() != content:
-                target.write_bytes(content)
+                write_generated(target, content)
         elif any(value.startswith(str(path) + "/") for value in files):
             overlay(path)
         elif not target.exists() and not target.is_symlink():
@@ -262,4 +263,4 @@ def overlay(relative=pathlib.Path()):
 if output == source or source in output.parents:
     raise SystemExit("The overlay must be outside official sources")
 overlay()
-print(f"Official 26.03 overlay: {len(hashes)} files verified; ZipCrypto metadata descriptor fix; codecs/crypto unchanged")
+print(f"Official {VERSION} overlay: {len(hashes)} files verified; ZipCrypto metadata descriptor fix; codecs/crypto unchanged")

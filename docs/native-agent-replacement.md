@@ -65,7 +65,7 @@ ctest --test-dir /path/to/build \
   -R '^(editor_writeback|file_comments|archive_open_modes)$' --output-on-failure
 ```
 
-[Raw final output](native-agent-replacement-test.log). The normal app bundle was
+[Raw final output](distribution.md). The normal app bundle was
 rebuilt and packaged; dependency/signature checks and an isolated LaunchServices
 startup passed. These automated checks do not replace physical native menu,
 Finder, Fn-key or drag-out testing. Complete metadata/link restoration, remaining

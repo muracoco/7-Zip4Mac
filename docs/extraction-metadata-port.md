@@ -68,7 +68,7 @@ ctest --test-dir /path/to/build -R '^extraction_metadata$' --output-on-failure
 ./scripts/test-formats.sh --build /path/to/build
 ```
 
-[Execution output](extraction-metadata-test.log).
+[Execution output](distribution.md).
 
 ## Remaining scope
 
@@ -126,7 +126,7 @@ pass, and 18 native-selection/editor/ancestor/nested/Pause/Cancel checks pass.
 Because the shared extraction records changed, all 151 format/extension
 registrations were rechecked once: **155 passed, no failures/skips**. The same
 run also verifies Qt context-menu compression, Test and extraction for 7z/ZIP.
-[Executed output](selected-hardlink-test.log).
+[Executed output](distribution.md).
 
 The normal bundle was rebuilt and packaged. Its 15 Mach-O files pass dependency
 and ad-hoc signature checks; only system/relative framework dependencies remain.

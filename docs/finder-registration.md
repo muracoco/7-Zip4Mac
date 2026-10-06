@@ -92,5 +92,5 @@ directory, and a fixture copying protected flags from `/usr/bin/true`, did not
 model registration correctly; cache-local fixtures copy bytes and executable
 permissions instead. Those were fixture corrections, not application failures.
 
-[Machine-readable evidence](finder-registration-evidence.json) contains result
+[Machine-readable evidence](distribution.md) contains result
 categories and local-log SHA-256 receipts without publishing local paths/logs.

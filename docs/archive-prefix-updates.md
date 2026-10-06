@@ -70,7 +70,7 @@ refusal preserve original bytes.
 The final scoped result is **114 passed / 0 failed / 0 skipped**, including
 setup/cleanup: archive open modes **24**, official-folder integration **14**,
 editor write-back **32**, ZIP/FS comments **31** and shared native progress
-**13**. The transcript is [archive-prefix-updates-test.log](archive-prefix-updates-test.log).
+**13**. The transcript is [archive-prefix-updates-test.log](distribution.md).
 The stronger final tail/Split guard assertions were rebuilt and passed in a
 final open-mode run; unrelated suites were not repeated after that test change.
 

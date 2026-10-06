@@ -25,7 +25,7 @@ verified. This is an upstream-behavior correction to the test.
 Final affected checks: metadata 310, progress 15, selected Agent paths 9,
 basic roundtrip/root/absolute integration 5: **339 pass, 0 fail/skip**, including
 setup/cleanup. Application and affected test targets build successfully.
-[Captured output](extraction-path-combinations-test.log).
+[Captured output](distribution.md).
 The first Agent invocation omitted its fixture directory and failed setup;
 the corrected test-agent-tree.sh invocation generated private fixtures.
 The initial hard-reference cases exposed the root mapping error before repair.

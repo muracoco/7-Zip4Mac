@@ -8,6 +8,7 @@ if [[ -n ${PORT_TEST_REGEX:-} ]]; then CTEST_ARGS=(-R "$PORT_TEST_REGEX"); fi
 if [[ ${1:-} == --no-focus ]]; then NO_FOCUS=1; shift; fi
 BUILD=${1:-"$DEFAULT_BUILD"}
 [[ "$BUILD" = /* ]] || BUILD="$ROOT/$BUILD"
+[[ -x "$BUILD/port_tests" ]] || { echo 'Build developer tests first: PORT_BUILD_TESTS=ON ./scripts/build.sh' >&2; exit 1; }
 FIXTURES=$(mktemp -d "${TMPDIR:-/tmp}/7zip-fixtures.XXXXXX")
 trap 'rm -rf "$FIXTURES"' EXIT
 export PORT_FIXTURES="$FIXTURES"

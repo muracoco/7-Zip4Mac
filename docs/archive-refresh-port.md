@@ -48,7 +48,7 @@ widget when asserting the first panel's path (both have the same object name).
 The test now retains each panel's address widget before creating the other
 panel. That failed run is not counted as a passing verification.
 
-[Final execution log](archive-refresh-test.log). Physical desktop clicks and
+[Final execution log](distribution.md). Physical desktop clicks and
 Finder/Fn-key checks remain unverified. This scoped graph fix does not complete
 the remaining extraction/overwrite, UI/Help/list, refactoring, final clean build
 or publication requirements. The complete format matrix and unrelated suites

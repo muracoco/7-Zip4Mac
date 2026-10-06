@@ -78,9 +78,9 @@ No further feature scope or speculative repair is inferred from them.
 ## Evidence and continuation
 
 Captured first-launch/build/test/archive logs are in
-[desktop-follow-up-tests.log](desktop-follow-up-tests.log); original report and
+[desktop-follow-up-tests.log](distribution.md); original report and
 changed-code SHA-256 values are in
-[desktop-follow-up-evidence.json](desktop-follow-up-evidence.json). Only
+[desktop-follow-up-evidence.json](distribution.md). Only
 machine-specific path prefixes and trailing whitespace in the captured logs
 are normalized. Private
 desktop screenshots and crash reports are not included.

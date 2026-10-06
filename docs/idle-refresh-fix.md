@@ -48,7 +48,7 @@ identities and showed no Working state. The list/toolbar display was inspected.
 This is a sampled desktop observation, not a continuous video/frame-rate test.
 The direct model-reset/busy-state measurements are from the isolated regression.
 Packaging verified 15 Mach-O files with system/@rpath dependencies only and a
-strict ad-hoc signature. [Machine-readable evidence](idle-refresh-evidence.json).
+strict ad-hoc signature. [Machine-readable evidence](distribution.md).
 
 ```bash
 PORT_TEST_REGEX='^(auto_refresh|directory_scanner|cocoa_presentation|cocoa_open_with_progress|cocoa_open_with_exit_7z|cocoa_open_with_exit_zip)$' ./scripts/test.sh /absolute/build/path

@@ -67,23 +67,23 @@ zero failures and zero skips**, counting setup/cleanup once per suite:
 
 | Suite | Latest passing checks | Evidence |
 | --- | ---: | --- |
-| Focused keys / relative Rename / panel navigation | 26 | [Final input log](panel-key-final-input.log) |
-| Copy workflow | 23 | [Final input log](panel-key-final-input.log) |
-| Command entry / exclusive Rename | 27 | [Affected group](panel-key-group.log) |
-| Original selection | 16 | [Affected group](panel-key-group.log) |
-| Folder statistics | 11 | [Affected group](panel-key-group.log) |
-| Native writer / duplicate row Rename and Delete | 9 | [Native log](panel-key-native-rename.log) |
+| Focused keys / relative Rename / panel navigation | 26 | [Final input log](distribution.md) |
+| Copy workflow | 23 | [Final input log](distribution.md) |
+| Command entry / exclusive Rename | 27 | [Affected group](distribution.md) |
+| Original selection | 16 | [Affected group](distribution.md) |
+| Folder statistics | 11 | [Affected group](distribution.md) |
+| Native writer / duplicate row Rename and Delete | 9 | [Native log](distribution.md) |
 
-The [first grouped run](panel-key-initial.log) exposed the old filesystem
+The [first grouped run](distribution.md) exposed the old filesystem
 same-parent restriction and WIM validation of handler-created ancestor folders.
 Both were corrected. ZIP/TAR seeds incorrectly selected the 7z default method;
 test fixtures now use original archive defaults. A recursive two-panel test lookup
 then selected the other panel's child, and the new test helper crashed; the
-[repair log](panel-key-repair.log) retains that failed run. Widget lookup now
+[repair log](distribution.md) retains that failed run. Widget lookup now
 checks the owning MainWindow. This was a test-helper crash, not proof of an
 application crash. Subsequent input failures are retained in
-[remaining input](panel-key-remaining-input.log) and
-[scan focus failure](panel-key-focus-failure.log).
+[remaining input](distribution.md) and
+[scan focus failure](distribution.md).
 
 Logical Qt window activation was made explicit in tests. That revealed an actual
 asynchronous scan focus loss: Enter disabled the list and Backspace could no

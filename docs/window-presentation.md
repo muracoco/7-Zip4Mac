@@ -50,7 +50,7 @@ signature. The matching font/frame measurements come from the AppKit regression,
 not a claim that a cropped screenshot shows the complete physical display.
 The canonical installation uses the existing `scripts/install.sh` workflow to
 retain rollback data and keep development/older copies out of Finder candidates.
-See [machine-readable evidence](window-presentation-evidence.json). Multiple physical displays, display disconnection and fullscreen/maximized
+See [machine-readable evidence](distribution.md). Multiple physical displays, display disconnection and fullscreen/maximized
 transitions are not claimed as tested by a single-display normal-window check.
 This is an affected incremental Release/Ninja build; the earlier empty build and
 format matrix remain documented separately.

@@ -34,5 +34,5 @@ complete Windows parity.
 - The File Manager application target builds successfully in the existing
   local build directory. This increment is not a new clean-build/release gate.
 
-[Executed output](extraction-session-test.log). The normal packaged application
+[Executed output](distribution.md). The normal packaged application
 remains at the previous verified checkpoint until the next application package.

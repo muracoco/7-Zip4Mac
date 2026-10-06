@@ -68,7 +68,7 @@ ad-hoc signature. Its bundled helper lists Japanese/implicit-folder metadata.
 An isolated LaunchServices instance survives three seconds and lsof verifies
 the bundled patched Cocoa plugin. Physical desktop clicks remain unverified.
 
-[Final execution logs](native-agent-properties-test.log).
+[Final execution logs](distribution.md).
 The helper install now atomically replaces executable inodes, avoiding macOS
 retaining an old signature cache after overwriting an executed Mach-O.
 

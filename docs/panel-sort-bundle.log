@@ -1,7 +1,0 @@
-/DEPS/build-comments-20261004/7-Zip Mac.app: replacing existing signature
-Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
-/DEPS/build-comments-20261004/7-Zip Mac.app
-Bundled corresponding source matches 17 changed implementation/import/test files exactly
-Signed bundled 7zz-progress __TEXT/__text matches freshly built helper
-Isolated Cocoa app startup: alive after 3 seconds; stdout/stderr 0/0 bytes
-Owned startup process stopped; real user app/settings untouched

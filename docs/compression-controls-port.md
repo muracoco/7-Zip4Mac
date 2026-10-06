@@ -67,7 +67,7 @@ nearest choices, method matching, history, toolbar entry and Japanese solid mode
 Three affected existing integration functions additionally pass (**5 checks**
 including setup/cleanup): additional formats/links, hash commands and Open With
 archive operations. The total is **48**, not forty-eight physical clicks.
-See [executed log](compression-controls-test.log).
+See [executed log](distribution.md).
 
 ## Remaining differences
 

@@ -2,9 +2,11 @@
 
 [English](README.md)
 
+[上流の差分更新](docs/upstream-updates.md)では共通lockと独立した比較・再生成を使います。[配布内容](docs/distribution.md)から過去ログと開発者テストの同梱を除き、通常ビルドはアプリだけにしました。[監査修正](docs/license-audit-follow-up.md)では改変者・日付とhelperの説明を修正しています。
+
 Windows版「7-Zip File Manager」の操作感をQt 6 Widgetsで再現する、非公式のmacOSアプリです。C++ / Apple Clang / CMake + Ninjaを使用し、圧縮エンジンは公式7-Zip 26.03のソースからビルドした `7zz` を同梱します。Xcode.app / `.xcodeproj` は不要です。
 
-[0.2.4の修正版](docs/idle-refresh-fix.md)を作成しました。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書を確認し、[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しました。
+現在のローカル版は0.2.5です（ライセンス表記・差分更新・配布内容の整備）。[0.2.4のちらつき修正](docs/idle-refresh-fix.md)も含みます。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書を確認し、[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しました。
 
 0.2.4では自動更新通知だけで一覧を作り直し、ちらつく問題を修正しました。バックグラウンドで内容を比較し、変更がない場合は一覧・選択・アイコンを維持します。実際の作成・変更・改名・削除の自動反映は確認済みです。
 
@@ -33,8 +35,10 @@ Windows版「7-Zip File Manager」の操作感をQt 6 Widgetsで再現する、�
 ```bash
 ./scripts/bootstrap.sh
 ./scripts/build.sh
-./scripts/test.sh
 ./scripts/run.sh
+# Optional developer regression suite / 開発者用テスト（任意）
+PORT_BUILD_TESTS=ON ./scripts/build.sh
+./scripts/test.sh
 ```
 
 ビルド後のインストール・更新:
@@ -70,7 +74,7 @@ open "$HOME/.cache/7zip-mac-port/build/7-Zip Mac.app"
 空の別ディレクトリからのクリーンビルド:
 
 ```bash
-./scripts/build.sh "$HOME/.cache/7zip-mac-port/build-clean"
+PORT_BUILD_TESTS=ON ./scripts/build.sh "$HOME/.cache/7zip-mac-port/build-clean"
 ./scripts/test.sh "$HOME/.cache/7zip-mac-port/build-clean"
 ```
 
@@ -80,7 +84,8 @@ CMakeを直接使用する場合は、公式ソースからビルドした `7zz`
 cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_PREFIX_PATH="/path/to/Qt/6.11.3/macos" \
   -DSEVENZIP_BINARY="/path/to/source-built/7zz" \
-  -DPORT_COCOA_PLUGIN_DIR="/path/to/patched-cocoa/build/plugins/platforms"
+  -DPORT_COCOA_PLUGIN_DIR="/path/to/patched-cocoa/build/plugins/platforms" \
+  -DBUILD_TESTING=ON
 cmake --build build
 ./scripts/package.sh build
 ./scripts/test.sh build

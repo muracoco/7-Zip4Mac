@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: LGPL-3.0-or-later
 """Retain official CChildProcesses::Update behind macOS process adapters."""
+from upstream_support import VERSION, source_hash, aggregate_hash, artifact_hash, output_root, write_generated
 import argparse
 import hashlib
 from pathlib import Path
@@ -9,7 +10,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('source', type=Path)
 args = parser.parse_args()
 path = args.source / 'CPP/7zip/UI/FileManager/PanelItemOpen.cpp'
-digest = 'e21c806419c66314bed2def3e4e91562991d323bf4530bd403e364b0104251a2'
+digest = source_hash('CPP/7zip/UI/FileManager/PanelItemOpen.cpp')
 raw = path.read_bytes()
 if hashlib.sha256(raw).hexdigest() != digest:
     parser.error('Unsupported official PanelItemOpen.cpp')
@@ -23,9 +24,9 @@ while depth:
 body = text[start:cursor]
 header = ('// PanelItemOpen.cpp\n'
           '// Copyright (C) 1999-2026 Igor Pavlov. GNU LGPL-2.1-or-later.\n'
-          '// Generated from official 7-Zip 26.03 by scripts/import-process-discovery.py.\n'
+          f'// Generated from official 7-Zip {VERSION} by scripts/import-process-discovery.py.\n'
           '// Original Update body retained; macOS supplies snapshot/handle adapters.\n'
           '// PanelItemOpen.cpp SHA-256: ' + digest + '\n')
-output = Path(__file__).resolve().parents[1] / 'src/upstream/ProcessDiscovery.inc'
-output.write_text(header + body + '\n')
+output = output_root() / 'src/upstream/ProcessDiscovery.inc'
+write_generated(output, header + body + '\n')
 print(output)

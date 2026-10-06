@@ -95,7 +95,7 @@ Blocked kernel I/O must return before a cooperative disk operation can pause.
 Totals include setup/cleanup. Targeted CTest **2/2** and incremental Release build
 pass. The SMB test first found unsupported rename flags, then stale metadata
 snapshots around handle closing; the results above are after both fixes.
-[Executed logs](filesystem-transfer-test.log).
+[Executed logs](distribution.md).
 
 ```bash
 PORT_TEST_SECOND_VOLUME=/writable/folder/on/another/volume \

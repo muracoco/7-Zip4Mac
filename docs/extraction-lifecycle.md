@@ -46,7 +46,7 @@ Recovery diagnostics now accumulate instead of dropping previous locations;
 the fixture counts begin and finish separately. Only failed/affected paths and
 the added shutdown checks were rerun, followed by selected integration checks.
 Unrelated green suites and the complete format matrix were not repeated.
-[Captured initial run and targeted reruns](extraction-lifecycle-test.log).
+[Captured initial run and targeted reruns](distribution.md).
 
 ```bash
 source scripts/env.sh
@@ -71,4 +71,4 @@ ad-hoc signature verification. Bundled native executable text and corresponding
 source match the current implementation. A three-second isolated application
 startup succeeds with development Qt/DYLD variables removed; stdout/stderr are
 empty. This is startup verification, not physical Finder/menu interaction.
-[Packaging and startup evidence](extraction-lifecycle-bundle.log).
+[Packaging and startup evidence](distribution.md).

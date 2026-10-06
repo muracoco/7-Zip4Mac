@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: LGPL-3.0-or-later
 """Import arithmetic bodies from the pinned official Windows GUI, without Win32."""
+from upstream_support import VERSION, source_hash, aggregate_hash, artifact_hash, output_root, write_generated
 import argparse
 import hashlib
 import pathlib
 import re
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("source", type=pathlib.Path, help="Official 7-Zip 26.03 source directory")
+parser.add_argument("source", type=pathlib.Path, help=f"Official 7-Zip {VERSION} source directory")
 args = parser.parse_args()
 source = args.source / "CPP/7zip/UI/GUI/CompressDialog.cpp"
 raw = source.read_bytes()
-if hashlib.sha256(raw).hexdigest() != "53d673d78e7936880481be1017c37ca95a1e4b64419d74d32035ce703d06c7d4":
-    parser.error("CompressDialog.cpp is not the pinned official 26.03 source")
+if hashlib.sha256(raw).hexdigest() != source_hash('CPP/7zip/UI/GUI/CompressDialog.cpp'):
+    parser.error(f"CompressDialog.cpp is not the pinned official {VERSION} source")
 text = raw.decode("utf-8").replace("\r\n", "\n")
 
 def function(signature):
@@ -35,23 +36,23 @@ maximum = "UInt32 CCompressDialog::MaximumThreads(UInt32 numHardwareThreads)\n{\
 solid = function("void CCompressDialog::SetSolidBlockSize2()")
 solid = solid[solid.index("  const UInt64 cs = Get_Lzma2_ChunkSize(dict);"):solid.index("  _auto_Solid = blockSize;")]
 solid = "UInt64 CCompressDialog::AutoSolid(UInt64 dict)\n{\n  const bool is7z = format == \"7z\";\n" + solid + "  return blockSize;\n}"
-output = pathlib.Path(__file__).resolve().parent.parent / "src/upstream/CompressMath.inc"
+output = output_root() / "src/upstream/CompressMath.inc"
 output.parent.mkdir(parents=True, exist_ok=True)
-header = """// CompressDialog.cpp
+header = f"""// CompressDialog.cpp
 // Copyright (C) 1999-2026 Igor Pavlov. GNU LGPL-2.1-or-later.
-// Generated from official 7-Zip 26.03 by scripts/import-compression-math.py.
+// Generated from official 7-Zip {VERSION} by scripts/import-compression-math.py.
 // Original arithmetic bodies retained. Thread/solid bodies omit Win32 combo
 // plumbing; signatures return results through the adapter in CompressionMath.cpp.
 // Original source SHA-256: """ + hashlib.sha256(raw).hexdigest() + "\n\n"
-output.write_text(header + "\n\n".join([chunk, memory, threads, maximum, solid]) + "\n", encoding="utf-8")
+write_generated(output, header + "\n\n".join([chunk, memory, threads, maximum, solid]) + "\n", encoding="utf-8")
 print(output)
 
 # Retain the official format/method tables and numeric combo builders. Registry
 # lookup and Win32 geometry are boundaries: the adapter supplies saved values.
 tables = text[text.index("enum EMethodID"):text.index("static bool IsMethodSupportedBySfx")]
 resources = (source.parent / "CompressDialogRes.h").read_bytes()
-if hashlib.sha256(resources).hexdigest() != "a100dd6a66b7b225c34d4dc94cb16f65e4770a88d0aee3774f2a800daba70c81":
-    parser.error("CompressDialogRes.h is not the pinned official 26.03 source")
+if hashlib.sha256(resources).hexdigest() != source_hash('CPP/7zip/UI/GUI/CompressDialogRes.h'):
+    parser.error(f"CompressDialogRes.h is not the pinned official {VERSION} source")
 ids = dict(re.findall(r"^#define\s+(\w+)\s+(\d+)\s*$", resources.decode(), re.M))
 levels = text[text.index("static const UInt32 g_Levels[]"):text.index("enum EMethodID")]
 levels = re.sub(r"IDS_METHOD_\w+", lambda match: ids[match[0]], levels)
@@ -63,8 +64,8 @@ order = function("void CCompressDialog::SetOrder2()")
 order = order[order.index("  const int methodID = GetMethodID();"):]
 order = "void CCompressDialog::SetOrder2(UInt32 defaultOrder)\n{\n  m_Order.ResetContent();\n  _auto_Order = 1;\n" + order
 output = output.with_name("CompressControls.inc")
-output.write_text(header + "// Numeric combo bodies omit registry lookup and Win32 geometry; saved values are arguments.\n\n" + dictionary + "\n\n" + order + "\n", encoding="utf-8")
+write_generated(output, header + "// Numeric combo bodies omit registry lookup and Win32 geometry; saved values are arguments.\n\n" + dictionary + "\n\n" + order + "\n", encoding="utf-8")
 print(output)
 output = output.with_name("CompressTables.inc")
-output.write_text(header + tables, encoding="utf-8")
+write_generated(output, header + tables, encoding="utf-8")
 print(output)

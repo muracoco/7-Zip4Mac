@@ -11,17 +11,34 @@ from pathlib import Path, PurePosixPath
 import subprocess
 import tarfile
 import tempfile
+from source_privacy import checked
 
-DIRECTORIES = {'src', 'scripts', 'resources', 'tests', 'licenses', 'docs', 'qt-cocoa'}
+DIRECTORIES = {'src', 'scripts', 'resources', 'tests', 'licenses', 'docs', 'qt-cocoa', 'upstream'}
 FILES = {'CMakeLists.txt', 'README.md', 'README.ja.md', 'LICENSE', '.gitignore', '.gitattributes'}
 MANIFEST = 'SOURCE-MANIFEST.json'
+BUILD_DOCS = {'windows-parity.md', 'upstream-updates.md', 'distribution.md',
+              'license-audit-follow-up.md', 'maintenance-verification.md'}
 
 
 def permitted(name):
     path = PurePosixPath(name)
     return (not path.is_absolute() and '..' not in path.parts
             and (name in FILES or len(path.parts) > 1 and path.parts[0] in DIRECTORIES)
+            and not (path.parts[0] == 'docs' and path.suffix in {'.log', '.json'})
             and '__pycache__' not in path.parts and not name.endswith('.pyc'))
+
+
+def build_source(name):
+    """Corresponding source for the app, with developer-only fixtures excluded."""
+    path = PurePosixPath(name)
+    if path.parts[0] == 'tests':
+        return False
+    if path.parts[0] == 'docs' and path.name not in BUILD_DOCS:
+        return False
+    if path.parts[0] == 'scripts' and (path.name.startswith(('test-', 'test.'))
+            or path.name in {'verify-release.sh', 'prepare-publication.py'}):
+        return False
+    return True
 
 
 def sources(root):
@@ -48,8 +65,9 @@ def sources(root):
     return entries
 
 
-def export(root, destination):
-    entries = sources(root)
+def export(root, destination, developer=False):
+    entries = {name: mode for name, mode in sources(root).items()
+               if developer or build_source(name)}
     if not FILES.issubset(entries):
         raise SystemExit('Source inventory lacks required build/license files')
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -59,12 +77,12 @@ def export(root, destination):
             temporary = Path(stream.name)
             with gzip.GzipFile(fileobj=stream, mode='wb', filename='', mtime=0) as compressed:
                 with tarfile.open(fileobj=compressed, mode='w', format=tarfile.PAX_FORMAT) as archive:
-                    manifest = {'schema': 1, 'files': []}
+                    manifest = {'schema': 1, 'profile': 'developer' if developer else 'build', 'files': []}
                     for name, mode in sorted(entries.items()):
                         source = root / name
                         if source.is_symlink() or not source.is_file():
                             raise SystemExit('Missing or non-regular tracked source: ' + name)
-                        data = source.read_bytes()
+                        data = checked(root, name, source.read_bytes())
                         info = tarfile.TarInfo(name)
                         info.mode = mode
                         info.size = len(data)
@@ -99,5 +117,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('root', type=Path)
     parser.add_argument('destination', type=Path)
+    parser.add_argument('--developer', action='store_true', help='Include optional tests and developer tools')
     args = parser.parse_args()
-    export(args.root.resolve(), args.destination.resolve())
+    export(args.root.resolve(), args.destination.resolve(), args.developer)

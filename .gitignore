@@ -9,3 +9,5 @@ __pycache__/
 7zip-cross-volume-test-*/
 SOURCE-MANIFEST.json
 PUBLICATION-REVIEW.json
+docs/*.log
+docs/*.json

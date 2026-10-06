@@ -60,7 +60,7 @@ and original modifier precedence. Previously successful suites are rerun only
 because this batch changes their shared input/creation/address boundary. Subsequent
 repairs repeat only failed or affected selections.
 
-The [first group](address-workflow-initial.log) ran after the entire batch.
+The [first group](distribution.md) ran after the entire batch.
 Creation, nested popup navigation and ordinary dispatch passed. Two assertions
 required fixture/contract corrections: Qt logical focus belongs to the editable
 combo rather than its line-edit child; the second-panel icon-mode fixture had
@@ -68,17 +68,17 @@ not set its independently saved view mode. The source adapters were not changed
 to satisfy those incorrect assertions. The explicit-address scan assertion now
 also verifies that the typed draft survives completion.
 
-The [affected repair](address-workflow-repair.log) passed both input suites but
+The [affected repair](distribution.md) passed both input suites but
 exposed memory corruption in the listing suite during archive-window destruction.
 A selected raw-name Rename run passed, so passing reruns alone were not accepted
 as a diagnosis. A separate empty AddressSanitizer build reproduced a precise
 heap-use-after-free: QWidget's base destructor hid the new combo after the
 MainWindow archive strings were destroyed, and hidePopup invoked its captured
-location callback. [Diagnostic log](address-workflow-asan-initial.log).
+location callback. [Diagnostic log](distribution.md).
 
 MainWindow destruction now clears that callback, removes its application event
 filter and disconnects application/child callbacks before destroying state. The
-[same entire listing suite under ASan](address-workflow-asan-repair.log) has
+[same entire listing suite under ASan](distribution.md) has
 **11 passing checks with no ASan diagnostic**. A final normal affected group is
 recorded separately, because the lifetime boundary is shared by those windows.
 Setup/cleanup and successful reruns are not added twice. No source behavior is
@@ -88,7 +88,7 @@ marked tested merely because its implementation exists.
 ## Latest executed results
 
 On 2026-10-06, macOS 26.6.2 / Apple M3 arm64 / Qt 6.11.3 / official 7-Zip
-26.03, the [final affected group](address-workflow-group.log) passed all seven
+26.03, the [final affected group](distribution.md) passed all seven
 suites: **139 distinct checks, zero failures and zero skips**. Setup/cleanup are
 counted once per suite; ASan repeats are supporting diagnostics, not extra cases.
 
@@ -115,13 +115,13 @@ in this address batch. Physical Finder/AppKit/Fn/Option input remains unverified
 
 The local standalone app is
 `/DEPS/build-comments-20261004/7-Zip Mac.app`.
-[Packaging evidence](address-workflow-bundle.log) checks 15 Mach-O files for
+[Packaging evidence](distribution.md) checks 15 Mach-O files for
 system/@rpath-only dependencies and verifies the ad-hoc signature. The actual
 framework/plugin set is QtBase (including DBus, PrintSupport, native style and
 GIF/ICO/JPEG plugins); this bundle does not contain QtSvg. Corresponding QtBase,
 official 7-Zip and Port sources plus licenses/patches are included.
 
-The [owned startup check](address-workflow-startup.log) starts the actual bundled
+The [owned startup check](distribution.md) starts the actual bundled
 executable without Qt/DYLD/test plugin environment overrides. It stays alive for
 three seconds with zero stdout/stderr, creates one private INI profile and leaves
 existing native user preferences byte-identical. An invalid explicit profile

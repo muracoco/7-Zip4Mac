@@ -37,7 +37,7 @@ exit remains an explicit port behavior. Multi-item Open was subsequently importe
 
 The application and editor test targets build on the target Mac. Final
 `editor_writeback` results: **36 passed, 0 failed, 0 skipped**, including
-setup/cleanup. See [the execution log](external-process-test.log).
+setup/cleanup. See [the execution log](distribution.md).
 
 A disposable executable starts a server before the observed launcher. It
 communicates the Japanese/space-containing filename through an owned temporary

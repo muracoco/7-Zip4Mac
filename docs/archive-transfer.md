@@ -140,7 +140,7 @@ ctest --test-dir <build> -V -R '^(archive_transfer|native_progress)$'
 ```
 
 `./scripts/test.sh --no-focus` also includes the new suite.
-[Actual logs](archive-transfer-test.log). Final clean build/full regression and
+[Actual logs](distribution.md). Final clean build/full regression and
 all-format rerun remain scheduled after the remaining functional batches.
 
 The packaged app passes dependency/signature verification for **15 Mach-O**

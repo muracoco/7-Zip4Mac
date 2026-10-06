@@ -99,12 +99,12 @@ the original resize body is unchanged. A source review additionally found that
 staged-file enumeration could silently collapse duplicate selected names;
 those rows now fail before updating the destination.
 
-Evidence: [first grouped run](copy-workflow-first-test.log),
-[repaired workflow run](copy-workflow-test.log),
-[initial duplicate/selection check](copy-workflow-duplicate-first-test.log),
-[final affected archive checks](copy-workflow-archive-test.log),
-[affected existing transfer checks](copy-workflow-transfer-test.log),
-[filesystem integration checks](copy-workflow-fileops-test.log).
+Evidence: [first grouped run](distribution.md),
+[repaired workflow run](distribution.md),
+[initial duplicate/selection check](distribution.md),
+[final affected archive checks](distribution.md),
+[affected existing transfer checks](distribution.md),
+[filesystem integration checks](distribution.md).
 
 Packaging/startup confirmation is recorded separately after deployment. These
 results prove implemented and automated paths, not physical Finder/Fn input or
@@ -126,8 +126,8 @@ INI profile; scripts/test-bundle-startup.py checks actual INI creation, unchange
 native preferences, and rejection of an invalid profile without fallback. The
 result of that repaired startup check is recorded below. Physical input remains
 unverified.
-[Bundle and startup evidence](copy-workflow-bundle.log),
-[source-defined error dispatch check](copy-workflow-dispatch-test.log).
+[Bundle and startup evidence](distribution.md),
+[source-defined error dispatch check](distribution.md).
 
 Source tar packaging excludes Python bytecode/cache artifacts. The deployed
 framework/plugin set is QtBase only (including image plugins); no QtSvg module
@@ -141,4 +141,4 @@ user preferences were byte-for-byte unchanged. An invalid explicit profile
 returned exit code 2 instead of falling back to native settings. Both owned
 processes were checked; no physical input confirmation is implied. Run
 `python3 scripts/test-bundle-startup.py /absolute/path/to/7-Zip\ Mac.app` to
-repeat this check. [Startup repair evidence](copy-workflow-startup-isolated.log).
+repeat this check. [Startup repair evidence](distribution.md).

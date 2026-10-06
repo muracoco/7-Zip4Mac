@@ -53,8 +53,8 @@ Link's retained filename triggered a Qt item-not-found dialog and timeout.
 Those are recorded test-driver/execution failures, not hidden application
 successes. The final active-panel defect was repaired in application code.
 
-[Candidate report summary](release-candidate-tests.log) and
-[original-log hashes/case IDs](release-candidate-evidence.json) preserve these
+[Candidate report summary](distribution.md) and
+[original-log hashes/case IDs](distribution.md) preserve these
 results. Coverage is a union of the initial run and affected repairs, **not** a
 claim that all 35 suites passed in one uninterrupted run. The engine and
 registered format matrix did not change during the GUI repair and are not run
@@ -154,8 +154,8 @@ The combined case record contains 1,180 distinct passing Qt case IDs, excluding
 setup/cleanup and duplicate reruns. This is a union of recorded runs, not one
 uninterrupted process. Non-Qt Cocoa ownership checks and bundle checks are
 separate. Initial failures, timeouts and later passing results are retained in
-[release-tests.log](release-tests.log); case/report hashes are in
-[release-evidence.json](release-evidence.json). Published log copies replace
+[release-tests.log](distribution.md); case/report hashes are in
+[release-evidence.json](distribution.md). Published log copies replace
 machine-specific path prefixes; original logs are retained in the local cache.
 
 ## Findings and repairs

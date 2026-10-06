@@ -21,7 +21,7 @@ Qt adapters supply Unicode strings, widgets, the GUI-thread monotonic clock and 
 
 ## Validation
 
-Environment: Apple Silicon macOS 26.6.2, Apple Clang, Qt 6.11.3. CMake/Ninja built the full app and native callback helper. The [raw log](progress-presentation-test.log) preserves the initial grouped failures and targeted reruns.
+Environment: Apple Silicon macOS 26.6.2, Apple Clang, Qt 6.11.3. CMake/Ninja built the full app and native callback helper. The [raw log](distribution.md) preserves the initial grouped failures and targeted reruns.
 
 Latest result per selected case, counting setup/cleanup once per suite: **122 passed, 0 failed, 0 skipped**. Progress presentation: 15; dialog resources: 8; language/settings: 10; native progress: 15; compression/help: 46; selected integration: 9; affected Open As: 19. This aggregate is not a claim that all passing cases were repeated after each change, a final all-format acceptance run, or physical mouse/Finder verification.
 
@@ -41,7 +41,7 @@ ctest --test-dir "$BUILD" --verbose --output-on-failure -R '^(progress_presentat
 "$BUILD/port_tests" "$SEVENZIP_BINARY" roundtrip cancellationAndResponsiveness nestedArchivePasswordsAndCancel archivePauseResumeAndCancel openWithArchiveCommands openWithCancelAndBusyQueue
 ```
 
-Only failed cases and the affected `open_as` suite were rerun after repairs. `scripts/test.sh --no-focus` now includes `progress_presentation`. Packaging completed for `/DEPS/build-comments-20261004/7-Zip Mac.app`. The checker found 15 Mach-O files with only system/@rpath dependencies; deep/strict ad-hoc signature verification passed. With development Qt/DYLD paths removed and owned temporary preferences, the bundled executable stayed alive for three seconds with empty stdout/stderr; only that owned process was stopped. The [bundle log](progress-presentation-bundle.log) records these checks. This is not a final empty-directory clean build or a physical Finder check.
+Only failed cases and the affected `open_as` suite were rerun after repairs. `scripts/test.sh --no-focus` now includes `progress_presentation`. Packaging completed for `/DEPS/build-comments-20261004/7-Zip Mac.app`. The checker found 15 Mach-O files with only system/@rpath dependencies; deep/strict ad-hoc signature verification passed. With development Qt/DYLD paths removed and owned temporary preferences, the bundled executable stayed alive for three seconds with empty stdout/stderr; only that owned process was stopped. The [bundle log](distribution.md) records these checks. This is not a final empty-directory clean build or a physical Finder check.
 
 ## Remaining parity
 

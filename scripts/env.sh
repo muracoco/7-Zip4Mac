@@ -12,7 +12,9 @@ if [[ ! -f "$QT_PREFIX/lib/cmake/Qt6/Qt6Config.cmake" ]] && command -v brew >/de
 fi
 ARCH=$(uname -m)
 case "$ARCH" in arm64) ZARCH=arm64;; x86_64) ZARCH=x64;; *) echo "Unsupported architecture: $ARCH" >&2; exit 1;; esac
-SEVENZIP_SOURCE="$DEPS/7zip-26.03"
+UPSTREAM_ENV=$(python3 "$ROOT/scripts/upstream.py" shell)
+eval "$UPSTREAM_ENV"
+SEVENZIP_SOURCE="$DEPS/7zip-$SEVENZIP_VERSION"
 SEVENZIP_BINARY="$SEVENZIP_SOURCE/CPP/7zip/Bundles/Alone2/b/m_${ZARCH}_15/7zz"
 DEFAULT_BUILD="$ROOT/build"
 if [[ $(df "$ROOT" | tail -n 1 | awk '{print $1}') == //* ]]; then

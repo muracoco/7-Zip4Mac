@@ -33,7 +33,7 @@ item refresh, and five closes during Properties followed by successful reuse.
 The native metadata formatter's 11 checks and shared progress's 15 checks
 also pass. Neither of those passing suites was repeated after the title-only
 Widgets correction. Native helper/application/test builds pass without new
-compiler warnings. [Captured output](temporary-properties-test.log).
+compiler warnings. [Captured output](distribution.md).
 
 Exact native dimensions, grid/name-only selection painting and physical
 click/Fn checks remain in the UI inventory. Final clean build, license/privacy

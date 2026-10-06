@@ -147,8 +147,8 @@ concurrent-change/Pause-Cancel paths and existing focused GUI/ZIP-comment paths.
 The new duplicate-ID case verifies the original heap order and middle-match
 lookup. No unrelated full-format, clean-release or native-menu suite was rerun.
 Pinned source generation was checked to reproduce all three generated files
-byte-for-byte. Captured output is in [text-pairs-tests.log](text-pairs-tests.log);
-source/report provenance is in [text-pairs-evidence.json](text-pairs-evidence.json).
+byte-for-byte. Captured output is in [text-pairs-tests.log](distribution.md);
+source/report provenance is in [text-pairs-evidence.json](distribution.md).
 
 This is an affected incremental source group, not a new final empty-directory
 build or a claim of complete desktop acceptance/publication.

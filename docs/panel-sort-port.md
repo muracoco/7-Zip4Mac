@@ -83,7 +83,7 @@ counts as well as display values, so subsequent sorts use the computed values.
 ## Verification
 
 The affected build and grouped checks are recorded in
-[panel-sort-test.log](panel-sort-test.log). Tests cover natural names, 64-bit and
+[panel-sort-test.log](distribution.md). Tests cover natural names, 64-bit and
 signed values, BOOL, FILETIME, raw checksums/reparse targets, stable ties,
 parent/folder precedence, original first-sort direction, live header clicks,
 Date precision independent of display, marks/focus/view modes, Flat/2-panel
@@ -127,4 +127,4 @@ checks and remaining startup/two-panel functions), and `property_tests`
 (`destroyAfterClosedProgress`). See the full initial/final transcript above.
 
 App packaging/startup evidence is in
-[panel-sort-bundle.log](panel-sort-bundle.log).
+[panel-sort-bundle.log](distribution.md).

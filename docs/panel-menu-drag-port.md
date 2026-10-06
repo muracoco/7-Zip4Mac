@@ -67,7 +67,7 @@ from accessing partially destroyed window state.
 **116 passed, 0 failed, 0 skipped**, including setup/cleanup: new menu/drag 34,
 panel Open 27, panel selection 16, archive transfer 30, native stream context 3,
 selected-row toolbar Test 3 and shell context round trips 3.
-[Execution evidence](panel-menu-drag-test.log).
+[Execution evidence](distribution.md).
 
 Checks cover actual Qt clicks in CRC and drag menus; right-button movement;
 Details/icon Copy/Move; wide-row folder drops; same-panel refusal; default Move

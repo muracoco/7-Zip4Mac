@@ -20,7 +20,7 @@ and runtime measurement. An earlier command used a nonexistent target and
 stopped before compilation; the corrected SevenZipMac target was used.
 
 Raw measurements/build logs are retained locally, with their hashes in
-[address-font-evidence.json](address-font-evidence.json). This is native Qt
+[address-font-evidence.json](distribution.md). This is native Qt
 runtime/layout evidence, not a claim of physical desktop clicking. No permanent
 implementation-mirroring test or unrelated archive regression run was added.
 The prior 0.1.0 distribution is an earlier snapshot without this adjustment.

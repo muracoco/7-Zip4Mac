@@ -69,7 +69,7 @@ ctest --test-dir /path/to/build \
   -R '^(editor_writeback|archive_open_modes)$' --output-on-failure
 ```
 
-[Final execution output](single-stream-updates-test.log). Qt action tests do not
+[Final execution output](distribution.md). Qt action tests do not
 replace physical native-menu/Finder/Fn-key checks. Extraction staging/link gaps,
 intermittent SMB change detection, remaining portable UI/Help/list commands,
 final refactoring/clean verification and publication remain open.

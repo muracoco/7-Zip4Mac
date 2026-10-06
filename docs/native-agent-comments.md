@@ -82,7 +82,7 @@ independent Python byte checks, filesystem comments and failure/cancellation.
 Executed on the current arm64 Mac: **42 passed / 0 failed / 0 skipped**,
 including setup/cleanup (31 comment-suite cases and 11 native-selection cases).
 Native helper and Qt builds exited zero. Raw output:
-[native-agent-comments-test.log](native-agent-comments-test.log).
+[native-agent-comments-test.log](distribution.md).
 These Qt event-driven checks do not replace physical native-menu/Finder testing.
 The normal app bundle was rebuilt/packaged, passed dependency/signature checks
 and started through LaunchServices with the bundled patched Cocoa plugin and

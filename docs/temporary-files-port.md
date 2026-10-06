@@ -77,7 +77,7 @@ ctest --test-dir /path/to/build \
   --output-on-failure
 ```
 
-[Final execution logs](temporary-files-test.log). These are Qt action/event
+[Final execution logs](distribution.md). These are Qt action/event
 checks, not physical native-menu/Finder verification. Exact native dimensions,
 grid/name-only selection painting remain in the UI parity batch. Properties
 fresh rescan/full attribute formatting is now imported and verified; see

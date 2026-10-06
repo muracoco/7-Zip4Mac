@@ -1,6 +1,0 @@
-Owned bundle executable alive after 3 seconds: True
-Owned process terminated after observation; no user processes stopped.
-Development QT_/DYLD_/PORT_TEST_ overrides removed.
-stdout bytes: 0 stderr bytes: 0
-Existing matching user preference files unchanged: False
-This is process/startup verification, not physical Finder/Fn/menu verification.

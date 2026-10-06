@@ -109,8 +109,8 @@ original checkout also passed using the same stable Cocoa project cache.
 The earlier all-format and application evidence is reused because the engine
 and archive workflows did not change in this batch. No new full-format or
 full-application run is claimed. First export/build failure logs and affected
-passes are preserved in [publication-tests.log](publication-tests.log), with
-hashes in [publication-evidence.json](publication-evidence.json).
+passes are preserved in [publication-tests.log](distribution.md), with
+hashes in [publication-evidence.json](distribution.md).
 
 Repository description prepared for the eventual authorized publication:
 

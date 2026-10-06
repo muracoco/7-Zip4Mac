@@ -28,7 +28,7 @@ valid POSIX filenames.
 
 Affected suites: **87 passed, 0 failed, 0 skipped**, including setup/cleanup:
 panel Open 27, archive open modes 24 and editor write-back 36.
-[Execution log](open-profile-test.log).
+[Execution log](distribution.md).
 
 New cases cover a real unknown-extension 7z, an extensionless ZIP, ordinary-file
 fallback, permission failure, Open Inside refusal to fall back, encrypted

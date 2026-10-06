@@ -62,7 +62,7 @@ cmake --build "$DEPS/build-comments-20261004" --target SevenZipMac panel_selecti
 ctest --test-dir "$DEPS/build-comments-20261004" -R '^panel_selection$' --output-on-failure
 ```
 
-See [execution evidence](panel-selection-test.log). Physical mouse/Fn/Finder
+See [execution evidence](distribution.md). Physical mouse/Fn/Finder
 interaction remains pending while the desktop is locked. Qt event tests and
 an isolated application startup do not establish that physical verification.
 The complete format matrix and final empty-directory release build were not

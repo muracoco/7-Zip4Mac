@@ -77,7 +77,7 @@ ATTR_CMN_NAME resolves it. A first birth-time comparison used macOS console's
 clamped value; the final oracle distinguishes that OS effect from the explicit
 Windows archive CTime. Only final successful checks are counted as passing.
 
-[Execution transcript](ordered-extraction-test.log).
+[Execution transcript](distribution.md).
 
 The normal app was rebuilt and packaged. All 15 Mach-O files pass dependency and
 ad-hoc signature checks with system/relative framework dependencies. With private

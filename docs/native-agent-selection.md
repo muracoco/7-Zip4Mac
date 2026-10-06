@@ -65,7 +65,7 @@ The normal `.app` passes the 15-Mach-O dependency check and deep ad-hoc
 signature verification. A separate LaunchServices instance remains alive and
 loads the bundled patched Cocoa plugin; its bundled helper also executes.
 Only that owned test instance is stopped. Physical clicks remain unverified.
-See [execution logs](native-agent-selection-test.log).
+See [execution logs](distribution.md).
 
 ## Remaining scope
 

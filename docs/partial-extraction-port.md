@@ -55,7 +55,7 @@ On the current arm64 Mac, Qt 6.11.3 and official 7-Zip 26.03:
 
 Final affected checks: extraction metadata **252**, progress **14**, transfer
 **30**, open modes **24**: **320 passed, no failures/skips**. Counts include each
-suite's setup/cleanup. [Executed output](partial-extraction-test.log).
+suite's setup/cleanup. [Executed output](distribution.md).
 The unchanged successful-format matrix and final empty-directory release build
 were not repeated for this operation-specific checkpoint.
 

@@ -13,13 +13,14 @@ if ! command -v cmake >/dev/null || ! command -v ninja >/dev/null || [[ ! -f "$Q
     "$DEPS/tools/bin/aqt" install-qt mac desktop 6.11.3 clang_64 -O "$DEPS/Qt" --archives qtbase
   fi
 fi
-ARCHIVE="$DEPS/7z2603-src.tar.xz"
-[[ -f "$ARCHIVE" ]] || curl -fL --retry 3 https://github.com/ip7z/7zip/releases/download/26.03/7z2603-src.tar.xz -o "$ARCHIVE"
-echo '9cbde5099c6deb73691b0579063da5827522ccbbcba3f0020fd04e8c8c16c0d4  '"$ARCHIVE" | shasum -a 256 -c -
+ARCHIVE="$DEPS/$SEVENZIP_ARCHIVE"
+[[ -f "$ARCHIVE" ]] || curl -fL --retry 3 "$SEVENZIP_URL" -o "$ARCHIVE"
+echo "$SEVENZIP_SHA256  $ARCHIVE" | shasum -a 256 -c -
 if [[ ! -f "$SEVENZIP_SOURCE/CPP/7zip/MyVersion.h" ]]; then
   mkdir -p "$SEVENZIP_SOURCE"
   tar -xf "$ARCHIVE" -C "$SEVENZIP_SOURCE"
 fi
+python3 "$ROOT/scripts/upstream.py" verify "$SEVENZIP_SOURCE"
 MACOSX_DEPLOYMENT_TARGET=15.0 make -C "$SEVENZIP_SOURCE/CPP/7zip/Bundles/Alone2" -f "../../cmpl_mac_$ZARCH.mak" O="b/m_${ZARCH}_15" -j"$(sysctl -n hw.logicalcpu)"
 "$SEVENZIP_BINARY" i | sed -n '1,10p'
 "$ROOT/scripts/build-zip-comment.sh"

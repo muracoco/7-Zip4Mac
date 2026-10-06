@@ -77,7 +77,7 @@ was not performed. Native pixel comparison and physical controls remain pending
 while locked. The port retains its last selected Benchmark controls, an existing
 port preference; the Windows File Manager initializes a fresh dialog from its
 command defaults. These tests do not establish complete application parity.
-See [benchmark-help-test.log](benchmark-help-test.log).
+See [benchmark-help-test.log](distribution.md).
 
 ## Help search controls in the same checkpoint
 

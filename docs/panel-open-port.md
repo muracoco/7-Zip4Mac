@@ -56,7 +56,7 @@ gates remain pending.
 
 Final affected total: **83 passed, 0 failed, 0 skipped**, including Qt
 setup/cleanup: panel Open 7, panel selection 16, editor write-back 36 and archive
-open modes 24. [Execution evidence](panel-open-test.log).
+open modes 24. [Execution evidence](distribution.md).
 
 The new cases check original single/multiple/folder/parent/20-item policy;
 actual 7z and ZIP multi-file launch; genuine same-name ZIP entries; preserved

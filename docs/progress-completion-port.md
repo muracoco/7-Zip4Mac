@@ -17,7 +17,7 @@ Qt adapts the original modal controls and message boxes; macOS keeps its native 
 
 ## Executed validation
 
-On macOS 26.6.2 / Apple Silicon, CMake/Ninja and Apple Clang built the app and updated native helper with Qt 6.11.3. The [execution record](progress-completion-test.log) contains initial grouped failures and only failed/affected reruns. Latest result per selected case, counting setup/cleanup once per suite: **79 passed, 0 failed, 0 skipped**.
+On macOS 26.6.2 / Apple Silicon, CMake/Ninja and Apple Clang built the app and updated native helper with Qt 6.11.3. The [execution record](distribution.md) contains initial grouped failures and only failed/affected reruns. Latest result per selected case, counting setup/cleanup once per suite: **79 passed, 0 failed, 0 skipped**.
 
 | Suite | Latest selected cases |
 |---|---:|
@@ -42,6 +42,6 @@ ctest --test-dir "$BUILD" --verbose --output-on-failure -R '^(progress_completio
 "$BUILD/port_tests" "$SEVENZIP_BINARY" roundtrip cancellationAndResponsiveness nestedArchiveNavigation nestedArchivePasswordsAndCancel archivePauseResumeAndCancel openWithArchiveCommands openWithCancelAndBusyQueue archiveContentsHashes guiArchiveFolderCreation
 ```
 
-`scripts/test.sh --no-focus` includes the new completion suite. The workflow in [development-workflow.md](development-workflow.md) keeps substantial source-based implementation groups together before validation. Bundle checks are recorded separately in [progress-completion-bundle.log](progress-completion-bundle.log); final empty-directory clean build and all-format acceptance remain release work.
+`scripts/test.sh --no-focus` includes the new completion suite. The workflow in [development-workflow.md](development-workflow.md) keeps substantial source-based implementation groups together before validation. Bundle checks are recorded separately in [progress-completion-bundle.log](distribution.md); final empty-directory clean build and all-format acceptance remain release work.
 
 The latest package is `/DEPS/build-comments-20261004/7-Zip Mac.app`. The dependency checker found 15 Mach-O files with only system/@rpath dependencies. Deep/strict ad-hoc signature verification passed. Bundled corresponding Port source files match the current result implementation. With development Qt/DYLD paths removed and owned temporary preferences, the bundled executable stayed alive for three seconds with empty stdout/stderr; only that owned process was stopped. This confirms local bundle startup, not physical menu/Finder acceptance or the final clean build.

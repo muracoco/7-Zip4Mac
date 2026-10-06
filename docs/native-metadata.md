@@ -79,7 +79,7 @@ Rename Existing is handled separately because it preserves the old file.
 - The final format run has **155 checks passed**, covering all **151 genuine
   format/extension registrations** and Qt context-menu Add/Test/Extract paths.
 
-See [native-metadata-test.log](native-metadata-test.log) and
+See [native-metadata-test.log](distribution.md) and
 [test-results.md](test-results.md). Physical desktop clicks and rendering remain
 unverified while the session is locked.
 

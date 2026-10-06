@@ -10,6 +10,7 @@ from pathlib import Path, PurePosixPath
 import re
 import subprocess
 import sys
+from source_privacy import SECRET, USER_PATH, VOLUME_PATH, TEMP_PATH, normalized
 
 specification = importlib.util.spec_from_file_location('source_archive', Path(__file__).with_name('source-archive.py'))
 source_archive = importlib.util.module_from_spec(specification)
@@ -19,15 +20,6 @@ REQUIRED = {'LICENSE', 'README.md', 'README.ja.md', 'CMakeLists.txt',
             'licenses/NOTICE.md', 'licenses/License.txt', 'licenses/copying.txt',
             'licenses/unRarLicense.txt', 'licenses/Qt/LGPL-3.0-only.txt',
             'licenses/Qt/GPL-3.0-only.txt', 'licenses/Qt/THIRD-PARTY-NOTICES.txt'}
-SECRET = re.compile(
-    rb'(?<![A-Za-z0-9_])(?:gh[pousr]_[A-Za-z0-9]{36,255}|'
-    rb'github_pat_[A-Za-z0-9_]{40,255}|(?:AKIA|ASIA)[A-Z0-9]{16}|'
-    rb'AIza[0-9A-Za-z_-]{35}|sk-[A-Za-z0-9_-]{32,}|'
-    rb'xox[baprs]-[A-Za-z0-9-]{20,})(?![A-Za-z0-9_])|'
-    rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----')
-USER_PATH = re.compile(rb'/Users/(?!Shared(?:/|$)|\$|<)[^/\s\x22\x27<>()[\]`]+')
-VOLUME_PATH = re.compile(rb'/Volumes/(?!\$|<)[^/\s\x22\x27<>()[\]`]+')
-TEMP_PATH = re.compile(rb'(?:/private)?/var/folders/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+/')
 
 
 def git(root, *arguments):
@@ -86,17 +78,6 @@ def blobs(root, entries):
         raise ValueError('Source reader failed')
 
 
-def normalized(root, name, data):
-    # Diagnostics stay intact locally. Only the documentation copy is redacted;
-    # upstream resources, licenses, imported bodies and patches retain bytes.
-    if not (name.startswith('docs/') or name in {'README.md', 'README.ja.md'}):
-        return data
-    deps = Path(os.environ.get('SEVENZIP_DEPS_DIR', Path.home() / '.cache/7zip-mac-port'))
-    data = data.replace(str(root).encode(), b'/REPOSITORY')
-    data = data.replace(str(deps).encode(), b'/DEPS')
-    data = USER_PATH.sub(b'/HOME', data)
-    data = VOLUME_PATH.sub(b'/VOLUME', data)
-    return TEMP_PATH.sub(b'/TMP/', data)
 
 
 def prepare(root, destination, revision, index=False):

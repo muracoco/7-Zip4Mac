@@ -46,7 +46,7 @@ directories; they do not use an inferred file-policy mock:
 
 All new cases pass. An additional protocol check verifies exact UInt64 sizes/FILETIMEs and rejects numeric/overflow/malformed fields. Full affected suites: extraction metadata **263**, progress
 **15**: **278 passed, no failures/skips**, including setup/cleanup.
-[Executed output](native-overwrite-channel-test.log).
+[Executed output](distribution.md).
 
 ## Application integration remaining
 

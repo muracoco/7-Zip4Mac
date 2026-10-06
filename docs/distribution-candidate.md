@@ -43,7 +43,7 @@ fallback. Only owned test processes were stopped.
 The original Windows `FM.ico` and About `7zipLogo.ico` match the unmodified
 26.03 source byte for byte. The current bundle selects and contains the project's
 FM ICO-to-ICNS conversion; no replacement logo or Microsoft system artwork was
-introduced. Hashes are in [distribution-evidence.json](distribution-evidence.json).
+introduced. Hashes are in [distribution-evidence.json](distribution.md).
 
 The application/engine implementation did not change in this batch. Existing
 35-suite/affected-repair and 151-registration evidence is reused; none of those

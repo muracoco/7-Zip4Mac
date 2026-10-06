@@ -96,9 +96,9 @@ are not included in the latest result count. The complete changed CopyFrom paths
 were rerun (23 checks including repeated setup/cleanup), while unaffected
 Properties/native formatter/Overwrite successes were retained.
 
-Evidence: [first grouped run, including failures](copy-projection-first-test.log),
-[repaired and directly affected Copy paths](copy-projection-workflow-test.log),
-[affected existing transfer paths](copy-projection-transfer-test.log).
+Evidence: [first grouped run, including failures](distribution.md),
+[repaired and directly affected Copy paths](distribution.md),
+[affected existing transfer paths](distribution.md).
 No completed-feature failure remains in this group. Final functional inventory,
 refactor/release, physical input and authorized publication remain unfinished.
 
@@ -113,4 +113,4 @@ private INI file, and left matching native user preferences byte-identical.
 An invalid explicit settings profile returned exit 2 without native fallback.
 Only owned processes were terminated. This is startup/deployment confirmation,
 not physical mouse/Finder/Fn or complete Windows parity verification.
-[Actual bundle/startup output](copy-projection-bundle.log).
+[Actual bundle/startup output](distribution.md).

@@ -47,7 +47,7 @@ session against untouched console output:
 Affected checks: extraction metadata **290**, native progress **15** —
 **305 passed / 0 failed / 0 skipped**, including setup/cleanup. Native helper
 and Qt application targets build successfully.
-[Executed output](native-ordered-publication-test.log).
+[Executed output](distribution.md).
 
 These results do not prove all directory/link/cancel/I/O combinations, normal
 application activation, a new packaged-app launch or complete Windows parity.

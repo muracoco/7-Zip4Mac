@@ -201,3 +201,11 @@ scan/cancellation/error cases and existing Cocoa/Open With lifecycle checks.
 The packaged app launched on the actual desktop at `/`; two observations 68
 seconds apart retained the same 21 accessible rows. This sampled observation is
 separate from automatic model-reset measurements. [Evidence](idle-refresh-fix.md).
+
+## 0.2.5 maintenance (2026-10-06)
+
+License-audit modification/date notices and helper description are repaired.
+The shared official source lock and isolated incremental update workflow are
+implemented. Normal builds exclude developer tests; historical logs/evidence
+are kept locally instead of shipped. See [distribution](distribution.md),
+[upstream updates](upstream-updates.md) and [verification](maintenance-verification.md).

@@ -45,7 +45,7 @@ copyright controls. Upstream attribution and source copies are retained.
 
 ## Validation
 
-The grouped build/check results are recorded in [the raw log](dialog-text-help-test.log).
+The grouped build/check results are recorded in [the raw log](distribution.md).
 Environment: macOS 26.6.2 / Apple M3 arm64, Apple Clang, Qt 6.11.3.
 CMake/Ninja built the app and every configured test target. The initial grouped
 run passed five suites and exposed two dialog failures: button-box rounding and
@@ -109,7 +109,7 @@ and deep/strict ad-hoc signature verification passed. With development
 QT/DYLD/test-plugin paths removed and owned temporary preferences, the bundled
 executable remained alive for three seconds while browsing an owned Japanese/
 space-named folder; stdout/stderr were empty. Only that process was stopped.
-See [the bundle log](dialog-text-help-bundle.log). This remains a development
+See [the bundle log](distribution.md). This remains a development
 checkpoint; the final clean build and full acceptance/publication gates are
 separate. QtSvg/image-plugin corresponding-source coverage is still part of the
 final license/package audit, not a claim established by this UI batch.

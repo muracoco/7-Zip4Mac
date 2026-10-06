@@ -1,9 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 source "$(dirname "$0")/env.sh"
-WORK="$DEPS/zip-comment-26.03-$ZARCH"
+python3 "$ROOT/scripts/upstream.py" verify "$SEVENZIP_SOURCE"
+WORK="$DEPS/zip-comment-$SEVENZIP_VERSION-$ZARCH"
 mkdir -p "$WORK"
-OVERLAY="$DEPS/progress-26.03-$ZARCH/overlay"
+OVERLAY="$DEPS/progress-$SEVENZIP_VERSION-$ZARCH/overlay"
 python3 "$ROOT/scripts/import-progress.py" "$SEVENZIP_SOURCE" "$OVERLAY"
 MACOSX_DEPLOYMENT_TARGET=15.0 make -C "$SEVENZIP_SOURCE/CPP/7zip/Bundles/Alone2" -f "../../cmpl_mac_$ZARCH.mak" -f "$ROOT/scripts/zip-comment.mak" O="b/m_${ZARCH}_15" \
   COMMENT_HELPER_SOURCE="$ROOT/src/ZipCommentHelper.cpp" COMMENT_HELPER_OBJECT="$WORK/ZipCommentHelper.o" \

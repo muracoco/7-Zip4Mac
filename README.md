@@ -2,9 +2,11 @@
 
 [日本語](README.ja.md)
 
+[Incremental upstream updates](docs/upstream-updates.md) use a shared source lock and isolated diff/staging. [Distribution contents](docs/distribution.md) exclude historical logs and developer tests from the bundled build-source archive. [License audit repairs](docs/license-audit-follow-up.md) retain original notices and accurately describe the modified helper.
+
 An unofficial macOS port of the Windows **7-Zip File Manager** interface, written in C++ with Qt 6 Widgets. The official 7-Zip **26.03** source-built `7zz` is bundled as the archive engine. It uses Apple Clang, CMake and Ninja; Xcode.app and Xcode projects are unnecessary.
 
-**Status:** local 0.2.4 maintenance build for the tested Mac. The portable command/settings groups are implemented; Windows host mechanisms and remaining visual/input verification limits are documented in the [command audit](docs/final-audit.md) and [parity inventory](docs/windows-parity.md). Engine capability, implemented UI and tested format coverage are separate claims. Source repository: [muracoco/7-Zip4Mac](https://github.com/muracoco/7-Zip4Mac).
+**Status:** local 0.2.5 maintenance build for the tested Mac. The portable command/settings groups are implemented; Windows host mechanisms and remaining visual/input verification limits are documented in the [command audit](docs/final-audit.md) and [parity inventory](docs/windows-parity.md). Engine capability, implemented UI and tested format coverage are separate claims. Source repository: [muracoco/7-Zip4Mac](https://github.com/muracoco/7-Zip4Mac).
 
 The [0.2.4 automatic refresh fix](docs/idle-refresh-fix.md) keeps the displayed list, selection and icons intact when a watcher notification has no content change. Real filesystem changes still refresh automatically.
 
@@ -30,8 +32,10 @@ The [desktop follow-up](docs/desktop-follow-up.md) fixes an empty Options tab an
 ```bash
 ./scripts/bootstrap.sh
 ./scripts/build.sh
-./scripts/test.sh
 ./scripts/run.sh
+# Optional developer regression suite / 開発者用テスト（任意）
+PORT_BUILD_TESTS=ON ./scripts/build.sh
+./scripts/test.sh
 ```
 
 Install or update the app after building:
@@ -61,7 +65,7 @@ On a local checkout, output is `build/7-Zip Mac.app`. On an SMB checkout, script
 ./scripts/run.sh --open-with /absolute/path/to/file.txt
 
 # A separate, initially empty build directory:
-./scripts/build.sh "$HOME/.cache/7zip-mac-port/build-clean"
+PORT_BUILD_TESTS=ON ./scripts/build.sh "$HOME/.cache/7zip-mac-port/build-clean"
 ./scripts/test.sh "$HOME/.cache/7zip-mac-port/build-clean"
 ```
 
@@ -71,7 +75,8 @@ Direct CMake usage is also supported:
 cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_PREFIX_PATH="/path/to/Qt/6.11.3/macos" \
   -DSEVENZIP_BINARY="/path/to/source-built/7zz" \
-  -DPORT_COCOA_PLUGIN_DIR="/path/to/patched-cocoa/build/plugins/platforms"
+  -DPORT_COCOA_PLUGIN_DIR="/path/to/patched-cocoa/build/plugins/platforms" \
+  -DBUILD_TESTING=ON
 cmake --build build
 ./scripts/package.sh build
 ./scripts/test.sh build

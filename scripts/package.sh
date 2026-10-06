@@ -15,7 +15,8 @@ cp -R "$ROOT/licenses/." "$APP/Contents/Resources/Licenses/"
 cp "$SEVENZIP_SOURCE/DOC/License.txt" "$APP/Contents/Resources/Licenses/7-Zip-License.txt"
 cp "$SEVENZIP_SOURCE/DOC/copying.txt" "$APP/Contents/Resources/Licenses/7-Zip-LGPL-2.1.txt"
 cp "$SEVENZIP_SOURCE/DOC/unRarLicense.txt" "$APP/Contents/Resources/Licenses/unRarLicense.txt"
-cp "$DEPS/7z2603-src.tar.xz" "$APP/Contents/Resources/7z2603-src.tar.xz"
+echo "$SEVENZIP_SHA256  $DEPS/$SEVENZIP_ARCHIVE" | shasum -a 256 -c -
+cp "$DEPS/$SEVENZIP_ARCHIVE" "$APP/Contents/Resources/$SEVENZIP_ARCHIVE"
 QT_SOURCE_VERSION=$("$QT_PREFIX/bin/qmake" -query QT_VERSION)
 QT_SOURCE_ARCHIVE="$DEPS/qtbase-$QT_SOURCE_VERSION-src.tar.gz"
 if [[ ! -f "$QT_SOURCE_ARCHIVE" ]]; then
@@ -24,6 +25,7 @@ if [[ ! -f "$QT_SOURCE_ARCHIVE" ]]; then
 fi
 cp "$QT_SOURCE_ARCHIVE" "$APP/Contents/Resources/"
 python3 "$ROOT/scripts/source-archive.py" "$ROOT" "$APP/Contents/Resources/7zip-mac-port-src.tar.gz"
+python3 "$ROOT/scripts/check-distribution.py" "$APP"
 # Repackaging a formerly installed bundle must not create a second opener.
 python3 "$ROOT/scripts/finder-registration.py" configure "$APP" --rank None
 chmod -R u+rwX,go+rX "$APP"

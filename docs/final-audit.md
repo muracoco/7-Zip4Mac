@@ -120,7 +120,7 @@ Open With経路、メニュー表示設定、公式engineのCRC11方式、Hash�
 
 実機Finder確認で発見した「圧縮後の一覧更新がProgressの結果とCloseを初期状態へ戻す」問題は、翻訳の適用を同じウィンドウ内に限定して修正した。メニュー選択中に親File Managerから別操作が始まらないよう、非同期で表示するmodal dialogとした。
 
-クリーンビルド先でQtTest36件とCocoa回帰検証3/3、7z/ZIP往復・32MiB・日本語・暗号化・失敗・Cancel・checksumsを検証した。実Finder経由の作成・展開・内部一覧は別に確認した。[実行記録](test-results.md)、[生ログ](open-with-test.log)。
+クリーンビルド先でQtTest36件とCocoa回帰検証3/3、7z/ZIP往復・32MiB・日本語・暗号化・失敗・Cancel・checksumsを検証した。実Finder経由の作成・展開・内部一覧は別に確認した。[実行記録](test-results.md)、[生ログ](distribution.md)。
 
 未確認: Windows実機の全UI比較、Intel/macOS15実機、Finderへのarchive drag-out、全function-key設定、物理リムーバブル媒体、disk-full故障注入、全handler/全設定組合せ。自動GUI検証を人間による全項目のクリック検証として報告しない。
 

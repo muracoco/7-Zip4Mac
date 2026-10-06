@@ -78,7 +78,7 @@ helper and Qt Release build succeed. The expanded selection suite passes
 Affected regressions: Open modes/prefix/nested 24, Properties 19, folder updates
 14 and native tree 4. These **93 checks** include setup/cleanup. The final
 tree/GUI rerun updates the earlier temporary disabled-action expectation.
-See [execution log](native-agent-item-updates-test.log).
+See [execution log](distribution.md).
 
 ```bash
 ./scripts/build-progress.sh

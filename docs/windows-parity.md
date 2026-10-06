@@ -10,7 +10,7 @@ Historical checkpoint remaining-work lists are superseded by the later connected
 | メニューの大分類・順序 | Implemented | File → Edit → View → Favorites → Tools → Help |
 | Fileメニュー | Implemented | 有効な静的コマンドと元CFileMenu条件・optional VerCtrlを接続。全65コマンドの現行分類はfinal-audit.md。追加の安全制限はcurrent-status.md。 |
 | Editメニュー | Implemented | Select All / Deselect All / Invert / wildcard Select / Deselect、Select by Type / Deselect by Type。Ctrl+Cは名前のテキストコピー。上流のCtrl+X／Ctrl+Vは空実装で、resourceのclipboardメニューもコメントアウト |
-| Viewメニュー | Implemented | 4表示方式、Name / Type / Date / Size / Unsorted、Flat、2 Panels、日時精度・UTC、Toolbar、Root / Up / history / Refresh / Auto Refresh。保存・再読込を検証。Timeメニューの動的sample・元formatter・分初期値は移植済み（version-menu-time-port.md） |
+| Viewメニュー | Implemented | 4表示方式、Name / Type / Date / Size / Unsorted、Flat、2 Panels、日時精度・UTC、Toolbar、Root / Up / history / Refresh / Auto Refresh。保存・再読込を検証。0.2.4で同じ内容の自動更新はmodelを保持（idle-refresh-fix.md）。Timeメニューの動的sample・元formatter・分初期値は移植済み（version-menu-time-port.md） |
 | Favorites | Implemented | 動的path・0–9移動／保存・元modifier dispatchを接続。物理Alt／RightCtrl確認は別に未確認。 |
 | Tools | Implemented | Options、元Benchmark callbackとDelete Temporary Files browser／Properties／Helpを接続。benchmark-port.md、dialog-text-help-port.md。 |
 | Options構成・保存 | Implemented | 元portable設定、6ページ、OK／Apply／Cancel・保存と各操作への接続を実装。settings-coverage.md。 |

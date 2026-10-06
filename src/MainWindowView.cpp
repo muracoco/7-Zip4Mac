@@ -99,7 +99,7 @@ void MainWindow::setupViews(QVBoxLayout *layout, QHBoxLayout *pathRow) {
     watchDebounce.setSingleShot(true); watchDebounce.setInterval(250); connect(&watchDebounce, &QTimer::timeout, this, [this] {
         if (!autoRefresh || closingRequested) return;
         if (operationBusy() || QApplication::activeModalWidget() || QApplication::activePopupWidget()) { watchDebounce.start(); return; }
-        refresh();
+        refresh(true);
     });
     connect(&watcher, &QFileSystemWatcher::directoryChanged, &watchDebounce, qOverload<>(&QTimer::start)); connect(&watcher, &QFileSystemWatcher::fileChanged, &watchDebounce, qOverload<>(&QTimer::start));
     if (!embedded) connect(qApp, &QApplication::focusChanged, this, [this](QWidget *, QWidget *now) { if (!now) return; if (secondPanel && (now == secondPanel || secondPanel->isAncestorOf(now))) activePanel = 1; else if (now == pathBox || now == files || now == icons || files->isAncestorOf(now) || icons->isAncestorOf(now)) activePanel = 0; updateState(); });
@@ -164,7 +164,14 @@ void MainWindow::finishBrowse() {
     // copied metadata, then the GUI installs the completed order once.
     for (int n = 0; n < files->columnCount(); ++n) files->headerItem()->setData(n, Qt::UserRole + 100, files->headerItem()->text(n));
     icons->setProperty("archiveView", !archivePath.isEmpty()); loadingView = false; hasBrowse = true; actions["flat"]->setChecked(flatView);
-    auto old = watcher.files() + watcher.directories(); if (!old.isEmpty()) watcher.removePaths(old); watcher.addPath(archivePath.isEmpty() ? fsPath : archivePath);
+    const auto watched = watcher.files() + watcher.directories();
+    const auto location = archivePath.isEmpty() ? fsPath : archivePath;
+    // Re-arming the same FSEvents path on every refresh can replay notifications.
+    // Keep a stable watch; re-add only when navigation/replacement removed it.
+    if (watched != QStringList{location}) {
+        if (!watched.isEmpty()) watcher.removePaths(watched);
+        watcher.addPath(location);
+    }
     if (archivePath.isEmpty()) { s.setValue(embedded ? "View/Panel2Path" : "View/LastPath", fsPath); auto history = s.value("View/History").toStringList(); history.removeAll(fsPath); history.prepend(fsPath); while (history.size() > 32) history.removeLast(); s.setValue("View/History", history); }
     UiLanguage::apply(this); updateState();
     const QList<quint32> sortProperties{OfficialSort::kpidName,OfficialSort::kpidExtension,OfficialSort::kpidMTime,OfficialSort::kpidSize};

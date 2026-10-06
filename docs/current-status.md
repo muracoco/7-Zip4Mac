@@ -188,3 +188,16 @@ build is claimed for this presentation-only change. [Evidence and limits](window
 Finder Sync can technically add a monitored-folder context submenu, but its
 sync-oriented API, signing/loading and user enablement require a separate
 extension. It remains Not implemented. [Feasibility](finder-integration.md).
+
+
+## 0.2.4 automatic-refresh follow-up (2026-10-06)
+
+Unchanged watcher notifications now compare background metadata without replacing
+the list, native icons or busy presentation. Real changes still commit; watcher
+registration stays stable across same-path refreshes. The focused 0.2.3 baseline
+failed with one unnecessary model reset; the repaired six-suite batch passed,
+including actual create/overwrite/rename/delete notifications, 30,000-entry
+scan/cancellation/error cases and existing Cocoa/Open With lifecycle checks.
+The packaged app launched on the actual desktop at `/`; two observations 68
+seconds apart retained the same 21 accessible rows. This sampled observation is
+separate from automatic model-reset measurements. [Evidence](idle-refresh-fix.md).

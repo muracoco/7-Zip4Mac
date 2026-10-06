@@ -174,7 +174,8 @@ private:
     bool canUpdateArchive() const;
     void selectArchiveItem(const QString &entry, qint64 archiveIndex = -1);
     void up();
-    void refresh();
+    void refresh(bool automatic = false);
+    void refreshFilesystemInBackground();
     void add(QStringList sources = {}, QString destination = {});
     void copyIntoArchive(QStringList sources, bool move = false);
     void extract();
@@ -284,7 +285,8 @@ private:
         std::function<void()> continuation;
         ~FilesystemRead() { qDeleteAll(rows); }
     };
-    std::unique_ptr<FilesystemRead> filesystemRead;
+    std::unique_ptr<FilesystemRead> filesystemRead, backgroundFilesystemRead;
+    std::optional<DirectorySnapshot> filesystemSnapshot;
     QTimer filesystemChunks;
     FileList *files = nullptr;
     IconFileList *icons = nullptr;

@@ -10,9 +10,25 @@
 #include <QMessageBox>
 #include <QSettings>
 #include <QSignalBlocker>
+#include <QScopeGuard>
+#include <QStackedWidget>
 
 namespace {
 constexpr int PathRole = Qt::UserRole, DirRole = Qt::UserRole + 1, ParentRole = Qt::UserRole + 2, SizeRole = Qt::UserRole + 3;
+bool sameContents(const DirectorySnapshot &a, const DirectorySnapshot &b) {
+    if (a.path != b.path || a.flat != b.flat || a.entries.size() != b.entries.size()) return false;
+    for (qsizetype n = 0; n < a.entries.size(); ++n) {
+        const auto &x = a.entries[n], &y = b.entries[n];
+        if (x.path != y.path || x.name != y.name || x.prefix != y.prefix || x.suffix != y.suffix ||
+            x.comment != y.comment || x.directory != y.directory || x.link != y.link ||
+            x.size != y.size || x.packed != y.packed || x.inode != y.inode || x.links != y.links || x.mode != y.mode ||
+            x.modified != y.modified || x.created != y.created || x.accessed != y.accessed || x.changed != y.changed ||
+            x.modifiedFraction != y.modifiedFraction || x.createdFraction != y.createdFraction ||
+            x.accessedFraction != y.accessedFraction || x.changedFraction != y.changedFraction) return false;
+    }
+    return true;
+}
+
 }
 
 QString MainWindow::requestedDirectory() const { return filesystemRead ? filesystemRead->path : fsPath; }
@@ -20,6 +36,20 @@ void MainWindow::setupFilesystem() {
     filesystemChunks.setSingleShot(true);
     connect(&filesystemChunks, &QTimer::timeout, this, &MainWindow::prepareFilesystemRows);
     connect(&directoryScanner, &DirectoryScanner::finished, this, [this](DirectorySnapshot snapshot) {
+        if (backgroundFilesystemRead && snapshot.generation == backgroundFilesystemRead->generation) {
+            auto probe = std::move(backgroundFilesystemRead);
+            if (snapshot.cancelled || !autoRefresh || closingRequested || !archivePath.isEmpty() ||
+                snapshot.path != fsPath || snapshot.flat != flatView) return;
+            if (operationBusy() || QApplication::activeModalWidget() || QApplication::activePopupWidget() ||
+                files->property("renameEditing").toBool()) { watchDebounce.start(); return; }
+            if (snapshot.error.isEmpty() && filesystemSnapshot && sameContents(*filesystemSnapshot, snapshot)) return;
+            // Capture the current selection, not the selection from before the
+            // worker scan: the unchanged view remained interactive meanwhile.
+            const auto selection = saveBrowseSelection();
+            probe->continuation = [this, selection] { restoreBrowseSelection(selection); };
+            filesystemRead = std::move(probe);
+            updateState(); if (auto other = otherPanel()) other->updateState();
+        }
         if (!filesystemRead || snapshot.generation != filesystemRead->generation) return;
         if (snapshot.cancelled || !snapshot.error.isEmpty()) {
             listFocusPending = false;
@@ -41,9 +71,20 @@ void MainWindow::setupFilesystem() {
     });
 }
 void MainWindow::cancelFilesystemRead() {
-    filesystemChunks.stop(); directoryScanner.cancel(); filesystemRead.reset();
+    filesystemChunks.stop(); directoryScanner.cancel(); filesystemRead.reset(); backgroundFilesystemRead.reset();
     if (files) files->cancelSorting();
     if (pathBox) pathBox->setText(archivePath.isEmpty() ? fsPath : archiveLocation());
+}
+void MainWindow::refreshFilesystemInBackground() {
+    if (backgroundFilesystemRead) { watchDebounce.start(); return; }
+    backgroundFilesystemRead = std::make_unique<FilesystemRead>();
+    QSettings preferences;
+    backgroundFilesystemRead->timePrecision = preferences.value("View/TimePrecision", 1).toInt();
+    backgroundFilesystemRead->utc = preferences.value("View/UTC", false).toBool();
+    backgroundFilesystemRead->path = fsPath;
+    backgroundFilesystemRead->generation = directoryScanner.start(fsPath, flatView);
+    // Watch notifications are hints. Reading a candidate must not toggle the
+    // toolbar/status or replace an unchanged list and its native icons.
 }
 void MainWindow::showFilesystem(QString path, std::function<void()> continuation) {
     if (!parentArchives.isEmpty()) {
@@ -98,6 +139,8 @@ void MainWindow::prepareFilesystemRows() {
 void MainWindow::installFilesystemRows() {
     if (!filesystemRead) return;
     auto read = std::move(filesystemRead);
+    const bool updates = viewStack->updatesEnabled(); viewStack->setUpdatesEnabled(false);
+    const auto resumeUpdates = qScopeGuard([this, updates] { viewStack->setUpdatesEnabled(updates); });
     QSignalBlocker headerChanges(files->header()), rowChanges(files);
     fsPath = read->snapshot.path; archivePath.clear(); archivePrefix.clear(); archivePassword.fill(QChar::Null); archivePassword.clear();
     archiveEntries.clear(); archiveType.clear(); archiveReadMode.clear(); archiveProperties.clear(); archiveLayers.clear(); archiveFolderIndex = {}; archiveVirtualPath.clear(); pendingArchiveTail.clear();
@@ -122,6 +165,7 @@ void MainWindow::installFilesystemRows() {
         for (int n=0;n<read->snapshot.entries.size();++n) { const auto &entry=read->snapshot.entries[n]; icons.append({n,entry.path,entry.directory,false}); }
         files->loadNativeIcons(std::move(icons));
     }
+    filesystemSnapshot = std::move(read->snapshot);
     if (read->continuation) read->continuation();
     updateState(); if (auto other = otherPanel()) other->updateState();
     emit directoryLoaded(fsPath, true);

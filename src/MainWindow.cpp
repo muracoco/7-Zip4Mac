@@ -459,8 +459,9 @@ void MainWindow::showArchive() {
     pathBox->setText(archiveLocation()); finishBrowse();
     if (!nativeIcons.isEmpty()) files->loadNativeIcons(std::move(nativeIcons));
 }
-void MainWindow::refresh() {
+void MainWindow::refresh(bool automatic) {
     if (dataOperationBusy()) return;
+    if (automatic && archivePath.isEmpty() && hasBrowse && !filesystemRead) { refreshFilesystemInBackground(); return; }
     const auto selection = saveBrowseSelection();
     if (filesystemRead || archivePath.isEmpty()) {
         showFilesystem(requestedDirectory(), [this, selection] { restoreBrowseSelection(selection); });

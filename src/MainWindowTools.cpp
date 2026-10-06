@@ -126,7 +126,7 @@ void MainWindow::updateBookmarks() {
     }
 }
 bool MainWindow::eventFilter(QObject *object, QEvent *event) {
-    if (uiReady && object == files && (event->type() == QEvent::FontChange || event->type() == QEvent::ApplicationFontChange)) syncAddressFont();
+    if (uiReady && object == files && (event->type() == QEvent::FontChange || event->type() == QEvent::ApplicationFontChange)) syncPanelFonts();
     if (listFocusPending && (event->type() == QEvent::KeyPress || event->type() == QEvent::MouseButtonPress)) {
         if (auto widget = qobject_cast<QWidget *>(object); widget && isAncestorOf(widget)) listFocusPending = false;
     }

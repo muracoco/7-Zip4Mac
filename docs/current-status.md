@@ -174,3 +174,17 @@ The engine, unrelated passing groups and older release receipts are unchanged.
 ## 0.2.2 Finder registration maintenance
 
 Build/package and retained rollback bundles now declare `LSHandlerRank=None`; `scripts/install.sh` activates only the installed copy and replaces that same path on updates. Actual Finder candidates on the tested Mac decreased from 21 to 1, with 48 managed copies suppressed. Eight affected installer/registration checks and installed startup pass. See [scope, rollback and actual Finder evidence](finder-registration.md). Archive/UI algorithms and the previous complete format coverage were not retested for this metadata/install change.
+
+
+## 0.2.3 presentation follow-up (2026-10-06)
+
+New normal File Manager windows and standalone Open With menus are centered on
+the pointer’s display. Seven toolbar labels and address controls use the resolved
+list font; Japanese and subsequent font changes are checked. The affected
+incremental Release/Ninja build and four native/standalone lifecycle tests passed.
+The self-contained signed package was launched and its Japanese toolbar/list
+text was inspected on the actual Mac. No additional full format matrix or empty
+build is claimed for this presentation-only change. [Evidence and limits](window-presentation.md).
+Finder Sync can technically add a monitored-folder context submenu, but its
+sync-oriented API, signing/loading and user enablement require a separate
+extension. It remains Not implemented. [Feasibility](finder-integration.md).

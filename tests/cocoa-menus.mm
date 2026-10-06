@@ -9,6 +9,12 @@
 #include <QMessageBox>
 #include "Help.h"
 #include "OpenWith.h"
+#include "UiLanguage.h"
+#include <QToolButton>
+#include <QFontInfo>
+#include <QFontMetricsF>
+#include <QScreen>
+#include <cmath>
 #include <QFileOpenEvent>
 #include <QTemporaryDir>
 #include <QTimer>
@@ -67,6 +73,70 @@ int main(int argc, char **argv) {
     QSettings::setDefaultFormat(QSettings::IniFormat); QSettings::setPath(QSettings::IniFormat, QSettings::UserScope, temp.filePath("preferences"));
     QFile fixture(temp.filePath("menu file.txt")); if (!fixture.open(QIODevice::WriteOnly) || fixture.write("menu test") != 9) return 1; fixture.close();
     MainWindow window(QString::fromLocal8Bit(argv[1])); window.openPath(temp.path());
+    if (argc > 2 && QByteArray(argv[2]) == "--presentation-only") {
+        auto centered = [](QWidget &widget) {
+            NSWindow *native = reinterpret_cast<NSView *>(widget.winId()).window;
+            const NSRect frame = native.frame, available = native.screen.visibleFrame;
+            const bool matches = native.visible &&
+                std::abs(NSMidX(frame) - NSMidX(available)) <= 2 &&
+                std::abs(NSMidY(frame) - NSMidY(available)) <= 2 &&
+                NSContainsRect(available, frame);
+            if (!matches) qCritical() << "Native window not centered in available screen"
+                << widget.objectName() << NSStringFromRect(frame).UTF8String
+                << NSStringFromRect(available).UTF8String;
+            return matches;
+        };
+        auto fontsMatch = [](MainWindow &manager) {
+            auto list = manager.findChild<FileList *>("fileList");
+            const QFontInfo expected(list->font());
+            const qreal expectedHeight = QFontMetricsF(list->font()).height();
+            for (const char *name : {"addButton", "extractButton", "testButton", "copyButton",
+                                      "moveButton", "deleteButton", "infoButton", "currentPath"}) {
+                auto widget = manager.findChild<QWidget *>(name);
+                if (!widget) return false;
+                const QFontInfo actual(widget->font());
+                if (actual.family() != expected.family() ||
+                    std::abs(actual.pointSizeF() - expected.pointSizeF()) > 0.01 ||
+                    std::abs(QFontMetricsF(widget->font()).height() - expectedHeight) > 0.01) {
+                    qCritical() << "Panel font differs" << name << actual.family() << actual.pointSizeF()
+                        << expected.family() << expected.pointSizeF();
+                    return false;
+                }
+            }
+            qInfo() << "Toolbar/address/list resolved font" << expected.family() << expected.pointSizeF();
+            return true;
+        };
+        window.show(); QTest::qWait(100);
+        if (!centered(window) || !fontsMatch(window)) return 1;
+        UiLanguage::set("ja"); UiLanguage::apply(&window);
+        if (!fontsMatch(window) || window.findChild<QToolButton *>("addButton")->text() != "追加") return 1;
+        auto list = window.findChild<FileList *>("fileList");
+        auto font = list->font(); font.setPointSizeF(18); list->setFont(font);
+        QApplication::processEvents();
+        if (!fontsMatch(window)) return 1;
+        const QSize restoredSize(720, 480);
+        window.resize(restoredSize);
+        window.move(window.screen()->availableGeometry().topLeft() + QPoint(12, 12));
+        QTest::qWait(50);
+        const QPoint userPosition = window.pos();
+        window.hide(); window.show(); QTest::qWait(50);
+        if (window.pos() != userPosition) {
+            qCritical() << "Re-show overwrote a position chosen during the session"; return 1;
+        }
+        window.close();
+        MainWindow restored(QString::fromLocal8Bit(argv[1]));
+        restored.show(); QTest::qWait(100);
+        if (!centered(restored) || restored.size() != restoredSize || !fontsMatch(restored)) return 1;
+        restored.close();
+        OpenWithMenu menu({fixture.fileName()});
+        menu.show(); QTest::qWait(100);
+        if (!centered(menu)) return 1;
+        menu.reject();
+        qInfo() << "Native normal/restored File Manager and standalone Open With centered;"
+                   " manual session placement retained; seven toolbar labels/address match list"
+                   " after polish, Japanese translation and font change";
+        return 0;
+    }
     if (argc > 3 && QByteArray(argv[2]) == "--hidden-open-with-only") {
         const auto format = QString::fromLocal8Bit(argv[3]);
         const auto source = temp.filePath("input"), destination = temp.filePath("here");

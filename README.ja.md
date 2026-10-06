@@ -4,7 +4,9 @@
 
 Windows版「7-Zip File Manager」の操作感をQt 6 Widgetsで再現する、非公式のmacOSアプリです。C++ / Apple Clang / CMake + Ninjaを使用し、圧縮エンジンは公式7-Zip 26.03のソースからビルドした `7zz` を同梱します。Xcode.app / `.xcodeproj` は不要です。
 
-[0.2.2の修正版](docs/finder-registration.md)を作成しました。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書を確認し、[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しました。
+[0.2.3の修正版](docs/window-presentation.md)を作成しました。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書を確認し、[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しました。
+
+0.2.3では起動時の通常ウインドウを画面中央に配置し、ツールバーの文字をファイル一覧と揃えました。Finderの右クリックへ直接追加する拡張の条件は[Finder連携](docs/finder-integration.md)に記録しています。拡張本体は未実装です。
 
 0.2.2ではFinderの「このアプリケーションで開く」に旧版・検証用コピーが並ぶ問題を修正しました。ビルド後に `./scripts/install.sh` で更新すると、インストールした最新版だけを候補にします。旧版は復元可能な状態で保持します。
 

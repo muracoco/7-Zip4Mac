@@ -1,0 +1,56 @@
+{
+  "version": "0.2.3",
+  "date": "2026-10-06",
+  "host": {
+    "macos": "26.6.2",
+    "architecture": "arm64",
+    "qt": "6.11.3",
+    "engine": "26.03"
+  },
+  "build": "Affected incremental Release / Ninja; no additional empty build claimed",
+  "ctest": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "elapsed_seconds": 6.76,
+    "names": [
+      "cocoa_presentation",
+      "cocoa_open_with_progress",
+      "cocoa_open_with_exit_7z",
+      "cocoa_open_with_exit_zip"
+    ]
+  },
+  "native_presentation": {
+    "normal_window_centered": true,
+    "restored_corner_centered": true,
+    "saved_size_preserved": true,
+    "session_manual_position_preserved": true,
+    "standalone_menu_centered": true,
+    "toolbar_button_count": 7,
+    "matching_initial_font_points": 13,
+    "matching_changed_font_points": 18,
+    "japanese_label_checked": true
+  },
+  "logs": {
+    "configure.log": "8c2d829579f0aa4455b8afdc99781298e536102bdd607239c48efa873ffc6446",
+    "build.log": "7eb5433ae5c0263a1fa0868ce961c1e9320ee67a4311e985ace3042db13f6345",
+    "tests-first.log": "4eb40e6ffdfbca0d0613380fd27fe909b32aea269864d2be2d1ac127bdada8c7",
+    "ctest-detail.log": "5120034748f0ca1f47432f02fef4b9f5ea294ae68e691ac8cd74c87e0ac3ac19",
+    "package.log": "0f3954f5e8ba8b2eab143ec40c3468b1fd1a9d8ea20fc10f9f624bdbd5a2f443"
+  },
+  "unverified": [
+    "Physical multiple displays and display disconnection",
+    "Maximized/fullscreen transitions",
+    "Finder Sync extension build/sign/load and user enablement"
+  ],
+  "packaged_desktop": {
+    "launched": true,
+    "filesystem_visible": true,
+    "japanese_toolbar_labels_visually_aligned": true,
+    "label_clipping_observed": false,
+    "mach_o_dependency_count": 15,
+    "system_or_rpath_dependencies_only": true,
+    "strict_ad_hoc_signature_passed": true,
+    "window_center_geometry_source": "AppKit regression; desktop screenshot was window-cropped"
+  }
+}

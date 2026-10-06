@@ -26,7 +26,7 @@ Historical checkpoint remaining-work lists are superseded by the later connected
 | メニューバー配置 | macOS difference | ウィンドウ内にQtメニュー。macOSのアプリメニューも存在 |
 | 無効項目の表示・操作条件 | Implemented | 無効なメニュー・ボタン文字はグレー。現在提供するRename / Copy等は選択に応じて有効化し、未実装コマンドは無効。マウスによるメニューOpen / Rename / Properties / About / Optionsを回帰検証。提供機能の差は各メニュー行で分類 |
 | ツールバー順・ラベル・画像 | Implemented | Add / Extract / Test / Copy / Move / Delete / Info。公式24×24 BMPを使用し、上流のマゼンタ透明色をマスク |
-| Toolbar設定・余白 | Partially implemented | Archive / Standardの独立切替、公式24×24 / 48×36、文字ON/OFFを保存。Fusionと9pt Arial。厳密なピクセル一致は未実装 |
+| Toolbar設定・余白 | Partially implemented | Archive / Standardの独立切替、公式24×24 / 48×36、文字ON/OFFを保存。Fusion。0.2.3でtoolbar文字をpolish後の一覧fontに統一し、font変更へ追従。公式icon寸法を維持。厳密なピクセル一致は未実装（window-presentation.md） |
 | 通常FSの一覧列 | Implemented | 公式FSFolderの列順・初期表示・幅・alignを移植。Accessed / Change Time / Attributes / Packed Size / iNode / Linksを追加しmacOS statへ接続。Folders / FilesはF3、Commentはdescript.ion。Flat Prefixと追加Type、プロパティID別の設定保存・旧設定移行。OS属性差・物理確認・大量modelの残差は別記（panel-sort-port.md） |
 | アーカイブ列 | Implemented | 元handler schema／typed/raw値・両Agent proxy graph／native indexと実番号操作を接続。大量一覧は性能・未確認の欄で区別。native-agent-properties.md、native-agent-item-updates.md。 |
 | ディレクトリ移動・親・複数選択・ソート | Implemented | Windows元コードの自然順・typed/raw比較・Name / Prefix / load順tie・親／folder優先・初回方向・Unsorted反転を移植。Viewと列クリックはproperty IDで接続。Qt eventと実7z／ZIPの確認結果はpanel-sort-port.md。Unicode casingの全OS比較と物理キーは未確認 |
@@ -63,7 +63,7 @@ Historical checkpoint remaining-work lists are superseded by the later connected
 | Finderからドロップ | Implemented | 元drag effect／hover／FS Copy・Move／archive CopyFrom・folder dropを接続。Qt経路は検証、物理Finder／right-dragは未確認。panel-menu-drag-port.md。 |
 | archiveからドラッグ展開 | Implemented | 選択の非同期temp展開、Cancel／寿命管理とfile URL dragを接続。32MiB・暗号化・Cancel・受領後保持を検証。物理Finderは未確認。panel-menu-drag-port.md。 |
 | Finder Open With操作メニュー | Implemented | FileOpenイベントで別メニューを表示。10項目とiconsをOptionsで保存。圧縮／展開／Test／CRC・形式別Open As、最下段Manager。Qtイベント経路は検証済み、実Finderの物理操作は未確認 |
-| Finder Extension / Quick Action / Services | Not implemented | Open Withとは別。Finderのコンテキストメニューそのものへ挿入するextensionは提供しない |
+| Finder Extension / Quick Action / Services | Not implemented | Open Withとは別。Finder Syncで監視folder内の直接submenu追加は技術的に可能だが未実装。同期用途のAPI・範囲・user有効化に制約あり（finder-integration.md） |
 | 書類タイプ関連付け | Implemented | 全138拡張子とdata／folderをViewerで宣言。0.2.2では開発・rollbackコピーをNone、インストールした最新版だけをAlternateにする。実Finderで1件表示と起動を確認。既定設定は変更しない。finder-registration.md |
 | タイトルバー・ウィンドウボタン | macOS difference | macOS標準 |
 | ファイル権限・署名・sandbox | macOS difference | macOS権限、ad-hoc署名、sandboxなし。Developer ID / notarizationは対象外 |

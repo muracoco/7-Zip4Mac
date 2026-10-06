@@ -254,7 +254,8 @@ private:
     QAction *action(QString name, QString text, QString shortcut, std::function<void()> callback);
     void closeEvent(QCloseEvent *) override;
     void showEvent(QShowEvent *) override;
-    void syncAddressFont();
+    void syncPanelFonts();
+    bool initialWindowPlacement = true;
     bool eventFilter(QObject *, QEvent *) override;
     SevenZipProcessBackend backend;
     FileOperations fileOps;

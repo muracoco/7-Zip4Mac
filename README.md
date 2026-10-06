@@ -4,7 +4,9 @@
 
 An unofficial macOS port of the Windows **7-Zip File Manager** interface, written in C++ with Qt 6 Widgets. The official 7-Zip **26.03** source-built `7zz` is bundled as the archive engine. It uses Apple Clang, CMake and Ninja; Xcode.app and Xcode projects are unnecessary.
 
-**Status:** local 0.2.2 maintenance build for the tested Mac. The portable command/settings groups are implemented; Windows host mechanisms and remaining visual/input verification limits are documented in the [command audit](docs/final-audit.md) and [parity inventory](docs/windows-parity.md). Engine capability, implemented UI and tested format coverage are separate claims. Source repository: [muracoco/7-Zip4Mac](https://github.com/muracoco/7-Zip4Mac).
+**Status:** local 0.2.3 maintenance build for the tested Mac. The portable command/settings groups are implemented; Windows host mechanisms and remaining visual/input verification limits are documented in the [command audit](docs/final-audit.md) and [parity inventory](docs/windows-parity.md). Engine capability, implemented UI and tested format coverage are separate claims. Source repository: [muracoco/7-Zip4Mac](https://github.com/muracoco/7-Zip4Mac).
+
+The [0.2.3 presentation fix](docs/window-presentation.md) centers newly opened normal windows on the pointer’s display and aligns toolbar/address text with the file list. Finder context-menu extension feasibility is recorded in [finder-integration.md](docs/finder-integration.md); no Finder extension is included.
 
 The [0.2.2 Finder registration fix](docs/finder-registration.md) keeps build/rollback copies out of automatic Open With candidates. Run `./scripts/install.sh` after building to install/update the single registered copy in `/Applications`.
 

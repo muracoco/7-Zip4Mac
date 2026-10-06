@@ -47,3 +47,26 @@ Open WithとFile Manager右クリックの表示条件・名前・アイコン�
 WindowsのExplorer登録、32bit extension、cascaded shell menu、NTFS Zone.Identifier、MAPIメール操作は移植しない。Open Asの形式別／parser指定は上記メニューへ実装した。上流PanelMenu.cppはarchive内部でShellメニューを生成しない。File → Open Inside／*／#はarchive内部の右クリックでも使用できる。CRC配置の2つのWindows設定は、Macメニュー内の1つのCRC SHA項目に置き換えている。
 
 Info.plistに`public.data` / `public.folder`とarchive拡張子をViewerとして宣言する。インストール済みコピーはAlternate、開発用コピーはNoneにして、QFileOpenEventを受ける。[Qt QFileOpenEvent](https://doc.qt.io/qt-6/qfileopenevent.html)、[Apple CFBundleDocumentTypes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html)。実機確認と自動検証の区別は[test-results.md](test-results.md)を参照。
+
+## Finderの右クリックへ直接追加する方法（2026-10-06の調査）
+
+技術的にはFinder Sync拡張の`menuForMenuKind:`で、監視対象folder内の
+選択fileへ「7-Zip」submenuを追加できます。`selectedItemURLs`で対象を
+取得し、本体の共通コマンド／表示設定へ渡す構成が候補です。
+現在のOpen WithダイアログやFile Manager内の右クリックとは別の実装です。
+
+AppleはFinder Syncを同期folder向けとし、一般的なFinder UI変更用ではないと
+説明しています。監視対象folderに限定され、任意の場所でWindows Explorerと
+同じ配置になることは保証できません。拡張の署名・登録とmacOS側でのuser有効化も
+必要です。設定画面での権限付与が発生する段階では人間の操作が必要です。
+[Apple Finder Sync Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Finder.html)。
+
+Quick Action / Action ExtensionはAppleが提供する別の連携経路ですが、表示先は
+Quick Actions等であり、希望する右クリック直下のsubmenuとは異なります。
+[Apple Finder Action Extensions](https://developer.apple.com/documentation/appkit/add-functionality-to-finder-with-action-extensions)。
+
+今回の成果物はFinder拡張を含みません。このMacのCommand Line Tools SDKには
+FinderSync.frameworkと`NSExtensionMain`のlink symbolが存在するため、Xcode.appが
+ないことだけを実装不能の理由にはしていません。CLT/CMakeだけでの`.appex`生成・
+署名・Finder読込は未検証です。実装する場合は本体から分離し、既存backendと
+表示設定を共有して選択・複数file・日本語path・Cancelを確認します。

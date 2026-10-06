@@ -32,6 +32,8 @@ public:
     QStringList paths() const { return targets; }
 signals:
     void commandChosen(QString command, QStringList paths);
+protected:
+    void showEvent(QShowEvent *) override;
 private:
     QStringList targets;
 };

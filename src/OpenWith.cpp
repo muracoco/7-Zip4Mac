@@ -4,6 +4,7 @@
 #include "ArchiveFormats.h"
 #include "MainWindow.h"
 #include "UiLanguage.h"
+#include "WindowPlacement.h"
 #include <QApplication>
 #include <QFileOpenEvent>
 #include <QSettings>
@@ -14,8 +15,7 @@
 #include <QPushButton>
 #include <QMenu>
 #include <QBitmap>
-#include <QCursor>
-#include <QScreen>
+#include <QShowEvent>
 #include <QFrame>
 #include <QMessageBox>
 
@@ -175,8 +175,11 @@ OpenWithMenu::OpenWithMenu(QStringList paths, QWidget *parent) : QDialog(parent)
     }
     line(); auto manager = button("manager", QString::fromUtf8("7-Zip ファイルマネージャーで開く"), "Info");
     connect(manager, &QPushButton::clicked, this, [choose] { choose("manager"); });
-    setMinimumWidth(360); adjustSize(); auto screen = QGuiApplication::screenAt(QCursor::pos()); if (!screen) screen = QGuiApplication::primaryScreen();
-    if (screen) { const auto r = screen->availableGeometry(); move(qBound(r.left(), QCursor::pos().x(), qMax(r.left(), r.right() - width())), qBound(r.top(), QCursor::pos().y(), qMax(r.top(), r.bottom() - height()))); }
+    setMinimumWidth(360); adjustSize();
+}
+void OpenWithMenu::showEvent(QShowEvent *event) {
+    QDialog::showEvent(event);
+    centerPortWindow(this);
 }
 OpenWithController::OpenWithController(MainWindow *w, bool quit) : QObject(w), window(w), quitWhenIdle(quit) {
     qApp->installEventFilter(this); timer.setSingleShot(true); timer.setInterval(100); connect(&timer, &QTimer::timeout, this, &OpenWithController::flush);

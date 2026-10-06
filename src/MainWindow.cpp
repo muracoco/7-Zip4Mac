@@ -5,6 +5,7 @@
 #include "OpenProfile.h"
 #include "PanelMenu.h"
 #include "PanelDrag.h"
+#include "WindowPlacement.h"
 #include "OverwriteDialog.h"
 #include "ArchiveFormats.h"
 #include "OpenWith.h"
@@ -826,7 +827,7 @@ void MainWindow::closeEvent(QCloseEvent *e) {
     closeExternalSessions(); if (secondPanel) secondPanel->closeExternalSessions();
     QMainWindow::closeEvent(e);
 }
-void MainWindow::syncAddressFont() {
+void MainWindow::syncPanelFonts() {
     // Resolve the list font after parenting/polishing, rather than copying
     // the temporary constructor font before the panel layout owns the list.
     auto font = files->font();
@@ -839,6 +840,8 @@ void MainWindow::syncAddressFont() {
     pathCombo->setFont(font);
     pathBox->setFont(font);
     pathCombo->view()->setFont(font);
+    toolbar->setFont(font);
+    for (auto button : toolbar->findChildren<QToolButton *>()) button->setFont(font);
 }
 void MainWindow::showEvent(QShowEvent *e) {
     closingRequested = false;
@@ -846,6 +849,10 @@ void MainWindow::showEvent(QShowEvent *e) {
     QMainWindow::showEvent(e);
     // Changing an embedded window's flags can deliver Show during its
     // constructor, before its address/list controls have been created.
-    if (uiReady) syncAddressFont();
+    if (uiReady) syncPanelFonts();
+    if (uiReady && !embedded && initialWindowPlacement) {
+        initialWindowPlacement = false;
+        centerPortWindow(this);
+    }
     if (uiReady && !hasBrowse && !filesystemRead && !panelBusy()) showFilesystem(fsPath);
 }

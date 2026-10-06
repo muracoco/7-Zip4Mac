@@ -4,7 +4,9 @@
 
 Windows版「7-Zip File Manager」の操作感をQt 6 Widgetsで再現する、非公式のmacOSアプリです。C++ / Apple Clang / CMake + Ninjaを使用し、圧縮エンジンは公式7-Zip 26.03のソースからビルドした `7zz` を同梱します。Xcode.app / `.xcodeproj` は不要です。
 
-[0.2.1の修正版](docs/open-with-extract-here-fix.md)を作成しました。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書を確認し、[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しました。
+[0.2.2の修正版](docs/finder-registration.md)を作成しました。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書を確認し、[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しました。
+
+0.2.2ではFinderの「このアプリケーションで開く」に旧版・検証用コピーが並ぶ問題を修正しました。ビルド後に `./scripts/install.sh` で更新すると、インストールした最新版だけを候補にします。旧版は復元可能な状態で保持します。
 
 0.2.1では「このアプリケーションで開く」→「ここに展開」の完了後に空のFile Managerウインドウが残る不具合を修正しました。非表示の親にCocoa sheetを付けないようにし、単独操作の終了処理も修正しています。
 
@@ -30,6 +32,18 @@ Windows版「7-Zip File Manager」の操作感をQt 6 Widgetsで再現する、�
 ./scripts/test.sh
 ./scripts/run.sh
 ```
+
+ビルド後のインストール・更新:
+
+```bash
+./scripts/install.sh
+# 別のbuildディレクトリ、必要ならユーザー領域へのインストール:
+./scripts/install.sh /absolute/build/path "$HOME/Applications/7-Zip Mac.app"
+# インストール・登録の対象テスト:
+python3 tests/finder-registration.py
+```
+
+最新版を同じ場所へ置き換え、旧版を保持し、Finderの候補を1つにします。古い版への上書きを拒否し、署名・依存先を検証します。開発・package用コピーは `LSHandlerRank=None` なので、Finder経由で使うときはinstallerを通してください。既定アプリは変更しません。[詳細と復元](docs/finder-registration.md)。
 
 `bootstrap.sh` はユーザー領域 `~/.cache/7zip-mac-port` に不足するツール、公式Qtバイナリ、公式7-Zipソースを取得します。sudo、Homebrew本体のインストール、システムPythonの変更を行いません。Apple Command Line Toolsがなければ `xcode-select --install` を実行し、OSの確認画面を操作してください。既存のQt 6.11.3を利用するときは `QT_PREFIX` を指定できます。Cocoa pluginがQt内部APIを使うため、異なるQtバージョンとの混用を禁止しています。
 

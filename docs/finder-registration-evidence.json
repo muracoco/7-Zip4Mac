@@ -1,0 +1,48 @@
+{
+  "version": "0.2.2",
+  "macOS": "26.6.2",
+  "architecture": "arm64",
+  "beforePortCandidates": 21,
+  "afterPortCandidates": 1,
+  "managedCopiesHidden": 48,
+  "actualFinderMenuSingleEntry": true,
+  "actualOpenWithMenuLaunch": true,
+  "actualMenuCancellation": true,
+  "defaultArchiveUtilityRetained": true,
+  "retainedSigningBackups": true,
+  "incompleteBuildInitialMigrationFailureRetained": true,
+  "recoveredMigration": true,
+  "checks": {
+    "installer-tests.log": {
+      "sha256": "b20ec6e852b9f2d97d72025f468bf21e6917fbac23b5dbfa55d7c9ddfcdd4b9d"
+    },
+    "installer-tests-first-pass.log": {
+      "sha256": "a1f64fed6825b6595cba14d1f2f53e7bb86e5483cdccea4ae59072d38de1a9e0"
+    },
+    "build.log": {
+      "sha256": "3fbd1d98eb9782077c7b254cac2bcf1f16d15513bfdd1f4579288b97e9754350"
+    },
+    "package.log": {
+      "sha256": "a06cc909345a646588e3eb3e7ee1981f9691ed18681c724325cecb5287e05ac1"
+    },
+    "install.log": {
+      "sha256": "15e550b63b91c943191a2c252a74c5306ed5e87eccbbba3a7a08873a89cd21ee"
+    },
+    "migration.log": {
+      "sha256": "470012ea7ff3e54502f33c9807911033eff4c54eb51846f426e97d4bcdde1166"
+    },
+    "candidates-before.json": {
+      "sha256": "12864c53eef8daef755736367f79c7810e5ac14c97e4be7f0f09fd10ed1aed6c"
+    },
+    "candidates-after.json": {
+      "sha256": "7a3b8ba84d738ddf2c64992a68242e21272f623c81ef54a6b006e2909ebac211"
+    },
+    "startup.log": {
+      "sha256": "e5988dddf7c8cd2a1e8b9bd61f66ea77eea200ca2a663d69714fb3848f2bb86b"
+    }
+  },
+  "isolatedInstalledStartupPassed": true,
+  "nativePreferencesUnchanged": true,
+  "fullArchiveMatrixRerun": false,
+  "affectedChecksPassed": 8
+}

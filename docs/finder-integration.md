@@ -2,7 +2,7 @@
 
 Finderでファイルを選び、**このアプリケーションで開く → 7-Zip Mac Port**を選ぶと、Windowsの7-Zip shellメニューに対応する操作メニューが開く。リストにまだ出ない場合は「その他…」でビルドした`7-Zip Mac.app`を選ぶ。「常にこのアプリケーションで開く」は不要。既定関連付けの強制変更は行わない。
 
-同じbundle IDの古い検証用`.app`が複数残っている場合、Finderが古い方を同じ名前で表示することがある。現在のMacでも確認した。「その他…」から`/DEPS/build/7-Zip Mac.app`を明示する。古いbuildの登録解除や既定アプリ変更は自動で行わない。
+0.2.2以降は `./scripts/install.sh` で `/Applications/7-Zip Mac.app` を更新する。開発・package・rollback用コピーはFinderの自動候補へ出さない。旧版の実行ファイル・署名は復元可能に保持し、既定アプリの設定は変更しない。[登録の修正と復元](finder-registration.md)。
 
 最下段は常に**「7-Zip ファイルマネージャーで開く」**。通常ファイルは親フォルダーを表示して対象を選択し、アーカイブは内部を表示する。アプリ単独起動は従来どおりFile Managerを開く。起動中にFinderから届いたファイルも操作メニューへ送る。
 
@@ -46,4 +46,4 @@ Open WithとFile Manager右クリックの表示条件・名前・アイコン�
 
 WindowsのExplorer登録、32bit extension、cascaded shell menu、NTFS Zone.Identifier、MAPIメール操作は移植しない。Open Asの形式別／parser指定は上記メニューへ実装した。上流PanelMenu.cppはarchive内部でShellメニューを生成しない。File → Open Inside／*／#はarchive内部の右クリックでも使用できる。CRC配置の2つのWindows設定は、Macメニュー内の1つのCRC SHA項目に置き換えている。
 
-Info.plistに`public.data` / `public.folder`とarchive拡張子をViewer / Alternateとして宣言し、QFileOpenEventを受ける。[Qt QFileOpenEvent](https://doc.qt.io/qt-6/qfileopenevent.html)、[Apple CFBundleDocumentTypes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html)。実機確認と自動検証の区別は[test-results.md](test-results.md)を参照。
+Info.plistに`public.data` / `public.folder`とarchive拡張子をViewerとして宣言する。インストール済みコピーはAlternate、開発用コピーはNoneにして、QFileOpenEventを受ける。[Qt QFileOpenEvent](https://doc.qt.io/qt-6/qfileopenevent.html)、[Apple CFBundleDocumentTypes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html)。実機確認と自動検証の区別は[test-results.md](test-results.md)を参照。

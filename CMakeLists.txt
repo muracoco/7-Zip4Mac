@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
 set(CMAKE_OSX_DEPLOYMENT_TARGET "15.0" CACHE STRING "Minimum macOS")
-project(SevenZipMacPort VERSION 0.2.1 LANGUAGES CXX OBJCXX)
+project(SevenZipMacPort VERSION 0.2.2 LANGUAGES CXX OBJCXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
@@ -71,6 +71,10 @@ set_source_files_properties(src/HelpLanguage.mm PROPERTIES COMPILE_OPTIONS "-fob
 target_link_libraries(port_ui PUBLIC Qt6::PrintSupport "-framework NaturalLanguage")
 target_compile_options(port_ui PRIVATE -Wall -Wextra -Wpedantic)
 qt_add_executable(SevenZipMac MACOSX_BUNDLE src/main.cpp)
+# Only the installed copy advertises document opening. Development/package
+# copies remain usable through run.sh and explicit Open With, without making
+# every build directory another automatic Finder menu entry.
+set(PORT_FINDER_HANDLER_RANK "None")
 file(READ "${CMAKE_CURRENT_SOURCE_DIR}/resources/formats.json" PORT_FORMAT_JSON)
 string(JSON PORT_EXTENSION_COUNT LENGTH "${PORT_FORMAT_JSON}" extensions)
 math(EXPR PORT_EXTENSION_LAST "${PORT_EXTENSION_COUNT} - 1")

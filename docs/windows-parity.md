@@ -64,7 +64,7 @@ Historical checkpoint remaining-work lists are superseded by the later connected
 | archiveからドラッグ展開 | Implemented | 選択の非同期temp展開、Cancel／寿命管理とfile URL dragを接続。32MiB・暗号化・Cancel・受領後保持を検証。物理Finderは未確認。panel-menu-drag-port.md。 |
 | Finder Open With操作メニュー | Implemented | FileOpenイベントで別メニューを表示。10項目とiconsをOptionsで保存。圧縮／展開／Test／CRC・形式別Open As、最下段Manager。Qtイベント経路は検証済み、実Finderの物理操作は未確認 |
 | Finder Extension / Quick Action / Services | Not implemented | Open Withとは別。Finderのコンテキストメニューそのものへ挿入するextensionは提供しない |
-| 書類タイプ関連付け | Partially implemented | 共通レジストリの全138拡張子をInfo.plistでAlternate Viewerとして宣言、QFileOpenEventを受ける。既定設定を変更しない。Finderからの実関連付け選択は未検証 |
+| 書類タイプ関連付け | Implemented | 全138拡張子とdata／folderをViewerで宣言。0.2.2では開発・rollbackコピーをNone、インストールした最新版だけをAlternateにする。実Finderで1件表示と起動を確認。既定設定は変更しない。finder-registration.md |
 | タイトルバー・ウィンドウボタン | macOS difference | macOS標準 |
 | ファイル権限・署名・sandbox | macOS difference | macOS権限、ad-hoc署名、sandboxなし。Developer ID / notarizationは対象外 |
 

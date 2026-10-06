@@ -14,12 +14,12 @@
 <key>CFBundleDocumentTypes</key><array><dict>
 <key>CFBundleTypeName</key><string>7-Zip Archive</string>
 <key>CFBundleTypeRole</key><string>Viewer</string>
-<key>LSHandlerRank</key><string>Alternate</string>
+<key>LSHandlerRank</key><string>@PORT_FINDER_HANDLER_RANK@</string>
 <key>CFBundleTypeExtensions</key><array>@PORT_ARCHIVE_EXTENSIONS@</array>
 </dict><dict>
 <key>CFBundleTypeName</key><string>Files and Folders for 7-Zip</string>
 <key>CFBundleTypeRole</key><string>Viewer</string>
-<key>LSHandlerRank</key><string>Alternate</string>
+<key>LSHandlerRank</key><string>@PORT_FINDER_HANDLER_RANK@</string>
 <key>LSItemContentTypes</key><array><string>public.data</string><string>public.folder</string></array>
 </dict></array>
 </dict></plist>

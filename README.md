@@ -4,7 +4,9 @@
 
 An unofficial macOS port of the Windows **7-Zip File Manager** interface, written in C++ with Qt 6 Widgets. The official 7-Zip **26.03** source-built `7zz` is bundled as the archive engine. It uses Apple Clang, CMake and Ninja; Xcode.app and Xcode projects are unnecessary.
 
-**Status:** local 0.2.1 maintenance build for the tested Mac. The portable command/settings groups are implemented; Windows host mechanisms and remaining visual/input verification limits are documented in the [command audit](docs/final-audit.md) and [parity inventory](docs/windows-parity.md). Engine capability, implemented UI and tested format coverage are separate claims. Source repository: [muracoco/7-Zip4Mac](https://github.com/muracoco/7-Zip4Mac).
+**Status:** local 0.2.2 maintenance build for the tested Mac. The portable command/settings groups are implemented; Windows host mechanisms and remaining visual/input verification limits are documented in the [command audit](docs/final-audit.md) and [parity inventory](docs/windows-parity.md). Engine capability, implemented UI and tested format coverage are separate claims. Source repository: [muracoco/7-Zip4Mac](https://github.com/muracoco/7-Zip4Mac).
+
+The [0.2.2 Finder registration fix](docs/finder-registration.md) keeps build/rollback copies out of automatic Open With candidates. Run `./scripts/install.sh` after building to install/update the single registered copy in `/Applications`.
 
 The [0.2.1 extraction hotfix](docs/open-with-extract-here-fix.md) fixes a blank native File Manager window left by standalone Open With operations, and their idle-exit lifecycle. The unchanged archive engine and affected native/GUI checks are documented separately.
 
@@ -27,6 +29,18 @@ The [desktop follow-up](docs/desktop-follow-up.md) fixes an empty Options tab an
 ./scripts/test.sh
 ./scripts/run.sh
 ```
+
+Install or update the app after building:
+
+```bash
+./scripts/install.sh
+# Custom build directory and optional user-local destination:
+./scripts/install.sh /absolute/build/path "$HOME/Applications/7-Zip Mac.app"
+# Focused installer/registration check on macOS:
+python3 tests/finder-registration.py
+```
+
+The installer preserves a rollback copy, rejects downgrades, validates signatures/dependencies and registers the installed app. Build/package copies declare `LSHandlerRank=None`; use the installer to enable Finder opening. Existing default apps remain unchanged. See [registration and rollback](docs/finder-registration.md).
 
 Bootstrap downloads missing tools and official Qt/7-Zip dependencies into `~/.cache/7zip-mac-port`. It does not use sudo, install Homebrew itself or modify system Python. Install Command Line Tools with `xcode-select --install` if necessary and handle the macOS installer prompt. An existing matching Qt installation can be selected with `QT_PREFIX`.
 

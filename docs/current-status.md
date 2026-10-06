@@ -170,3 +170,7 @@ suites and two affected integration functions passed. Installed 0.2.1 actual
 Finder extraction restored all 1,292 files with matching SHA-256 and no orphan
 operation window/process. See [repair and retained evidence](open-with-extract-here-fix.md).
 The engine, unrelated passing groups and older release receipts are unchanged.
+
+## 0.2.2 Finder registration maintenance
+
+Build/package and retained rollback bundles now declare `LSHandlerRank=None`; `scripts/install.sh` activates only the installed copy and replaces that same path on updates. Actual Finder candidates on the tested Mac decreased from 21 to 1, with 48 managed copies suppressed. Eight affected installer/registration checks and installed startup pass. See [scope, rollback and actual Finder evidence](finder-registration.md). Archive/UI algorithms and the previous complete format coverage were not retested for this metadata/install change.

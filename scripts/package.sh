@@ -24,6 +24,8 @@ if [[ ! -f "$QT_SOURCE_ARCHIVE" ]]; then
 fi
 cp "$QT_SOURCE_ARCHIVE" "$APP/Contents/Resources/"
 python3 "$ROOT/scripts/source-archive.py" "$ROOT" "$APP/Contents/Resources/7zip-mac-port-src.tar.gz"
+# Repackaging a formerly installed bundle must not create a second opener.
+python3 "$ROOT/scripts/finder-registration.py" configure "$APP" --rank None
 chmod -R u+rwX,go+rX "$APP"
 xattr -cr "$APP"
 codesign --force --deep --sign - "$APP"

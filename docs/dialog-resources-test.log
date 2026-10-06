@@ -1,0 +1,344 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: dialog_resources
+
+1: Test command: /DEPS/build-comments-20261004/dialog_resource_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 90
+1: ********* Start testing of DialogResourceTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : DialogResourceTests::initTestCase()
+1: PASS   : DialogResourceTests::sourceCoordinatesAndButtonOrder()
+1: PASS   : DialogResourceTests::extractionVisibilityAndGeometry()
+1: PASS   : DialogResourceTests::originalProgressResizeAndState()
+1: PASS   : DialogResourceTests::originalProgressFormatting()
+1: Received signal 11 (SIGSEGV), code SEGV_ACCERR, at instruction address 0x0000000103d4f688, accessing address 0x0000000000000008
+1:          originalOptionsSummaryAndModal function time: 39ms, total time: 394ms
+1/5 Test  #1: dialog_resources .................***Exception: SegFault  1.05 sec
+********* Start testing of DialogResourceTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : DialogResourceTests::initTestCase()
+PASS   : DialogResourceTests::sourceCoordinatesAndButtonOrder()
+PASS   : DialogResourceTests::extractionVisibilityAndGeometry()
+PASS   : DialogResourceTests::originalProgressResizeAndState()
+PASS   : DialogResourceTests::originalProgressFormatting()
+Received signal 11 (SIGSEGV), code SEGV_ACCERR, at instruction address 0x0000000103d4f688, accessing address 0x0000000000000008
+         originalOptionsSummaryAndModal function time: 39ms, total time: 394ms
+
+test 2
+    Start  2: language_settings
+
+2: Test command: /DEPS/build-comments-20261004/language_settings_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+2: Working Directory: /DEPS/build-comments-20261004
+2: Environment variables: 
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 90
+2: ********* Start testing of LanguageSettingsTests *********
+2: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+2: PASS   : LanguageSettingsTests::initTestCase()
+2: PASS   : LanguageSettingsTests::officialFilesAndInformation()
+2: PASS   : LanguageSettingsTests::parserBoundaryAndEscapes()
+2: PASS   : LanguageSettingsTests::missingExtraAndTranslatorInformation()
+2: PASS   : LanguageSettingsTests::allLanguageControlResources()
+2: PASS   : LanguageSettingsTests::optionsApplyCancelAndInfo()
+2: PASS   : LanguageSettingsTests::progressStatesAndManualValues()
+2: PASS   : LanguageSettingsTests::menuToolbarAndPropertyIdentity()
+2: PASS   : LanguageSettingsTests::editableBundleLanguageDirectory()
+2: PASS   : LanguageSettingsTests::cleanupTestCase()
+2: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 553ms
+2: ********* Finished testing of LanguageSettingsTests *********
+2/5 Test  #2: language_settings ................   Passed    1.00 sec
+test 3
+    Start  3: version_menu_time
+
+3: Test command: /DEPS/build-comments-20261004/version_menu_time_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+3: Working Directory: /DEPS/build-comments-20261004
+3: Environment variables: 
+3:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+3: Test timeout computed to be: 90
+3: ********* Start testing of VersionMenuTimeTests *********
+3: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+3: QINFO  : VersionMenuTimeTests::initTestCase() Production preferences: /HOME/Library/Preferences/com.sevenzipmacport.7-Zip Mac Port.plist
+3: PASS   : VersionMenuTimeTests::initTestCase()
+3: PASS   : VersionMenuTimeTests::editCommitHistoryAndRevert()
+3: PASS   : VersionMenuTimeTests::sameBytesDifferentTime()
+3: PASS   : VersionMenuTimeTests::validationAndNoSnapshot()
+3: PASS   : VersionMenuTimeTests::asynchronousPauseCancel()
+3: PASS   : VersionMenuTimeTests::changedOriginalDuringRevert()
+3: PASS   : VersionMenuTimeTests::officialMenuConditions()
+3: PASS   : VersionMenuTimeTests::guiCommandsAndOverwriteDefault()
+3: PASS   : VersionMenuTimeTests::sourceTimeRenderer()
+3: PASS   : VersionMenuTimeTests::dynamicTimeMenuAndDefault()
+3: PASS   : VersionMenuTimeTests::cleanupTestCase()
+3: Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 1374ms
+3: ********* Finished testing of VersionMenuTimeTests *********
+3/5 Test  #3: version_menu_time ................   Passed    1.83 sec
+test 11
+    Start 11: native_progress
+
+11: Test command: /DEPS/build-comments-20261004/native_progress_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+11: Working Directory: /DEPS/build-comments-20261004
+11: Environment variables: 
+11:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+11: Test timeout computed to be: 120
+11: ********* Start testing of NativeProgressTests *********
+11: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+11: PASS   : NativeProgressTests::initTestCase()
+11: PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+11: PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+11: PASS   : NativeProgressTests::encryptedAndFailureRecovery()
+11: PASS   : NativeProgressTests::extractionFailureDialogAndReuse()
+11: PASS   : NativeProgressTests::pauseCancelAndReuse()
+11: FAIL!  : NativeProgressTests::progressLabelsAndLargeValues() 'dialog.findChild<QLabel *>("progressSpeed")->text().section(' ', 0, 0).toDouble() > 1000' returned FALSE. ()
+11:    Loc: [/REPOSITORY/tests/native-progress.cpp(92)]
+11: PASS   : NativeProgressTests::workerPauseCancelAndTimeout()
+11: PASS   : NativeProgressTests::workerUnicodeErrorAndSecret()
+11: PASS   : NativeProgressTests::sourceVerificationPauseCancel()
+11: PASS   : NativeProgressTests::sourceVerificationCallbacks()
+11: PASS   : NativeProgressTests::droppedConsumerDoesNotInterruptEngine()
+11: PASS   : NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()
+11: PASS   : NativeProgressTests::overwriteProtocolFullWidth()
+11: PASS   : NativeProgressTests::cleanupTestCase()
+11: Totals: 14 passed, 1 failed, 0 skipped, 0 blacklisted, 10047ms
+11: ********* Finished testing of NativeProgressTests *********
+4/5 Test #11: native_progress ..................***Failed   10.52 sec
+********* Start testing of NativeProgressTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : NativeProgressTests::initTestCase()
+PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+PASS   : NativeProgressTests::encryptedAndFailureRecovery()
+PASS   : NativeProgressTests::extractionFailureDialogAndReuse()
+PASS   : NativeProgressTests::pauseCancelAndReuse()
+FAIL!  : NativeProgressTests::progressLabelsAndLargeValues() 'dialog.findChild<QLabel *>("progressSpeed")->text().section(' ', 0, 0).toDouble() > 1000' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/native-progress.cpp(92)]
+PASS   : NativeProgressTests::workerPauseCancelAndTimeout()
+PASS   : NativeProgressTests::workerUnicodeErrorAndSecret()
+PASS   : NativeProgressTests::sourceVerificationPauseCancel()
+PASS   : NativeProgressTests::sourceVerificationCallbacks()
+PASS   : NativeProgressTests::droppedConsumerDoesNotInterruptEngine()
+PASS   : NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()
+PASS   : NativeProgressTests::overwriteProtocolFullWidth()
+PASS   : NativeProgressTests::cleanupTestCase()
+Totals: 14 passed, 1 failed, 0 skipped, 0 blacklisted, 10047ms
+********* Finished testing of NativeProgressTests *********
+
+test 23
+    Start 23: compression_help
+
+23: Test command: /DEPS/build-comments-20261004/compression_help_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+23: Working Directory: /DEPS/build-comments-20261004
+23: Environment variables: 
+23:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+23: Test timeout computed to be: 120
+23: ********* Start testing of CompressionHelpTests *********
+23: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+23: PASS   : CompressionHelpTests::initTestCase()
+23: PASS   : CompressionHelpTests::defaultsAndMemory()
+23: Received signal 11 (SIGSEGV), code SEGV_ACCERR, at instruction address 0x0000000105644bcc, accessing address 0x8a6178e43c5a7a7c
+23:          automaticAndManualPersistence function time: 42ms, total time: 44ms
+5/5 Test #23: compression_help .................***Exception: SegFault  0.61 sec
+********* Start testing of CompressionHelpTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : CompressionHelpTests::initTestCase()
+PASS   : CompressionHelpTests::defaultsAndMemory()
+Received signal 11 (SIGSEGV), code SEGV_ACCERR, at instruction address 0x0000000105644bcc, accessing address 0x8a6178e43c5a7a7c
+         automaticAndManualPersistence function time: 42ms, total time: 44ms
+
+
+The following tests passed:
+	language_settings
+	version_menu_time
+
+40% tests passed, 3 tests failed out of 5
+
+Total Test time (real) =  15.02 sec
+
+The following tests FAILED:
+	  1 - dialog_resources (SEGFAULT)
+	 11 - native_progress (Failed)
+	 23 - compression_help (SEGFAULT)
+Errors while running CTest
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: dialog_resources
+
+1: Test command: /DEPS/build-comments-20261004/dialog_resource_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 90
+1: ********* Start testing of DialogResourceTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : DialogResourceTests::initTestCase()
+1: PASS   : DialogResourceTests::sourceCoordinatesAndButtonOrder()
+1: PASS   : DialogResourceTests::extractionVisibilityAndGeometry()
+1: PASS   : DialogResourceTests::originalProgressResizeAndState()
+1: PASS   : DialogResourceTests::originalProgressFormatting()
+1: Received signal 11 (SIGSEGV), code SEGV_ACCERR, at instruction address 0x0000000105b4f688, accessing address 0x0000000000000008
+1:          originalOptionsSummaryAndModal function time: 40ms, total time: 405ms
+1/2 Test  #1: dialog_resources .................***Exception: SegFault  1.23 sec
+********* Start testing of DialogResourceTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : DialogResourceTests::initTestCase()
+PASS   : DialogResourceTests::sourceCoordinatesAndButtonOrder()
+PASS   : DialogResourceTests::extractionVisibilityAndGeometry()
+PASS   : DialogResourceTests::originalProgressResizeAndState()
+PASS   : DialogResourceTests::originalProgressFormatting()
+Received signal 11 (SIGSEGV), code SEGV_ACCERR, at instruction address 0x0000000105b4f688, accessing address 0x0000000000000008
+         originalOptionsSummaryAndModal function time: 40ms, total time: 405ms
+
+test 23
+    Start 23: compression_help
+
+23: Test command: /DEPS/build-comments-20261004/compression_help_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+23: Working Directory: /DEPS/build-comments-20261004
+23: Environment variables: 
+23:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+23: Test timeout computed to be: 120
+23: ********* Start testing of CompressionHelpTests *********
+23: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+23: PASS   : CompressionHelpTests::initTestCase()
+23: PASS   : CompressionHelpTests::defaultsAndMemory()
+23: PASS   : CompressionHelpTests::automaticAndManualPersistence()
+23: PASS   : CompressionHelpTests::officialControlInventory()
+23: PASS   : CompressionHelpTests::formatDraftsCommitAndCancel()
+23: PASS   : CompressionHelpTests::localizedDynamicControls()
+23: PASS   : CompressionHelpTests::originalTimeAndLinkOptions()
+23: PASS   : CompressionHelpTests::explicitLatestTimeOffRoundtrip()
+23: PASS   : CompressionHelpTests::upstreamResetTransitions()
+23: PASS   : CompressionHelpTests::methodGuardAndNearestSavedChoices()
+23: PASS   : CompressionHelpTests::historyAndToolbarInitialFormat()
+23: PASS   : CompressionHelpTests::translatedSolidCommands()
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/LZMA2)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/LZMA)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/PPMd)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/BZip2)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/Copy)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/Deflate)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/Deflate64)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/BZip2)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/LZMA)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/PPMd)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/Copy)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(tar/GNU)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(tar/POSIX)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(wim/Copy)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(xz/LZMA2)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(gzip/Deflate)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(bzip2/BZip2)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(Hash/SHA256)
+23: PASS   : CompressionHelpTests::selectedMethodRoundtrip(Hash/SHA1)
+23: PASS   : CompressionHelpTests::automaticRoundtrip(7z-normal)
+23: PASS   : CompressionHelpTests::automaticRoundtrip(7z-store)
+23: PASS   : CompressionHelpTests::automaticRoundtrip(zip-normal)
+23: PASS   : CompressionHelpTests::automaticRoundtrip(zip-store)
+23: PASS   : CompressionHelpTests::automaticEncryptedArchive()
+23: PASS   : CompressionHelpTests::insufficientMemoryAndPasswordValidation()
+23: PASS   : CompressionHelpTests::helpInventoryAndNavigation()
+23: PASS   : CompressionHelpTests::helpResourceBoundary()
+23: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 12
+23: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 14
+23: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 11
+23: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleIndicFont", script 11
+23: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 13
+23: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 20
+23: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 16
+23: PASS   : CompressionHelpTests::contextualHelpButtons()
+23: PASS   : CompressionHelpTests::fullTextSearch()
+23: PASS   : CompressionHelpTests::helpSearchUiAndPrint()
+23: PASS   : CompressionHelpTests::originalAboutActions()
+23: PASS   : CompressionHelpTests::helpHistoryAndOperators()
+23: PASS   : CompressionHelpTests::helpHistoryBounds()
+23: PASS   : CompressionHelpTests::cleanupTestCase()
+23: Totals: 46 passed, 0 failed, 0 skipped, 0 blacklisted, 3911ms
+23: ********* Finished testing of CompressionHelpTests *********
+2/2 Test #23: compression_help .................   Passed    4.37 sec
+
+The following tests passed:
+	compression_help
+
+50% tests passed, 1 tests failed out of 2
+
+Total Test time (real) =   5.60 sec
+
+The following tests FAILED:
+	  1 - dialog_resources (SEGFAULT)
+Errors while running CTest
+********* Start testing of DialogResourceTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : DialogResourceTests::initTestCase()
+PASS   : DialogResourceTests::sourceCoordinatesAndButtonOrder()
+PASS   : DialogResourceTests::extractionVisibilityAndGeometry()
+PASS   : DialogResourceTests::originalProgressResizeAndState()
+PASS   : DialogResourceTests::originalProgressFormatting()
+PASS   : DialogResourceTests::originalOptionsSummaryAndModal()
+FAIL!  : DialogResourceTests::defaultLanguageAndSavedChoice() Compared values are not the same
+   Actual   (UiLanguage::defaultLanguage(QLocale(item.first))): "pt"
+   Expected (item.second)                                     : "pt-br"
+   Loc: [/REPOSITORY/tests/dialog-resources.cpp(96)]
+PASS   : DialogResourceTests::cleanupTestCase()
+Totals: 7 passed, 1 failed, 0 skipped, 0 blacklisted, 435ms
+********* Finished testing of DialogResourceTests *********
+********* Start testing of DialogResourceTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : DialogResourceTests::initTestCase()
+PASS   : DialogResourceTests::defaultLanguageAndSavedChoice()
+PASS   : DialogResourceTests::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 81ms
+********* Finished testing of DialogResourceTests *********
+********* Start testing of LanguageSettingsTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : LanguageSettingsTests::initTestCase()
+PASS   : LanguageSettingsTests::officialFilesAndInformation()
+PASS   : LanguageSettingsTests::parserBoundaryAndEscapes()
+PASS   : LanguageSettingsTests::missingExtraAndTranslatorInformation()
+PASS   : LanguageSettingsTests::allLanguageControlResources()
+PASS   : LanguageSettingsTests::optionsApplyCancelAndInfo()
+PASS   : LanguageSettingsTests::progressStatesAndManualValues()
+PASS   : LanguageSettingsTests::menuToolbarAndPropertyIdentity()
+PASS   : LanguageSettingsTests::editableBundleLanguageDirectory()
+PASS   : LanguageSettingsTests::cleanupTestCase()
+Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 576ms
+********* Finished testing of LanguageSettingsTests *********
+********* Start testing of NativeProgressTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : NativeProgressTests::initTestCase()
+PASS   : NativeProgressTests::progressLabelsAndLargeValues()
+PASS   : NativeProgressTests::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 70ms
+********* Finished testing of NativeProgressTests *********
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-RbkazL"
+PASS   : Integration::initTestCase()
+PASS   : Integration::officialLanguagesAndRootOptions()
+QWARN  : Integration::advancedCompressionSettings() Cocoa focus unavailable false false true
+FAIL!  : Integration::advancedCompressionSettings() 'activateTestWindow(&dialog)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(846)]
+PASS   : Integration::absoluteExtractionAndDialogSettings()
+PASS   : Integration::openWithArchiveCommands()
+PASS   : Integration::guiArchiveFolderCreation()
+PASS   : Integration::cleanupTestCase()
+Totals: 6 passed, 1 failed, 0 skipped, 0 blacklisted, 6891ms
+********* Finished testing of Integration *********

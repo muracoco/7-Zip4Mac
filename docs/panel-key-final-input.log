@@ -1,0 +1,93 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: copy_workflow
+
+1: Test command: /DEPS/build-comments-20261004/copy_workflow_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 180
+1: ********* Start testing of CopyWorkflowTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : CopyWorkflowTests::initTestCase()
+1: PASS   : CopyWorkflowTests::originalDialogAndSummary()
+1: PASS   : CopyWorkflowTests::copyHistoryLimitAndCancellation()
+1: PASS   : CopyWorkflowTests::filesystemDestination(copy-filename)
+1: PASS   : CopyWorkflowTests::filesystemDestination(copy-directory)
+1: PASS   : CopyWorkflowTests::filesystemDestination(move-filename)
+1: PASS   : CopyWorkflowTests::filesystemDestination(move-directory)
+1: PASS   : CopyWorkflowTests::destinationPreparationFailureKeepsHistoryAndSource()
+1: PASS   : CopyWorkflowTests::focusedShiftCopyMove(shift-copy)
+1: PASS   : CopyWorkflowTests::focusedShiftCopyMove(shift-move)
+1: PASS   : CopyWorkflowTests::archiveToFilesystem(7z-0)
+1: PASS   : CopyWorkflowTests::archiveToFilesystem(7z-1)
+1: PASS   : CopyWorkflowTests::archiveToFilesystem(zip-0)
+1: PASS   : CopyWorkflowTests::archiveToFilesystem(zip-1)
+1: PASS   : CopyWorkflowTests::archiveBetweenPanels(7z-7z)
+1: PASS   : CopyWorkflowTests::archiveBetweenPanels(7z-zip)
+1: PASS   : CopyWorkflowTests::archiveBetweenPanels(zip-7z)
+1: PASS   : CopyWorkflowTests::archiveBetweenPanels(zip-zip)
+1: PASS   : CopyWorkflowTests::selfCopyAndWindowsArchiveMoveError()
+1: PASS   : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs()
+1: PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput()
+1: PASS   : CopyWorkflowTests::combineUsesOriginalCopyDialog()
+1: PASS   : CopyWorkflowTests::cleanupTestCase()
+1: Totals: 23 passed, 0 failed, 0 skipped, 0 blacklisted, 18297ms
+1: ********* Finished testing of CopyWorkflowTests *********
+1/2 Test #1: copy_workflow ....................   Passed   18.87 sec
+test 3
+    Start 3: panel_key
+
+3: Test command: /DEPS/build-comments-20261004/panel_key_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+3: Working Directory: /DEPS/build-comments-20261004
+3: Environment variables: 
+3:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+3: Test timeout computed to be: 180
+3: ********* Start testing of PanelKeyTests *********
+3: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+3: PASS   : PanelKeyTests::initTestCase()
+3: PASS   : PanelKeyTests::focusedRenameWithoutMarks(details)
+3: PASS   : PanelKeyTests::focusedRenameWithoutMarks(icons)
+3: PASS   : PanelKeyTests::relativeFilesystemRename(ordinary-child-path)
+3: PASS   : PanelKeyTests::relativeFilesystemRename(flat-parent-relative)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(existing)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(missing-parent)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(dot)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(dot-parent)
+3: PASS   : PanelKeyTests::relativeArchiveRename(7z-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(7z-1)
+3: PASS   : PanelKeyTests::relativeArchiveRename(zip-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(zip-1)
+3: PASS   : PanelKeyTests::relativeArchiveRename(tar-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(tar-1)
+3: PASS   : PanelKeyTests::relativeArchiveRename(wim-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(wim-1)
+3: PASS   : PanelKeyTests::shiftF4AndAltPathFocus()
+3: PASS   : PanelKeyTests::otherPanelFilesystemNavigation()
+3: PASS   : PanelKeyTests::otherPanelArchiveNavigation(7z)
+3: PASS   : PanelKeyTests::otherPanelArchiveNavigation(zip)
+3: PASS   : PanelKeyTests::sharedNestedLifetimeAndParent()
+3: PASS   : PanelKeyTests::scanDoesNotStealExplicitAddressFocus()
+3: PASS   : PanelKeyTests::clipboardUsesExactNames()
+3: PASS   : PanelKeyTests::symbolicFolderBrowseAndRename()
+3: PASS   : PanelKeyTests::cleanupTestCase()
+3: Totals: 26 passed, 0 failed, 0 skipped, 0 blacklisted, 15408ms
+3: ********* Finished testing of PanelKeyTests *********
+2/2 Test #3: panel_key ........................   Passed   15.88 sec
+
+The following tests passed:
+	copy_workflow
+	panel_key
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  34.75 sec

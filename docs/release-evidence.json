@@ -1,0 +1,4891 @@
+{
+  "schema": 1,
+  "policy": "Distinct case IDs; first run plus affected follow-ups, excluding setup/cleanup. Physical input is separate.",
+  "reports": [
+    {
+      "report": "address-affected.log",
+      "sha256": "8ce1f887733d1327ed75869dcd882b3461d871df34a8b2c78457e2c3bb72ab0d"
+    },
+    {
+      "report": "agent-affected.log",
+      "sha256": "e48eeced97849c28a1c3aae0c78417a565297d6772f9043c0703c068f2aa96b3"
+    },
+    {
+      "report": "agent-selection.log",
+      "sha256": "35aa60269d2f8a289a3eff6ffbfde0b5196e4d3c338a629e47ed2b4113a09694"
+    },
+    {
+      "report": "agent-tree.log",
+      "sha256": "af78e4b5ea197b57e6539d50220ddfba2c2f99e99ca39215be91e4376f7dd92c"
+    },
+    {
+      "report": "application-remaining.log",
+      "sha256": "97607055a74f46beb3ea478bcc2257fe1ffdaa6771f460185005d4517c0adf57"
+    },
+    {
+      "report": "application.log",
+      "sha256": "f2f4af2f6842cd9610785e9275265bc691dc1a9e0d269aaa10572ad231fd9203"
+    },
+    {
+      "report": "build.log",
+      "sha256": "256fee1d70de1bbf4100b423f3febd81a3fcb89b6c4330f7e2f4de50b5f0c43f"
+    },
+    {
+      "report": "bundle-startup.log",
+      "sha256": "e8665269e42f90872ce9cc5a7a35ed8bac2c26dc24005c8c23ca590eceb82ef2"
+    },
+    {
+      "report": "clipboard-complete.log",
+      "sha256": "460bb7476e54aed0732f5933a7a70feefd7219346caaddc1bf2aa67dc87265f1"
+    },
+    {
+      "report": "clipboard-diagnostic.log",
+      "sha256": "c662baaa63bfcfd208a2ef7fb72db3ab077c340ecd79d6549cb929700bd8af9b"
+    },
+    {
+      "report": "clipboard-final-build.log",
+      "sha256": "a732f8c6a60125805ae078866fb6f8f13a31bcb209536756142e3d9b69efaa3c"
+    },
+    {
+      "report": "clipboard-final.log",
+      "sha256": "acf47c51a4a9d7b4064a202abcbbb65cb866bae8851d814b867bc7f0654266e0"
+    },
+    {
+      "report": "clipboard-repaired.log",
+      "sha256": "c1ba3c5bde080bf4d7b7e91883cb9f9c2bf670d3458a3dc10c4e673b88811c99"
+    },
+    {
+      "report": "context-repaired.log",
+      "sha256": "e8ae42534ea3a91cc319c3a33ae4c01908393db63a919a970c79ebacaef64fbd"
+    },
+    {
+      "report": "copy-boundary-build.log",
+      "sha256": "c8408d58b1a6b997fe073b836c974d9b0f5559a82de5e7f93fd6194abedd876c"
+    },
+    {
+      "report": "cross-volume.log",
+      "sha256": "19e391a1cfdc482d18465d1de12d1a88565eafe0c1d1b73ec653431fb58ca2c9"
+    },
+    {
+      "report": "directory-repaired.log",
+      "sha256": "fc038a74fe6429d31161c0a761e8546fbc85140329a60cf009ac23b02f41ead8"
+    },
+    {
+      "report": "file-publication-affected.log",
+      "sha256": "24f864da92fe7d01e5cae3ea216bdddb46a106d2411bc5e7bddaa40649010f79"
+    },
+    {
+      "report": "final-bundle-startup.log",
+      "sha256": "e8665269e42f90872ce9cc5a7a35ed8bac2c26dc24005c8c23ca590eceb82ef2"
+    },
+    {
+      "report": "final-bundle.log",
+      "sha256": "b1fd5e68f97ce091bcdc6cce8eab6fd36c1721a5e7a7757813dce725a8e759d3"
+    },
+    {
+      "report": "final-deploy.log",
+      "sha256": "2a5c33580660318bc613055e8e16e4241aef84c70626d4d516daa26fe47e0edd"
+    },
+    {
+      "report": "final-file-publication.log",
+      "sha256": "1f19a3f2b510702459e59ad44e6db1bb8de63e596b9c67a798e38f53fa0d49f5"
+    },
+    {
+      "report": "final-link-build.log",
+      "sha256": "2585ce4f4daa155cb30c98618ebea35bfa5268620e184abef56968887d01adac"
+    },
+    {
+      "report": "final-publication-build.log",
+      "sha256": "2557e2cb7a4bdc23b2c2afb7ab93b5450faf83b414e8af6dda2ba04aae6a9328"
+    },
+    {
+      "report": "final-repair-build.log",
+      "sha256": "ec04e6535c29a93ec6174c6a70873ee6b95f3c43c7a5278e58d3df2aa2b130c6"
+    },
+    {
+      "report": "formats-affected.log",
+      "sha256": "3e32a509f79972c05206538c61237db1e7f6fe242430152b4f5c958f7fd5eae7"
+    },
+    {
+      "report": "formats.log",
+      "sha256": "9d2d9629f2dc6b8fd41b850fcf8352b5fcb83effc34f81dc27fe41f9cb2eced4"
+    },
+    {
+      "report": "harness-repair-build.log",
+      "sha256": "dcb4dbcad35df480696e63fa3cf01c2acd2956473cf4adb8b785478af2c19d4d"
+    },
+    {
+      "report": "integration-repaired.log",
+      "sha256": "f0f786ad792e24e2aeaa90c04dda457af99e0575b26c08fcc8485e6927fee1a6"
+    },
+    {
+      "report": "open-modes-remaining.log",
+      "sha256": "3630a7e00016aa3b0682d6c3136f7dfba9df507b0a05df73c7ee9a2dbc0f019b"
+    },
+    {
+      "report": "parser-repaired.log",
+      "sha256": "a9ea215379c60e9450616f5cdff36851aab335e35b46cca8d222ea85f85605f0"
+    },
+    {
+      "report": "publication-guard-build.log",
+      "sha256": "46145531860ebbd59e6f46d9598a6afe7aeb3699cb79fc82669506e144272c8e"
+    },
+    {
+      "report": "repair-build.log",
+      "sha256": "384d5eb78f6e6580e1ee824a9a3f44d2c9be62f43174a7b37fd158840fe68743"
+    },
+    {
+      "report": "smb-boundary-build.log",
+      "sha256": "e063273e8ab34329eadb52a0108716fa8d58a5b407c4e431de02a0d2b728a7e3"
+    },
+    {
+      "report": "smb-final.log",
+      "sha256": "a9d4ed689a9a16caf44f168e9c556894b27d45775b16aa8ca8ab984c9920c44e"
+    },
+    {
+      "report": "smb-hash-verified.log",
+      "sha256": "2627339e92c2b1ee303c31cd95adff3ca4f149c9a265b604e20c02d2ba937d48"
+    },
+    {
+      "report": "smb-repaired.log",
+      "sha256": "cbf0fc4604dcef4d99eb7646c89f8ba2e20f785b4796c6fa2971be542f18d912"
+    },
+    {
+      "report": "smb-test-budget-build.log",
+      "sha256": "e90454cac4725760c6f7df3576f9cf6111e6bcaf3d22f92d4a61182424ceda93"
+    }
+  ],
+  "cases": {
+    "Integration::roundtrip(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::roundtrip(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::encryption(7z-data)": {
+      "result": "PASS",
+      "report": "application.log"
+    },
+    "Integration::encryption(7z-headers)": {
+      "result": "PASS",
+      "report": "application.log"
+    },
+    "Integration::encryption(zip-AES)": {
+      "result": "PASS",
+      "report": "application.log"
+    },
+    "Integration::encryption(zip-ZipCrypto)": {
+      "result": "PASS",
+      "report": "application.log"
+    },
+    "Integration::updateRenameDelete()": {
+      "result": "PASS",
+      "report": "application.log"
+    },
+    "Integration::encryptedUpdate()": {
+      "result": "PASS",
+      "report": "application.log"
+    },
+    "Integration::selectedExtractOverwrite()": {
+      "result": "PASS",
+      "report": "application.log"
+    },
+    "Integration::safetyPaths()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::errorsAndRecovery()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::rarSelectedExtract()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::splitVolumesAndReadOnly()": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::cancellationAndResponsiveness()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::nestedArchiveNavigation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::nestedArchivePasswordsAndCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveRefreshPreservesFolder(plain)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveRefreshPreservesFolder(encrypted-headers)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archivePauseResumeAndCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::filePauseResumeAndCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::clipboardNamesAndUpstreamNoOps()": {
+      "result": "PASS",
+      "report": "clipboard-complete.log"
+    },
+    "Integration::archiveContentsHashes(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveContentsHashes(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveContentsHashes(7z-password)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveContentsHashes(7z-headers)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveContentsHashes(zip-AES)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFileReplacement(7z)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(zip)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(tar)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(wim)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(gzip)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(bzip2)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(xz)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(7z-data)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(7z-headers)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(zip-AES)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveFileReplacement(zip-ZipCrypto)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::archiveReplacementConcurrentEdit()": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::nestedArchiveCancelledWriteBack()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::nestedStreamWriteBack(gzip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::nestedStreamWriteBack(bzip2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::nestedStreamWriteBack(xz)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::nestedArchiveWriteBack(up-yes)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::nestedArchiveWriteBack(address-yes)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::nestedArchiveWriteBack(ancestor-yes)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::nestedArchiveWriteBack(close-yes-encrypted)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::nestedArchiveWriteBack(up-no)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::nestedArchiveWriteBack(up-cancel)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::nestedArchiveWriteBack(close-no)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::nestedArchiveWriteBack(close-cancel)": {
+      "result": "PASS",
+      "report": "integration-repaired.log"
+    },
+    "Integration::nestedUnchangedCloseAndPanelRemoval()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderCreation(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderCreation(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderCreation(tar)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderCreation(wim)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderCreation(7z-data)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderCreation(7z-headers)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderCreation(zip-AES)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderCreation(zip-ZipCrypto)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderCancelAndProtection()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderNativeWimImagesAndTimes()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderMixedDataPasswords(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderMixedDataPasswords(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderWorkingDirectory()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderLargeListing()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::archiveFolderDiagnosticsAndLimits()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::guiArchiveFolderCreation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::fileCopyMoveRenameFolder()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::splitCombineAndFailures()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::volumeNumberingAndLinks()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::guiTypeBookmarksAndFileTools()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::officialBenchmarkAndStop()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::configuredWorkingFolderAndMemory()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::officialLanguagesAndRootOptions()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::eliminateRootAndRenameExisting()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::trashAfterVerifiedCompression()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::compressionMethods()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::absoluteExtractionAndDialogSettings()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::additionalFormatsAndLinks()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::verifiedTrashOtherFormatsAndUpdateModes()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::openWithSettingsAndDelivery()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::openWithArchiveCommands()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::officialChecksumsAndHashFormat()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "Integration::openWithCancelAndBusyQueue()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CopyWorkflowTests::originalDialogAndSummary()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::copyHistoryLimitAndCancellation()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::filesystemDestination(copy-filename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::filesystemDestination(copy-directory)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::filesystemDestination(move-filename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::filesystemDestination(move-directory)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::destinationPreparationFailureKeepsHistoryAndSource()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::focusedShiftCopyMove(shift-copy)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::focusedShiftCopyMove(shift-move)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveToFilesystem(7z-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveToFilesystem(7z-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveToFilesystem(zip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveToFilesystem(zip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveBetweenPanels(7z-7z)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveBetweenPanels(7z-zip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveBetweenPanels(zip-7z)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveBetweenPanels(zip-zip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::selfCopyAndWindowsArchiveMoveError()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-Yes)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-YesAll)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-No)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-NoAll)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-Rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-Cancel)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-Yes)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-YesAll)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-No)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-NoAll)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-Rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-Cancel)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(flat-path-collision)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveSingleDestinationIsDirectory(7z)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::archiveSingleDestinationIsDirectory(zip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::filesystemFlatPathsToArchive(7z-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::filesystemFlatPathsToArchive(7z-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::filesystemFlatPathsToArchive(zip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::filesystemFlatPathsToArchive(zip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CopyWorkflowTests::combineUsesOriginalCopyDialog()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "CommandEntryTests::comboResourceAndResize()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::sourceWildcard(normal)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::sourceWildcard(alternative)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::inlineRename(view0-0)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::inlineRename(view0-1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::inlineRename(view1-0)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::inlineRename(view1-1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::inlineRename(view2-0)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::inlineRename(view2-1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::inlineRename(view3-0)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::inlineRename(view3-1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::partialRowSelection()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::closeDuringInlineEdit()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::exclusiveRename(case)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::exclusiveRename(symlink)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::exclusiveRename(hardlink)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::exclusiveRename(existing)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::exclusiveRename(readonly)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::exclusiveRename(cancel)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::exclusiveRename(parent-permission)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::exclusiveRename(folder)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::creationAndSelection()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::archiveRenameAndCreate(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::archiveRenameAndCreate(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommandEntryTests::historyDeleteAcceptAndCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::focusedRenameWithoutMarks(details)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::focusedRenameWithoutMarks(icons)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeFilesystemRename(ordinary-child-path)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeFilesystemRename(flat-parent-relative)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::renameFailuresKeepBothFiles(existing)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::renameFailuresKeepBothFiles(missing-parent)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::renameFailuresKeepBothFiles(dot)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::renameFailuresKeepBothFiles(dot-parent)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeArchiveRename(7z-0)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeArchiveRename(7z-1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeArchiveRename(zip-0)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeArchiveRename(zip-1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeArchiveRename(tar-0)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeArchiveRename(tar-1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeArchiveRename(wim-0)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::relativeArchiveRename(wim-1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::shiftF4AndAltPathFocus()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::otherPanelFilesystemNavigation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::otherPanelArchiveNavigation(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::otherPanelArchiveNavigation(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::sharedNestedLifetimeAndParent()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::scanDoesNotStealExplicitAddressFocus()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::clipboardUsesExactNames()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelKeyTests::symbolicFolderBrowseAndRename()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationPaths(file-absolute)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationPaths(file-parent)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationPaths(file-dot)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationPaths(file-literal)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationPaths(folder-absolute)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationPaths(folder-parent)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationPaths(folder-dot)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationPaths(folder-literal)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationFailures(existing-file)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationFailures(existing-directory)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationFailures(missing-parent)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationFailures(symlink-parent)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationFailures(readonly-parent)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationFailures(trailing-file-slash)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationFailures(embedded-null)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::creationFailures(existing-link)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::addressEnterEscapeAndTab()": {
+      "result": "PASS",
+      "report": "address-affected.log"
+    },
+    "AddressWorkflowTests::dropdownAncestorSelection()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::nestedDropdownSelection()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::panelAndAddressKeys(0)": {
+      "result": "PASS",
+      "report": "address-affected.log"
+    },
+    "AddressWorkflowTests::panelAndAddressKeys(3)": {
+      "result": "PASS",
+      "report": "address-affected.log"
+    },
+    "AddressWorkflowTests::originalSortAndSelectionDispatch()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "AddressWorkflowTests::headerToggleAndClose()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ListingTests::originalDisplayAndDeferredProperties()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ListingTests::displayedNameKeepsRealFilesystemIdentity()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ListingTests::asynchronousSortKeepsExactValuesMarksFocusAndUnsorted()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ListingTests::supersededSortClearAndDestruction()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ListingTests::nativeIconsBothKindsAndNavigation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ListingTests::archiveRawNameRename(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ListingTests::archiveRawNameRename(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ListingTests::actualLargeArchive(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ListingTests::actualLargeArchive(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::naturalNames(numbers)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::naturalNames(leading-zero-tie)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::naturalNames(all-zero)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::naturalNames(case-tie)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::naturalNames(ordinal-punctuation)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::naturalNames(unicode-numbers)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::naturalNames(long-number)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::naturalNames(empty)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::typedProperties(ui1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::typedProperties(i2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::typedProperties(ui2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::typedProperties(i4)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::typedProperties(ui4)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::typedProperties(i8)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::typedProperties(ui8)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::typedProperties(bool)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::tiesMissingAndVariantTypes()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::timePrecisionAndRawProperties()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::parentFoldersAndUnsorted()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::filesystemSchemaAndStatValues()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::headerMenuAndSelection()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::propertySettingsSurviveFlatAndPanels()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::legacyColumnSettingsMigration()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::archivePropertyMenu(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSortTests::archivePropertyMenu(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::originalCompletionPolicy(success-auto-close)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::originalCompletionPolicy(test-ok-message)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::originalCompletionPolicy(fatal-error-message)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::originalCompletionPolicy(file-errors-retain-close)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::originalCompletionPolicy(fatal-and-file-errors)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::originalCompletionPolicy(cancelled-with-errors-close)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::originalTestAndHashText()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::checksumSelectionCopyDeleteAndDetail()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::actualEngineResults(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::actualEngineResults(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::actualInsideTestSummary()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::fatalAndFileErrorsAndParentTitle()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::invalidCompletionRecordIsRejected()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressCompletionTests::passwordAttemptEndsWithoutFinalErrorOrCancelQuestion()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::originalStatisticsAndPause()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::originalFileNameAndStatusReduction()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::originalMessagesAndLocalizedErrors()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::widgetPresentationAndLanguage()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::cancelConfirmation(yes-running)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::cancelConfirmation(yes-paused)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::cancelConfirmation(no-running)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::cancelConfirmation(no-paused)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::cancelConfirmation(cancel-running)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::cancelConfirmation(cancel-paused)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::completionDuringConfirmation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::backgroundChildAndCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ProgressPresentationTests::genuineCallbackErrors()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DialogResourceTests::sourceCoordinatesAndButtonOrder()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DialogResourceTests::extractionVisibilityAndGeometry()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DialogResourceTests::originalProgressResizeAndState()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DialogResourceTests::originalProgressFormatting()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DialogResourceTests::originalOptionsSummaryAndModal()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DialogResourceTests::originalAboutAndTemporaryLayout()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DialogResourceTests::officialLanguageTextFits()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DialogResourceTests::defaultLanguageAndSavedChoice()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "LanguageSettingsTests::officialFilesAndInformation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "LanguageSettingsTests::parserBoundaryAndEscapes()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "LanguageSettingsTests::missingExtraAndTranslatorInformation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "LanguageSettingsTests::allLanguageControlResources()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "LanguageSettingsTests::optionsApplyCancelAndInfo()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "LanguageSettingsTests::progressStatesAndManualValues()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "LanguageSettingsTests::menuToolbarAndPropertyIdentity()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "LanguageSettingsTests::editableBundleLanguageDirectory()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "VersionMenuTimeTests::editCommitHistoryAndRevert()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "VersionMenuTimeTests::sameBytesDifferentTime()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "VersionMenuTimeTests::validationAndNoSnapshot()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "VersionMenuTimeTests::asynchronousPauseCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "VersionMenuTimeTests::changedOriginalDuringRevert()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "VersionMenuTimeTests::officialMenuConditions()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "VersionMenuTimeTests::guiCommandsAndOverwriteDefault()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "VersionMenuTimeTests::sourceTimeRenderer()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "VersionMenuTimeTests::dynamicTimeMenuAndDefault()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::effects(same-drive)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::effects(other-drive)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::effects(Ctrl-copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::effects(Shift-move)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::effects(Ctrl-Shift-link-refused)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::effects(Alt-link-refused)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::effects(Ctrl-Alt-default)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::effects(Shift-Alt-default)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::sourceMenuOrderAndConditions()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::contextCrcClick()": {
+      "result": "PASS",
+      "report": "context-repaired.log"
+    },
+    "PanelMenuDragTests::filesystemPanelDrop(Details-Copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::filesystemPanelDrop(Details-Move)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::filesystemPanelDrop(Large-Icons-Copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::filesystemPanelDrop(Large-Icons-Move)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::filesystemPanelDrop(Small-Icons-Copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::filesystemPanelDrop(Small-Icons-Move)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::filesystemPanelDrop(List-Copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::filesystemPanelDrop(List-Move)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::defaultDropMovesSymlinkOnly()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::rightDragGesture()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::rightDropChoices(Copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::rightDropChoices(Move)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::rightDropChoices(Add)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::rightDropChoices(Cancel)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::archiveDropConfirmation(7z-Yes)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::archiveDropConfirmation(7z-Cancel)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::archiveDropConfirmation(ZIP-Yes)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::archiveDropConfirmation(ZIP-Cancel)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::archiveDrag(7z-to-FS)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::archiveDrag(ZIP-to-FS)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::archiveDrag(encrypted-7z-to-FS)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelMenuDragTests::archiveDrag(drag-cancel)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(ZIP-document)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(source)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(archive)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(no-extension)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(directory-dot)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(non-ASCII-casefold)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(33-character-extension)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(four-spaces)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(five-spaces)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(mixed-space-characters)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(RLO)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialNameProfile(POSIX-trailing-dot-space)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::filesystemContentDetection(7z-unknown)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::filesystemContentDetection(ZIP-no-extension)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::filesystemFallbackAndErrors(regular-fallback)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::filesystemFallbackAndErrors(permission-error)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::filesystemFallbackAndErrors(Open-Inside-never-falls-back)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::encryptedUnknownDefaultOpen(password)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::encryptedUnknownDefaultOpen(password-cancel)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::filenameWarningBlocksOnlyExternalOpening()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::officialPlan()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::multipleArchiveOpen(7z-Open)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::multipleArchiveOpen(ZIP-Open-Outside)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::multipleArchiveOpen(ZIP-same-name-Open)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelOpenTests::markedNestedArchiveUsesItsOwnIdentity()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::independentMarks(details)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::independentMarks(icons)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::insertAndParent(details)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::insertAndParent(icons)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::shiftArrowMarks(details)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::shiftArrowMarks(icons)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::ctrlShiftClickRange(details)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::ctrlShiftClickRange(icons)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::standardSelection(details)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::standardSelection(icons)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::paintAndSort()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::mainWindowRoundtrip(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::mainWindowRoundtrip(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PanelSelectionTests::independentPanelsAndModeSwitch()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "BenchmarkTests::nativeDictionaryCurrentAndAccumulation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "BenchmarkTests::officialMemoryArithmetic()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "BenchmarkTests::protocolPrecisionAndInvalidRecords()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "BenchmarkTests::failureAndRecovery()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "BenchmarkTests::parametersAndGui()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "BenchmarkTests::stopWhileRunningAndClose()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "BenchmarkTests::upstreamDefaults()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::copyDefaultsAndLogicalPrefix(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::copyDefaultsAndLogicalPrefix(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::copyDefaultsAndLogicalPrefix(tar)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::copyDefaultsAndLogicalPrefix(wim)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::encryptionInherited(7z-header)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::encryptionInherited(zip-AES)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::moveVerifiesPrefixedRoots(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::moveVerifiesPrefixedRoots(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::moveVerifiesPrefixedRoots(tar)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::moveVerifiesPrefixedRoots(wim)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::invalidPrefixAndDuplicateInputs()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::streamCopyAndMove(gzip-copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::streamCopyAndMove(gzip-move)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::streamCopyAndMove(bzip2-copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::streamCopyAndMove(bzip2-move)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::streamCopyAndMove(xz-copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::streamCopyAndMove(xz-move)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::moveFileLinkRetainsTarget()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::moveDirectoryLinkRetainsTargets(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::moveDirectoryLinkRetainsTargets(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::moveDirectoryLinkRetainsTargets(tar)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::moveDirectoryLinkRetainsTargets(wim)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::pauseCancelExistingArchive()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Copy-context)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Move-action)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::guiDropIntoFolderFromDifferentParents()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::guiDirectoryLinkMoveRefreshesBothPanels()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ArchiveTransferTests::guiVerificationFailureRefreshesCommittedArchive()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::callbacksAndRoundTrip(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::callbacksAndRoundTrip(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::encryptedAndFailureRecovery()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::extractionFailureDialogAndReuse()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::pauseCancelAndReuse()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::progressLabelsAndLargeValues()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::workerPauseCancelAndTimeout()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::workerUnicodeErrorAndSecret()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::sourceVerificationPauseCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::sourceVerificationCallbacks()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::droppedConsumerDoesNotInterruptEngine()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "NativeProgressTests::overwriteProtocolFullWidth()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::nativeCommentRenameAndExtract(crypto-deflate-dd32)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::nativeCommentRenameAndExtract(crypto-store-dd32)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::nativeCommentRenameAndExtract(crypto-forced64)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned32)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned64)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::nativeCommentRenameAndExtract(crypto-skewed-time)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::nativeCommentRenameAndExtract(AES-descriptor)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::legacyCommentHelperDescriptor()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::encryptedFolderRenameAndReplacement()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ZipMetadataTests::utf8CommentBoundsAndFailedUpdate()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::processWaitsForDescendants()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::independentSameExecutableHandoff(short-unchanged-discovers-server)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::independentSameExecutableHandoff(changed-client-does-not-discover)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::independentSameExecutableHandoff(long-client-does-not-discover)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::independentHandoffArchiveWriteBack()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(tar)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(wim)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(gzip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(bzip2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(xz)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(7z-data-view)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(7z-headers)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(zip-AES)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::writeBack(zip-ZipCrypto)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::discardedOrRetained(no)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::discardedOrRetained(cancel)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::discardedOrRetained(other-folder)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::discardedOrRetained(read-only)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::discardedOrRetained(removed-item)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::runningEditorSurvivesClose(modified)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::runningEditorSurvivesClose(unchanged)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::shortLauncherLifetime(unchanged-retained)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::shortLauncherLifetime(later-edit-retained)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::focusedFileOnly()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::applicationBundleWaitAndArguments()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::observedNewSessionChild()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::nestedEditorWriteBack()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::updateCancellationRetainsEdit()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::twoPanelsSerializeWrites()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::failedLaunchAndUnchangedCompletion(missing-program)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "StatisticsTests::countsUnicodeHiddenLinksAndSparseFile()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "StatisticsTests::errorsAndCompletedSibling()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "StatisticsTests::pauseResumeCancelAndReuse(resume)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "StatisticsTests::pauseResumeCancelAndReuse(cancel)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "StatisticsTests::selectedFoldersTakePrecedence(details)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "StatisticsTests::selectedFoldersTakePrecedence(icons)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "StatisticsTests::selectedFoldersTakePrecedence(flat)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "StatisticsTests::guiErrorDoesNotDisplayPartialCounts()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "StatisticsTests::guiCancelAndClose()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::originalFilterAndBoundedCounts()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::layoutNavigationSortAndOpen(without-dots)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::layoutNavigationSortAndOpen(with-dots)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::contextMenuSettingsAndTranslation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::propertiesFreshRescanAndAttributes()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::propertiesLocalizedAndBounded()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::propertiesMissingItemRefreshes()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::closeDuringPropertiesAndReuse()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::linksAndBoundaryAreNotFollowed()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::activeTempsAndChangedItemsAreRetained()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::confirmedTrashAndCancelKeepUnrelatedFiles()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::processFailureAndMenuRemainUsable()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::closeWhileReadingAndReuse()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "TemporaryFilesTests::unreadableChildDoesNotHideOtherTemps()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::metadataAndFlatDoesNotFollowChildLinks()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::scannerSupersedesAndCanBeDestroyed()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(normal)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(flat)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::cancelDuringRowPreparationAndNavigate()": {
+      "result": "PASS",
+      "report": "directory-repaired.log"
+    },
+    "DirectoryTests::refreshOptionsAndManagerRestoreSelection()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::failurePreservesPreviousViewAndRecovers()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::archiveExitRefreshAndConsecutiveUp()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::failedStartupCommandRestoresFilesystem()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::openWithMenuSupersedesHiddenStartupScans()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "DirectoryTests::twoPanelRestoreRemovalAndClose()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::textPairsCompatibility()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::filesystemRoundtripAndMetadata()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(invalid-utf8)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(symlink)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(read-only)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(hardlink)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(duplicate-pairs)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(changed)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(created)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(trim-collision)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(quote-name)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(newline-value)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(permission)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::refusedWrites(folder-changed)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::pauseCancelRetainsOriginal()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::inheritedGroupPreservesOriginal()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::filesystemFocusedItemAndFlatView()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipCommentRoundtrip(plain)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipCommentRoundtrip(AES)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipCommentRoundtrip(ZipCrypto)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipCommentFailureAndCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipIndependentPayloadVerification(create-bzip2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipIndependentPayloadVerification(create-lzma)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipIndependentPayloadVerification(create-zip64)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipCryptoDescriptorUpdated()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipVirtualFolderNotEditableAndMaximumLength()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipDuplicateNamesCanBeListed()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::splitZipReadDoesNotRequireDirectHandler()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CommentTests::zipGuiCommentAndColumnTransition()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::oneLevelAndNormalExtraction()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::parserRegionsExtractAndHash()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::oneLevelWritableZip(comment)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::oneLevelWritableZip(create-folder)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::oneLevelWritableZip(replace-file)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::prefixedUpdates(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::prefixedUpdates(7z-data-password)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::prefixedUpdates(7z-header-password)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::prefixedUpdates(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::prefixedUpdates(zip-AES-password)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::prefixedUpdates(tar)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::prefixedUpdates(wim)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::prefixedGuiAndNestedWriteback(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::prefixedGuiAndNestedWriteback(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::updateRejectedLayouts()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::explicitModeFailures(whole-zip-not-parser)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::explicitModeFailures(unrecognized-parser)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::explicitModeFailures(invalid-mode)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenModeTests::guiOneLevelFocusedAndModeReset()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "ExtractionMetadataTests::interruptedStreams(7z-new)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::interruptedStreams(7z-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::interruptedStreams(7z-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::interruptedStreams(7z-renameExisting)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::interruptedStreams(zip-new)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::interruptedStreams(zip-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::interruptedStreams(zip-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::interruptedStreams(zip-renameExisting)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::interruptedRecoveryConflict(public-output-changed)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::interruptedRecoveryConflict(private-stream-replaced)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::backendShutdownRetainsOpenedOutput(7z)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::backendShutdownRetainsOpenedOutput(zip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedPublication(7z--aoa)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedPublication(7z--aos)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedPublication(7z--aou)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedPublication(7z--aot)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedPublication(zip--aoa)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedPublication(zip--aos)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedPublication(zip--aou)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedPublication(zip--aot)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedAsk(yes)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedAsk(no)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedAsk(yes-all)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedAsk(no-all)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedAsk(auto-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedAsk(cancel)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedAsk(no-yes-no)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOrderedApprovalChanged()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOutputStateSkip(file)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOutputStateSkip(directory)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOutputStateSkip(symlink)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOutputStateRename(extension)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOutputStateRename(dotfile)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOutputStateUnsafeParent()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOutputStatePeerLoss(peer-closed)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOutputStatePeerLoss(cancel)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOutputStateOriginalMetadata()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::incrementalInstallationSession()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::approvedOutputChangedBeforePublication()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(zip-crc-legacy-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(zip-crc-legacy-rename-existing)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(zip-crc-native-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(zip-crc-native-rename-existing)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(zip-unsupported-legacy-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(zip-unsupported-legacy-rename-existing)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(zip-unsupported-native-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(zip-unsupported-native-rename-existing)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(7z-crc-legacy-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(7z-crc-legacy-rename-existing)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(7z-crc-native-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedOutputs(7z-crc-native-rename-existing)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedPasswordOutputs(7z-data)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedPasswordOutputs(zip-aes)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedPasswordOutputs(zip-crypto)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::failedInstallationRestoresFolders()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-empty-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-legacy-existing-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-empty-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-full-native-existing-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-legacy-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-legacy-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-legacy-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-legacy-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-legacy-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-legacy-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-legacy-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-legacy-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-native-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-native-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-native-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-native-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-native-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-native-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-native-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(zip-flat-native-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-empty-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-legacy-existing-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-empty-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-full-native-existing-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-legacy-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-legacy-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-legacy-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-legacy-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-legacy-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-legacy-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-legacy-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-legacy-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-native-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-native-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-native-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-native-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-native-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-native-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-native-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(tar-flat-native-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-overwrite-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-skip-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-rename-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-renameExisting-1)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-empty-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-legacy-existing-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-empty-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-overwrite-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-skip-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-rename-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-full-native-existing-renameExisting-2)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-legacy-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-legacy-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-legacy-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-legacy-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-legacy-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-legacy-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-legacy-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-legacy-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-native-empty-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-native-empty-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-native-empty-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-native-empty-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-native-existing-overwrite-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-native-existing-skip-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-native-existing-rename-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisions(7z-flat-native-existing-renameExisting-0)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisionAsk(yes)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisionAsk(no)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisionAsk(yes-all)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisionAsk(no-all)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisionAsk(auto-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisionAsk(cancel)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedCollisionAsk(no-yes-no)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwriteChannel(yes)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwriteChannel(no)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwriteChannel(yes-all)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwriteChannel(no-all)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwriteChannel(auto-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwriteChannel(cancel)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwriteChannel(no-yes-no)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwritePeerLoss(peer-disconnect)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwritePeerLoss(signal-cancel)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwriteDelayedAndStaleReplies()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::nativeOverwriteSkipAvoidsDecoder()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedHardLinkChain(overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedHardLinkChain(skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedHardLinkChain(auto-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::orderedHardLinkChain(rename-existing)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::metadataAndLinks(7z)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::metadataAndLinks(zip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::metadataAndLinks(tar)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::metadataAndLinks(wim)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::explicitHardLinkOverwrite(overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::explicitHardLinkOverwrite(skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::explicitHardLinkOverwrite(auto-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::explicitHardLinkOverwrite(rename-existing)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(full-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(full-skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(full-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(full-renameExisting)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(full-legacy)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(flat-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(flat-skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(flat-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(flat-renameExisting)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(flat-legacy)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(absolute-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(absolute-skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(absolute-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(absolute-renameExisting)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedExistingHardLink(absolute-legacy)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(empty-directory-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(empty-directory-skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(empty-directory-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(empty-directory-renameExisting)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(nonempty-directory-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(nonempty-directory-skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(nonempty-directory-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(nonempty-directory-renameExisting)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(incoming-directory-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(incoming-directory-skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(incoming-directory-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(incoming-directory-renameExisting)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(readonly-file-overwrite)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(readonly-file-skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(readonly-file-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::fileDirectoryConflicts(readonly-file-renameExisting)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::hardLinkPathMapping(legacy-eliminate-root)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::hardLinkPathMapping(native-eliminate-root)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::hardLinkPathMapping(native-current-folder)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::hardLinkPathMapping(native-current-folder-eliminate-root)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::selectedRar5HardLink()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::existingHardLinkTargetFailures(missing)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::existingHardLinkTargetFailures(leaf-link)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::existingHardLinkTargetFailures(parent-link)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::existingHardLinkTargetFailures(changed)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::existingLeafSymlink(replace)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::existingLeafSymlink(skip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "ExtractionMetadataTests::unsafeLinkAndOutputParent()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OpenAsTests::menuOrderAndIndependentSettings()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::visibility(archive)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::visibility(unknown-signature-candidate)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::visibility(multiple)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::visibility(folder)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::visibility(excluded-text)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::savedChoiceApplyCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::forcedHandlers(7z)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::forcedHandlers(zip)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::forcedHandlers(cab)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::forcedHandlers(rar)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::parserEachPosition()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::forcedHandlerFailuresAndRar5()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::guiOpenWithClickAndModeReset()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::guiContextClickAndFailureRecovery()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::guiFailedReopenInFolderAndPasswordCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OpenAsTests::guiPasswordAndInvalidCommand()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "LinkTests::relativeAbsoluteDanglingAndLoop(relative)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::relativeAbsoluteDanglingAndLoop(absolute)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::relativeAbsoluteDanglingAndLoop(dangling)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::relativeAbsoluteDanglingAndLoop(self-loop)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::relativeAbsoluteDanglingAndLoop(mutual-loop)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::directoryAndTypeProtection()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::externalMutationRefused(target)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::externalMutationRefused(file)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::externalMutationRefused(directory)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::externalMutationRefused(removed)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::externalMutationRefused(parent)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::externalMutationRefused(metadata)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::failedPreparationAndHardLinkedProtection()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::installationFailuresAndRaces(parent-before)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::installationFailuresAndRaces(parent-after)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::installationFailuresAndRaces(rename-failure)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::installationFailuresAndRaces(rollback)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::installationFailuresAndRaces(rollback-io-failure)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::installationFailuresAndRaces(rollback-foreign-entry)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::installationFailuresAndRaces(stage-name-replaced)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::metadataPreservedWithoutFollowingTargets()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::invalidBytesAndOrdinaryFiles()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::dialogDefaultsEditAndCancel()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::folderBrowse(from)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::folderBrowse(to)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "LinkTests::guiFocusedFlatAndTwoPanels()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "PropertyTests::orderedListingAndLayers()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::folderIndexImplicitAndFlat()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::dialogCopyFullValueAndButtons()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nativeSchemaAndAllColumns()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nativeFlatNameAndPrefixColumns()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nativeEmptyArchiveKeepsSchema()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nativeMultilineCommentsAndLiteralPasswordNames()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nativeWimRawHashAndProxy()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nativeFileTimePrecisionAndUndefinedValues()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nativeTypedIntegersAndRawIdentity()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nativeControlCharacterFilenameRoundTrip()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nativeMetadataDestinationProtection()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::guiSingleMultipleUnselectedAndPrefix()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::guiNestedAndLayerRestore()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::nestedWritebackRefreshesProperties()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::singleClickAndFilesystemSubstitute()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "PropertyTests::destroyAfterClosedProgress()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::defaultsAndMemory()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::automaticAndManualPersistence()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::officialControlInventory()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::formatDraftsCommitAndCancel()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::localizedDynamicControls()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::originalTimeAndLinkOptions()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::explicitLatestTimeOffRoundtrip()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::upstreamResetTransitions()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::methodGuardAndNearestSavedChoices()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::historyAndToolbarInitialFormat()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::translatedSolidCommands()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(7z/LZMA2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(7z/LZMA)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(7z/PPMd)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(7z/BZip2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(7z/Copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(zip/Deflate)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(zip/Deflate64)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(zip/BZip2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(zip/LZMA)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(zip/PPMd)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(zip/Copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(tar/GNU)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(tar/POSIX)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(wim/Copy)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(xz/LZMA2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(gzip/Deflate)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(bzip2/BZip2)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(Hash/SHA256)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::selectedMethodRoundtrip(Hash/SHA1)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::automaticRoundtrip(7z-normal)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::automaticRoundtrip(7z-store)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::automaticRoundtrip(zip-normal)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::automaticRoundtrip(zip-store)": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::automaticEncryptedArchive()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::insufficientMemoryAndPasswordValidation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::helpInventoryAndNavigation()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::helpResourceBoundary()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::contextualHelpButtons()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::fullTextSearch()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::helpSearchUiAndPrint()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::originalAboutActions()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::helpWindowLifetimeAndHistory()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::helpHistoryAndOperators()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "CompressionHelpTests::helpHistoryBounds()": {
+      "result": "PASS",
+      "report": "application-remaining.log"
+    },
+    "OverwriteTests::choices(individual)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::choices(yes-all)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::choices(no-all)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::choices(auto-rename)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::choices(cancel)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::folderMergeAndSkippedMove()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::renameMoveIdentityAndMetadata()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::renameMoveCollisionAndRollback()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::renameMoveBackupAndLinks()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::moveOntoSelfAndAcrossVolumes()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::changedDestinationAndRecovery()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::metadataLinksAndNames()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::extractionRenameExisting(7z)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::extractionRenameExisting(zip)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::readOnlyDestination(copy)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::readOnlyDestination(rename-first-move)": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::waitingCancelAndDestruction()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "OverwriteTests::dialogButtonsAndGuiConnection()": {
+      "result": "PASS",
+      "report": "final-file-publication.log"
+    },
+    "AgentTreeTests::zipIdentityPropertiesAndTraversal()": {
+      "result": "PASS",
+      "report": "agent-tree.log"
+    },
+    "AgentTreeTests::nativeAlternateStreamBinding()": {
+      "result": "PASS",
+      "report": "agent-tree.log"
+    },
+    "AgentSelectionTests::sameNameExtractAndHash(first)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::sameNameExtractAndHash(second)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::testOnlyChosenSiblingAndRecover()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeReplacementSameName(first)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeReplacementSameName(second)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeReplacementUnrelatedCorruption()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::guiSameNameEditorWriteBack(original-name)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::guiSameNameEditorWriteBack(renamed-while-editing)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::guiSameNameEditorWriteBack(ancestor-renamed-while-editing)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeCommentSameName(first)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeCommentSameName(second)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeCommentNoUnrelatedTest()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeCommentEncryptedPackedData()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::guiSameNameComment()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::normalAndFlatFolderRules()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::alternateStreamSelection()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::rejectStaleOrInvalidIdentity()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::selectedPathsRemainGuarded()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::encryptedJapaneseSelection()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::sameNameUpdate(delete-0)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::sameNameUpdate(rename-0)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::sameNameUpdate(delete-1)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::sameNameUpdate(rename-1)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::updateRetainsUnrelatedCorruptPayload()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::implicitFlatUpdatePolicies()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeUpdatesAcrossWriters(7z)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeUpdatesAcrossWriters(zip)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeUpdatesAcrossWriters(tar)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeUpdatesAcrossWriters(wim)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeUpdatesAcrossWriters(7z-prefix)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeUpdatesAcrossWriters(zip-prefix)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::singleStreamUpdates(gzip-rename)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::singleStreamUpdates(gzip-delete)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::singleStreamUpdates(bzip2-rename)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::singleStreamUpdates(bzip2-delete)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::singleStreamUpdates(xz-rename)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::singleStreamUpdates(xz-delete)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nestedParentRenameWriteBack(child-name)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nestedParentRenameWriteBack(ancestor-folder)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::updateRejectsStaleSelectionAndCollision()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::paxRenameFollowsOfficialDefaults()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::encryptedNativeUpdates(7z-data)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::encryptedNativeUpdates(7z-header)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::encryptedNativeUpdates(zip-AES)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::guiAncestorFolderRestoration(zip-normal)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::guiAncestorFolderRestoration(zip-flat)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::guiAncestorFolderRestoration(7z-normal)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::guiAncestorFolderRestoration(7z-flat)": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::guiSameNameRenameAndDelete()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::multiImageWimNativeSelection()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::nativeUpdatePauseCancelRetainsOriginal()": {
+      "result": "PASS",
+      "report": "agent-selection.log"
+    },
+    "AgentSelectionTests::selectedExtractionPauseCancelAndReuse()": {
+      "result": "PASS",
+      "report": "agent-affected.log"
+    },
+    "AgentSelectionTests::guiToolbarTestUsesSelectedRow()": {
+      "result": "PASS",
+      "report": "agent-affected.log"
+    },
+    "OpenModeTests::guiParserNestedAndRestored()": {
+      "result": "PASS",
+      "report": "open-modes-remaining.log"
+    },
+    "OpenModeTests::guiNestedParserAndPassword(plain-parent)": {
+      "result": "PASS",
+      "report": "parser-repaired.log"
+    },
+    "OpenModeTests::guiNestedParserAndPassword(encrypted-parent)": {
+      "result": "PASS",
+      "report": "parser-repaired.log"
+    },
+    "FormatTests::genuineFormats(7z.7z)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(APFS.apfs)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(APFS.img)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(APM.apm)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ar.ar)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ar.a)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ar.deb)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ar.udeb)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ar.lib)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Arj.arj)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Base64.b64)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(COFF.obj)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Cab.cab)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Chm.chm)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Chm.chi)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Chm.chq)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Chm.chw)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Compound.msi)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Compound.msp)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Compound.msm)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Compound.doc)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Compound.xls)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Compound.ppt)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Compound.aaf)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Cpio.cpio)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(CramFS.cramfs)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Dmg.dmg)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(ELF.elf)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ext.ext)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ext.ext2)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ext.ext3)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ext.ext4)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ext.img)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(FAT.fat)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(FAT.img)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(FLV.flv)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(GPT.gpt)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(GPT.mbr)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(HFS.hfs)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(HFS.hfsx)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hxs.hxs)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hxs.hxi)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hxs.hxr)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hxs.hxq)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hxs.hxw)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hxs.lit)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(IHex.ihex)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Iso.iso)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Iso.img)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(LP.lpimg)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(LP.img)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Lzh.lzh)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Lzh.lha)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(MBR.mbr)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(MachO.macho)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(MsLZ.mslz)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Mub.mub)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(NTFS.ntfs)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(NTFS.img)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Nsis.nsis)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(PE.exe)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(PE.dll)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(PE.sys)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Ppmd.pmd)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(QCOW.qcow)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(QCOW.qcow2)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(QCOW.qcow2c)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Rar.rar)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Rar.r00)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Rar5.rar)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Rar5.r00)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Rpm.rpm)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(SWF.swf)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(SWFc.swf)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Sparse.simg)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Sparse.img)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Split.001)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(SquashFS.squashfs)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(TE.te)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(UEFIc.scap)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(UEFIf.uefif)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Udf.udf)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Udf.iso)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Udf.img)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(VDI.vdi)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(VHD.vhd)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(VHDX.vhdx)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(VHDX.avhdx)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(VMDK.vmdk)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Xar.xar)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Xar.pkg)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Xar.xip)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Z.z)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Z.taz)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(bzip2.bz2)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(bzip2.bzip2)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(bzip2.tbz2)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(bzip2.tbz)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(gzip.gz)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(gzip.gzip)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(gzip.tgz)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(gzip.tpz)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(gzip.apk)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(lzma.lzma)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(lzma86.lzma86)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(tar.tar)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(tar.ova)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(wim.wim)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(wim.swm)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(wim.esd)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(wim.ppkg)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(xz.xz)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(xz.txz)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.zip)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.z01)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.zipx)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.jar)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.xpi)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.odt)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.ods)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.docx)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.xlsx)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.epub)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.ipa)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.apk)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zip.appx)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zstd.zst)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(zstd.tzst)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha256)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha512)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha384)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha224)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha512-224)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha512-256)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha3-224)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha3-256)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha3-384)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha3-512)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha1)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha2)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha3)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.sha)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.md5)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.blake2s)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.blake2b)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.blake2sp)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.xxh64)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.crc32)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.crc64)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.cksum)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::genuineFormats(Hash.asc)": {
+      "result": "PASS",
+      "report": "combined-format-coverage.json"
+    },
+    "FormatTests::contextCompressionExtraction()": {
+      "result": "PASS",
+      "report": "formats-affected.log"
+    }
+  },
+  "physicalInput": "Pending: locked desktop; logical Qt events are not physical input.",
+  "formatRegistrationCases": 151,
+  "originalReports": "Local cache release-verification-20261006.ce0Ohl; report hashes refer to unmodified originals.",
+  "bundle": {
+    "latestDependencyCheck": "PASS",
+    "machOFiles": 15,
+    "isolatedStartup": "PASS",
+    "privateProfile": "PASS",
+    "nativeUserPreferencesUnchanged": true,
+    "physicalDesktopInput": "PENDING"
+  }
+}

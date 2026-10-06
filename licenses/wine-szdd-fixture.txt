@@ -1,0 +1,26 @@
+Wine lz32 test fixture compressed_file (36 bytes).
+Source: https://github.com/wine-mirror/wine/blob/74ea292150c49fac463059dda28389ae0994b765/dlls/lz32/tests/lzexpand_main.c
+Source file SHA-256: fbe0fc8a45005fe7e66f69c1cc44470b8c44b998d11d0d5652478ffec4467cb9
+Used only for extraction tests. Changed declared size from 5237 to 20 bytes; compressed data unchanged. Original payload: This is a test file.
+
+/*
+ * Unit test suite for lz32 functions
+ *
+ * Copyright 2004 Evan Parry, Daniel Kegel
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+ */
+
+Full LGPL 2.1 text is licenses/copying.txt.

@@ -1,0 +1,52 @@
+{
+  "compiledRevision": "734235ca1ebe60283a2e73a1e76d74013ec91c9a",
+  "version": "0.2.0",
+  "sevenZip": "26.03",
+  "qt": "6.11.3",
+  "architecture": "arm64",
+  "emptyBuildTasks": 252,
+  "machOFiles": 15,
+  "firstStartupSilenceCheckPassed": false,
+  "observedInputMethodDiagnostic": "IMKCFRunLoopWakeUpReliable",
+  "strictUnexpectedStderrCheckPassed": true,
+  "finalGuiJapaneseAddressAndExtraction": true,
+  "finalGuiRestoredContentAndTimesValid": true,
+  "physicalImeCompositionClaimed": false,
+  "fullAffectedQtCases": 323,
+  "freshBundledRegressionQtCases": 3,
+  "publicRepositoryPublished": false,
+  "reports": [
+    {
+      "localReport": "release-0.2.0-clean-build.log",
+      "sha256": "fe3c7843a243e98d28820216234b449b08be774a5dafcccc64a86adbd899a36a"
+    },
+    {
+      "localReport": "release-0.2.0-source-review.log",
+      "sha256": "5f59c0b565bc8f663cbccac87433d528180c89b0bad724ca52976249b80984ea"
+    },
+    {
+      "localReport": "release-0.2.0-source-review-retry.log",
+      "sha256": "28a580533586ea0d26cca3be90bd38e29984116f808b8ba1a0cf240b2e3bb0db"
+    },
+    {
+      "localReport": "release-0.2.0-startup.log",
+      "sha256": "3b95dfdcd633e0efbdfda193aafcb8bf92e392fef3c926723de6d1e0ec59902f"
+    },
+    {
+      "localReport": "release-0.2.0-startup-reproduction.json",
+      "sha256": "0aeb498d194c6a9d1d5e3ddacbbcd7f1d82e9720d28405a840532d9c5836e165"
+    },
+    {
+      "localReport": "release-0.2.0-startup-after.log",
+      "sha256": "e5988dddf7c8cd2a1e8b9bd61f66ea77eea200ca2a663d69714fb3848f2bb86b"
+    },
+    {
+      "localReport": "release-0.2.0-bundled-time-test.log",
+      "sha256": "522178a35e762c45a009dd6290c515ead2d933f0dbce92841f85be8b0ce10853"
+    },
+    {
+      "localReport": "release-0.2.0-gui-time-verification.json",
+      "sha256": "fd7866efa99dc215f5a61084898752669926683147930c610554f9915bff61e9"
+    }
+  ]
+}

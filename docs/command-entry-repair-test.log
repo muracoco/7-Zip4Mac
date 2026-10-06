@@ -1,0 +1,113 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: command_entry
+
+1: Test command: /DEPS/build-comments-20261004/command_entry_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 180
+1: ********* Start testing of CommandEntryTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: QINFO  : CommandEntryTests::initTestCase() Owned command-entry fixtures: "/TMP/T/7zip-command-entry-test-xLFXeF"
+1: PASS   : CommandEntryTests::initTestCase()
+1: PASS   : CommandEntryTests::comboResourceAndResize()
+1: PASS   : CommandEntryTests::sourceWildcard(normal)
+1: PASS   : CommandEntryTests::sourceWildcard(alternative)
+1: PASS   : CommandEntryTests::inlineRename(view0-0)
+1: PASS   : CommandEntryTests::inlineRename(view0-1)
+1: PASS   : CommandEntryTests::inlineRename(view1-0)
+1: PASS   : CommandEntryTests::inlineRename(view1-1)
+1: PASS   : CommandEntryTests::inlineRename(view2-0)
+1: PASS   : CommandEntryTests::inlineRename(view2-1)
+1: PASS   : CommandEntryTests::inlineRename(view3-0)
+1: PASS   : CommandEntryTests::inlineRename(view3-1)
+1: PASS   : CommandEntryTests::exclusiveRename(case)
+1: PASS   : CommandEntryTests::exclusiveRename(symlink)
+1: PASS   : CommandEntryTests::exclusiveRename(hardlink)
+1: PASS   : CommandEntryTests::exclusiveRename(existing)
+1: PASS   : CommandEntryTests::exclusiveRename(readonly)
+1: PASS   : CommandEntryTests::exclusiveRename(cancel)
+1: PASS   : CommandEntryTests::exclusiveRename(parent-permission)
+1: PASS   : CommandEntryTests::exclusiveRename(folder)
+1: 2026-10-06 01:02:27.611 command_entry_tests[44621:17426007] TSMSendMessageToUIServer: CFMessagePortSendRequest FAILED(-1) to send to port com.apple.tsm.uiserver
+1/2 Test  #1: command_entry ....................***Timeout 180.04 sec
+********* Start testing of CommandEntryTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : CommandEntryTests::initTestCase() Owned command-entry fixtures: "/TMP/T/7zip-command-entry-test-xLFXeF"
+PASS   : CommandEntryTests::initTestCase()
+PASS   : CommandEntryTests::comboResourceAndResize()
+PASS   : CommandEntryTests::sourceWildcard(normal)
+PASS   : CommandEntryTests::sourceWildcard(alternative)
+PASS   : CommandEntryTests::inlineRename(view0-0)
+PASS   : CommandEntryTests::inlineRename(view0-1)
+PASS   : CommandEntryTests::inlineRename(view1-0)
+PASS   : CommandEntryTests::inlineRename(view1-1)
+PASS   : CommandEntryTests::inlineRename(view2-0)
+PASS   : CommandEntryTests::inlineRename(view2-1)
+PASS   : CommandEntryTests::inlineRename(view3-0)
+PASS   : CommandEntryTests::inlineRename(view3-1)
+PASS   : CommandEntryTests::exclusiveRename(case)
+PASS   : CommandEntryTests::exclusiveRename(symlink)
+PASS   : CommandEntryTests::exclusiveRename(hardlink)
+PASS   : CommandEntryTests::exclusiveRename(existing)
+PASS   : CommandEntryTests::exclusiveRename(readonly)
+PASS   : CommandEntryTests::exclusiveRename(cancel)
+PASS   : CommandEntryTests::exclusiveRename(parent-permission)
+PASS   : CommandEntryTests::exclusiveRename(folder)
+2026-10-06 01:02:27.611 command_entry_tests[44621:17426007] TSMSendMessageToUIServer: CFMessagePortSendRequest FAILED(-1) to send to port com.apple.tsm.uiserver
+
+test 29
+    Start 29: overwrite
+
+29: Test command: /DEPS/build-comments-20261004/overwrite_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+29: Working Directory: /DEPS/build-comments-20261004
+29: Environment variables: 
+29:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+29: Test timeout computed to be: 120
+29: ********* Start testing of OverwriteTests *********
+29: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+29: PASS   : OverwriteTests::initTestCase()
+29: PASS   : OverwriteTests::choices(individual)
+29: PASS   : OverwriteTests::choices(yes-all)
+29: PASS   : OverwriteTests::choices(no-all)
+29: PASS   : OverwriteTests::choices(auto-rename)
+29: PASS   : OverwriteTests::choices(cancel)
+29: PASS   : OverwriteTests::folderMergeAndSkippedMove()
+29: PASS   : OverwriteTests::renameMoveIdentityAndMetadata()
+29: PASS   : OverwriteTests::renameMoveCollisionAndRollback()
+29: PASS   : OverwriteTests::renameMoveBackupAndLinks()
+29: SKIP   : OverwriteTests::moveOntoSelfAndAcrossVolumes() Set PORT_TEST_SECOND_VOLUME to a writable folder on another volume for cross-device verification.
+29:    Loc: [/REPOSITORY/tests/overwrite.cpp(106)]
+29: PASS   : OverwriteTests::changedDestinationAndRecovery()
+29: PASS   : OverwriteTests::metadataLinksAndNames()
+29: PASS   : OverwriteTests::extractionRenameExisting(7z)
+29: PASS   : OverwriteTests::extractionRenameExisting(zip)
+29: PASS   : OverwriteTests::readOnlyDestination(copy)
+29: PASS   : OverwriteTests::readOnlyDestination(rename-first-move)
+29: PASS   : OverwriteTests::waitingCancelAndDestruction()
+29: PASS   : OverwriteTests::dialogButtonsAndGuiConnection()
+29: PASS   : OverwriteTests::cleanupTestCase()
+29: Totals: 19 passed, 0 failed, 1 skipped, 0 blacklisted, 1673ms
+29: ********* Finished testing of OverwriteTests *********
+2/2 Test #29: overwrite ........................   Passed    2.37 sec
+
+The following tests passed:
+	overwrite
+
+50% tests passed, 1 tests failed out of 2
+
+Total Test time (real) = 182.42 sec
+
+The following tests FAILED:
+	  1 - command_entry (Timeout)
+Errors while running CTest

@@ -1,0 +1,63 @@
+# Preserve the original official CHM resource bytes and their manifest hashes.
+resources/help/** -text -whitespace
+# Imported bodies and execution transcripts retain upstream/tool whitespace.
+src/upstream/CompressMath.inc -text -whitespace
+src/upstream/CompressControls.inc -text -whitespace
+src/upstream/CompressTables.inc -text -whitespace
+src/upstream/AgentCreateFolder.inc -text -whitespace
+src/upstream/AgentUpdateStream.inc -text -whitespace
+src/upstream/AgentSelection.inc -text -whitespace
+src/upstream/AgentItemUpdate.inc -text -whitespace
+src/upstream/AgentComment.inc -text -whitespace
+src/upstream/AgentUpdateOneFile.inc -text -whitespace
+docs/compression-controls-test.log -text -whitespace
+docs/compression-help-test.log -text -whitespace
+docs/native-progress-help-test.log -text -whitespace
+docs/filesystem-transfer-test.log -text -whitespace
+docs/archive-transfer-test.log -text -whitespace
+docs/native-folder-update-test.log -text -whitespace
+docs/archive-prefix-updates-test.log -text -whitespace
+docs/native-agent-selection-test.log -text -whitespace
+docs/native-agent-item-updates-test.log -text -whitespace
+docs/native-agent-comments-test.log -text -whitespace
+src/upstream/ProgressPresentation.inc -text -whitespace
+src/upstream/ProgressConverter.inc -text -whitespace
+src/upstream/ProgressOperationText.inc -text -whitespace
+docs/progress-presentation-test.log -text -whitespace
+docs/progress-presentation-bundle.log -text -whitespace
+src/upstream/ProgressFinalMessage.inc -text -whitespace
+src/upstream/ProgressCompletion.inc -text -whitespace
+src/upstream/ProgressResultText.inc -text -whitespace
+src/upstream/ListViewCopy.inc -text -whitespace
+src/upstream/ListViewLayout.inc -text -whitespace
+src/upstream/EditLayout.inc -text -whitespace
+docs/progress-completion-test.log -text -whitespace
+docs/progress-completion-bundle.log -text -whitespace
+src/upstream/PanelSort.inc -text -whitespace
+src/upstream/PanelSortIds.h -text -whitespace
+src/upstream/SortTimePrecision.inc -text -whitespace
+src/upstream/FilesystemColumns.inc -text -whitespace
+docs/panel-sort-test.log -text -whitespace
+docs/panel-sort-bundle.log -text -whitespace
+src/upstream/PanelDisplay.inc -text -whitespace
+src/upstream/PanelNameDisplay.inc -text -whitespace
+docs/panel-listing-test.log -text -whitespace
+docs/panel-listing-bundle.log -text -whitespace
+src/upstream/DialogGeometry.inc -text -whitespace
+src/upstream/TempBrowseLayout.inc -text -whitespace
+src/upstream/UiResourceIds.h -text -whitespace
+docs/dialog-text-help-test.log -text -whitespace
+docs/dialog-text-help-bundle.log -text -whitespace
+
+# Keep original imported whitespace and verbatim captured tool output.
+src/upstream/CopyInfo.inc whitespace=-blank-at-eol
+docs/copy-workflow*.log whitespace=-blank-at-eol,-blank-at-eof
+docs/zip-metadata*.log whitespace=-blank-at-eol,-blank-at-eof
+
+docs/panel-key*.log whitespace=-blank-at-eol,-blank-at-eof
+
+docs/address-workflow*.log whitespace=-blank-at-eol,-blank-at-eof
+
+docs/copy-projection*.log whitespace=-blank-at-eol,-blank-at-eof
+docs/release-tests.log -text -whitespace
+docs/publication-tests.log -text -whitespace

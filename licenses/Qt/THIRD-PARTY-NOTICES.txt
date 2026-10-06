@@ -1,0 +1,4063 @@
+Qt 6.11.3 - Qt Company Ltd. and other contributors.
+
+QtBase official binary SBOM package notices (includes components not bundled by this application).
+
+qtbase
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+syncqt
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+Bootstrap_Attribution_pcre2
+Copyright (c) 1997-2007 University of Cambridge
+Copyright (c) 2007-2024 Philip Hazel
+Copyright (c) 2010-2024 Zoltan Herczeg
+
+Bootstrap_Attribution_pcre2-sljit
+Copyright Zoltan Herczeg
+
+Bootstrap
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+moc
+Copyright (C) 2013 Olivier Goffart <ogoffart@woboq.com>
+Copyright (C) 2014 Olivier Goffart <ogoffart@woboq.org>
+Copyright (C) 2016 Intel Corporation.
+Copyright (C) 2018 Intel Corporation.
+Copyright (C) 2018 The Qt Company Ltd.
+Copyright (C) 2019 Olivier Goffart <ogoffart@woboq.com>
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+rcc
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+tracepointgen
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+tracegen
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+cmake_automoc_parser
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+BundledPcre2_Attribution_pcre2-sljit
+Copyright Zoltan Herczeg
+
+BundledPcre2
+Copyright (c) 1997-2007 University of Cambridge
+Copyright (c) 2007-2024 Philip Hazel
+Copyright (c) 2010-2024 Zoltan Herczeg
+
+Core_Attribution_unicode-character-database
+Copyright (C) 1991-2025 Unicode, Inc.
+
+Core_Attribution_unicode-cldr
+Copyright (C) 2004-2025 Unicode, Inc.
+
+Core_Attribution_tlexpected
+To the extent possible under law, Sy Brand has waived all copyright and related or neighboring rights to the expected library. This work is published from: United Kingdom.
+
+Core_Attribution_siphash
+Copyright (C) 2012-2014 Jean-Philippe Aumasson
+Copyright (C) 2012-2014 Daniel J. Bernstein <djb@cr.yp.to>
+Copyright (C) 2016 Intel Corporation
+
+Core_Attribution_blake2
+Copyright 2012, Samuel Neves <sneves@dei.uc.pt>
+
+Core_Attribution_md4
+Written by Alexander Peslyak - better known as Solar Designer <solar@openwall.com> - in 2001, and placed in the public domain. There's absolutely no warranty.
+
+Core_Attribution_md5
+Written by Colin Plumb in 1993, no copyright is claimed. Ian Jackson <ian@chiark.greenend.org.uk>.
+
+Core_Attribution_sha1
+Copyright (C) Dominik Reichl <dominik.reichl@t-online.de>
+Copyright (C) 2016 The Qt Company Ltd
+
+Core_Attribution_sha3_endian
+Copyright (c) 1998-2013, Brian Gladman, Worcester, UK. All rights reserved.
+
+Core_Attribution_sha3_keccak
+Guido Bertoni, Joan Daemen, Michaël Peeters and Gilles Van Assche.
+To the extent possible under law, the implementers have waived all copyright
+and related or neighboring rights to the source code in this file.
+
+Core_Attribution_rfc6234
+Copyright (c) 2011 IETF Trust and the persons identified as authors of the code.
+
+Core_Attribution_tinycbor
+Copyright (C) 2015-2025 Intel Corporation
+
+Core_Attribution_qeventdispatcher_cf
+Copyright (c) 2007-2008, Apple, Inc.
+
+Core_Attribution_doubleconversion
+Copyright 2006-2012, the V8 project authors
+
+Core_Attribution_easing
+Copyright (c) 2001 Robert Penner
+
+Core_Attribution_forkfd
+Copyright (C) 2016 Intel Corporation
+Copyright (C) 2015 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com
+
+Core_Attribution_tika-mimetypes
+Copyright 2026 The Apache Software Foundation
+
+Core
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QDarwinCameraPermissionPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QDarwinMicrophonePermissionPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QDarwinBluetoothPermissionPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QDarwinContactsPermissionPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QDarwinCalendarPermissionPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QDarwinLocationPermissionPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+BundledLibpng
+Copyright (c) 1995-2026 The PNG Reference Library Authors
+Copyright (c) 2000-2026 Cosmin Truta
+Copyright (c) 1998-2018 Glenn Randers-Pehrson
+Copyright (c) 1996-1997 Andreas Dilger
+Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+Copyright (c) 2000-2017 Simon-Pierre Cadieux
+Copyright (c) 2000-2017 Eric S. Raymond
+Copyright (c) 2000-2017 Mans Rullgard
+Copyright (c) 2000-2017 Gilles Vollant
+Copyright (c) 2000-2017 James Yu
+Copyright (c) 2000-2017 Mandar Sahastrabuddhe
+Copyright (c) 1998-2000 Tom Lane
+Copyright (c) 1998-2000 Willem van Schaik
+Copyright (c) 1996-1997 John Bowler
+Copyright (c) 1996-1997 Kevin Bracey
+Copyright (c) 1996-1997 Sam Bushell
+Copyright (c) 1996-1997 Magnus Holmgren
+Copyright (c) 1996-1997 Greg Roelofs
+Copyright (c) 1996-1997 Tom Tanner
+Copyright (c) 1995-1996 Dave Martindale
+Copyright (c) 1995-1996 Paul Schmidt
+Copyright (c) 1995-1996 Tim Wegner
+
+PngPrivate
+Copyright (c) 1995-2026 The PNG Reference Library Authors
+Copyright (c) 2000-2026 Cosmin Truta
+Copyright (c) 1998-2018 Glenn Randers-Pehrson
+Copyright (c) 1996-1997 Andreas Dilger
+Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+Copyright (c) 2000-2017 Simon-Pierre Cadieux
+Copyright (c) 2000-2017 Eric S. Raymond
+Copyright (c) 2000-2017 Mans Rullgard
+Copyright (c) 2000-2017 Gilles Vollant
+Copyright (c) 2000-2017 James Yu
+Copyright (c) 2000-2017 Mandar Sahastrabuddhe
+Copyright (c) 1998-2000 Tom Lane
+Copyright (c) 1998-2000 Willem van Schaik
+Copyright (c) 1996-1997 John Bowler
+Copyright (c) 1996-1997 Kevin Bracey
+Copyright (c) 1996-1997 Sam Bushell
+Copyright (c) 1996-1997 Magnus Holmgren
+Copyright (c) 1996-1997 Greg Roelofs
+Copyright (c) 1996-1997 Tom Tanner
+Copyright (c) 1995-1996 Dave Martindale
+Copyright (c) 1995-1996 Paul Schmidt
+Copyright (c) 1995-1996 Tim Wegner
+
+BundledLibjpeg16bits
+Copyright (C) 2009-2026 D. R. Commander
+Copyright (C) 1991-1998 Thomas G. Lane
+Copyright (C) 2009 Pierre Ossman for Cendio AB
+Copyright (C) 1999-2006 MIYASAKA Masaru
+Copyright (C) 1999 Ken Murchison
+Copyright (C) 2015-2016, 2018, 2022 Matthieu Darbois
+Copyright (C) 2018 Matthias Räncker
+Copyright (C) 2019-2020 Arm Limited
+Copyright (C) 2022 Felix Hanau
+Copyright (C) 1997-1998 Thomas G. Lane, Todd Newman
+Copyright (C) 2021 Alex Richardson
+Copyright (C) 2015, 2020 Google, Inc.
+Copyright (C) 2013 Linaro Limited
+Copyright (C) 2014 Olle Liljenzin
+Copyright (C) 1991-2020 Thomas G. Lane, Guido Vollbeding
+
+
+BundledLibjpeg12bits
+Copyright (C) 2009-2026 D. R. Commander
+Copyright (C) 1991-1998 Thomas G. Lane
+Copyright (C) 2009 Pierre Ossman for Cendio AB
+Copyright (C) 1999-2006 MIYASAKA Masaru
+Copyright (C) 1999 Ken Murchison
+Copyright (C) 2015-2016, 2018, 2022 Matthieu Darbois
+Copyright (C) 2018 Matthias Räncker
+Copyright (C) 2019-2020 Arm Limited
+Copyright (C) 2022 Felix Hanau
+Copyright (C) 1997-1998 Thomas G. Lane, Todd Newman
+Copyright (C) 2021 Alex Richardson
+Copyright (C) 2015, 2020 Google, Inc.
+Copyright (C) 2013 Linaro Limited
+Copyright (C) 2014 Olle Liljenzin
+Copyright (C) 1991-2020 Thomas G. Lane, Guido Vollbeding
+
+
+BundledLibjpeg
+Copyright (C) 2009-2026 D. R. Commander
+Copyright (C) 1991-1998 Thomas G. Lane
+Copyright (C) 2009 Pierre Ossman for Cendio AB
+Copyright (C) 1999-2006 MIYASAKA Masaru
+Copyright (C) 1999 Ken Murchison
+Copyright (C) 2015-2016, 2018, 2022 Matthieu Darbois
+Copyright (C) 2018 Matthias Räncker
+Copyright (C) 2019-2020 Arm Limited
+Copyright (C) 2022 Felix Hanau
+Copyright (C) 1997-1998 Thomas G. Lane, Todd Newman
+Copyright (C) 2021 Alex Richardson
+Copyright (C) 2015, 2020 Google, Inc.
+Copyright (C) 2013 Linaro Limited
+Copyright (C) 2014 Olle Liljenzin
+Copyright (C) 1991-2020 Thomas G. Lane, Guido Vollbeding
+
+
+JpegPrivate
+Copyright (C) 2009-2026 D. R. Commander
+Copyright (C) 1991-1998 Thomas G. Lane
+Copyright (C) 2009 Pierre Ossman for Cendio AB
+Copyright (C) 1999-2006 MIYASAKA Masaru
+Copyright (C) 1999 Ken Murchison
+Copyright (C) 2015-2016, 2018, 2022 Matthieu Darbois
+Copyright (C) 2018 Matthias Räncker
+Copyright (C) 2019-2020 Arm Limited
+Copyright (C) 2022 Felix Hanau
+Copyright (C) 1997-1998 Thomas G. Lane, Todd Newman
+Copyright (C) 2021 Alex Richardson
+Copyright (C) 2015, 2020 Google, Inc.
+Copyright (C) 2013 Linaro Limited
+Copyright (C) 2014 Olle Liljenzin
+Copyright (C) 1991-2020 Thomas G. Lane, Guido Vollbeding
+
+
+BundledFreetype_Attribution_freetype-zlib
+Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+
+BundledFreetype_Attribution_freetype-bdf
+Copyright (c) 2000 Computing Research Labs, New Mexico State University
+Copyright (c) 2001-2014 Francesco Zappa Nardelli
+
+BundledFreetype_Attribution_freetype-pcf
+Copyright (c) 2001, 2012 David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2000-2014 Francesco Zappa Nardelli
+Copyright (c) 1990, 1994, 1998 The Open Group
+
+BundledFreetype
+Copyright (c) 2007-2014 Adobe Systems Incorporated
+Copyright (c) 2004-2026 Albert Chin-A-Young
+Copyright (c) 2018-2026 Armin Hasitzka, David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2000 Computing Research Labs, New Mexico State University
+Copyright (c) 1996-2026 David Turner, Robert Wilhelm, Dominik Röttsches, and Werner Lemberg
+Copyright (c) 2004-2026 David Turner, Robert Wilhelm, Werner Lemberg and George Williams
+Copyright (c) 2022-2026 David Turner, Robert Wilhelm, Werner Lemberg, and Moazin Khatti
+Copyright (c) 2008-2026 David Turner, Robert Wilhelm, Werner Lemberg, and suzuki toshiya
+Copyright (c) 2003-2026 David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2005-2026 David Turner
+Copyright (c) 2007-2026 Derek Clegg and Michael Toftdal
+Copyright (c) 2007 Dmitry Timoshkov for Codeweavers
+Copyright (c) 2001-2015 Francesco Zappa Nardelli
+Copyright (c) 2005, 2007, 2008, 2013 George Williams
+Copyright (c) 2013-2026 Google, Inc. Google Author(s) Behdad Esfahbod and Stuart Gill
+Copyright (c) 2013-2022 Google, Inc.
+Copyright (c) 2003 Huw D M Davies for Codeweavers
+Copyright (c) 2010-2026 Joel Klinghed
+Copyright (c) 1996-2026 Just van Rossum, David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2003-2026 Masatake YAMATO and Redhat K.K.
+Copyright (c) 2004-2026 Masatake YAMATO, Redhat K.K, David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2019-2026 Nikhil Ramakrishnan, David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2009-2026 Oran Agra and Mickey Gabel
+Copyright (c) 2007-2026 Rahul Bhalerao <rahul.bhalerao@redhat.com>
+Copyright (c) 2002-2026 Roberto Alameda
+Copyright (c) 2015-2026 Werner Lemberg
+Copyright (c) 2004-2026 suzuki toshiya, Masatake YAMATO, Red Hat K.K., David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2019 nyorain
+Copyright (c) 2022-2026 David Turner, Robert Wilhelm, Werner Lemberg, George Williams, and Dominik Röttsches
+Copyright (C) 2009, 2023  Red Hat, Inc.
+
+FreetypePrivate_Attribution_freetype-zlib
+Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+
+FreetypePrivate_Attribution_freetype-bdf
+Copyright (c) 2000 Computing Research Labs, New Mexico State University
+Copyright (c) 2001-2014 Francesco Zappa Nardelli
+
+FreetypePrivate_Attribution_freetype-pcf
+Copyright (c) 2001, 2012 David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2000-2014 Francesco Zappa Nardelli
+Copyright (c) 1990, 1994, 1998 The Open Group
+
+FreetypePrivate
+Copyright (c) 2007-2014 Adobe Systems Incorporated
+Copyright (c) 2004-2026 Albert Chin-A-Young
+Copyright (c) 2018-2026 Armin Hasitzka, David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2000 Computing Research Labs, New Mexico State University
+Copyright (c) 1996-2026 David Turner, Robert Wilhelm, Dominik Röttsches, and Werner Lemberg
+Copyright (c) 2004-2026 David Turner, Robert Wilhelm, Werner Lemberg and George Williams
+Copyright (c) 2022-2026 David Turner, Robert Wilhelm, Werner Lemberg, and Moazin Khatti
+Copyright (c) 2008-2026 David Turner, Robert Wilhelm, Werner Lemberg, and suzuki toshiya
+Copyright (c) 2003-2026 David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2005-2026 David Turner
+Copyright (c) 2007-2026 Derek Clegg and Michael Toftdal
+Copyright (c) 2007 Dmitry Timoshkov for Codeweavers
+Copyright (c) 2001-2015 Francesco Zappa Nardelli
+Copyright (c) 2005, 2007, 2008, 2013 George Williams
+Copyright (c) 2013-2026 Google, Inc. Google Author(s) Behdad Esfahbod and Stuart Gill
+Copyright (c) 2013-2022 Google, Inc.
+Copyright (c) 2003 Huw D M Davies for Codeweavers
+Copyright (c) 2010-2026 Joel Klinghed
+Copyright (c) 1996-2026 Just van Rossum, David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2003-2026 Masatake YAMATO and Redhat K.K.
+Copyright (c) 2004-2026 Masatake YAMATO, Redhat K.K, David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2019-2026 Nikhil Ramakrishnan, David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2009-2026 Oran Agra and Mickey Gabel
+Copyright (c) 2007-2026 Rahul Bhalerao <rahul.bhalerao@redhat.com>
+Copyright (c) 2002-2026 Roberto Alameda
+Copyright (c) 2015-2026 Werner Lemberg
+Copyright (c) 2004-2026 suzuki toshiya, Masatake YAMATO, Red Hat K.K., David Turner, Robert Wilhelm, and Werner Lemberg
+Copyright (c) 2019 nyorain
+Copyright (c) 2022-2026 David Turner, Robert Wilhelm, Werner Lemberg, George Williams, and Dominik Röttsches
+Copyright (C) 2009, 2023  Red Hat, Inc.
+
+BundledHarfbuzz
+Copyright © 2010-2022  Google, Inc.
+Copyright © 2015-2020  Ebrahim Byagowi
+Copyright © 2019,2020  Facebook, Inc.
+Copyright © 2012,2015  Mozilla Foundation
+Copyright © 2011  Codethink Limited
+Copyright © 2008,2010  Nokia Corporation and/or its subsidiary(-ies)
+Copyright © 2009  Keith Stribley
+Copyright © 2011  Martin Hosken and SIL International
+Copyright © 2007  Chris Wilson
+Copyright © 2005,2006,2020,2021,2022,2023  Behdad Esfahbod
+Copyright © 2004,2007,2008,2009,2010,2013,2021,2022,2023  Red Hat, Inc.
+Copyright © 1998-2005  David Turner and Werner Lemberg
+Copyright © 2016  Igalia S.L.
+Copyright © 2022  Matthias Clasen
+Copyright © 2018,2021  Khaled Hosny
+Copyright © 2018,2019,2020  Adobe, Inc
+Copyright © 2013-2015  Alexei Podtelezhnikov
+
+HarfbuzzPrivate
+Copyright © 2010-2022  Google, Inc.
+Copyright © 2015-2020  Ebrahim Byagowi
+Copyright © 2019,2020  Facebook, Inc.
+Copyright © 2012,2015  Mozilla Foundation
+Copyright © 2011  Codethink Limited
+Copyright © 2008,2010  Nokia Corporation and/or its subsidiary(-ies)
+Copyright © 2009  Keith Stribley
+Copyright © 2011  Martin Hosken and SIL International
+Copyright © 2007  Chris Wilson
+Copyright © 2005,2006,2020,2021,2022,2023  Behdad Esfahbod
+Copyright © 2004,2007,2008,2009,2010,2013,2021,2022,2023  Red Hat, Inc.
+Copyright © 1998-2005  David Turner and Werner Lemberg
+Copyright © 2016  Igalia S.L.
+Copyright © 2022  Matthias Clasen
+Copyright © 2018,2021  Khaled Hosny
+Copyright © 2018,2019,2020  Adobe, Inc
+Copyright © 2013-2015  Alexei Podtelezhnikov
+
+Concurrent
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+Sql
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+Network_Attribution_psl-data
+The list was originally provided by Jo Hermans <jo.hermans@gmail.com>.
+It is now maintained on github (https://github.com/publicsuffix/list).
+
+Network_Attribution_libpsl
+Copyright 2014-2016 The Chromium Authors. All rights reserved.
+
+Network
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+Xml
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+DBus_Attribution_libdbus-1-headers
+Copyright (C) 2002, 2003 CodeFactory AB
+Copyright (C) 2004, 2005 Red Hat, Inc.
+
+DBus
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+uic
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+qdbuscpp2xml
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+qdbusxml2cpp
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+qlalr
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+qvkgen
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+qtpaths
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+androiddeployqt
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+androidtestrunner
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+macdeployqt
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+wasmdeployqt
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+Gui_Attribution_rhi-miniengine-d3d12-mipmap
+Copyright (c) 2015 Microsoft
+
+Gui_Attribution_opengl-headers
+Copyright (c) 2013-2014 The Khronos Group Inc.
+
+Gui_Attribution_opengl-es2-headers
+Copyright (c) 2013-2014 The Khronos Group Inc.
+
+Gui_Attribution_grayraster
+Copyright 2000-2016 by David Turner, Robert Wilhelm, and Werner Lemberg.
+
+Gui_Attribution_smooth-scaling-algorithm
+Copyright (C) 2004, 2005 Daniel M. Duley.
+(C) Carsten Haitzler and various contributors.
+(C) Willem Monsuwe <willem@stack.nl>
+
+Gui_Attribution_xserverhelper
+Copyright (c) 1987, 1988 X Consortium
+Copyright 1987, 1988 by Digital Equipment Corporation, Maynard, Massachusetts.
+
+Gui_Attribution_aglfn
+Copyright 2002, 2003, 2005, 2006, 2008, 2010, 2015 Adobe Systems
+
+Gui_Attribution_vulkanmemoryallocator
+Copyright (c) 2017-2025 Advanced Micro Devices, Inc. All rights reserved.
+
+Gui_Attribution_emoji-segmenter
+Copyright 2019 Google LLC
+
+Gui_Attribution_webgradients
+Copyright (c) 2017 itmeo
+
+Gui_Attribution_icc-srgb-color-profile
+Copyright International Color Consortium, 2015
+
+Gui_Attribution_md4c
+Copyright © 2016-2024 Martin Mitáš
+
+Gui
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+OpenGL
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+Widgets
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+OpenGLWidgets
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+DeviceDiscoverySupportPrivate
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+FbSupportPrivate
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+TestInternalsPrivate_Attribution_cmake-runcmake-test-modules
+Copyright © 2000-2024 Kitware, Inc. and Contributors
+
+TestInternalsPrivate
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+Test_Attribution_catch2
+Copyright (c) 2022 Two Blue Cubes Ltd. All rights reserved.
+
+Test_Attribution_cycle
+Copyright (c) 2003, 2007-14 Matteo Frigo
+Copyright (c) 2003, 2007-14 Massachusetts Institute of Technology
+
+Test_Attribution_linuxperf
+Copyright (C) 2008-2009, Thomas Gleixner <tglx@linutronix.de>
+Copyright (C) 2008-2011, Red Hat, Inc., Ingo Molnar
+Copyright (C) 2008-2011, Red Hat, Inc., Peter Zijlstra
+
+Test_Attribution_valgrind
+Copyright (C) 2000-2017 Julian Seward
+Copyright (C) 2003-2017 Josef Weidendorfer.
+
+Test
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+PrintSupport
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QPSQLDriverPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QODBCDriverPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QSQLiteDriverPlugin_Attribution_sqlite
+The authors disclaim copyright to the source code. However, a license can be obtained if needed.
+
+QSQLiteDriverPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QMimerSQLDriverPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QMinimalIntegrationPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QOffscreenIntegrationPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QCocoaIntegrationPlugin_Attribution_cocoa-platform-plugin
+Copyright (c) 2007-2008, Apple, Inc.
+
+QCocoaIntegrationPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QICOPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QJpegPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QGifPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QTuioTouchPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QMacStylePlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QAppleNetworkInformationPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QSecureTransportBackendPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QTlsBackendOpenSSLPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QTlsBackendCertOnlyPlugin
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+QtLibraryInfo
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+qmake
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+GlobalConfig
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+GlobalConfigPrivate
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+Platform_Attribution_extra-cmake-modules
+Copyright © 2011-2018 The KDE community
+
+Platform_Attribution_kwin
+Copyright 2014 Alex Merry <alex.merry@kde.org>
+Copyright 2014 Martin Gräßlin <mgraesslin@kde.org>
+Copyright (c) 2006,2007 Laurent Montel, <montel@kde.org>
+
+Platform
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+PlatformCommonInternal
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+PlatformModuleInternal
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+PlatformPluginInternal
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+PlatformAppInternal
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+PlatformToolInternal
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+PlatformExampleInternal
+Copyright (C) The Qt Company Ltd. and other contributors.
+
+src/3rdparty/D3D12MemoryAllocator/LICENSE.txt
+Copyright (c) 2019-2022 Advanced Micro Devices, Inc. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+src/3rdparty/README
+The libraries included here are the original packages, unpacked, and
+with their version number removed from the directory name (for version
+information, see the README files in the directories).
+
+Certain files and subdirectories of the original library packages that
+are irrelevant to Qt may not be included here. Typically, those are
+the standalone library configuration and make files, tools, test
+files, contribs, documentation, and similar.
+
+Patches may have been applied, typically for configuration and build
+issues in the Qt framework. Such patches can be reviewed in the the
+public git repository; they will appear in the commit logs of each
+library directory, following the latest clean version update commit.
+
+The 'patches' subdirectory contains certain patches applied prior to
+the start of the public git history, where the library has not been
+updated since.
+
+
+src/3rdparty/VulkanMemoryAllocator/LICENSE.txt
+Copyright (c) 2017-2019 Advanced Micro Devices, Inc. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+src/3rdparty/android/LICENSE
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+src/3rdparty/blake2/COPYING
+CC0 1.0 Universal
+
+Statement of Purpose
+
+The laws of most jurisdictions throughout the world automatically confer
+exclusive Copyright and Related Rights (defined below) upon the creator and
+subsequent owner(s) (each and all, an "owner") of an original work of
+authorship and/or a database (each, a "Work").
+
+Certain owners wish to permanently relinquish those rights to a Work for the
+purpose of contributing to a commons of creative, cultural and scientific
+works ("Commons") that the public can reliably and without fear of later
+claims of infringement build upon, modify, incorporate in other works, reuse
+and redistribute as freely as possible in any form whatsoever and for any
+purposes, including without limitation commercial purposes. These owners may
+contribute to the Commons to promote the ideal of a free culture and the
+further production of creative, cultural and scientific works, or to gain
+reputation or greater distribution for their Work in part through the use and
+efforts of others.
+
+For these and/or other purposes and motivations, and without any expectation
+of additional consideration or compensation, the person associating CC0 with a
+Work (the "Affirmer"), to the extent that he or she is an owner of Copyright
+and Related Rights in the Work, voluntarily elects to apply CC0 to the Work
+and publicly distribute the Work under its terms, with knowledge of his or her
+Copyright and Related Rights in the Work and the meaning and intended legal
+effect of CC0 on those rights.
+
+1. Copyright and Related Rights. A Work made available under CC0 may be
+protected by copyright and related or neighboring rights ("Copyright and
+Related Rights"). Copyright and Related Rights include, but are not limited
+to, the following:
+
+  i. the right to reproduce, adapt, distribute, perform, display, communicate,
+  and translate a Work;
+
+  ii. moral rights retained by the original author(s) and/or performer(s);
+
+  iii. publicity and privacy rights pertaining to a person's image or likeness
+  depicted in a Work;
+
+  iv. rights protecting against unfair competition in regards to a Work,
+  subject to the limitations in paragraph 4(a), below;
+
+  v. rights protecting the extraction, dissemination, use and reuse of data in
+  a Work;
+
+  vi. database rights (such as those arising under Directive 96/9/EC of the
+  European Parliament and of the Council of 11 March 1996 on the legal
+  protection of databases, and under any national implementation thereof,
+  including any amended or successor version of such directive); and
+
+  vii. other similar, equivalent or corresponding rights throughout the world
+  based on applicable law or treaty, and any national implementations thereof.
+
+2. Waiver. To the greatest extent permitted by, but not in contravention of,
+applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and
+unconditionally waives, abandons, and surrenders all of Affirmer's Copyright
+and Related Rights and associated claims and causes of action, whether now
+known or unknown (including existing as well as future claims and causes of
+action), in the Work (i) in all territories worldwide, (ii) for the maximum
+duration provided by applicable law or treaty (including future time
+extensions), (iii) in any current or future medium and for any number of
+copies, and (iv) for any purpose whatsoever, including without limitation
+commercial, advertising or promotional purposes (the "Waiver"). Affirmer makes
+the Waiver for the benefit of each member of the public at large and to the
+detriment of Affirmer's heirs and successors, fully intending that such Waiver
+shall not be subject to revocation, rescission, cancellation, termination, or
+any other legal or equitable action to disrupt the quiet enjoyment of the Work
+by the public as contemplated by Affirmer's express Statement of Purpose.
+
+3. Public License Fallback. Should any part of the Waiver for any reason be
+judged legally invalid or ineffective under applicable law, then the Waiver
+shall be preserved to the maximum extent permitted taking into account
+Affirmer's express Statement of Purpose. In addition, to the extent the Waiver
+is so judged Affirmer hereby grants to each affected person a royalty-free,
+non transferable, non sublicensable, non exclusive, irrevocable and
+unconditional license to exercise Affirmer's Copyright and Related Rights in
+the Work (i) in all territories worldwide, (ii) for the maximum duration
+provided by applicable law or treaty (including future time extensions), (iii)
+in any current or future medium and for any number of copies, and (iv) for any
+purpose whatsoever, including without limitation commercial, advertising or
+promotional purposes (the "License"). The License shall be deemed effective as
+of the date CC0 was applied by Affirmer to the Work. Should any part of the
+License for any reason be judged legally invalid or ineffective under
+applicable law, such partial invalidity or ineffectiveness shall not
+invalidate the remainder of the License, and in such case Affirmer hereby
+affirms that he or she will not (i) exercise any of his or her remaining
+Copyright and Related Rights in the Work or (ii) assert any associated claims
+and causes of action with respect to the Work, in either case contrary to
+Affirmer's express Statement of Purpose.
+
+4. Limitations and Disclaimers.
+
+  a. No trademark or patent rights held by Affirmer are waived, abandoned,
+  surrendered, licensed or otherwise affected by this document.
+
+  b. Affirmer offers the Work as-is and makes no representations or warranties
+  of any kind concerning the Work, express, implied, statutory or otherwise,
+  including without limitation warranties of title, merchantability, fitness
+  for a particular purpose, non infringement, or the absence of latent or
+  other defects, accuracy, or the present or absence of errors, whether or not
+  discoverable, all to the greatest extent permissible under applicable law.
+
+  c. Affirmer disclaims responsibility for clearing rights of other persons
+  that may apply to the Work or any use thereof, including without limitation
+  any person's Copyright and Related Rights in the Work. Further, Affirmer
+  disclaims responsibility for obtaining any necessary consents, permissions
+  or other rights required for any use of the Work.
+
+  d. Affirmer understands and acknowledges that Creative Commons is not a
+  party to this document and has no duty or obligation with respect to this
+  CC0 or use of the Work.
+
+For more information, please see
+<http://creativecommons.org/publicdomain/zero/1.0/>
+
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+src/3rdparty/double-conversion/LICENSE
+Copyright 2006-2011, the V8 project authors. All rights reserved.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+    * Neither the name of Google Inc. nor the names of its
+      contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+src/3rdparty/easing/LICENSE
+Copyright (c) 2001 Robert Penner
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+    * Neither the name of the author nor the names of contributors may be used
+      to endorse or promote products derived from this software without specific
+      prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+src/3rdparty/forkfd/LICENSE
+Copyright (C) 2016 Intel Corporation.
+Copyright (C) 2015 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+src/3rdparty/freetype/LICENSE.txt
+FREETYPE LICENSES
+-----------------
+
+The FreeType  2 font  engine is  copyrighted work  and cannot  be used
+legally without  a software  license.  In order  to make  this project
+usable to  a vast majority of  developers, we distribute it  under two
+mutually exclusive open-source licenses.
+
+This means that *you* must choose  *one* of the two licenses described
+below, then obey all its terms and conditions when using FreeType 2 in
+any of your projects or products.
+
+  - The FreeType License,  found in the file  `docs/FTL.TXT`, which is
+    similar to the  original BSD license *with*  an advertising clause
+    that forces  you to explicitly  cite the FreeType project  in your
+    product's  documentation.  All  details are  in the  license file.
+    This license is suited to products which don't use the GNU General
+    Public License.
+
+    Note that  this license  is compatible to  the GNU  General Public
+    License version 3, but not version 2.
+
+  - The   GNU   General   Public   License   version   2,   found   in
+    `docs/GPLv2.TXT`  (any  later  version  can  be  used  also),  for
+    programs  which  already  use  the  GPL.  Note  that  the  FTL  is
+    incompatible with GPLv2 due to its advertisement clause.
+
+The contributed  BDF and PCF  drivers come  with a license  similar to
+that  of the  X Window  System.   It is  compatible to  the above  two
+licenses (see files `src/bdf/README`  and `src/pcf/README`).  The same
+holds   for   the   source    code   files   `src/base/fthash.c`   and
+`include/freetype/internal/fthash.h`; they wer part  of the BDF driver
+in earlier FreeType versions.
+
+The gzip  module uses the  zlib license (see  `src/gzip/zlib.h`) which
+too is compatible to the above two licenses.
+
+The  MD5 checksum  support  (only used  for  debugging in  development
+builds) is in the public domain.
+
+-- FTL.TXT --
+
+The FreeType Project LICENSE
+----------------------------
+
+        2006-Jan-27
+
+Copyright 1996-2002, 2006 by
+David Turner, Robert Wilhelm, and Werner Lemberg
+
+
+
+Introduction
+============
+
+The FreeType  Project is distributed in  several archive packages;
+some of them may contain, in addition to the FreeType font engine,
+various tools and  contributions which rely on, or  relate to, the
+FreeType Project.
+
+This  license applies  to all  files found  in such  packages, and
+which do not  fall under their own explicit  license.  The license
+affects  thus  the  FreeType   font  engine,  the  test  programs,
+documentation and makefiles, at the very least.
+
+This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG
+(Independent JPEG  Group) licenses, which  all encourage inclusion
+and  use of  free  software in  commercial  and freeware  products
+alike.  As a consequence, its main points are that:
+
+o We don't promise that this software works. However, we will be
+interested in any kind of bug reports. (`as is' distribution)
+
+o You can  use this software for whatever you  want, in parts or
+full form, without having to pay us. (`royalty-free' usage)
+
+o You may not pretend that  you wrote this software.  If you use
+it, or  only parts of it,  in a program,  you must acknowledge
+somewhere  in  your  documentation  that  you  have  used  the
+FreeType code. (`credits')
+
+We  specifically  permit  and  encourage  the  inclusion  of  this
+software, with  or without modifications,  in commercial products.
+We  disclaim  all warranties  covering  The  FreeType Project  and
+assume no liability related to The FreeType Project.
+
+
+Finally,  many  people  asked  us  for  a  preferred  form  for  a
+credit/disclaimer to use in compliance with this license.  We thus
+encourage you to use the following text:
+
+"""
+Portions of this software are copyright © <year> The FreeType
+Project (www.freetype.org).  All rights reserved.
+"""
+
+Please replace <year> with the value from the FreeType version you
+actually use.
+
+
+Legal Terms
+===========
+
+0. Definitions
+--------------
+
+Throughout this license,  the terms `package', `FreeType Project',
+and  `FreeType  archive' refer  to  the  set  of files  originally
+distributed  by the  authors  (David Turner,  Robert Wilhelm,  and
+Werner Lemberg) as the `FreeType Project', be they named as alpha,
+beta or final release.
+
+`You' refers to  the licensee, or person using  the project, where
+`using' is a generic term including compiling the project's source
+code as  well as linking it  to form a  `program' or `executable'.
+This  program is  referred to  as  `a program  using the  FreeType
+engine'.
+
+This  license applies  to all  files distributed  in  the original
+FreeType  Project,   including  all  source   code,  binaries  and
+documentation,  unless  otherwise  stated   in  the  file  in  its
+original, unmodified form as  distributed in the original archive.
+If you are  unsure whether or not a particular  file is covered by
+this license, you must contact us to verify this.
+
+The FreeType  Project is copyright (C) 1996-2000  by David Turner,
+Robert Wilhelm, and Werner Lemberg.  All rights reserved except as
+specified below.
+
+1. No Warranty
+--------------
+
+THE FREETYPE PROJECT  IS PROVIDED `AS IS' WITHOUT  WARRANTY OF ANY
+KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,
+WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR
+PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE  FOR ANY DAMAGES CAUSED  BY THE USE OR  THE INABILITY TO
+USE, OF THE FREETYPE PROJECT.
+
+2. Redistribution
+-----------------
+
+This  license  grants  a  worldwide, royalty-free,  perpetual  and
+irrevocable right  and license to use,  execute, perform, compile,
+display,  copy,   create  derivative  works   of,  distribute  and
+sublicense the  FreeType Project (in  both source and  object code
+forms)  and  derivative works  thereof  for  any  purpose; and  to
+authorize others  to exercise  some or all  of the  rights granted
+herein, subject to the following conditions:
+
+o Redistribution of  source code  must retain this  license file
+(`FTL.TXT') unaltered; any  additions, deletions or changes to
+the original  files must be clearly  indicated in accompanying
+documentation.   The  copyright   notices  of  the  unaltered,
+original  files must  be  preserved in  all  copies of  source
+files.
+
+o Redistribution in binary form must provide a  disclaimer  that
+states  that  the software is based in part of the work of the
+FreeType Team,  in  the  distribution  documentation.  We also
+encourage you to put an URL to the FreeType web page  in  your
+documentation, though this isn't mandatory.
+
+These conditions  apply to any  software derived from or  based on
+the FreeType Project,  not just the unmodified files.   If you use
+our work, you  must acknowledge us.  However, no  fee need be paid
+to us.
+
+3. Advertising
+--------------
+
+Neither the  FreeType authors and  contributors nor you  shall use
+the name of the  other for commercial, advertising, or promotional
+purposes without specific prior written permission.
+
+We suggest,  but do not require, that  you use one or  more of the
+following phrases to refer  to this software in your documentation
+or advertising  materials: `FreeType Project',  `FreeType Engine',
+`FreeType library', or `FreeType Distribution'.
+
+As  you have  not signed  this license,  you are  not  required to
+accept  it.   However,  as  the FreeType  Project  is  copyrighted
+material, only  this license, or  another one contracted  with the
+authors, grants you  the right to use, distribute,  and modify it.
+Therefore,  by  using,  distributing,  or modifying  the  FreeType
+Project, you indicate that you understand and accept all the terms
+of this license.
+
+4. Contacts
+-----------
+
+There are two mailing lists related to FreeType:
+
+o freetype@nongnu.org
+
+Discusses general use and applications of FreeType, as well as
+future and  wanted additions to the  library and distribution.
+If  you are looking  for support,  start in  this list  if you
+haven't found anything to help you in the documentation.
+
+o freetype-devel@nongnu.org
+
+Discusses bugs,  as well  as engine internals,  design issues,
+specific licenses, porting, etc.
+
+Our home page can be found at
+
+https://www.freetype.org
+
+
+--- end of FTL.TXT ---
+
+--- GPLv2.TXT ---
+
+		    GNU GENERAL PUBLIC LICENSE
+		       Version 2, June 1991
+
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+     51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+			    Preamble
+
+  The licenses for most software are designed to take away your
+freedom to share and change it.  By contrast, the GNU General Public
+License is intended to guarantee your freedom to share and change free
+software--to make sure the software is free for all its users.  This
+General Public License applies to most of the Free Software
+Foundation's software and to any other program whose authors commit to
+using it.  (Some other Free Software Foundation software is covered by
+the GNU Library General Public License instead.)  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+this service if you wish), that you receive source code or can get it
+if you want it, that you can change the software or use pieces of it
+in new free programs; and that you know you can do these things.
+
+  To protect your rights, we need to make restrictions that forbid
+anyone to deny you these rights or to ask you to surrender the rights.
+These restrictions translate to certain responsibilities for you if you
+distribute copies of the software, or if you modify it.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must give the recipients all the rights that
+you have.  You must make sure that they, too, receive or can get the
+source code.  And you must show them these terms so they know their
+rights.
+
+  We protect your rights with two steps: (1) copyright the software, and
+(2) offer you this license which gives you legal permission to copy,
+distribute and/or modify the software.
+
+  Also, for each author's protection and ours, we want to make certain
+that everyone understands that there is no warranty for this free
+software.  If the software is modified by someone else and passed on, we
+want its recipients to know that what they have is not the original, so
+that any problems introduced by others will not reflect on the original
+authors' reputations.
+
+  Finally, any free program is threatened constantly by software
+patents.  We wish to avoid the danger that redistributors of a free
+program will individually obtain patent licenses, in effect making the
+program proprietary.  To prevent this, we have made it clear that any
+patent must be licensed for everyone's free use or not licensed at all.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+		    GNU GENERAL PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. This License applies to any program or other work which contains
+a notice placed by the copyright holder saying it may be distributed
+under the terms of this General Public License.  The "Program", below,
+refers to any such program or work, and a "work based on the Program"
+means either the Program or any derivative work under copyright law:
+that is to say, a work containing the Program or a portion of it,
+either verbatim or with modifications and/or translated into another
+language.  (Hereinafter, translation is included without limitation in
+the term "modification".)  Each licensee is addressed as "you".
+
+Activities other than copying, distribution and modification are not
+covered by this License; they are outside its scope.  The act of
+running the Program is not restricted, and the output from the Program
+is covered only if its contents constitute a work based on the
+Program (independent of having been made by running the Program).
+Whether that is true depends on what the Program does.
+
+  1. You may copy and distribute verbatim copies of the Program's
+source code as you receive it, in any medium, provided that you
+conspicuously and appropriately publish on each copy an appropriate
+copyright notice and disclaimer of warranty; keep intact all the
+notices that refer to this License and to the absence of any warranty;
+and give any other recipients of the Program a copy of this License
+along with the Program.
+
+You may charge a fee for the physical act of transferring a copy, and
+you may at your option offer warranty protection in exchange for a fee.
+
+  2. You may modify your copy or copies of the Program or any portion
+of it, thus forming a work based on the Program, and copy and
+distribute such modifications or work under the terms of Section 1
+above, provided that you also meet all of these conditions:
+
+    a) You must cause the modified files to carry prominent notices
+    stating that you changed the files and the date of any change.
+
+    b) You must cause any work that you distribute or publish, that in
+    whole or in part contains or is derived from the Program or any
+    part thereof, to be licensed as a whole at no charge to all third
+    parties under the terms of this License.
+
+    c) If the modified program normally reads commands interactively
+    when run, you must cause it, when started running for such
+    interactive use in the most ordinary way, to print or display an
+    announcement including an appropriate copyright notice and a
+    notice that there is no warranty (or else, saying that you provide
+    a warranty) and that users may redistribute the program under
+    these conditions, and telling the user how to view a copy of this
+    License.  (Exception: if the Program itself is interactive but
+    does not normally print such an announcement, your work based on
+    the Program is not required to print an announcement.)
+
+These requirements apply to the modified work as a whole.  If
+identifiable sections of that work are not derived from the Program,
+and can be reasonably considered independent and separate works in
+themselves, then this License, and its terms, do not apply to those
+sections when you distribute them as separate works.  But when you
+distribute the same sections as part of a whole which is a work based
+on the Program, the distribution of the whole must be on the terms of
+this License, whose permissions for other licensees extend to the
+entire whole, and thus to each and every part regardless of who wrote it.
+
+Thus, it is not the intent of this section to claim rights or contest
+your rights to work written entirely by you; rather, the intent is to
+exercise the right to control the distribution of derivative or
+collective works based on the Program.
+
+In addition, mere aggregation of another work not based on the Program
+with the Program (or with a work based on the Program) on a volume of
+a storage or distribution medium does not bring the other work under
+the scope of this License.
+
+  3. You may copy and distribute the Program (or a work based on it,
+under Section 2) in object code or executable form under the terms of
+Sections 1 and 2 above provided that you also do one of the following:
+
+    a) Accompany it with the complete corresponding machine-readable
+    source code, which must be distributed under the terms of Sections
+    1 and 2 above on a medium customarily used for software interchange; or,
+
+    b) Accompany it with a written offer, valid for at least three
+    years, to give any third party, for a charge no more than your
+    cost of physically performing source distribution, a complete
+    machine-readable copy of the corresponding source code, to be
+    distributed under the terms of Sections 1 and 2 above on a medium
+    customarily used for software interchange; or,
+
+    c) Accompany it with the information you received as to the offer
+    to distribute corresponding source code.  (This alternative is
+    allowed only for noncommercial distribution and only if you
+    received the program in object code or executable form with such
+    an offer, in accord with Subsection b above.)
+
+The source code for a work means the preferred form of the work for
+making modifications to it.  For an executable work, complete source
+code means all the source code for all modules it contains, plus any
+associated interface definition files, plus the scripts used to
+control compilation and installation of the executable.  However, as a
+special exception, the source code distributed need not include
+anything that is normally distributed (in either source or binary
+form) with the major components (compiler, kernel, and so on) of the
+operating system on which the executable runs, unless that component
+itself accompanies the executable.
+
+If distribution of executable or object code is made by offering
+access to copy from a designated place, then offering equivalent
+access to copy the source code from the same place counts as
+distribution of the source code, even though third parties are not
+compelled to copy the source along with the object code.
+
+  4. You may not copy, modify, sublicense, or distribute the Program
+except as expressly provided under this License.  Any attempt
+otherwise to copy, modify, sublicense or distribute the Program is
+void, and will automatically terminate your rights under this License.
+However, parties who have received copies, or rights, from you under
+this License will not have their licenses terminated so long as such
+parties remain in full compliance.
+
+  5. You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Program or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Program (or any work based on the
+Program), you indicate your acceptance of this License to do so, and
+all its terms and conditions for copying, distributing or modifying
+the Program or works based on it.
+
+  6. Each time you redistribute the Program (or any work based on the
+Program), the recipient automatically receives a license from the
+original licensor to copy, distribute or modify the Program subject to
+these terms and conditions.  You may not impose any further
+restrictions on the recipients' exercise of the rights granted herein.
+You are not responsible for enforcing compliance by third parties to
+this License.
+
+  7. If, as a consequence of a court judgment or allegation of patent
+infringement or for any other reason (not limited to patent issues),
+conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot
+distribute so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you
+may not distribute the Program at all.  For example, if a patent
+license would not permit royalty-free redistribution of the Program by
+all those who receive copies directly or indirectly through you, then
+the only way you could satisfy both it and this License would be to
+refrain entirely from distribution of the Program.
+
+If any portion of this section is held invalid or unenforceable under
+any particular circumstance, the balance of the section is intended to
+apply and the section as a whole is intended to apply in other
+circumstances.
+
+It is not the purpose of this section to induce you to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system, which is
+implemented by public license practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a licensee cannot
+impose that choice.
+
+This section is intended to make thoroughly clear what is believed to
+be a consequence of the rest of this License.
+
+  8. If the distribution and/or use of the Program is restricted in
+certain countries either by patents or by copyrighted interfaces, the
+original copyright holder who places the Program under this License
+may add an explicit geographical distribution limitation excluding
+those countries, so that distribution is permitted only in or among
+countries not thus excluded.  In such case, this License incorporates
+the limitation as if written in the body of this License.
+
+  9. The Free Software Foundation may publish revised and/or new versions
+of the General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+Each version is given a distinguishing version number.  If the Program
+specifies a version number of this License which applies to it and "any
+later version", you have the option of following the terms and conditions
+either of that version or of any later version published by the Free
+Software Foundation.  If the Program does not specify a version number of
+this License, you may choose any version ever published by the Free Software
+Foundation.
+
+  10. If you wish to incorporate parts of the Program into other free
+programs whose distribution conditions are different, write to the author
+to ask for permission.  For software which is copyrighted by the Free
+Software Foundation, write to the Free Software Foundation; we sometimes
+make exceptions for this.  Our decision will be guided by the two goals
+of preserving the free status of all derivatives of our free software and
+of promoting the sharing and reuse of software generally.
+
+			    NO WARRANTY
+
+  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+
+  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+		     END OF TERMS AND CONDITIONS
+
+	    How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+convey the exclusion of warranty; and each file should have at least
+the "copyright" line and a pointer to where the full notice is found.
+
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+Also add information on how to contact you by electronic and paper mail.
+
+If the program is interactive, make it output a short notice like this
+when it starts in an interactive mode:
+
+    Gnomovision version 69, Copyright (C) year  name of author
+    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, the commands you use may
+be called something other than `show w' and `show c'; they could even be
+mouse-clicks or menu items--whatever suits your program.
+
+You should also get your employer (if you work as a programmer) or your
+school, if any, to sign a "copyright disclaimer" for the program, if
+necessary.  Here is a sample; alter the names:
+
+  Yoyodyne, Inc., hereby disclaims all copyright interest in the program
+  `Gnomovision' (which makes passes at compilers) written by James Hacker.
+
+  <signature of Ty Coon>, 1 April 1989
+  Ty Coon, President of Vice
+
+This General Public License does not permit incorporating your program into
+proprietary programs.  If your program is a subroutine library, you may
+consider it more useful to permit linking proprietary applications with the
+library.  If this is what you want to do, use the GNU Library General
+Public License instead of this License.
+
+--- end of GPLv2.TXT ---
+
+
+
+src/3rdparty/freetype/README
+FreeType 2.14.3
+===============
+
+Homepage: https://freetype.org
+
+FreeType is a freely available software library to render fonts.
+
+It  is  written  in  C,   designed  to  be  small,  efficient,  highly
+customizable,  and portable  while capable  of producing  high-quality
+output (glyph images) of most vector and bitmap font formats.
+
+Please   read  the   `docs/CHANGES`   file,   it  contains   IMPORTANT
+INFORMATION.
+
+Read the files `docs/INSTALL*`  for installation instructions; see the
+file `LICENSE.TXT` for the available licenses.
+
+For using FreeType's git repository  instead of a distribution bundle,
+please read file  `README.git`.  Note that you have  to actually clone
+the repository; using a snapshot will  not work (in other words, don't
+use gitlab's 'Download' button).
+
+The FreeType 2 API reference is located in directory `docs/reference`;
+use the file  `index.html` as the top entry point.   [Please note that
+currently  the search  function  for  locally installed  documentation
+doesn't work due to cross-site scripting issues.]
+
+Additional documentation is  available as a separate  package from our
+sites.  Go to
+
+  https://download.savannah.gnu.org/releases/freetype/
+
+and download one of the following files.
+
+  freetype-doc-2.14.3.tar.xz
+  freetype-doc-2.14.3.tar.gz
+  ftdoc2143.zip
+
+To view the documentation online, go to
+
+  https://freetype.org/freetype2/docs/
+
+
+Mailing Lists
+-------------
+
+The preferred  way of  communication with the  FreeType team  is using
+e-mail lists.
+
+  general use and discussion:      freetype@nongnu.org
+  engine internals, porting, etc.: freetype-devel@nongnu.org
+  announcements:                   freetype-announce@nongnu.org
+  git repository tracker:          freetype-commit@nongnu.org
+
+The lists are moderated; see
+
+  https://freetype.org/contact.html
+
+how to subscribe.
+
+
+Bugs
+----
+
+Please submit bug reports at
+
+  https://gitlab.freedesktop.org/freetype/freetype/-/issues
+
+This gitlab instance also supports confidential reports.
+
+Alternatively, but less  preferable, you might report  bugs by sending
+an  e-mail to  the  public  mailing list  `freetype-devel@nongnu.org`.
+Don't forget to submit a detailed  explanation of the problem -- there
+is nothing  worse than receiving  a terse  message that only  says 'it
+doesn't work'.
+
+
+Patches
+-------
+
+For larger changes please provide merge requests at
+
+  https://gitlab.freedesktop.org/freetype/freetype/-/merge_requests
+
+Alternatively, you can send patches to the `freetype-devel@nongnu.org`
+mailing list  -- and thank you  in advance for your  work on improving
+FreeType!
+
+Details on the process can be found here:
+
+  https://freetype.org/developer.html#patches
+
+
+Enjoy!
+
+  The FreeType Team
+
+----------------------------------------------------------------------
+
+Copyright (C) 2006-2026 by
+David Turner, Robert Wilhelm, and Werner Lemberg.
+
+This  file is  part of  the FreeType  project, and  may only  be used,
+modified,  and distributed  under the  terms of  the  FreeType project
+license,  LICENSE.TXT.  By  continuing to  use, modify,  or distribute
+this file you  indicate that you have read  the license and understand
+and accept it fully.
+
+
+--- end of README ---
+
+
+src/3rdparty/freetype/src/bdf/README
+                  FreeType font driver for BDF fonts
+
+                       Francesco Zappa Nardelli
+                  <francesco.zappa.nardelli@ens.fr>
+
+
+Introduction
+************
+
+BDF (Bitmap Distribution Format) is a bitmap font format defined by Adobe,
+which is intended to be easily understood by both humans and computers.
+This code implements a BDF driver for the FreeType library, following the
+Adobe Specification V 2.2.  The specification of the BDF font format is
+available from Adobe's web site:
+
+  https://adobe-type-tools.github.io/font-tech-notes/pdfs/5005.BDF_Spec.pdf
+
+Many good bitmap fonts in bdf format come with XFree86 (www.XFree86.org).
+They do not define vertical metrics, because the X Consortium BDF
+specification has removed them.
+
+
+Encodings
+*********
+
+[This section is out of date, retained for historical reasons.  BDF
+ properties can be retrieved with `FT_Get_BDF_Property`, character set ID
+ values with `FT_Get_BDF_Charset_ID`.]
+
+The variety of encodings that accompanies bdf fonts appears to encompass the
+small set defined in freetype.h.  On the other hand, two properties that
+specify encoding and registry are usually defined in bdf fonts.
+
+I decided to make these two properties directly accessible, leaving to the
+client application the work of interpreting them.  For instance:
+
+
+  #include FT_INTERNAL_BDF_TYPES_H
+
+  FT_Face          face;
+  BDF_Public_Face  bdfface;
+
+
+  FT_New_Face( library, ..., &face );
+
+  bdfface = (BDF_Public_Face)face;
+
+  if ( ( bdfface->charset_registry == "ISO10646" ) &&
+       ( bdfface->charset_encoding == "1" )        )
+    [..]
+
+
+Thus the driver always exports `ft_encoding_none' as face->charmap.encoding.
+FT_Get_Char_Index's behavior is unmodified, that is, it converts the ULong
+value given as argument into the corresponding glyph number.
+
+If the two properties are not available, Adobe Standard Encoding should be
+assumed.
+
+
+Anti-Aliased Bitmaps
+********************
+
+The driver supports an extension to the BDF format as used in Mark Leisher's
+xmbdfed bitmap font editor.  Microsoft's SBIT tool expects bitmap fonts in
+that format for adding anti-aliased them to TrueType fonts.  It introduces a
+fourth field to the `SIZE' keyword which gives the bpp value (bits per
+pixel) of the glyph data in the font.  Possible values are 1 (the default),
+2 (four gray levels), 4 (16 gray levels), and 8 (256 gray levels).  The
+driver returns either a bitmap with 1 bit per pixel or a pixmap with 8bits
+per pixel (using 4, 16, and 256 gray levels, respectively).
+
+
+Known problems
+**************
+
+- A font is entirely loaded into memory.  Obviously, this is not the Right
+  Thing(TM).  If you have big fonts I suggest you convert them into PCF
+  format (using the bdftopcf utility): the PCF font drive of FreeType can
+  perform incremental glyph loading.
+
+When I have some time, I will implement on-demand glyph parsing.
+
+- Except for encodings properties, client applications have no visibility of
+  the PCF_Face object.  This means that applications cannot directly access
+  font tables and must trust FreeType.
+
+- Currently, glyph names are ignored.
+
+  I plan to give full visibility of the BDF_Face object in an upcoming
+  revision of the driver, thus implementing also glyph names.
+
+- As I have never seen a BDF font that defines vertical metrics, vertical
+  metrics are (parsed and) discarded.  If you own a BDF font that defines
+  vertical metrics, please let me know (I will implement them in 5-10
+  minutes).
+
+
+License
+*******
+
+Copyright (C) 2001-2002 by Francesco Zappa Nardelli
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*** Portions of the driver (that is, bdflib.c and bdf.h):
+
+Copyright 2000 Computing Research Labs, New Mexico State University
+Copyright 2001-2002, 2011 Francesco Zappa Nardelli
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+THE COMPUTING RESEARCH LAB OR NEW MEXICO STATE UNIVERSITY BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+Credits
+*******
+
+This driver is based on excellent Mark Leisher's bdf library.  If you
+find something good in this driver you should probably thank him, not
+me.
+
+
+src/3rdparty/freetype/src/gxvalid/README
+gxvalid: TrueType GX validator
+==============================
+
+
+1. What is this
+---------------
+
+  `gxvalid' is a module to  validate TrueType GX tables: a collection of
+  additional tables  in TrueType  font which are  used by  `QuickDraw GX
+  Text',  Apple Advanced  Typography  (AAT).  In  addition, gxvalid  can
+  validates `kern'  tables which have  been extended for AAT.   Like the
+  otvalid  module,   gxvalid  uses   FreeType  2's  validator  framework
+  (ftvalid).
+
+  You can link gxvalid with your program; before running your own layout
+  engine, gxvalid validates a font  file.  As the result, you can remove
+  error-checking code  from the layout  engine.  It is also  possible to
+  use  gxvalid  as a  stand-alone  font  validator;  the `ftvalid'  test
+  program  included  in the  ft2demo  bundle  calls gxvalid  internally.
+  A stand-alone font validator may be useful for font developers.
+
+  This documents documents the following issues.
+
+  - supported TrueType GX tables
+  - fundamental validation limitations
+  - permissive error handling of broken GX tables
+  - `kern' table issue.
+
+
+2. Supported tables
+-------------------
+
+  The following GX tables are currently supported.
+
+    bsln
+    feat
+    just
+    kern(*)
+    lcar
+    mort
+    morx
+    opbd
+    prop
+    trak
+
+  The following GX tables are currently unsupported.
+
+    cvar
+    fdsc
+    fmtx
+    fvar
+    gvar
+    Zapf
+
+  The following GX tables won't be supported.
+
+    acnt(**)
+    hsty(***)
+
+  The following undocumented tables in TrueType fonts designed for Apple
+  platform aren't handled either.
+
+    addg
+    CVTM
+    TPNM
+    umif
+
+
+  *)   The `kern'  validator handles both  the classic and the  new kern
+       formats;  the former  is supported  on both  Microsoft  and Apple
+       platforms, while the latter is supported on Apple platforms.
+
+  **)  `acnt' tables are not supported by currently available Apple font
+       tools.
+
+  ***) There  is  one more  Apple  extension,  `hsty',  but  it  is  for
+       Newton-OS, not GX  (Newton-OS is a platform by  Apple, but it can
+       use  sfnt- housed bitmap  fonts only).   Therefore, it  should be
+       excluded  from  `Apple  platform'  in the  context  of  TrueType.
+       gxvalid ignores it as Apple font tools do so.
+
+
+  We have  checked 183  fonts bundled with  MacOS 9.1, MacOS  9.2, MacOS
+  10.0, MacOS X 10.1, MSIE  for MacOS, and AppleWorks 6.0.  In addition,
+  we have  checked 67 Dynalab fonts  (designed for MacOS)  and 189 Ricoh
+  fonts (designed for Windows and  MacOS dual platforms).  The number of
+  fonts including TrueType GX tables are as follows.
+
+    bsln:  76
+    feat: 191
+    just:  84
+    kern:  59
+    lcar:   4
+    mort: 326
+    morx:  19
+    opbd:   4
+    prop: 114
+    trak:  16
+
+  Dynalab  and Ricoh fonts  don't have  GX tables  except of  `feat' and
+  `mort'.
+
+
+3. Fundamental validation limitations
+-------------------------------------
+
+  TrueType  GX  provides  layout   information  to  libraries  for  font
+  rasterizers  and text layout.   gxvalid can  check whether  the layout
+  data in  a font is conformant  to the TrueType GX  format specified by
+  Apple.  But gxvalid cannot check  a how QuickDraw GX/AAT renderer uses
+  the stored information.
+
+  3-1. Validation of State Machine activity
+  -----------------------------------------
+
+    QuickDraw GX/AAT uses a `State Machine' to provide `stateful' layout
+    features,  and TrueType GX  stores the  state transition  diagram of
+    this `State  Machine' in a  `StateTable' data structure.   While the
+    State  Machine receives  a series  of glyph  IDs, the  State Machine
+    starts with `start  of text' state, walks around  various states and
+    generates various  layout information  to the  renderer, and finally
+    reaches the `end of text' state.
+
+    gxvalid can check essential errors like:
+
+      - possibility of state transitions to undefined states
+      - existence of glyph  IDs that the State Machine  doesn't know how
+        to handle
+      - the  State Machine  cannot compute  the layout  information from
+        given diagram
+
+    These errors  can be  checked within finite  steps, and  without the
+    State Machine itself, because these are `expression' errors of state
+    transition diagram.
+
+    There  is no  limitation  about  how long  the  State Machine  walks
+    around,  so validation  of  the algorithm  in  the state  transition
+    diagram requires infinite  steps, even if we had  a State Machine in
+    gxvalid.   Therefore, the  following errors  and problems  cannot be
+    checked.
+
+      - existence of states which the State Machine never transits to
+      - the  possibility that the  State Machine  never reaches  `end of
+        text'
+      - the possibility of stack underflow/overflow in the State Machine
+        (in  ligature  and  contextual  glyph substitutions,  the  State
+        Machine can store 16 glyphs onto its stack)
+
+    In addition, gxvalid doesn't check `temporary glyph IDs' used in the
+    chained State Machines  (in `mort' and `morx' tables).   If a layout
+    feature  is  implemented by  a  single  State  Machine, a  glyph  ID
+    converted by the State Machine is passed to the glyph renderer, thus
+    it  should not  point to  an undefined  glyph ID.   But if  a layout
+    feature is implemented by  chained State Machines, a component State
+    Machine  (if it  is  not the  final  one) is  permitted to  generate
+    undefined glyph IDs for temporary use, because it is handled by next
+    component State Machine and not  by the glyph renderer.  To validate
+    such temporary glyph IDs, gxvalid must stack all undefined glyph IDs
+    which  can occur in  the output  of the  previous State  Machine and
+    search  them in  the  `ClassTable' structure  of  the current  State
+    Machine.  It is too complex to  list all possible glyph IDs from the
+    StateTable, especially from a ligature substitution table.
+
+  3-2. Validation of relationship between multiple layout features
+  ----------------------------------------------------------------
+
+    gxvalid does  not validate the relationship  between multiple layout
+    features at all.
+
+    If  multiple layout  features  are defined  in  TrueType GX  tables,
+    possible  interactions,  overrides,  and  conflicts  between  layout
+    features are implicitly  given in the font too.   For example, there
+    are several predefined spacing control features:
+
+      - Text Spacing          (Proportional/Monospace/Half-width/Normal)
+      - Number Spacing        (Monospaced-numbers/Proportional-numbers)
+      - Kana Spacing          (Full-width/Proportional)
+      - Ideographic Spacing   (Full-width/Proportional)
+      - CJK Roman Spacing     (Half-width/Proportional/Default-roman
+                               /Full-width-roman/Proportional)
+
+    If all  layout features are  independently managed, we  can activate
+    inconsistent  typographic rules  like  `Text Spacing=Monospace'  and
+    `Ideographic Spacing=Proportional' at the same time.
+
+    The combinations  of layout features  is managed by a  32bit integer
+    (one bit each for selector  setting), so we can define relationships
+    between  up  to 32  features,  theoretically.   But  if one  feature
+    setting  affects  another   feature  setting,  we  need  typographic
+    priority  rules to  validate the  relationship.   Unfortunately, the
+    TrueType GX format specification does not give such information even
+    for predefined features.
+
+
+4. Permissive error handling of broken GX tables
+------------------------------------------------
+
+  When  Apple's font  rendering system  finds an  inconsistency,  like a
+  specification  violation or  an  unspecified value  in  a TrueType  GX
+  table, it does not always  return error.  In most cases, the rendering
+  engine silently  ignores such wrong  values or even whole  tables.  In
+  fact, MacOS is shipped with  fonts including broken GX/AAT tables, but
+  no harmful  effects due to  `officially broken' fonts are  observed by
+  end-users.
+
+  gxvalid  is designed  to continue  the validation  process as  long as
+  possible.  When gxvalid find wrong  values, gxvalid warns it at least,
+  and takes  a fallback procedure  if possible.  The  fallback procedure
+  depends on the debug level.
+
+  We used the following three tools to investigate Apple's error handling.
+
+    - FontValidator  (for MacOS 8.5 - 9.2)  resource fork font
+    - ftxvalidator   (for MacOS X 10.1 -)   dfont or naked-sfnt
+    - ftxdumperfuser (for MacOS X 10.1 -)   dfont or naked-sfnt
+
+  However, all tests were done on a PowerPC based Macintosh; at present,
+  we have not checked those tools on a m68k-based Macintosh.
+
+  In total, we checked 183 fonts  bundled to MacOS 9.1, MacOS 9.2, MacOS
+  10.0, MacOS X  10.1, MSIE for MacOS, and  AppleWorks 6.0.  These fonts
+  are distributed  officially, but many broken GX/AAT  tables were found
+  by Apple's font tools.  In the following, we list typical violation of
+  the GX specification, in fonts officially distributed with those Apple
+  systems.
+
+  4-1. broken BinSrchHeader (19/183)
+  ----------------------------------
+
+    `BinSrchHeader' is  a header of a  data array for  m68k platforms to
+    access memory efficiently.  Although  there are only two independent
+    parameters  for real  (`unitSize' and  `nUnits'),  BinSrchHeader has
+    three additional parameters which  can be calculated from `unitSize'
+    and  `nUnits',  for  fast  setup.   Apple  font  tools  ignore  them
+    silently, so gxvalid warns if it finds and inconsistency, and always
+    continues  validation.    The  additional  parameters   are  ignored
+    regardless of the consistency.
+
+      19  fonts include  such  inconsistencies; all  breaks  are in  the
+      BinSrchHeader structure of the `kern' table.
+
+  4-2. too-short LookupTable (5/183)
+  ----------------------------------
+
+    LookupTable format 0  is a simple array to get a  value from a given
+    GID (glyph  ID); the index of  this array is a  GID too.  Therefore,
+    the length  of the array is expected  to be same as  the maximum GID
+    value defined  in the `maxp' table,  but there are  some fonts whose
+    LookupTable format 0 is too  short to cover all GIDs.  FontValidator
+    ignores  this error silently,  ftxvalidator and  ftxdumperfuser both
+    warn and continue.  Similar problems are found in format 3 subtables
+    of `kern'.  gxvalid  warns always and abort if  the validation level
+    is set to FT_VALIDATE_PARANOID.
+
+      5 fonts include too-short kern format 0 subtables.
+      1 font includes too-short kern format 3 subtable.
+
+  4-3. broken LookupTable format 2 (1/183)
+  ----------------------------------------
+
+    LookupTable  format  2,  subformat  4  covers the  GID  space  by  a
+    collection  of  segments which  are  specified  by `firstGlyph'  and
+    `lastGlyph'.   Some  fonts  store  `firstGlyph' and  `lastGlyph'  in
+    reverse order,  so the segment specification is  broken.  Apple font
+    tools ignore this error silently;  a broken segment is ignored as if
+    it  did not  exist.   gxvalid  warns and  normalize  the segment  at
+    FT_VALIDATE_DEFAULT, or ignore  the segment at FT_VALIDATE_TIGHT, or
+    abort at FT_VALIDATE_PARANOID.
+
+      1 font includes broken LookupTable format 2, in the `just' table.
+
+    *) It seems  that all fonts manufactured by  ITC for AppleWorks have
+       this error.
+
+  4-4. bad bracketing in glyph property (14/183)
+  ----------------------------------------------
+
+    GX/AAT defines a  `bracketing' property of the glyphs  in the `prop'
+    table,  to control layout  features of  strings enclosed  inside and
+    outside  of   brackets.   Some  fonts   give  inappropriate  bracket
+    properties  to glyphs.   Apple  font tools  warn  about this  error;
+    gxvalid warns too and aborts at FT_VALIDATE_PARANOID.
+
+      14 fonts include wrong bracket properties.
+
+
+  4-5. invalid feature number (117/183)
+  -------------------------------------
+
+    The GX/AAT  extension can  include 255 different  layout features,
+    but    popular    layout     features    are    predefined    (see
+    https://developer.apple.com/fonts/TrueType-Reference-Manual/RM09/AppendixF.html).
+    Some fonts include feature numbers which are incompatible with the
+    predefined feature registry.
+
+    In our survey, there are 140 fonts including `feat' table.
+
+    a) 67 fonts use a feature number which should not be used.
+    b) 117 fonts set the wrong feature range (nSetting).  This is mostly
+       found in the `mort' and `morx' tables.
+
+    Apple  font tools give  no warning,  although they  cannot recognize
+    what  the feature  is.   At FT_VALIDATE_DEFAULT,  gxvalid warns  but
+    continues in both cases (a, b).  At FT_VALIDATE_TIGHT, gxvalid warns
+    and aborts for (a), but continues for (b).  At FT_VALIDATE_PARANOID,
+    gxvalid warns and aborts in both cases (a, b).
+
+  4-6. invalid prop version (10/183)
+  ----------------------------------
+
+    As most TrueType GX tables, the `prop' table must start with a 32bit
+    version identifier: 0x00010000,  0x00020000 or 0x00030000.  But some
+    fonts  store nonsense binary  data instead.   When Apple  font tools
+    find them, they abort the processing immediately, and the data which
+    follows is unhandled.  gxvalid does the same.
+
+      10 fonts include broken `prop' version.
+
+    All  of these  fonts are  classic  TrueType fonts  for the  Japanese
+    script, manufactured by Apple.
+
+  4-7. unknown resource name (2/183)
+  ------------------------------------
+
+    NOTE: THIS IS NOT A TRUETYPE GX ERROR.
+
+    If  a TrueType  font is  stored  in the  resource fork  or in  dfont
+    format, the data must be tagged as `sfnt' in the resource fork index
+    to invoke TrueType font handler for the data.  But the TrueType font
+    data  in   `Keyboard.dfont'  is  tagged   as  `kbd',  and   that  in
+    `LastResort.dfont' is tagged as  `lst'.  Apple font tools can detect
+    that the data is in  TrueType format and successfully validate them.
+    Maybe  this is possible  because they  are known  to be  dfont.  The
+    current  implementation  of the  resource  fork  driver of  FreeType
+    cannot do that, thus gxvalid cannot validate them.
+
+      2 fonts use an unknown tag for the TrueType font resource.
+
+5. `kern' table issues
+----------------------
+
+  In common terminology of TrueType, `kern' is classified as a basic and
+  platform-independent table.  But there are Apple extensions of `kern',
+  and  there is  an  extension which  requires  a GX  state machine  for
+  contextual kerning.   Therefore, gxvalid includes  a special validator
+  for  `kern' tables.   Unfortunately, there  is no  exact  algorithm to
+  check Apple's extension, so  gxvalid includes a heuristic algorithm to
+  find  the proper validation  routines for  all possible  data formats,
+  including    the   data    format   for    Microsoft.     By   calling
+  classic_kern_validate() instead of gxv_validate(), you can specify the
+  `kern' format  explicitly.  However, current  FreeType2 uses Microsoft
+  `kern' format  only, others  are ignored (and  should be handled  in a
+  library one level higher than FreeType).
+
+  5-1. History
+  ------------
+
+    The original  16bit version of `kern'  was designed by  Apple in the
+    pre-GX  era, and  it was  also approved  by  Microsoft.  Afterwards,
+    Apple designed a  new 32bit version of the  `kern' table.  According
+    to  the documentation, the  difference between  the 16bit  and 32bit
+    version is only the size of  variables in the `kern' header.  In the
+    following,  we call  the original  16bit version  as  `classic', and
+    32bit version as `new'.
+
+  5-2. Versions and dialects which should be differentiated
+  ---------------------------------------------------------
+
+    The `kern' table  consists of a table header  and several subtables.
+    The version number  which identifies a `classic' or  a `new' version
+    is  explicitly   written  in  the   table  header,  but   there  are
+    undocumented  differences between  Microsoft's and  Apple's formats.
+    It is  called a `dialect' in  the following.  There  are three cases
+    which  should  be  handled:   the  new  Apple-dialect,  the  classic
+    Apple-dialect,  and the classic  Microsoft-dialect.  An  analysis of
+    the formats and the auto detection algorithm of gxvalid is described
+    in the following.
+
+    5-2-1. Version detection: classic and new kern
+    ----------------------------------------------
+
+      According  to Apple  TrueType  specification, there  are only  two
+      differences between the classic and the new:
+
+        - The `kern' table header starts with the version number.
+          The classic version starts with 0x0000 (16bit),
+          the new version starts with 0x00010000 (32bit).
+
+        - In the  `kern' table header,  the number of  subtables follows
+          the version number.
+          In the classic version, it is stored as a 16bit value.
+          In the new version, it is stored as a 32bit value.
+
+      From Apple font tool's output (DumpKERN is also tested in addition
+      to  the  three  Apple  font  tools in  above),  there  is  another
+      undocumented difference.  In the  new version, the subtable header
+      includes a 16bit variable  named `tupleIndex' which does not exist
+      in the classic version.
+
+      The new version  can store all subtable formats (0,  1, 2, and 3),
+      but the Apple TrueType specification does not mention the subtable
+      formats available in the classic version.
+
+    5-2-2. Available subtable formats in classic version
+    ----------------------------------------------------
+
+      Although the  Apple TrueType  specification recommends to  use the
+      classic version in  the case if the font is  designed for both the
+      Apple and Microsoft platforms,  it does not document the available
+      subtable formats in the classic version.
+
+      According  to the Microsoft  TrueType specification,  the subtable
+      format  assured for  Windows  and OS/2  support  is only  subtable
+      format  0.  The  Microsoft TrueType  specification  also describes
+      subtable format  2, but does  not mention which  platforms support
+      it.  Subtable formats 1, 3,  and higher are documented as reserved
+      for future use.  Therefore, the classic version can store subtable
+      formats 0 and 2, at least.  `ttfdump.exe', a font tool provided by
+      Microsoft,  ignores the  subtable format  written in  the subtable
+      header, and parses the table as if all subtables are in format 0.
+
+      `kern'  subtable format  1  uses  a StateTable,  so  it cannot  be
+      utilized without a GX  State Machine.  Therefore, it is reasonable
+      to assume  that format 1 (and  3) were introduced  after Apple had
+      introduced GX and moved to the new 32bit version.
+
+    5-2-3. Apple and Microsoft dialects
+    -----------------------------------
+
+      The  `kern' subtable  has  a 16bit  `coverage'  field to  describe
+      kerning attributes, but bit interpretations by Apple and Microsoft
+      are different:  For example, Apple  uses bits 0-7 to  identify the
+      subtable, while Microsoft uses bits 8-15.
+
+      In  addition, due  to the  output of  DumpKERN  and FontValidator,
+      Apple's bit interpretations of coverage in classic and new version
+      are  incompatible also.   In  summary, there  are three  dialects:
+      classic Apple  dialect, classic  Microsoft dialect, and  new Apple
+      dialect.  The classic Microsoft  dialect and the new Apple dialect
+      are documented  by each vendors' TrueType  font specification, but
+      the documentation for classic Apple dialect is not available.
+
+      For example,  in the  new Apple dialect,  bit 15 is  documented as
+      `set to  1 if  the kerning  is vertical'.  On  the other  hand, in
+      classic Microsoft dialect, bit 1 is documented as `set to 1 if the
+      kerning  is  horizontal'.   From   the  outputs  of  DumpKERN  and
+      FontValidator, classic  Apple dialect recognizes  15 as `set  to 1
+      when  the kerning  is horizontal'.   From the  results  of similar
+      experiments, classic Apple dialect  seems to be the Endian reverse
+      of the classic Microsoft dialect.
+
+      As a  conclusion it must be  noted that no font  tool can identify
+      classic Apple dialect or classic Microsoft dialect automatically.
+
+    5-2-4. gxvalid auto dialect detection algorithm
+    -----------------------------------------------
+
+      The first 16  bits of the `kern' table are  enough to identify the
+      version:
+
+        - if  the first  16  bits are  0x0000,  the `kern'  table is  in
+          classic Apple dialect or classic Microsoft dialect
+        - if the first 16 bits are  0x0001, and next 16 bits are 0x0000,
+          the kern table is in new Apple dialect.
+
+      If the `kern'  table is a classic one,  the 16bit `coverage' field
+      is checked next.   Firstly, the coverage bits are  decoded for the
+      classic Apple dialect using the following bit masks (this is based
+      on DumpKERN output):
+
+        0x8000: 1=horizontal, 0=vertical
+        0x4000: not used
+        0x2000: 1=cross-stream, 0=normal
+        0x1FF0: reserved
+        0x000F: subtable format
+
+      If  any  of  reserved  bits  are  set  or  the  subtable  bits  is
+      interpreted as format 1 or 3, we take it as `impossible in classic
+      Apple dialect' and retry, using the classic Microsoft dialect.
+
+        The most popular coverage in new Apple-dialect:         0x8000,
+        The most popular coverage in classic Apple-dialect:     0x0000,
+        The most popular coverage in classic Microsoft dialect: 0x0001.
+
+  5-3. Tested fonts
+  -----------------
+
+    We checked  59 fonts  bundled with MacOS  and 38 fonts  bundled with
+    Windows, where all font include a `kern' table.
+
+      - fonts bundled with MacOS
+        * new Apple dialect
+          format 0: 18
+          format 2:  1
+          format 3:  1
+        * classic Apple dialect
+          format 0: 14
+        * classic Microsoft dialect
+          format 0: 15
+
+      - fonts bundled with Windows
+        * classic Microsoft dialect
+          format 0: 38
+
+    It looks strange that classic Microsoft-dialect fonts are bundled to
+    MacOS: they come from MSIE for MacOS, except of MarkerFelt.dfont.
+
+
+  ACKNOWLEDGEMENT
+  ---------------
+
+  Some parts of gxvalid are  derived from both the `gxlayout' module and
+  the `otvalid'  module.  Development of  gxlayout was supported  by the
+  Information-technology Promotion Agency(IPA), Japan.
+
+  The detailed analysis of undefined  glyph ID utilization in `mort' and
+  `morx' tables is provided by George Williams.
+
+------------------------------------------------------------------------
+
+Copyright (C) 2004-2026 by
+suzuki toshiya, Masatake YAMATO, Red hat K.K.,
+David Turner, Robert Wilhelm, and Werner Lemberg.
+
+This  file is  part  of the  FreeType  project, and  may  only be  used,
+modified,  and  distributed under  the  terms  of  the FreeType  project
+license, LICENSE.TXT.  By continuing  to use, modify, or distribute this
+file  you indicate that  you have  read the  license and  understand and
+accept it fully.
+
+
+--- end of README ---
+
+
+src/3rdparty/freetype/src/pcf/README
+                  FreeType font driver for PCF fonts
+
+                       Francesco Zappa Nardelli
+                  <francesco.zappa.nardelli@ens.fr>
+
+
+Introduction
+************
+
+PCF (Portable Compiled Format) is a binary bitmap font format, largely used
+in X world. This code implements a PCF driver for the FreeType library.
+Glyph images are loaded into memory only on demand, thus leading to a small
+memory footprint.
+
+Information on the PCF font format can only be worked out from
+`pcfread.c', and `pcfwrite.c', to be found, for instance, in the XFree86
+(www.xfree86.org) source tree (xc/lib/font/bitmap/).
+
+Many good bitmap fonts in bdf format come with XFree86: they can be
+compiled into the pcf format using the `bdftopcf' utility.
+
+
+Supported hardware
+******************
+
+The driver has been tested on linux/x86 and sunos5.5/sparc.  In both
+cases the compiler was gcc.  When back in Paris, I will test it also
+on linux/alpha.
+
+
+Encodings
+*********
+
+Use `FT_Get_BDF_Charset_ID' to access the encoding and registry.
+
+The driver always exports `ft_encoding_none' as face->charmap.encoding.
+FT_Get_Char_Index() behavior is unmodified, that is, it converts the ULong
+value given as argument into the corresponding glyph number.
+
+
+Known problems
+**************
+
+- dealing explicitly with encodings breaks the uniformity of FreeType 2
+  API.
+
+- except for encodings properties, client applications have no
+  visibility of the PCF_Face object.  This means that applications
+  cannot directly access font tables and are obliged to trust
+  FreeType.
+
+- currently, glyph names and ink_metrics are ignored.
+
+I plan to give full visibility of the PCF_Face object in the next
+release of the driver, thus implementing also glyph names and
+ink_metrics.
+
+- height is defined as (ascent - descent).  Is this correct?
+
+- if unable to read size information from the font, PCF_Init_Face
+  sets available_size->width and available_size->height to 12.
+
+- too many english grammar errors in the readme file :-(
+
+
+License
+*******
+
+Copyright (C) 2000 by Francesco Zappa Nardelli
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+Credits
+*******
+
+Keith Packard wrote the pcf driver found in XFree86.  His work is at
+the same time the specification and the sample implementation of the
+PCF format.  Undoubtedly, this driver is inspired from his work.
+
+
+src/3rdparty/freetype/src/tools/ftrandom/README
+ftrandom
+========
+
+This program expects a set of directories containing good fonts, and a set
+of extensions of fonts to be tested.  It will randomly pick a font, copy it,
+introduce an error and then test it.
+
+The FreeType tests are quite basic; for each erroneous font ftrandom
+
+  . forks off a new tester,
+  . initializes the library,
+  . opens each font in the file,
+  . loads each glyph,
+  . optionally reviews the contours of the glyph,
+  . optionally rasterizes the glyph, and
+  . closes the face.
+
+If a tester takes longer than 20 seconds, ftrandom saves the erroneous font
+and continues.  If the tester exits normally or with an error, then the
+superstructure removes the test font and continues.
+
+
+Command line options
+--------------------
+
+  --all                    Test every font in the directory(ies) no matter
+                           what its extension.
+  --check-outlines         Call `FT_Outline_Decompose' on each glyph.
+  --dir <dir>              Append <dir> to the list of directories to search
+                           for good fonts.  No recursive search.
+  --error-count <cnt>      Introduce <cnt> single-byte errors into the
+                           erroneous fonts (default: 1).
+  --error-fraction <frac>  Multiply the file size of the font by <frac> and
+                           introduce that many errors into the erroneous
+                           font file.  <frac> should be in the range [0;1]
+                           (default: 0.0).
+  --ext <ext>              Add <ext> to the set of font types tested.
+  --help                   Print out this list of options.
+  --nohints                Specify FT_LOAD_NO_HINTING when loading glyphs.
+  --rasterize              Call `FT_Render_Glyph' as well as loading it.
+  --result <dir>           This is the directory in which test files are
+                           placed.
+  --test <file>            Run a single test on a pre-generated testcase.
+                           This is done in the current process so it can be
+                           debugged more easily.
+
+The default font extensions tested by ftrandom are
+
+  .ttf .otf .ttc .cid .pfb .pfa .bdf .pcf .pfr .fon .otb .cff
+
+The default font directory is controlled by the macro `GOOD_FONTS_DIR' in
+the source code (and can be thus specified during compilation); its default
+value is
+
+  /usr/local/share/fonts
+
+The default result directory is `results' (in the current directory).
+
+
+Compilation
+-----------
+
+Two possible solutions.
+
+. Run ftrandom within a debugging tool like `valgrind' to catch various
+  memory issues.
+
+. Compile FreeType with sanitizer flags as provided by gcc or clang, for
+  example, then link it with ftrandom.
+
+
+src/3rdparty/gradle/LICENSE
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+
+==============================================================================
+Licenses for included components:
+
+------------------------------------------------------------------------------
+Eclipse Public License 1.0
+https://opensource.org/licenses/EPL-1.0
+
+junit:junit
+org.sonatype.aether:aether-api
+org.sonatype.aether:aether-connector-wagon
+org.sonatype.aether:aether-impl
+org.sonatype.aether:aether-spi
+org.sonatype.aether:aether-util
+
+------------------------------------------------------------------------------
+3-Clause BSD
+https://opensource.org/licenses/BSD-3-Clause
+
+com.google.code.findbugs:jsr305
+
+org.hamcrest:hamcrest
+BSD 3-Clause License
+
+Copyright (c) 2000-2024, www.hamcrest.org
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+com.esotericsoftware.kryo:kryo
+com.esotericsoftware.minlog:minlog
+Copyright (c) 2008-2018, Nathan Sweet All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Neither the name of Esoteric Software nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+org.ow2.asm:asm
+org.ow2.asm:asm-analysis
+org.ow2.asm:asm-commons
+org.ow2.asm:asm-tree
+org.ow2.asm:asm-util
+ASM: a very small and fast Java bytecode manipulation framework
+ Copyright (c) 2000-2011 INRIA, France Telecom
+ All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the copyright holders nor the names of its
+    contributors may be used to endorse or promote products derived from
+    this software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+ THE POSSIBILITY OF SUCH DAMAGE.
+
+------------------------------------------------------------------------------
+MIT
+
+com.googlecode.plist:dd-plist
+dd-plist - An open source library to parse and generate property lists
+Copyright (C) 2016 Daniel Dreibrodt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+org.bouncycastle:bcpg-jdk15on
+org.bouncycastle:bcprov-jdk15on
+Copyright (c) 2000 - 2019 The Legion of the Bouncy Castle Inc. (https://www.bouncycastle.org)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+org.slf4j:jcl-over-slf4j
+org.slf4j:jul-to-slf4j
+org.slf4j:log4j-over-slf4j
+org.slf4j:slf4j-api
+Copyright (c) 2004-2022 QOS.ch Sarl (Switzerland)
+All rights reserved.
+
+Permission is hereby granted, free  of charge, to any person obtaining
+a  copy  of this  software  and  associated  documentation files  (the
+"Software"), to  deal in  the Software without  restriction, including
+without limitation  the rights to  use, copy, modify,  merge, publish,
+distribute,  sublicense, and/or sell  copies of  the Software,  and to
+permit persons to whom the Software  is furnished to do so, subject to
+the following conditions:
+
+The  above  copyright  notice  and  this permission  notice  shall  be
+included in all copies or substantial portions of the Software.
+
+THE  SOFTWARE IS  PROVIDED  "AS  IS", WITHOUT  WARRANTY  OF ANY  KIND,
+EXPRESS OR  IMPLIED, INCLUDING  BUT NOT LIMITED  TO THE  WARRANTIES OF
+MERCHANTABILITY,    FITNESS    FOR    A   PARTICULAR    PURPOSE    AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE,  ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+------------------------------------------------------------------------------
+CDDL
+https://opensource.org/licenses/CDDL-1.0
+
+com.sun.xml.bind:jaxb-impl
+
+------------------------------------------------------------------------------
+LGPL 2.1
+https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
+
+org.samba.jcifs:jcifs
+
+org.jetbrains.intellij.deps:trove4j
+
+------------------------------------------------------------------------------
+License for the GNU Trove library included by the Kotlin embeddable compiler
+------------------------------------------------------------------------------
+The source code for GNU Trove is licensed under the Lesser GNU Public License (LGPL).
+
+    Copyright (c) 2001, Eric D. Friedman All Rights Reserved. This library is free software; you can redistribute it and/or modify it under
+    the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or
+    (at your option) any later version. This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+    even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+    You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+
+Two classes (HashFunctions and PrimeFinder) included in Trove are licensed under the following terms:
+
+    Copyright (c) 1999 CERN - European Organization for Nuclear Research. Permission to use, copy, modify, distribute and sell this software
+    and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and
+    that both that copyright notice and this permission notice appear in supporting documentation. CERN makes no representations about the
+    suitability of this software for any purpose. It is provided "as is" without expressed or implied warranty.
+
+The source code of modified GNU Trove library is available at
+    https://github.com/JetBrains/intellij-deps-trove4j (with trove4j_changes.txt describing the changes)
+
+------------------------------------------------------------------------------
+Eclipse Distribution License 1.0
+https://www.eclipse.org/org/documents/edl-v10.php
+
+org.eclipse.jgit:org.eclipse.jgit
+
+------------------------------------------------------------------------------
+BSD-style
+
+com.jcraft:jzlib
+com.github.mwiede:jsch
+
+Copyright (c) 2002-2015 Atsuhiko Yamanaka, JCraft,Inc.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+  1. Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the distribution.
+
+  3. The names of the authors may not be used to endorse or promote products
+     derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL JCRAFT,
+INC. OR ANY CONTRIBUTORS TO THIS SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+------------------------------------------------------------------------------
+Eclipse Public License 2.0
+https://www.eclipse.org/legal/epl-2.0/
+
+org.junit.platform:junit-platform-launcher
+
+------------------------------------------------------------------------------
+Mozilla Public License 2.0
+https://www.mozilla.org/en-US/MPL/2.0/
+
+org.mozilla:rhino
+
+
+src/3rdparty/harfbuzz-ng/COPYING
+HarfBuzz is licensed under the so-called "Old MIT" license.  Details follow.
+For parts of HarfBuzz that are licensed under different licenses see individual
+files names COPYING in subdirectories where applicable.
+
+Copyright © 2010-2022  Google, Inc.
+Copyright © 2015-2020  Ebrahim Byagowi
+Copyright © 2019,2020  Facebook, Inc.
+Copyright © 2012,2015  Mozilla Foundation
+Copyright © 2011  Codethink Limited
+Copyright © 2008,2010  Nokia Corporation and/or its subsidiary(-ies)
+Copyright © 2009  Keith Stribley
+Copyright © 2011  Martin Hosken and SIL International
+Copyright © 2007  Chris Wilson
+Copyright © 2005,2006,2020,2021,2022,2023  Behdad Esfahbod
+Copyright © 2004,2007,2008,2009,2010,2013,2021,2022,2023  Red Hat, Inc.
+Copyright © 1998-2005  David Turner and Werner Lemberg
+Copyright © 2016  Igalia S.L.
+Copyright © 2022  Matthias Clasen
+Copyright © 2018,2021  Khaled Hosny
+Copyright © 2018,2019,2020  Adobe, Inc
+Copyright © 2013-2015  Alexei Podtelezhnikov
+
+For full copyright notices consult the individual files in the package.
+
+
+Permission is hereby granted, without written agreement and without
+license or royalty fees, to use, copy, modify, and distribute this
+software and its documentation for any purpose, provided that the
+above copyright notice and the following two paragraphs appear in
+all copies of this software.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE TO ANY PARTY FOR
+DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES
+ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN
+IF THE COPYRIGHT HOLDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+THE COPYRIGHT HOLDER SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
+ON AN "AS IS" BASIS, AND THE COPYRIGHT HOLDER HAS NO OBLIGATION TO
+PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+
+
+src/3rdparty/icc/LICENSE.txt
+For the file sRGB2014.icc:
+
+Copyright International Color Consortium, 2015
+
+This profile is made available by the International Color Consortium, and may be copied,
+distributed, embedded, made, used, and sold without restriction. Altered versions of this
+profile shall have the original identification and copyright information removed and
+shall not be misrepresented as the original profile.
+
+(original source location: http://www.color.org/srgbprofiles.xalter)
+
+
+src/3rdparty/libjpeg/COPYRIGHT.txt
+Copyright (C) 2009-2026 D. R. Commander
+Copyright (C) 1991-1998 Thomas G. Lane
+Copyright (C) 2009 Pierre Ossman for Cendio AB
+Copyright (C) 1999-2006 MIYASAKA Masaru
+Copyright (C) 1999 Ken Murchison
+Copyright (C) 2015-2016, 2018, 2022 Matthieu Darbois
+Copyright (C) 2018 Matthias Räncker
+Copyright (C) 2019-2020 Arm Limited
+Copyright (C) 2022 Felix Hanau
+Copyright (C) 1997-1998 Thomas G. Lane, Todd Newman
+Copyright (C) 2021 Alex Richardson
+Copyright (C) 2015, 2020 Google, Inc.
+Copyright (C) 2013 Linaro Limited
+Copyright (C) 2014 Olle Liljenzin
+Copyright (C) 1991-2020 Thomas G. Lane, Guido Vollbeding
+
+
+src/3rdparty/libjpeg/LICENSE
+libjpeg-turbo Licenses
+======================
+
+libjpeg-turbo is covered by two compatible BSD-style open source licenses:
+
+- The IJG (Independent JPEG Group) License, which is listed in
+  [README.ijg](README.ijg)
+
+  This license applies to the libjpeg API library and associated programs,
+  including any code inherited from libjpeg and any modifications to that
+  code.
+
+- The Modified (3-clause) BSD License, which is listed below
+
+  This license applies to the TurboJPEG API library and associated programs,
+  [libspng](https://libspng.org) (which is used by cjpeg and djpeg), and the
+  build/test system.
+
+  * The TurboJPEG API library wraps the libjpeg API library, so in the context
+    of the overall TurboJPEG API library, both the terms of the IJG License and
+    the terms of the Modified (3-clause) BSD License apply.
+  * cjpeg and djpeg use libspng, so in the context of those programs, both the
+    terms of the IJG License and the terms of the Modified (3-clause) BSD
+    License apply.
+
+
+Component Licenses
+==================
+
+Some of libjpeg-turbo's modules and internal dependencies are covered by less
+restrictive licenses, but in the context of libjpeg-turbo as a whole, the terms
+of the less restrictive licenses are subsumed by either the IJG License or the
+Modified BSD License.  (In other words, the terms of the less restrictive
+licenses are satisfied if the terms of the IJG and Modified BSD Licenses are
+satisfied.)
+
+- The libjpeg-turbo SIMD source code and zlib are covered by the
+  [zlib License](https://spdx.org/licenses/Zlib.html), which is subsumed by the
+  IJG License in the context of the cjpeg and djpeg programs and the libjpeg
+  API library.
+
+- Some of the libspng source code is covered by the
+  [PNG Reference Library License v2](https://spdx.org/licenses/libpng-2.0.html),
+  which is subsumed by the IJG License in the context of the cjpeg and djpeg
+  programs and the TurboJPEG API library.
+
+- Most of the libspng source code is covered by the
+  [Simplified (2-clause) BSD License](https://spdx.org/licenses/BSD-2-Clause.html),
+  which is subsumed by the Modified BSD License in the context of the cjpeg and
+  djpeg programs and the TurboJPEG API library.
+
+
+Complying with the libjpeg-turbo Licenses
+=========================================
+
+This section provides a roll-up of the libjpeg-turbo licensing terms, to the
+best of our understanding.  This is not a license in and of itself.  It is
+intended solely for clarification.
+
+1.  If you are distributing a modified version of the libjpeg-turbo source,
+    then:
+
+    1.  You cannot alter or remove any existing copyright or license notices
+        from the source.
+
+        **Origin**
+        - Clause 1 of the IJG License
+        - Clause 1 of the Modified BSD License
+
+    2.  You must add your own copyright notice to the header of each source
+        file you modified, so others can tell that you modified that file.  (If
+        there is not an existing copyright header in that file, then you can
+        simply add a notice stating that you modified the file.)
+
+        **Origin**
+        - Clause 1 of the IJG License
+
+    3.  You must include the IJG README file, and you must not alter any of the
+        copyright or license text in that file.
+
+        **Origin**
+        - Clause 1 of the IJG License
+
+2.  If you are distributing only libjpeg-turbo binaries without the source, or
+    if you are distributing an application that statically links with
+    libjpeg-turbo, then:
+
+    1.  Your product documentation must include a message stating:
+
+        This software is based in part on the work of the Independent JPEG
+        Group.
+
+        **Origin**
+        - Clause 2 of the IJG license
+
+    2.  If your binary distribution includes or uses the TurboJPEG API or
+        associated programs, cjpeg, or djpeg, then your product documentation
+        must include the text of the Modified BSD License (see below.)
+
+        **Origin**
+        - Clause 2 of the Modified BSD License
+
+3.  You cannot use the name of the IJG or The libjpeg-turbo Project or the
+    contributors thereof in advertising, publicity, etc.
+
+    **Origin**
+    - IJG License
+    - Clause 3 of the Modified BSD License
+
+4.  The authors and distributors do not warrant libjpeg-turbo to be free of
+    defects, nor do we accept any liability for undesirable consequences
+    resulting from your use of the software.
+
+    **Origin**
+    - IJG License
+    - Modified BSD License
+
+
+The Modified (3-clause) BSD License
+===================================
+
+Copyright (C) 2009-2026 D. R. Commander<br>
+Copyright (C) 2018-2023 Randy <randy408@protonmail.com>
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+- Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+- Neither the name of the libjpeg-turbo Project nor the names of its
+  contributors may be used to endorse or promote products derived from this
+  software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS",
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+
+src/3rdparty/libpng/LICENSE
+COPYRIGHT NOTICE, DISCLAIMER, and LICENSE
+=========================================
+
+PNG Reference Library License version 2
+---------------------------------------
+
+ * Copyright (c) 1995-2026 The PNG Reference Library Authors.
+ * Copyright (c) 2018-2026 Cosmin Truta.
+ * Copyright (c) 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson.
+ * Copyright (c) 1996-1997 Andreas Dilger.
+ * Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+
+The software is supplied "as is", without warranty of any kind,
+express or implied, including, without limitation, the warranties
+of merchantability, fitness for a particular purpose, title, and
+non-infringement.  In no event shall the Copyright owners, or
+anyone distributing the software, be liable for any damages or
+other liability, whether in contract, tort or otherwise, arising
+from, out of, or in connection with the software, or the use or
+other dealings in the software, even if advised of the possibility
+of such damage.
+
+Permission is hereby granted to use, copy, modify, and distribute
+this software, or portions hereof, for any purpose, without fee,
+subject to the following restrictions:
+
+ 1. The origin of this software must not be misrepresented; you
+    must not claim that you wrote the original software.  If you
+    use this software in a product, an acknowledgment in the product
+    documentation would be appreciated, but is not required.
+
+ 2. Altered source versions must be plainly marked as such, and must
+    not be misrepresented as being the original software.
+
+ 3. This Copyright notice may not be removed or altered from any
+    source or altered source distribution.
+
+
+PNG Reference Library License version 1 (for libpng 0.5 through 1.6.35)
+-----------------------------------------------------------------------
+
+libpng versions 1.0.7, July 1, 2000, through 1.6.35, July 15, 2018 are
+Copyright (c) 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson, are
+derived from libpng-1.0.6, and are distributed according to the same
+disclaimer and license as libpng-1.0.6 with the following individuals
+added to the list of Contributing Authors:
+
+    Simon-Pierre Cadieux
+    Eric S. Raymond
+    Mans Rullgard
+    Cosmin Truta
+    Gilles Vollant
+    James Yu
+    Mandar Sahastrabuddhe
+    Google Inc.
+    Vadim Barkov
+
+and with the following additions to the disclaimer:
+
+    There is no warranty against interference with your enjoyment of
+    the library or against infringement.  There is no warranty that our
+    efforts or the library will fulfill any of your particular purposes
+    or needs.  This library is provided with all faults, and the entire
+    risk of satisfactory quality, performance, accuracy, and effort is
+    with the user.
+
+Some files in the "contrib" directory and some configure-generated
+files that are distributed with libpng have other copyright owners, and
+are released under other open source licenses.
+
+libpng versions 0.97, January 1998, through 1.0.6, March 20, 2000, are
+Copyright (c) 1998-2000 Glenn Randers-Pehrson, are derived from
+libpng-0.96, and are distributed according to the same disclaimer and
+license as libpng-0.96, with the following individuals added to the
+list of Contributing Authors:
+
+    Tom Lane
+    Glenn Randers-Pehrson
+    Willem van Schaik
+
+libpng versions 0.89, June 1996, through 0.96, May 1997, are
+Copyright (c) 1996-1997 Andreas Dilger, are derived from libpng-0.88,
+and are distributed according to the same disclaimer and license as
+libpng-0.88, with the following individuals added to the list of
+Contributing Authors:
+
+    John Bowler
+    Kevin Bracey
+    Sam Bushell
+    Magnus Holmgren
+    Greg Roelofs
+    Tom Tanner
+
+Some files in the "scripts" directory have other copyright owners,
+but are released under this license.
+
+libpng versions 0.5, May 1995, through 0.88, January 1996, are
+Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+
+For the purposes of this copyright and license, "Contributing Authors"
+is defined as the following set of individuals:
+
+    Andreas Dilger
+    Dave Martindale
+    Guy Eric Schalnat
+    Paul Schmidt
+    Tim Wegner
+
+The PNG Reference Library is supplied "AS IS".  The Contributing
+Authors and Group 42, Inc. disclaim all warranties, expressed or
+implied, including, without limitation, the warranties of
+merchantability and of fitness for any purpose.  The Contributing
+Authors and Group 42, Inc. assume no liability for direct, indirect,
+incidental, special, exemplary, or consequential damages, which may
+result from the use of the PNG Reference Library, even if advised of
+the possibility of such damage.
+
+Permission is hereby granted to use, copy, modify, and distribute this
+source code, or portions hereof, for any purpose, without fee, subject
+to the following restrictions:
+
+ 1. The origin of this source code must not be misrepresented.
+
+ 2. Altered versions must be plainly marked as such and must not
+    be misrepresented as being the original source.
+
+ 3. This Copyright notice may not be removed or altered from any
+    source or altered source distribution.
+
+The Contributing Authors and Group 42, Inc. specifically permit,
+without fee, and encourage the use of this source code as a component
+to supporting the PNG file format in commercial products.  If you use
+this source code in a product, acknowledgment is not required but would
+be appreciated.
+
+
+src/3rdparty/libpng/README
+README for libpng version 1.6.58
+================================
+
+See the note about version numbers near the top of `png.h`.
+See `INSTALL` for instructions on how to install libpng.
+
+Libpng comes in several distribution formats.  Get `libpng-*.tar.gz`
+or `libpng-*.tar.xz` if you want UNIX-style line endings in the text
+files, or `lpng*.7z` or `lpng*.zip` if you want DOS-style line endings.
+
+For a detailed description on using libpng, read `libpng-manual.txt`.
+For examples of libpng in a program, see `example.c` and `pngtest.c`.
+For usage information and restrictions (what little they are) on libpng,
+see `png.h`.  For a description on using zlib (the compression library
+used by libpng) and zlib's restrictions, see `zlib.h`.
+
+You should use zlib 1.0.4 or later to run this, but it _may_ work with
+versions as old as zlib 0.95.  Even so, there are bugs in older zlib
+versions which can cause the output of invalid compression streams for
+some images.
+
+You should also note that zlib is a compression library that is useful
+for more things than just PNG files.  You can use zlib as a drop-in
+replacement for `fread()` and `fwrite()`, if you are so inclined.
+
+zlib should be available at the same place that libpng is, or at
+<https://zlib.net>.
+
+You may also want a copy of the PNG specification.  It is available
+as an RFC, a W3C Recommendation, and an ISO/IEC Standard.  You can find
+these at <http://www.libpng.org/pub/png/pngdocs.html>.
+
+This code is currently being archived at <https://libpng.sourceforge.io>
+in the download area, and at <http://libpng.download/src>.
+
+This release, based in a large way on Glenn's, Guy's and Andreas'
+earlier work, was created and will be supported by myself and the PNG
+development group.
+
+Send comments, corrections and commendations to `png-mng-implement`
+at `lists.sourceforge.net`.  (Subscription is required; visit
+<https://lists.sourceforge.net/lists/listinfo/png-mng-implement>
+to subscribe.)
+
+Send general questions about the PNG specification to `png-mng-misc`
+at `lists.sourceforge.net`.  (Subscription is required; visit
+<https://lists.sourceforge.net/lists/listinfo/png-mng-misc>
+to subscribe.)
+
+Historical notes
+----------------
+
+The libpng library has been in extensive use and testing since mid-1995.
+Version 0.89, published a year later, was the first official release.
+By late 1997, it had finally gotten to the stage where there hadn't
+been significant changes to the API in some time, and people have a bad
+feeling about libraries with versions below 1.0.  Version 1.0.0 was
+released in March 1998.
+
+Note that some of the changes to the `png_info` structure render this
+version of the library binary incompatible with libpng-0.89 or
+earlier versions if you are using a shared library.  The type of the
+`filler` parameter for `png_set_filler()` has changed from `png_byte`
+to `png_uint_32`, which will affect shared-library applications that
+use this function.
+
+To avoid problems with changes to the internals of the `info_struct`,
+new APIs have been made available in 0.95 to avoid direct application
+access to `info_ptr`.  These functions are the `png_set_<chunk>` and
+`png_get_<chunk>` functions.  These functions should be used when
+accessing/storing the `info_struct` data, rather than manipulating it
+directly, to avoid such problems in the future.
+
+It is important to note that the APIs did not make current programs
+that access the info struct directly incompatible with the new
+library, through libpng-1.2.x.  In libpng-1.4.x, which was meant to
+be a transitional release, members of the `png_struct` and the
+`info_struct` can still be accessed, but the compiler will issue a
+warning about deprecated usage.  Since libpng-1.5.0, direct access
+to these structs is not allowed, and the definitions of the structs
+reside in private `pngstruct.h` and `pnginfo.h` header files that are
+not accessible to applications.  It is strongly suggested that new
+programs use the new APIs (as shown in `example.c` and `pngtest.c`),
+and older programs be converted to the new format, to facilitate
+upgrades in the future.
+
+The additions since 0.89 include the ability to read from a PNG stream
+which has had some (or all) of the signature bytes read by the calling
+application.  This also allows the reading of embedded PNG streams that
+do not have the PNG file signature.  As well, it is now possible to set
+the library action on the detection of chunk CRC errors.  It is possible
+to set different actions based on whether the CRC error occurred in a
+critical or an ancillary chunk.
+
+The additions since 0.90 include the ability to compile libpng as a
+Windows DLL, and new APIs for accessing data in the `info_struct`.
+Experimental functions included the ability to set weighting and cost
+factors for row filter selection, direct reads of integers from buffers
+on big-endian processors that support misaligned data access, faster
+methods of doing alpha composition, and more accurate 16-to-8 bit color
+conversion.  Some of these experimental functions, such as the weighted
+filter heuristics, have since been removed.
+
+Files included in this distribution
+-----------------------------------
+
+    ANNOUNCE      =>  Announcement of this version, with recent changes
+    AUTHORS       =>  List of contributing authors
+    CHANGES       =>  Description of changes between libpng versions
+    INSTALL       =>  Instructions to install libpng
+    LICENSE       =>  License to use and redistribute libpng
+    README        =>  This file
+    TODO          =>  Things not implemented in the current library
+    TRADEMARK     =>  Trademark information
+    example.c     =>  Example code for using libpng functions
+    libpng.3      =>  Manual page for libpng (includes libpng-manual.txt)
+    libpng-manual.txt  =>  Description of libpng and its functions
+    libpngpf.3    =>  Manual page for libpng's private functions (deprecated)
+    png.5         =>  Manual page for the PNG format
+    png.c         =>  Basic interface functions common to library
+    png.h         =>  Library function and interface declarations (public)
+    pngpriv.h     =>  Library function and interface declarations (private)
+    pngconf.h     =>  System specific library configuration (public)
+    pngstruct.h   =>  png_struct declaration (private)
+    pnginfo.h     =>  png_info struct declaration (private)
+    pngdebug.h    =>  debugging macros (private)
+    pngerror.c    =>  Error/warning message I/O functions
+    pngget.c      =>  Functions for retrieving info from struct
+    pngmem.c      =>  Memory handling functions
+    pngbar.png    =>  PNG logo, 88x31
+    pngnow.png    =>  PNG logo, 98x31
+    pngpread.c    =>  Progressive reading functions
+    pngread.c     =>  Read data/helper high-level functions
+    pngrio.c      =>  Lowest-level data read I/O functions
+    pngrtran.c    =>  Read data transformation functions
+    pngrutil.c    =>  Read data utility functions
+    pngset.c      =>  Functions for storing data into the info_struct
+    pngtest.c     =>  Library test program
+    pngtest.png   =>  Library test sample image
+    pngtrans.c    =>  Common data transformation functions
+    pngwio.c      =>  Lowest-level write I/O functions
+    pngwrite.c    =>  High-level write functions
+    pngwtran.c    =>  Write data transformations
+    pngwutil.c    =>  Write utility functions
+    arm/          =>  Optimized code for ARM Neon
+    intel/        =>  Optimized code for INTEL SSE2
+    loongarch/    =>  Optimized code for LoongArch LSX
+    mips/         =>  Optimized code for MIPS MSA and MIPS MMI
+    powerpc/      =>  Optimized code for PowerPC VSX
+    riscv/        =>  Optimized code for the RISC-V platform
+    ci/           =>  Scripts for continuous integration
+    contrib/      =>  External contributions
+        arm-neon/     =>  Optimized code for the ARM-NEON platform
+        mips-msa/     =>  Optimized code for the MIPS-MSA platform
+        powerpc-vsx/  =>  Optimized code for the POWERPC-VSX platform
+        examples/     =>  Examples of libpng usage
+        gregbook/     =>  Source code for PNG reading and writing, from
+                          "PNG: The Definitive Guide" by Greg Roelofs,
+                          O'Reilly, 1999
+        libtests/     =>  Test programs
+        pngexif/      =>  Program to inspect the EXIF information in PNG files
+        pngminim/     =>  Minimal decoder, encoder, and progressive decoder
+                          programs demonstrating the use of pngusr.dfa
+        pngminus/     =>  Simple pnm2png and png2pnm programs
+        pngsuite/     =>  Test images
+        riscv-rvv/    =>  Optimized code for the RISC-V Vector platform
+        testpngs/     =>  Test images
+        tools/        =>  Various tools
+        visupng/      =>  VisualPng, a Windows viewer for PNG images
+    projects/     =>  Project files and workspaces for various IDEs
+        owatcom/      =>  OpenWatcom project
+        visualc71/    =>  Microsoft Visual C++ 7.1 workspace
+        vstudio/      =>  Microsoft Visual Studio workspace
+    scripts/      =>  Scripts and makefiles for building libpng
+                      (see scripts/README.txt for the complete list)
+    tests/        =>  Test scripts
+
+Good luck, and happy coding!
+
+ * Cosmin Truta (current maintainer, since 2018)
+ * Glenn Randers-Pehrson (former maintainer, 1998-2018)
+ * Andreas Eric Dilger (former maintainer, 1996-1997)
+ * Guy Eric Schalnat (original author and former maintainer, 1995-1996)
+   (formerly of Group 42, Inc.)
+
+
+src/3rdparty/libpsl/src/LICENSE.chromium
+* The following License is for the source code files
+  psl-make-dafsa and lookup_string_in_fixed_set.c.
+
+// Copyright 2015 The Chromium Authors. All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//    * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//    * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//    * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+src/3rdparty/md4c/LICENSE.md
+
+# The MIT License (MIT)
+
+Copyright © 2016-2024 Martin Mitáš
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the “Software”),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+
+
+src/3rdparty/pcre2/LICENSE-SLJIT
+/*
+ *    Stack-less Just-In-Time compiler
+ *
+ *    Copyright Zoltan Herczeg (hzmester@freemail.hu). All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification, are
+ * permitted provided that the following conditions are met:
+ *
+ *   1. Redistributions of source code must retain the above copyright notice, this list of
+ *      conditions and the following disclaimer.
+ *
+ *   2. Redistributions in binary form must reproduce the above copyright notice, this list
+ *      of conditions and the following disclaimer in the documentation and/or other materials
+ *      provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER(S) AND CONTRIBUTORS ``AS IS'' AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+ * SHALL THE COPYRIGHT HOLDER(S) OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+
+src/3rdparty/pixman/LICENSE
+Copyright © 2009 Nokia Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice (including the next
+paragraph) shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+src/3rdparty/pixman/README
+pixman is a library that provides low-level pixel manipulation
+features such as image compositing and trapezoid rasterization.
+
+Please submit bugs & patches to the libpixman bugzilla:
+
+       https://bugs.freedesktop.org/enter_bug.cgi?product=pixman
+
+All questions regarding this software should be directed to either the 
+Xorg mailing list:
+
+       http://lists.freedesktop.org/mailman/listinfo/xorg
+
+or the cairo mailing list:
+
+       http://lists.freedesktop.org/mailman/listinfo/cairo
+
+The master development code repository can be found at:
+
+	git://anongit.freedesktop.org/git/pixman
+
+	http://gitweb.freedesktop.org/?p=pixman;a=summary
+
+For more information on the git code manager, see:
+
+	http://wiki.x.org/wiki/GitPage
+
+
+
+src/3rdparty/rfc6234/LICENSE
+Copyright (c) 2011 IETF Trust and the persons identified as
+authors of the code.  All rights reserved.
+
+Redistribution and use in source and binary forms, with or
+without modification, are permitted provided that the following
+conditions are met:
+
+- Redistributions of source code must retain the above
+  copyright notice, this list of conditions and
+  the following disclaimer.
+
+- Redistributions in binary form must reproduce the above
+  copyright notice, this list of conditions and the following
+  disclaimer in the documentation and/or other materials provided
+  with the distribution.
+
+- Neither the name of Internet Society, IETF or IETF Trust, nor
+  the names of specific contributors, may be used to endorse or
+  promote products derived from this software without specific
+  prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+src/3rdparty/tinycbor/LICENSE
+MIT License
+
+Copyright (c) 2017 Intel Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+src/3rdparty/tinycbor/README
+Concise Binary Object Representation (CBOR) Library
+---------------------------------------------------
+
+To build TinyCBOR:
+
+  make
+
+If you want to change the compiler or pass extra compiler flags:
+
+  make CC=clang CFLAGS="-m32 -Oz" LDFLAGS="-m32"
+
+Documentation: https://intel.github.io/tinycbor/current/
+
+
+
+src/3rdparty/wayland/protocols/wayland/README
+wayland.xml from wayland version defined in qtwayland/README
+
+
+src/3rdparty/xcb/LICENSE
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the names of the authors or
+their institutions shall not be used in advertising or otherwise to
+promote the sale, use or other dealings in this Software without
+prior written authorization from the authors.
+
+
+src/3rdparty/xcb/README
+*****************************************************************
+From 62f053c19b917a369c4aad5b71ab150911b589aa:
+
+xcb-xinput code was produced by build of libxcb 1.13 with xcb-proto 1.13.
+
+The following parts were removed from it:
+ - Pointer Barriers API (requires xcb-xfixes 1.9 with xcb-proto 1.9)
+ - SendExtensionEvent API (requires definition of xcb_raw_generic_event_t
+   from libxcb 1.13)
+
+The following has been added:
+ - A fix for forwards compatibility bug with X Server 21.1 (see below)
+ - Touchpad gesture support (see below)
+
+*****************************************************************
+
+As of time of writing the minimal required libxcb version is 1.11, hence
+we could restore the Pointer Barriers API, but we don't use it.
+Additionally, we support touchpad gestures which is a much newer addition
+to libxcb, but fortunately very well contained. When we will bump the
+minimal required version of libxcb to 1.15, then we can drop the bundled
+xcb-xinput altogether.
+
+The xcb-xinput files where modified to use system includes, see:
+
+src/3rdparty/xcb/include/xcb/fixup-xinput-h.patch
+src/3rdparty/xcb/libxcb/fixup-xinput-c.patch
+
+*****************************************************************
+
+A forwards compatibility bug in libxcb xinput has been addressed
+by the following patch:
+
+src/3rdparty/xcb/libxcb/xinput-device-class-sizeof.patch
+
+The crux of the issue is that libxcb thinks that it knows about all device
+class types sent by the X server XInput extension. With the addition of
+touchpad gestures in XInput 2.4 and X server 21.1 this is no longer the case
+and libxcb fails horribly by thinking that the protocol was malformed.
+
+The X server currently has a workaround, but it would not address the following
+situation:
+
+ - there are multiple modules within the same X client (e.g. part of the application
+   uses Qt, another part talks to X server via another library)
+ - both of the modules talk to XI
+ - at least one module requests for XI 2.4 protocol support.
+
+The request for XI 2.4 disables the workaround on the X server and Qt side would
+crash horribly.
+
+For more details, see https://gitlab.freedesktop.org/xorg/lib/libxcb/-/merge_requests/20
+
+*****************************************************************
+
+Touchpad gestures support has been added in the following patches:
+
+src/3rdparty/xcb/include/xcb/touchpad-gestures-h.patch
+src/3rdparty/xcb/libxcb/touchpad-gestures-c.patch
+
+The patches were generated by cherry-picking
+151ee69847c706e2b9d38c82e20534910f140b55 from xcb-xcbproto master on top of 1.13,
+generating xinput.h and xinput.c files and comparing to what would be generated in
+vanilla libxcb 1.13 and xcb-proto 1.13.
+
+For more details, see https://gitlab.freedesktop.org/xorg/proto/xcbproto/-/merge_requests/16
+
+
+src/3rdparty/zlib/LICENSE
+  This software is provided 'as-is', without any express or implied
+  warranty.  In no event will the authors be held liable for any damages
+  arising from the use of this software.
+
+  Permission is granted to anyone to use this software for any purpose,
+  including commercial applications, and to alter it and redistribute it
+  freely, subject to the following restrictions:
+
+  1. The origin of this software must not be misrepresented; you must not
+     claim that you wrote the original software. If you use this software
+     in a product, an acknowledgment in the product documentation would be
+     appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be
+     misrepresented as being the original software.
+  3. This notice may not be removed or altered from any source distribution.
+
+  Jean-loup Gailly        Mark Adler
+  jloup@gzip.org          madler@alumni.caltech.edu
+
+If you use the zlib library in a product, we would appreciate *not* receiving
+lengthy legal documents to sign.  The sources are provided for free but without
+warranty of any kind.  The library has been entirely written by Jean-loup
+Gailly and Mark Adler; it does not include third-party code.
+
+If you redistribute modified sources, we would appreciate that you include in
+the file ChangeLog history information documenting your changes.  Please read
+the FAQ for more information on the distribution of modified source versions.
+
+
+
+src/3rdparty/zlib/src/README
+ZLIB DATA COMPRESSION LIBRARY
+
+zlib 1.3.2 is a general purpose data compression library.  All the code is
+thread safe (though see the FAQ for caveats).  The data format used by the zlib
+library is described by RFCs (Request for Comments) 1950 to 1952 at
+https://datatracker.ietf.org/doc/html/rfc1950 (zlib format), rfc1951 (deflate
+format) and rfc1952 (gzip format).
+
+This is a stripped down copy of zlib that contains patches to make it compile
+as part of Qt. See also "qtpatches.diff".
+
+All functions of the compression library are documented in the file zlib.h
+(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example
+of the library is given in the file test/example.c which also tests that
+the library is working correctly.  Another example is given in the file
+test/minigzip.c.  The compression library itself is composed of all source
+files in the root directory.
+
+To compile all files and run the test program, follow the instructions given at
+the top of Makefile.in.  In short "./configure; make test", and if that goes
+well, "make install" should work for most flavors of Unix.  For Windows, use
+one of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use
+make_vms.com.
+
+Questions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant
+<info@winimage.com> for the Windows DLL version.  The zlib home page is
+https://zlib.net/ .  Before reporting a problem, please check this site to
+verify that you have the latest version of zlib; otherwise get the latest
+version and check whether the problem still exists or not.
+
+PLEASE read the zlib FAQ https://zlib.net/zlib_faq.html before asking for help.
+
+Mark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997
+issue of Dr.  Dobb's Journal; a copy of the article is available at
+https://zlib.net/nelson/ .
+
+The changes made in version 1.3.2 are documented in the file ChangeLog.
+
+Unsupported third party contributions are provided in directory contrib/ .
+
+zlib is available in Java using the java.util.zip package. Follow the API
+Documentation link at: https://docs.oracle.com/search/?q=java.util.zip .
+
+A Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>
+can be found at https://github.com/pmqs/IO-Compress .
+
+A Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is
+available in Python 1.5 and later versions, see
+https://docs.python.org/3/library/zlib.html .
+
+zlib is built into tcl: https://wiki.tcl-lang.org/page/zlib .
+
+An experimental package to read and write files in .zip format, written on top
+of zlib by Gilles Vollant <info@winimage.com>, is available in the
+contrib/minizip directory of zlib.
+
+
+Notes for some targets:
+
+- For Windows DLL versions, please see win32/DLL_FAQ.txt
+
+- For 64-bit Irix, deflate.c must be compiled without any optimization. With
+  -O, one libpng test fails. The test works in 32 bit mode (with the -n32
+  compiler flag). The compiler bug has been reported to SGI.
+
+- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works
+  when compiled with cc.
+
+- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is
+  necessary to get gzprintf working correctly. This is done by configure.
+
+- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with
+  other compilers. Use "make test" to check your compiler.
+
+- For PalmOs, see https://palmzlib.sourceforge.net/
+
+
+Acknowledgments:
+
+  The deflate format used by zlib was defined by Phil Katz.  The deflate and
+  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the
+  people who reported problems and suggested various improvements in zlib; they
+  are too numerous to cite here.
+
+Copyright notice:
+
+ (C) 1995-2026 Jean-loup Gailly and Mark Adler
+
+  This software is provided 'as-is', without any express or implied
+  warranty.  In no event will the authors be held liable for any damages
+  arising from the use of this software.
+
+  Permission is granted to anyone to use this software for any purpose,
+  including commercial applications, and to alter it and redistribute it
+  freely, subject to the following restrictions:
+
+  1. The origin of this software must not be misrepresented; you must not
+     claim that you wrote the original software. If you use this software
+     in a product, an acknowledgment in the product documentation would be
+     appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be
+     misrepresented as being the original software.
+  3. This notice may not be removed or altered from any source distribution.
+
+  Jean-loup Gailly        Mark Adler
+  jloup@gzip.org          madler@alumni.caltech.edu
+
+If you use the zlib library in a product, we would appreciate *not* receiving
+lengthy legal documents to sign.  The sources are provided for free but without
+warranty of any kind.  The library has been entirely written by Jean-loup
+Gailly and Mark Adler; it does not include third-party code.  We make all
+contributions to and distributions of this project solely in our personal
+capacity, and are not conveying any rights to any intellectual property of
+any third parties.
+
+If you redistribute modified sources, we would appreciate that you include in
+the file ChangeLog history information documenting your changes.  Please read
+the FAQ for more information on the distribution of modified source versions.

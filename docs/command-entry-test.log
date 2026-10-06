@@ -1,0 +1,122 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: command_entry
+
+1: Test command: /DEPS/build-comments-20261004/command_entry_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 180
+1: ********* Start testing of CommandEntryTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: QINFO  : CommandEntryTests::initTestCase() Owned command-entry fixtures: "/TMP/T/7zip-command-entry-test-UanYLC"
+1: PASS   : CommandEntryTests::initTestCase()
+1: PASS   : CommandEntryTests::comboResourceAndResize()
+1: PASS   : CommandEntryTests::sourceWildcard(normal)
+1: PASS   : CommandEntryTests::sourceWildcard(alternative)
+1: PASS   : CommandEntryTests::inlineRename(view0-0)
+1: PASS   : CommandEntryTests::inlineRename(view0-1)
+1: PASS   : CommandEntryTests::inlineRename(view1-0)
+1: PASS   : CommandEntryTests::inlineRename(view1-1)
+1: PASS   : CommandEntryTests::inlineRename(view2-0)
+1: PASS   : CommandEntryTests::inlineRename(view2-1)
+1: PASS   : CommandEntryTests::inlineRename(view3-0)
+1: PASS   : CommandEntryTests::inlineRename(view3-1)
+1: PASS   : CommandEntryTests::partialRowSelection()
+1: PASS   : CommandEntryTests::closeDuringInlineEdit()
+1: PASS   : CommandEntryTests::exclusiveRename(case)
+1: PASS   : CommandEntryTests::exclusiveRename(symlink)
+1: PASS   : CommandEntryTests::exclusiveRename(hardlink)
+1: PASS   : CommandEntryTests::exclusiveRename(existing)
+1: PASS   : CommandEntryTests::exclusiveRename(readonly)
+1: PASS   : CommandEntryTests::exclusiveRename(cancel)
+1: PASS   : CommandEntryTests::exclusiveRename(parent-permission)
+1: PASS   : CommandEntryTests::exclusiveRename(folder)
+1: PASS   : CommandEntryTests::creationAndSelection()
+1: PASS   : CommandEntryTests::archiveRenameAndCreate(7z)
+1: PASS   : CommandEntryTests::archiveRenameAndCreate(zip)
+1: PASS   : CommandEntryTests::historyDeleteAcceptAndCancel()
+1: PASS   : CommandEntryTests::cleanupTestCase()
+1: Totals: 27 passed, 0 failed, 0 skipped, 0 blacklisted, 11580ms
+1: ********* Finished testing of CommandEntryTests *********
+1/3 Test  #1: command_entry ....................   Passed   12.77 sec
+test 2
+    Start  2: panel_listing
+
+2: Test command: /DEPS/build-comments-20261004/panel_listing_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+2: Working Directory: /DEPS/build-comments-20261004
+2: Environment variables: 
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 180
+2: ********* Start testing of ListingTests *********
+2: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+2: QINFO  : ListingTests::initTestCase() Owned listing fixtures: "/TMP/T/PanelListing-SfFkPN"
+2: PASS   : ListingTests::initTestCase()
+2: PASS   : ListingTests::originalDisplayAndDeferredProperties()
+2: PASS   : ListingTests::displayedNameKeepsRealFilesystemIdentity()
+2: PASS   : ListingTests::asynchronousSortKeepsExactValuesMarksFocusAndUnsorted()
+2: PASS   : ListingTests::supersededSortClearAndDestruction()
+2: PASS   : ListingTests::nativeIconsBothKindsAndNavigation()
+2: PASS   : ListingTests::archiveRawNameRename(7z)
+2: PASS   : ListingTests::archiveRawNameRename(zip)
+2: QINFO  : ListingTests::actualLargeArchive(7z) "7z" 15,000 archive rows elapsed ms 1621 maximum event-loop gap ms 749
+2: PASS   : ListingTests::actualLargeArchive(7z)
+2: QINFO  : ListingTests::actualLargeArchive(zip) "zip" 15,000 archive rows elapsed ms 2246 maximum event-loop gap ms 1030
+2: PASS   : ListingTests::actualLargeArchive(zip)
+2: PASS   : ListingTests::cleanupTestCase()
+2: Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 12018ms
+2: ********* Finished testing of ListingTests *********
+2/3 Test  #2: panel_listing ....................   Passed   13.11 sec
+test 11
+    Start 11: panel_selection
+
+11: Test command: /DEPS/build-comments-20261004/panel_selection_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+11: Working Directory: /DEPS/build-comments-20261004
+11: Environment variables: 
+11:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+11: Test timeout computed to be: 90
+11: ********* Start testing of PanelSelectionTests *********
+11: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+11: PASS   : PanelSelectionTests::initTestCase()
+11: PASS   : PanelSelectionTests::independentMarks(details)
+11: PASS   : PanelSelectionTests::independentMarks(icons)
+11: PASS   : PanelSelectionTests::insertAndParent(details)
+11: PASS   : PanelSelectionTests::insertAndParent(icons)
+11: PASS   : PanelSelectionTests::shiftArrowMarks(details)
+11: PASS   : PanelSelectionTests::shiftArrowMarks(icons)
+11: PASS   : PanelSelectionTests::ctrlShiftClickRange(details)
+11: PASS   : PanelSelectionTests::ctrlShiftClickRange(icons)
+11: PASS   : PanelSelectionTests::standardSelection(details)
+11: PASS   : PanelSelectionTests::standardSelection(icons)
+11: PASS   : PanelSelectionTests::paintAndSort()
+11: PASS   : PanelSelectionTests::mainWindowRoundtrip(7z)
+11: PASS   : PanelSelectionTests::mainWindowRoundtrip(zip)
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 12
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 14
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 11
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 13
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 20
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 16
+11: PASS   : PanelSelectionTests::independentPanelsAndModeSwitch()
+11: PASS   : PanelSelectionTests::cleanupTestCase()
+11: Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 4613ms
+11: ********* Finished testing of PanelSelectionTests *********
+3/3 Test #11: panel_selection ..................   Passed    5.18 sec
+
+The following tests passed:
+	command_entry
+	panel_listing
+	panel_selection
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =  31.06 sec

@@ -1,0 +1,183 @@
+Internal ctest changing into directory: /DEPS/build-file-tools-clean-20261004
+UpdateCTestConfiguration  from :/DEPS/build-file-tools-clean-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-file-tools-clean-20261004/DartConfiguration.tcl
+Test project /DEPS/build-file-tools-clean-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: integration
+
+1: Test command: /DEPS/build-file-tools-clean-20261004/port_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-file-tools-clean-20261004
+1: Environment variables:
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 300
+1: ********* Start testing of Integration *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-idpCyF"
+1: PASS   : Integration::initTestCase()
+1: PASS   : Integration::roundtrip(7z)
+1: PASS   : Integration::roundtrip(zip)
+1: PASS   : Integration::encryption(7z-data)
+1: PASS   : Integration::encryption(7z-headers)
+1: PASS   : Integration::encryption(zip-AES)
+1: PASS   : Integration::encryption(zip-ZipCrypto)
+1: PASS   : Integration::updateRenameDelete()
+1: PASS   : Integration::encryptedUpdate()
+1: PASS   : Integration::selectedExtractOverwrite()
+1: PASS   : Integration::safetyPaths()
+1: PASS   : Integration::errorsAndRecovery()
+1: PASS   : Integration::rarSelectedExtract()
+1: PASS   : Integration::splitVolumesAndReadOnly()
+1: PASS   : Integration::cancellationAndResponsiveness()
+1: PASS   : Integration::fileCopyMoveRenameFolder()
+1: PASS   : Integration::splitCombineAndFailures()
+1: PASS   : Integration::volumeNumberingAndLinks()
+1: PASS   : Integration::guiTypeBookmarksAndFileTools()
+1: PASS   : Integration::officialBenchmarkAndStop()
+1: QWARN  : Integration::guiMenuMouseNavigation() Cocoa focus unavailable false false true
+1: FAIL!  : Integration::guiMenuMouseNavigation() 'activateTestWindow(&window)' returned FALSE. ()
+1:    Loc: [/REPOSITORY/tests/integration.cpp(219)]
+1: QWARN  : Integration::guiNavigationAndActions() Cocoa focus unavailable false false true
+1: FAIL!  : Integration::guiNavigationAndActions() 'activateTestWindow(&window)' returned FALSE. ()
+1:    Loc: [/REPOSITORY/tests/integration.cpp(253)]
+1: QWARN  : Integration::guiEncryptedOpenAndDrop() Cocoa focus unavailable false false true
+1: FAIL!  : Integration::guiEncryptedOpenAndDrop() 'activateTestWindow(&window)' returned FALSE. ()
+1:    Loc: [/REPOSITORY/tests/integration.cpp(274)]
+1: QWARN  : Integration::guiCancel() Cocoa focus unavailable false false true
+1: FAIL!  : Integration::guiCancel() 'activateTestWindow(&window)' returned FALSE. ()
+1:    Loc: [/REPOSITORY/tests/integration.cpp(299)]
+1: QWARN  : Integration::guiOptionsPersistenceAndBehavior() Cocoa focus unavailable false false true
+1: FAIL!  : Integration::guiOptionsPersistenceAndBehavior() 'activateTestWindow(&window)' returned FALSE. ()
+1:    Loc: [/REPOSITORY/tests/integration.cpp(312)]
+1: PASS   : Integration::configuredWorkingFolderAndMemory()
+1: PASS   : Integration::officialLanguagesAndRootOptions()
+1: PASS   : Integration::eliminateRootAndRenameExisting()
+1: QWARN  : Integration::advancedCompressionSettings() Cocoa focus unavailable false false true
+1: FAIL!  : Integration::advancedCompressionSettings() 'activateTestWindow(&dialog)' returned FALSE. ()
+1:    Loc: [/REPOSITORY/tests/integration.cpp(408)]
+1: PASS   : Integration::trashAfterVerifiedCompression()
+1: PASS   : Integration::compressionMethods()
+1: PASS   : Integration::absoluteExtractionAndDialogSettings()
+1: PASS   : Integration::additionalFormatsAndLinks()
+1: QWARN  : Integration::viewSettingsAndTwoPanels() Cocoa focus unavailable false false true
+1: FAIL!  : Integration::viewSettingsAndTwoPanels() 'activateTestWindow(&window)' returned FALSE. ()
+1:    Loc: [/REPOSITORY/tests/integration.cpp(457)]
+1: PASS   : Integration::verifiedTrashOtherFormatsAndUpdateModes()
+1: QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 12
+1: QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 14
+1: QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 11
+1: QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 13
+1: QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 20
+1: QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 16
+1: PASS   : Integration::openWithSettingsAndDelivery()
+1: PASS   : Integration::openWithArchiveCommands()
+1: PASS   : Integration::officialChecksumsAndHashFormat()
+1: PASS   : Integration::openWithCancelAndBusyQueue()
+1: PASS   : Integration::cleanupTestCase()
+1: Totals: 33 passed, 7 failed, 0 skipped, 0 blacklisted, 59126ms
+1: ********* Finished testing of Integration *********
+1/3 Test #1: integration ......................***Failed   59.73 sec
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-idpCyF"
+PASS   : Integration::initTestCase()
+PASS   : Integration::roundtrip(7z)
+PASS   : Integration::roundtrip(zip)
+PASS   : Integration::encryption(7z-data)
+PASS   : Integration::encryption(7z-headers)
+PASS   : Integration::encryption(zip-AES)
+PASS   : Integration::encryption(zip-ZipCrypto)
+PASS   : Integration::updateRenameDelete()
+PASS   : Integration::encryptedUpdate()
+PASS   : Integration::selectedExtractOverwrite()
+PASS   : Integration::safetyPaths()
+PASS   : Integration::errorsAndRecovery()
+PASS   : Integration::rarSelectedExtract()
+PASS   : Integration::splitVolumesAndReadOnly()
+PASS   : Integration::cancellationAndResponsiveness()
+PASS   : Integration::fileCopyMoveRenameFolder()
+PASS   : Integration::splitCombineAndFailures()
+PASS   : Integration::volumeNumberingAndLinks()
+PASS   : Integration::guiTypeBookmarksAndFileTools()
+PASS   : Integration::officialBenchmarkAndStop()
+QWARN  : Integration::guiMenuMouseNavigation() Cocoa focus unavailable false false true
+FAIL!  : Integration::guiMenuMouseNavigation() 'activateTestWindow(&window)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(219)]
+QWARN  : Integration::guiNavigationAndActions() Cocoa focus unavailable false false true
+FAIL!  : Integration::guiNavigationAndActions() 'activateTestWindow(&window)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(253)]
+QWARN  : Integration::guiEncryptedOpenAndDrop() Cocoa focus unavailable false false true
+FAIL!  : Integration::guiEncryptedOpenAndDrop() 'activateTestWindow(&window)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(274)]
+QWARN  : Integration::guiCancel() Cocoa focus unavailable false false true
+FAIL!  : Integration::guiCancel() 'activateTestWindow(&window)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(299)]
+QWARN  : Integration::guiOptionsPersistenceAndBehavior() Cocoa focus unavailable false false true
+FAIL!  : Integration::guiOptionsPersistenceAndBehavior() 'activateTestWindow(&window)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(312)]
+PASS   : Integration::configuredWorkingFolderAndMemory()
+PASS   : Integration::officialLanguagesAndRootOptions()
+PASS   : Integration::eliminateRootAndRenameExisting()
+QWARN  : Integration::advancedCompressionSettings() Cocoa focus unavailable false false true
+FAIL!  : Integration::advancedCompressionSettings() 'activateTestWindow(&dialog)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(408)]
+PASS   : Integration::trashAfterVerifiedCompression()
+PASS   : Integration::compressionMethods()
+PASS   : Integration::absoluteExtractionAndDialogSettings()
+PASS   : Integration::additionalFormatsAndLinks()
+QWARN  : Integration::viewSettingsAndTwoPanels() Cocoa focus unavailable false false true
+FAIL!  : Integration::viewSettingsAndTwoPanels() 'activateTestWindow(&window)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(457)]
+PASS   : Integration::verifiedTrashOtherFormatsAndUpdateModes()
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 12
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 14
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 11
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 13
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 20
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 16
+PASS   : Integration::openWithSettingsAndDelivery()
+PASS   : Integration::openWithArchiveCommands()
+PASS   : Integration::officialChecksumsAndHashFormat()
+PASS   : Integration::openWithCancelAndBusyQueue()
+PASS   : Integration::cleanupTestCase()
+Totals: 33 passed, 7 failed, 0 skipped, 0 blacklisted, 59126ms
+********* Finished testing of Integration *********
+
+test 2
+    Start 2: cocoa_accessibility
+
+2: Test command: /DEPS/build-file-tools-clean-20261004/cocoa_accessibility_tests
+2: Working Directory: /DEPS/build-file-tools-clean-20261004
+2: Environment variables:
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 60
+2: Cocoa ownership guards, 20 column-change and 20 list-refresh cycles passed
+2/3 Test #2: cocoa_accessibility ..............   Passed    0.26 sec
+test 3
+    Start 3: cocoa_menus
+
+3: Test command: /DEPS/build-file-tools-clean-20261004/cocoa_menu_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+3: Working Directory: /DEPS/build-file-tools-clean-20261004
+3: Environment variables:
+3:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+3: Test timeout computed to be: 60
+3: Cocoa focus unavailable false false true
+3: Test window did not activate
+3/3 Test #3: cocoa_menus ......................***Failed    5.67 sec
+Cocoa focus unavailable false false true
+Test window did not activate
+
+
+33% tests passed, 2 tests failed out of 3
+
+Total Test time (real) =  65.66 sec
+
+The following tests FAILED:
+	  1 - integration (Failed)
+	  3 - cocoa_menus (Failed)
+Errors while running CTest

@@ -1,0 +1,19 @@
+<RCC><qresource prefix="/icons">
+<file alias="FM.ico">icons/FM.ico</file>
+<file alias="FM.png">icons/FM.png</file>
+<file alias="7zipLogo.ico">icons/7zipLogo.ico</file>
+<file alias="Add2.bmp">icons/Add2.bmp</file>
+<file alias="Extract2.bmp">icons/Extract2.bmp</file>
+<file alias="Test2.bmp">icons/Test2.bmp</file>
+<file alias="Copy2.bmp">icons/Copy2.bmp</file>
+<file alias="Move2.bmp">icons/Move2.bmp</file>
+<file alias="Delete2.bmp">icons/Delete2.bmp</file>
+<file alias="Info2.bmp">icons/Info2.bmp</file>
+<file alias="Add.bmp">icons/Add.bmp</file>
+<file alias="Extract.bmp">icons/Extract.bmp</file>
+<file alias="Test.bmp">icons/Test.bmp</file>
+<file alias="Copy.bmp">icons/Copy.bmp</file>
+<file alias="Move.bmp">icons/Move.bmp</file>
+<file alias="Delete.bmp">icons/Delete.bmp</file>
+<file alias="Info.bmp">icons/Info.bmp</file>
+</qresource></RCC>

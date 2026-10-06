@@ -1,0 +1,155 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 10
+    Start 10: overwrite
+
+10: Test command: /DEPS/build-comments-20261004/overwrite_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+10: Working Directory: /DEPS/build-comments-20261004
+10: Environment variables:
+10:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+10: Test timeout computed to be: 120
+10: ********* Start testing of OverwriteTests *********
+10: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+10: PASS   : OverwriteTests::initTestCase()
+10: PASS   : OverwriteTests::choices(individual)
+10: PASS   : OverwriteTests::choices(yes-all)
+10: PASS   : OverwriteTests::choices(no-all)
+10: PASS   : OverwriteTests::choices(auto-rename)
+10: PASS   : OverwriteTests::choices(cancel)
+10: PASS   : OverwriteTests::folderMergeAndSkippedMove()
+10: PASS   : OverwriteTests::changedDestinationAndRecovery()
+10: PASS   : OverwriteTests::metadataLinksAndNames()
+10: PASS   : OverwriteTests::extractionRenameExisting(7z)
+10: PASS   : OverwriteTests::extractionRenameExisting(zip)
+10: PASS   : OverwriteTests::waitingCancelAndDestruction()
+10: PASS   : OverwriteTests::dialogButtonsAndGuiConnection()
+10: PASS   : OverwriteTests::cleanupTestCase()
+10: Totals: 14 passed, 0 failed, 0 skipped, 0 blacklisted, 1403ms
+10: ********* Finished testing of OverwriteTests *********
+1/1 Test #10: overwrite ........................   Passed    1.92 sec
+
+The following tests passed:
+	overwrite
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   1.92 sec
+
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-iBvtAD"
+PASS   : Integration::initTestCase()
+PASS   : Integration::roundtrip(7z)
+PASS   : Integration::roundtrip(zip)
+PASS   : Integration::encryption(7z-data)
+PASS   : Integration::encryption(7z-headers)
+PASS   : Integration::encryption(zip-AES)
+PASS   : Integration::encryption(zip-ZipCrypto)
+PASS   : Integration::selectedExtractOverwrite()
+PASS   : Integration::safetyPaths()
+PASS   : Integration::errorsAndRecovery()
+PASS   : Integration::cancellationAndResponsiveness()
+PASS   : Integration::archivePauseResumeAndCancel()
+PASS   : Integration::filePauseResumeAndCancel()
+PASS   : Integration::fileCopyMoveRenameFolder()
+PASS   : Integration::eliminateRootAndRenameExisting()
+PASS   : Integration::absoluteExtractionAndDialogSettings()
+PASS   : Integration::cleanupTestCase()
+Totals: 17 passed, 0 failed, 0 skipped, 0 blacklisted, 9276ms
+********* Finished testing of Integration *********
+
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 2
+    Start 2: editor_writeback
+
+2: Test command: /DEPS/build-comments-20261004/editor_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+2: Working Directory: /DEPS/build-comments-20261004
+2: Environment variables:
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 180
+2: ********* Start testing of EditorTests *********
+2: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+2: QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "/TMP/T/ExternalEdit-CkNVTP"
+2: PASS   : EditorTests::initTestCase()
+2: PASS   : EditorTests::processWaitsForDescendants()
+2: PASS   : EditorTests::writeBack(7z)
+2: PASS   : EditorTests::writeBack(zip)
+2: PASS   : EditorTests::writeBack(tar)
+2: PASS   : EditorTests::writeBack(wim)
+2: PASS   : EditorTests::writeBack(gzip)
+2: PASS   : EditorTests::writeBack(bzip2)
+2: PASS   : EditorTests::writeBack(xz)
+2: PASS   : EditorTests::writeBack(7z-data-view)
+2: PASS   : EditorTests::writeBack(7z-headers)
+2: PASS   : EditorTests::writeBack(zip-AES)
+2: PASS   : EditorTests::writeBack(zip-ZipCrypto)
+2: PASS   : EditorTests::discardedOrRetained(no)
+2: PASS   : EditorTests::discardedOrRetained(cancel)
+2: PASS   : EditorTests::discardedOrRetained(other-folder)
+2: PASS   : EditorTests::discardedOrRetained(read-only)
+2: PASS   : EditorTests::discardedOrRetained(removed-item)
+2: PASS   : EditorTests::runningEditorSurvivesClose(modified)
+2: PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+2: PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+2: PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+2: PASS   : EditorTests::focusedFileOnly()
+2: PASS   : EditorTests::applicationBundleWaitAndArguments()
+2: PASS   : EditorTests::observedNewSessionChild()
+2: PASS   : EditorTests::nestedEditorWriteBack()
+2: PASS   : EditorTests::updateCancellationRetainsEdit()
+2: PASS   : EditorTests::twoPanelsSerializeWrites()
+2: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+2: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+2: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+2: PASS   : EditorTests::cleanupTestCase()
+2: Totals: 32 passed, 0 failed, 0 skipped, 0 blacklisted, 30315ms
+2: ********* Finished testing of EditorTests *********
+1/2 Test #2: editor_writeback .................   Passed   30.86 sec
+test 9
+    Start 9: properties
+
+9: Test command: /DEPS/build-comments-20261004/property_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+9: Working Directory: /DEPS/build-comments-20261004
+9: Environment variables:
+9:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+9: Test timeout computed to be: 120
+9: ********* Start testing of PropertyTests *********
+9: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+9: PASS   : PropertyTests::initTestCase()
+9: PASS   : PropertyTests::orderedListingAndLayers()
+9: PASS   : PropertyTests::folderIndexImplicitAndFlat()
+9: PASS   : PropertyTests::dialogCopyFullValueAndButtons()
+9: PASS   : PropertyTests::guiSingleMultipleUnselectedAndPrefix()
+9: PASS   : PropertyTests::guiNestedAndLayerRestore()
+9: PASS   : PropertyTests::nestedWritebackRefreshesProperties()
+9: PASS   : PropertyTests::singleClickAndFilesystemSubstitute()
+9: PASS   : PropertyTests::destroyAfterClosedProgress()
+9: PASS   : PropertyTests::cleanupTestCase()
+9: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 2032ms
+9: ********* Finished testing of PropertyTests *********
+2/2 Test #9: properties .......................   Passed    2.49 sec
+
+The following tests passed:
+	editor_writeback
+	properties
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  33.35 sec

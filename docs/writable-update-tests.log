@@ -1,0 +1,266 @@
+Writable warning update group, 2026-10-06. Initial failures are preserved.
+
+--- Official reference: list.log ---
+
+7-Zip (z) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 334 bytes (1 KiB)
+
+Listing archive: ${DEPS}/warning-update-20261006.nf3gi2yu/timestamp-warning.zip
+
+--
+Path = ${DEPS}/warning-update-20261006.nf3gi2yu/timestamp-warning.zip
+Type = zip
+WARNINGS:
+Headers Error
+Physical Size = 334
+
+----------
+Path = keep.txt
+Folder = -
+Size = 11
+Packed Size = 11
+Modified = 2026-10-06 10:29:39.1726774
+Created =
+Accessed =
+Attributes =  -rw-r--r--
+Encrypted = -
+Comment =
+CRC = AB2D0C94
+Method = Store
+Characteristics = NTFS
+Host OS = Unix
+Version = 10
+Volume Index = 0
+Offset = 0
+
+Path = 日本語 space.txt
+Folder = -
+Size = 23
+Packed Size = 23
+Modified = 2026-10-06 10:29:39.1725454
+Created =
+Accessed =
+Attributes =  -rw-r--r--
+Encrypted = -
+Comment =
+CRC = 927CD03B
+Method = Store
+Characteristics = NTFS : UTF8
+Host OS = Unix
+Version = 10
+Volume Index = 0
+Offset = 49
+
+
+Warnings: 1
+
+--- Official reference: test.log ---
+
+7-Zip (z) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 334 bytes (1 KiB)
+
+Testing archive: ${DEPS}/warning-update-20261006.nf3gi2yu/timestamp-warning.zip
+
+WARNINGS:
+Headers Error
+
+--
+Path = ${DEPS}/warning-update-20261006.nf3gi2yu/timestamp-warning.zip
+Type = zip
+WARNINGS:
+Headers Error
+Physical Size = 334
+
+Everything is Ok
+
+Archives with Warnings: 1
+
+Warnings: 1
+Files: 2
+Size:       34
+Compressed: 334
+
+--- Official reference: rename.log ---
+
+7-Zip (z) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575, ASM
+
+Open archive: ${DEPS}/warning-update-20261006.nf3gi2yu/timestamp-warning.zip
+
+WARNINGS:
+Headers Error
+
+--
+Path = ${DEPS}/warning-update-20261006.nf3gi2yu/timestamp-warning.zip
+Type = zip
+WARNINGS:
+Headers Error
+Physical Size = 334
+
+Updating archive: ${DEPS}/warning-update-20261006.nf3gi2yu/timestamp-warning.zip
+
+Keep old data in archive: 2 files, 34 bytes (1 KiB)
+Add new data to archive: 0 files, 0 bytes
+
+
+Files read from disk: 0
+Archive size: 338 bytes (1 KiB)
+Everything is Ok
+
+--- Official reference: after.log ---
+
+7-Zip (z) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 338 bytes (1 KiB)
+
+Testing archive: ${DEPS}/warning-update-20261006.nf3gi2yu/timestamp-warning.zip
+
+WARNINGS:
+Headers Error
+
+--
+Path = ${DEPS}/warning-update-20261006.nf3gi2yu/timestamp-warning.zip
+Type = zip
+WARNINGS:
+Headers Error
+Physical Size = 338
+
+Everything is Ok
+
+Archives with Warnings: 1
+
+Warnings: 1
+Files: 2
+Size:       34
+Compressed: 338
+
+--- zip-metadata-first.log ---
+********* Start testing of ZipMetadataTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : ZipMetadataTests::initTestCase()
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-deflate-dd32) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-deflate-dd32) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-deflate-dd32) Pristine official 7zz extraction matches source SHA-256 and directories
+PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-deflate-dd32)
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-store-dd32) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-store-dd32) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-store-dd32) Pristine official 7zz extraction matches source SHA-256 and directories
+PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-store-dd32)
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-forced64) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-forced64) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-forced64) Pristine official 7zz extraction matches source SHA-256 and directories
+PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-forced64)
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned32) Pristine official 7zz extraction matches source SHA-256 and directories
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned32) Unsigned descriptor: original handler refuses metadata update; original retained; Test/extraction passed
+PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned32)
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned64) Pristine official 7zz extraction matches source SHA-256 and directories
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned64) Unsigned descriptor: original handler refuses metadata update; original retained; Test/extraction passed
+PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned64)
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-skewed-time) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-skewed-time) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-skewed-time) Pristine official 7zz extraction matches source SHA-256 and directories
+PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-skewed-time)
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(AES-descriptor) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(AES-descriptor) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(AES-descriptor) Pristine official 7zz extraction matches source SHA-256 and directories
+PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(AES-descriptor)
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor) Pristine official 7zz extraction matches source SHA-256 and directories
+PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor)
+QINFO  : ZipMetadataTests::legacyCommentHelperDescriptor() Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+PASS   : ZipMetadataTests::legacyCommentHelperDescriptor()
+PASS   : ZipMetadataTests::encryptedFolderRenameAndReplacement()
+FAIL!  : ZipMetadataTests::writableHeaderWarnings(invalid-local-DOS-time) '!result.properties.value("Warning Flags").isEmpty()' returned FALSE. ()
+   Loc: [${PROJECT}/tests/zip-metadata.cpp(176)]
+FAIL!  : ZipMetadataTests::writableHeaderWarnings(truncated-optional-extra-field) '!result.properties.value("Warning Flags").isEmpty()' returned FALSE. ()
+   Loc: [${PROJECT}/tests/zip-metadata.cpp(176)]
+PASS   : ZipMetadataTests::utf8CommentBoundsAndFailedUpdate()
+PASS   : ZipMetadataTests::cleanupTestCase()
+Totals: 13 passed, 2 failed, 0 skipped, 0 blacklisted, 3182ms
+********* Finished testing of ZipMetadataTests *********
+
+--- update-protection-first.log ---
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "${TMPDIR}/Integration-WBJYmm"
+PASS   : Integration::initTestCase()
+PASS   : Integration::archiveFolderCreation(7z)
+PASS   : Integration::archiveFolderCreation(zip)
+PASS   : Integration::archiveFolderCreation(tar)
+PASS   : Integration::archiveFolderCreation(wim)
+PASS   : Integration::archiveFolderCreation(7z-data)
+PASS   : Integration::archiveFolderCreation(7z-headers)
+PASS   : Integration::archiveFolderCreation(zip-AES)
+PASS   : Integration::archiveFolderCreation(zip-ZipCrypto)
+PASS   : Integration::archiveFolderCancelAndProtection()
+PASS   : Integration::archiveFolderDiagnosticsAndLimits()
+FAIL!  : Integration::errorsAndRecovery() 'result.success' returned FALSE. ()
+   Loc: [${PROJECT}/tests/integration.cpp(161)]
+PASS   : Integration::cleanupTestCase()
+Totals: 12 passed, 1 failed, 0 skipped, 0 blacklisted, 5015ms
+********* Finished testing of Integration *********
+
+--- warning-updates-repair.log ---
+********* Start testing of ZipMetadataTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : ZipMetadataTests::initTestCase()
+FAIL!  : ZipMetadataTests::writableHeaderWarnings(invalid-local-DOS-time) '!loaded.isEmpty() && !window.operationBusy()' returned FALSE. ()
+   Loc: [${PROJECT}/tests/zip-metadata.cpp(191)]
+FAIL!  : ZipMetadataTests::writableHeaderWarnings(truncated-optional-extra-field) '!loaded.isEmpty() && !window.operationBusy()' returned FALSE. ()
+   Loc: [${PROJECT}/tests/zip-metadata.cpp(191)]
+PASS   : ZipMetadataTests::cleanupTestCase()
+Totals: 2 passed, 2 failed, 0 skipped, 0 blacklisted, 62284ms
+********* Finished testing of ZipMetadataTests *********
+
+--- warning-updates-final.log ---
+********* Start testing of ZipMetadataTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : ZipMetadataTests::initTestCase()
+QINFO  : ZipMetadataTests::writableHeaderWarnings(invalid-local-DOS-time) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::writableHeaderWarnings(invalid-local-DOS-time) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::writableHeaderWarnings(invalid-local-DOS-time) Warning-bearing ZIP: six updates, unchanged packed keep item, replacement/add bytes and directories verified
+PASS   : ZipMetadataTests::writableHeaderWarnings(invalid-local-DOS-time)
+QINFO  : ZipMetadataTests::writableHeaderWarnings(truncated-optional-extra-field) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::writableHeaderWarnings(truncated-optional-extra-field) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::writableHeaderWarnings(truncated-optional-extra-field) Warning-bearing ZIP: six updates, unchanged packed keep item, replacement/add bytes and directories verified
+PASS   : ZipMetadataTests::writableHeaderWarnings(truncated-optional-extra-field)
+PASS   : ZipMetadataTests::cleanupTestCase()
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 1815ms
+********* Finished testing of ZipMetadataTests *********
+
+--- error-recovery-final.log ---
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "${TMPDIR}/Integration-ZiuzXV"
+PASS   : Integration::initTestCase()
+PASS   : Integration::errorsAndRecovery()
+PASS   : Integration::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 154ms
+********* Finished testing of Integration *********
+
+--- application-build.log ---
+[1/1] Linking CXX executable "7-Zip Mac.app/Contents/MacOS/7-Zip Mac"
+
+--- package.log ---
+Source archive verified: 793 tracked regular files; normalized modes; SHA-256 manifest
+${DEPS}/desktop-verification-20261006.h_4hn8gk/build/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+${DEPS}/desktop-verification-20261006.h_4hn8gk/build/7-Zip Mac.app
+
+--- startup.log ---
+Owned bundle executable alive after 3 seconds: True
+Private INI files created: 1
+Existing matching native user preferences unchanged: True
+stdout bytes: 0 stderr bytes: 0
+Invalid explicit profile rejected without native fallback: True
+Native user preferences remain unchanged: True
+Only owned processes terminated; physical Finder/Fn/menu input not checked.

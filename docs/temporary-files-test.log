@@ -1,0 +1,115 @@
+=== NativeProgress ===
+5: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+5: PASS   : NativeProgressTests::initTestCase()
+5: PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+5: PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+5: PASS   : NativeProgressTests::encryptedAndFailureRecovery()
+5: PASS   : NativeProgressTests::pauseCancelAndReuse()
+5: PASS   : NativeProgressTests::progressLabelsAndLargeValues()
+5: PASS   : NativeProgressTests::workerPauseCancelAndTimeout()
+5: PASS   : NativeProgressTests::workerUnicodeErrorAndSecret()
+5: PASS   : NativeProgressTests::sourceVerificationPauseCancel()
+5: PASS   : NativeProgressTests::sourceVerificationCallbacks()
+5: PASS   : NativeProgressTests::droppedConsumerDoesNotInterruptEngine()
+5: PASS   : NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()
+5: PASS   : NativeProgressTests::cleanupTestCase()
+5: Totals: 13 passed, 0 failed, 0 skipped, 0 blacklisted, 10291ms
+
+=== DirectoryScanner ===
+10: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+10: QINFO  : DirectoryTests::initTestCase() Owned directory fixtures: "<TEMP>"
+10: PASS   : DirectoryTests::initTestCase()
+10: PASS   : DirectoryTests::metadataAndFlatDoesNotFollowChildLinks()
+10: PASS   : DirectoryTests::scannerSupersedesAndCanBeDestroyed()
+10: QINFO  : DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(normal) Flat false 30,000 rows: elapsed ms 2320 heartbeat ticks 132 maximum event-loop gap ms 642
+10: PASS   : DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(normal)
+10: QINFO  : DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(flat) Flat true 30,000 rows: elapsed ms 2302 heartbeat ticks 133 maximum event-loop gap ms 635
+10: PASS   : DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(flat)
+10: PASS   : DirectoryTests::cancelDuringRowPreparationAndNavigate()
+10: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 12
+10: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 14
+10: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 11
+10: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 13
+10: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 20
+10: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 16
+10: PASS   : DirectoryTests::refreshOptionsAndManagerRestoreSelection()
+10: PASS   : DirectoryTests::failurePreservesPreviousViewAndRecovers()
+10: PASS   : DirectoryTests::archiveExitRefreshAndConsecutiveUp()
+10: PASS   : DirectoryTests::failedStartupCommandRestoresFilesystem()
+10: PASS   : DirectoryTests::openWithMenuSupersedesHiddenStartupScans()
+10: PASS   : DirectoryTests::twoPanelRestoreRemovalAndClose()
+10: PASS   : DirectoryTests::cleanupTestCase()
+10: Totals: 13 passed, 0 failed, 0 skipped, 0 blacklisted, 25660ms
+
+=== Properties ===
+16: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+16: PASS   : PropertyTests::initTestCase()
+16: PASS   : PropertyTests::orderedListingAndLayers()
+16: PASS   : PropertyTests::folderIndexImplicitAndFlat()
+16: PASS   : PropertyTests::dialogCopyFullValueAndButtons()
+16: PASS   : PropertyTests::nativeSchemaAndAllColumns()
+16: PASS   : PropertyTests::nativeFlatNameAndPrefixColumns()
+16: PASS   : PropertyTests::nativeEmptyArchiveKeepsSchema()
+16: PASS   : PropertyTests::nativeMultilineCommentsAndLiteralPasswordNames()
+16: PASS   : PropertyTests::nativeWimRawHashAndProxy()
+16: PASS   : PropertyTests::nativeFileTimePrecisionAndUndefinedValues()
+16: PASS   : PropertyTests::nativeTypedIntegersAndRawIdentity()
+16: PASS   : PropertyTests::nativeControlCharacterFilenameRoundTrip()
+16: PASS   : PropertyTests::nativeMetadataDestinationProtection()
+16: PASS   : PropertyTests::guiSingleMultipleUnselectedAndPrefix()
+16: PASS   : PropertyTests::guiNestedAndLayerRestore()
+16: PASS   : PropertyTests::nestedWritebackRefreshesProperties()
+16: PASS   : PropertyTests::singleClickAndFilesystemSubstitute()
+16: PASS   : PropertyTests::destroyAfterClosedProgress()
+16: PASS   : PropertyTests::cleanupTestCase()
+16: Totals: 19 passed, 0 failed, 0 skipped, 0 blacklisted, 2338ms
+
+=== Temporary-file browser: final run ===
+Internal ctest changing into directory: <CACHE>/build-comments-20261004
+UpdateCTestConfiguration  from :<CACHE>/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :<CACHE>/build-comments-20261004/DartConfiguration.tcl
+Test project <CACHE>/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 9
+    Start 9: temporary_files
+
+9: Test command: <CACHE>/build-comments-20261004/temporary_files_tests "<CACHE>/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+9: Working Directory: <CACHE>/build-comments-20261004
+9: Environment variables: 
+9:  PORT_TEST_PLUGIN_ROOT=<CACHE>/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+9: Test timeout computed to be: 90
+9: ********* Start testing of TemporaryFilesTests *********
+9: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+9: PASS   : TemporaryFilesTests::initTestCase()
+9: PASS   : TemporaryFilesTests::originalFilterAndBoundedCounts()
+9: PASS   : TemporaryFilesTests::layoutNavigationSortAndOpen(without-dots)
+9: PASS   : TemporaryFilesTests::layoutNavigationSortAndOpen(with-dots)
+9: PASS   : TemporaryFilesTests::contextMenuSettingsAndTranslation()
+9: PASS   : TemporaryFilesTests::linksAndBoundaryAreNotFollowed()
+9: PASS   : TemporaryFilesTests::activeTempsAndChangedItemsAreRetained()
+9: PASS   : TemporaryFilesTests::confirmedTrashAndCancelKeepUnrelatedFiles()
+9: PASS   : TemporaryFilesTests::processFailureAndMenuRemainUsable()
+9: PASS   : TemporaryFilesTests::closeWhileReadingAndReuse()
+9: PASS   : TemporaryFilesTests::unreadableChildDoesNotHideOtherTemps()
+9: PASS   : TemporaryFilesTests::cleanupTestCase()
+9: Totals: 12 passed, 0 failed, 0 skipped, 0 blacklisted, 1816ms
+9: ********* Finished testing of TemporaryFilesTests *********
+1/1 Test #9: temporary_files ..................   Passed    2.36 sec
+
+The following tests passed:
+	temporary_files
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   2.36 sec
+
+
+=== Packaged app ===
+Bundle dependency/signature check passed: 15 Mach-O files; system/@rpath dependencies only.
+LaunchServices --file-manager startup passed; owned app alive, bundled Cocoa loaded, bundled helper exit=0.
+Only the owned startup instance was stopped; private fixture removed on exit.

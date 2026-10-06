@@ -1,0 +1,136 @@
+********* Start testing of ListingTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : ListingTests::initTestCase() Owned listing fixtures: "/TMP/T/PanelListing-hJRrpT"
+PASS   : ListingTests::initTestCase()
+PASS   : ListingTests::originalDisplayAndDeferredProperties()
+PASS   : ListingTests::displayedNameKeepsRealFilesystemIdentity()
+PASS   : ListingTests::asynchronousSortKeepsExactValuesMarksFocusAndUnsorted()
+PASS   : ListingTests::supersededSortClearAndDestruction()
+PASS   : ListingTests::nativeIconsBothKindsAndNavigation()
+=================================================================
+==8823==ERROR: AddressSanitizer: heap-use-after-free on address 0x6100003a2040 at pc 0x000102623a48 bp 0x00016d8b8510 sp 0x00016d8b8508
+WRITE of size 4 at 0x6100003a2040 thread T0
+    #0 0x000102623a44 in int std::__1::__cxx_atomic_fetch_add[abi:nqe220106]<int>(std::__1::__cxx_atomic_base_impl<int>*, int, std::__1::memory_order) c11.h:181
+    #1 0x000102623a44 in std::__1::__atomic_base<int, true>::fetch_add[abi:nqe220106](int, std::__1::memory_order) atomic.h:157
+    #2 0x000102623a44 in int QAtomicOps<int>::fetchAndAddRelaxed<int>(std::__1::atomic<int>&, QAtomicAdditiveType<int>::AdditiveT) qatomic_cxx11.h:343
+    #3 0x000102623a44 in QBasicAtomicInteger<int>::refRelaxed() qbasicatomic.h:60
+    #4 0x000102623a44 in QArrayData::ref() qarraydata.h:72
+    #5 0x000102623a44 in QArrayDataPointer<char16_t>::ref() qarraydatapointer.h:350
+    #6 0x000102623a44 in QArrayDataPointer<char16_t>::QArrayDataPointer(QArrayDataPointer<char16_t> const&) qarraydatapointer.h:41
+    #7 0x000102623a44 in QArrayDataPointer<char16_t>::QArrayDataPointer(QArrayDataPointer<char16_t> const&) qarraydatapointer.h:40
+    #8 0x000102623a44 in QString::QString(QString const&) qstring.h:1391
+    #9 0x000102623a44 in QString::QString(QString const&) qstring.h:1392
+    #10 0x000102623a44 in operator+(QString const&, QChar) qstring.h:1561
+    #11 0x000102623a44 in MainWindow::archiveLocation() const MainWindowArchives.cpp:23
+    #12 0x0001027dda20 in std::__1::__function::__value_func<QString ()>::operator()[abi:nqe220106]() const function.h:273
+    #13 0x0001027dda20 in std::__1::function<QString ()>::operator()() const function.h:754
+    #14 0x0001027dda20 in AddressCombo::hidePopup() AddressCombo.cpp:58
+    #15 0x000103e4aa6c in QWidget::event(QEvent*)+0x80 (QtWidgets:arm64+0x5ea6c)
+    #16 0x000103f1dfe4 in QComboBox::event(QEvent*)+0x180 (QtWidgets:arm64+0x131fe4)
+    #17 0x000103dfbd00 in QApplicationPrivate::notify_helper(QObject*, QEvent*)+0x148 (QtWidgets:arm64+0xfd00)
+    #18 0x000103dfd900 in QApplication::notify(QObject*, QEvent*)+0xda8 (QtWidgets:arm64+0x11900)
+    #19 0x00010508aa18 in QCoreApplication::sendEvent(QObject*, QEvent*)+0xa8 (QtCore:arm64+0x9ea18)
+    #20 0x000103e49888 in QWidgetPrivate::hideChildren(bool)+0x470 (QtWidgets:arm64+0x5d888)
+    #21 0x000103e4984c in QWidgetPrivate::hideChildren(bool)+0x434 (QtWidgets:arm64+0x5d84c)
+    #22 0x000103e4984c in QWidgetPrivate::hideChildren(bool)+0x434 (QtWidgets:arm64+0x5d84c)
+    #23 0x000103e4984c in QWidgetPrivate::hideChildren(bool)+0x434 (QtWidgets:arm64+0x5d84c)
+    #24 0x000103e4930c in QWidgetPrivate::hide_helper()+0x11c (QtWidgets:arm64+0x5d30c)
+    #25 0x000103e4a364 in QWidgetPrivate::setVisible(bool)+0x3d4 (QtWidgets:arm64+0x5e364)
+    #26 0x000103e49cfc in QWidget::setVisible(bool)+0x314 (QtWidgets:arm64+0x5dcfc)
+    #27 0x000103e4a874 in QWidgetPrivate::handleClose(QWidgetPrivate::CloseMode)+0x1e4 (QtWidgets:arm64+0x5e874)
+    #28 0x000103e63870  (QtWidgets:arm64+0x77870)
+    #29 0x0001032ad6e8 in QWindow::event(QEvent*)+0x20c (QtGui:arm64+0xed6e8)
+    #30 0x000103dfbd00 in QApplicationPrivate::notify_helper(QObject*, QEvent*)+0x148 (QtWidgets:arm64+0xfd00)
+    #31 0x000103dfcd58 in QApplication::notify(QObject*, QEvent*)+0x200 (QtWidgets:arm64+0x10d58)
+    #32 0x00010508ab44 in QCoreApplication::sendSpontaneousEvent(QObject*, QEvent*)+0xac (QtCore:arm64+0x9eb44)
+    #33 0x000103250308 in QGuiApplicationPrivate::processWindowSystemEvent(QWindowSystemInterfacePrivate::WindowSystemEvent*)+0x988 (QtGui:arm64+0x90308)
+    #34 0x0001032bbdc8  (QtGui:arm64+0xfbdc8)
+    #35 0x0001032ac954 in QWindow::close()+0x80 (QtGui:arm64+0xec954)
+    #36 0x000103e38214 in QWidget::~QWidget()+0x398 (QtWidgets:arm64+0x4c214)
+    #37 0x00010264c344 in MainWindow::~MainWindow() MainWindowEditors.cpp:25
+    #38 0x00010255731c in ListingTests::archiveRawNameRename() panel-listing.cpp:121
+    #39 0x00010509602c in QMetaMethodInvoker::invokeImpl(QMetaMethod, void*, Qt::ConnectionType, long long, void const* const*, char const* const*, QtPrivate::QMetaTypeInterface const* const*)+0x3c8 (QtCore:arm64+0xaa02c)
+    #40 0x00010509acb8 in QMetaMethod::invokeImpl(QMetaMethod, void*, Qt::ConnectionType, long long, void const* const*, char const* const*, QtPrivate::QMetaTypeInterface const* const*)+0x48 (QtCore:arm64+0xaecb8)
+    #41 0x0001030601b4  (QtTest:arm64+0x181b4)
+    #42 0x0001030610dc  (QtTest:arm64+0x190dc)
+    #43 0x000103061f54  (QtTest:arm64+0x19f54)
+    #44 0x000103062b18 in QTest::qRun()+0x6fc (QtTest:arm64+0x1ab18)
+    #45 0x000103062258 in QTest::qExec(QObject*, int, char**)+0x10 (QtTest:arm64+0x1a258)
+    #46 0x000102548074 in main panel-listing.cpp:142
+    #47 0x0001884504e0 in start+0x1b4c (dyld:arm64e+0x204e0)
+
+0x6100003a2040 is located 0 bytes inside of 178-byte region [0x6100003a2040,0x6100003a20f2)
+freed by thread T0 here:
+    #0 0x000105601368 in free+0x7c (libclang_rt.asan_osx_dynamic.dylib:arm64e+0x41368)
+    #1 0x000102565aa0 in QTypedArrayData<char16_t>::deallocate(QArrayData*) qarraydata.h:177
+    #2 0x000102565aa0 in QArrayDataPointer<char16_t>::~QArrayDataPointer() qarraydatapointer.h:101
+    #3 0x000102565aa0 in QArrayDataPointer<char16_t>::~QArrayDataPointer() qarraydatapointer.h:98
+    #4 0x000102565aa0 in QString::~QString() qstring.h:1462
+    #5 0x000102565aa0 in QString::~QString() qstring.h:1462
+    #6 0x000102565aa0 in ArchiveRequest::~ArchiveRequest() ArchiveBackend.h:92
+    #7 0x0001029073e0 in ArchiveRequest::~ArchiveRequest() ArchiveBackend.h:92
+    #8 0x0001029073e0 in SevenZipProcessBackend::~SevenZipProcessBackend() ArchiveBackend.cpp:126
+    #9 0x00010264c258 in MainWindow::~MainWindow() MainWindowEditors.cpp:25
+    #10 0x00010255731c in ListingTests::archiveRawNameRename() panel-listing.cpp:121
+    #11 0x00010509602c in QMetaMethodInvoker::invokeImpl(QMetaMethod, void*, Qt::ConnectionType, long long, void const* const*, char const* const*, QtPrivate::QMetaTypeInterface const* const*)+0x3c8 (QtCore:arm64+0xaa02c)
+    #12 0x00010509acb8 in QMetaMethod::invokeImpl(QMetaMethod, void*, Qt::ConnectionType, long long, void const* const*, char const* const*, QtPrivate::QMetaTypeInterface const* const*)+0x48 (QtCore:arm64+0xaecb8)
+    #13 0x0001030601b4  (QtTest:arm64+0x181b4)
+    #14 0x0001030610dc  (QtTest:arm64+0x190dc)
+    #15 0x000103061f54  (QtTest:arm64+0x19f54)
+    #16 0x000103062b18 in QTest::qRun()+0x6fc (QtTest:arm64+0x1ab18)
+    #17 0x000103062258 in QTest::qExec(QObject*, int, char**)+0x10 (QtTest:arm64+0x1a258)
+    #18 0x000102548074 in main panel-listing.cpp:142
+    #19 0x0001884504e0 in start+0x1b4c (dyld:arm64e+0x204e0)
+
+previously allocated by thread T0 here:
+    #0 0x000105601274 in malloc+0x78 (libclang_rt.asan_osx_dynamic.dylib:arm64e+0x41274)
+    #1 0x0001051a5f28 in QArrayData::allocate2(QArrayData**, long long, QArrayData::AllocationOption)+0xa8 (QtCore:arm64+0x1b9f28)
+    #2 0x000105162e4c in QString::QString(QChar const*, long long)+0x50 (QtCore:arm64+0x176e4c)
+    #3 0x000105040214  (QtCore:arm64+0x54214)
+    #4 0x000102624ce8 in MainWindow::openPath(QString, QString, bool) MainWindowArchives.cpp:51
+    #5 0x0001025564b0 in ListingTests::archiveRawNameRename() panel-listing.cpp:112
+    #6 0x00010509602c in QMetaMethodInvoker::invokeImpl(QMetaMethod, void*, Qt::ConnectionType, long long, void const* const*, char const* const*, QtPrivate::QMetaTypeInterface const* const*)+0x3c8 (QtCore:arm64+0xaa02c)
+    #7 0x00010509acb8 in QMetaMethod::invokeImpl(QMetaMethod, void*, Qt::ConnectionType, long long, void const* const*, char const* const*, QtPrivate::QMetaTypeInterface const* const*)+0x48 (QtCore:arm64+0xaecb8)
+    #8 0x0001030601b4  (QtTest:arm64+0x181b4)
+    #9 0x0001030610dc  (QtTest:arm64+0x190dc)
+    #10 0x000103061f54  (QtTest:arm64+0x19f54)
+    #11 0x000103062b18 in QTest::qRun()+0x6fc (QtTest:arm64+0x1ab18)
+    #12 0x000103062258 in QTest::qExec(QObject*, int, char**)+0x10 (QtTest:arm64+0x1a258)
+    #13 0x000102548074 in main panel-listing.cpp:142
+    #14 0x0001884504e0 in start+0x1b4c (dyld:arm64e+0x204e0)
+
+SUMMARY: AddressSanitizer: heap-use-after-free c11.h:181 in int std::__1::__cxx_atomic_fetch_add[abi:nqe220106]<int>(std::__1::__cxx_atomic_base_impl<int>*, int, std::__1::memory_order)
+Shadow bytes around the buggy address:
+  0x6100003a1d80: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x6100003a1e00: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+  0x6100003a1e80: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+  0x6100003a1f00: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+  0x6100003a1f80: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+=>0x6100003a2000: fa fa fa fa fa fa fa fa[fd]fd fd fd fd fd fd fd
+  0x6100003a2080: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fa
+  0x6100003a2100: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+  0x6100003a2180: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fa
+  0x6100003a2200: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+  0x6100003a2280: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==8823==ABORTING
+Received signal 6 (SIGABRT)
+         archiveRawNameRename function time: 4945ms, total time: 11368ms

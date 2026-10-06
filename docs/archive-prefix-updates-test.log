@@ -1,0 +1,366 @@
+Official archive-prefix update checkpoint, 2026-10-04.
+114 distinct passing checks include setup/cleanup. The final 24 open-mode checks are repeated below after strengthening test guards; they are counted only once.
+
+=== prefix-native-build.log ===
+Official 26.03 overlay: 11 files verified; engine unchanged
+/REPOSITORY/src/upstream/BenchmarkGuiMath.inc
+/REPOSITORY/src/upstream/BenchmarkMemory.inc
+/REPOSITORY/src/upstream/AgentCreateFolder.inc
+/REPOSITORY/src/upstream/AgentUpdateStream.inc
+clang++ -arch arm64 -O2 -c -Werror -Wall -Wextra -Wno-poison-system-directories -DNDEBUG -D_REENTRANT -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fPIC -std=c++11 -o /DEPS/progress-26.03-arm64/NativeBenchmark.o -o "/DEPS/progress-26.03-arm64/NativeBenchmark.o" -I/DEPS/7zip-26.03 /REPOSITORY/src/NativeBenchmark.cpp
+clang++ -arch arm64 -O2 -c -Werror -Wall -Wextra -Wno-poison-system-directories -DNDEBUG -D_REENTRANT -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fPIC -std=c++11 -o /DEPS/progress-26.03-arm64/NativeFolderUpdate.o -o "/DEPS/progress-26.03-arm64/NativeFolderUpdate.o" -I/DEPS/7zip-26.03 /REPOSITORY/src/NativeFolderUpdate.cpp
+clang++ -o "/DEPS/progress-26.03-arm64/7zz-progress" -arch arm64 -DNDEBUG      b/m_arm64_15/LzmaDecOpt.o b/m_arm64_15/7zBuf2.o b/m_arm64_15/7zCrc.o b/m_arm64_15/7zCrcOpt.o b/m_arm64_15/7zStream.o b/m_arm64_15/Aes.o b/m_arm64_15/AesOpt.o b/m_arm64_15/Alloc.o b/m_arm64_15/Bcj2.o b/m_arm64_15/Bcj2Enc.o b/m_arm64_15/Blake2s.o b/m_arm64_15/Bra.o b/m_arm64_15/Bra86.o b/m_arm64_15/BraIA64.o b/m_arm64_15/BwtSort.o b/m_arm64_15/CpuArch.o b/m_arm64_15/Delta.o b/m_arm64_15/HuffEnc.o b/m_arm64_15/LzFind.o b/m_arm64_15/Lzma2Dec.o b/m_arm64_15/Lzma2DecMt.o b/m_arm64_15/Lzma2Enc.o b/m_arm64_15/LzmaDec.o b/m_arm64_15/LzmaEnc.o b/m_arm64_15/Md5.o b/m_arm64_15/MtCoder.o b/m_arm64_15/MtDec.o b/m_arm64_15/Ppmd7.o b/m_arm64_15/Ppmd7Dec.o b/m_arm64_15/Ppmd7aDec.o b/m_arm64_15/Ppmd7Enc.o b/m_arm64_15/Ppmd8.o b/m_arm64_15/Ppmd8Dec.o b/m_arm64_15/Ppmd8Enc.o b/m_arm64_15/Sha1.o b/m_arm64_15/Sha1Opt.o b/m_arm64_15/Sha256.o b/m_arm64_15/Sha256Opt.o b/m_arm64_15/Sha3.o b/m_arm64_15/Sha512.o b/m_arm64_15/Sha512Opt.o b/m_arm64_15/Sort.o b/m_arm64_15/SwapBytes.o b/m_arm64_15/Xxh64.o b/m_arm64_15/Xz.o b/m_arm64_15/XzDec.o b/m_arm64_15/XzEnc.o b/m_arm64_15/XzIn.o b/m_arm64_15/XzCrc64.o b/m_arm64_15/XzCrc64Opt.o b/m_arm64_15/ZstdDec.o b/m_arm64_15/LzFindMt.o b/m_arm64_15/LzFindOpt.o b/m_arm64_15/Threads.o b/m_arm64_15/MemBlocks.o b/m_arm64_15/OutMemStream.o b/m_arm64_15/ProgressMt.o b/m_arm64_15/StreamBinder.o b/m_arm64_15/Synchronization.o b/m_arm64_15/VirtThread.o b/m_arm64_15/CRC.o b/m_arm64_15/CrcReg.o b/m_arm64_15/DynLimBuf.o b/m_arm64_15/IntToString.o b/m_arm64_15/LzFindPrepare.o b/m_arm64_15/Md5Reg.o b/m_arm64_15/MyMap.o b/m_arm64_15/MyString.o b/m_arm64_15/MyVector.o b/m_arm64_15/MyXml.o b/m_arm64_15/NewHandler.o b/m_arm64_15/Sha1Prepare.o b/m_arm64_15/Sha1Reg.o b/m_arm64_15/Sha256Prepare.o b/m_arm64_15/Sha256Reg.o b/m_arm64_15/Sha3Reg.o b/m_arm64_15/Sha512Prepare.o b/m_arm64_15/Sha512Reg.o b/m_arm64_15/StringConvert.o b/m_arm64_15/StringToInt.o b/m_arm64_15/UTFConvert.o b/m_arm64_15/Wildcard.o b/m_arm64_15/Xxh64Reg.o b/m_arm64_15/XzCrc64Init.o b/m_arm64_15/XzCrc64Reg.o b/m_arm64_15/FileDir.o b/m_arm64_15/FileFind.o b/m_arm64_15/FileIO.o b/m_arm64_15/FileName.o b/m_arm64_15/PropVariant.o b/m_arm64_15/PropVariantConv.o b/m_arm64_15/PropVariantUtils.o b/m_arm64_15/System.o b/m_arm64_15/TimeUtils.o b/m_arm64_15/CreateCoder.o b/m_arm64_15/CWrappers.o b/m_arm64_15/InBuffer.o b/m_arm64_15/InOutTempBuffer.o b/m_arm64_15/FilterCoder.o b/m_arm64_15/LimitedStreams.o b/m_arm64_15/LockedStream.o b/m_arm64_15/MethodId.o b/m_arm64_15/MethodProps.o b/m_arm64_15/OffsetStream.o b/m_arm64_15/OutBuffer.o b/m_arm64_15/ProgressUtils.o b/m_arm64_15/PropId.o b/m_arm64_15/StreamObjects.o b/m_arm64_15/StreamUtils.o b/m_arm64_15/UniqBlocks.o b/m_arm64_15/ApfsHandler.o b/m_arm64_15/ApmHandler.o b/m_arm64_15/ArHandler.o b/m_arm64_15/ArjHandler.o b/m_arm64_15/Base64Handler.o b/m_arm64_15/Bz2Handler.o b/m_arm64_15/ComHandler.o b/m_arm64_15/CpioHandler.o b/m_arm64_15/CramfsHandler.o b/m_arm64_15/DeflateProps.o b/m_arm64_15/DmgHandler.o b/m_arm64_15/ElfHandler.o b/m_arm64_15/ExtHandler.o b/m_arm64_15/FatHandler.o b/m_arm64_15/FlvHandler.o b/m_arm64_15/GzHandler.o b/m_arm64_15/GptHandler.o b/m_arm64_15/HandlerCont.o b/m_arm64_15/HfsHandler.o b/m_arm64_15/IhexHandler.o b/m_arm64_15/LpHandler.o b/m_arm64_15/LzhHandler.o b/m_arm64_15/LzmaHandler.o b/m_arm64_15/MachoHandler.o b/m_arm64_15/MbrHandler.o b/m_arm64_15/MslzHandler.o b/m_arm64_15/MubHandler.o b/m_arm64_15/NtfsHandler.o b/m_arm64_15/PeHandler.o b/m_arm64_15/PpmdHandler.o b/m_arm64_15/QcowHandler.o b/m_arm64_15/RpmHandler.o b/m_arm64_15/SparseHandler.o b/m_arm64_15/SplitHandler.o b/m_arm64_15/SquashfsHandler.o b/m_arm64_15/SwfHandler.o b/m_arm64_15/UefiHandler.o b/m_arm64_15/VdiHandler.o b/m_arm64_15/VhdHandler.o b/m_arm64_15/VhdxHandler.o b/m_arm64_15/VmdkHandler.o b/m_arm64_15/XarHandler.o b/m_arm64_15/XzHandler.o b/m_arm64_15/ZHandler.o b/m_arm64_15/ZstdHandler.o b/m_arm64_15/CoderMixer2.o b/m_arm64_15/DummyOutStream.o b/m_arm64_15/FindSignature.o b/m_arm64_15/InStreamWithCRC.o b/m_arm64_15/ItemNameUtils.o b/m_arm64_15/MultiStream.o b/m_arm64_15/OutStreamWithCRC.o b/m_arm64_15/OutStreamWithSha1.o b/m_arm64_15/HandlerOut.o b/m_arm64_15/ParseProperties.o b/m_arm64_15/7zCompressionMode.o b/m_arm64_15/7zDecode.o b/m_arm64_15/7zEncode.o b/m_arm64_15/7zExtract.o b/m_arm64_15/7zFolderInStream.o b/m_arm64_15/7zHandler.o b/m_arm64_15/7zHandlerOut.o b/m_arm64_15/7zHeader.o b/m_arm64_15/7zIn.o b/m_arm64_15/7zOut.o b/m_arm64_15/7zProperties.o b/m_arm64_15/7zSpecStream.o b/m_arm64_15/7zUpdate.o b/m_arm64_15/7zRegister.o b/m_arm64_15/CabBlockInStream.o b/m_arm64_15/CabHandler.o b/m_arm64_15/CabHeader.o b/m_arm64_15/CabIn.o b/m_arm64_15/CabRegister.o b/m_arm64_15/ChmHandler.o b/m_arm64_15/ChmIn.o b/m_arm64_15/IsoHandler.o b/m_arm64_15/IsoHeader.o b/m_arm64_15/IsoIn.o b/m_arm64_15/IsoRegister.o b/m_arm64_15/NsisDecode.o b/m_arm64_15/NsisHandler.o b/m_arm64_15/NsisIn.o b/m_arm64_15/NsisRegister.o b/m_arm64_15/RarHandler.o b/m_arm64_15/Rar5Handler.o b/m_arm64_15/TarHandler.o b/m_arm64_15/TarHandlerOut.o b/m_arm64_15/TarHeader.o b/m_arm64_15/TarIn.o b/m_arm64_15/TarOut.o b/m_arm64_15/TarUpdate.o b/m_arm64_15/TarRegister.o b/m_arm64_15/UdfHandler.o b/m_arm64_15/UdfIn.o b/m_arm64_15/WimHandler.o b/m_arm64_15/WimHandlerOut.o b/m_arm64_15/WimIn.o b/m_arm64_15/WimRegister.o b/m_arm64_15/ZipAddCommon.o b/m_arm64_15/ZipHandler.o b/m_arm64_15/ZipHandlerOut.o b/m_arm64_15/ZipIn.o b/m_arm64_15/ZipItem.o b/m_arm64_15/ZipOut.o b/m_arm64_15/ZipUpdate.o b/m_arm64_15/ZipRegister.o b/m_arm64_15/Bcj2Coder.o b/m_arm64_15/Bcj2Register.o b/m_arm64_15/BcjCoder.o b/m_arm64_15/BcjRegister.o b/m_arm64_15/BitlDecoder.o b/m_arm64_15/BranchMisc.o b/m_arm64_15/BranchRegister.o b/m_arm64_15/ByteSwap.o b/m_arm64_15/BZip2Crc.o b/m_arm64_15/BZip2Decoder.o b/m_arm64_15/BZip2Encoder.o b/m_arm64_15/BZip2Register.o b/m_arm64_15/CopyCoder.o b/m_arm64_15/CopyRegister.o b/m_arm64_15/Deflate64Register.o b/m_arm64_15/DeflateDecoder.o b/m_arm64_15/DeflateEncoder.o b/m_arm64_15/DeflateRegister.o b/m_arm64_15/DeltaFilter.o b/m_arm64_15/ImplodeDecoder.o b/m_arm64_15/LzfseDecoder.o b/m_arm64_15/LzhDecoder.o b/m_arm64_15/Lzma2Decoder.o b/m_arm64_15/Lzma2Encoder.o b/m_arm64_15/Lzma2Register.o b/m_arm64_15/LzmaDecoder.o b/m_arm64_15/LzmaEncoder.o b/m_arm64_15/LzmaRegister.o b/m_arm64_15/LzmsDecoder.o b/m_arm64_15/LzOutWindow.o b/m_arm64_15/LzxDecoder.o b/m_arm64_15/PpmdDecoder.o b/m_arm64_15/PpmdEncoder.o b/m_arm64_15/PpmdRegister.o b/m_arm64_15/PpmdZip.o b/m_arm64_15/QuantumDecoder.o b/m_arm64_15/ShrinkDecoder.o b/m_arm64_15/XpressDecoder.o b/m_arm64_15/XzDecoder.o b/m_arm64_15/XzEncoder.o b/m_arm64_15/ZlibDecoder.o b/m_arm64_15/ZlibEncoder.o b/m_arm64_15/ZDecoder.o b/m_arm64_15/ZstdDecoder.o b/m_arm64_15/Rar1Decoder.o b/m_arm64_15/Rar2Decoder.o b/m_arm64_15/Rar3Decoder.o b/m_arm64_15/Rar3Vm.o b/m_arm64_15/Rar5Decoder.o b/m_arm64_15/RarCodecsRegister.o b/m_arm64_15/7zAes.o b/m_arm64_15/7zAesRegister.o b/m_arm64_15/HmacSha1.o b/m_arm64_15/HmacSha256.o b/m_arm64_15/MyAes.o b/m_arm64_15/MyAesReg.o b/m_arm64_15/Pbkdf2HmacSha1.o b/m_arm64_15/RandGen.o b/m_arm64_15/WzAes.o b/m_arm64_15/ZipCrypto.o b/m_arm64_15/ZipStrong.o b/m_arm64_15/Rar20Crypto.o b/m_arm64_15/Rar5Aes.o b/m_arm64_15/RarAes.o b/m_arm64_15/MyWindows.o b/m_arm64_15/CommandLineParser.o b/m_arm64_15/ListFileUtils.o b/m_arm64_15/StdInStream.o b/m_arm64_15/StdOutStream.o b/m_arm64_15/ErrorMsg.o b/m_arm64_15/FileLink.o b/m_arm64_15/SystemInfo.o b/m_arm64_15/FilePathAutoRename.o b/m_arm64_15/FileStreams.o b/m_arm64_15/MultiOutStream.o b/m_arm64_15/ArchiveCommandLine.o b/m_arm64_15/ArchiveExtractCallback.o b/m_arm64_15/ArchiveOpenCallback.o b/m_arm64_15/Bench.o b/m_arm64_15/DefaultName.o b/m_arm64_15/EnumDirItems.o b/m_arm64_15/ExtractingFilePath.o b/m_arm64_15/HashCalc.o b/m_arm64_15/LoadCodecs.o b/m_arm64_15/OpenArchive.o b/m_arm64_15/PropIDUtils.o b/m_arm64_15/SetProperties.o b/m_arm64_15/SortUtils.o b/m_arm64_15/TempFiles.o b/m_arm64_15/UpdateAction.o b/m_arm64_15/UpdatePair.o b/m_arm64_15/UpdateProduce.o b/m_arm64_15/ConsoleClose.o b/m_arm64_15/MainAr.o b/m_arm64_15/OpenCallbackConsole.o b/m_arm64_15/PercentPrinter.o b/m_arm64_15/UserInputUtils.o /DEPS/progress-26.03-arm64/Main.o /DEPS/progress-26.03-arm64/List.o /DEPS/progress-26.03-arm64/BenchCon.o /DEPS/progress-26.03-arm64/UpdateCallbackConsole.o /DEPS/progress-26.03-arm64/ExtractCallbackConsole.o /DEPS/progress-26.03-arm64/HashCon.o /DEPS/progress-26.03-arm64/Extract.o /DEPS/progress-26.03-arm64/Update.o /DEPS/progress-26.03-arm64/UpdateCallback.o /DEPS/progress-26.03-arm64/NativeProgress.o /DEPS/progress-26.03-arm64/ArchiveTransferPort.o /DEPS/progress-26.03-arm64/NativeMetadata.o /DEPS/progress-26.03-arm64/AgentProxy.o /DEPS/progress-26.03-arm64/NativeBenchmark.o /DEPS/progress-26.03-arm64/NativeFolderUpdate.o  -lpthread -ldl
+clang++ -o "/DEPS/progress-26.03-arm64/7zip-metadata-tests" -arch arm64 -DNDEBUG      b/m_arm64_15/LzmaDecOpt.o b/m_arm64_15/7zBuf2.o b/m_arm64_15/7zCrc.o b/m_arm64_15/7zCrcOpt.o b/m_arm64_15/7zStream.o b/m_arm64_15/Aes.o b/m_arm64_15/AesOpt.o b/m_arm64_15/Alloc.o b/m_arm64_15/Bcj2.o b/m_arm64_15/Bcj2Enc.o b/m_arm64_15/Blake2s.o b/m_arm64_15/Bra.o b/m_arm64_15/Bra86.o b/m_arm64_15/BraIA64.o b/m_arm64_15/BwtSort.o b/m_arm64_15/CpuArch.o b/m_arm64_15/Delta.o b/m_arm64_15/HuffEnc.o b/m_arm64_15/LzFind.o b/m_arm64_15/Lzma2Dec.o b/m_arm64_15/Lzma2DecMt.o b/m_arm64_15/Lzma2Enc.o b/m_arm64_15/LzmaDec.o b/m_arm64_15/LzmaEnc.o b/m_arm64_15/Md5.o b/m_arm64_15/MtCoder.o b/m_arm64_15/MtDec.o b/m_arm64_15/Ppmd7.o b/m_arm64_15/Ppmd7Dec.o b/m_arm64_15/Ppmd7aDec.o b/m_arm64_15/Ppmd7Enc.o b/m_arm64_15/Ppmd8.o b/m_arm64_15/Ppmd8Dec.o b/m_arm64_15/Ppmd8Enc.o b/m_arm64_15/Sha1.o b/m_arm64_15/Sha1Opt.o b/m_arm64_15/Sha256.o b/m_arm64_15/Sha256Opt.o b/m_arm64_15/Sha3.o b/m_arm64_15/Sha512.o b/m_arm64_15/Sha512Opt.o b/m_arm64_15/Sort.o b/m_arm64_15/SwapBytes.o b/m_arm64_15/Xxh64.o b/m_arm64_15/Xz.o b/m_arm64_15/XzDec.o b/m_arm64_15/XzEnc.o b/m_arm64_15/XzIn.o b/m_arm64_15/XzCrc64.o b/m_arm64_15/XzCrc64Opt.o b/m_arm64_15/ZstdDec.o b/m_arm64_15/LzFindMt.o b/m_arm64_15/LzFindOpt.o b/m_arm64_15/Threads.o b/m_arm64_15/MemBlocks.o b/m_arm64_15/OutMemStream.o b/m_arm64_15/ProgressMt.o b/m_arm64_15/StreamBinder.o b/m_arm64_15/Synchronization.o b/m_arm64_15/VirtThread.o b/m_arm64_15/CRC.o b/m_arm64_15/CrcReg.o b/m_arm64_15/DynLimBuf.o b/m_arm64_15/IntToString.o b/m_arm64_15/LzFindPrepare.o b/m_arm64_15/Md5Reg.o b/m_arm64_15/MyMap.o b/m_arm64_15/MyString.o b/m_arm64_15/MyVector.o b/m_arm64_15/MyXml.o b/m_arm64_15/NewHandler.o b/m_arm64_15/Sha1Prepare.o b/m_arm64_15/Sha1Reg.o b/m_arm64_15/Sha256Prepare.o b/m_arm64_15/Sha256Reg.o b/m_arm64_15/Sha3Reg.o b/m_arm64_15/Sha512Prepare.o b/m_arm64_15/Sha512Reg.o b/m_arm64_15/StringConvert.o b/m_arm64_15/StringToInt.o b/m_arm64_15/UTFConvert.o b/m_arm64_15/Wildcard.o b/m_arm64_15/Xxh64Reg.o b/m_arm64_15/XzCrc64Init.o b/m_arm64_15/XzCrc64Reg.o b/m_arm64_15/FileDir.o b/m_arm64_15/FileFind.o b/m_arm64_15/FileIO.o b/m_arm64_15/FileName.o b/m_arm64_15/PropVariant.o b/m_arm64_15/PropVariantConv.o b/m_arm64_15/PropVariantUtils.o b/m_arm64_15/System.o b/m_arm64_15/TimeUtils.o b/m_arm64_15/CreateCoder.o b/m_arm64_15/CWrappers.o b/m_arm64_15/InBuffer.o b/m_arm64_15/InOutTempBuffer.o b/m_arm64_15/FilterCoder.o b/m_arm64_15/LimitedStreams.o b/m_arm64_15/LockedStream.o b/m_arm64_15/MethodId.o b/m_arm64_15/MethodProps.o b/m_arm64_15/OffsetStream.o b/m_arm64_15/OutBuffer.o b/m_arm64_15/ProgressUtils.o b/m_arm64_15/PropId.o b/m_arm64_15/StreamObjects.o b/m_arm64_15/StreamUtils.o b/m_arm64_15/UniqBlocks.o b/m_arm64_15/ApfsHandler.o b/m_arm64_15/ApmHandler.o b/m_arm64_15/ArHandler.o b/m_arm64_15/ArjHandler.o b/m_arm64_15/Base64Handler.o b/m_arm64_15/Bz2Handler.o b/m_arm64_15/ComHandler.o b/m_arm64_15/CpioHandler.o b/m_arm64_15/CramfsHandler.o b/m_arm64_15/DeflateProps.o b/m_arm64_15/DmgHandler.o b/m_arm64_15/ElfHandler.o b/m_arm64_15/ExtHandler.o b/m_arm64_15/FatHandler.o b/m_arm64_15/FlvHandler.o b/m_arm64_15/GzHandler.o b/m_arm64_15/GptHandler.o b/m_arm64_15/HandlerCont.o b/m_arm64_15/HfsHandler.o b/m_arm64_15/IhexHandler.o b/m_arm64_15/LpHandler.o b/m_arm64_15/LzhHandler.o b/m_arm64_15/LzmaHandler.o b/m_arm64_15/MachoHandler.o b/m_arm64_15/MbrHandler.o b/m_arm64_15/MslzHandler.o b/m_arm64_15/MubHandler.o b/m_arm64_15/NtfsHandler.o b/m_arm64_15/PeHandler.o b/m_arm64_15/PpmdHandler.o b/m_arm64_15/QcowHandler.o b/m_arm64_15/RpmHandler.o b/m_arm64_15/SparseHandler.o b/m_arm64_15/SplitHandler.o b/m_arm64_15/SquashfsHandler.o b/m_arm64_15/SwfHandler.o b/m_arm64_15/UefiHandler.o b/m_arm64_15/VdiHandler.o b/m_arm64_15/VhdHandler.o b/m_arm64_15/VhdxHandler.o b/m_arm64_15/VmdkHandler.o b/m_arm64_15/XarHandler.o b/m_arm64_15/XzHandler.o b/m_arm64_15/ZHandler.o b/m_arm64_15/ZstdHandler.o b/m_arm64_15/CoderMixer2.o b/m_arm64_15/DummyOutStream.o b/m_arm64_15/FindSignature.o b/m_arm64_15/InStreamWithCRC.o b/m_arm64_15/ItemNameUtils.o b/m_arm64_15/MultiStream.o b/m_arm64_15/OutStreamWithCRC.o b/m_arm64_15/OutStreamWithSha1.o b/m_arm64_15/HandlerOut.o b/m_arm64_15/ParseProperties.o b/m_arm64_15/7zCompressionMode.o b/m_arm64_15/7zDecode.o b/m_arm64_15/7zEncode.o b/m_arm64_15/7zExtract.o b/m_arm64_15/7zFolderInStream.o b/m_arm64_15/7zHandler.o b/m_arm64_15/7zHandlerOut.o b/m_arm64_15/7zHeader.o b/m_arm64_15/7zIn.o b/m_arm64_15/7zOut.o b/m_arm64_15/7zProperties.o b/m_arm64_15/7zSpecStream.o b/m_arm64_15/7zUpdate.o b/m_arm64_15/7zRegister.o b/m_arm64_15/CabBlockInStream.o b/m_arm64_15/CabHandler.o b/m_arm64_15/CabHeader.o b/m_arm64_15/CabIn.o b/m_arm64_15/CabRegister.o b/m_arm64_15/ChmHandler.o b/m_arm64_15/ChmIn.o b/m_arm64_15/IsoHandler.o b/m_arm64_15/IsoHeader.o b/m_arm64_15/IsoIn.o b/m_arm64_15/IsoRegister.o b/m_arm64_15/NsisDecode.o b/m_arm64_15/NsisHandler.o b/m_arm64_15/NsisIn.o b/m_arm64_15/NsisRegister.o b/m_arm64_15/RarHandler.o b/m_arm64_15/Rar5Handler.o b/m_arm64_15/TarHandler.o b/m_arm64_15/TarHandlerOut.o b/m_arm64_15/TarHeader.o b/m_arm64_15/TarIn.o b/m_arm64_15/TarOut.o b/m_arm64_15/TarUpdate.o b/m_arm64_15/TarRegister.o b/m_arm64_15/UdfHandler.o b/m_arm64_15/UdfIn.o b/m_arm64_15/WimHandler.o b/m_arm64_15/WimHandlerOut.o b/m_arm64_15/WimIn.o b/m_arm64_15/WimRegister.o b/m_arm64_15/ZipAddCommon.o b/m_arm64_15/ZipHandler.o b/m_arm64_15/ZipHandlerOut.o b/m_arm64_15/ZipIn.o b/m_arm64_15/ZipItem.o b/m_arm64_15/ZipOut.o b/m_arm64_15/ZipUpdate.o b/m_arm64_15/ZipRegister.o b/m_arm64_15/Bcj2Coder.o b/m_arm64_15/Bcj2Register.o b/m_arm64_15/BcjCoder.o b/m_arm64_15/BcjRegister.o b/m_arm64_15/BitlDecoder.o b/m_arm64_15/BranchMisc.o b/m_arm64_15/BranchRegister.o b/m_arm64_15/ByteSwap.o b/m_arm64_15/BZip2Crc.o b/m_arm64_15/BZip2Decoder.o b/m_arm64_15/BZip2Encoder.o b/m_arm64_15/BZip2Register.o b/m_arm64_15/CopyCoder.o b/m_arm64_15/CopyRegister.o b/m_arm64_15/Deflate64Register.o b/m_arm64_15/DeflateDecoder.o b/m_arm64_15/DeflateEncoder.o b/m_arm64_15/DeflateRegister.o b/m_arm64_15/DeltaFilter.o b/m_arm64_15/ImplodeDecoder.o b/m_arm64_15/LzfseDecoder.o b/m_arm64_15/LzhDecoder.o b/m_arm64_15/Lzma2Decoder.o b/m_arm64_15/Lzma2Encoder.o b/m_arm64_15/Lzma2Register.o b/m_arm64_15/LzmaDecoder.o b/m_arm64_15/LzmaEncoder.o b/m_arm64_15/LzmaRegister.o b/m_arm64_15/LzmsDecoder.o b/m_arm64_15/LzOutWindow.o b/m_arm64_15/LzxDecoder.o b/m_arm64_15/PpmdDecoder.o b/m_arm64_15/PpmdEncoder.o b/m_arm64_15/PpmdRegister.o b/m_arm64_15/PpmdZip.o b/m_arm64_15/QuantumDecoder.o b/m_arm64_15/ShrinkDecoder.o b/m_arm64_15/XpressDecoder.o b/m_arm64_15/XzDecoder.o b/m_arm64_15/XzEncoder.o b/m_arm64_15/ZlibDecoder.o b/m_arm64_15/ZlibEncoder.o b/m_arm64_15/ZDecoder.o b/m_arm64_15/ZstdDecoder.o b/m_arm64_15/Rar1Decoder.o b/m_arm64_15/Rar2Decoder.o b/m_arm64_15/Rar3Decoder.o b/m_arm64_15/Rar3Vm.o b/m_arm64_15/Rar5Decoder.o b/m_arm64_15/RarCodecsRegister.o b/m_arm64_15/7zAes.o b/m_arm64_15/7zAesRegister.o b/m_arm64_15/HmacSha1.o b/m_arm64_15/HmacSha256.o b/m_arm64_15/MyAes.o b/m_arm64_15/MyAesReg.o b/m_arm64_15/Pbkdf2HmacSha1.o b/m_arm64_15/RandGen.o b/m_arm64_15/WzAes.o b/m_arm64_15/ZipCrypto.o b/m_arm64_15/ZipStrong.o b/m_arm64_15/Rar20Crypto.o b/m_arm64_15/Rar5Aes.o b/m_arm64_15/RarAes.o b/m_arm64_15/MyWindows.o b/m_arm64_15/CommandLineParser.o b/m_arm64_15/ListFileUtils.o b/m_arm64_15/StdInStream.o b/m_arm64_15/StdOutStream.o b/m_arm64_15/ErrorMsg.o b/m_arm64_15/FileLink.o b/m_arm64_15/SystemInfo.o b/m_arm64_15/FilePathAutoRename.o b/m_arm64_15/FileStreams.o b/m_arm64_15/MultiOutStream.o b/m_arm64_15/ArchiveCommandLine.o b/m_arm64_15/ArchiveExtractCallback.o b/m_arm64_15/ArchiveOpenCallback.o b/m_arm64_15/Bench.o b/m_arm64_15/DefaultName.o b/m_arm64_15/EnumDirItems.o b/m_arm64_15/ExtractingFilePath.o b/m_arm64_15/HashCalc.o b/m_arm64_15/LoadCodecs.o b/m_arm64_15/OpenArchive.o b/m_arm64_15/PropIDUtils.o b/m_arm64_15/SetProperties.o b/m_arm64_15/SortUtils.o b/m_arm64_15/TempFiles.o b/m_arm64_15/UpdateAction.o b/m_arm64_15/UpdatePair.o b/m_arm64_15/UpdateProduce.o b/m_arm64_15/ConsoleClose.o b/m_arm64_15/MainAr.o b/m_arm64_15/OpenCallbackConsole.o b/m_arm64_15/PercentPrinter.o b/m_arm64_15/UserInputUtils.o /DEPS/progress-26.03-arm64/List.o /DEPS/progress-26.03-arm64/BenchCon.o /DEPS/progress-26.03-arm64/UpdateCallbackConsole.o /DEPS/progress-26.03-arm64/ExtractCallbackConsole.o /DEPS/progress-26.03-arm64/HashCon.o /DEPS/progress-26.03-arm64/Extract.o /DEPS/progress-26.03-arm64/Update.o /DEPS/progress-26.03-arm64/UpdateCallback.o /DEPS/progress-26.03-arm64/NativeProgress.o /DEPS/progress-26.03-arm64/ArchiveTransferPort.o /DEPS/progress-26.03-arm64/NativeMetadata.o /DEPS/progress-26.03-arm64/AgentProxy.o /DEPS/progress-26.03-arm64/NativeBenchmark.o /DEPS/progress-26.03-arm64/NativeFolderUpdate.o /DEPS/progress-26.03-arm64/MetadataFormatterTests.o  -lpthread -ldl
+clang++ -o "/DEPS/progress-26.03-arm64/7zip-benchmark-tests" -arch arm64 -DNDEBUG      b/m_arm64_15/LzmaDecOpt.o b/m_arm64_15/7zBuf2.o b/m_arm64_15/7zCrc.o b/m_arm64_15/7zCrcOpt.o b/m_arm64_15/7zStream.o b/m_arm64_15/Aes.o b/m_arm64_15/AesOpt.o b/m_arm64_15/Alloc.o b/m_arm64_15/Bcj2.o b/m_arm64_15/Bcj2Enc.o b/m_arm64_15/Blake2s.o b/m_arm64_15/Bra.o b/m_arm64_15/Bra86.o b/m_arm64_15/BraIA64.o b/m_arm64_15/BwtSort.o b/m_arm64_15/CpuArch.o b/m_arm64_15/Delta.o b/m_arm64_15/HuffEnc.o b/m_arm64_15/LzFind.o b/m_arm64_15/Lzma2Dec.o b/m_arm64_15/Lzma2DecMt.o b/m_arm64_15/Lzma2Enc.o b/m_arm64_15/LzmaDec.o b/m_arm64_15/LzmaEnc.o b/m_arm64_15/Md5.o b/m_arm64_15/MtCoder.o b/m_arm64_15/MtDec.o b/m_arm64_15/Ppmd7.o b/m_arm64_15/Ppmd7Dec.o b/m_arm64_15/Ppmd7aDec.o b/m_arm64_15/Ppmd7Enc.o b/m_arm64_15/Ppmd8.o b/m_arm64_15/Ppmd8Dec.o b/m_arm64_15/Ppmd8Enc.o b/m_arm64_15/Sha1.o b/m_arm64_15/Sha1Opt.o b/m_arm64_15/Sha256.o b/m_arm64_15/Sha256Opt.o b/m_arm64_15/Sha3.o b/m_arm64_15/Sha512.o b/m_arm64_15/Sha512Opt.o b/m_arm64_15/Sort.o b/m_arm64_15/SwapBytes.o b/m_arm64_15/Xxh64.o b/m_arm64_15/Xz.o b/m_arm64_15/XzDec.o b/m_arm64_15/XzEnc.o b/m_arm64_15/XzIn.o b/m_arm64_15/XzCrc64.o b/m_arm64_15/XzCrc64Opt.o b/m_arm64_15/ZstdDec.o b/m_arm64_15/LzFindMt.o b/m_arm64_15/LzFindOpt.o b/m_arm64_15/Threads.o b/m_arm64_15/MemBlocks.o b/m_arm64_15/OutMemStream.o b/m_arm64_15/ProgressMt.o b/m_arm64_15/StreamBinder.o b/m_arm64_15/Synchronization.o b/m_arm64_15/VirtThread.o b/m_arm64_15/CRC.o b/m_arm64_15/CrcReg.o b/m_arm64_15/DynLimBuf.o b/m_arm64_15/IntToString.o b/m_arm64_15/LzFindPrepare.o b/m_arm64_15/Md5Reg.o b/m_arm64_15/MyMap.o b/m_arm64_15/MyString.o b/m_arm64_15/MyVector.o b/m_arm64_15/MyXml.o b/m_arm64_15/NewHandler.o b/m_arm64_15/Sha1Prepare.o b/m_arm64_15/Sha1Reg.o b/m_arm64_15/Sha256Prepare.o b/m_arm64_15/Sha256Reg.o b/m_arm64_15/Sha3Reg.o b/m_arm64_15/Sha512Prepare.o b/m_arm64_15/Sha512Reg.o b/m_arm64_15/StringConvert.o b/m_arm64_15/StringToInt.o b/m_arm64_15/UTFConvert.o b/m_arm64_15/Wildcard.o b/m_arm64_15/Xxh64Reg.o b/m_arm64_15/XzCrc64Init.o b/m_arm64_15/XzCrc64Reg.o b/m_arm64_15/FileDir.o b/m_arm64_15/FileFind.o b/m_arm64_15/FileIO.o b/m_arm64_15/FileName.o b/m_arm64_15/PropVariant.o b/m_arm64_15/PropVariantConv.o b/m_arm64_15/PropVariantUtils.o b/m_arm64_15/System.o b/m_arm64_15/TimeUtils.o b/m_arm64_15/CreateCoder.o b/m_arm64_15/CWrappers.o b/m_arm64_15/InBuffer.o b/m_arm64_15/InOutTempBuffer.o b/m_arm64_15/FilterCoder.o b/m_arm64_15/LimitedStreams.o b/m_arm64_15/LockedStream.o b/m_arm64_15/MethodId.o b/m_arm64_15/MethodProps.o b/m_arm64_15/OffsetStream.o b/m_arm64_15/OutBuffer.o b/m_arm64_15/ProgressUtils.o b/m_arm64_15/PropId.o b/m_arm64_15/StreamObjects.o b/m_arm64_15/StreamUtils.o b/m_arm64_15/UniqBlocks.o b/m_arm64_15/ApfsHandler.o b/m_arm64_15/ApmHandler.o b/m_arm64_15/ArHandler.o b/m_arm64_15/ArjHandler.o b/m_arm64_15/Base64Handler.o b/m_arm64_15/Bz2Handler.o b/m_arm64_15/ComHandler.o b/m_arm64_15/CpioHandler.o b/m_arm64_15/CramfsHandler.o b/m_arm64_15/DeflateProps.o b/m_arm64_15/DmgHandler.o b/m_arm64_15/ElfHandler.o b/m_arm64_15/ExtHandler.o b/m_arm64_15/FatHandler.o b/m_arm64_15/FlvHandler.o b/m_arm64_15/GzHandler.o b/m_arm64_15/GptHandler.o b/m_arm64_15/HandlerCont.o b/m_arm64_15/HfsHandler.o b/m_arm64_15/IhexHandler.o b/m_arm64_15/LpHandler.o b/m_arm64_15/LzhHandler.o b/m_arm64_15/LzmaHandler.o b/m_arm64_15/MachoHandler.o b/m_arm64_15/MbrHandler.o b/m_arm64_15/MslzHandler.o b/m_arm64_15/MubHandler.o b/m_arm64_15/NtfsHandler.o b/m_arm64_15/PeHandler.o b/m_arm64_15/PpmdHandler.o b/m_arm64_15/QcowHandler.o b/m_arm64_15/RpmHandler.o b/m_arm64_15/SparseHandler.o b/m_arm64_15/SplitHandler.o b/m_arm64_15/SquashfsHandler.o b/m_arm64_15/SwfHandler.o b/m_arm64_15/UefiHandler.o b/m_arm64_15/VdiHandler.o b/m_arm64_15/VhdHandler.o b/m_arm64_15/VhdxHandler.o b/m_arm64_15/VmdkHandler.o b/m_arm64_15/XarHandler.o b/m_arm64_15/XzHandler.o b/m_arm64_15/ZHandler.o b/m_arm64_15/ZstdHandler.o b/m_arm64_15/CoderMixer2.o b/m_arm64_15/DummyOutStream.o b/m_arm64_15/FindSignature.o b/m_arm64_15/InStreamWithCRC.o b/m_arm64_15/ItemNameUtils.o b/m_arm64_15/MultiStream.o b/m_arm64_15/OutStreamWithCRC.o b/m_arm64_15/OutStreamWithSha1.o b/m_arm64_15/HandlerOut.o b/m_arm64_15/ParseProperties.o b/m_arm64_15/7zCompressionMode.o b/m_arm64_15/7zDecode.o b/m_arm64_15/7zEncode.o b/m_arm64_15/7zExtract.o b/m_arm64_15/7zFolderInStream.o b/m_arm64_15/7zHandler.o b/m_arm64_15/7zHandlerOut.o b/m_arm64_15/7zHeader.o b/m_arm64_15/7zIn.o b/m_arm64_15/7zOut.o b/m_arm64_15/7zProperties.o b/m_arm64_15/7zSpecStream.o b/m_arm64_15/7zUpdate.o b/m_arm64_15/7zRegister.o b/m_arm64_15/CabBlockInStream.o b/m_arm64_15/CabHandler.o b/m_arm64_15/CabHeader.o b/m_arm64_15/CabIn.o b/m_arm64_15/CabRegister.o b/m_arm64_15/ChmHandler.o b/m_arm64_15/ChmIn.o b/m_arm64_15/IsoHandler.o b/m_arm64_15/IsoHeader.o b/m_arm64_15/IsoIn.o b/m_arm64_15/IsoRegister.o b/m_arm64_15/NsisDecode.o b/m_arm64_15/NsisHandler.o b/m_arm64_15/NsisIn.o b/m_arm64_15/NsisRegister.o b/m_arm64_15/RarHandler.o b/m_arm64_15/Rar5Handler.o b/m_arm64_15/TarHandler.o b/m_arm64_15/TarHandlerOut.o b/m_arm64_15/TarHeader.o b/m_arm64_15/TarIn.o b/m_arm64_15/TarOut.o b/m_arm64_15/TarUpdate.o b/m_arm64_15/TarRegister.o b/m_arm64_15/UdfHandler.o b/m_arm64_15/UdfIn.o b/m_arm64_15/WimHandler.o b/m_arm64_15/WimHandlerOut.o b/m_arm64_15/WimIn.o b/m_arm64_15/WimRegister.o b/m_arm64_15/ZipAddCommon.o b/m_arm64_15/ZipHandler.o b/m_arm64_15/ZipHandlerOut.o b/m_arm64_15/ZipIn.o b/m_arm64_15/ZipItem.o b/m_arm64_15/ZipOut.o b/m_arm64_15/ZipUpdate.o b/m_arm64_15/ZipRegister.o b/m_arm64_15/Bcj2Coder.o b/m_arm64_15/Bcj2Register.o b/m_arm64_15/BcjCoder.o b/m_arm64_15/BcjRegister.o b/m_arm64_15/BitlDecoder.o b/m_arm64_15/BranchMisc.o b/m_arm64_15/BranchRegister.o b/m_arm64_15/ByteSwap.o b/m_arm64_15/BZip2Crc.o b/m_arm64_15/BZip2Decoder.o b/m_arm64_15/BZip2Encoder.o b/m_arm64_15/BZip2Register.o b/m_arm64_15/CopyCoder.o b/m_arm64_15/CopyRegister.o b/m_arm64_15/Deflate64Register.o b/m_arm64_15/DeflateDecoder.o b/m_arm64_15/DeflateEncoder.o b/m_arm64_15/DeflateRegister.o b/m_arm64_15/DeltaFilter.o b/m_arm64_15/ImplodeDecoder.o b/m_arm64_15/LzfseDecoder.o b/m_arm64_15/LzhDecoder.o b/m_arm64_15/Lzma2Decoder.o b/m_arm64_15/Lzma2Encoder.o b/m_arm64_15/Lzma2Register.o b/m_arm64_15/LzmaDecoder.o b/m_arm64_15/LzmaEncoder.o b/m_arm64_15/LzmaRegister.o b/m_arm64_15/LzmsDecoder.o b/m_arm64_15/LzOutWindow.o b/m_arm64_15/LzxDecoder.o b/m_arm64_15/PpmdDecoder.o b/m_arm64_15/PpmdEncoder.o b/m_arm64_15/PpmdRegister.o b/m_arm64_15/PpmdZip.o b/m_arm64_15/QuantumDecoder.o b/m_arm64_15/ShrinkDecoder.o b/m_arm64_15/XpressDecoder.o b/m_arm64_15/XzDecoder.o b/m_arm64_15/XzEncoder.o b/m_arm64_15/ZlibDecoder.o b/m_arm64_15/ZlibEncoder.o b/m_arm64_15/ZDecoder.o b/m_arm64_15/ZstdDecoder.o b/m_arm64_15/Rar1Decoder.o b/m_arm64_15/Rar2Decoder.o b/m_arm64_15/Rar3Decoder.o b/m_arm64_15/Rar3Vm.o b/m_arm64_15/Rar5Decoder.o b/m_arm64_15/RarCodecsRegister.o b/m_arm64_15/7zAes.o b/m_arm64_15/7zAesRegister.o b/m_arm64_15/HmacSha1.o b/m_arm64_15/HmacSha256.o b/m_arm64_15/MyAes.o b/m_arm64_15/MyAesReg.o b/m_arm64_15/Pbkdf2HmacSha1.o b/m_arm64_15/RandGen.o b/m_arm64_15/WzAes.o b/m_arm64_15/ZipCrypto.o b/m_arm64_15/ZipStrong.o b/m_arm64_15/Rar20Crypto.o b/m_arm64_15/Rar5Aes.o b/m_arm64_15/RarAes.o b/m_arm64_15/MyWindows.o b/m_arm64_15/CommandLineParser.o b/m_arm64_15/ListFileUtils.o b/m_arm64_15/StdInStream.o b/m_arm64_15/StdOutStream.o b/m_arm64_15/ErrorMsg.o b/m_arm64_15/FileLink.o b/m_arm64_15/SystemInfo.o b/m_arm64_15/FilePathAutoRename.o b/m_arm64_15/FileStreams.o b/m_arm64_15/MultiOutStream.o b/m_arm64_15/ArchiveCommandLine.o b/m_arm64_15/ArchiveExtractCallback.o b/m_arm64_15/ArchiveOpenCallback.o b/m_arm64_15/Bench.o b/m_arm64_15/DefaultName.o b/m_arm64_15/EnumDirItems.o b/m_arm64_15/ExtractingFilePath.o b/m_arm64_15/HashCalc.o b/m_arm64_15/LoadCodecs.o b/m_arm64_15/OpenArchive.o b/m_arm64_15/PropIDUtils.o b/m_arm64_15/SetProperties.o b/m_arm64_15/SortUtils.o b/m_arm64_15/TempFiles.o b/m_arm64_15/UpdateAction.o b/m_arm64_15/UpdatePair.o b/m_arm64_15/UpdateProduce.o b/m_arm64_15/ConsoleClose.o b/m_arm64_15/MainAr.o b/m_arm64_15/OpenCallbackConsole.o b/m_arm64_15/PercentPrinter.o b/m_arm64_15/UserInputUtils.o /DEPS/progress-26.03-arm64/List.o /DEPS/progress-26.03-arm64/BenchCon.o /DEPS/progress-26.03-arm64/UpdateCallbackConsole.o /DEPS/progress-26.03-arm64/ExtractCallbackConsole.o /DEPS/progress-26.03-arm64/HashCon.o /DEPS/progress-26.03-arm64/Extract.o /DEPS/progress-26.03-arm64/Update.o /DEPS/progress-26.03-arm64/UpdateCallback.o /DEPS/progress-26.03-arm64/NativeProgress.o /DEPS/progress-26.03-arm64/ArchiveTransferPort.o /DEPS/progress-26.03-arm64/NativeMetadata.o /DEPS/progress-26.03-arm64/AgentProxy.o /DEPS/progress-26.03-arm64/NativeBenchmark.o /DEPS/progress-26.03-arm64/NativeFolderUpdate.o /DEPS/progress-26.03-arm64/BenchmarkFormatterTests.o  -lpthread -ldl
+
+=== prefix-qt-build.log ===
+[1/85] Automatic MOC for target port_core
+[2/85] Building CXX object CMakeFiles/port_core.dir/port_core_autogen/mocs_compilation.cpp.o
+[3/85] Building CXX object CMakeFiles/port_core.dir/src/ArchiveMetadata.cpp.o
+[4/85] Building CXX object CMakeFiles/port_core.dir/src/ArchiveProperties.cpp.o
+[5/85] Building CXX object CMakeFiles/port_core.dir/src/ArchiveSourceVerification.cpp.o
+[6/85] Building CXX object CMakeFiles/port_core.dir/src/ArchiveMutation.cpp.o
+[7/85] Building CXX object CMakeFiles/port_core.dir/src/ArchiveBackend.cpp.o
+[8/85] Linking CXX static library libport_core.a
+[9/85] Automatic MOC for target port_ui
+[10/85] Building CXX object CMakeFiles/port_ui.dir/src/PropertiesDialog.cpp.o
+[11/85] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowProperties.cpp.o
+[12/85] Building CXX object CMakeFiles/port_ui.dir/port_ui_autogen/mocs_compilation.cpp.o
+[13/85] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowEditors.cpp.o
+[14/85] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowArchives.cpp.o
+[15/85] Building CXX object CMakeFiles/port_ui.dir/src/MainWindow.cpp.o
+[16/85] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowStatistics.cpp.o
+[17/85] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowComments.cpp.o
+[18/85] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowFilesystem.cpp.o
+[19/85] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowTools.cpp.o
+[20/85] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowView.cpp.o
+[21/85] Building CXX object CMakeFiles/port_ui.dir/src/Benchmark.cpp.o
+[22/85] Building CXX object CMakeFiles/port_ui.dir/src/OpenWith.cpp.o
+[23/85] Building CXX object CMakeFiles/port_ui.dir/src/Dialogs.cpp.o
+[24/85] Linking CXX static library libport_ui.a
+[25/85] Linking CXX executable benchmark_tests
+[26/85] Automatic MOC for target format_tests
+[27/84] Automatic MOC for target archive_transfer_tests
+[28/83] Automatic MOC for target native_progress_tests
+[29/82] Automatic MOC for target port_tests
+[30/81] Automatic MOC for target editor_tests
+[31/80] Automatic MOC for target statistics_tests
+[32/79] Automatic MOC for target directory_tests
+[33/78] Automatic MOC for target comment_tests
+[34/77] Building CXX object CMakeFiles/SevenZipMac.dir/src/main.cpp.o
+[35/77] Automatic MOC for target open_mode_tests
+[36/76] Linking CXX executable "7-Zip Mac.app/Contents/MacOS/7-Zip Mac"
+[37/76] Automatic MOC for target open_as_tests
+[38/75] Automatic MOC for target link_tests
+[39/74] Automatic MOC for target property_tests
+[40/73] Building OBJCXX object CMakeFiles/cocoa_menu_tests.dir/tests/cocoa-menus.mm.o
+[41/73] Linking CXX executable cocoa_menu_tests
+[42/73] Automatic MOC for target compression_help_tests
+[43/72] Automatic MOC for target overwrite_tests
+[44/71] Building CXX object CMakeFiles/format_tests.dir/tests/formats.cpp.o
+[45/71] Linking CXX executable format_tests
+[46/71] Building CXX object CMakeFiles/native_progress_tests.dir/tests/native-progress.cpp.o
+[47/71] Linking CXX executable native_progress_tests
+[48/71] Building CXX object CMakeFiles/archive_transfer_tests.dir/tests/archive-transfer.cpp.o
+[49/71] Linking CXX executable archive_transfer_tests
+[50/71] Building CXX object CMakeFiles/statistics_tests.dir/tests/folder-statistics.cpp.o
+[51/71] Linking CXX executable statistics_tests
+[52/71] Building CXX object CMakeFiles/editor_tests.dir/tests/external-edit.cpp.o
+[53/71] Linking CXX executable editor_tests
+[54/71] Building CXX object CMakeFiles/directory_tests.dir/tests/directory-scanner.cpp.o
+[55/71] Linking CXX executable directory_tests
+[56/71] Building CXX object CMakeFiles/open_mode_tests.dir/tests/archive-open-modes.cpp.o
+[57/71] Linking CXX executable open_mode_tests
+[58/71] Building CXX object CMakeFiles/comment_tests.dir/tests/file-comments.cpp.o
+[59/71] Linking CXX executable comment_tests
+[60/71] Building CXX object CMakeFiles/open_as_tests.dir/tests/open-as.cpp.o
+[61/71] Linking CXX executable open_as_tests
+[62/71] Building CXX object CMakeFiles/link_tests.dir/tests/file-links.cpp.o
+[63/71] Linking CXX executable link_tests
+[64/71] Building CXX object CMakeFiles/port_tests.dir/tests/integration.cpp.o
+[65/71] Linking CXX executable port_tests
+[66/71] Building CXX object CMakeFiles/overwrite_tests.dir/tests/overwrite.cpp.o
+[67/71] Linking CXX executable overwrite_tests
+[68/71] Building CXX object CMakeFiles/property_tests.dir/tests/properties.cpp.o
+[69/71] Linking CXX executable property_tests
+[70/71] Building CXX object CMakeFiles/compression_help_tests.dir/tests/compression-help.cpp.o
+[71/71] Linking CXX executable compression_help_tests
+
+=== prefix-regressions.log ===
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 5
+    Start  5: native_progress
+
+5: Test command: /DEPS/build-comments-20261004/native_progress_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+5: Working Directory: /DEPS/build-comments-20261004
+5: Environment variables: 
+5:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+5: Test timeout computed to be: 120
+5: ********* Start testing of NativeProgressTests *********
+5: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+5: PASS   : NativeProgressTests::initTestCase()
+5: PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+5: PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+5: PASS   : NativeProgressTests::encryptedAndFailureRecovery()
+5: PASS   : NativeProgressTests::pauseCancelAndReuse()
+5: PASS   : NativeProgressTests::progressLabelsAndLargeValues()
+5: PASS   : NativeProgressTests::workerPauseCancelAndTimeout()
+5: PASS   : NativeProgressTests::workerUnicodeErrorAndSecret()
+5: PASS   : NativeProgressTests::sourceVerificationPauseCancel()
+5: PASS   : NativeProgressTests::sourceVerificationCallbacks()
+5: PASS   : NativeProgressTests::droppedConsumerDoesNotInterruptEngine()
+5: PASS   : NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()
+5: PASS   : NativeProgressTests::cleanupTestCase()
+5: Totals: 13 passed, 0 failed, 0 skipped, 0 blacklisted, 15021ms
+5: ********* Finished testing of NativeProgressTests *********
+1/4 Test  #5: native_progress ..................   Passed   15.77 sec
+test 7
+    Start  7: editor_writeback
+
+7: Test command: /DEPS/build-comments-20261004/editor_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+7: Working Directory: /DEPS/build-comments-20261004
+7: Environment variables: 
+7:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+7: Test timeout computed to be: 180
+7: ********* Start testing of EditorTests *********
+7: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+7: QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "/TMP/T/ExternalEdit-RaWjSl"
+7: PASS   : EditorTests::initTestCase()
+7: PASS   : EditorTests::processWaitsForDescendants()
+7: PASS   : EditorTests::writeBack(7z)
+7: PASS   : EditorTests::writeBack(zip)
+7: PASS   : EditorTests::writeBack(tar)
+7: PASS   : EditorTests::writeBack(wim)
+7: PASS   : EditorTests::writeBack(gzip)
+7: PASS   : EditorTests::writeBack(bzip2)
+7: PASS   : EditorTests::writeBack(xz)
+7: PASS   : EditorTests::writeBack(7z-data-view)
+7: PASS   : EditorTests::writeBack(7z-headers)
+7: PASS   : EditorTests::writeBack(zip-AES)
+7: PASS   : EditorTests::writeBack(zip-ZipCrypto)
+7: PASS   : EditorTests::discardedOrRetained(no)
+7: PASS   : EditorTests::discardedOrRetained(cancel)
+7: PASS   : EditorTests::discardedOrRetained(other-folder)
+7: PASS   : EditorTests::discardedOrRetained(read-only)
+7: PASS   : EditorTests::discardedOrRetained(removed-item)
+7: PASS   : EditorTests::runningEditorSurvivesClose(modified)
+7: PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+7: PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+7: PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+7: PASS   : EditorTests::focusedFileOnly()
+7: PASS   : EditorTests::applicationBundleWaitAndArguments()
+7: PASS   : EditorTests::observedNewSessionChild()
+7: PASS   : EditorTests::nestedEditorWriteBack()
+7: PASS   : EditorTests::updateCancellationRetainsEdit()
+7: PASS   : EditorTests::twoPanelsSerializeWrites()
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+7: PASS   : EditorTests::cleanupTestCase()
+7: Totals: 32 passed, 0 failed, 0 skipped, 0 blacklisted, 30822ms
+7: ********* Finished testing of EditorTests *********
+2/4 Test  #7: editor_writeback .................   Passed   31.36 sec
+test 10
+    Start 10: file_comments
+
+10: Test command: /DEPS/build-comments-20261004/comment_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+10: Working Directory: /DEPS/build-comments-20261004
+10: Environment variables: 
+10:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+10: Test timeout computed to be: 180
+10: ********* Start testing of CommentTests *********
+10: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+10: QINFO  : CommentTests::initTestCase() Owned comment fixtures: "/TMP/T/FileComments-mpVibY"
+10: PASS   : CommentTests::initTestCase()
+10: PASS   : CommentTests::textPairsCompatibility()
+10: PASS   : CommentTests::filesystemRoundtripAndMetadata()
+10: PASS   : CommentTests::refusedWrites(invalid-utf8)
+10: PASS   : CommentTests::refusedWrites(symlink)
+10: PASS   : CommentTests::refusedWrites(read-only)
+10: PASS   : CommentTests::refusedWrites(hardlink)
+10: PASS   : CommentTests::refusedWrites(duplicate-pairs)
+10: PASS   : CommentTests::refusedWrites(changed)
+10: PASS   : CommentTests::refusedWrites(created)
+10: PASS   : CommentTests::refusedWrites(trim-collision)
+10: PASS   : CommentTests::refusedWrites(quote-name)
+10: PASS   : CommentTests::refusedWrites(newline-value)
+10: PASS   : CommentTests::refusedWrites(permission)
+10: PASS   : CommentTests::refusedWrites(folder-changed)
+10: PASS   : CommentTests::pauseCancelRetainsOriginal()
+10: PASS   : CommentTests::inheritedGroupPreservesOriginal()
+10: PASS   : CommentTests::filesystemFocusedItemAndFlatView()
+10: QINFO  : CommentTests::zipCommentRoundtrip(plain) Independent raw ZIP payload verification passed (including encrypted bytes)
+10: PASS   : CommentTests::zipCommentRoundtrip(plain)
+10: QINFO  : CommentTests::zipCommentRoundtrip(AES) Independent raw ZIP payload verification passed (including encrypted bytes)
+10: PASS   : CommentTests::zipCommentRoundtrip(AES)
+10: QINFO  : CommentTests::zipCommentRoundtrip(ZipCrypto) Independent raw ZIP payload verification passed (including encrypted bytes)
+10: PASS   : CommentTests::zipCommentRoundtrip(ZipCrypto)
+10: PASS   : CommentTests::zipCommentFailureAndCancel()
+10: QINFO  : CommentTests::zipIndependentPayloadVerification(create-bzip2) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+10: PASS   : CommentTests::zipIndependentPayloadVerification(create-bzip2)
+10: QINFO  : CommentTests::zipIndependentPayloadVerification(create-lzma) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+10: PASS   : CommentTests::zipIndependentPayloadVerification(create-lzma)
+10: QINFO  : CommentTests::zipIndependentPayloadVerification(create-zip64) Independent ZIP verification passed: 65539 entries, raw payload/local records, comments and decoded bytes
+10: PASS   : CommentTests::zipIndependentPayloadVerification(create-zip64)
+10: PASS   : CommentTests::zipCryptoDescriptorRetained()
+10: PASS   : CommentTests::zipVirtualFolderNotEditableAndMaximumLength()
+10: PASS   : CommentTests::zipDuplicateNamesCanBeListed()
+10: PASS   : CommentTests::splitZipReadDoesNotRequireDirectHandler()
+10: PASS   : CommentTests::zipGuiCommentAndColumnTransition()
+10: PASS   : CommentTests::cleanupTestCase()
+10: Totals: 31 passed, 0 failed, 0 skipped, 0 blacklisted, 33428ms
+10: ********* Finished testing of CommentTests *********
+3/4 Test #10: file_comments ....................   Passed   34.02 sec
+test 11
+    Start 11: archive_open_modes
+
+11: Test command: /DEPS/build-comments-20261004/open_mode_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+11: Working Directory: /DEPS/build-comments-20261004
+11: Environment variables: 
+11:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+11: Test timeout computed to be: 120
+11: ********* Start testing of OpenModeTests *********
+11: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+11: QINFO  : OpenModeTests::initTestCase() Owned open-mode fixtures: "/TMP/T/ArchiveOpenModes-GzWOeD"
+11: PASS   : OpenModeTests::initTestCase()
+11: PASS   : OpenModeTests::oneLevelAndNormalExtraction()
+11: PASS   : OpenModeTests::parserRegionsExtractAndHash()
+11: PASS   : OpenModeTests::oneLevelWritableZip(comment)
+11: PASS   : OpenModeTests::oneLevelWritableZip(create-folder)
+11: PASS   : OpenModeTests::oneLevelWritableZip(replace-file)
+11: PASS   : OpenModeTests::prefixedUpdates(7z)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-data-password)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-header-password)
+11: PASS   : OpenModeTests::prefixedUpdates(zip)
+11: PASS   : OpenModeTests::prefixedUpdates(zip-AES-password)
+11: PASS   : OpenModeTests::prefixedUpdates(tar)
+11: PASS   : OpenModeTests::prefixedUpdates(wim)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(7z)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(zip)
+11: PASS   : OpenModeTests::updateRejectedLayouts()
+11: PASS   : OpenModeTests::explicitModeFailures(whole-zip-not-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(unrecognized-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(invalid-mode)
+11: PASS   : OpenModeTests::guiOneLevelFocusedAndModeReset()
+11: PASS   : OpenModeTests::guiParserNestedAndRestored()
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(plain-parent)
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(encrypted-parent)
+11: PASS   : OpenModeTests::cleanupTestCase()
+11: Totals: 24 passed, 0 failed, 0 skipped, 0 blacklisted, 8455ms
+11: ********* Finished testing of OpenModeTests *********
+4/4 Test #11: archive_open_modes ...............   Passed    9.17 sec
+
+The following tests passed:
+	native_progress
+	editor_writeback
+	file_comments
+	archive_open_modes
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =  90.33 sec
+
+=== prefix-qt-build-final.log ===
+[1/4] Automatic MOC for target open_mode_tests
+[2/3] Building CXX object CMakeFiles/open_mode_tests.dir/tests/archive-open-modes.cpp.o
+[3/3] Linking CXX executable open_mode_tests
+
+=== prefix-open-final.log ===
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 11
+    Start 11: archive_open_modes
+
+11: Test command: /DEPS/build-comments-20261004/open_mode_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+11: Working Directory: /DEPS/build-comments-20261004
+11: Environment variables: 
+11:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+11: Test timeout computed to be: 120
+11: ********* Start testing of OpenModeTests *********
+11: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+11: QINFO  : OpenModeTests::initTestCase() Owned open-mode fixtures: "/TMP/T/ArchiveOpenModes-TyvtOu"
+11: PASS   : OpenModeTests::initTestCase()
+11: PASS   : OpenModeTests::oneLevelAndNormalExtraction()
+11: PASS   : OpenModeTests::parserRegionsExtractAndHash()
+11: PASS   : OpenModeTests::oneLevelWritableZip(comment)
+11: PASS   : OpenModeTests::oneLevelWritableZip(create-folder)
+11: PASS   : OpenModeTests::oneLevelWritableZip(replace-file)
+11: PASS   : OpenModeTests::prefixedUpdates(7z)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-data-password)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-header-password)
+11: PASS   : OpenModeTests::prefixedUpdates(zip)
+11: PASS   : OpenModeTests::prefixedUpdates(zip-AES-password)
+11: PASS   : OpenModeTests::prefixedUpdates(tar)
+11: PASS   : OpenModeTests::prefixedUpdates(wim)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(7z)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(zip)
+11: PASS   : OpenModeTests::updateRejectedLayouts()
+11: PASS   : OpenModeTests::explicitModeFailures(whole-zip-not-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(unrecognized-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(invalid-mode)
+11: PASS   : OpenModeTests::guiOneLevelFocusedAndModeReset()
+11: PASS   : OpenModeTests::guiParserNestedAndRestored()
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(plain-parent)
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(encrypted-parent)
+11: PASS   : OpenModeTests::cleanupTestCase()
+11: Totals: 24 passed, 0 failed, 0 skipped, 0 blacklisted, 7474ms
+11: ********* Finished testing of OpenModeTests *********
+1/1 Test #11: archive_open_modes ...............   Passed    8.11 sec
+
+The following tests passed:
+	archive_open_modes
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   8.12 sec
+
+=== prefix-folder-regressions.log ===
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-BqbvGx"
+PASS   : Integration::initTestCase()
+PASS   : Integration::archiveFolderCreation(7z)
+PASS   : Integration::archiveFolderCreation(zip)
+PASS   : Integration::archiveFolderCreation(tar)
+PASS   : Integration::archiveFolderCreation(wim)
+PASS   : Integration::archiveFolderCreation(7z-data)
+PASS   : Integration::archiveFolderCreation(7z-headers)
+PASS   : Integration::archiveFolderCreation(zip-AES)
+PASS   : Integration::archiveFolderCreation(zip-ZipCrypto)
+PASS   : Integration::archiveFolderCancelAndProtection()
+PASS   : Integration::archiveFolderNativeWimImagesAndTimes()
+PASS   : Integration::archiveFolderMixedDataPasswords(7z)
+PASS   : Integration::archiveFolderMixedDataPasswords(zip)
+PASS   : Integration::cleanupTestCase()
+Totals: 14 passed, 0 failed, 0 skipped, 0 blacklisted, 7244ms
+********* Finished testing of Integration *********
+
+=== prefix-package.log ===
+/DEPS/build-comments-20261004/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/DEPS/build-comments-20261004/7-Zip Mac.app
+
+=== prefix-normal-bundle.log ===
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+
+=== prefix-startup.log ===
+LaunchServices startup survived 3 seconds; bundled Cocoa plugin verified; owned PID 39566
+Native physical desktop interactions remain unverified.
+

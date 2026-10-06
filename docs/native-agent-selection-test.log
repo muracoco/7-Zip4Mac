@@ -1,0 +1,215 @@
+Executed 2026-10-05 on macOS 26.6.2 / arm64 / Qt 6.11.3.
+Counts include setup and cleanup. The full 151-format matrix was not repeated.
+
+Native selection (final)
+/TMP/T/7zip-agent-tree.DWz6C1/data
+********* Start testing of AgentSelectionTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : AgentSelectionTests::initTestCase()
+PASS   : AgentSelectionTests::sameNameExtractAndHash(first)
+PASS   : AgentSelectionTests::sameNameExtractAndHash(second)
+PASS   : AgentSelectionTests::testOnlyChosenSiblingAndRecover()
+PASS   : AgentSelectionTests::normalAndFlatFolderRules()
+PASS   : AgentSelectionTests::alternateStreamSelection()
+PASS   : AgentSelectionTests::rejectStaleOrInvalidIdentity()
+PASS   : AgentSelectionTests::selectedPathsRemainGuarded()
+PASS   : AgentSelectionTests::encryptedJapaneseSelection()
+PASS   : AgentSelectionTests::selectedExtractionPauseCancelAndReuse()
+PASS   : AgentSelectionTests::guiContextTestUsesSelectedRow()
+PASS   : AgentSelectionTests::cleanupTestCase()
+Totals: 12 passed, 0 failed, 0 skipped, 0 blacklisted, 4793ms
+********* Finished testing of AgentSelectionTests *********
+
+Native tree regression
+/TMP/T/7zip-agent-tree.VHXgGL/data
+********* Start testing of AgentTreeTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : AgentTreeTests::initTestCase()
+PASS   : AgentTreeTests::zipIdentityPropertiesAndTraversal()
+PASS   : AgentTreeTests::nativeAlternateStreamBinding()
+PASS   : AgentTreeTests::cleanupTestCase()
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 401ms
+********* Finished testing of AgentTreeTests *********
+
+Open modes / prefix / nested (final)
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 11
+    Start 11: archive_open_modes
+
+11: Test command: /DEPS/build-comments-20261004/open_mode_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+11: Working Directory: /DEPS/build-comments-20261004
+11: Environment variables: 
+11:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+11: Test timeout computed to be: 120
+11: ********* Start testing of OpenModeTests *********
+11: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+11: QINFO  : OpenModeTests::initTestCase() Owned open-mode fixtures: "/TMP/T/ArchiveOpenModes-JHPJlK"
+11: PASS   : OpenModeTests::initTestCase()
+11: PASS   : OpenModeTests::oneLevelAndNormalExtraction()
+11: PASS   : OpenModeTests::parserRegionsExtractAndHash()
+11: PASS   : OpenModeTests::oneLevelWritableZip(comment)
+11: PASS   : OpenModeTests::oneLevelWritableZip(create-folder)
+11: PASS   : OpenModeTests::oneLevelWritableZip(replace-file)
+11: PASS   : OpenModeTests::prefixedUpdates(7z)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-data-password)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-header-password)
+11: PASS   : OpenModeTests::prefixedUpdates(zip)
+11: PASS   : OpenModeTests::prefixedUpdates(zip-AES-password)
+11: PASS   : OpenModeTests::prefixedUpdates(tar)
+11: PASS   : OpenModeTests::prefixedUpdates(wim)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(7z)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(zip)
+11: PASS   : OpenModeTests::updateRejectedLayouts()
+11: PASS   : OpenModeTests::explicitModeFailures(whole-zip-not-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(unrecognized-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(invalid-mode)
+11: PASS   : OpenModeTests::guiOneLevelFocusedAndModeReset()
+11: PASS   : OpenModeTests::guiParserNestedAndRestored()
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(plain-parent)
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(encrypted-parent)
+11: PASS   : OpenModeTests::cleanupTestCase()
+11: Totals: 24 passed, 0 failed, 0 skipped, 0 blacklisted, 7072ms
+11: ********* Finished testing of OpenModeTests *********
+1/1 Test #11: archive_open_modes ...............   Passed    7.69 sec
+
+The following tests passed:
+	archive_open_modes
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   7.69 sec
+
+Editor write-back (final)
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 7
+    Start 7: editor_writeback
+
+7: Test command: /DEPS/build-comments-20261004/editor_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+7: Working Directory: /DEPS/build-comments-20261004
+7: Environment variables: 
+7:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+7: Test timeout computed to be: 180
+7: ********* Start testing of EditorTests *********
+7: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+7: QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "/TMP/T/ExternalEdit-ODWUFI"
+7: PASS   : EditorTests::initTestCase()
+7: PASS   : EditorTests::processWaitsForDescendants()
+7: PASS   : EditorTests::writeBack(7z)
+7: PASS   : EditorTests::writeBack(zip)
+7: PASS   : EditorTests::writeBack(tar)
+7: PASS   : EditorTests::writeBack(wim)
+7: PASS   : EditorTests::writeBack(gzip)
+7: PASS   : EditorTests::writeBack(bzip2)
+7: PASS   : EditorTests::writeBack(xz)
+7: PASS   : EditorTests::writeBack(7z-data-view)
+7: PASS   : EditorTests::writeBack(7z-headers)
+7: PASS   : EditorTests::writeBack(zip-AES)
+7: PASS   : EditorTests::writeBack(zip-ZipCrypto)
+7: PASS   : EditorTests::discardedOrRetained(no)
+7: PASS   : EditorTests::discardedOrRetained(cancel)
+7: PASS   : EditorTests::discardedOrRetained(other-folder)
+7: PASS   : EditorTests::discardedOrRetained(read-only)
+7: PASS   : EditorTests::discardedOrRetained(removed-item)
+7: PASS   : EditorTests::runningEditorSurvivesClose(modified)
+7: PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+7: PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+7: PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+7: PASS   : EditorTests::focusedFileOnly()
+7: PASS   : EditorTests::applicationBundleWaitAndArguments()
+7: PASS   : EditorTests::observedNewSessionChild()
+7: PASS   : EditorTests::nestedEditorWriteBack()
+7: PASS   : EditorTests::updateCancellationRetainsEdit()
+7: PASS   : EditorTests::twoPanelsSerializeWrites()
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+7: PASS   : EditorTests::cleanupTestCase()
+7: Totals: 32 passed, 0 failed, 0 skipped, 0 blacklisted, 30585ms
+7: ********* Finished testing of EditorTests *********
+1/1 Test #7: editor_writeback .................   Passed   31.47 sec
+
+The following tests passed:
+	editor_writeback
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  31.47 sec
+
+Native progress round trips
+********* Start testing of NativeProgressTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : NativeProgressTests::initTestCase()
+PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+PASS   : NativeProgressTests::cleanupTestCase()
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 1156ms
+********* Finished testing of NativeProgressTests *********
+
+Multi-image WIM
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-gVaZtM"
+PASS   : Integration::initTestCase()
+PASS   : Integration::archiveFolderNativeWimImagesAndTimes()
+PASS   : Integration::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 646ms
+********* Finished testing of Integration *********
+
+Properties (unchanged property path)
+14: ********* Start testing of PropertyTests *********
+14: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+14: PASS   : PropertyTests::initTestCase()
+14: PASS   : PropertyTests::orderedListingAndLayers()
+14: PASS   : PropertyTests::folderIndexImplicitAndFlat()
+14: PASS   : PropertyTests::dialogCopyFullValueAndButtons()
+14: PASS   : PropertyTests::nativeSchemaAndAllColumns()
+14: PASS   : PropertyTests::nativeFlatNameAndPrefixColumns()
+14: PASS   : PropertyTests::nativeEmptyArchiveKeepsSchema()
+14: PASS   : PropertyTests::nativeMultilineCommentsAndLiteralPasswordNames()
+14: PASS   : PropertyTests::nativeWimRawHashAndProxy()
+14: PASS   : PropertyTests::nativeFileTimePrecisionAndUndefinedValues()
+14: PASS   : PropertyTests::nativeTypedIntegersAndRawIdentity()
+14: PASS   : PropertyTests::nativeControlCharacterFilenameRoundTrip()
+14: PASS   : PropertyTests::nativeMetadataDestinationProtection()
+14: PASS   : PropertyTests::guiSingleMultipleUnselectedAndPrefix()
+14: PASS   : PropertyTests::guiNestedAndLayerRestore()
+14: PASS   : PropertyTests::nestedWritebackRefreshesProperties()
+14: PASS   : PropertyTests::singleClickAndFilesystemSubstitute()
+14: PASS   : PropertyTests::destroyAfterClosedProgress()
+14: PASS   : PropertyTests::cleanupTestCase()
+14: Totals: 19 passed, 0 failed, 0 skipped, 0 blacklisted, 2678ms
+14: ********* Finished testing of PropertyTests *********
+
+Release build
+ninja: no work to do.
+
+Packaged app
+/DEPS/build-comments-20261004/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/DEPS/build-comments-20261004/7-Zip Mac.app
+
+Normal app
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+
+Owned LaunchServices startup
+LaunchServices startup survived; owned PID: 52979
+Mapped bundled Cocoa plugin: /DEPS/build/7-Zip Mac.app/Contents/PlugIns/platforms/libqcocoa.dylib
+Bundled native helper executed successfully. Only this owned instance was stopped.

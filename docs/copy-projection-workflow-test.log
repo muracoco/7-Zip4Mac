@@ -1,0 +1,27 @@
+********* Start testing of CopyWorkflowTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : CopyWorkflowTests::initTestCase()
+PASS   : CopyWorkflowTests::archiveBetweenPanels(7z-7z)
+PASS   : CopyWorkflowTests::archiveBetweenPanels(7z-zip)
+PASS   : CopyWorkflowTests::archiveBetweenPanels(zip-7z)
+PASS   : CopyWorkflowTests::archiveBetweenPanels(zip-zip)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-Yes)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-YesAll)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-No)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-NoAll)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-Rename)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(7z-Cancel)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-Yes)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-YesAll)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-No)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-NoAll)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-Rename)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(zip-Cancel)
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput(flat-path-collision)
+PASS   : CopyWorkflowTests::filesystemFlatPathsToArchive(7z-0)
+PASS   : CopyWorkflowTests::filesystemFlatPathsToArchive(7z-1)
+PASS   : CopyWorkflowTests::filesystemFlatPathsToArchive(zip-0)
+PASS   : CopyWorkflowTests::filesystemFlatPathsToArchive(zip-1)
+PASS   : CopyWorkflowTests::cleanupTestCase()
+Totals: 23 passed, 0 failed, 0 skipped, 0 blacklisted, 41949ms
+********* Finished testing of CopyWorkflowTests *********

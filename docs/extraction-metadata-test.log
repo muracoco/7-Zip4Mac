@@ -1,0 +1,553 @@
+Executed extraction checkpoint. Includes the intermittent SMB failure; it is not claimed fixed.
+Host/cache/fixture paths are replaced with placeholders.
+
+=== Affected extraction suites ===
+Internal ctest changing into directory: <DEPENDENCIES>/build-comments-20261004
+UpdateCTestConfiguration  from :<DEPENDENCIES>/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :<DEPENDENCIES>/build-comments-20261004/DartConfiguration.tcl
+Test project <DEPENDENCIES>/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 5
+    Start  5: native_progress
+
+5: Test command: <DEPENDENCIES>/build-comments-20261004/native_progress_tests "<DEPENDENCIES>/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+5: Working Directory: <DEPENDENCIES>/build-comments-20261004
+5: Environment variables: 
+5:  PORT_TEST_PLUGIN_ROOT=<DEPENDENCIES>/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+5: Test timeout computed to be: 120
+5: ********* Start testing of NativeProgressTests *********
+5: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+5: PASS   : NativeProgressTests::initTestCase()
+5: PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+5: PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+5: PASS   : NativeProgressTests::encryptedAndFailureRecovery()
+5: PASS   : NativeProgressTests::pauseCancelAndReuse()
+5: PASS   : NativeProgressTests::progressLabelsAndLargeValues()
+5: PASS   : NativeProgressTests::workerPauseCancelAndTimeout()
+5: PASS   : NativeProgressTests::workerUnicodeErrorAndSecret()
+5: PASS   : NativeProgressTests::sourceVerificationPauseCancel()
+5: PASS   : NativeProgressTests::sourceVerificationCallbacks()
+5: PASS   : NativeProgressTests::droppedConsumerDoesNotInterruptEngine()
+5: PASS   : NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()
+5: PASS   : NativeProgressTests::cleanupTestCase()
+5: Totals: 13 passed, 0 failed, 0 skipped, 0 blacklisted, 10029ms
+5: ********* Finished testing of NativeProgressTests *********
+1/5 Test  #5: native_progress ..................   Passed   10.57 sec
+test 7
+    Start  7: editor_writeback
+
+7: Test command: <DEPENDENCIES>/build-comments-20261004/editor_tests "<DEPENDENCIES>/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+7: Working Directory: <DEPENDENCIES>/build-comments-20261004
+7: Environment variables: 
+7:  PORT_TEST_PLUGIN_ROOT=<DEPENDENCIES>/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+7: Test timeout computed to be: 180
+7: ********* Start testing of EditorTests *********
+7: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+7: QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "<TEMP>"
+7: PASS   : EditorTests::initTestCase()
+7: PASS   : EditorTests::processWaitsForDescendants()
+7: PASS   : EditorTests::writeBack(7z)
+7: PASS   : EditorTests::writeBack(zip)
+7: PASS   : EditorTests::writeBack(tar)
+7: PASS   : EditorTests::writeBack(wim)
+7: PASS   : EditorTests::writeBack(gzip)
+7: PASS   : EditorTests::writeBack(bzip2)
+7: PASS   : EditorTests::writeBack(xz)
+7: PASS   : EditorTests::writeBack(7z-data-view)
+7: PASS   : EditorTests::writeBack(7z-headers)
+7: PASS   : EditorTests::writeBack(zip-AES)
+7: PASS   : EditorTests::writeBack(zip-ZipCrypto)
+7: PASS   : EditorTests::discardedOrRetained(no)
+7: PASS   : EditorTests::discardedOrRetained(cancel)
+7: PASS   : EditorTests::discardedOrRetained(other-folder)
+7: PASS   : EditorTests::discardedOrRetained(read-only)
+7: PASS   : EditorTests::discardedOrRetained(removed-item)
+7: PASS   : EditorTests::runningEditorSurvivesClose(modified)
+7: PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+7: PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+7: PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+7: PASS   : EditorTests::focusedFileOnly()
+7: PASS   : EditorTests::applicationBundleWaitAndArguments()
+7: PASS   : EditorTests::observedNewSessionChild()
+7: PASS   : EditorTests::nestedEditorWriteBack()
+7: PASS   : EditorTests::updateCancellationRetainsEdit()
+7: PASS   : EditorTests::twoPanelsSerializeWrites()
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+7: PASS   : EditorTests::cleanupTestCase()
+7: Totals: 32 passed, 0 failed, 0 skipped, 0 blacklisted, 28834ms
+7: ********* Finished testing of EditorTests *********
+2/5 Test  #7: editor_writeback .................   Passed   29.33 sec
+test 11
+    Start 11: archive_open_modes
+
+11: Test command: <DEPENDENCIES>/build-comments-20261004/open_mode_tests "<DEPENDENCIES>/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+11: Working Directory: <DEPENDENCIES>/build-comments-20261004
+11: Environment variables: 
+11:  PORT_TEST_PLUGIN_ROOT=<DEPENDENCIES>/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+11: Test timeout computed to be: 120
+11: ********* Start testing of OpenModeTests *********
+11: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+11: QINFO  : OpenModeTests::initTestCase() Owned open-mode fixtures: "<TEMP>"
+11: PASS   : OpenModeTests::initTestCase()
+11: PASS   : OpenModeTests::oneLevelAndNormalExtraction()
+11: PASS   : OpenModeTests::parserRegionsExtractAndHash()
+11: PASS   : OpenModeTests::oneLevelWritableZip(comment)
+11: PASS   : OpenModeTests::oneLevelWritableZip(create-folder)
+11: PASS   : OpenModeTests::oneLevelWritableZip(replace-file)
+11: PASS   : OpenModeTests::prefixedUpdates(7z)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-data-password)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-header-password)
+11: PASS   : OpenModeTests::prefixedUpdates(zip)
+11: PASS   : OpenModeTests::prefixedUpdates(zip-AES-password)
+11: PASS   : OpenModeTests::prefixedUpdates(tar)
+11: PASS   : OpenModeTests::prefixedUpdates(wim)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(7z)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(zip)
+11: PASS   : OpenModeTests::updateRejectedLayouts()
+11: PASS   : OpenModeTests::explicitModeFailures(whole-zip-not-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(unrecognized-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(invalid-mode)
+11: PASS   : OpenModeTests::guiOneLevelFocusedAndModeReset()
+11: PASS   : OpenModeTests::guiParserNestedAndRestored()
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(plain-parent)
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(encrypted-parent)
+11: PASS   : OpenModeTests::cleanupTestCase()
+11: Totals: 24 passed, 0 failed, 0 skipped, 0 blacklisted, 6907ms
+11: ********* Finished testing of OpenModeTests *********
+3/5 Test #11: archive_open_modes ...............   Passed    7.37 sec
+test 12
+    Start 12: extraction_metadata
+
+12: Test command: <DEPENDENCIES>/build-comments-20261004/extract_metadata_tests "<DEPENDENCIES>/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+12: Working Directory: <DEPENDENCIES>/build-comments-20261004
+12: Test timeout computed to be: 120
+12: ********* Start testing of ExtractionMetadataTests *********
+12: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+12: PASS   : ExtractionMetadataTests::initTestCase()
+12: PASS   : ExtractionMetadataTests::metadataAndLinks(7z)
+12: PASS   : ExtractionMetadataTests::metadataAndLinks(zip)
+12: PASS   : ExtractionMetadataTests::metadataAndLinks(tar)
+12: PASS   : ExtractionMetadataTests::metadataAndLinks(wim)
+12: PASS   : ExtractionMetadataTests::explicitHardLinkOverwrite(overwrite)
+12: PASS   : ExtractionMetadataTests::explicitHardLinkOverwrite(skip)
+12: PASS   : ExtractionMetadataTests::explicitHardLinkOverwrite(auto-rename)
+12: PASS   : ExtractionMetadataTests::explicitHardLinkOverwrite(rename-existing)
+12: PASS   : ExtractionMetadataTests::existingLeafSymlink(replace)
+12: PASS   : ExtractionMetadataTests::existingLeafSymlink(skip)
+12: PASS   : ExtractionMetadataTests::unsafeLinkAndOutputParent()
+12: PASS   : ExtractionMetadataTests::cleanupTestCase()
+12: Totals: 13 passed, 0 failed, 0 skipped, 0 blacklisted, 260ms
+12: ********* Finished testing of ExtractionMetadataTests *********
+4/5 Test #12: extraction_metadata ..............   Passed    0.61 sec
+test 17
+    Start 17: overwrite
+
+17: Test command: <DEPENDENCIES>/build-comments-20261004/overwrite_tests "<DEPENDENCIES>/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+17: Working Directory: <DEPENDENCIES>/build-comments-20261004
+17: Environment variables: 
+17:  PORT_TEST_PLUGIN_ROOT=<DEPENDENCIES>/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+17: Test timeout computed to be: 120
+17: ********* Start testing of OverwriteTests *********
+17: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+17: PASS   : OverwriteTests::initTestCase()
+17: PASS   : OverwriteTests::choices(individual)
+17: PASS   : OverwriteTests::choices(yes-all)
+17: PASS   : OverwriteTests::choices(no-all)
+17: PASS   : OverwriteTests::choices(auto-rename)
+17: PASS   : OverwriteTests::choices(cancel)
+17: PASS   : OverwriteTests::folderMergeAndSkippedMove()
+17: PASS   : OverwriteTests::renameMoveIdentityAndMetadata()
+17: PASS   : OverwriteTests::renameMoveCollisionAndRollback()
+17: PASS   : OverwriteTests::renameMoveBackupAndLinks()
+17: SKIP   : OverwriteTests::moveOntoSelfAndAcrossVolumes() Set PORT_TEST_SECOND_VOLUME to a writable folder on another volume for cross-device verification.
+17:    Loc: [<REPOSITORY>/tests/overwrite.cpp(105)]
+17: PASS   : OverwriteTests::changedDestinationAndRecovery()
+17: PASS   : OverwriteTests::metadataLinksAndNames()
+17: PASS   : OverwriteTests::extractionRenameExisting(7z)
+17: PASS   : OverwriteTests::extractionRenameExisting(zip)
+17: PASS   : OverwriteTests::readOnlyDestination(copy)
+17: PASS   : OverwriteTests::readOnlyDestination(rename-first-move)
+17: PASS   : OverwriteTests::waitingCancelAndDestruction()
+17: PASS   : OverwriteTests::dialogButtonsAndGuiConnection()
+17: PASS   : OverwriteTests::cleanupTestCase()
+17: Totals: 19 passed, 0 failed, 1 skipped, 0 blacklisted, 1506ms
+17: ********* Finished testing of OverwriteTests *********
+5/5 Test #17: overwrite ........................   Passed    1.93 sec
+
+The following tests passed:
+	native_progress
+	editor_writeback
+	archive_open_modes
+	extraction_metadata
+	overwrite
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =  49.81 sec
+
+=== Native selection ===
+<TEMP>
+********* Start testing of AgentSelectionTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : AgentSelectionTests::initTestCase()
+PASS   : AgentSelectionTests::sameNameExtractAndHash(first)
+PASS   : AgentSelectionTests::sameNameExtractAndHash(second)
+PASS   : AgentSelectionTests::normalAndFlatFolderRules()
+PASS   : AgentSelectionTests::alternateStreamSelection()
+PASS   : AgentSelectionTests::selectedPathsRemainGuarded()
+PASS   : AgentSelectionTests::encryptedJapaneseSelection()
+PASS   : AgentSelectionTests::selectedExtractionPauseCancelAndReuse()
+PASS   : AgentSelectionTests::cleanupTestCase()
+Totals: 9 passed, 0 failed, 0 skipped, 0 blacklisted, 4083ms
+********* Finished testing of AgentSelectionTests *********
+
+=== All-format matrix ===
+Created 151 genuine-format alias fixtures; 0 registration cases pending. Manifest: <TEMP>
+********* Start testing of FormatTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : FormatTests::initTestCase() Genuine format cases 151 PENDING registration fixtures 0
+PASS   : FormatTests::initTestCase()
+PASS   : FormatTests::inventory()
+PASS   : FormatTests::genuineFormats(tar.tar)
+PASS   : FormatTests::genuineFormats(tar.ova)
+PASS   : FormatTests::genuineFormats(7z.7z)
+PASS   : FormatTests::genuineFormats(zip.zip)
+PASS   : FormatTests::genuineFormats(zip.zipx)
+PASS   : FormatTests::genuineFormats(zip.jar)
+PASS   : FormatTests::genuineFormats(zip.xpi)
+PASS   : FormatTests::genuineFormats(zip.odt)
+PASS   : FormatTests::genuineFormats(zip.ods)
+PASS   : FormatTests::genuineFormats(zip.docx)
+PASS   : FormatTests::genuineFormats(zip.xlsx)
+PASS   : FormatTests::genuineFormats(zip.epub)
+PASS   : FormatTests::genuineFormats(zip.ipa)
+PASS   : FormatTests::genuineFormats(zip.apk)
+PASS   : FormatTests::genuineFormats(zip.appx)
+PASS   : FormatTests::genuineFormats(wim.wim)
+PASS   : FormatTests::genuineFormats(wim.swm)
+PASS   : FormatTests::genuineFormats(wim.esd)
+PASS   : FormatTests::genuineFormats(wim.ppkg)
+PASS   : FormatTests::genuineFormats(gzip.gz)
+PASS   : FormatTests::genuineFormats(gzip.gzip)
+PASS   : FormatTests::genuineFormats(gzip.tgz)
+PASS   : FormatTests::genuineFormats(gzip.tpz)
+PASS   : FormatTests::genuineFormats(gzip.apk)
+PASS   : FormatTests::genuineFormats(bzip2.bz2)
+PASS   : FormatTests::genuineFormats(bzip2.bzip2)
+PASS   : FormatTests::genuineFormats(bzip2.tbz2)
+PASS   : FormatTests::genuineFormats(bzip2.tbz)
+PASS   : FormatTests::genuineFormats(xz.xz)
+PASS   : FormatTests::genuineFormats(xz.txz)
+PASS   : FormatTests::genuineFormats(lzma.lzma)
+PASS   : FormatTests::genuineFormats(lzma86.lzma86)
+PASS   : FormatTests::genuineFormats(zstd.zst)
+PASS   : FormatTests::genuineFormats(zstd.tzst)
+PASS   : FormatTests::genuineFormats(Base64.b64)
+PASS   : FormatTests::genuineFormats(IHex.ihex)
+PASS   : FormatTests::genuineFormats(Ar.ar)
+PASS   : FormatTests::genuineFormats(Ar.a)
+PASS   : FormatTests::genuineFormats(Ar.deb)
+PASS   : FormatTests::genuineFormats(Ar.udeb)
+PASS   : FormatTests::genuineFormats(Ar.lib)
+PASS   : FormatTests::genuineFormats(Cpio.cpio)
+PASS   : FormatTests::genuineFormats(Xar.xar)
+PASS   : FormatTests::genuineFormats(Xar.pkg)
+PASS   : FormatTests::genuineFormats(Xar.xip)
+PASS   : FormatTests::genuineFormats(Z.z)
+PASS   : FormatTests::genuineFormats(Z.taz)
+PASS   : FormatTests::genuineFormats(Cab.cab)
+PASS   : FormatTests::genuineFormats(Lzh.lzh)
+PASS   : FormatTests::genuineFormats(Lzh.lha)
+PASS   : FormatTests::genuineFormats(Rar5.rar)
+PASS   : FormatTests::genuineFormats(Rar.rar)
+PASS   : FormatTests::genuineFormats(Rpm.rpm)
+PASS   : FormatTests::genuineFormats(Hash.sha256)
+PASS   : FormatTests::genuineFormats(Hash.sha512)
+PASS   : FormatTests::genuineFormats(Hash.sha384)
+PASS   : FormatTests::genuineFormats(Hash.sha224)
+PASS   : FormatTests::genuineFormats(Hash.sha512-224)
+PASS   : FormatTests::genuineFormats(Hash.sha512-256)
+PASS   : FormatTests::genuineFormats(Hash.sha3-224)
+PASS   : FormatTests::genuineFormats(Hash.sha3-256)
+PASS   : FormatTests::genuineFormats(Hash.sha3-384)
+PASS   : FormatTests::genuineFormats(Hash.sha3-512)
+PASS   : FormatTests::genuineFormats(Hash.sha1)
+PASS   : FormatTests::genuineFormats(Hash.sha2)
+PASS   : FormatTests::genuineFormats(Hash.sha3)
+PASS   : FormatTests::genuineFormats(Hash.sha)
+PASS   : FormatTests::genuineFormats(Hash.md5)
+PASS   : FormatTests::genuineFormats(Hash.blake2s)
+PASS   : FormatTests::genuineFormats(Hash.blake2b)
+PASS   : FormatTests::genuineFormats(Hash.blake2sp)
+PASS   : FormatTests::genuineFormats(Hash.xxh64)
+PASS   : FormatTests::genuineFormats(Hash.crc32)
+PASS   : FormatTests::genuineFormats(Hash.crc64)
+PASS   : FormatTests::genuineFormats(Hash.cksum)
+PASS   : FormatTests::genuineFormats(Hash.asc)
+PASS   : FormatTests::genuineFormats(Chm.chm)
+PASS   : FormatTests::genuineFormats(Chm.chi)
+PASS   : FormatTests::genuineFormats(Chm.chq)
+PASS   : FormatTests::genuineFormats(Chm.chw)
+PASS   : FormatTests::genuineFormats(Hxs.hxs)
+PASS   : FormatTests::genuineFormats(Hxs.hxi)
+PASS   : FormatTests::genuineFormats(Hxs.hxr)
+PASS   : FormatTests::genuineFormats(Hxs.hxq)
+PASS   : FormatTests::genuineFormats(Hxs.hxw)
+PASS   : FormatTests::genuineFormats(Hxs.lit)
+PASS   : FormatTests::genuineFormats(MsLZ.mslz)
+PASS   : FormatTests::genuineFormats(zip.z01)
+PASS   : FormatTests::genuineFormats(Rar.r00)
+PASS   : FormatTests::genuineFormats(Rar5.r00)
+PASS   : FormatTests::genuineFormats(FAT.fat)
+PASS   : FormatTests::genuineFormats(FAT.img)
+PASS   : FormatTests::genuineFormats(MBR.mbr)
+PASS   : FormatTests::genuineFormats(Sparse.simg)
+PASS   : FormatTests::genuineFormats(Sparse.img)
+PASS   : FormatTests::genuineFormats(APM.apm)
+PASS   : FormatTests::genuineFormats(GPT.gpt)
+PASS   : FormatTests::genuineFormats(GPT.mbr)
+PASS   : FormatTests::genuineFormats(VHD.vhd)
+PASS   : FormatTests::genuineFormats(VHDX.vhdx)
+PASS   : FormatTests::genuineFormats(VHDX.avhdx)
+PASS   : FormatTests::genuineFormats(VDI.vdi)
+PASS   : FormatTests::genuineFormats(QCOW.qcow)
+PASS   : FormatTests::genuineFormats(QCOW.qcow2)
+PASS   : FormatTests::genuineFormats(QCOW.qcow2c)
+PASS   : FormatTests::genuineFormats(VMDK.vmdk)
+PASS   : FormatTests::genuineFormats(CramFS.cramfs)
+PASS   : FormatTests::genuineFormats(LP.lpimg)
+PASS   : FormatTests::genuineFormats(LP.img)
+PASS   : FormatTests::genuineFormats(UEFIf.uefif)
+PASS   : FormatTests::genuineFormats(UEFIc.scap)
+PASS   : FormatTests::genuineFormats(Arj.arj)
+PASS   : FormatTests::genuineFormats(Split.001)
+PASS   : FormatTests::genuineFormats(Compound.msi)
+PASS   : FormatTests::genuineFormats(Compound.msp)
+PASS   : FormatTests::genuineFormats(Compound.msm)
+PASS   : FormatTests::genuineFormats(Compound.doc)
+PASS   : FormatTests::genuineFormats(Compound.xls)
+PASS   : FormatTests::genuineFormats(Compound.ppt)
+PASS   : FormatTests::genuineFormats(Compound.aaf)
+PASS   : FormatTests::genuineFormats(PE.exe)
+PASS   : FormatTests::genuineFormats(PE.dll)
+PASS   : FormatTests::genuineFormats(PE.sys)
+PASS   : FormatTests::genuineFormats(TE.te)
+PASS   : FormatTests::genuineFormats(COFF.obj)
+PASS   : FormatTests::genuineFormats(ELF.elf)
+PASS   : FormatTests::genuineFormats(MachO.macho)
+PASS   : FormatTests::genuineFormats(Mub.mub)
+PASS   : FormatTests::genuineFormats(Ppmd.pmd)
+PASS   : FormatTests::genuineFormats(SWF.swf)
+PASS   : FormatTests::genuineFormats(SWFc.swf)
+PASS   : FormatTests::genuineFormats(FLV.flv)
+PASS   : FormatTests::genuineFormats(Nsis.nsis)
+PASS   : FormatTests::genuineFormats(SquashFS.squashfs)
+PASS   : FormatTests::genuineFormats(Ext.ext2)
+PASS   : FormatTests::genuineFormats(Ext.ext3)
+PASS   : FormatTests::genuineFormats(Ext.ext4)
+PASS   : FormatTests::genuineFormats(Ext.ext)
+PASS   : FormatTests::genuineFormats(Ext.img)
+PASS   : FormatTests::genuineFormats(NTFS.ntfs)
+PASS   : FormatTests::genuineFormats(NTFS.img)
+PASS   : FormatTests::genuineFormats(Iso.iso)
+PASS   : FormatTests::genuineFormats(Iso.img)
+PASS   : FormatTests::genuineFormats(Udf.udf)
+PASS   : FormatTests::genuineFormats(Udf.iso)
+PASS   : FormatTests::genuineFormats(Udf.img)
+PASS   : FormatTests::genuineFormats(APFS.apfs)
+PASS   : FormatTests::genuineFormats(APFS.img)
+PASS   : FormatTests::genuineFormats(HFS.hfs)
+PASS   : FormatTests::genuineFormats(HFS.hfsx)
+PASS   : FormatTests::genuineFormats(Dmg.dmg)
+QINFO  : FormatTests::contextCompressionExtraction() Qt context-menu clicks: 7z / ZIP creation, Test, Extract to, Japanese paths and SHA-256 comparison passed
+PASS   : FormatTests::contextCompressionExtraction()
+PASS   : FormatTests::cleanupTestCase()
+Totals: 155 passed, 0 failed, 0 skipped, 0 blacklisted, 14164ms
+********* Finished testing of FormatTests *********
+Coverage: 151 / 151 registration cases passed
+Format reports: <REPOSITORY>/test-results/formats-20261005-042006
+
+=== Transfer/link/SMB run with one failure ===
+Internal ctest changing into directory: <DEPENDENCIES>/build-comments-20261004
+UpdateCTestConfiguration  from :<DEPENDENCIES>/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :<DEPENDENCIES>/build-comments-20261004/DartConfiguration.tcl
+Test project <DEPENDENCIES>/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 4
+    Start  4: archive_transfer
+
+4: Test command: <DEPENDENCIES>/build-comments-20261004/archive_transfer_tests "<DEPENDENCIES>/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+4: Working Directory: <DEPENDENCIES>/build-comments-20261004
+4: Environment variables: 
+4:  PORT_TEST_PLUGIN_ROOT=<DEPENDENCIES>/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+4: Test timeout computed to be: 180
+4: ********* Start testing of ArchiveTransferTests *********
+4: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+4: PASS   : ArchiveTransferTests::initTestCase()
+4: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(7z)
+4: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(zip)
+4: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(tar)
+4: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(wim)
+4: PASS   : ArchiveTransferTests::encryptionInherited(7z-header)
+4: PASS   : ArchiveTransferTests::encryptionInherited(zip-AES)
+4: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(7z)
+4: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(zip)
+4: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(tar)
+4: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(wim)
+4: PASS   : ArchiveTransferTests::invalidPrefixAndDuplicateInputs()
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(gzip-copy)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(gzip-move)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(bzip2-copy)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(bzip2-move)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(xz-copy)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(xz-move)
+4: PASS   : ArchiveTransferTests::moveFileLinkRetainsTarget()
+4: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(7z)
+4: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(zip)
+4: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(tar)
+4: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(wim)
+4: PASS   : ArchiveTransferTests::pauseCancelExistingArchive()
+4: PASS   : ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Copy-context)
+4: PASS   : ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Move-action)
+4: PASS   : ArchiveTransferTests::guiDropIntoFolderFromDifferentParents()
+4: PASS   : ArchiveTransferTests::guiDirectoryLinkMoveRefreshesBothPanels()
+4: PASS   : ArchiveTransferTests::guiVerificationFailureRefreshesCommittedArchive()
+4: PASS   : ArchiveTransferTests::cleanupTestCase()
+4: Totals: 30 passed, 0 failed, 0 skipped, 0 blacklisted, 3760ms
+4: ********* Finished testing of ArchiveTransferTests *********
+1/3 Test  #4: archive_transfer .................   Passed    4.25 sec
+test 14
+    Start 14: file_links
+
+14: Test command: <DEPENDENCIES>/build-comments-20261004/link_tests "<DEPENDENCIES>/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+14: Working Directory: <DEPENDENCIES>/build-comments-20261004
+14: Environment variables: 
+14:  PORT_TEST_PLUGIN_ROOT=<DEPENDENCIES>/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+14: Test timeout computed to be: 120
+14: ********* Start testing of LinkTests *********
+14: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+14: QINFO  : LinkTests::initTestCase() Owned symbolic-link fixtures: "<TEMP>"
+14: PASS   : LinkTests::initTestCase()
+14: PASS   : LinkTests::relativeAbsoluteDanglingAndLoop(relative)
+14: PASS   : LinkTests::relativeAbsoluteDanglingAndLoop(absolute)
+14: PASS   : LinkTests::relativeAbsoluteDanglingAndLoop(dangling)
+14: PASS   : LinkTests::relativeAbsoluteDanglingAndLoop(self-loop)
+14: PASS   : LinkTests::relativeAbsoluteDanglingAndLoop(mutual-loop)
+14: PASS   : LinkTests::directoryAndTypeProtection()
+14: PASS   : LinkTests::externalMutationRefused(target)
+14: PASS   : LinkTests::externalMutationRefused(file)
+14: PASS   : LinkTests::externalMutationRefused(directory)
+14: PASS   : LinkTests::externalMutationRefused(removed)
+14: PASS   : LinkTests::externalMutationRefused(parent)
+14: PASS   : LinkTests::externalMutationRefused(metadata)
+14: PASS   : LinkTests::failedPreparationAndHardLinkedProtection()
+14: PASS   : LinkTests::installationFailuresAndRaces(parent-before)
+14: PASS   : LinkTests::installationFailuresAndRaces(parent-after)
+14: PASS   : LinkTests::installationFailuresAndRaces(rename-failure)
+14: PASS   : LinkTests::installationFailuresAndRaces(rollback)
+14: PASS   : LinkTests::installationFailuresAndRaces(rollback-io-failure)
+14: PASS   : LinkTests::installationFailuresAndRaces(rollback-foreign-entry)
+14: PASS   : LinkTests::installationFailuresAndRaces(stage-name-replaced)
+14: PASS   : LinkTests::metadataPreservedWithoutFollowingTargets()
+14: PASS   : LinkTests::invalidBytesAndOrdinaryFiles()
+14: PASS   : LinkTests::dialogDefaultsEditAndCancel()
+14: PASS   : LinkTests::folderBrowse(from)
+14: PASS   : LinkTests::folderBrowse(to)
+14: PASS   : LinkTests::guiFocusedFlatAndTwoPanels()
+14: PASS   : LinkTests::cleanupTestCase()
+14: Totals: 28 passed, 0 failed, 0 skipped, 0 blacklisted, 578ms
+14: ********* Finished testing of LinkTests *********
+2/3 Test #14: file_links .......................   Passed    1.03 sec
+test 17
+    Start 17: overwrite
+
+17: Test command: <DEPENDENCIES>/build-comments-20261004/overwrite_tests "<DEPENDENCIES>/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+17: Working Directory: <DEPENDENCIES>/build-comments-20261004
+17: Environment variables: 
+17:  PORT_TEST_PLUGIN_ROOT=<DEPENDENCIES>/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+17: Test timeout computed to be: 120
+17: ********* Start testing of OverwriteTests *********
+17: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+17: PASS   : OverwriteTests::initTestCase()
+17: PASS   : OverwriteTests::choices(individual)
+17: PASS   : OverwriteTests::choices(yes-all)
+17: PASS   : OverwriteTests::choices(no-all)
+17: PASS   : OverwriteTests::choices(auto-rename)
+17: PASS   : OverwriteTests::choices(cancel)
+17: PASS   : OverwriteTests::folderMergeAndSkippedMove()
+17: PASS   : OverwriteTests::renameMoveIdentityAndMetadata()
+17: PASS   : OverwriteTests::renameMoveCollisionAndRollback()
+17: PASS   : OverwriteTests::renameMoveBackupAndLinks()
+17: FAIL!  : OverwriteTests::moveOntoSelfAndAcrossVolumes() 'done.last().first().toString().isEmpty()' returned FALSE. (Output or prepared data changed during installation: <REPOSITORY>/7zip-cross-volume-test-MAayRe/folder/日本語 space.txt)
+17:    Loc: [<REPOSITORY>/tests/overwrite.cpp(111)]
+17: PASS   : OverwriteTests::changedDestinationAndRecovery()
+17: PASS   : OverwriteTests::metadataLinksAndNames()
+17: PASS   : OverwriteTests::extractionRenameExisting(7z)
+17: PASS   : OverwriteTests::extractionRenameExisting(zip)
+17: PASS   : OverwriteTests::readOnlyDestination(copy)
+17: PASS   : OverwriteTests::readOnlyDestination(rename-first-move)
+17: PASS   : OverwriteTests::waitingCancelAndDestruction()
+17: PASS   : OverwriteTests::dialogButtonsAndGuiConnection()
+17: PASS   : OverwriteTests::cleanupTestCase()
+17: Totals: 19 passed, 1 failed, 0 skipped, 0 blacklisted, 6063ms
+17: ********* Finished testing of OverwriteTests *********
+3/3 Test #17: overwrite ........................***Failed    6.14 sec
+********* Start testing of OverwriteTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : OverwriteTests::initTestCase()
+PASS   : OverwriteTests::choices(individual)
+PASS   : OverwriteTests::choices(yes-all)
+PASS   : OverwriteTests::choices(no-all)
+PASS   : OverwriteTests::choices(auto-rename)
+PASS   : OverwriteTests::choices(cancel)
+PASS   : OverwriteTests::folderMergeAndSkippedMove()
+PASS   : OverwriteTests::renameMoveIdentityAndMetadata()
+PASS   : OverwriteTests::renameMoveCollisionAndRollback()
+PASS   : OverwriteTests::renameMoveBackupAndLinks()
+FAIL!  : OverwriteTests::moveOntoSelfAndAcrossVolumes() 'done.last().first().toString().isEmpty()' returned FALSE. (Output or prepared data changed during installation: <REPOSITORY>/7zip-cross-volume-test-MAayRe/folder/日本語 space.txt)
+   Loc: [<REPOSITORY>/tests/overwrite.cpp(111)]
+PASS   : OverwriteTests::changedDestinationAndRecovery()
+PASS   : OverwriteTests::metadataLinksAndNames()
+PASS   : OverwriteTests::extractionRenameExisting(7z)
+PASS   : OverwriteTests::extractionRenameExisting(zip)
+PASS   : OverwriteTests::readOnlyDestination(copy)
+PASS   : OverwriteTests::readOnlyDestination(rename-first-move)
+PASS   : OverwriteTests::waitingCancelAndDestruction()
+PASS   : OverwriteTests::dialogButtonsAndGuiConnection()
+PASS   : OverwriteTests::cleanupTestCase()
+Totals: 19 passed, 1 failed, 0 skipped, 0 blacklisted, 6063ms
+********* Finished testing of OverwriteTests *********
+
+
+The following tests passed:
+	archive_transfer
+	file_links
+
+67% tests passed, 1 tests failed out of 3
+
+Total Test time (real) =  11.43 sec
+
+The following tests FAILED:
+	 17 - overwrite (Failed)
+Errors while running CTest
+
+=== Targeted SMB repeat after diagnostic-only change ===
+********* Start testing of OverwriteTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : OverwriteTests::initTestCase()
+PASS   : OverwriteTests::moveOntoSelfAndAcrossVolumes()
+PASS   : OverwriteTests::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 4416ms
+********* Finished testing of OverwriteTests *********

@@ -1,0 +1,23 @@
+********* Start testing of CopyWorkflowTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : CopyWorkflowTests::initTestCase()
+FAIL!  : CopyWorkflowTests::archiveBetweenPanels(7z-7z) Compared values are not the same
+   Actual   (read(root + "/verify/folder/日本語 space.txt")): "owned Unicode \xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9E payload"
+   Expected (QByteArray("new source bytes"))             : "new source bytes"
+   Loc: [/REPOSITORY/tests/copy-workflow.cpp(107)]
+FAIL!  : CopyWorkflowTests::archiveBetweenPanels(7z-zip) Compared values are not the same
+   Actual   (read(root + "/verify/folder/日本語 space.txt")): "owned Unicode \xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9E payload"
+   Expected (QByteArray("new source bytes"))             : "new source bytes"
+   Loc: [/REPOSITORY/tests/copy-workflow.cpp(107)]
+FAIL!  : CopyWorkflowTests::archiveBetweenPanels(zip-7z) Compared values are not the same
+   Actual   (read(root + "/verify/folder/日本語 space.txt")): "owned Unicode \xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9E payload"
+   Expected (QByteArray("new source bytes"))             : "new source bytes"
+   Loc: [/REPOSITORY/tests/copy-workflow.cpp(107)]
+FAIL!  : CopyWorkflowTests::archiveBetweenPanels(zip-zip) Compared values are not the same
+   Actual   (read(root + "/verify/folder/日本語 space.txt")): "owned Unicode \xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9E payload"
+   Expected (QByteArray("new source bytes"))             : "new source bytes"
+   Loc: [/REPOSITORY/tests/copy-workflow.cpp(107)]
+PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput()
+PASS   : CopyWorkflowTests::cleanupTestCase()
+Totals: 3 passed, 4 failed, 0 skipped, 0 blacklisted, 7226ms
+********* Finished testing of CopyWorkflowTests *********

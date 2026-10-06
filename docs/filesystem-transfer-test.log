@@ -1,0 +1,121 @@
+# transfer-verification-release-tests.log
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: native_progress
+
+1: Test command: /DEPS/build-comments-20261004/native_progress_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 120
+1: ********* Start testing of NativeProgressTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : NativeProgressTests::initTestCase()
+1: PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+1: PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+1: PASS   : NativeProgressTests::encryptedAndFailureRecovery()
+1: PASS   : NativeProgressTests::pauseCancelAndReuse()
+1: PASS   : NativeProgressTests::progressLabelsAndLargeValues()
+1: PASS   : NativeProgressTests::workerPauseCancelAndTimeout()
+1: PASS   : NativeProgressTests::workerUnicodeErrorAndSecret()
+1: PASS   : NativeProgressTests::sourceVerificationPauseCancel()
+1: PASS   : NativeProgressTests::sourceVerificationCallbacks()
+1: PASS   : NativeProgressTests::droppedConsumerDoesNotInterruptEngine()
+1: PASS   : NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()
+1: PASS   : NativeProgressTests::cleanupTestCase()
+1: Totals: 13 passed, 0 failed, 0 skipped, 0 blacklisted, 10171ms
+1: ********* Finished testing of NativeProgressTests *********
+1/2 Test  #1: native_progress ..................   Passed   10.76 sec
+test 12
+    Start 12: overwrite
+
+12: Test command: /DEPS/build-comments-20261004/overwrite_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+12: Working Directory: /DEPS/build-comments-20261004
+12: Environment variables: 
+12:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+12: Test timeout computed to be: 120
+12: ********* Start testing of OverwriteTests *********
+12: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+12: PASS   : OverwriteTests::initTestCase()
+12: PASS   : OverwriteTests::choices(individual)
+12: PASS   : OverwriteTests::choices(yes-all)
+12: PASS   : OverwriteTests::choices(no-all)
+12: PASS   : OverwriteTests::choices(auto-rename)
+12: PASS   : OverwriteTests::choices(cancel)
+12: PASS   : OverwriteTests::folderMergeAndSkippedMove()
+12: PASS   : OverwriteTests::renameMoveIdentityAndMetadata()
+12: PASS   : OverwriteTests::renameMoveCollisionAndRollback()
+12: PASS   : OverwriteTests::renameMoveBackupAndLinks()
+12: PASS   : OverwriteTests::moveOntoSelfAndAcrossVolumes()
+12: PASS   : OverwriteTests::changedDestinationAndRecovery()
+12: PASS   : OverwriteTests::metadataLinksAndNames()
+12: PASS   : OverwriteTests::extractionRenameExisting(7z)
+12: PASS   : OverwriteTests::extractionRenameExisting(zip)
+12: PASS   : OverwriteTests::waitingCancelAndDestruction()
+12: PASS   : OverwriteTests::dialogButtonsAndGuiConnection()
+12: PASS   : OverwriteTests::cleanupTestCase()
+12: Totals: 18 passed, 0 failed, 0 skipped, 0 blacklisted, 5576ms
+12: ********* Finished testing of OverwriteTests *********
+2/2 Test #12: overwrite ........................   Passed    5.74 sec
+
+The following tests passed:
+	native_progress
+	overwrite
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  16.51 sec
+
+# transfer-verification-regression.log
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-dKgEJo"
+PASS   : Integration::initTestCase()
+PASS   : Integration::roundtrip(7z)
+PASS   : Integration::roundtrip(zip)
+PASS   : Integration::selectedExtractOverwrite()
+PASS   : Integration::errorsAndRecovery()
+PASS   : Integration::archivePauseResumeAndCancel()
+PASS   : Integration::filePauseResumeAndCancel()
+PASS   : Integration::fileCopyMoveRenameFolder()
+PASS   : Integration::trashAfterVerifiedCompression()
+PASS   : Integration::verifiedTrashOtherFormatsAndUpdateModes()
+PASS   : Integration::cleanupTestCase()
+Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 11761ms
+********* Finished testing of Integration *********
+
+# filesystem-transfer-package.log
+/DEPS/build-comments-20261004/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/DEPS/build-comments-20261004/7-Zip Mac.app
+
+# filesystem-transfer-launch.log
+{
+  "pid": 3407,
+  "nativeLaunchSurvivedSeconds": 3,
+  "bundleCocoaLoaded": true,
+  "mainSections": {
+    "__text": "600a1f02bcda436c81e1ecca9aecf930c4555fa2e7018760ff6af5423560ac22",
+    "__const": "42f728d9452f1ab0c7a4340993e0cd80456830a3b13fb0419d4ad0e7d941643a",
+    "__cstring": "dfa879b33ed7ce8bd03c0fe1f4dba7c477b66bb1f7903c474d12925496e4fe13"
+  },
+  "components": {
+    "Contents/MacOS/7zz": "b3ab9df1c9bc565c4899577149c87e93d36b0ba923960769a9ccd77ee1114e0d",
+    "Contents/MacOS/7zip-comment": "22d3adfa08b9c9f1345816314e6b1c6ba5ce3fe4bf24c710302d4180a7630f63",
+    "Contents/MacOS/7zz-progress": "8278d0dee7d8eb2a13b23995e7e49ce49a4245a6405024117dc4d8ec001f9d78",
+    "Contents/Frameworks/QtPrintSupport.framework/Versions/A/QtPrintSupport": "555262cf4ef1c4f88949e166ec4101f2fd393679194fe20083d97759cb22aba2",
+    "Contents/PlugIns/platforms/libqcocoa.dylib": "f67aa6d42ed9db6692d45a7c258a7c529e770977f2b90db09f287bf06693b034"
+  },
+  "fixture": "/DEPS/filesystem-transfer-launch-d_ncu2qi/files",
+  "physicalRenderingVerified": false
+}
+

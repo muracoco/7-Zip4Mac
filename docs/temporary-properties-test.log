@@ -1,0 +1,85 @@
+Start testing: Oct 05 13:07 JST
+----------------------------------------------------------
+1/20 Testing: native_metadata_formatter
+1/20 Test: native_metadata_formatter
+Command: "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zip-metadata-tests"
+Directory: /DEPS/build-comments-20261004
+"native_metadata_formatter" start time: Oct 05 13:07 JST
+Output:
+----------------------------------------------------------
+PASS: raw CRC upper hex
+PASS: raw checksum upper hex
+PASS: other raw lower hex
+PASS: 64-byte list boundary
+PASS: 65-byte list abbreviation
+PASS: 256-byte Properties boundary
+PASS: 257-byte Properties abbreviation
+PASS: empty raw value
+PASS: portable NT security descriptor
+PASS: short NT security descriptor
+PASS: unsupported NT security revision
+Native metadata formatter: 11 passed, 0 failed
+<end of output>
+Test time =   0.50 sec
+----------------------------------------------------------
+Test Passed.
+"native_metadata_formatter" end time: Oct 05 13:07 JST
+"native_metadata_formatter" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/20 Testing: native_progress
+5/20 Test: native_progress
+Command: "/DEPS/build-comments-20261004/native_progress_tests" "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+Directory: /DEPS/build-comments-20261004
+"native_progress" start time: Oct 05 13:07 JST
+Output:
+----------------------------------------------------------
+********* Start testing of NativeProgressTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : NativeProgressTests::initTestCase()
+PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+PASS   : NativeProgressTests::encryptedAndFailureRecovery()
+PASS   : NativeProgressTests::extractionFailureDialogAndReuse()
+PASS   : NativeProgressTests::pauseCancelAndReuse()
+PASS   : NativeProgressTests::progressLabelsAndLargeValues()
+PASS   : NativeProgressTests::workerPauseCancelAndTimeout()
+PASS   : NativeProgressTests::workerUnicodeErrorAndSecret()
+PASS   : NativeProgressTests::sourceVerificationPauseCancel()
+PASS   : NativeProgressTests::sourceVerificationCallbacks()
+PASS   : NativeProgressTests::droppedConsumerDoesNotInterruptEngine()
+PASS   : NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()
+PASS   : NativeProgressTests::overwriteProtocolFullWidth()
+PASS   : NativeProgressTests::cleanupTestCase()
+Totals: 15 passed, 0 failed, 0 skipped, 0 blacklisted, 10035ms
+********* Finished testing of NativeProgressTests *********
+<end of output>
+Test time =  10.52 sec
+----------------------------------------------------------
+Test Passed.
+"native_progress" end time: Oct 05 13:07 JST
+"native_progress" time elapsed: 00:00:10
+----------------------------------------------------------
+
+
+Final corrected Temporary browser run:
+********* Start testing of TemporaryFilesTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : TemporaryFilesTests::initTestCase()
+PASS   : TemporaryFilesTests::originalFilterAndBoundedCounts()
+PASS   : TemporaryFilesTests::layoutNavigationSortAndOpen(without-dots)
+PASS   : TemporaryFilesTests::layoutNavigationSortAndOpen(with-dots)
+PASS   : TemporaryFilesTests::contextMenuSettingsAndTranslation()
+PASS   : TemporaryFilesTests::propertiesFreshRescanAndAttributes()
+PASS   : TemporaryFilesTests::propertiesLocalizedAndBounded()
+PASS   : TemporaryFilesTests::propertiesMissingItemRefreshes()
+PASS   : TemporaryFilesTests::closeDuringPropertiesAndReuse()
+PASS   : TemporaryFilesTests::linksAndBoundaryAreNotFollowed()
+PASS   : TemporaryFilesTests::activeTempsAndChangedItemsAreRetained()
+PASS   : TemporaryFilesTests::confirmedTrashAndCancelKeepUnrelatedFiles()
+PASS   : TemporaryFilesTests::processFailureAndMenuRemainUsable()
+PASS   : TemporaryFilesTests::closeWhileReadingAndReuse()
+PASS   : TemporaryFilesTests::unreadableChildDoesNotHideOtherTemps()
+PASS   : TemporaryFilesTests::cleanupTestCase()
+Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 6282ms
+********* Finished testing of TemporaryFilesTests *********

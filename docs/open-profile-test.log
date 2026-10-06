@@ -1,0 +1,180 @@
+Official default Open profile: macOS arm64, Qt 6.11.3, 7-Zip 26.03
+Initial fixture result: panel_open 26 passed / 1 failed: extensionless ZIP did not exist because creation appended .zip. Corrected the fixture by renaming the created ZIP before opening.
+
+--- open-profile-test.log ---
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: panel_open
+
+1: Test command: /DEPS/build-comments-20261004/panel_open_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 150
+1: ********* Start testing of PanelOpenTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : PanelOpenTests::initTestCase()
+1: PASS   : PanelOpenTests::officialNameProfile(ZIP-document)
+1: PASS   : PanelOpenTests::officialNameProfile(source)
+1: PASS   : PanelOpenTests::officialNameProfile(archive)
+1: PASS   : PanelOpenTests::officialNameProfile(no-extension)
+1: PASS   : PanelOpenTests::officialNameProfile(directory-dot)
+1: PASS   : PanelOpenTests::officialNameProfile(non-ASCII-casefold)
+1: PASS   : PanelOpenTests::officialNameProfile(33-character-extension)
+1: PASS   : PanelOpenTests::officialNameProfile(four-spaces)
+1: PASS   : PanelOpenTests::officialNameProfile(five-spaces)
+1: PASS   : PanelOpenTests::officialNameProfile(mixed-space-characters)
+1: PASS   : PanelOpenTests::officialNameProfile(RLO)
+1: PASS   : PanelOpenTests::officialNameProfile(POSIX-trailing-dot-space)
+1: PASS   : PanelOpenTests::filesystemContentDetection(7z-unknown)
+1: PASS   : PanelOpenTests::filesystemContentDetection(ZIP-no-extension)
+1: PASS   : PanelOpenTests::filesystemFallbackAndErrors(regular-fallback)
+1: PASS   : PanelOpenTests::filesystemFallbackAndErrors(permission-error)
+1: PASS   : PanelOpenTests::filesystemFallbackAndErrors(Open-Inside-never-falls-back)
+1: PASS   : PanelOpenTests::encryptedUnknownDefaultOpen(password)
+1: PASS   : PanelOpenTests::encryptedUnknownDefaultOpen(password-cancel)
+1: PASS   : PanelOpenTests::filenameWarningBlocksOnlyExternalOpening()
+1: PASS   : PanelOpenTests::officialPlan()
+1: QINFO  : PanelOpenTests::multipleArchiveOpen(7z-Open)  
+1: PASS   : PanelOpenTests::multipleArchiveOpen(7z-Open)
+1: QINFO  : PanelOpenTests::multipleArchiveOpen(ZIP-Open-Outside)  
+1: PASS   : PanelOpenTests::multipleArchiveOpen(ZIP-Open-Outside)
+1: QINFO  : PanelOpenTests::multipleArchiveOpen(ZIP-same-name-Open)  
+1: PASS   : PanelOpenTests::multipleArchiveOpen(ZIP-same-name-Open)
+1: PASS   : PanelOpenTests::markedNestedArchiveUsesItsOwnIdentity()
+1: PASS   : PanelOpenTests::cleanupTestCase()
+1: Totals: 27 passed, 0 failed, 0 skipped, 0 blacklisted, 6242ms
+1: ********* Finished testing of PanelOpenTests *********
+1/2 Test  #1: panel_open .......................   Passed    6.79 sec
+test 14
+    Start 14: archive_open_modes
+
+14: Test command: /DEPS/build-comments-20261004/open_mode_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+14: Working Directory: /DEPS/build-comments-20261004
+14: Environment variables: 
+14:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+14: Test timeout computed to be: 120
+14: ********* Start testing of OpenModeTests *********
+14: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+14: QINFO  : OpenModeTests::initTestCase() Owned open-mode fixtures: "/TMP/T/ArchiveOpenModes-hmMIDM"
+14: PASS   : OpenModeTests::initTestCase()
+14: PASS   : OpenModeTests::oneLevelAndNormalExtraction()
+14: PASS   : OpenModeTests::parserRegionsExtractAndHash()
+14: PASS   : OpenModeTests::oneLevelWritableZip(comment)
+14: PASS   : OpenModeTests::oneLevelWritableZip(create-folder)
+14: PASS   : OpenModeTests::oneLevelWritableZip(replace-file)
+14: PASS   : OpenModeTests::prefixedUpdates(7z)
+14: PASS   : OpenModeTests::prefixedUpdates(7z-data-password)
+14: PASS   : OpenModeTests::prefixedUpdates(7z-header-password)
+14: PASS   : OpenModeTests::prefixedUpdates(zip)
+14: PASS   : OpenModeTests::prefixedUpdates(zip-AES-password)
+14: PASS   : OpenModeTests::prefixedUpdates(tar)
+14: PASS   : OpenModeTests::prefixedUpdates(wim)
+14: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(7z)
+14: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(zip)
+14: PASS   : OpenModeTests::updateRejectedLayouts()
+14: PASS   : OpenModeTests::explicitModeFailures(whole-zip-not-parser)
+14: PASS   : OpenModeTests::explicitModeFailures(unrecognized-parser)
+14: PASS   : OpenModeTests::explicitModeFailures(invalid-mode)
+14: PASS   : OpenModeTests::guiOneLevelFocusedAndModeReset()
+14: PASS   : OpenModeTests::guiParserNestedAndRestored()
+14: PASS   : OpenModeTests::guiNestedParserAndPassword(plain-parent)
+14: PASS   : OpenModeTests::guiNestedParserAndPassword(encrypted-parent)
+14: PASS   : OpenModeTests::cleanupTestCase()
+14: Totals: 24 passed, 0 failed, 0 skipped, 0 blacklisted, 6930ms
+14: ********* Finished testing of OpenModeTests *********
+2/2 Test #14: archive_open_modes ...............   Passed    7.41 sec
+
+The following tests passed:
+	panel_open
+	archive_open_modes
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  14.20 sec
+
+--- open-profile-editor-test.log ---
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 9
+    Start 9: editor_writeback
+
+9: Test command: /DEPS/build-comments-20261004/editor_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+9: Working Directory: /DEPS/build-comments-20261004
+9: Environment variables: 
+9:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+9: Test timeout computed to be: 180
+9: ********* Start testing of EditorTests *********
+9: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+9: QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "/TMP/T/ExternalEdit-YyoGqO"
+9: PASS   : EditorTests::initTestCase()
+9: PASS   : EditorTests::processWaitsForDescendants()
+9: PASS   : EditorTests::independentSameExecutableHandoff(short-unchanged-discovers-server)
+9: PASS   : EditorTests::independentSameExecutableHandoff(changed-client-does-not-discover)
+9: PASS   : EditorTests::independentSameExecutableHandoff(long-client-does-not-discover)
+9: PASS   : EditorTests::independentHandoffArchiveWriteBack()
+9: PASS   : EditorTests::writeBack(7z)
+9: PASS   : EditorTests::writeBack(zip)
+9: PASS   : EditorTests::writeBack(tar)
+9: PASS   : EditorTests::writeBack(wim)
+9: PASS   : EditorTests::writeBack(gzip)
+9: PASS   : EditorTests::writeBack(bzip2)
+9: PASS   : EditorTests::writeBack(xz)
+9: PASS   : EditorTests::writeBack(7z-data-view)
+9: PASS   : EditorTests::writeBack(7z-headers)
+9: PASS   : EditorTests::writeBack(zip-AES)
+9: PASS   : EditorTests::writeBack(zip-ZipCrypto)
+9: PASS   : EditorTests::discardedOrRetained(no)
+9: PASS   : EditorTests::discardedOrRetained(cancel)
+9: PASS   : EditorTests::discardedOrRetained(other-folder)
+9: PASS   : EditorTests::discardedOrRetained(read-only)
+9: PASS   : EditorTests::discardedOrRetained(removed-item)
+9: PASS   : EditorTests::runningEditorSurvivesClose(modified)
+9: PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+9: PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+9: PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+9: PASS   : EditorTests::focusedFileOnly()
+9: PASS   : EditorTests::applicationBundleWaitAndArguments()
+9: PASS   : EditorTests::observedNewSessionChild()
+9: PASS   : EditorTests::nestedEditorWriteBack()
+9: PASS   : EditorTests::updateCancellationRetainsEdit()
+9: PASS   : EditorTests::twoPanelsSerializeWrites()
+9: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+9: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+9: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+9: PASS   : EditorTests::cleanupTestCase()
+9: Totals: 36 passed, 0 failed, 0 skipped, 0 blacklisted, 34940ms
+9: ********* Finished testing of EditorTests *********
+1/1 Test #9: editor_writeback .................   Passed   35.43 sec
+
+The following tests passed:
+	editor_writeback
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  35.44 sec
+
+
+Packaging / startup:
+/DEPS/build-comments-20261004/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/DEPS/build-comments-20261004/7-Zip Mac.app
+codesign --verify --deep --strict: passed.
+Owned bundled app survived 3 seconds with development Qt/DYLD variables removed and isolated preferences. Only the owned process was stopped. Physical desktop interaction not tested.

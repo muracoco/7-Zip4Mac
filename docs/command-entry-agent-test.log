@@ -1,0 +1,16 @@
+/TMP/T/7zip-agent-tree.nICBK3/data
+********* Start testing of AgentSelectionTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : AgentSelectionTests::initTestCase()
+PASS   : AgentSelectionTests::guiSameNameEditorWriteBack(original-name)
+PASS   : AgentSelectionTests::guiSameNameEditorWriteBack(renamed-while-editing)
+PASS   : AgentSelectionTests::guiSameNameEditorWriteBack(ancestor-renamed-while-editing)
+PASS   : AgentSelectionTests::guiSameNameComment()
+PASS   : AgentSelectionTests::guiAncestorFolderRestoration(zip-normal)
+PASS   : AgentSelectionTests::guiAncestorFolderRestoration(zip-flat)
+PASS   : AgentSelectionTests::guiAncestorFolderRestoration(7z-normal)
+PASS   : AgentSelectionTests::guiAncestorFolderRestoration(7z-flat)
+PASS   : AgentSelectionTests::guiSameNameRenameAndDelete()
+PASS   : AgentSelectionTests::cleanupTestCase()
+Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 18335ms
+********* Finished testing of AgentSelectionTests *********

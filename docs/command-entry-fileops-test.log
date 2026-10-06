@@ -1,0 +1,11 @@
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-sODHDj"
+PASS   : Integration::initTestCase()
+PASS   : Integration::filePauseResumeAndCancel()
+PASS   : Integration::splitCombineAndFailures()
+PASS   : Integration::fileCopyMoveRenameFolder()
+PASS   : Integration::guiArchiveFolderCreation()
+PASS   : Integration::cleanupTestCase()
+Totals: 6 passed, 0 failed, 0 skipped, 0 blacklisted, 5170ms
+********* Finished testing of Integration *********

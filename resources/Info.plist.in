@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>7-Zip Mac</string>
+<key>CFBundleIdentifier</key><string>org.sevenzip.macport</string>
+<key>CFBundleName</key><string>7-Zip Mac Port</string>
+<key>CFBundleDisplayName</key><string>7-Zip Mac Port</string>
+<key>CFBundleVersion</key><string>@PROJECT_VERSION@</string>
+<key>CFBundleShortVersionString</key><string>@PROJECT_VERSION@</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleIconFile</key><string>7zip.icns</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>LSMinimumSystemVersion</key><string>15.0</string>
+<key>CFBundleDocumentTypes</key><array><dict>
+<key>CFBundleTypeName</key><string>7-Zip Archive</string>
+<key>CFBundleTypeRole</key><string>Viewer</string>
+<key>LSHandlerRank</key><string>Alternate</string>
+<key>CFBundleTypeExtensions</key><array>@PORT_ARCHIVE_EXTENSIONS@</array>
+</dict><dict>
+<key>CFBundleTypeName</key><string>Files and Folders for 7-Zip</string>
+<key>CFBundleTypeRole</key><string>Viewer</string>
+<key>LSHandlerRank</key><string>Alternate</string>
+<key>LSItemContentTypes</key><array><string>public.data</string><string>public.folder</string></array>
+</dict></array>
+</dict></plist>

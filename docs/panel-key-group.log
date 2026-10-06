@@ -1,0 +1,196 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: copy_workflow
+
+1: Test command: /DEPS/build-comments-20261004/copy_workflow_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 180
+1: ********* Start testing of CopyWorkflowTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : CopyWorkflowTests::initTestCase()
+1: PASS   : CopyWorkflowTests::originalDialogAndSummary()
+1: PASS   : CopyWorkflowTests::copyHistoryLimitAndCancellation()
+1: PASS   : CopyWorkflowTests::filesystemDestination(copy-filename)
+1: PASS   : CopyWorkflowTests::filesystemDestination(copy-directory)
+1: PASS   : CopyWorkflowTests::filesystemDestination(move-filename)
+1: PASS   : CopyWorkflowTests::filesystemDestination(move-directory)
+1: PASS   : CopyWorkflowTests::destinationPreparationFailureKeepsHistoryAndSource()
+1: PASS   : CopyWorkflowTests::focusedShiftCopyMove(shift-copy)
+1: PASS   : CopyWorkflowTests::focusedShiftCopyMove(shift-move)
+1: PASS   : CopyWorkflowTests::archiveToFilesystem(7z-0)
+1: PASS   : CopyWorkflowTests::archiveToFilesystem(7z-1)
+1: PASS   : CopyWorkflowTests::archiveToFilesystem(zip-0)
+1: PASS   : CopyWorkflowTests::archiveToFilesystem(zip-1)
+1: PASS   : CopyWorkflowTests::archiveBetweenPanels(7z-7z)
+1: PASS   : CopyWorkflowTests::archiveBetweenPanels(7z-zip)
+1: PASS   : CopyWorkflowTests::archiveBetweenPanels(zip-7z)
+1: PASS   : CopyWorkflowTests::archiveBetweenPanels(zip-zip)
+1: PASS   : CopyWorkflowTests::selfCopyAndWindowsArchiveMoveError()
+1: PASS   : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs()
+1: PASS   : CopyWorkflowTests::duplicateRowsDoNotBecomeSingleArchiveInput()
+1: PASS   : CopyWorkflowTests::combineUsesOriginalCopyDialog()
+1: PASS   : CopyWorkflowTests::cleanupTestCase()
+1: Totals: 23 passed, 0 failed, 0 skipped, 0 blacklisted, 18314ms
+1: ********* Finished testing of CopyWorkflowTests *********
+1/5 Test  #1: copy_workflow ....................   Passed   18.95 sec
+test 2
+    Start  2: command_entry
+
+2: Test command: /DEPS/build-comments-20261004/command_entry_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+2: Working Directory: /DEPS/build-comments-20261004
+2: Environment variables: 
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 180
+2: ********* Start testing of CommandEntryTests *********
+2: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+2: QINFO  : CommandEntryTests::initTestCase() Owned command-entry fixtures: "/TMP/T/7zip-command-entry-test-FNPoei"
+2: PASS   : CommandEntryTests::initTestCase()
+2: PASS   : CommandEntryTests::comboResourceAndResize()
+2: PASS   : CommandEntryTests::sourceWildcard(normal)
+2: PASS   : CommandEntryTests::sourceWildcard(alternative)
+2: PASS   : CommandEntryTests::inlineRename(view0-0)
+2: PASS   : CommandEntryTests::inlineRename(view0-1)
+2: PASS   : CommandEntryTests::inlineRename(view1-0)
+2: PASS   : CommandEntryTests::inlineRename(view1-1)
+2: PASS   : CommandEntryTests::inlineRename(view2-0)
+2: PASS   : CommandEntryTests::inlineRename(view2-1)
+2: PASS   : CommandEntryTests::inlineRename(view3-0)
+2: PASS   : CommandEntryTests::inlineRename(view3-1)
+2: PASS   : CommandEntryTests::partialRowSelection()
+2: PASS   : CommandEntryTests::closeDuringInlineEdit()
+2: PASS   : CommandEntryTests::exclusiveRename(case)
+2: PASS   : CommandEntryTests::exclusiveRename(symlink)
+2: PASS   : CommandEntryTests::exclusiveRename(hardlink)
+2: PASS   : CommandEntryTests::exclusiveRename(existing)
+2: PASS   : CommandEntryTests::exclusiveRename(readonly)
+2: PASS   : CommandEntryTests::exclusiveRename(cancel)
+2: PASS   : CommandEntryTests::exclusiveRename(parent-permission)
+2: PASS   : CommandEntryTests::exclusiveRename(folder)
+2: PASS   : CommandEntryTests::creationAndSelection()
+2: PASS   : CommandEntryTests::archiveRenameAndCreate(7z)
+2: PASS   : CommandEntryTests::archiveRenameAndCreate(zip)
+2: PASS   : CommandEntryTests::historyDeleteAcceptAndCancel()
+2: PASS   : CommandEntryTests::cleanupTestCase()
+2: Totals: 27 passed, 0 failed, 0 skipped, 0 blacklisted, 10330ms
+2: ********* Finished testing of CommandEntryTests *********
+2/5 Test  #2: command_entry ....................   Passed   10.79 sec
+test 3
+    Start  3: panel_key
+
+3: Test command: /DEPS/build-comments-20261004/panel_key_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+3: Working Directory: /DEPS/build-comments-20261004
+3: Environment variables: 
+3:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+3: Test timeout computed to be: 180
+3: ********* Start testing of PanelKeyTests *********
+3: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+3: PASS   : PanelKeyTests::initTestCase()
+3: PASS   : PanelKeyTests::focusedRenameWithoutMarks(details)
+3: PASS   : PanelKeyTests::focusedRenameWithoutMarks(icons)
+3: PASS   : PanelKeyTests::relativeFilesystemRename(ordinary-child-path)
+3: PASS   : PanelKeyTests::relativeFilesystemRename(flat-parent-relative)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(existing)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(missing-parent)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(dot)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(dot-parent)
+3: PASS   : PanelKeyTests::relativeArchiveRename(7z-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(7z-1)
+3: PASS   : PanelKeyTests::relativeArchiveRename(zip-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(zip-1)
+3: PASS   : PanelKeyTests::relativeArchiveRename(tar-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(tar-1)
+3: PASS   : PanelKeyTests::relativeArchiveRename(wim-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(wim-1)
+3: PASS   : PanelKeyTests::shiftF4AndAltPathFocus()
+3: PASS   : PanelKeyTests::otherPanelFilesystemNavigation()
+3: PASS   : PanelKeyTests::otherPanelArchiveNavigation(7z)
+3: PASS   : PanelKeyTests::otherPanelArchiveNavigation(zip)
+3: PASS   : PanelKeyTests::sharedNestedLifetimeAndParent()
+3: PASS   : PanelKeyTests::clipboardUsesExactNames()
+3: PASS   : PanelKeyTests::symbolicFolderBrowseAndRename()
+3: PASS   : PanelKeyTests::cleanupTestCase()
+3: Totals: 25 passed, 0 failed, 0 skipped, 0 blacklisted, 15255ms
+3: ********* Finished testing of PanelKeyTests *********
+3/5 Test  #3: panel_key ........................   Passed   15.73 sec
+test 13
+    Start 13: panel_selection
+
+13: Test command: /DEPS/build-comments-20261004/panel_selection_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+13: Working Directory: /DEPS/build-comments-20261004
+13: Environment variables: 
+13:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+13: Test timeout computed to be: 90
+13: ********* Start testing of PanelSelectionTests *********
+13: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+13: PASS   : PanelSelectionTests::initTestCase()
+13: PASS   : PanelSelectionTests::independentMarks(details)
+13: PASS   : PanelSelectionTests::independentMarks(icons)
+13: PASS   : PanelSelectionTests::insertAndParent(details)
+13: PASS   : PanelSelectionTests::insertAndParent(icons)
+13: PASS   : PanelSelectionTests::shiftArrowMarks(details)
+13: PASS   : PanelSelectionTests::shiftArrowMarks(icons)
+13: PASS   : PanelSelectionTests::ctrlShiftClickRange(details)
+13: PASS   : PanelSelectionTests::ctrlShiftClickRange(icons)
+13: PASS   : PanelSelectionTests::standardSelection(details)
+13: PASS   : PanelSelectionTests::standardSelection(icons)
+13: PASS   : PanelSelectionTests::paintAndSort()
+13: PASS   : PanelSelectionTests::mainWindowRoundtrip(7z)
+13: PASS   : PanelSelectionTests::mainWindowRoundtrip(zip)
+13: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 12
+13: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 14
+13: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 11
+13: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 13
+13: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 20
+13: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 16
+13: PASS   : PanelSelectionTests::independentPanelsAndModeSwitch()
+13: PASS   : PanelSelectionTests::cleanupTestCase()
+13: Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 3700ms
+13: ********* Finished testing of PanelSelectionTests *********
+4/5 Test #13: panel_selection ..................   Passed    4.17 sec
+test 22
+    Start 22: folder_statistics
+
+22: Test command: /DEPS/build-comments-20261004/statistics_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+22: Working Directory: /DEPS/build-comments-20261004
+22: Environment variables: 
+22:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+22: Test timeout computed to be: 120
+22: ********* Start testing of StatisticsTests *********
+22: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+22: QINFO  : StatisticsTests::initTestCase() Owned folder-statistics fixtures: "/TMP/T/FolderStatistics-gRXIoM"
+22: PASS   : StatisticsTests::initTestCase()
+22: PASS   : StatisticsTests::countsUnicodeHiddenLinksAndSparseFile()
+22: PASS   : StatisticsTests::errorsAndCompletedSibling()
+22: PASS   : StatisticsTests::pauseResumeCancelAndReuse(resume)
+22: PASS   : StatisticsTests::pauseResumeCancelAndReuse(cancel)
+22: PASS   : StatisticsTests::selectedFoldersTakePrecedence(details)
+22: PASS   : StatisticsTests::selectedFoldersTakePrecedence(icons)
+22: PASS   : StatisticsTests::selectedFoldersTakePrecedence(flat)
+22: PASS   : StatisticsTests::guiErrorDoesNotDisplayPartialCounts()
+22: PASS   : StatisticsTests::guiCancelAndClose()
+22: PASS   : StatisticsTests::cleanupTestCase()
+22: Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 12317ms
+22: ********* Finished testing of StatisticsTests *********
+5/5 Test #22: folder_statistics ................   Passed   13.76 sec
+
+The following tests passed:
+	copy_workflow
+	command_entry
+	panel_key
+	panel_selection
+	folder_statistics
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =  63.40 sec

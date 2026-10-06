@@ -1,0 +1,48 @@
+# Local follow-up to Qt Gerrit 765434, for Qt Widgets cell ownership.
+# Copyright (C) 2026 7-Zip Mac Port contributors
+# SPDX-License-Identifier: LGPL-3.0-or-later
+# Unlike the upstream candidate, this preserves QAccessibleTable's cached
+# child interfaces until its model-change/destruction code releases them.
+--- a/src/plugins/platforms/cocoa/qcocoaaccessibilityelement.mm
++++ b/src/plugins/platforms/cocoa/qcocoaaccessibilityelement.mm
+@@ -82,6 +82,22 @@
+         *start = curStart;
+     if (end)
+         *end = curEnd;
++}
++
++// Qt Widgets item views retain their cell interfaces in childToId until a
++// model change or destruction. Cocoa representations must not delete those
++// interfaces independently, or the view keeps dangling accessibility IDs.
++static bool isWidgetOwnedCell(QAccessible::Id identifier)
++{
++    QAccessibleInterface *iface = QAccessible::accessibleInterface(identifier);
++    if (!iface || iface->object())
++        return false;
++    if (iface->role() != QAccessible::Cell && iface->role() != QAccessible::ListItem
++            && iface->role() != QAccessible::TreeItem)
++        return false;
++    QAccessibleInterface *parent = iface->parent();
++    QObject *owner = parent ? parent->object() : nullptr;
++    return owner && owner->inherits("QAbstractItemView");
+ }
+ 
+ @implementation QMacAccessibilityElement {
+@@ -219,7 +235,7 @@
+ + (void)removeElementsFromCache:(NSArray *)array {
+     for (uint i = 0; i < array.count; ++i) {
+         QMacAccessibilityElement *cell = [array objectAtIndex:i];
+-        if (cell->axid && !cell.isManagedByParent) {
++        if (cell->axid && !cell.isManagedByParent && !isWidgetOwnedCell(cell->axid)) {
+             // Proper cells own their interface. Synthesized elements use their
+             // parent table's ID and must not remove that interface.
+             QAccessibleCache::instance()->deleteInterface(cell->axid);
+@@ -265,7 +281,7 @@
+         [QMacAccessibilityElement removeElementsFromCache:columns];
+         [columns release]; // will also release all entries first
+     }
+-    if (axid && !self.isManagedByParent)
++    if (axid && !self.isManagedByParent && !isWidgetOwnedCell(axid))
+         QAccessibleCache::instance()->deleteInterface(axid);
+     [super dealloc];
+ }

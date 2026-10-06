@@ -1,0 +1,100 @@
+{
+  "kind": "Actual Finder routing and operation output verification",
+  "testedApplicationSourceRevision": "5aba56d82fc9e9ff64a3031951c494abdae3e97b",
+  "finderQuickCompression7z": true,
+  "finderQuickCompressionZip": true,
+  "bothOutputsTestedExtractedAndSHA256Matched": true,
+  "finderGuiTestExtractionClaimed": false,
+  "genericFinderCandidateLaunchedOldBuild": true,
+  "sameBundleIdentifierAndVersionAcrossOldAndNew": true,
+  "explicitCurrentArchiveChooserOpenEnabled": false,
+  "readOnlyLaunchServicesCanAccept": {
+    "txt": true,
+    "7z": true,
+    "zip": true,
+    "status": 0
+  },
+  "currentRegistrationRefreshResolvedChooser": false,
+  "globalDefaultHandlerChanged": false,
+  "candidateProjectVersion": "0.2.0",
+  "candidateVersionBuildPassed": true,
+  "dialogResourcesCTestPassed": true,
+  "dialogResourcesSeconds": 2.43,
+  "extensionDeclarationsRetained": 138,
+  "publicRepositoryPublished": false,
+  "reports": [
+    {
+      "localReport": "finder-7z-verification.json",
+      "sha256": "13f8aff4e3a2cb5a36e8a80ca56ee7627238b4c3b29d0e9884b49a0ce5193f38"
+    },
+    {
+      "localReport": "finder-zip-verification.json",
+      "sha256": "5aadf9fc9124a7d6313b14b4d3bb32ebea5485771dea48509c9db37ee4ac5808"
+    },
+    {
+      "localReport": "launchservices-registration.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "localReport": "version-build.log",
+      "sha256": "d59e3749c70eaea4111bfc0c97097a1d23bc5bf974c15b98358115714bccde0b"
+    },
+    {
+      "localReport": "version-dialog-test.log",
+      "sha256": "903eb6124a85aec62d5bb6e61c3723a110946be47fdebc736030755fa1f80a44"
+    },
+    {
+      "localReport": "finder-gui-zip-verification.json",
+      "sha256": "d3bf00ba7b35e14d48ff6e5956f7b6b0e531ef3b4e02681bcd009ba10598cce4"
+    },
+    {
+      "localReport": "source-time-engine-repro.json",
+      "sha256": "9a98553dc3af52cf2a5cc60be7951c7567b01df33700a8bb4e37d68bd74a065b"
+    },
+    {
+      "localReport": "source-time-add-extract-repro.json",
+      "sha256": "5034a7756806f73ff02c90138d94a9c94380fe579b95dd572c81688dc2f2a45c"
+    },
+    {
+      "localReport": "blank-time-backend-repro.json",
+      "sha256": "c20d4785116dff52e51a0766e84dfb5cec960e005cf9edb4e16728f14990be8c"
+    },
+    {
+      "localReport": "zero-time-before-test.log",
+      "sha256": "1dfa2eaf8b186117cefa6176ea5d465f0f075d2bebad8417ed58df710063068e"
+    },
+    {
+      "localReport": "zero-time-affected-tests.log",
+      "sha256": "b044dafbb1b80c1a44f168a6e1a084dedbcc818c828be7b3a7c32d5f9c793a79"
+    },
+    {
+      "localReport": "zero-time-metadata-suite.log",
+      "sha256": "975c6721978d8b631e4d6bcf7dc6deee48aacbcf75a82e790172311f21892622"
+    },
+    {
+      "localReport": "zero-time-app-build.log",
+      "sha256": "aad8e7a18aa9657f9e749ec1e166a30967dd8fc7a1e6b090c19198e641c93cbf"
+    }
+  ],
+  "candidateDesktop": {
+    "sourceRevision": "b8daa3268d5b8b7695c7b3b39036eb610a8a47db",
+    "version": "0.2.0",
+    "aboutObserved": true,
+    "versionedFinderZipRoute": true,
+    "guiTestNoErrors": true,
+    "guiExtractToNewFolderAndSHA256Matched": true,
+    "lastManagerOpenedZip": true,
+    "backspaceReturnedToFilesystem": true,
+    "coordinateContextInputDelivered": false,
+    "coordinateContextRejection": "noWindowsAvailable",
+    "physicalFinderDragClaimed": false
+  },
+  "zipTimestampRepair": {
+    "officialConsoleReproduction": true,
+    "compressionMutationReproduced": false,
+    "oldAdapterRegressionFailed": true,
+    "affectedQtCases": 7,
+    "affectedSuitePassed": true,
+    "affectedSuiteSeconds": 19.95
+  }
+}

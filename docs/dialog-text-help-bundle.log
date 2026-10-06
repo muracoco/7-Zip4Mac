@@ -1,0 +1,7 @@
+/DEPS/build-comments-20261004/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/DEPS/build-comments-20261004/7-Zip Mac.app
+Owned isolated startup: alive after 3 seconds
+Owned startup stdout bytes: 0 stderr bytes: 0
+Development QT/DYLD/test plugin paths removed; owned temporary preferences and Japanese/space folder.
+Only the owned process was stopped. This checks startup, not physical Finder/click input.

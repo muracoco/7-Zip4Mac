@@ -1,0 +1,11 @@
+build*/
+.deps*/
+.DS_Store
+*.user
+aqtinstall.log
+test-results/
+__pycache__/
+*.pyc
+7zip-cross-volume-test-*/
+SOURCE-MANIFEST.json
+PUBLICATION-REVIEW.json

@@ -1,0 +1,129 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 3
+    Start 3: panel_key
+
+3: Test command: /DEPS/build-comments-20261004/panel_key_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+3: Working Directory: /DEPS/build-comments-20261004
+3: Environment variables: 
+3:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+3: Test timeout computed to be: 180
+3: ********* Start testing of PanelKeyTests *********
+3: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+3: PASS   : PanelKeyTests::initTestCase()
+3: PASS   : PanelKeyTests::focusedRenameWithoutMarks(details)
+3: PASS   : PanelKeyTests::focusedRenameWithoutMarks(icons)
+3: PASS   : PanelKeyTests::relativeFilesystemRename(ordinary-child-path)
+3: PASS   : PanelKeyTests::relativeFilesystemRename(flat-parent-relative)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(existing)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(missing-parent)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(dot)
+3: PASS   : PanelKeyTests::renameFailuresKeepBothFiles(dot-parent)
+3: PASS   : PanelKeyTests::relativeArchiveRename(7z-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(7z-1)
+3: PASS   : PanelKeyTests::relativeArchiveRename(zip-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(zip-1)
+3: PASS   : PanelKeyTests::relativeArchiveRename(tar-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(tar-1)
+3: PASS   : PanelKeyTests::relativeArchiveRename(wim-0)
+3: PASS   : PanelKeyTests::relativeArchiveRename(wim-1)
+3: PASS   : PanelKeyTests::shiftF4AndAltPathFocus()
+3: PASS   : PanelKeyTests::otherPanelFilesystemNavigation()
+3: PASS   : PanelKeyTests::otherPanelArchiveNavigation(7z)
+3: PASS   : PanelKeyTests::otherPanelArchiveNavigation(zip)
+3: PASS   : PanelKeyTests::sharedNestedLifetimeAndParent()
+3: PASS   : PanelKeyTests::scanDoesNotStealExplicitAddressFocus()
+3: PASS   : PanelKeyTests::clipboardUsesExactNames()
+3: PASS   : PanelKeyTests::symbolicFolderBrowseAndRename()
+3: PASS   : PanelKeyTests::cleanupTestCase()
+3: Totals: 26 passed, 0 failed, 0 skipped, 0 blacklisted, 15723ms
+3: ********* Finished testing of PanelKeyTests *********
+1/3 Test #3: panel_key ........................   Passed   16.28 sec
+test 4
+    Start 4: address_workflow
+
+4: Test command: /DEPS/build-comments-20261004/address_workflow_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+4: Working Directory: /DEPS/build-comments-20261004
+4: Environment variables: 
+4:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+4: Test timeout computed to be: 180
+4: ********* Start testing of AddressWorkflowTests *********
+4: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+4: PASS   : AddressWorkflowTests::initTestCase()
+4: PASS   : AddressWorkflowTests::creationPaths(file-absolute)
+4: PASS   : AddressWorkflowTests::creationPaths(file-parent)
+4: PASS   : AddressWorkflowTests::creationPaths(file-dot)
+4: PASS   : AddressWorkflowTests::creationPaths(file-literal)
+4: PASS   : AddressWorkflowTests::creationPaths(folder-absolute)
+4: PASS   : AddressWorkflowTests::creationPaths(folder-parent)
+4: PASS   : AddressWorkflowTests::creationPaths(folder-dot)
+4: PASS   : AddressWorkflowTests::creationPaths(folder-literal)
+4: PASS   : AddressWorkflowTests::creationFailures(existing-file)
+4: PASS   : AddressWorkflowTests::creationFailures(existing-directory)
+4: PASS   : AddressWorkflowTests::creationFailures(missing-parent)
+4: PASS   : AddressWorkflowTests::creationFailures(symlink-parent)
+4: PASS   : AddressWorkflowTests::creationFailures(readonly-parent)
+4: PASS   : AddressWorkflowTests::creationFailures(trailing-file-slash)
+4: PASS   : AddressWorkflowTests::creationFailures(embedded-null)
+4: PASS   : AddressWorkflowTests::creationFailures(existing-link)
+4: PASS   : AddressWorkflowTests::addressEnterEscapeAndTab()
+4: PASS   : AddressWorkflowTests::dropdownAncestorSelection()
+4: PASS   : AddressWorkflowTests::nestedDropdownSelection()
+4: PASS   : AddressWorkflowTests::panelAndAddressKeys(0)
+4: PASS   : AddressWorkflowTests::panelAndAddressKeys(3)
+4: PASS   : AddressWorkflowTests::originalSortAndSelectionDispatch()
+4: PASS   : AddressWorkflowTests::headerToggleAndClose()
+4: PASS   : AddressWorkflowTests::cleanupTestCase()
+4: Totals: 25 passed, 0 failed, 0 skipped, 0 blacklisted, 7479ms
+4: ********* Finished testing of AddressWorkflowTests *********
+2/3 Test #4: address_workflow .................   Passed    7.95 sec
+test 5
+    Start 5: panel_listing
+
+5: Test command: /DEPS/build-comments-20261004/panel_listing_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+5: Working Directory: /DEPS/build-comments-20261004
+5: Environment variables: 
+5:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+5: Test timeout computed to be: 180
+5: ********* Start testing of ListingTests *********
+5: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+5: QINFO  : ListingTests::initTestCase() Owned listing fixtures: "/TMP/T/PanelListing-zPEqTV"
+5: PASS   : ListingTests::initTestCase()
+5: PASS   : ListingTests::originalDisplayAndDeferredProperties()
+5: PASS   : ListingTests::displayedNameKeepsRealFilesystemIdentity()
+5: PASS   : ListingTests::asynchronousSortKeepsExactValuesMarksFocusAndUnsorted()
+5: PASS   : ListingTests::supersededSortClearAndDestruction()
+5: PASS   : ListingTests::nativeIconsBothKindsAndNavigation()
+5: PASS   : ListingTests::archiveRawNameRename(7z)
+3/3 Test #5: panel_listing ....................SIGTRAP***Exception:   7.71 sec
+********* Start testing of ListingTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : ListingTests::initTestCase() Owned listing fixtures: "/TMP/T/PanelListing-zPEqTV"
+PASS   : ListingTests::initTestCase()
+PASS   : ListingTests::originalDisplayAndDeferredProperties()
+PASS   : ListingTests::displayedNameKeepsRealFilesystemIdentity()
+PASS   : ListingTests::asynchronousSortKeepsExactValuesMarksFocusAndUnsorted()
+PASS   : ListingTests::supersededSortClearAndDestruction()
+PASS   : ListingTests::nativeIconsBothKindsAndNavigation()
+PASS   : ListingTests::archiveRawNameRename(7z)
+
+
+The following tests passed:
+	panel_key
+	address_workflow
+
+67% tests passed, 1 tests failed out of 3
+
+Total Test time (real) =  31.95 sec
+
+The following tests FAILED:
+	  5 - panel_listing (SIGTRAP)
+Errors while running CTest

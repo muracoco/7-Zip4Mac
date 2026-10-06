@@ -1,0 +1,95 @@
+Running 38 selected functions; native-focus GUI tests remain pending.
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-TTiYtX"
+PASS   : Integration::initTestCase()
+PASS   : Integration::roundtrip(7z)
+PASS   : Integration::roundtrip(zip)
+PASS   : Integration::encryption(7z-data)
+PASS   : Integration::encryption(7z-headers)
+PASS   : Integration::encryption(zip-AES)
+PASS   : Integration::encryption(zip-ZipCrypto)
+PASS   : Integration::updateRenameDelete()
+PASS   : Integration::encryptedUpdate()
+PASS   : Integration::selectedExtractOverwrite()
+PASS   : Integration::safetyPaths()
+PASS   : Integration::errorsAndRecovery()
+PASS   : Integration::rarSelectedExtract()
+PASS   : Integration::splitVolumesAndReadOnly()
+PASS   : Integration::cancellationAndResponsiveness()
+PASS   : Integration::nestedArchiveNavigation()
+PASS   : Integration::nestedArchivePasswordsAndCancel()
+PASS   : Integration::archivePauseResumeAndCancel()
+PASS   : Integration::filePauseResumeAndCancel()
+PASS   : Integration::clipboardNamesAndUpstreamNoOps()
+PASS   : Integration::archiveContentsHashes(7z)
+PASS   : Integration::archiveContentsHashes(zip)
+PASS   : Integration::archiveContentsHashes(7z-password)
+PASS   : Integration::archiveContentsHashes(7z-headers)
+PASS   : Integration::archiveContentsHashes(zip-AES)
+PASS   : Integration::archiveFolderCreation(7z)
+PASS   : Integration::archiveFolderCreation(zip)
+PASS   : Integration::archiveFolderCreation(tar)
+PASS   : Integration::archiveFolderCreation(wim)
+PASS   : Integration::archiveFolderCreation(7z-data)
+PASS   : Integration::archiveFolderCreation(7z-headers)
+PASS   : Integration::archiveFolderCreation(zip-AES)
+PASS   : Integration::archiveFolderCreation(zip-ZipCrypto)
+PASS   : Integration::archiveFolderCancelAndProtection()
+PASS   : Integration::archiveFolderLargeListing()
+PASS   : Integration::archiveFolderDiagnosticsAndLimits()
+PASS   : Integration::guiArchiveFolderCreation()
+PASS   : Integration::fileCopyMoveRenameFolder()
+PASS   : Integration::splitCombineAndFailures()
+PASS   : Integration::volumeNumberingAndLinks()
+PASS   : Integration::guiTypeBookmarksAndFileTools()
+PASS   : Integration::officialBenchmarkAndStop()
+PASS   : Integration::configuredWorkingFolderAndMemory()
+PASS   : Integration::officialLanguagesAndRootOptions()
+PASS   : Integration::eliminateRootAndRenameExisting()
+PASS   : Integration::trashAfterVerifiedCompression()
+PASS   : Integration::compressionMethods()
+PASS   : Integration::absoluteExtractionAndDialogSettings()
+PASS   : Integration::additionalFormatsAndLinks()
+PASS   : Integration::verifiedTrashOtherFormatsAndUpdateModes()
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 12
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 14
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 11
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 13
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 20
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 16
+PASS   : Integration::openWithSettingsAndDelivery()
+PASS   : Integration::openWithArchiveCommands()
+PASS   : Integration::officialChecksumsAndHashFormat()
+PASS   : Integration::openWithCancelAndBusyQueue()
+PASS   : Integration::cleanupTestCase()
+Totals: 55 passed, 0 failed, 0 skipped, 0 blacklisted, 41833ms
+********* Finished testing of Integration *********
+Internal ctest changing into directory: /DEPS/build-content-tools-final-20261004
+UpdateCTestConfiguration  from :/DEPS/build-content-tools-final-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-content-tools-final-20261004/DartConfiguration.tcl
+Test project /DEPS/build-content-tools-final-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 2
+    Start 2: cocoa_accessibility
+
+2: Test command: /DEPS/build-content-tools-final-20261004/cocoa_accessibility_tests
+2: Working Directory: /DEPS/build-content-tools-final-20261004
+2: Environment variables:
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 60
+2: Cocoa ownership guards, 20 column-change and 20 list-refresh cycles passed
+1/1 Test #2: cocoa_accessibility ..............   Passed    0.60 sec
+
+The following tests passed:
+	cocoa_accessibility
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.60 sec
+Bundle dependency check passed: 12 Mach-O files; system/@rpath dependencies only

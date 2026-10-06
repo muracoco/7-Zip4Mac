@@ -1,0 +1,294 @@
+Menu / drag source-port checks: Qt 6.11.3 / 7-Zip 26.03 / macOS arm64
+Final unique affected total: 116 = menu-drag 34 + Open 27 + selection 16 + archive transfer 30 + native stream 3 + selected-row toolbar Test 3 + shell round trips 3 (includes setup/cleanup).
+Initial failures: QListView Static disabled viewport drag/drop; folder target lookup used the hit column instead of column zero. Both corrected. The old archive-context Test fixture was corrected to use the upstream toolbar. Development repeats are excluded from final totals.
+Desktop lock rechecked: CGSSessionScreenIsLocked=True.
+
+--- panel-menu-drag-final-test.log ---
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: panel_menu_drag
+
+1: Test command: /DEPS/build-comments-20261004/panel_menu_drag_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 150
+1: ********* Start testing of PanelMenuDragTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : PanelMenuDragTests::initTestCase()
+1: PASS   : PanelMenuDragTests::effects(same-drive)
+1: PASS   : PanelMenuDragTests::effects(other-drive)
+1: PASS   : PanelMenuDragTests::effects(Ctrl-copy)
+1: PASS   : PanelMenuDragTests::effects(Shift-move)
+1: PASS   : PanelMenuDragTests::effects(Ctrl-Shift-link-refused)
+1: PASS   : PanelMenuDragTests::effects(Alt-link-refused)
+1: PASS   : PanelMenuDragTests::effects(Ctrl-Alt-default)
+1: PASS   : PanelMenuDragTests::effects(Shift-Alt-default)
+1: PASS   : PanelMenuDragTests::sourceMenuOrderAndConditions()
+1: PASS   : PanelMenuDragTests::contextCrcClick()
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Details-Copy)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Details-Move)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Large-Icons-Copy)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Large-Icons-Move)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Small-Icons-Copy)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Small-Icons-Move)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(List-Copy)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(List-Move)
+1: PASS   : PanelMenuDragTests::defaultDropMovesSymlinkOnly()
+1: PASS   : PanelMenuDragTests::rightDragGesture()
+1: PASS   : PanelMenuDragTests::rightDropChoices(Copy)
+1: PASS   : PanelMenuDragTests::rightDropChoices(Move)
+1: PASS   : PanelMenuDragTests::rightDropChoices(Add)
+1: PASS   : PanelMenuDragTests::rightDropChoices(Cancel)
+1: PASS   : PanelMenuDragTests::archiveDropConfirmation(7z-Yes)
+1: PASS   : PanelMenuDragTests::archiveDropConfirmation(7z-Cancel)
+1: PASS   : PanelMenuDragTests::archiveDropConfirmation(ZIP-Yes)
+1: PASS   : PanelMenuDragTests::archiveDropConfirmation(ZIP-Cancel)
+1: PASS   : PanelMenuDragTests::archiveDrag(7z-to-FS)
+1: PASS   : PanelMenuDragTests::archiveDrag(ZIP-to-FS)
+1: PASS   : PanelMenuDragTests::archiveDrag(encrypted-7z-to-FS)
+1: PASS   : PanelMenuDragTests::archiveDrag(drag-cancel)
+1: PASS   : PanelMenuDragTests::cleanupTestCase()
+1: Totals: 34 passed, 0 failed, 0 skipped, 0 blacklisted, 6710ms
+1: ********* Finished testing of PanelMenuDragTests *********
+1/1 Test #1: panel_menu_drag ..................   Passed    7.30 sec
+
+The following tests passed:
+	panel_menu_drag
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   7.30 sec
+
+--- panel-menu-drag-test.log ---
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: panel_menu_drag
+
+1: Test command: /DEPS/build-comments-20261004/panel_menu_drag_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 150
+1: ********* Start testing of PanelMenuDragTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : PanelMenuDragTests::initTestCase()
+1: PASS   : PanelMenuDragTests::effects(same-drive)
+1: PASS   : PanelMenuDragTests::effects(other-drive)
+1: PASS   : PanelMenuDragTests::effects(Ctrl-copy)
+1: PASS   : PanelMenuDragTests::effects(Shift-move)
+1: PASS   : PanelMenuDragTests::effects(Ctrl-Shift-link-refused)
+1: PASS   : PanelMenuDragTests::effects(Alt-link-refused)
+1: PASS   : PanelMenuDragTests::effects(Ctrl-Alt-default)
+1: PASS   : PanelMenuDragTests::effects(Shift-Alt-default)
+1: PASS   : PanelMenuDragTests::sourceMenuOrderAndConditions()
+1: PASS   : PanelMenuDragTests::contextCrcClick()
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Details-Copy)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Details-Move)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Icons-Copy)
+1: PASS   : PanelMenuDragTests::filesystemPanelDrop(Icons-Move)
+1: PASS   : PanelMenuDragTests::rightDragGesture()
+1: PASS   : PanelMenuDragTests::rightDropChoices(Copy)
+1: PASS   : PanelMenuDragTests::rightDropChoices(Move)
+1: PASS   : PanelMenuDragTests::rightDropChoices(Add)
+1: PASS   : PanelMenuDragTests::rightDropChoices(Cancel)
+1: PASS   : PanelMenuDragTests::archiveDropConfirmation(7z-Yes)
+1: PASS   : PanelMenuDragTests::archiveDropConfirmation(7z-Cancel)
+1: PASS   : PanelMenuDragTests::archiveDropConfirmation(ZIP-Yes)
+1: PASS   : PanelMenuDragTests::archiveDropConfirmation(ZIP-Cancel)
+1: PASS   : PanelMenuDragTests::archiveDrag(7z-to-FS)
+1: PASS   : PanelMenuDragTests::archiveDrag(ZIP-to-FS)
+1: PASS   : PanelMenuDragTests::archiveDrag(encrypted-7z-to-FS)
+1: PASS   : PanelMenuDragTests::archiveDrag(drag-cancel)
+1: PASS   : PanelMenuDragTests::cleanupTestCase()
+1: Totals: 29 passed, 0 failed, 0 skipped, 0 blacklisted, 6456ms
+1: ********* Finished testing of PanelMenuDragTests *********
+1/4 Test #1: panel_menu_drag ..................   Passed    7.08 sec
+test 2
+    Start 2: panel_open
+
+2: Test command: /DEPS/build-comments-20261004/panel_open_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+2: Working Directory: /DEPS/build-comments-20261004
+2: Environment variables: 
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 150
+2: ********* Start testing of PanelOpenTests *********
+2: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+2: PASS   : PanelOpenTests::initTestCase()
+2: PASS   : PanelOpenTests::officialNameProfile(ZIP-document)
+2: PASS   : PanelOpenTests::officialNameProfile(source)
+2: PASS   : PanelOpenTests::officialNameProfile(archive)
+2: PASS   : PanelOpenTests::officialNameProfile(no-extension)
+2: PASS   : PanelOpenTests::officialNameProfile(directory-dot)
+2: PASS   : PanelOpenTests::officialNameProfile(non-ASCII-casefold)
+2: PASS   : PanelOpenTests::officialNameProfile(33-character-extension)
+2: PASS   : PanelOpenTests::officialNameProfile(four-spaces)
+2: PASS   : PanelOpenTests::officialNameProfile(five-spaces)
+2: PASS   : PanelOpenTests::officialNameProfile(mixed-space-characters)
+2: PASS   : PanelOpenTests::officialNameProfile(RLO)
+2: PASS   : PanelOpenTests::officialNameProfile(POSIX-trailing-dot-space)
+2: PASS   : PanelOpenTests::filesystemContentDetection(7z-unknown)
+2: PASS   : PanelOpenTests::filesystemContentDetection(ZIP-no-extension)
+2: PASS   : PanelOpenTests::filesystemFallbackAndErrors(regular-fallback)
+2: PASS   : PanelOpenTests::filesystemFallbackAndErrors(permission-error)
+2: PASS   : PanelOpenTests::filesystemFallbackAndErrors(Open-Inside-never-falls-back)
+2: PASS   : PanelOpenTests::encryptedUnknownDefaultOpen(password)
+2: PASS   : PanelOpenTests::encryptedUnknownDefaultOpen(password-cancel)
+2: PASS   : PanelOpenTests::filenameWarningBlocksOnlyExternalOpening()
+2: PASS   : PanelOpenTests::officialPlan()
+2: QINFO  : PanelOpenTests::multipleArchiveOpen(7z-Open)  
+2: PASS   : PanelOpenTests::multipleArchiveOpen(7z-Open)
+2: QINFO  : PanelOpenTests::multipleArchiveOpen(ZIP-Open-Outside)  
+2: PASS   : PanelOpenTests::multipleArchiveOpen(ZIP-Open-Outside)
+2: QINFO  : PanelOpenTests::multipleArchiveOpen(ZIP-same-name-Open)  
+2: PASS   : PanelOpenTests::multipleArchiveOpen(ZIP-same-name-Open)
+2: PASS   : PanelOpenTests::markedNestedArchiveUsesItsOwnIdentity()
+2: PASS   : PanelOpenTests::cleanupTestCase()
+2: Totals: 27 passed, 0 failed, 0 skipped, 0 blacklisted, 5918ms
+2: ********* Finished testing of PanelOpenTests *********
+2/4 Test #2: panel_open .......................   Passed    6.40 sec
+test 3
+    Start 3: panel_selection
+
+3: Test command: /DEPS/build-comments-20261004/panel_selection_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+3: Working Directory: /DEPS/build-comments-20261004
+3: Environment variables: 
+3:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+3: Test timeout computed to be: 90
+3: ********* Start testing of PanelSelectionTests *********
+3: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+3: PASS   : PanelSelectionTests::initTestCase()
+3: PASS   : PanelSelectionTests::independentMarks(details)
+3: PASS   : PanelSelectionTests::independentMarks(icons)
+3: PASS   : PanelSelectionTests::insertAndParent(details)
+3: PASS   : PanelSelectionTests::insertAndParent(icons)
+3: PASS   : PanelSelectionTests::shiftArrowMarks(details)
+3: PASS   : PanelSelectionTests::shiftArrowMarks(icons)
+3: PASS   : PanelSelectionTests::ctrlShiftClickRange(details)
+3: PASS   : PanelSelectionTests::ctrlShiftClickRange(icons)
+3: PASS   : PanelSelectionTests::standardSelection(details)
+3: PASS   : PanelSelectionTests::standardSelection(icons)
+3: PASS   : PanelSelectionTests::paintAndSort()
+3: PASS   : PanelSelectionTests::mainWindowRoundtrip(7z)
+3: PASS   : PanelSelectionTests::mainWindowRoundtrip(zip)
+3: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 12
+3: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 14
+3: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 11
+3: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 13
+3: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 20
+3: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 16
+3: PASS   : PanelSelectionTests::independentPanelsAndModeSwitch()
+3: PASS   : PanelSelectionTests::cleanupTestCase()
+3: Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 1972ms
+3: ********* Finished testing of PanelSelectionTests *********
+3/4 Test #3: panel_selection ..................   Passed    2.46 sec
+test 7
+    Start 7: archive_transfer
+
+7: Test command: /DEPS/build-comments-20261004/archive_transfer_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+7: Working Directory: /DEPS/build-comments-20261004
+7: Environment variables: 
+7:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+7: Test timeout computed to be: 180
+7: ********* Start testing of ArchiveTransferTests *********
+7: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+7: PASS   : ArchiveTransferTests::initTestCase()
+7: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(7z)
+7: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(zip)
+7: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(tar)
+7: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(wim)
+7: PASS   : ArchiveTransferTests::encryptionInherited(7z-header)
+7: PASS   : ArchiveTransferTests::encryptionInherited(zip-AES)
+7: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(7z)
+7: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(zip)
+7: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(tar)
+7: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(wim)
+7: PASS   : ArchiveTransferTests::invalidPrefixAndDuplicateInputs()
+7: PASS   : ArchiveTransferTests::streamCopyAndMove(gzip-copy)
+7: PASS   : ArchiveTransferTests::streamCopyAndMove(gzip-move)
+7: PASS   : ArchiveTransferTests::streamCopyAndMove(bzip2-copy)
+7: PASS   : ArchiveTransferTests::streamCopyAndMove(bzip2-move)
+7: PASS   : ArchiveTransferTests::streamCopyAndMove(xz-copy)
+7: PASS   : ArchiveTransferTests::streamCopyAndMove(xz-move)
+7: PASS   : ArchiveTransferTests::moveFileLinkRetainsTarget()
+7: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(7z)
+7: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(zip)
+7: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(tar)
+7: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(wim)
+7: PASS   : ArchiveTransferTests::pauseCancelExistingArchive()
+7: PASS   : ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Copy-context)
+7: PASS   : ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Move-action)
+7: PASS   : ArchiveTransferTests::guiDropIntoFolderFromDifferentParents()
+7: PASS   : ArchiveTransferTests::guiDirectoryLinkMoveRefreshesBothPanels()
+7: PASS   : ArchiveTransferTests::guiVerificationFailureRefreshesCommittedArchive()
+7: PASS   : ArchiveTransferTests::cleanupTestCase()
+7: Totals: 30 passed, 0 failed, 0 skipped, 0 blacklisted, 3863ms
+7: ********* Finished testing of ArchiveTransferTests *********
+4/4 Test #7: archive_transfer .................   Passed    4.35 sec
+
+The following tests passed:
+	panel_menu_drag
+	panel_open
+	panel_selection
+	archive_transfer
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =  20.29 sec
+
+--- panel-menu-tree-test.log ---
+/TMP/T/7zip-agent-tree.LYEc4l/data
+********* Start testing of AgentTreeTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : AgentTreeTests::initTestCase()
+PASS   : AgentTreeTests::nativeAlternateStreamBinding()
+PASS   : AgentTreeTests::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 245ms
+********* Finished testing of AgentTreeTests *********
+
+--- panel-menu-index-test.log ---
+/TMP/T/7zip-agent-tree.di02Rz/data
+********* Start testing of AgentSelectionTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : AgentSelectionTests::initTestCase()
+PASS   : AgentSelectionTests::guiToolbarTestUsesSelectedRow()
+PASS   : AgentSelectionTests::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 455ms
+********* Finished testing of AgentSelectionTests *********
+
+--- panel-menu-roundtrip-test.log ---
+********* Start testing of FormatTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : FormatTests::initTestCase() Genuine format cases 0 PENDING registration fixtures 0
+PASS   : FormatTests::initTestCase()
+QINFO  : FormatTests::contextCompressionExtraction() Qt context-menu clicks: 7z / ZIP creation, Test, Extract to, Japanese paths and SHA-256 comparison passed
+PASS   : FormatTests::contextCompressionExtraction()
+PASS   : FormatTests::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 581ms
+********* Finished testing of FormatTests *********
+
+
+Bundle / startup:
+/DEPS/build-comments-20261004/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/DEPS/build-comments-20261004/7-Zip Mac.app
+Deep/strict codesign verification: passed.
+Owned bundled app survived 3 seconds with isolated preferences and development Qt/DYLD variables removed. Startup stderr was empty. Only the owned process was stopped.

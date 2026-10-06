@@ -1,0 +1,9 @@
+********* Start testing of ListingTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : ListingTests::initTestCase() Owned listing fixtures: "/TMP/T/PanelListing-LscaTQ"
+PASS   : ListingTests::initTestCase()
+PASS   : ListingTests::archiveRawNameRename(7z)
+PASS   : ListingTests::archiveRawNameRename(zip)
+PASS   : ListingTests::cleanupTestCase()
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 6570ms
+********* Finished testing of ListingTests *********

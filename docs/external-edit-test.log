@@ -1,0 +1,168 @@
+Running 45 selected functions; native-focus GUI tests remain pending.
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-MMXsTn"
+PASS   : Integration::initTestCase()
+PASS   : Integration::roundtrip(7z)
+PASS   : Integration::roundtrip(zip)
+PASS   : Integration::encryption(7z-data)
+PASS   : Integration::encryption(7z-headers)
+PASS   : Integration::encryption(zip-AES)
+PASS   : Integration::encryption(zip-ZipCrypto)
+PASS   : Integration::updateRenameDelete()
+PASS   : Integration::encryptedUpdate()
+PASS   : Integration::selectedExtractOverwrite()
+PASS   : Integration::safetyPaths()
+PASS   : Integration::errorsAndRecovery()
+PASS   : Integration::rarSelectedExtract()
+PASS   : Integration::splitVolumesAndReadOnly()
+PASS   : Integration::cancellationAndResponsiveness()
+PASS   : Integration::nestedArchiveNavigation()
+PASS   : Integration::nestedArchivePasswordsAndCancel()
+PASS   : Integration::archiveRefreshPreservesFolder(plain)
+PASS   : Integration::archiveRefreshPreservesFolder(encrypted-headers)
+PASS   : Integration::archivePauseResumeAndCancel()
+PASS   : Integration::filePauseResumeAndCancel()
+PASS   : Integration::clipboardNamesAndUpstreamNoOps()
+PASS   : Integration::archiveContentsHashes(7z)
+PASS   : Integration::archiveContentsHashes(zip)
+PASS   : Integration::archiveContentsHashes(7z-password)
+PASS   : Integration::archiveContentsHashes(7z-headers)
+PASS   : Integration::archiveContentsHashes(zip-AES)
+PASS   : Integration::archiveFileReplacement(7z)
+PASS   : Integration::archiveFileReplacement(zip)
+PASS   : Integration::archiveFileReplacement(tar)
+PASS   : Integration::archiveFileReplacement(wim)
+PASS   : Integration::archiveFileReplacement(gzip)
+PASS   : Integration::archiveFileReplacement(bzip2)
+PASS   : Integration::archiveFileReplacement(xz)
+PASS   : Integration::archiveFileReplacement(7z-data)
+PASS   : Integration::archiveFileReplacement(7z-headers)
+PASS   : Integration::archiveFileReplacement(zip-AES)
+PASS   : Integration::archiveFileReplacement(zip-ZipCrypto)
+PASS   : Integration::archiveReplacementConcurrentEdit()
+PASS   : Integration::nestedArchiveCancelledWriteBack()
+PASS   : Integration::nestedStreamWriteBack(gzip)
+PASS   : Integration::nestedStreamWriteBack(bzip2)
+PASS   : Integration::nestedStreamWriteBack(xz)
+PASS   : Integration::nestedArchiveWriteBack(up-yes)
+PASS   : Integration::nestedArchiveWriteBack(address-yes)
+PASS   : Integration::nestedArchiveWriteBack(ancestor-yes)
+PASS   : Integration::nestedArchiveWriteBack(close-yes-encrypted)
+PASS   : Integration::nestedArchiveWriteBack(up-no)
+PASS   : Integration::nestedArchiveWriteBack(up-cancel)
+PASS   : Integration::nestedArchiveWriteBack(close-no)
+PASS   : Integration::nestedArchiveWriteBack(close-cancel)
+PASS   : Integration::nestedUnchangedCloseAndPanelRemoval()
+PASS   : Integration::archiveFolderCreation(7z)
+PASS   : Integration::archiveFolderCreation(zip)
+PASS   : Integration::archiveFolderCreation(tar)
+PASS   : Integration::archiveFolderCreation(wim)
+PASS   : Integration::archiveFolderCreation(7z-data)
+PASS   : Integration::archiveFolderCreation(7z-headers)
+PASS   : Integration::archiveFolderCreation(zip-AES)
+PASS   : Integration::archiveFolderCreation(zip-ZipCrypto)
+PASS   : Integration::archiveFolderCancelAndProtection()
+PASS   : Integration::archiveFolderLargeListing()
+PASS   : Integration::archiveFolderDiagnosticsAndLimits()
+PASS   : Integration::guiArchiveFolderCreation()
+PASS   : Integration::fileCopyMoveRenameFolder()
+PASS   : Integration::splitCombineAndFailures()
+PASS   : Integration::volumeNumberingAndLinks()
+PASS   : Integration::guiTypeBookmarksAndFileTools()
+PASS   : Integration::officialBenchmarkAndStop()
+PASS   : Integration::configuredWorkingFolderAndMemory()
+PASS   : Integration::officialLanguagesAndRootOptions()
+PASS   : Integration::eliminateRootAndRenameExisting()
+PASS   : Integration::trashAfterVerifiedCompression()
+PASS   : Integration::compressionMethods()
+PASS   : Integration::absoluteExtractionAndDialogSettings()
+PASS   : Integration::additionalFormatsAndLinks()
+PASS   : Integration::verifiedTrashOtherFormatsAndUpdateModes()
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 12
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 14
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 11
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 13
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 20
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 16
+PASS   : Integration::openWithSettingsAndDelivery()
+PASS   : Integration::openWithArchiveCommands()
+PASS   : Integration::officialChecksumsAndHashFormat()
+PASS   : Integration::openWithCancelAndBusyQueue()
+PASS   : Integration::cleanupTestCase()
+Totals: 82 passed, 0 failed, 0 skipped, 0 blacklisted, 62582ms
+********* Finished testing of Integration *********
+Internal ctest changing into directory: /DEPS/build-editor-release-check-20261004
+UpdateCTestConfiguration  from :/DEPS/build-editor-release-check-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-editor-release-check-20261004/DartConfiguration.tcl
+Test project /DEPS/build-editor-release-check-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 2
+    Start 2: editor_writeback
+
+2: Test command: /DEPS/build-editor-release-check-20261004/editor_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+2: Working Directory: /DEPS/build-editor-release-check-20261004
+2: Environment variables:
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 180
+2: ********* Start testing of EditorTests *********
+2: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+2: QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "/TMP/T/ExternalEdit-bUSSIc"
+2: PASS   : EditorTests::initTestCase()
+2: PASS   : EditorTests::processWaitsForDescendants()
+2: PASS   : EditorTests::writeBack(7z)
+2: PASS   : EditorTests::writeBack(zip)
+2: PASS   : EditorTests::writeBack(tar)
+2: PASS   : EditorTests::writeBack(wim)
+2: PASS   : EditorTests::writeBack(gzip)
+2: PASS   : EditorTests::writeBack(bzip2)
+2: PASS   : EditorTests::writeBack(xz)
+2: PASS   : EditorTests::writeBack(7z-data-view)
+2: PASS   : EditorTests::writeBack(7z-headers)
+2: PASS   : EditorTests::writeBack(zip-AES)
+2: PASS   : EditorTests::writeBack(zip-ZipCrypto)
+2: PASS   : EditorTests::discardedOrRetained(no)
+2: PASS   : EditorTests::discardedOrRetained(cancel)
+2: PASS   : EditorTests::discardedOrRetained(other-folder)
+2: PASS   : EditorTests::discardedOrRetained(read-only)
+2: PASS   : EditorTests::discardedOrRetained(removed-item)
+2: PASS   : EditorTests::runningEditorSurvivesClose(modified)
+2: PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+2: PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+2: PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+2: PASS   : EditorTests::focusedFileOnly()
+2: PASS   : EditorTests::applicationBundleWaitAndArguments()
+2: PASS   : EditorTests::observedNewSessionChild()
+2: PASS   : EditorTests::nestedEditorWriteBack()
+2: PASS   : EditorTests::updateCancellationRetainsEdit()
+2: PASS   : EditorTests::twoPanelsSerializeWrites()
+2: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+2: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+2: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+2: PASS   : EditorTests::cleanupTestCase()
+2: Totals: 32 passed, 0 failed, 0 skipped, 0 blacklisted, 29177ms
+2: ********* Finished testing of EditorTests *********
+1/2 Test #2: editor_writeback .................   Passed   29.67 sec
+test 3
+    Start 3: cocoa_accessibility
+
+3: Test command: /DEPS/build-editor-release-check-20261004/cocoa_accessibility_tests
+3: Working Directory: /DEPS/build-editor-release-check-20261004
+3: Environment variables:
+3:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+3: Test timeout computed to be: 60
+3: Cocoa ownership guards, 20 column-change and 20 list-refresh cycles passed
+2/2 Test #3: cocoa_accessibility ..............   Passed    0.60 sec
+
+The following tests passed:
+	editor_writeback
+	cocoa_accessibility
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  30.27 sec

@@ -1,0 +1,35 @@
+/DEPS/build-comments-20261004/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/DEPS/build-comments-20261004/7-Zip Mac.app
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/imageformats/libqgif.dylib
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/imageformats/libqico.dylib
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/imageformats/libqgif.dylib
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/imageformats/libqico.dylib
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/styles/libqmacstyle.dylib
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/styles/libqmacstyle.dylib
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/platforms/libqcocoa.dylib
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/platforms/libqcocoa.dylib
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/imageformats/libqjpeg.dylib
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/PlugIns/imageformats/libqjpeg.dylib
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/MacOS/7zz
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/MacOS/7zz
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/MacOS/7zz-progress
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/MacOS/7zz-progress
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/MacOS/7zip-comment
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/MacOS/7zip-comment
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtPrintSupport.framework/Versions/Current/.
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtPrintSupport.framework/Versions/Current/.
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtDBus.framework/Versions/Current/.
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtDBus.framework/Versions/Current/.
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtCore.framework/Versions/Current/.
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtCore.framework/Versions/Current/.
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtWidgets.framework/Versions/Current/.
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtWidgets.framework/Versions/Current/.
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtConcurrent.framework/Versions/Current/.
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtConcurrent.framework/Versions/Current/.
+--prepared:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtGui.framework/Versions/Current/.
+--validated:/DEPS/build-comments-20261004/7-Zip Mac.app/Contents/Frameworks/QtGui.framework/Versions/Current/.
+/DEPS/build-comments-20261004/7-Zip Mac.app: valid on disk
+/DEPS/build-comments-20261004/7-Zip Mac.app: satisfies its Designated Requirement
+Isolated bundled startup alive after 3 seconds: True
+Owned process stopped: 43304 stdout bytes: 0 stderr bytes: 0

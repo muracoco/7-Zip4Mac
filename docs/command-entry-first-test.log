@@ -1,0 +1,359 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: command_entry
+
+1: Test command: /DEPS/build-comments-20261004/command_entry_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 180
+1: ********* Start testing of CommandEntryTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: QINFO  : CommandEntryTests::initTestCase() Owned command-entry fixtures: "/TMP/T/7zip-command-entry-test-tQuNxZ"
+1: PASS   : CommandEntryTests::initTestCase()
+1: PASS   : CommandEntryTests::comboResourceAndResize()
+1: PASS   : CommandEntryTests::sourceWildcard(normal)
+1: PASS   : CommandEntryTests::sourceWildcard(alternative)
+1: FAIL!  : CommandEntryTests::inlineRename(view0-0) Compared values are not the same
+1:    Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+1:    Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+1: FAIL!  : CommandEntryTests::inlineRename(view0-1) Compared values are not the same
+1:    Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+1:    Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+1: FAIL!  : CommandEntryTests::inlineRename(view1-0) Compared values are not the same
+1:    Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+1:    Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+1: FAIL!  : CommandEntryTests::inlineRename(view1-1) Compared values are not the same
+1:    Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+1:    Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+1: FAIL!  : CommandEntryTests::inlineRename(view2-0) Compared values are not the same
+1:    Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+1:    Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+1: FAIL!  : CommandEntryTests::inlineRename(view2-1) Compared values are not the same
+1:    Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+1:    Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+1: FAIL!  : CommandEntryTests::inlineRename(view3-0) Compared values are not the same
+1:    Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+1:    Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+1: FAIL!  : CommandEntryTests::inlineRename(view3-1) Compared values are not the same
+1:    Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+1:    Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+1: PASS   : CommandEntryTests::exclusiveRename(case)
+1: PASS   : CommandEntryTests::exclusiveRename(symlink)
+1: PASS   : CommandEntryTests::exclusiveRename(hardlink)
+1: PASS   : CommandEntryTests::exclusiveRename(existing)
+1: PASS   : CommandEntryTests::exclusiveRename(readonly)
+1: PASS   : CommandEntryTests::exclusiveRename(cancel)
+1: PASS   : CommandEntryTests::exclusiveRename(parent-permission)
+1: PASS   : CommandEntryTests::exclusiveRename(folder)
+1: FAIL!  : CommandEntryTests::creationAndSelection() 'QFileInfo::exists(root + '/' + entered)' returned FALSE. ()
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(85)]
+1: PASS   : CommandEntryTests::archiveRenameAndCreate(7z)
+1: FAIL!  : CommandEntryTests::archiveRenameAndCreate(zip) 'result.success' returned FALSE. (7-Zip reported an error or warning.)
+1:    Loc: [/REPOSITORY/tests/command-entry.cpp(91)]
+1: PASS   : CommandEntryTests::historyDeleteAcceptAndCancel()
+1: PASS   : CommandEntryTests::cleanupTestCase()
+1: Totals: 15 passed, 10 failed, 0 skipped, 0 blacklisted, 6519ms
+1: ********* Finished testing of CommandEntryTests *********
+1/7 Test  #1: command_entry ....................***Failed    7.24 sec
+********* Start testing of CommandEntryTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : CommandEntryTests::initTestCase() Owned command-entry fixtures: "/TMP/T/7zip-command-entry-test-tQuNxZ"
+PASS   : CommandEntryTests::initTestCase()
+PASS   : CommandEntryTests::comboResourceAndResize()
+PASS   : CommandEntryTests::sourceWildcard(normal)
+PASS   : CommandEntryTests::sourceWildcard(alternative)
+FAIL!  : CommandEntryTests::inlineRename(view0-0) Compared values are not the same
+   Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+   Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+FAIL!  : CommandEntryTests::inlineRename(view0-1) Compared values are not the same
+   Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+   Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+FAIL!  : CommandEntryTests::inlineRename(view1-0) Compared values are not the same
+   Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+   Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+FAIL!  : CommandEntryTests::inlineRename(view1-1) Compared values are not the same
+   Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+   Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+FAIL!  : CommandEntryTests::inlineRename(view2-0) Compared values are not the same
+   Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+   Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+FAIL!  : CommandEntryTests::inlineRename(view2-1) Compared values are not the same
+   Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+   Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+FAIL!  : CommandEntryTests::inlineRename(view3-0) Compared values are not the same
+   Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+   Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+FAIL!  : CommandEntryTests::inlineRename(view3-1) Compared values are not the same
+   Actual   (panelItemName(files->currentItem())): "[\u65E5\u672C\u8A9E] space.txt"
+   Expected (QString("renamed 日本語.txt"))         : "renamed \u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/command-entry.cpp(61)]
+PASS   : CommandEntryTests::exclusiveRename(case)
+PASS   : CommandEntryTests::exclusiveRename(symlink)
+PASS   : CommandEntryTests::exclusiveRename(hardlink)
+PASS   : CommandEntryTests::exclusiveRename(existing)
+PASS   : CommandEntryTests::exclusiveRename(readonly)
+PASS   : CommandEntryTests::exclusiveRename(cancel)
+PASS   : CommandEntryTests::exclusiveRename(parent-permission)
+PASS   : CommandEntryTests::exclusiveRename(folder)
+FAIL!  : CommandEntryTests::creationAndSelection() 'QFileInfo::exists(root + '/' + entered)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/command-entry.cpp(85)]
+PASS   : CommandEntryTests::archiveRenameAndCreate(7z)
+FAIL!  : CommandEntryTests::archiveRenameAndCreate(zip) 'result.success' returned FALSE. (7-Zip reported an error or warning.)
+   Loc: [/REPOSITORY/tests/command-entry.cpp(91)]
+PASS   : CommandEntryTests::historyDeleteAcceptAndCancel()
+PASS   : CommandEntryTests::cleanupTestCase()
+Totals: 15 passed, 10 failed, 0 skipped, 0 blacklisted, 6519ms
+********* Finished testing of CommandEntryTests *********
+
+test 2
+    Start  2: panel_listing
+
+2: Test command: /DEPS/build-comments-20261004/panel_listing_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+2: Working Directory: /DEPS/build-comments-20261004
+2: Environment variables: 
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 180
+2: ********* Start testing of ListingTests *********
+2: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+2: QINFO  : ListingTests::initTestCase() Owned listing fixtures: "/TMP/T/PanelListing-cOOEKv"
+2: PASS   : ListingTests::initTestCase()
+2: PASS   : ListingTests::originalDisplayAndDeferredProperties()
+2: PASS   : ListingTests::displayedNameKeepsRealFilesystemIdentity()
+2: PASS   : ListingTests::asynchronousSortKeepsExactValuesMarksFocusAndUnsorted()
+2: PASS   : ListingTests::supersededSortClearAndDestruction()
+2: PASS   : ListingTests::nativeIconsBothKindsAndNavigation()
+2: PASS   : ListingTests::archiveRawNameRename(7z)
+2: PASS   : ListingTests::archiveRawNameRename(zip)
+2: QINFO  : ListingTests::actualLargeArchive(7z) "7z" 15,000 archive rows elapsed ms 1595 maximum event-loop gap ms 743
+2: PASS   : ListingTests::actualLargeArchive(7z)
+2: QINFO  : ListingTests::actualLargeArchive(zip) "zip" 15,000 archive rows elapsed ms 2264 maximum event-loop gap ms 1029
+2: PASS   : ListingTests::actualLargeArchive(zip)
+2: PASS   : ListingTests::cleanupTestCase()
+2: Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 12035ms
+2: ********* Finished testing of ListingTests *********
+2/7 Test  #2: panel_listing ....................   Passed   13.11 sec
+test 4
+    Start  4: progress_completion
+
+4: Test command: /DEPS/build-comments-20261004/progress_completion_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+4: Working Directory: /DEPS/build-comments-20261004
+4: Environment variables: 
+4:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+4: Test timeout computed to be: 120
+4: ********* Start testing of ProgressCompletionTests *********
+4: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+4: PASS   : ProgressCompletionTests::initTestCase()
+4: PASS   : ProgressCompletionTests::originalCompletionPolicy(success-auto-close)
+4: PASS   : ProgressCompletionTests::originalCompletionPolicy(test-ok-message)
+4: PASS   : ProgressCompletionTests::originalCompletionPolicy(fatal-error-message)
+4: PASS   : ProgressCompletionTests::originalCompletionPolicy(file-errors-retain-close)
+4: PASS   : ProgressCompletionTests::originalCompletionPolicy(fatal-and-file-errors)
+4: PASS   : ProgressCompletionTests::originalCompletionPolicy(cancelled-with-errors-close)
+4: PASS   : ProgressCompletionTests::originalTestAndHashText()
+4: PASS   : ProgressCompletionTests::checksumSelectionCopyDeleteAndDetail()
+4: PASS   : ProgressCompletionTests::actualEngineResults(7z)
+4: PASS   : ProgressCompletionTests::actualEngineResults(zip)
+4: PASS   : ProgressCompletionTests::actualInsideTestSummary()
+4: PASS   : ProgressCompletionTests::fatalAndFileErrorsAndParentTitle()
+4: PASS   : ProgressCompletionTests::invalidCompletionRecordIsRejected()
+4: PASS   : ProgressCompletionTests::cleanupTestCase()
+4: Totals: 15 passed, 0 failed, 0 skipped, 0 blacklisted, 4880ms
+4: ********* Finished testing of ProgressCompletionTests *********
+3/7 Test  #4: progress_completion ..............   Passed    5.45 sec
+test 6
+    Start  6: dialog_resources
+
+6: Test command: /DEPS/build-comments-20261004/dialog_resource_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+6: Working Directory: /DEPS/build-comments-20261004
+6: Environment variables: 
+6:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+6: Test timeout computed to be: 90
+6: ********* Start testing of DialogResourceTests *********
+6: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+6: PASS   : DialogResourceTests::initTestCase()
+6: PASS   : DialogResourceTests::sourceCoordinatesAndButtonOrder()
+6: PASS   : DialogResourceTests::extractionVisibilityAndGeometry()
+6: PASS   : DialogResourceTests::originalProgressResizeAndState()
+6: PASS   : DialogResourceTests::originalProgressFormatting()
+6: PASS   : DialogResourceTests::originalOptionsSummaryAndModal()
+6: PASS   : DialogResourceTests::originalAboutAndTemporaryLayout()
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 12
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 12
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 14
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 14
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 11
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleIndicFont", script 11
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 11
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 13
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 13
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 20
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 20
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 16
+6: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 16
+6: PASS   : DialogResourceTests::officialLanguageTextFits()
+6: PASS   : DialogResourceTests::defaultLanguageAndSavedChoice()
+6: PASS   : DialogResourceTests::cleanupTestCase()
+6: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 1604ms
+6: ********* Finished testing of DialogResourceTests *********
+4/7 Test  #6: dialog_resources .................   Passed    2.18 sec
+test 11
+    Start 11: panel_selection
+
+11: Test command: /DEPS/build-comments-20261004/panel_selection_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+11: Working Directory: /DEPS/build-comments-20261004
+11: Environment variables: 
+11:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+11: Test timeout computed to be: 90
+11: ********* Start testing of PanelSelectionTests *********
+11: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+11: PASS   : PanelSelectionTests::initTestCase()
+11: PASS   : PanelSelectionTests::independentMarks(details)
+11: PASS   : PanelSelectionTests::independentMarks(icons)
+11: PASS   : PanelSelectionTests::insertAndParent(details)
+11: PASS   : PanelSelectionTests::insertAndParent(icons)
+11: PASS   : PanelSelectionTests::shiftArrowMarks(details)
+11: PASS   : PanelSelectionTests::shiftArrowMarks(icons)
+11: PASS   : PanelSelectionTests::ctrlShiftClickRange(details)
+11: PASS   : PanelSelectionTests::ctrlShiftClickRange(icons)
+11: PASS   : PanelSelectionTests::standardSelection(details)
+11: PASS   : PanelSelectionTests::standardSelection(icons)
+11: PASS   : PanelSelectionTests::paintAndSort()
+11: PASS   : PanelSelectionTests::mainWindowRoundtrip(7z)
+11: PASS   : PanelSelectionTests::mainWindowRoundtrip(zip)
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 12
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 14
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 11
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 13
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 20
+11: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 16
+11: PASS   : PanelSelectionTests::independentPanelsAndModeSwitch()
+11: PASS   : PanelSelectionTests::cleanupTestCase()
+11: Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 4607ms
+11: ********* Finished testing of PanelSelectionTests *********
+5/7 Test #11: panel_selection ..................   Passed    5.16 sec
+test 22
+    Start 22: file_comments
+
+22: Test command: /DEPS/build-comments-20261004/comment_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+22: Working Directory: /DEPS/build-comments-20261004
+22: Environment variables: 
+22:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+22: Test timeout computed to be: 180
+22: ********* Start testing of CommentTests *********
+22: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+22: QINFO  : CommentTests::initTestCase() Owned comment fixtures: "/TMP/T/FileComments-aiYLhQ"
+22: PASS   : CommentTests::initTestCase()
+22: PASS   : CommentTests::textPairsCompatibility()
+22: PASS   : CommentTests::filesystemRoundtripAndMetadata()
+22: PASS   : CommentTests::refusedWrites(invalid-utf8)
+22: PASS   : CommentTests::refusedWrites(symlink)
+22: PASS   : CommentTests::refusedWrites(read-only)
+22: PASS   : CommentTests::refusedWrites(hardlink)
+22: PASS   : CommentTests::refusedWrites(duplicate-pairs)
+22: PASS   : CommentTests::refusedWrites(changed)
+22: PASS   : CommentTests::refusedWrites(created)
+22: PASS   : CommentTests::refusedWrites(trim-collision)
+22: PASS   : CommentTests::refusedWrites(quote-name)
+22: PASS   : CommentTests::refusedWrites(newline-value)
+22: PASS   : CommentTests::refusedWrites(permission)
+22: PASS   : CommentTests::refusedWrites(folder-changed)
+22: PASS   : CommentTests::pauseCancelRetainsOriginal()
+22: PASS   : CommentTests::inheritedGroupPreservesOriginal()
+22: PASS   : CommentTests::filesystemFocusedItemAndFlatView()
+22: QINFO  : CommentTests::zipCommentRoundtrip(plain) Independent raw ZIP payload verification passed (including encrypted bytes)
+22: PASS   : CommentTests::zipCommentRoundtrip(plain)
+22: QINFO  : CommentTests::zipCommentRoundtrip(AES) Independent raw ZIP payload verification passed (including encrypted bytes)
+22: PASS   : CommentTests::zipCommentRoundtrip(AES)
+22: QINFO  : CommentTests::zipCommentRoundtrip(ZipCrypto) Independent raw ZIP payload verification passed (including encrypted bytes)
+22: PASS   : CommentTests::zipCommentRoundtrip(ZipCrypto)
+22: PASS   : CommentTests::zipCommentFailureAndCancel()
+22: QINFO  : CommentTests::zipIndependentPayloadVerification(create-bzip2) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+22: PASS   : CommentTests::zipIndependentPayloadVerification(create-bzip2)
+22: QINFO  : CommentTests::zipIndependentPayloadVerification(create-lzma) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+22: PASS   : CommentTests::zipIndependentPayloadVerification(create-lzma)
+22: QINFO  : CommentTests::zipIndependentPayloadVerification(create-zip64) Independent ZIP verification passed: 65539 entries, raw payload/local records, comments and decoded bytes
+22: PASS   : CommentTests::zipIndependentPayloadVerification(create-zip64)
+22: PASS   : CommentTests::zipCryptoDescriptorRetained()
+22: PASS   : CommentTests::zipVirtualFolderNotEditableAndMaximumLength()
+22: PASS   : CommentTests::zipDuplicateNamesCanBeListed()
+22: PASS   : CommentTests::splitZipReadDoesNotRequireDirectHandler()
+22: PASS   : CommentTests::zipGuiCommentAndColumnTransition()
+22: PASS   : CommentTests::cleanupTestCase()
+22: Totals: 31 passed, 0 failed, 0 skipped, 0 blacklisted, 24339ms
+22: ********* Finished testing of CommentTests *********
+6/7 Test #22: file_comments ....................   Passed   24.95 sec
+test 29
+    Start 29: overwrite
+
+29: Test command: /DEPS/build-comments-20261004/overwrite_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+29: Working Directory: /DEPS/build-comments-20261004
+29: Environment variables: 
+29:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+29: Test timeout computed to be: 120
+29: ********* Start testing of OverwriteTests *********
+29: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+29: PASS   : OverwriteTests::initTestCase()
+29: PASS   : OverwriteTests::choices(individual)
+29: PASS   : OverwriteTests::choices(yes-all)
+29: PASS   : OverwriteTests::choices(no-all)
+29: PASS   : OverwriteTests::choices(auto-rename)
+29: PASS   : OverwriteTests::choices(cancel)
+29: PASS   : OverwriteTests::folderMergeAndSkippedMove()
+29: PASS   : OverwriteTests::renameMoveIdentityAndMetadata()
+29: PASS   : OverwriteTests::renameMoveCollisionAndRollback()
+29: PASS   : OverwriteTests::renameMoveBackupAndLinks()
+29: SKIP   : OverwriteTests::moveOntoSelfAndAcrossVolumes() Set PORT_TEST_SECOND_VOLUME to a writable folder on another volume for cross-device verification.
+29:    Loc: [/REPOSITORY/tests/overwrite.cpp(106)]
+29: PASS   : OverwriteTests::changedDestinationAndRecovery()
+29: PASS   : OverwriteTests::metadataLinksAndNames()
+29: PASS   : OverwriteTests::extractionRenameExisting(7z)
+29: PASS   : OverwriteTests::extractionRenameExisting(zip)
+29: PASS   : OverwriteTests::readOnlyDestination(copy)
+29: PASS   : OverwriteTests::readOnlyDestination(rename-first-move)
+29: PASS   : OverwriteTests::waitingCancelAndDestruction()
+29: PASS   : OverwriteTests::dialogButtonsAndGuiConnection()
+29: PASS   : OverwriteTests::cleanupTestCase()
+29: Totals: 19 passed, 0 failed, 1 skipped, 0 blacklisted, 1735ms
+29: ********* Finished testing of OverwriteTests *********
+7/7 Test #29: overwrite ........................   Passed    2.30 sec
+
+The following tests passed:
+	panel_listing
+	progress_completion
+	dialog_resources
+	panel_selection
+	file_comments
+	overwrite
+
+86% tests passed, 1 tests failed out of 7
+
+Total Test time (real) =  60.41 sec
+
+The following tests FAILED:
+	  1 - command_entry (Failed)
+Errors while running CTest

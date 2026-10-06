@@ -1,0 +1,26 @@
+cmake_minimum_required(VERSION 3.21)
+# Build the official Cocoa plugin against the matching installed Qt frameworks.
+# The upstream candidate and the local Widgets cell ownership fix are applied.
+project(PortCocoaRuntimeFix LANGUAGES CXX OBJCXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOMOC ON)
+find_package(Qt6 6.11.3 EXACT REQUIRED COMPONENTS Core Gui CorePrivate GuiPrivate)
+if(NOT EXISTS "${COCOA_SOURCE}/qcocoaaccessibilityelement.mm")
+  message(FATAL_ERROR "Set COCOA_SOURCE to the patched official Cocoa plugin source")
+endif()
+file(GLOB cocoa_sources CONFIGURE_DEPENDS "${COCOA_SOURCE}/*.mm" "${COCOA_SOURCE}/*.cpp" "${COCOA_SOURCE}/*.h")
+# These fragments are included by qnsview.mm, as in the upstream CMakeLists.txt.
+list(FILTER cocoa_sources EXCLUDE REGEX "/qnsview_.*\\.mm$")
+list(FILTER cocoa_sources EXCLUDE REGEX "/qcocoavulkaninstance\\.mm$")
+qt_add_plugin(PortCocoa SHARED CLASS_NAME QCocoaIntegrationPlugin PLUGIN_TYPE platforms ${cocoa_sources})
+set_target_properties(PortCocoa PROPERTIES OUTPUT_NAME qcocoa LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/plugins/platforms")
+target_include_directories(PortCocoa PRIVATE "${COCOA_SOURCE}")
+target_compile_options(PortCocoa PRIVATE -Wno-deprecated-declarations)
+target_link_libraries(PortCocoa PRIVATE Qt6::Core Qt6::CorePrivate Qt6::Gui Qt6::GuiPrivate)
+foreach(framework Foundation AppKit Carbon CoreServices CoreVideo IOKit IOSurface Metal QuartzCore UniformTypeIdentifiers)
+  find_library(FW_${framework} ${framework} REQUIRED)
+  target_link_libraries(PortCocoa PRIVATE "${FW_${framework}}")
+endforeach()
+qt_add_resources(PortCocoa qcocoaresources PREFIX "/qt-project.org/mac/cursors" BASE "${COCOA_SOURCE}"
+  FILES "${COCOA_SOURCE}/images/sizeallcursor.png" "${COCOA_SOURCE}/images/spincursor.png" "${COCOA_SOURCE}/images/waitcursor.png")

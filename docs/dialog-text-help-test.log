@@ -1,0 +1,258 @@
+[0/1] Re-running CMake...
+-- Configuring done (0.6s)
+-- Generating done (14.3s)
+-- Build files have been written to: /DEPS/build-comments-20261004
+[1/132] Automatic MOC for target progress_priority_engine
+[2/130] Automatic MOC for target editor_application
+[3/128] Automatic MOC for target panel_open_application
+[4/126] Automatic MOC for target process_handoff_fixture
+[5/124] Automatic MOC for target cocoa_accessibility_tests
+[6/122] Automatic MOC for target port_core
+[7/120] Automatic MOC for target extract_metadata_tests
+[8/118] Automatic MOC for target port_ui
+[9/118] Building CXX object CMakeFiles/port_ui.dir/src/Benchmark.cpp.o
+[10/118] Building CXX object CMakeFiles/port_ui.dir/src/OptionsDialog.cpp.o
+[11/118] Building CXX object CMakeFiles/port_ui.dir/port_ui_autogen/mocs_compilation.cpp.o
+[12/118] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowView.cpp.o
+[13/118] Building CXX object CMakeFiles/port_ui.dir/src/Dialogs.cpp.o
+[14/118] Building CXX object CMakeFiles/port_ui.dir/src/MainWindow.cpp.o
+[15/118] Building CXX object CMakeFiles/port_ui.dir/src/UiLanguage.cpp.o
+[16/118] Building CXX object CMakeFiles/port_ui.dir/src/ProgressText.cpp.o
+[17/118] Building CXX object CMakeFiles/port_ui.dir/src/ResourceDialogs.cpp.o
+/REPOSITORY/src/ResourceDialogs.cpp:204:51: warning: missing field '_messageList' initializer [-Wmissing-field-initializers]
+  204 |         CProgressDialog layout{widgets, horizontal}; layout._buttonSizeX = controlRect("IDB_PAUSE").width(); layout._buttonSizeY = controlRect("IDB_PAUSE").height(); layout._messageList.widget = widgets.value(101);
+      |                                                   ^
+1 warning generated.
+[18/118] Building CXX object CMakeFiles/port_ui.dir/src/TemporaryFilesDialog.cpp.o
+[19/118] Building CXX object CMakeFiles/port_ui.dir/src/CompressionOptionsText.cpp.o
+[20/118] Building CXX object CMakeFiles/port_ui.dir/src/ProgressPresentation.cpp.o
+/REPOSITORY/src/ProgressPresentation.cpp:109:33: warning: missing field 'selected' initializer [-Wmissing-field-initializers]
+  109 |     } _messageList{&presentation};
+      |                                 ^
+In file included from /REPOSITORY/src/ProgressPresentation.cpp:137:
+/REPOSITORY/src/upstream/ProgressText.inc:64:13: warning: unused function 'ConvertSpeedToString' [-Wunused-function]
+   64 | static void ConvertSpeedToString(UInt64 v, wchar_t *s)
+      |             ^~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[21/118] Building CXX object CMakeFiles/port_ui.dir/src/ChecksumResultsDialog.cpp.o
+[22/118] Building CXX object CMakeFiles/port_ui.dir/src/Help.cpp.o
+[23/118] Linking CXX static library libport_ui.a
+[24/118] Automatic MOC for target SevenZipMac
+[25/117] Automatic MOC for target panel_listing_tests
+[26/116] Automatic MOC for target panel_sort_tests
+[27/115] Automatic MOC for target progress_presentation_tests
+[28/114] Automatic MOC for target language_settings_tests
+[29/113] Automatic MOC for target version_menu_time_tests
+[30/112] Automatic MOC for target panel_menu_drag_tests
+[31/111] Automatic MOC for target panel_open_tests
+[32/110] Automatic MOC for target panel_selection_tests
+[33/109] Automatic MOC for target benchmark_tests
+[34/108] Automatic MOC for target archive_transfer_tests
+[35/107] Automatic MOC for target native_progress_tests
+[36/106] Automatic MOC for target agent_tree_tests
+[37/105] Automatic MOC for target format_tests
+[38/104] Automatic MOC for target agent_selection_tests
+[39/103] Automatic MOC for target editor_tests
+[40/102] Automatic MOC for target statistics_tests
+[41/101] Automatic MOC for target directory_tests
+[42/100] Automatic MOC for target temporary_files_tests
+[43/99] Automatic MOC for target comment_tests
+[44/98] Automatic MOC for target open_mode_tests
+[45/97] Automatic MOC for target open_as_tests
+[46/96] Automatic MOC for target link_tests
+[47/95] Automatic MOC for target property_tests
+[48/94] Automatic MOC for target overwrite_tests
+[49/93] Automatic MOC for target cocoa_menu_tests
+[50/92] Linking CXX executable panel_listing_tests
+[51/92] Linking CXX executable "7-Zip Mac.app/Contents/MacOS/7-Zip Mac"
+[52/92] Linking CXX executable panel_sort_tests
+[53/92] Linking CXX executable progress_presentation_tests
+[54/92] Linking CXX executable language_settings_tests
+[55/92] Linking CXX executable version_menu_time_tests
+[56/92] Automatic MOC for target dialog_resource_tests
+[57/91] Linking CXX executable panel_menu_drag_tests
+[58/91] Automatic MOC for target progress_completion_tests
+[59/90] Linking CXX executable panel_open_tests
+[60/90] Linking CXX executable panel_selection_tests
+[61/90] Linking CXX executable benchmark_tests
+[62/90] Linking CXX executable archive_transfer_tests
+[63/90] Linking CXX executable native_progress_tests
+[64/90] Linking CXX executable format_tests
+[65/90] Linking CXX executable agent_tree_tests
+[66/90] Linking CXX executable agent_selection_tests
+[67/90] Linking CXX executable editor_tests
+[68/90] Linking CXX executable statistics_tests
+[69/90] Linking CXX executable directory_tests
+[70/90] Linking CXX executable temporary_files_tests
+[71/90] Linking CXX executable comment_tests
+[72/90] Linking CXX executable open_mode_tests
+[73/90] Linking CXX executable open_as_tests
+[74/90] Automatic MOC for target compression_help_tests
+[75/89] Linking CXX executable link_tests
+[76/89] Linking CXX executable property_tests
+[77/89] Linking CXX executable overwrite_tests
+[78/89] Automatic MOC for target port_tests
+[79/88] Building CXX object CMakeFiles/dialog_resource_tests.dir/tests/dialog-resources.cpp.o
+[80/88] Linking CXX executable dialog_resource_tests
+[81/88] Building CXX object CMakeFiles/progress_completion_tests.dir/tests/progress-completion.cpp.o
+[82/88] Linking CXX executable progress_completion_tests
+[83/88] Building OBJCXX object CMakeFiles/cocoa_menu_tests.dir/tests/cocoa-menus.mm.o
+[84/88] Linking CXX executable cocoa_menu_tests
+[85/88] Building CXX object CMakeFiles/compression_help_tests.dir/tests/compression-help.cpp.o
+[86/88] Linking CXX executable compression_help_tests
+[87/88] Building CXX object CMakeFiles/port_tests.dir/tests/integration.cpp.o
+[88/88] Linking CXX executable port_tests
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+Test project /DEPS/build-comments-20261004
+    Start  3: progress_completion
+1/6 Test  #3: progress_completion ..............   Passed    5.74 sec
+    Start  4: progress_presentation
+2/6 Test  #4: progress_presentation ............   Passed    2.14 sec
+    Start  5: dialog_resources
+3/6 Test  #5: dialog_resources .................***Failed    1.73 sec
+********* Start testing of DialogResourceTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : DialogResourceTests::initTestCase()
+FAIL!  : DialogResourceTests::sourceCoordinatesAndButtonOrder() Compared values are not the same
+   Actual   (rectangle(box->button(QDialogButtonBox::Ok), add)): QRect(302,636 96x33) (bottomright 397,668)
+   Expected (layout->toPixels({200, 312, 64, 16}))             : QRect(301,636 96x33) (bottomright 396,668)
+   Loc: [/REPOSITORY/tests/dialog-resources.cpp(68)]
+PASS   : DialogResourceTests::extractionVisibilityAndGeometry()
+PASS   : DialogResourceTests::originalProgressResizeAndState()
+PASS   : DialogResourceTests::originalProgressFormatting()
+PASS   : DialogResourceTests::originalOptionsSummaryAndModal()
+FAIL!  : DialogResourceTests::originalAboutAndTemporaryLayout() '!about.findChild<QLabel *>("aboutLogo")->pixmap().isNull()' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/dialog-resources.cpp(124)]
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 12
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 12
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 14
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 14
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 11
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 11
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleIndicFont", script 11
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 13
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 13
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 20
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 20
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 16
+QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 16
+PASS   : DialogResourceTests::officialLanguageTextFits()
+PASS   : DialogResourceTests::defaultLanguageAndSavedChoice()
+PASS   : DialogResourceTests::cleanupTestCase()
+Totals: 8 passed, 2 failed, 0 skipped, 0 blacklisted, 1189ms
+********* Finished testing of DialogResourceTests *********
+
+    Start  6: language_settings
+4/6 Test  #6: language_settings ................   Passed    1.38 sec
+    Start 19: temporary_files
+5/6 Test #19: temporary_files ..................   Passed    7.61 sec
+    Start 27: compression_help
+6/6 Test #27: compression_help .................   Passed    5.52 sec
+
+83% tests passed, 1 tests failed out of 6
+
+Total Test time (real) =  24.13 sec
+
+The following tests FAILED:
+	  5 - dialog_resources (Failed)
+Errors while running CTest
+[1/38] Automatic MOC for target port_ui
+[2/37] Building CXX object CMakeFiles/port_ui.dir/src/ResourceDialogs.cpp.o
+/REPOSITORY/src/ResourceDialogs.cpp:211:51: warning: missing field '_messageList' initializer [-Wmissing-field-initializers]
+  211 |         CProgressDialog layout{widgets, horizontal}; layout._buttonSizeX = controlRect("IDB_PAUSE").width(); layout._buttonSizeY = controlRect("IDB_PAUSE").height(); layout._messageList.widget = widgets.value(101);
+      |                                                   ^
+1 warning generated.
+[3/37] Building CXX object CMakeFiles/port_ui.dir/src/Help.cpp.o
+[4/37] Linking CXX static library libport_ui.a
+[5/37] Linking CXX executable language_settings_tests
+[6/37] Linking CXX executable panel_sort_tests
+[7/37] Linking CXX executable progress_presentation_tests
+[8/37] Linking CXX executable panel_listing_tests
+[9/37] Linking CXX executable progress_completion_tests
+[10/37] Linking CXX executable "7-Zip Mac.app/Contents/MacOS/7-Zip Mac"
+[11/37] Linking CXX executable panel_selection_tests
+[12/37] Linking CXX executable panel_menu_drag_tests
+[13/37] Linking CXX executable panel_open_tests
+[14/37] Linking CXX executable version_menu_time_tests
+[15/37] Linking CXX executable benchmark_tests
+[16/37] Linking CXX executable archive_transfer_tests
+[17/37] Linking CXX executable native_progress_tests
+[18/37] Linking CXX executable agent_selection_tests
+[19/37] Linking CXX executable agent_tree_tests
+[20/37] Linking CXX executable format_tests
+[21/37] Linking CXX executable port_tests
+[22/37] Linking CXX executable editor_tests
+[23/37] Linking CXX executable statistics_tests
+[24/37] Linking CXX executable directory_tests
+[25/37] Linking CXX executable temporary_files_tests
+[26/37] Linking CXX executable comment_tests
+[27/37] Linking CXX executable open_mode_tests
+[28/37] Linking CXX executable open_as_tests
+[29/37] Linking CXX executable link_tests
+[30/37] Linking CXX executable property_tests
+[31/37] Linking CXX executable overwrite_tests
+[32/37] Linking CXX executable cocoa_menu_tests
+[33/37] Linking CXX executable compression_help_tests
+[34/37] Automatic MOC for target dialog_resource_tests
+[35/36] Building CXX object CMakeFiles/dialog_resource_tests.dir/tests/dialog-resources.cpp.o
+[36/36] Linking CXX executable dialog_resource_tests
+********* Start testing of DialogResourceTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : DialogResourceTests::initTestCase()
+PASS   : DialogResourceTests::sourceCoordinatesAndButtonOrder()
+PASS   : DialogResourceTests::originalAboutAndTemporaryLayout()
+PASS   : DialogResourceTests::cleanupTestCase()
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 526ms
+********* Finished testing of DialogResourceTests *********
+[1/38] Automatic MOC for target port_ui
+[2/37] Building CXX object CMakeFiles/port_ui.dir/src/ResourceDialogs.cpp.o
+/REPOSITORY/src/ResourceDialogs.cpp:223:51: warning: missing field '_messageList' initializer [-Wmissing-field-initializers]
+  223 |         CProgressDialog layout{widgets, horizontal}; layout._buttonSizeX = controlRect("IDB_PAUSE").width(); layout._buttonSizeY = controlRect("IDB_PAUSE").height(); layout._messageList.widget = widgets.value(101);
+      |                                                   ^
+1 warning generated.
+[3/37] Building CXX object CMakeFiles/port_ui.dir/src/Help.cpp.o
+[4/37] Linking CXX static library libport_ui.a
+[5/37] Linking CXX executable panel_sort_tests
+[6/37] Linking CXX executable progress_completion_tests
+[7/37] Linking CXX executable panel_listing_tests
+[8/37] Linking CXX executable progress_presentation_tests
+[9/37] Linking CXX executable language_settings_tests
+[10/37] Linking CXX executable "7-Zip Mac.app/Contents/MacOS/7-Zip Mac"
+[11/37] Linking CXX executable version_menu_time_tests
+[12/37] Linking CXX executable panel_menu_drag_tests
+[13/37] Linking CXX executable panel_selection_tests
+[14/37] Linking CXX executable panel_open_tests
+[15/37] Linking CXX executable benchmark_tests
+[16/37] Linking CXX executable archive_transfer_tests
+[17/37] Linking CXX executable port_tests
+[18/37] Linking CXX executable native_progress_tests
+[19/37] Linking CXX executable agent_selection_tests
+[20/37] Linking CXX executable format_tests
+[21/37] Linking CXX executable agent_tree_tests
+[22/37] Linking CXX executable editor_tests
+[23/37] Linking CXX executable statistics_tests
+[24/37] Linking CXX executable open_mode_tests
+[25/37] Linking CXX executable temporary_files_tests
+[26/37] Linking CXX executable directory_tests
+[27/37] Linking CXX executable comment_tests
+[28/37] Linking CXX executable open_as_tests
+[29/37] Linking CXX executable link_tests
+[30/37] Linking CXX executable overwrite_tests
+[31/37] Linking CXX executable property_tests
+[32/37] Linking CXX executable cocoa_menu_tests
+[33/37] Linking CXX executable compression_help_tests
+[34/37] Automatic MOC for target dialog_resource_tests
+[35/36] Building CXX object CMakeFiles/dialog_resource_tests.dir/tests/dialog-resources.cpp.o
+[36/36] Linking CXX executable dialog_resource_tests
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+Test project /DEPS/build-comments-20261004
+    Start 3: progress_completion
+1/3 Test #3: progress_completion ..............   Passed    5.65 sec
+    Start 4: progress_presentation
+2/3 Test #4: progress_presentation ............   Passed    2.12 sec
+    Start 5: dialog_resources
+3/3 Test #5: dialog_resources .................   Passed    2.34 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =  10.12 sec

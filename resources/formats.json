@@ -1,0 +1,1599 @@
+{
+  "version": "26.03",
+  "formats": [
+    {
+      "name": "7z",
+      "canCreate": true,
+      "extensions": [
+        "7z"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/7z/7zRegister.cpp",
+      "capabilities": {
+        "precisionMask": 1,
+        "defaultPrecision": 0,
+        "modificationTime": true,
+        "creationTime": true,
+        "accessTime": true,
+        "defaultModificationTime": true,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "APFS",
+      "canCreate": false,
+      "extensions": [
+        "apfs",
+        "img"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/ApfsHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "APM",
+      "canCreate": false,
+      "extensions": [
+        "apm"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/ApmHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Ar",
+      "canCreate": false,
+      "extensions": [
+        "ar",
+        "a",
+        "deb",
+        "udeb",
+        "lib"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/ArHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Arj",
+      "canCreate": false,
+      "extensions": [
+        "arj"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/ArjHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Base64",
+      "canCreate": false,
+      "extensions": [
+        "b64"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Base64Handler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": true,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "COFF",
+      "canCreate": false,
+      "extensions": [
+        "obj"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/PeHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Cab",
+      "canCreate": false,
+      "extensions": [
+        "cab"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Cab/CabRegister.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Chm",
+      "canCreate": false,
+      "extensions": [
+        "chm",
+        "chi",
+        "chq",
+        "chw"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Chm/ChmHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Compound",
+      "canCreate": false,
+      "extensions": [
+        "msi",
+        "msp",
+        "msm",
+        "doc",
+        "xls",
+        "ppt",
+        "aaf"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/ComHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Cpio",
+      "canCreate": false,
+      "extensions": [
+        "cpio"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/CpioHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "CramFS",
+      "canCreate": false,
+      "extensions": [
+        "cramfs"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/CramfsHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Dmg",
+      "canCreate": false,
+      "extensions": [
+        "dmg"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/DmgHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "ELF",
+      "canCreate": false,
+      "extensions": [
+        "elf"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/ElfHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Ext",
+      "canCreate": false,
+      "extensions": [
+        "ext",
+        "ext2",
+        "ext3",
+        "ext4",
+        "img"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/ExtHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "FAT",
+      "canCreate": false,
+      "extensions": [
+        "fat",
+        "img"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/FatHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "FLV",
+      "canCreate": false,
+      "extensions": [
+        "flv"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/FlvHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "GPT",
+      "canCreate": false,
+      "extensions": [
+        "gpt",
+        "mbr"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/GptHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "HFS",
+      "canCreate": false,
+      "extensions": [
+        "hfs",
+        "hfsx"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/HfsHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Hxs",
+      "canCreate": false,
+      "extensions": [
+        "hxs",
+        "hxi",
+        "hxr",
+        "hxq",
+        "hxw",
+        "lit"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Chm/ChmHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "IHex",
+      "canCreate": false,
+      "extensions": [
+        "ihex"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/IhexHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Iso",
+      "canCreate": false,
+      "extensions": [
+        "iso",
+        "img"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Iso/IsoRegister.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "LP",
+      "canCreate": false,
+      "extensions": [
+        "lpimg",
+        "img"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/LpHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Lzh",
+      "canCreate": false,
+      "extensions": [
+        "lzh",
+        "lha"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/LzhHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "MBR",
+      "canCreate": false,
+      "extensions": [
+        "mbr"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/MbrHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "MachO",
+      "canCreate": false,
+      "extensions": [
+        "macho"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/MachoHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "MsLZ",
+      "canCreate": false,
+      "extensions": [
+        "mslz"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/MslzHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Mub",
+      "canCreate": false,
+      "extensions": [
+        "mub"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/MubHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "NTFS",
+      "canCreate": false,
+      "extensions": [
+        "ntfs",
+        "img"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/NtfsHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Nsis",
+      "canCreate": false,
+      "extensions": [
+        "nsis"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Nsis/NsisRegister.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "PE",
+      "canCreate": false,
+      "extensions": [
+        "exe",
+        "dll",
+        "sys"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/PeHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Ppmd",
+      "canCreate": false,
+      "extensions": [
+        "pmd"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/PpmdHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "QCOW",
+      "canCreate": false,
+      "extensions": [
+        "qcow",
+        "qcow2",
+        "qcow2c"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/QcowHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Rar",
+      "canCreate": false,
+      "extensions": [
+        "rar",
+        "r00"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Rar/RarHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Rar5",
+      "canCreate": false,
+      "extensions": [
+        "rar",
+        "r00"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Rar/Rar5Handler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Rpm",
+      "canCreate": false,
+      "extensions": [
+        "rpm"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/RpmHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "SWF",
+      "canCreate": false,
+      "extensions": [
+        "swf"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/SwfHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": true,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "SWFc",
+      "canCreate": false,
+      "extensions": [
+        "swf"
+      ],
+      "additionalExtensions": {
+        "swf": "~.swf"
+      },
+      "source": "CPP/7zip/Archive/SwfHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Sparse",
+      "canCreate": false,
+      "extensions": [
+        "simg",
+        "img"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/SparseHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Split",
+      "canCreate": false,
+      "extensions": [
+        "001"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/SplitHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "SquashFS",
+      "canCreate": false,
+      "extensions": [
+        "squashfs"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/SquashfsHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "TE",
+      "canCreate": false,
+      "extensions": [
+        "te"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/PeHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "UEFIc",
+      "canCreate": false,
+      "extensions": [
+        "scap"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/UefiHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "UEFIf",
+      "canCreate": false,
+      "extensions": [
+        "uefif"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/UefiHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Udf",
+      "canCreate": false,
+      "extensions": [
+        "udf",
+        "iso",
+        "img"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Udf/UdfHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "VDI",
+      "canCreate": false,
+      "extensions": [
+        "vdi"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/VdiHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "VHD",
+      "canCreate": false,
+      "extensions": [
+        "vhd"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/VhdHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "VHDX",
+      "canCreate": false,
+      "extensions": [
+        "vhdx",
+        "avhdx"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/VhdxHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "VMDK",
+      "canCreate": false,
+      "extensions": [
+        "vmdk"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/VmdkHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Xar",
+      "canCreate": false,
+      "extensions": [
+        "xar",
+        "pkg",
+        "xip"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/XarHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Z",
+      "canCreate": false,
+      "extensions": [
+        "z",
+        "taz"
+      ],
+      "additionalExtensions": {
+        "z": "*",
+        "taz": ".tar"
+      },
+      "source": "CPP/7zip/Archive/ZHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "bzip2",
+      "canCreate": true,
+      "extensions": [
+        "bz2",
+        "bzip2",
+        "tbz2",
+        "tbz"
+      ],
+      "additionalExtensions": {
+        "bz2": "*",
+        "bzip2": "*",
+        "tbz2": ".tar",
+        "tbz": ".tar"
+      },
+      "source": "CPP/7zip/Archive/Bz2Handler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": true,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "gzip",
+      "canCreate": true,
+      "extensions": [
+        "gz",
+        "gzip",
+        "tgz",
+        "tpz",
+        "apk"
+      ],
+      "additionalExtensions": {
+        "gz": "*",
+        "gzip": "*",
+        "tgz": ".tar",
+        "tpz": ".tar",
+        "apk": ".tar"
+      },
+      "source": "CPP/7zip/Archive/GzHandler.cpp",
+      "capabilities": {
+        "precisionMask": 2,
+        "defaultPrecision": 1,
+        "modificationTime": true,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": true,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": true,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "lzma",
+      "canCreate": false,
+      "extensions": [
+        "lzma"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/LzmaHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": true,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "lzma86",
+      "canCreate": false,
+      "extensions": [
+        "lzma86"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/LzmaHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": true,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "tar",
+      "canCreate": true,
+      "extensions": [
+        "tar",
+        "ova"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Tar/TarRegister.cpp",
+      "capabilities": {
+        "precisionMask": 11,
+        "defaultPrecision": 1,
+        "modificationTime": true,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": true,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": true,
+        "hardLinks": true
+      }
+    },
+    {
+      "name": "wim",
+      "canCreate": true,
+      "extensions": [
+        "wim",
+        "swm",
+        "esd",
+        "ppkg"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Wim/WimRegister.cpp",
+      "capabilities": {
+        "precisionMask": 1,
+        "defaultPrecision": 0,
+        "modificationTime": true,
+        "creationTime": true,
+        "accessTime": true,
+        "defaultModificationTime": true,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": true,
+        "hardLinks": true
+      }
+    },
+    {
+      "name": "xz",
+      "canCreate": true,
+      "extensions": [
+        "xz",
+        "txz"
+      ],
+      "additionalExtensions": {
+        "xz": "*",
+        "txz": ".tar"
+      },
+      "source": "CPP/7zip/Archive/XzHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": true,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "zip",
+      "canCreate": true,
+      "extensions": [
+        "zip",
+        "z01",
+        "zipx",
+        "jar",
+        "xpi",
+        "odt",
+        "ods",
+        "docx",
+        "xlsx",
+        "epub",
+        "ipa",
+        "apk",
+        "appx"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/Archive/Zip/ZipRegister.cpp",
+      "capabilities": {
+        "precisionMask": 7,
+        "defaultPrecision": 0,
+        "modificationTime": true,
+        "creationTime": true,
+        "accessTime": true,
+        "defaultModificationTime": true,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": false,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "zstd",
+      "canCreate": false,
+      "extensions": [
+        "zst",
+        "tzst"
+      ],
+      "additionalExtensions": {
+        "zst": "*",
+        "tzst": ".tar"
+      },
+      "source": "CPP/7zip/Archive/ZstdHandler.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": true,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    },
+    {
+      "name": "Hash",
+      "canCreate": true,
+      "extensions": [
+        "sha256",
+        "sha512",
+        "sha384",
+        "sha224",
+        "sha512-224",
+        "sha512-256",
+        "sha3-224",
+        "sha3-256",
+        "sha3-384",
+        "sha3-512",
+        "sha1",
+        "sha2",
+        "sha3",
+        "sha",
+        "md5",
+        "blake2s",
+        "blake2b",
+        "blake2sp",
+        "xxh64",
+        "crc32",
+        "crc64",
+        "cksum",
+        "asc"
+      ],
+      "additionalExtensions": {},
+      "source": "CPP/7zip/UI/Common/HashCalc.cpp",
+      "capabilities": {
+        "precisionMask": 0,
+        "defaultPrecision": 0,
+        "modificationTime": false,
+        "creationTime": false,
+        "accessTime": false,
+        "defaultModificationTime": false,
+        "defaultCreationTime": false,
+        "defaultAccessTime": false,
+        "keepName": true,
+        "symbolicLinks": false,
+        "hardLinks": false
+      }
+    }
+  ],
+  "extensions": [
+    "001",
+    "7z",
+    "a",
+    "aaf",
+    "apfs",
+    "apk",
+    "apm",
+    "appx",
+    "ar",
+    "arj",
+    "asc",
+    "avhdx",
+    "b64",
+    "blake2b",
+    "blake2s",
+    "blake2sp",
+    "bz2",
+    "bzip2",
+    "cab",
+    "chi",
+    "chm",
+    "chq",
+    "chw",
+    "cksum",
+    "cpio",
+    "cramfs",
+    "crc32",
+    "crc64",
+    "deb",
+    "dll",
+    "dmg",
+    "doc",
+    "docx",
+    "elf",
+    "epub",
+    "esd",
+    "exe",
+    "ext",
+    "ext2",
+    "ext3",
+    "ext4",
+    "fat",
+    "flv",
+    "gpt",
+    "gz",
+    "gzip",
+    "hfs",
+    "hfsx",
+    "hxi",
+    "hxq",
+    "hxr",
+    "hxs",
+    "hxw",
+    "ihex",
+    "img",
+    "ipa",
+    "iso",
+    "jar",
+    "lha",
+    "lib",
+    "lit",
+    "lpimg",
+    "lzh",
+    "lzma",
+    "lzma86",
+    "macho",
+    "mbr",
+    "md5",
+    "msi",
+    "mslz",
+    "msm",
+    "msp",
+    "mub",
+    "nsis",
+    "ntfs",
+    "obj",
+    "ods",
+    "odt",
+    "ova",
+    "pkg",
+    "pmd",
+    "ppkg",
+    "ppt",
+    "qcow",
+    "qcow2",
+    "qcow2c",
+    "r00",
+    "rar",
+    "rpm",
+    "scap",
+    "sha",
+    "sha1",
+    "sha2",
+    "sha224",
+    "sha256",
+    "sha3",
+    "sha3-224",
+    "sha3-256",
+    "sha3-384",
+    "sha3-512",
+    "sha384",
+    "sha512",
+    "sha512-224",
+    "sha512-256",
+    "simg",
+    "squashfs",
+    "swf",
+    "swm",
+    "sys",
+    "tar",
+    "taz",
+    "tbz",
+    "tbz2",
+    "te",
+    "tgz",
+    "tpz",
+    "txz",
+    "tzst",
+    "udeb",
+    "udf",
+    "uefif",
+    "vdi",
+    "vhd",
+    "vhdx",
+    "vmdk",
+    "wim",
+    "xar",
+    "xip",
+    "xls",
+    "xlsx",
+    "xpi",
+    "xxh64",
+    "xz",
+    "z",
+    "z01",
+    "zip",
+    "zipx",
+    "zst"
+  ]
+}

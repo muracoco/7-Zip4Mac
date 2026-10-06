@@ -1,0 +1,547 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 3
+    Start  3: panel_listing
+
+3: Test command: /DEPS/build-comments-20261004/panel_listing_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+3: Working Directory: /DEPS/build-comments-20261004
+3: Environment variables: 
+3:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+3: Test timeout computed to be: 180
+3: ********* Start testing of ListingTests *********
+3: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+3: QINFO  : ListingTests::initTestCase() Owned listing fixtures: "/TMP/T/PanelListing-Iuszcs"
+3: PASS   : ListingTests::initTestCase()
+3: PASS   : ListingTests::originalDisplayAndDeferredProperties()
+3: PASS   : ListingTests::displayedNameKeepsRealFilesystemIdentity()
+3: PASS   : ListingTests::asynchronousSortKeepsExactValuesMarksFocusAndUnsorted()
+3: PASS   : ListingTests::supersededSortClearAndDestruction()
+3: PASS   : ListingTests::nativeIconsBothKindsAndNavigation()
+3: PASS   : ListingTests::archiveRawNameRename(7z)
+3: PASS   : ListingTests::archiveRawNameRename(zip)
+3: QINFO  : ListingTests::actualLargeArchive(7z) "7z" 15,000 archive rows elapsed ms 1678 maximum event-loop gap ms 772
+3: PASS   : ListingTests::actualLargeArchive(7z)
+3: QINFO  : ListingTests::actualLargeArchive(zip) "zip" 15,000 archive rows elapsed ms 2358 maximum event-loop gap ms 1021
+3: PASS   : ListingTests::actualLargeArchive(zip)
+3: PASS   : ListingTests::cleanupTestCase()
+3: Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 12166ms
+3: ********* Finished testing of ListingTests *********
+1/4 Test  #3: panel_listing ....................   Passed   13.70 sec
+test 18
+    Start 18: zip_metadata
+
+18: Test command: /DEPS/build-comments-20261004/zip_metadata_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+18: Working Directory: /DEPS/build-comments-20261004
+18: Environment variables: 
+18:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+18: Test timeout computed to be: 180
+18: ********* Start testing of ZipMetadataTests *********
+18: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+18: PASS   : ZipMetadataTests::initTestCase()
+18: QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-deflate-dd32) ERROR: Wrong password : folder/child.txt
+18: ERROR: Wrong password : keep.txt
+18: ERROR: Wrong password : 日本語 space.txt
+18: 
+18: FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-deflate-dd32) 'pristine(root, testArgs)' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+18: QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-store-dd32) 
+18: 
+18: System ERROR:
+18: E_NOTIMPL : Not implemented
+18: 
+18: FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-store-dd32) 'fixture(root, encryption, level, variant)' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(101)]
+18: QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-forced64) ERROR: Wrong password : folder/child.txt
+18: ERROR: Wrong password : keep.txt
+18: ERROR: Wrong password : 日本語 space.txt
+18: 
+18: FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-forced64) 'pristine(root, testArgs)' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+18: QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned32) 
+18: 
+18: System ERROR:
+18: E_NOTIMPL : Not implemented
+18: 
+18: FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned32) 'fixture(root, encryption, level, variant)' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(101)]
+18: QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned64) ERROR: Wrong password : folder/child.txt
+18: ERROR: Wrong password : keep.txt
+18: ERROR: Wrong password : 日本語 space.txt
+18: 
+18: FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned64) 'pristine(root, testArgs)' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+18: QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-skewed-time) ERROR: Wrong password : folder/child.txt
+18: ERROR: Wrong password : keep.txt
+18: ERROR: Wrong password : 日本語 space.txt
+18: 
+18: FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-skewed-time) 'pristine(root, testArgs)' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+18: QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(AES-descriptor) ERROR: Wrong password : folder/child.txt
+18: ERROR: Wrong password : keep.txt
+18: ERROR: Wrong password : 日本語 space.txt
+18: 
+18: FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(AES-descriptor) 'pristine(root, testArgs)' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+18: QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+18: QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+18: QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor) Pristine official 7zz extraction matches source SHA-256 and directories
+18: PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor)
+18: QINFO  : ZipMetadataTests::legacyCommentHelperDescriptor() Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+18: QWARN  : ZipMetadataTests::legacyCommentHelperDescriptor() ERROR: Wrong password : folder/child.txt
+18: ERROR: Wrong password : keep.txt
+18: ERROR: Wrong password : 日本語 space.txt
+18: 
+18: FAIL!  : ZipMetadataTests::legacyCommentHelperDescriptor() 'pristine(root, {"t", "-p", "--", root + "/fixture.zip"})' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(124)]
+18: QWARN  : ZipMetadataTests::encryptedFolderRenameAndReplacement() ERROR: Wrong password : renamed-folder/child.txt
+18: ERROR: Wrong password : keep.txt
+18: ERROR: Wrong password : 日本語 space.txt
+18: 
+18: FAIL!  : ZipMetadataTests::encryptedFolderRenameAndReplacement() 'pristine(root, {"t", "-p", "--", request.archive})' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(130)]
+18: QWARN  : ZipMetadataTests::utf8CommentBoundsAndFailedUpdate() ERROR: Wrong password : folder/child.txt
+18: ERROR: Wrong password : keep.txt
+18: ERROR: Wrong password : 日本語 space.txt
+18: 
+18: FAIL!  : ZipMetadataTests::utf8CommentBoundsAndFailedUpdate() 'pristine(root, {"t", "-p", "--", request.archive})' returned FALSE. ()
+18:    Loc: [/REPOSITORY/tests/zip-metadata.cpp(156)]
+18: PASS   : ZipMetadataTests::cleanupTestCase()
+18: Totals: 3 passed, 10 failed, 0 skipped, 0 blacklisted, 1460ms
+18: ********* Finished testing of ZipMetadataTests *********
+2/4 Test #18: zip_metadata .....................***Failed    1.95 sec
+********* Start testing of ZipMetadataTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : ZipMetadataTests::initTestCase()
+QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-deflate-dd32) ERROR: Wrong password : folder/child.txt
+ERROR: Wrong password : keep.txt
+ERROR: Wrong password : 日本語 space.txt
+
+FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-deflate-dd32) 'pristine(root, testArgs)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-store-dd32) 
+
+System ERROR:
+E_NOTIMPL : Not implemented
+
+FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-store-dd32) 'fixture(root, encryption, level, variant)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(101)]
+QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-forced64) ERROR: Wrong password : folder/child.txt
+ERROR: Wrong password : keep.txt
+ERROR: Wrong password : 日本語 space.txt
+
+FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-forced64) 'pristine(root, testArgs)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned32) 
+
+System ERROR:
+E_NOTIMPL : Not implemented
+
+FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned32) 'fixture(root, encryption, level, variant)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(101)]
+QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned64) ERROR: Wrong password : folder/child.txt
+ERROR: Wrong password : keep.txt
+ERROR: Wrong password : 日本語 space.txt
+
+FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-unsigned64) 'pristine(root, testArgs)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-skewed-time) ERROR: Wrong password : folder/child.txt
+ERROR: Wrong password : keep.txt
+ERROR: Wrong password : 日本語 space.txt
+
+FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(crypto-skewed-time) 'pristine(root, testArgs)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+QWARN  : ZipMetadataTests::nativeCommentRenameAndExtract(AES-descriptor) ERROR: Wrong password : folder/child.txt
+ERROR: Wrong password : keep.txt
+ERROR: Wrong password : 日本語 space.txt
+
+FAIL!  : ZipMetadataTests::nativeCommentRenameAndExtract(AES-descriptor) 'pristine(root, testArgs)' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(102)]
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor) Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QINFO  : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor) Pristine official 7zz extraction matches source SHA-256 and directories
+PASS   : ZipMetadataTests::nativeCommentRenameAndExtract(plain-descriptor)
+QINFO  : ZipMetadataTests::legacyCommentHelperDescriptor() Independent ZIP check passed: names, comments, DOS time, packed/encrypted bytes and descriptor
+QWARN  : ZipMetadataTests::legacyCommentHelperDescriptor() ERROR: Wrong password : folder/child.txt
+ERROR: Wrong password : keep.txt
+ERROR: Wrong password : 日本語 space.txt
+
+FAIL!  : ZipMetadataTests::legacyCommentHelperDescriptor() 'pristine(root, {"t", "-p", "--", root + "/fixture.zip"})' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(124)]
+QWARN  : ZipMetadataTests::encryptedFolderRenameAndReplacement() ERROR: Wrong password : renamed-folder/child.txt
+ERROR: Wrong password : keep.txt
+ERROR: Wrong password : 日本語 space.txt
+
+FAIL!  : ZipMetadataTests::encryptedFolderRenameAndReplacement() 'pristine(root, {"t", "-p", "--", request.archive})' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(130)]
+QWARN  : ZipMetadataTests::utf8CommentBoundsAndFailedUpdate() ERROR: Wrong password : folder/child.txt
+ERROR: Wrong password : keep.txt
+ERROR: Wrong password : 日本語 space.txt
+
+FAIL!  : ZipMetadataTests::utf8CommentBoundsAndFailedUpdate() 'pristine(root, {"t", "-p", "--", request.archive})' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/zip-metadata.cpp(156)]
+PASS   : ZipMetadataTests::cleanupTestCase()
+Totals: 3 passed, 10 failed, 0 skipped, 0 blacklisted, 1460ms
+********* Finished testing of ZipMetadataTests *********
+
+test 20
+    Start 20: editor_writeback
+
+20: Test command: /DEPS/build-comments-20261004/editor_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+20: Working Directory: /DEPS/build-comments-20261004
+20: Environment variables: 
+20:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+20: Test timeout computed to be: 180
+20: ********* Start testing of EditorTests *********
+20: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+20: QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "/TMP/T/ExternalEdit-VCHkNu"
+20: PASS   : EditorTests::initTestCase()
+20: PASS   : EditorTests::processWaitsForDescendants()
+20: PASS   : EditorTests::independentSameExecutableHandoff(short-unchanged-discovers-server)
+20: PASS   : EditorTests::independentSameExecutableHandoff(changed-client-does-not-discover)
+20: PASS   : EditorTests::independentSameExecutableHandoff(long-client-does-not-discover)
+20: PASS   : EditorTests::independentHandoffArchiveWriteBack()
+20: PASS   : EditorTests::writeBack(7z)
+20: PASS   : EditorTests::writeBack(zip)
+20: PASS   : EditorTests::writeBack(tar)
+20: PASS   : EditorTests::writeBack(wim)
+20: PASS   : EditorTests::writeBack(gzip)
+20: PASS   : EditorTests::writeBack(bzip2)
+20: PASS   : EditorTests::writeBack(xz)
+20: FAIL!  : EditorTests::writeBack(7z-data-view) 'errors.isEmpty()' returned FALSE. (7-Zip reported an error or warning. Extracted files may be incomplete.
+20: Target: /TMP/T/ExternalEdit-VCHkNu/writeback 7z1/archive.7z
+20: 7-Zip exit code: 255
+20: 
+20: 
+20: Break signaled
+20: 
+20: 7-Zip (a) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+20:  64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+20: 
+20: Scanning the drive for archives:
+20:   0M Scan /var/folders/wk/hx24275j2wz9lx1p . ternalEdit-VCHkNu/writeback 7z1/?????????????????????????????????????????????????????????????????????????????                                                                             ?????????????????????????????????????????????????????????????????????????????1 file, 269 bytes (1 KiB)
+20: 
+20: Extracting archive: /TMP/T/ExternalEdit-VCHkNu/writeback 7z1/archive.7z
+20: --
+20: Path = /TMP/T/ExternalEdit-VCHkNu/writeback 7z1/archive.7z
+20: Type = 7z
+20: Physical Size = 269
+20: Headers Size = 221
+20: Method = LZMA2:12 7zAES
+20: Solid = +
+20: Blocks = 1
+20: 
+20:   0%????    ????
+20: Enter password:
+20: 
+20: )
+20:    Loc: [/REPOSITORY/tests/external-edit.cpp(192)]
+20: PASS   : EditorTests::writeBack(7z-headers)
+20: FAIL!  : EditorTests::writeBack(zip-AES) 'errors.isEmpty()' returned FALSE. (7-Zip reported an error or warning. Extracted files may be incomplete.
+20: Target: /TMP/T/ExternalEdit-VCHkNu/writeback zip1/archive.zip
+20: 7-Zip exit code: 255
+20: 
+20: 
+20: Break signaled
+20: 
+20: 7-Zip (a) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+20:  64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+20: 
+20: Scanning the drive for archives:
+20:   0M Scan /var/folders/wk/hx24275j2wz9lx1p . ternalEdit-VCHkNu/writeback zip1/??????????????????????????????????????????????????????????????????????????????                                                                              ??????????????????????????????????????????????????????????????????????????????1 file, 460 bytes (1 KiB)
+20: 
+20: Extracting archive: /TMP/T/ExternalEdit-VCHkNu/writeback zip1/archive.zip
+20: --
+20: Path = /TMP/T/ExternalEdit-VCHkNu/writeback zip1/archive.zip
+20: Type = zip
+20: Physical Size = 460
+20: 
+20:   0%????    ????- 日本語 space [*].txt
+20:   0%????    ????
+20: Enter password:
+20: 
+20: )
+20:    Loc: [/REPOSITORY/tests/external-edit.cpp(192)]
+20: FAIL!  : EditorTests::writeBack(zip-ZipCrypto) 'errors.isEmpty()' returned FALSE. (7-Zip reported an error or warning. Extracted files may be incomplete.
+20: Target: /TMP/T/ExternalEdit-VCHkNu/writeback zip2/archive.zip
+20: 7-Zip exit code: 255
+20: 
+20: 
+20: Break signaled
+20: 
+20: 7-Zip (a) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+20:  64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+20: 
+20: Scanning the drive for archives:
+20:   0M Scan /var/folders/wk/hx24275j2wz9lx1p . ternalEdit-VCHkNu/writeback zip2/??????????????????????????????????????????????????????????????????????????????                                                                              ??????????????????????????????????????????????????????????????????????????????1 file, 384 bytes (1 KiB)
+20: 
+20: Extracting archive: /TMP/T/ExternalEdit-VCHkNu/writeback zip2/archive.zip
+20: --
+20: Path = /TMP/T/ExternalEdit-VCHkNu/writeback zip2/archive.zip
+20: Type = zip
+20: Physical Size = 384
+20: 
+20:   0%????    ????- 日本語 space [*].txt
+20:   0%????    ????
+20: Enter password:
+20: 
+20: )
+20:    Loc: [/REPOSITORY/tests/external-edit.cpp(192)]
+20: PASS   : EditorTests::discardedOrRetained(no)
+20: PASS   : EditorTests::discardedOrRetained(cancel)
+20: PASS   : EditorTests::discardedOrRetained(other-folder)
+20: PASS   : EditorTests::discardedOrRetained(read-only)
+20: PASS   : EditorTests::discardedOrRetained(removed-item)
+20: PASS   : EditorTests::runningEditorSurvivesClose(modified)
+20: PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+20: PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+20: PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+20: PASS   : EditorTests::focusedFileOnly()
+20: PASS   : EditorTests::applicationBundleWaitAndArguments()
+20: PASS   : EditorTests::observedNewSessionChild()
+20: FAIL!  : EditorTests::nestedEditorWriteBack() 'error.isEmpty()' returned FALSE. (7-Zip reported an error or warning. Extracted files may be incomplete.
+20: Target: /TMP/T/ExternalEdit-VCHkNu/.7zip-nested-kMJOwx/archive.zip
+20: 7-Zip exit code: 255
+20: 
+20: 
+20: Break signaled
+20: 
+20: 7-Zip (a) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+20:  64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+20: 
+20: Scanning the drive for archives:
+20:   0M Scan /var/folders/wk/hx24275j2wz9lx . dit-VCHkNu/.7zip-nested-kMJOwx/??????????????????????????????????????????????????????????????????????????                                                                          ??????????????????????????????????????????????????????????????????????????1 file, 460 bytes (1 KiB)
+20: 
+20: Extracting archive: /TMP/T/ExternalEdit-VCHkNu/.7zip-nested-kMJOwx/archive.zip
+20: --
+20: Path = /TMP/T/ExternalEdit-VCHkNu/.7zip-nested-kMJOwx/archive.zip
+20: Type = zip
+20: Physical Size = 460
+20: 
+20:   0%????    ????- 日本語 space [*].txt
+20:   0%????    ????
+20: Enter password:
+20: 
+20: )
+20:    Loc: [/REPOSITORY/tests/external-edit.cpp(320)]
+20: PASS   : EditorTests::updateCancellationRetainsEdit()
+20: PASS   : EditorTests::twoPanelsSerializeWrites()
+20: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+20: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+20: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+20: PASS   : EditorTests::cleanupTestCase()
+20: Totals: 32 passed, 4 failed, 0 skipped, 0 blacklisted, 67198ms
+20: ********* Finished testing of EditorTests *********
+3/4 Test #20: editor_writeback .................***Failed   67.70 sec
+********* Start testing of EditorTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "/TMP/T/ExternalEdit-VCHkNu"
+PASS   : EditorTests::initTestCase()
+PASS   : EditorTests::processWaitsForDescendants()
+PASS   : EditorTests::independentSameExecutableHandoff(short-unchanged-discovers-server)
+PASS   : EditorTests::independentSameExecutableHandoff(changed-client-does-not-discover)
+PASS   : EditorTests::independentSameExecutableHandoff(long-client-does-not-discover)
+PASS   : EditorTests::independentHandoffArchiveWriteBack()
+PASS   : EditorTests::writeBack(7z)
+PASS   : EditorTests::writeBack(zip)
+PASS   : EditorTests::writeBack(tar)
+PASS   : EditorTests::writeBack(wim)
+PASS   : EditorTests::writeBack(gzip)
+PASS   : EditorTests::writeBack(bzip2)
+PASS   : EditorTests::writeBack(xz)
+FAIL!  : EditorTests::writeBack(7z-data-view) 'errors.isEmpty()' returned FALSE. (7-Zip reported an error or warning. Extracted files may be incomplete.
+Target: /TMP/T/ExternalEdit-VCHkNu/writeback 7z1/archive.7z
+7-Zip exit code: 255
+
+
+Break signaled
+
+7-Zip (a) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+
+Scanning the drive for archives:
+  0M Scan /var/folders/wk/hx24275j2wz9lx1p . ternalEdit-VCHkNu/writeback 7z1/?????????????????????????????????????????????????????????????????????????????                                                                             ?????????????????????????????????????????????????????????????????????????????1 file, 269 bytes (1 KiB)
+
+Extracting archive: /TMP/T/ExternalEdit-VCHkNu/writeback 7z1/archive.7z
+--
+Path = /TMP/T/ExternalEdit-VCHkNu/writeback 7z1/archive.7z
+Type = 7z
+Physical Size = 269
+Headers Size = 221
+Method = LZMA2:12 7zAES
+Solid = +
+Blocks = 1
+
+  0%????    ????
+Enter password:
+
+)
+   Loc: [/REPOSITORY/tests/external-edit.cpp(192)]
+PASS   : EditorTests::writeBack(7z-headers)
+FAIL!  : EditorTests::writeBack(zip-AES) 'errors.isEmpty()' returned FALSE. (7-Zip reported an error or warning. Extracted files may be incomplete.
+Target: /TMP/T/ExternalEdit-VCHkNu/writeback zip1/archive.zip
+7-Zip exit code: 255
+
+
+Break signaled
+
+7-Zip (a) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+
+Scanning the drive for archives:
+  0M Scan /var/folders/wk/hx24275j2wz9lx1p . ternalEdit-VCHkNu/writeback zip1/??????????????????????????????????????????????????????????????????????????????                                                                              ??????????????????????????????????????????????????????????????????????????????1 file, 460 bytes (1 KiB)
+
+Extracting archive: /TMP/T/ExternalEdit-VCHkNu/writeback zip1/archive.zip
+--
+Path = /TMP/T/ExternalEdit-VCHkNu/writeback zip1/archive.zip
+Type = zip
+Physical Size = 460
+
+  0%????    ????- 日本語 space [*].txt
+  0%????    ????
+Enter password:
+
+)
+   Loc: [/REPOSITORY/tests/external-edit.cpp(192)]
+FAIL!  : EditorTests::writeBack(zip-ZipCrypto) 'errors.isEmpty()' returned FALSE. (7-Zip reported an error or warning. Extracted files may be incomplete.
+Target: /TMP/T/ExternalEdit-VCHkNu/writeback zip2/archive.zip
+7-Zip exit code: 255
+
+
+Break signaled
+
+7-Zip (a) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+
+Scanning the drive for archives:
+  0M Scan /var/folders/wk/hx24275j2wz9lx1p . ternalEdit-VCHkNu/writeback zip2/??????????????????????????????????????????????????????????????????????????????                                                                              ??????????????????????????????????????????????????????????????????????????????1 file, 384 bytes (1 KiB)
+
+Extracting archive: /TMP/T/ExternalEdit-VCHkNu/writeback zip2/archive.zip
+--
+Path = /TMP/T/ExternalEdit-VCHkNu/writeback zip2/archive.zip
+Type = zip
+Physical Size = 384
+
+  0%????    ????- 日本語 space [*].txt
+  0%????    ????
+Enter password:
+
+)
+   Loc: [/REPOSITORY/tests/external-edit.cpp(192)]
+PASS   : EditorTests::discardedOrRetained(no)
+PASS   : EditorTests::discardedOrRetained(cancel)
+PASS   : EditorTests::discardedOrRetained(other-folder)
+PASS   : EditorTests::discardedOrRetained(read-only)
+PASS   : EditorTests::discardedOrRetained(removed-item)
+PASS   : EditorTests::runningEditorSurvivesClose(modified)
+PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+PASS   : EditorTests::focusedFileOnly()
+PASS   : EditorTests::applicationBundleWaitAndArguments()
+PASS   : EditorTests::observedNewSessionChild()
+FAIL!  : EditorTests::nestedEditorWriteBack() 'error.isEmpty()' returned FALSE. (7-Zip reported an error or warning. Extracted files may be incomplete.
+Target: /TMP/T/ExternalEdit-VCHkNu/.7zip-nested-kMJOwx/archive.zip
+7-Zip exit code: 255
+
+
+Break signaled
+
+7-Zip (a) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575
+
+Scanning the drive for archives:
+  0M Scan /var/folders/wk/hx24275j2wz9lx . dit-VCHkNu/.7zip-nested-kMJOwx/??????????????????????????????????????????????????????????????????????????                                                                          ??????????????????????????????????????????????????????????????????????????1 file, 460 bytes (1 KiB)
+
+Extracting archive: /TMP/T/ExternalEdit-VCHkNu/.7zip-nested-kMJOwx/archive.zip
+--
+Path = /TMP/T/ExternalEdit-VCHkNu/.7zip-nested-kMJOwx/archive.zip
+Type = zip
+Physical Size = 460
+
+  0%????    ????- 日本語 space [*].txt
+  0%????    ????
+Enter password:
+
+)
+   Loc: [/REPOSITORY/tests/external-edit.cpp(320)]
+PASS   : EditorTests::updateCancellationRetainsEdit()
+PASS   : EditorTests::twoPanelsSerializeWrites()
+PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+PASS   : EditorTests::cleanupTestCase()
+Totals: 32 passed, 4 failed, 0 skipped, 0 blacklisted, 67198ms
+********* Finished testing of EditorTests *********
+
+test 24
+    Start 24: file_comments
+
+24: Test command: /DEPS/build-comments-20261004/comment_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+24: Working Directory: /DEPS/build-comments-20261004
+24: Environment variables: 
+24:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+24: Test timeout computed to be: 180
+24: ********* Start testing of CommentTests *********
+24: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+24: QINFO  : CommentTests::initTestCase() Owned comment fixtures: "/TMP/T/FileComments-zGNwnb"
+24: PASS   : CommentTests::initTestCase()
+24: PASS   : CommentTests::textPairsCompatibility()
+24: PASS   : CommentTests::filesystemRoundtripAndMetadata()
+24: PASS   : CommentTests::refusedWrites(invalid-utf8)
+24: PASS   : CommentTests::refusedWrites(symlink)
+24: PASS   : CommentTests::refusedWrites(read-only)
+24: PASS   : CommentTests::refusedWrites(hardlink)
+24: PASS   : CommentTests::refusedWrites(duplicate-pairs)
+24: PASS   : CommentTests::refusedWrites(changed)
+24: PASS   : CommentTests::refusedWrites(created)
+24: PASS   : CommentTests::refusedWrites(trim-collision)
+24: PASS   : CommentTests::refusedWrites(quote-name)
+24: PASS   : CommentTests::refusedWrites(newline-value)
+24: PASS   : CommentTests::refusedWrites(permission)
+24: PASS   : CommentTests::refusedWrites(folder-changed)
+24: PASS   : CommentTests::pauseCancelRetainsOriginal()
+24: PASS   : CommentTests::inheritedGroupPreservesOriginal()
+24: PASS   : CommentTests::filesystemFocusedItemAndFlatView()
+24: QINFO  : CommentTests::zipCommentRoundtrip(plain) Independent raw ZIP payload verification passed (including encrypted bytes)
+24: PASS   : CommentTests::zipCommentRoundtrip(plain)
+24: QINFO  : CommentTests::zipCommentRoundtrip(AES) Independent raw ZIP payload verification passed (including encrypted bytes)
+24: PASS   : CommentTests::zipCommentRoundtrip(AES)
+24: QINFO  : CommentTests::zipCommentRoundtrip(ZipCrypto) Independent raw ZIP payload verification passed (including encrypted bytes)
+24: PASS   : CommentTests::zipCommentRoundtrip(ZipCrypto)
+24: PASS   : CommentTests::zipCommentFailureAndCancel()
+24: QINFO  : CommentTests::zipIndependentPayloadVerification(create-bzip2) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+24: PASS   : CommentTests::zipIndependentPayloadVerification(create-bzip2)
+24: QINFO  : CommentTests::zipIndependentPayloadVerification(create-lzma) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+24: PASS   : CommentTests::zipIndependentPayloadVerification(create-lzma)
+24: QINFO  : CommentTests::zipIndependentPayloadVerification(create-zip64) Independent ZIP verification passed: 65539 entries, raw payload/local records, comments and decoded bytes
+24: PASS   : CommentTests::zipIndependentPayloadVerification(create-zip64)
+24: PASS   : CommentTests::zipCryptoDescriptorUpdated()
+24: PASS   : CommentTests::zipVirtualFolderNotEditableAndMaximumLength()
+24: PASS   : CommentTests::zipDuplicateNamesCanBeListed()
+24: PASS   : CommentTests::splitZipReadDoesNotRequireDirectHandler()
+24: PASS   : CommentTests::zipGuiCommentAndColumnTransition()
+24: PASS   : CommentTests::cleanupTestCase()
+24: Totals: 31 passed, 0 failed, 0 skipped, 0 blacklisted, 22912ms
+24: ********* Finished testing of CommentTests *********
+4/4 Test #24: file_comments ....................   Passed   23.46 sec
+
+The following tests passed:
+	panel_listing
+	file_comments
+
+50% tests passed, 2 tests failed out of 4
+
+Total Test time (real) = 106.81 sec
+
+The following tests FAILED:
+	 18 - zip_metadata (Failed)
+	 20 - editor_writeback (Failed)
+Errors while running CTest

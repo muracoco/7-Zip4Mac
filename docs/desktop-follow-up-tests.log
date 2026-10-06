@@ -1,0 +1,792 @@
+Captured desktop-follow-up output; machine-specific path prefixes and trailing whitespace are normalized.
+Original report SHA-256 values are in desktop-follow-up-evidence.json.
+
+REPORT: ui-affected-launch.log
+zsh:1: command not found: ctest
+
+REPORT: build.log
+/DEPS/QtSources/6.11.3/Src/qtbase
+CMake Warning at /DEPS/Qt/6.11.3/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:339 (message):
+  This project is using headers of the CorePrivate module and will therefore
+  be tied to this specific Qt module build version.  Running this project
+  against other versions of the Qt modules may crash at any arbitrary point.
+  This is not a bug, but a result of using Qt internals.  You have been
+  warned!
+
+  You can disable this warning by setting QT_NO_PRIVATE_MODULE_WARNING to ON.
+Call Stack (most recent call first):
+  /DEPS/Qt/6.11.3/macos/lib/cmake/Qt6CorePrivate/Qt6CorePrivateConfig.cmake:48 (_qt_internal_show_private_module_warning)
+  /DEPS/Qt/6.11.3/macos/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)
+  CMakeLists.txt:8 (find_package)
+
+
+CMake Warning at /DEPS/Qt/6.11.3/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:339 (message):
+  This project is using headers of the GuiPrivate module and will therefore
+  be tied to this specific Qt module build version.  Running this project
+  against other versions of the Qt modules may crash at any arbitrary point.
+  This is not a bug, but a result of using Qt internals.  You have been
+  warned!
+
+  You can disable this warning by setting QT_NO_PRIVATE_MODULE_WARNING to ON.
+Call Stack (most recent call first):
+  /DEPS/Qt/6.11.3/macos/lib/cmake/Qt6GuiPrivate/Qt6GuiPrivateConfig.cmake:48 (_qt_internal_show_private_module_warning)
+  /DEPS/Qt/6.11.3/macos/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /DEPS/qt-cocoa-6.11.3-7ed2aead37c3/build
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+Official 26.03 overlay: 15 files verified; ZipCrypto metadata descriptor fix; codecs/crypto unchanged
+make: Nothing to be done for `port_zip_comment'.
+Official 26.03 overlay: 15 files verified; ZipCrypto metadata descriptor fix; codecs/crypto unchanged
+/REPOSITORY/src/upstream/BenchmarkGuiMath.inc
+/REPOSITORY/src/upstream/BenchmarkMemory.inc
+/REPOSITORY/src/upstream/AgentCreateFolder.inc
+/REPOSITORY/src/upstream/AgentComment.inc
+/REPOSITORY/src/upstream/AgentUpdateOneFile.inc
+/REPOSITORY/src/upstream/AgentItemUpdate.inc
+/REPOSITORY/src/upstream/AgentUpdateStream.inc
+/REPOSITORY/src/upstream/AgentProperties.inc
+/REPOSITORY/src/upstream/AgentSelection.inc
+/REPOSITORY/src/upstream/TempBrowseEnumerator.inc
+/REPOSITORY/src/upstream/TempBrowseProperties.inc
+/REPOSITORY/src/upstream/PanelSelection.inc
+/REPOSITORY/src/upstream/PanelOpen.inc
+/REPOSITORY/src/upstream/PanelKeyCommands.inc
+/REPOSITORY/src/upstream/RenameName.inc
+/REPOSITORY/src/upstream/FilesystemCreationPath.inc
+/REPOSITORY/src/upstream/ProcessDiscovery.inc
+/REPOSITORY/src/upstream/OpenProfile.inc
+Imported desktop dialog IDs: 96, 98, 4000, 14001, 3400, 97, 99, 94, 2900, 93
+Imported original progress statistics, titles and message numbering
+Imported original completion policy, Test/Hash formatting and list Copy
+clang++ -arch arm64 -O2 -c -Werror -Wall -Wextra -Wno-poison-system-directories -DNDEBUG -D_REENTRANT -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fPIC -std=c++11 -o /DEPS/progress-26.03-arm64/NativeBenchmark.o -o "/DEPS/progress-26.03-arm64/NativeBenchmark.o" -I/DEPS/7zip-26.03 /REPOSITORY/src/NativeBenchmark.cpp
+clang++ -o "/DEPS/progress-26.03-arm64/7zz-progress" -arch arm64 -DNDEBUG      b/m_arm64_15/LzmaDecOpt.o b/m_arm64_15/7zBuf2.o b/m_arm64_15/7zCrc.o b/m_arm64_15/7zCrcOpt.o b/m_arm64_15/7zStream.o b/m_arm64_15/Aes.o b/m_arm64_15/AesOpt.o b/m_arm64_15/Alloc.o b/m_arm64_15/Bcj2.o b/m_arm64_15/Bcj2Enc.o b/m_arm64_15/Blake2s.o b/m_arm64_15/Bra.o b/m_arm64_15/Bra86.o b/m_arm64_15/BraIA64.o b/m_arm64_15/BwtSort.o b/m_arm64_15/CpuArch.o b/m_arm64_15/Delta.o b/m_arm64_15/HuffEnc.o b/m_arm64_15/LzFind.o b/m_arm64_15/Lzma2Dec.o b/m_arm64_15/Lzma2DecMt.o b/m_arm64_15/Lzma2Enc.o b/m_arm64_15/LzmaDec.o b/m_arm64_15/LzmaEnc.o b/m_arm64_15/Md5.o b/m_arm64_15/MtCoder.o b/m_arm64_15/MtDec.o b/m_arm64_15/Ppmd7.o b/m_arm64_15/Ppmd7Dec.o b/m_arm64_15/Ppmd7aDec.o b/m_arm64_15/Ppmd7Enc.o b/m_arm64_15/Ppmd8.o b/m_arm64_15/Ppmd8Dec.o b/m_arm64_15/Ppmd8Enc.o b/m_arm64_15/Sha1.o b/m_arm64_15/Sha1Opt.o b/m_arm64_15/Sha256.o b/m_arm64_15/Sha256Opt.o b/m_arm64_15/Sha3.o b/m_arm64_15/Sha512.o b/m_arm64_15/Sha512Opt.o b/m_arm64_15/Sort.o b/m_arm64_15/SwapBytes.o b/m_arm64_15/Xxh64.o b/m_arm64_15/Xz.o b/m_arm64_15/XzDec.o b/m_arm64_15/XzEnc.o b/m_arm64_15/XzIn.o b/m_arm64_15/XzCrc64.o b/m_arm64_15/XzCrc64Opt.o b/m_arm64_15/ZstdDec.o b/m_arm64_15/LzFindMt.o b/m_arm64_15/LzFindOpt.o b/m_arm64_15/Threads.o b/m_arm64_15/MemBlocks.o b/m_arm64_15/OutMemStream.o b/m_arm64_15/ProgressMt.o b/m_arm64_15/StreamBinder.o b/m_arm64_15/Synchronization.o b/m_arm64_15/VirtThread.o b/m_arm64_15/CRC.o b/m_arm64_15/CrcReg.o b/m_arm64_15/DynLimBuf.o b/m_arm64_15/IntToString.o b/m_arm64_15/LzFindPrepare.o b/m_arm64_15/Md5Reg.o b/m_arm64_15/MyMap.o b/m_arm64_15/MyString.o b/m_arm64_15/MyVector.o b/m_arm64_15/MyXml.o b/m_arm64_15/NewHandler.o b/m_arm64_15/Sha1Prepare.o b/m_arm64_15/Sha1Reg.o b/m_arm64_15/Sha256Prepare.o b/m_arm64_15/Sha256Reg.o b/m_arm64_15/Sha3Reg.o b/m_arm64_15/Sha512Prepare.o b/m_arm64_15/Sha512Reg.o b/m_arm64_15/StringConvert.o b/m_arm64_15/StringToInt.o b/m_arm64_15/UTFConvert.o b/m_arm64_15/Wildcard.o b/m_arm64_15/Xxh64Reg.o b/m_arm64_15/XzCrc64Init.o b/m_arm64_15/XzCrc64Reg.o b/m_arm64_15/FileDir.o b/m_arm64_15/FileFind.o b/m_arm64_15/FileIO.o b/m_arm64_15/FileName.o b/m_arm64_15/PropVariant.o b/m_arm64_15/PropVariantConv.o b/m_arm64_15/PropVariantUtils.o b/m_arm64_15/System.o b/m_arm64_15/TimeUtils.o b/m_arm64_15/CreateCoder.o b/m_arm64_15/CWrappers.o b/m_arm64_15/InBuffer.o b/m_arm64_15/InOutTempBuffer.o b/m_arm64_15/FilterCoder.o b/m_arm64_15/LimitedStreams.o b/m_arm64_15/LockedStream.o b/m_arm64_15/MethodId.o b/m_arm64_15/MethodProps.o b/m_arm64_15/OffsetStream.o b/m_arm64_15/OutBuffer.o b/m_arm64_15/ProgressUtils.o b/m_arm64_15/PropId.o b/m_arm64_15/StreamObjects.o b/m_arm64_15/StreamUtils.o b/m_arm64_15/UniqBlocks.o b/m_arm64_15/ApfsHandler.o b/m_arm64_15/ApmHandler.o b/m_arm64_15/ArHandler.o b/m_arm64_15/ArjHandler.o b/m_arm64_15/Base64Handler.o b/m_arm64_15/Bz2Handler.o b/m_arm64_15/ComHandler.o b/m_arm64_15/CpioHandler.o b/m_arm64_15/CramfsHandler.o b/m_arm64_15/DeflateProps.o b/m_arm64_15/DmgHandler.o b/m_arm64_15/ElfHandler.o b/m_arm64_15/ExtHandler.o b/m_arm64_15/FatHandler.o b/m_arm64_15/FlvHandler.o b/m_arm64_15/GzHandler.o b/m_arm64_15/GptHandler.o b/m_arm64_15/HandlerCont.o b/m_arm64_15/HfsHandler.o b/m_arm64_15/IhexHandler.o b/m_arm64_15/LpHandler.o b/m_arm64_15/LzhHandler.o b/m_arm64_15/LzmaHandler.o b/m_arm64_15/MachoHandler.o b/m_arm64_15/MbrHandler.o b/m_arm64_15/MslzHandler.o b/m_arm64_15/MubHandler.o b/m_arm64_15/NtfsHandler.o b/m_arm64_15/PeHandler.o b/m_arm64_15/PpmdHandler.o b/m_arm64_15/QcowHandler.o b/m_arm64_15/RpmHandler.o b/m_arm64_15/SparseHandler.o b/m_arm64_15/SplitHandler.o b/m_arm64_15/SquashfsHandler.o b/m_arm64_15/SwfHandler.o b/m_arm64_15/UefiHandler.o b/m_arm64_15/VdiHandler.o b/m_arm64_15/VhdHandler.o b/m_arm64_15/VhdxHandler.o b/m_arm64_15/VmdkHandler.o b/m_arm64_15/XarHandler.o b/m_arm64_15/XzHandler.o b/m_arm64_15/ZHandler.o b/m_arm64_15/ZstdHandler.o b/m_arm64_15/CoderMixer2.o b/m_arm64_15/DummyOutStream.o b/m_arm64_15/FindSignature.o b/m_arm64_15/InStreamWithCRC.o b/m_arm64_15/ItemNameUtils.o b/m_arm64_15/MultiStream.o b/m_arm64_15/OutStreamWithCRC.o b/m_arm64_15/OutStreamWithSha1.o b/m_arm64_15/HandlerOut.o b/m_arm64_15/ParseProperties.o b/m_arm64_15/7zCompressionMode.o b/m_arm64_15/7zDecode.o b/m_arm64_15/7zEncode.o b/m_arm64_15/7zExtract.o b/m_arm64_15/7zFolderInStream.o b/m_arm64_15/7zHandler.o b/m_arm64_15/7zHandlerOut.o b/m_arm64_15/7zHeader.o b/m_arm64_15/7zIn.o b/m_arm64_15/7zOut.o b/m_arm64_15/7zProperties.o b/m_arm64_15/7zSpecStream.o b/m_arm64_15/7zUpdate.o b/m_arm64_15/7zRegister.o b/m_arm64_15/CabBlockInStream.o b/m_arm64_15/CabHandler.o b/m_arm64_15/CabHeader.o b/m_arm64_15/CabIn.o b/m_arm64_15/CabRegister.o b/m_arm64_15/ChmHandler.o b/m_arm64_15/ChmIn.o b/m_arm64_15/IsoHandler.o b/m_arm64_15/IsoHeader.o b/m_arm64_15/IsoIn.o b/m_arm64_15/IsoRegister.o b/m_arm64_15/NsisDecode.o b/m_arm64_15/NsisHandler.o b/m_arm64_15/NsisIn.o b/m_arm64_15/NsisRegister.o b/m_arm64_15/RarHandler.o b/m_arm64_15/Rar5Handler.o b/m_arm64_15/TarHandler.o b/m_arm64_15/TarHandlerOut.o b/m_arm64_15/TarHeader.o b/m_arm64_15/TarIn.o b/m_arm64_15/TarOut.o b/m_arm64_15/TarUpdate.o b/m_arm64_15/TarRegister.o b/m_arm64_15/UdfHandler.o b/m_arm64_15/UdfIn.o b/m_arm64_15/WimHandler.o b/m_arm64_15/WimHandlerOut.o b/m_arm64_15/WimIn.o b/m_arm64_15/WimRegister.o b/m_arm64_15/ZipAddCommon.o b/m_arm64_15/ZipHandler.o b/m_arm64_15/ZipHandlerOut.o b/m_arm64_15/ZipIn.o b/m_arm64_15/ZipItem.o b/m_arm64_15/ZipOut.o b/m_arm64_15/ZipRegister.o b/m_arm64_15/Bcj2Coder.o b/m_arm64_15/Bcj2Register.o b/m_arm64_15/BcjCoder.o b/m_arm64_15/BcjRegister.o b/m_arm64_15/BitlDecoder.o b/m_arm64_15/BranchMisc.o b/m_arm64_15/BranchRegister.o b/m_arm64_15/ByteSwap.o b/m_arm64_15/BZip2Crc.o b/m_arm64_15/BZip2Decoder.o b/m_arm64_15/BZip2Encoder.o b/m_arm64_15/BZip2Register.o b/m_arm64_15/CopyCoder.o b/m_arm64_15/CopyRegister.o b/m_arm64_15/Deflate64Register.o b/m_arm64_15/DeflateDecoder.o b/m_arm64_15/DeflateEncoder.o b/m_arm64_15/DeflateRegister.o b/m_arm64_15/DeltaFilter.o b/m_arm64_15/ImplodeDecoder.o b/m_arm64_15/LzfseDecoder.o b/m_arm64_15/LzhDecoder.o b/m_arm64_15/Lzma2Decoder.o b/m_arm64_15/Lzma2Encoder.o b/m_arm64_15/Lzma2Register.o b/m_arm64_15/LzmaDecoder.o b/m_arm64_15/LzmaEncoder.o b/m_arm64_15/LzmaRegister.o b/m_arm64_15/LzmsDecoder.o b/m_arm64_15/LzOutWindow.o b/m_arm64_15/LzxDecoder.o b/m_arm64_15/PpmdDecoder.o b/m_arm64_15/PpmdEncoder.o b/m_arm64_15/PpmdRegister.o b/m_arm64_15/PpmdZip.o b/m_arm64_15/QuantumDecoder.o b/m_arm64_15/ShrinkDecoder.o b/m_arm64_15/XpressDecoder.o b/m_arm64_15/XzDecoder.o b/m_arm64_15/XzEncoder.o b/m_arm64_15/ZlibDecoder.o b/m_arm64_15/ZlibEncoder.o b/m_arm64_15/ZDecoder.o b/m_arm64_15/ZstdDecoder.o b/m_arm64_15/Rar1Decoder.o b/m_arm64_15/Rar2Decoder.o b/m_arm64_15/Rar3Decoder.o b/m_arm64_15/Rar3Vm.o b/m_arm64_15/Rar5Decoder.o b/m_arm64_15/RarCodecsRegister.o b/m_arm64_15/7zAes.o b/m_arm64_15/7zAesRegister.o b/m_arm64_15/HmacSha1.o b/m_arm64_15/HmacSha256.o b/m_arm64_15/MyAes.o b/m_arm64_15/MyAesReg.o b/m_arm64_15/Pbkdf2HmacSha1.o b/m_arm64_15/RandGen.o b/m_arm64_15/WzAes.o b/m_arm64_15/ZipCrypto.o b/m_arm64_15/ZipStrong.o b/m_arm64_15/Rar20Crypto.o b/m_arm64_15/Rar5Aes.o b/m_arm64_15/RarAes.o b/m_arm64_15/MyWindows.o b/m_arm64_15/CommandLineParser.o b/m_arm64_15/ListFileUtils.o b/m_arm64_15/StdInStream.o b/m_arm64_15/StdOutStream.o b/m_arm64_15/ErrorMsg.o b/m_arm64_15/FileLink.o b/m_arm64_15/SystemInfo.o b/m_arm64_15/FileStreams.o b/m_arm64_15/MultiOutStream.o b/m_arm64_15/ArchiveCommandLine.o b/m_arm64_15/ArchiveOpenCallback.o b/m_arm64_15/Bench.o b/m_arm64_15/DefaultName.o b/m_arm64_15/EnumDirItems.o b/m_arm64_15/ExtractingFilePath.o b/m_arm64_15/HashCalc.o b/m_arm64_15/OpenArchive.o b/m_arm64_15/PropIDUtils.o b/m_arm64_15/SetProperties.o b/m_arm64_15/SortUtils.o b/m_arm64_15/TempFiles.o b/m_arm64_15/UpdateAction.o b/m_arm64_15/UpdatePair.o b/m_arm64_15/UpdateProduce.o b/m_arm64_15/ConsoleClose.o b/m_arm64_15/MainAr.o b/m_arm64_15/OpenCallbackConsole.o b/m_arm64_15/PercentPrinter.o b/m_arm64_15/UserInputUtils.o /DEPS/progress-26.03-arm64/Main.o /DEPS/progress-26.03-arm64/List.o /DEPS/progress-26.03-arm64/BenchCon.o /DEPS/progress-26.03-arm64/UpdateCallbackConsole.o /DEPS/progress-26.03-arm64/ExtractCallbackConsole.o /DEPS/progress-26.03-arm64/HashCon.o /DEPS/progress-26.03-arm64/Extract.o /DEPS/progress-26.03-arm64/ArchiveExtractCallback.o /DEPS/progress-26.03-arm64/Update.o /DEPS/progress-26.03-arm64/UpdateCallback.o /DEPS/progress-26.03-arm64/LoadCodecs.o /DEPS/progress-26.03-arm64/FilePathAutoRename.o /DEPS/progress-26.03-arm64/ZipUpdate.o /DEPS/progress-26.03-arm64/NativeProgress.o /DEPS/progress-26.03-arm64/NativeExtraction.o /DEPS/progress-26.03-arm64/NativeOverwrite.o /DEPS/progress-26.03-arm64/NativeFileState.o /DEPS/progress-26.03-arm64/ArchiveTransferPort.o /DEPS/progress-26.03-arm64/NativeMetadata.o /DEPS/progress-26.03-arm64/AgentProxy.o /DEPS/progress-26.03-arm64/NativeBenchmark.o /DEPS/progress-26.03-arm64/NativeFolderUpdate.o /DEPS/progress-26.03-arm64/NativeAgentSelection.o /DEPS/progress-26.03-arm64/NativeTempFiles.o  -lpthread -ldl
+clang++ -o "/DEPS/progress-26.03-arm64/7zip-metadata-tests" -arch arm64 -DNDEBUG      b/m_arm64_15/LzmaDecOpt.o b/m_arm64_15/7zBuf2.o b/m_arm64_15/7zCrc.o b/m_arm64_15/7zCrcOpt.o b/m_arm64_15/7zStream.o b/m_arm64_15/Aes.o b/m_arm64_15/AesOpt.o b/m_arm64_15/Alloc.o b/m_arm64_15/Bcj2.o b/m_arm64_15/Bcj2Enc.o b/m_arm64_15/Blake2s.o b/m_arm64_15/Bra.o b/m_arm64_15/Bra86.o b/m_arm64_15/BraIA64.o b/m_arm64_15/BwtSort.o b/m_arm64_15/CpuArch.o b/m_arm64_15/Delta.o b/m_arm64_15/HuffEnc.o b/m_arm64_15/LzFind.o b/m_arm64_15/Lzma2Dec.o b/m_arm64_15/Lzma2DecMt.o b/m_arm64_15/Lzma2Enc.o b/m_arm64_15/LzmaDec.o b/m_arm64_15/LzmaEnc.o b/m_arm64_15/Md5.o b/m_arm64_15/MtCoder.o b/m_arm64_15/MtDec.o b/m_arm64_15/Ppmd7.o b/m_arm64_15/Ppmd7Dec.o b/m_arm64_15/Ppmd7aDec.o b/m_arm64_15/Ppmd7Enc.o b/m_arm64_15/Ppmd8.o b/m_arm64_15/Ppmd8Dec.o b/m_arm64_15/Ppmd8Enc.o b/m_arm64_15/Sha1.o b/m_arm64_15/Sha1Opt.o b/m_arm64_15/Sha256.o b/m_arm64_15/Sha256Opt.o b/m_arm64_15/Sha3.o b/m_arm64_15/Sha512.o b/m_arm64_15/Sha512Opt.o b/m_arm64_15/Sort.o b/m_arm64_15/SwapBytes.o b/m_arm64_15/Xxh64.o b/m_arm64_15/Xz.o b/m_arm64_15/XzDec.o b/m_arm64_15/XzEnc.o b/m_arm64_15/XzIn.o b/m_arm64_15/XzCrc64.o b/m_arm64_15/XzCrc64Opt.o b/m_arm64_15/ZstdDec.o b/m_arm64_15/LzFindMt.o b/m_arm64_15/LzFindOpt.o b/m_arm64_15/Threads.o b/m_arm64_15/MemBlocks.o b/m_arm64_15/OutMemStream.o b/m_arm64_15/ProgressMt.o b/m_arm64_15/StreamBinder.o b/m_arm64_15/Synchronization.o b/m_arm64_15/VirtThread.o b/m_arm64_15/CRC.o b/m_arm64_15/CrcReg.o b/m_arm64_15/DynLimBuf.o b/m_arm64_15/IntToString.o b/m_arm64_15/LzFindPrepare.o b/m_arm64_15/Md5Reg.o b/m_arm64_15/MyMap.o b/m_arm64_15/MyString.o b/m_arm64_15/MyVector.o b/m_arm64_15/MyXml.o b/m_arm64_15/NewHandler.o b/m_arm64_15/Sha1Prepare.o b/m_arm64_15/Sha1Reg.o b/m_arm64_15/Sha256Prepare.o b/m_arm64_15/Sha256Reg.o b/m_arm64_15/Sha3Reg.o b/m_arm64_15/Sha512Prepare.o b/m_arm64_15/Sha512Reg.o b/m_arm64_15/StringConvert.o b/m_arm64_15/StringToInt.o b/m_arm64_15/UTFConvert.o b/m_arm64_15/Wildcard.o b/m_arm64_15/Xxh64Reg.o b/m_arm64_15/XzCrc64Init.o b/m_arm64_15/XzCrc64Reg.o b/m_arm64_15/FileDir.o b/m_arm64_15/FileFind.o b/m_arm64_15/FileIO.o b/m_arm64_15/FileName.o b/m_arm64_15/PropVariant.o b/m_arm64_15/PropVariantConv.o b/m_arm64_15/PropVariantUtils.o b/m_arm64_15/System.o b/m_arm64_15/TimeUtils.o b/m_arm64_15/CreateCoder.o b/m_arm64_15/CWrappers.o b/m_arm64_15/InBuffer.o b/m_arm64_15/InOutTempBuffer.o b/m_arm64_15/FilterCoder.o b/m_arm64_15/LimitedStreams.o b/m_arm64_15/LockedStream.o b/m_arm64_15/MethodId.o b/m_arm64_15/MethodProps.o b/m_arm64_15/OffsetStream.o b/m_arm64_15/OutBuffer.o b/m_arm64_15/ProgressUtils.o b/m_arm64_15/PropId.o b/m_arm64_15/StreamObjects.o b/m_arm64_15/StreamUtils.o b/m_arm64_15/UniqBlocks.o b/m_arm64_15/ApfsHandler.o b/m_arm64_15/ApmHandler.o b/m_arm64_15/ArHandler.o b/m_arm64_15/ArjHandler.o b/m_arm64_15/Base64Handler.o b/m_arm64_15/Bz2Handler.o b/m_arm64_15/ComHandler.o b/m_arm64_15/CpioHandler.o b/m_arm64_15/CramfsHandler.o b/m_arm64_15/DeflateProps.o b/m_arm64_15/DmgHandler.o b/m_arm64_15/ElfHandler.o b/m_arm64_15/ExtHandler.o b/m_arm64_15/FatHandler.o b/m_arm64_15/FlvHandler.o b/m_arm64_15/GzHandler.o b/m_arm64_15/GptHandler.o b/m_arm64_15/HandlerCont.o b/m_arm64_15/HfsHandler.o b/m_arm64_15/IhexHandler.o b/m_arm64_15/LpHandler.o b/m_arm64_15/LzhHandler.o b/m_arm64_15/LzmaHandler.o b/m_arm64_15/MachoHandler.o b/m_arm64_15/MbrHandler.o b/m_arm64_15/MslzHandler.o b/m_arm64_15/MubHandler.o b/m_arm64_15/NtfsHandler.o b/m_arm64_15/PeHandler.o b/m_arm64_15/PpmdHandler.o b/m_arm64_15/QcowHandler.o b/m_arm64_15/RpmHandler.o b/m_arm64_15/SparseHandler.o b/m_arm64_15/SplitHandler.o b/m_arm64_15/SquashfsHandler.o b/m_arm64_15/SwfHandler.o b/m_arm64_15/UefiHandler.o b/m_arm64_15/VdiHandler.o b/m_arm64_15/VhdHandler.o b/m_arm64_15/VhdxHandler.o b/m_arm64_15/VmdkHandler.o b/m_arm64_15/XarHandler.o b/m_arm64_15/XzHandler.o b/m_arm64_15/ZHandler.o b/m_arm64_15/ZstdHandler.o b/m_arm64_15/CoderMixer2.o b/m_arm64_15/DummyOutStream.o b/m_arm64_15/FindSignature.o b/m_arm64_15/InStreamWithCRC.o b/m_arm64_15/ItemNameUtils.o b/m_arm64_15/MultiStream.o b/m_arm64_15/OutStreamWithCRC.o b/m_arm64_15/OutStreamWithSha1.o b/m_arm64_15/HandlerOut.o b/m_arm64_15/ParseProperties.o b/m_arm64_15/7zCompressionMode.o b/m_arm64_15/7zDecode.o b/m_arm64_15/7zEncode.o b/m_arm64_15/7zExtract.o b/m_arm64_15/7zFolderInStream.o b/m_arm64_15/7zHandler.o b/m_arm64_15/7zHandlerOut.o b/m_arm64_15/7zHeader.o b/m_arm64_15/7zIn.o b/m_arm64_15/7zOut.o b/m_arm64_15/7zProperties.o b/m_arm64_15/7zSpecStream.o b/m_arm64_15/7zUpdate.o b/m_arm64_15/7zRegister.o b/m_arm64_15/CabBlockInStream.o b/m_arm64_15/CabHandler.o b/m_arm64_15/CabHeader.o b/m_arm64_15/CabIn.o b/m_arm64_15/CabRegister.o b/m_arm64_15/ChmHandler.o b/m_arm64_15/ChmIn.o b/m_arm64_15/IsoHandler.o b/m_arm64_15/IsoHeader.o b/m_arm64_15/IsoIn.o b/m_arm64_15/IsoRegister.o b/m_arm64_15/NsisDecode.o b/m_arm64_15/NsisHandler.o b/m_arm64_15/NsisIn.o b/m_arm64_15/NsisRegister.o b/m_arm64_15/RarHandler.o b/m_arm64_15/Rar5Handler.o b/m_arm64_15/TarHandler.o b/m_arm64_15/TarHandlerOut.o b/m_arm64_15/TarHeader.o b/m_arm64_15/TarIn.o b/m_arm64_15/TarOut.o b/m_arm64_15/TarUpdate.o b/m_arm64_15/TarRegister.o b/m_arm64_15/UdfHandler.o b/m_arm64_15/UdfIn.o b/m_arm64_15/WimHandler.o b/m_arm64_15/WimHandlerOut.o b/m_arm64_15/WimIn.o b/m_arm64_15/WimRegister.o b/m_arm64_15/ZipAddCommon.o b/m_arm64_15/ZipHandler.o b/m_arm64_15/ZipHandlerOut.o b/m_arm64_15/ZipIn.o b/m_arm64_15/ZipItem.o b/m_arm64_15/ZipOut.o b/m_arm64_15/ZipRegister.o b/m_arm64_15/Bcj2Coder.o b/m_arm64_15/Bcj2Register.o b/m_arm64_15/BcjCoder.o b/m_arm64_15/BcjRegister.o b/m_arm64_15/BitlDecoder.o b/m_arm64_15/BranchMisc.o b/m_arm64_15/BranchRegister.o b/m_arm64_15/ByteSwap.o b/m_arm64_15/BZip2Crc.o b/m_arm64_15/BZip2Decoder.o b/m_arm64_15/BZip2Encoder.o b/m_arm64_15/BZip2Register.o b/m_arm64_15/CopyCoder.o b/m_arm64_15/CopyRegister.o b/m_arm64_15/Deflate64Register.o b/m_arm64_15/DeflateDecoder.o b/m_arm64_15/DeflateEncoder.o b/m_arm64_15/DeflateRegister.o b/m_arm64_15/DeltaFilter.o b/m_arm64_15/ImplodeDecoder.o b/m_arm64_15/LzfseDecoder.o b/m_arm64_15/LzhDecoder.o b/m_arm64_15/Lzma2Decoder.o b/m_arm64_15/Lzma2Encoder.o b/m_arm64_15/Lzma2Register.o b/m_arm64_15/LzmaDecoder.o b/m_arm64_15/LzmaEncoder.o b/m_arm64_15/LzmaRegister.o b/m_arm64_15/LzmsDecoder.o b/m_arm64_15/LzOutWindow.o b/m_arm64_15/LzxDecoder.o b/m_arm64_15/PpmdDecoder.o b/m_arm64_15/PpmdEncoder.o b/m_arm64_15/PpmdRegister.o b/m_arm64_15/PpmdZip.o b/m_arm64_15/QuantumDecoder.o b/m_arm64_15/ShrinkDecoder.o b/m_arm64_15/XpressDecoder.o b/m_arm64_15/XzDecoder.o b/m_arm64_15/XzEncoder.o b/m_arm64_15/ZlibDecoder.o b/m_arm64_15/ZlibEncoder.o b/m_arm64_15/ZDecoder.o b/m_arm64_15/ZstdDecoder.o b/m_arm64_15/Rar1Decoder.o b/m_arm64_15/Rar2Decoder.o b/m_arm64_15/Rar3Decoder.o b/m_arm64_15/Rar3Vm.o b/m_arm64_15/Rar5Decoder.o b/m_arm64_15/RarCodecsRegister.o b/m_arm64_15/7zAes.o b/m_arm64_15/7zAesRegister.o b/m_arm64_15/HmacSha1.o b/m_arm64_15/HmacSha256.o b/m_arm64_15/MyAes.o b/m_arm64_15/MyAesReg.o b/m_arm64_15/Pbkdf2HmacSha1.o b/m_arm64_15/RandGen.o b/m_arm64_15/WzAes.o b/m_arm64_15/ZipCrypto.o b/m_arm64_15/ZipStrong.o b/m_arm64_15/Rar20Crypto.o b/m_arm64_15/Rar5Aes.o b/m_arm64_15/RarAes.o b/m_arm64_15/MyWindows.o b/m_arm64_15/CommandLineParser.o b/m_arm64_15/ListFileUtils.o b/m_arm64_15/StdInStream.o b/m_arm64_15/StdOutStream.o b/m_arm64_15/ErrorMsg.o b/m_arm64_15/FileLink.o b/m_arm64_15/SystemInfo.o b/m_arm64_15/FileStreams.o b/m_arm64_15/MultiOutStream.o b/m_arm64_15/ArchiveCommandLine.o b/m_arm64_15/ArchiveOpenCallback.o b/m_arm64_15/Bench.o b/m_arm64_15/DefaultName.o b/m_arm64_15/EnumDirItems.o b/m_arm64_15/ExtractingFilePath.o b/m_arm64_15/HashCalc.o b/m_arm64_15/OpenArchive.o b/m_arm64_15/PropIDUtils.o b/m_arm64_15/SetProperties.o b/m_arm64_15/SortUtils.o b/m_arm64_15/TempFiles.o b/m_arm64_15/UpdateAction.o b/m_arm64_15/UpdatePair.o b/m_arm64_15/UpdateProduce.o b/m_arm64_15/ConsoleClose.o b/m_arm64_15/MainAr.o b/m_arm64_15/OpenCallbackConsole.o b/m_arm64_15/PercentPrinter.o b/m_arm64_15/UserInputUtils.o /DEPS/progress-26.03-arm64/List.o /DEPS/progress-26.03-arm64/BenchCon.o /DEPS/progress-26.03-arm64/UpdateCallbackConsole.o /DEPS/progress-26.03-arm64/ExtractCallbackConsole.o /DEPS/progress-26.03-arm64/HashCon.o /DEPS/progress-26.03-arm64/Extract.o /DEPS/progress-26.03-arm64/ArchiveExtractCallback.o /DEPS/progress-26.03-arm64/Update.o /DEPS/progress-26.03-arm64/UpdateCallback.o /DEPS/progress-26.03-arm64/LoadCodecs.o /DEPS/progress-26.03-arm64/FilePathAutoRename.o /DEPS/progress-26.03-arm64/ZipUpdate.o /DEPS/progress-26.03-arm64/NativeProgress.o /DEPS/progress-26.03-arm64/NativeExtraction.o /DEPS/progress-26.03-arm64/NativeOverwrite.o /DEPS/progress-26.03-arm64/NativeFileState.o /DEPS/progress-26.03-arm64/ArchiveTransferPort.o /DEPS/progress-26.03-arm64/NativeMetadata.o /DEPS/progress-26.03-arm64/AgentProxy.o /DEPS/progress-26.03-arm64/NativeBenchmark.o /DEPS/progress-26.03-arm64/NativeFolderUpdate.o /DEPS/progress-26.03-arm64/NativeAgentSelection.o /DEPS/progress-26.03-arm64/NativeTempFiles.o /DEPS/progress-26.03-arm64/MetadataFormatterTests.o  -lpthread -ldl
+clang++ -o "/DEPS/progress-26.03-arm64/7zip-benchmark-tests" -arch arm64 -DNDEBUG      b/m_arm64_15/LzmaDecOpt.o b/m_arm64_15/7zBuf2.o b/m_arm64_15/7zCrc.o b/m_arm64_15/7zCrcOpt.o b/m_arm64_15/7zStream.o b/m_arm64_15/Aes.o b/m_arm64_15/AesOpt.o b/m_arm64_15/Alloc.o b/m_arm64_15/Bcj2.o b/m_arm64_15/Bcj2Enc.o b/m_arm64_15/Blake2s.o b/m_arm64_15/Bra.o b/m_arm64_15/Bra86.o b/m_arm64_15/BraIA64.o b/m_arm64_15/BwtSort.o b/m_arm64_15/CpuArch.o b/m_arm64_15/Delta.o b/m_arm64_15/HuffEnc.o b/m_arm64_15/LzFind.o b/m_arm64_15/Lzma2Dec.o b/m_arm64_15/Lzma2DecMt.o b/m_arm64_15/Lzma2Enc.o b/m_arm64_15/LzmaDec.o b/m_arm64_15/LzmaEnc.o b/m_arm64_15/Md5.o b/m_arm64_15/MtCoder.o b/m_arm64_15/MtDec.o b/m_arm64_15/Ppmd7.o b/m_arm64_15/Ppmd7Dec.o b/m_arm64_15/Ppmd7aDec.o b/m_arm64_15/Ppmd7Enc.o b/m_arm64_15/Ppmd8.o b/m_arm64_15/Ppmd8Dec.o b/m_arm64_15/Ppmd8Enc.o b/m_arm64_15/Sha1.o b/m_arm64_15/Sha1Opt.o b/m_arm64_15/Sha256.o b/m_arm64_15/Sha256Opt.o b/m_arm64_15/Sha3.o b/m_arm64_15/Sha512.o b/m_arm64_15/Sha512Opt.o b/m_arm64_15/Sort.o b/m_arm64_15/SwapBytes.o b/m_arm64_15/Xxh64.o b/m_arm64_15/Xz.o b/m_arm64_15/XzDec.o b/m_arm64_15/XzEnc.o b/m_arm64_15/XzIn.o b/m_arm64_15/XzCrc64.o b/m_arm64_15/XzCrc64Opt.o b/m_arm64_15/ZstdDec.o b/m_arm64_15/LzFindMt.o b/m_arm64_15/LzFindOpt.o b/m_arm64_15/Threads.o b/m_arm64_15/MemBlocks.o b/m_arm64_15/OutMemStream.o b/m_arm64_15/ProgressMt.o b/m_arm64_15/StreamBinder.o b/m_arm64_15/Synchronization.o b/m_arm64_15/VirtThread.o b/m_arm64_15/CRC.o b/m_arm64_15/CrcReg.o b/m_arm64_15/DynLimBuf.o b/m_arm64_15/IntToString.o b/m_arm64_15/LzFindPrepare.o b/m_arm64_15/Md5Reg.o b/m_arm64_15/MyMap.o b/m_arm64_15/MyString.o b/m_arm64_15/MyVector.o b/m_arm64_15/MyXml.o b/m_arm64_15/NewHandler.o b/m_arm64_15/Sha1Prepare.o b/m_arm64_15/Sha1Reg.o b/m_arm64_15/Sha256Prepare.o b/m_arm64_15/Sha256Reg.o b/m_arm64_15/Sha3Reg.o b/m_arm64_15/Sha512Prepare.o b/m_arm64_15/Sha512Reg.o b/m_arm64_15/StringConvert.o b/m_arm64_15/StringToInt.o b/m_arm64_15/UTFConvert.o b/m_arm64_15/Wildcard.o b/m_arm64_15/Xxh64Reg.o b/m_arm64_15/XzCrc64Init.o b/m_arm64_15/XzCrc64Reg.o b/m_arm64_15/FileDir.o b/m_arm64_15/FileFind.o b/m_arm64_15/FileIO.o b/m_arm64_15/FileName.o b/m_arm64_15/PropVariant.o b/m_arm64_15/PropVariantConv.o b/m_arm64_15/PropVariantUtils.o b/m_arm64_15/System.o b/m_arm64_15/TimeUtils.o b/m_arm64_15/CreateCoder.o b/m_arm64_15/CWrappers.o b/m_arm64_15/InBuffer.o b/m_arm64_15/InOutTempBuffer.o b/m_arm64_15/FilterCoder.o b/m_arm64_15/LimitedStreams.o b/m_arm64_15/LockedStream.o b/m_arm64_15/MethodId.o b/m_arm64_15/MethodProps.o b/m_arm64_15/OffsetStream.o b/m_arm64_15/OutBuffer.o b/m_arm64_15/ProgressUtils.o b/m_arm64_15/PropId.o b/m_arm64_15/StreamObjects.o b/m_arm64_15/StreamUtils.o b/m_arm64_15/UniqBlocks.o b/m_arm64_15/ApfsHandler.o b/m_arm64_15/ApmHandler.o b/m_arm64_15/ArHandler.o b/m_arm64_15/ArjHandler.o b/m_arm64_15/Base64Handler.o b/m_arm64_15/Bz2Handler.o b/m_arm64_15/ComHandler.o b/m_arm64_15/CpioHandler.o b/m_arm64_15/CramfsHandler.o b/m_arm64_15/DeflateProps.o b/m_arm64_15/DmgHandler.o b/m_arm64_15/ElfHandler.o b/m_arm64_15/ExtHandler.o b/m_arm64_15/FatHandler.o b/m_arm64_15/FlvHandler.o b/m_arm64_15/GzHandler.o b/m_arm64_15/GptHandler.o b/m_arm64_15/HandlerCont.o b/m_arm64_15/HfsHandler.o b/m_arm64_15/IhexHandler.o b/m_arm64_15/LpHandler.o b/m_arm64_15/LzhHandler.o b/m_arm64_15/LzmaHandler.o b/m_arm64_15/MachoHandler.o b/m_arm64_15/MbrHandler.o b/m_arm64_15/MslzHandler.o b/m_arm64_15/MubHandler.o b/m_arm64_15/NtfsHandler.o b/m_arm64_15/PeHandler.o b/m_arm64_15/PpmdHandler.o b/m_arm64_15/QcowHandler.o b/m_arm64_15/RpmHandler.o b/m_arm64_15/SparseHandler.o b/m_arm64_15/SplitHandler.o b/m_arm64_15/SquashfsHandler.o b/m_arm64_15/SwfHandler.o b/m_arm64_15/UefiHandler.o b/m_arm64_15/VdiHandler.o b/m_arm64_15/VhdHandler.o b/m_arm64_15/VhdxHandler.o b/m_arm64_15/VmdkHandler.o b/m_arm64_15/XarHandler.o b/m_arm64_15/XzHandler.o b/m_arm64_15/ZHandler.o b/m_arm64_15/ZstdHandler.o b/m_arm64_15/CoderMixer2.o b/m_arm64_15/DummyOutStream.o b/m_arm64_15/FindSignature.o b/m_arm64_15/InStreamWithCRC.o b/m_arm64_15/ItemNameUtils.o b/m_arm64_15/MultiStream.o b/m_arm64_15/OutStreamWithCRC.o b/m_arm64_15/OutStreamWithSha1.o b/m_arm64_15/HandlerOut.o b/m_arm64_15/ParseProperties.o b/m_arm64_15/7zCompressionMode.o b/m_arm64_15/7zDecode.o b/m_arm64_15/7zEncode.o b/m_arm64_15/7zExtract.o b/m_arm64_15/7zFolderInStream.o b/m_arm64_15/7zHandler.o b/m_arm64_15/7zHandlerOut.o b/m_arm64_15/7zHeader.o b/m_arm64_15/7zIn.o b/m_arm64_15/7zOut.o b/m_arm64_15/7zProperties.o b/m_arm64_15/7zSpecStream.o b/m_arm64_15/7zUpdate.o b/m_arm64_15/7zRegister.o b/m_arm64_15/CabBlockInStream.o b/m_arm64_15/CabHandler.o b/m_arm64_15/CabHeader.o b/m_arm64_15/CabIn.o b/m_arm64_15/CabRegister.o b/m_arm64_15/ChmHandler.o b/m_arm64_15/ChmIn.o b/m_arm64_15/IsoHandler.o b/m_arm64_15/IsoHeader.o b/m_arm64_15/IsoIn.o b/m_arm64_15/IsoRegister.o b/m_arm64_15/NsisDecode.o b/m_arm64_15/NsisHandler.o b/m_arm64_15/NsisIn.o b/m_arm64_15/NsisRegister.o b/m_arm64_15/RarHandler.o b/m_arm64_15/Rar5Handler.o b/m_arm64_15/TarHandler.o b/m_arm64_15/TarHandlerOut.o b/m_arm64_15/TarHeader.o b/m_arm64_15/TarIn.o b/m_arm64_15/TarOut.o b/m_arm64_15/TarUpdate.o b/m_arm64_15/TarRegister.o b/m_arm64_15/UdfHandler.o b/m_arm64_15/UdfIn.o b/m_arm64_15/WimHandler.o b/m_arm64_15/WimHandlerOut.o b/m_arm64_15/WimIn.o b/m_arm64_15/WimRegister.o b/m_arm64_15/ZipAddCommon.o b/m_arm64_15/ZipHandler.o b/m_arm64_15/ZipHandlerOut.o b/m_arm64_15/ZipIn.o b/m_arm64_15/ZipItem.o b/m_arm64_15/ZipOut.o b/m_arm64_15/ZipRegister.o b/m_arm64_15/Bcj2Coder.o b/m_arm64_15/Bcj2Register.o b/m_arm64_15/BcjCoder.o b/m_arm64_15/BcjRegister.o b/m_arm64_15/BitlDecoder.o b/m_arm64_15/BranchMisc.o b/m_arm64_15/BranchRegister.o b/m_arm64_15/ByteSwap.o b/m_arm64_15/BZip2Crc.o b/m_arm64_15/BZip2Decoder.o b/m_arm64_15/BZip2Encoder.o b/m_arm64_15/BZip2Register.o b/m_arm64_15/CopyCoder.o b/m_arm64_15/CopyRegister.o b/m_arm64_15/Deflate64Register.o b/m_arm64_15/DeflateDecoder.o b/m_arm64_15/DeflateEncoder.o b/m_arm64_15/DeflateRegister.o b/m_arm64_15/DeltaFilter.o b/m_arm64_15/ImplodeDecoder.o b/m_arm64_15/LzfseDecoder.o b/m_arm64_15/LzhDecoder.o b/m_arm64_15/Lzma2Decoder.o b/m_arm64_15/Lzma2Encoder.o b/m_arm64_15/Lzma2Register.o b/m_arm64_15/LzmaDecoder.o b/m_arm64_15/LzmaEncoder.o b/m_arm64_15/LzmaRegister.o b/m_arm64_15/LzmsDecoder.o b/m_arm64_15/LzOutWindow.o b/m_arm64_15/LzxDecoder.o b/m_arm64_15/PpmdDecoder.o b/m_arm64_15/PpmdEncoder.o b/m_arm64_15/PpmdRegister.o b/m_arm64_15/PpmdZip.o b/m_arm64_15/QuantumDecoder.o b/m_arm64_15/ShrinkDecoder.o b/m_arm64_15/XpressDecoder.o b/m_arm64_15/XzDecoder.o b/m_arm64_15/XzEncoder.o b/m_arm64_15/ZlibDecoder.o b/m_arm64_15/ZlibEncoder.o b/m_arm64_15/ZDecoder.o b/m_arm64_15/ZstdDecoder.o b/m_arm64_15/Rar1Decoder.o b/m_arm64_15/Rar2Decoder.o b/m_arm64_15/Rar3Decoder.o b/m_arm64_15/Rar3Vm.o b/m_arm64_15/Rar5Decoder.o b/m_arm64_15/RarCodecsRegister.o b/m_arm64_15/7zAes.o b/m_arm64_15/7zAesRegister.o b/m_arm64_15/HmacSha1.o b/m_arm64_15/HmacSha256.o b/m_arm64_15/MyAes.o b/m_arm64_15/MyAesReg.o b/m_arm64_15/Pbkdf2HmacSha1.o b/m_arm64_15/RandGen.o b/m_arm64_15/WzAes.o b/m_arm64_15/ZipCrypto.o b/m_arm64_15/ZipStrong.o b/m_arm64_15/Rar20Crypto.o b/m_arm64_15/Rar5Aes.o b/m_arm64_15/RarAes.o b/m_arm64_15/MyWindows.o b/m_arm64_15/CommandLineParser.o b/m_arm64_15/ListFileUtils.o b/m_arm64_15/StdInStream.o b/m_arm64_15/StdOutStream.o b/m_arm64_15/ErrorMsg.o b/m_arm64_15/FileLink.o b/m_arm64_15/SystemInfo.o b/m_arm64_15/FileStreams.o b/m_arm64_15/MultiOutStream.o b/m_arm64_15/ArchiveCommandLine.o b/m_arm64_15/ArchiveOpenCallback.o b/m_arm64_15/Bench.o b/m_arm64_15/DefaultName.o b/m_arm64_15/EnumDirItems.o b/m_arm64_15/ExtractingFilePath.o b/m_arm64_15/HashCalc.o b/m_arm64_15/OpenArchive.o b/m_arm64_15/PropIDUtils.o b/m_arm64_15/SetProperties.o b/m_arm64_15/SortUtils.o b/m_arm64_15/TempFiles.o b/m_arm64_15/UpdateAction.o b/m_arm64_15/UpdatePair.o b/m_arm64_15/UpdateProduce.o b/m_arm64_15/ConsoleClose.o b/m_arm64_15/MainAr.o b/m_arm64_15/OpenCallbackConsole.o b/m_arm64_15/PercentPrinter.o b/m_arm64_15/UserInputUtils.o /DEPS/progress-26.03-arm64/List.o /DEPS/progress-26.03-arm64/BenchCon.o /DEPS/progress-26.03-arm64/UpdateCallbackConsole.o /DEPS/progress-26.03-arm64/ExtractCallbackConsole.o /DEPS/progress-26.03-arm64/HashCon.o /DEPS/progress-26.03-arm64/Extract.o /DEPS/progress-26.03-arm64/ArchiveExtractCallback.o /DEPS/progress-26.03-arm64/Update.o /DEPS/progress-26.03-arm64/UpdateCallback.o /DEPS/progress-26.03-arm64/LoadCodecs.o /DEPS/progress-26.03-arm64/FilePathAutoRename.o /DEPS/progress-26.03-arm64/ZipUpdate.o /DEPS/progress-26.03-arm64/NativeProgress.o /DEPS/progress-26.03-arm64/NativeExtraction.o /DEPS/progress-26.03-arm64/NativeOverwrite.o /DEPS/progress-26.03-arm64/NativeFileState.o /DEPS/progress-26.03-arm64/ArchiveTransferPort.o /DEPS/progress-26.03-arm64/NativeMetadata.o /DEPS/progress-26.03-arm64/AgentProxy.o /DEPS/progress-26.03-arm64/NativeBenchmark.o /DEPS/progress-26.03-arm64/NativeFolderUpdate.o /DEPS/progress-26.03-arm64/NativeAgentSelection.o /DEPS/progress-26.03-arm64/NativeTempFiles.o /DEPS/progress-26.03-arm64/BenchmarkFormatterTests.o  -lpthread -ldl
+26.03: 61 handlers, 138 extensions
+-- The CXX compiler identification is AppleClang 21.0.0.21000334
+-- The OBJCXX compiler identification is AppleClang 21.0.0.21000334
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting OBJCXX compiler ABI info
+-- Detecting OBJCXX compiler ABI info - done
+-- Check for working OBJCXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /Library/Developer/CommandLineTools/SDKs/MacOSX27.0.sdk/System/Library/Frameworks/OpenGL.framework
+-- Found WrapOpenGL: TRUE
+-- Found Cups: /Library/Developer/CommandLineTools/SDKs/MacOSX27.0.sdk/usr/lib/libcups.tbd (found version "2.3.4")
+-- Found ZLIB: /Library/Developer/CommandLineTools/SDKs/MacOSX27.0.sdk/usr/lib/libz.tbd (found version "1.2.12")
+-- Configuring done (1.3s)
+-- Generating done (18.9s)
+-- Build files have been written to: /WORK/build
+[1/252] Copying OS X Content '7-Zip Mac.app/Contents/Resources/7zip.icns'
+[2/252] Automatic MOC for target process_handoff_fixture
+[3/252] Building CXX object CMakeFiles/process_handoff_fixture.dir/process_handoff_fixture_autogen/mocs_compilation.cpp.o
+[4/252] Automatic MOC for target progress_priority_engine
+[5/252] Automatic MOC for target panel_open_application
+[6/252] Automatic MOC for target editor_application
+[7/252] Building CXX object CMakeFiles/progress_priority_engine.dir/progress_priority_engine_autogen/mocs_compilation.cpp.o
+[8/252] Building CXX object CMakeFiles/panel_open_application.dir/panel_open_application_autogen/mocs_compilation.cpp.o
+[9/252] Building CXX object CMakeFiles/editor_application.dir/editor_application_autogen/mocs_compilation.cpp.o
+[10/252] Automatic MOC for target cocoa_accessibility_tests
+[11/252] Building CXX object CMakeFiles/cocoa_accessibility_tests.dir/cocoa_accessibility_tests_autogen/mocs_compilation.cpp.o
+[12/252] Building CXX object CMakeFiles/progress_priority_engine.dir/tests/progress-priority-engine.cpp.o
+[13/252] Linking CXX executable progress_priority_engine
+[14/252] Building CXX object CMakeFiles/process_handoff_fixture.dir/tests/process-handoff.cpp.o
+[15/252] Linking CXX executable process_handoff_fixture
+[16/252] Building CXX object CMakeFiles/editor_application.dir/tests/editor-application.cpp.o
+[17/252] Building CXX object CMakeFiles/panel_open_application.dir/tests/open-application.cpp.o
+[18/252] Linking CXX executable editor_application
+[19/252] Linking CXX executable panel_open_application
+[20/252] Building OBJCXX object CMakeFiles/cocoa_accessibility_tests.dir/tests/cocoa-accessibility.mm.o
+[21/252] Linking CXX executable cocoa_accessibility_tests
+[22/252] Automatic MOC for target port_core
+[23/252] Generating qrc_formats.cpp
+[24/252] Building CXX object CMakeFiles/port_core.dir/src/ArchiveFormats.cpp.o
+[25/252] Building CXX object CMakeFiles/port_core.dir/port_core_autogen/mocs_compilation.cpp.o
+[26/252] Building CXX object CMakeFiles/port_core.dir/src/ArchiveProperties.cpp.o
+[27/252] Building CXX object CMakeFiles/port_core.dir/src/ArchiveExtract.cpp.o
+[28/252] Building CXX object CMakeFiles/port_core.dir/src/ArchiveMutation.cpp.o
+[29/252] Building CXX object CMakeFiles/port_core.dir/src/ArchiveBackend.cpp.o
+[30/252] Building CXX object CMakeFiles/port_core.dir/src/FileOperations.cpp.o
+[31/252] Building CXX object CMakeFiles/port_core.dir/qrc_formats.cpp.o
+[32/252] Building CXX object CMakeFiles/port_core.dir/src/FileTools.cpp.o
+[33/252] Building CXX object CMakeFiles/port_core.dir/src/FileLinks.cpp.o
+[34/252] Building CXX object CMakeFiles/port_core.dir/src/FileComments.cpp.o
+[35/252] Building CXX object CMakeFiles/port_core.dir/src/FolderStatistics.cpp.o
+[36/252] Building CXX object CMakeFiles/port_core.dir/src/DirectoryScanner.cpp.o
+[37/252] Building CXX object CMakeFiles/port_core.dir/src/Overwrite.cpp.o
+[38/252] Building CXX object CMakeFiles/port_core.dir/src/FileInstall.cpp.o
+[39/252] Building CXX object CMakeFiles/port_core.dir/src/ExtractionInstaller.cpp.o
+[40/252] Building CXX object CMakeFiles/port_core.dir/src/MacProcessPriority.cpp.o
+[41/252] Building CXX object CMakeFiles/port_core.dir/src/ProgressChannel.cpp.o
+[42/252] Building CXX object CMakeFiles/port_core.dir/src/ExtractionSession.cpp.o
+[43/252] Building CXX object CMakeFiles/port_core.dir/src/WorkerProcess.cpp.o
+[44/252] Building CXX object CMakeFiles/port_core.dir/src/CompletionData.cpp.o
+[45/252] Building CXX object CMakeFiles/port_core.dir/src/FileCreationPath.cpp.o
+[46/252] Building CXX object CMakeFiles/port_core.dir/src/ArchiveMetadata.cpp.o
+[47/252] Building CXX object CMakeFiles/port_core.dir/src/ArchiveSourceVerification.cpp.o
+[48/252] Linking CXX static library libport_core.a
+[49/252] Automatic MOC for target extract_metadata_tests
+[50/252] Building CXX object CMakeFiles/extract_metadata_tests.dir/extract_metadata_tests_autogen/mocs_compilation.cpp.o
+[51/252] Automatic MOC for target port_ui
+[52/252] Generating qrc_resources.cpp
+[53/252] Building CXX object CMakeFiles/extract_metadata_tests.dir/tests/extract-metadata.cpp.o
+[54/252] Linking CXX executable extract_metadata_tests
+[55/252] Generating qrc_help.cpp
+[56/252] Generating qrc_languages.cpp
+[57/252] Building CXX object CMakeFiles/port_ui.dir/src/PropertiesDialog.cpp.o
+[58/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowOpen.cpp.o
+[59/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowProperties.cpp.o
+[60/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowArchives.cpp.o
+[61/252] Building CXX object CMakeFiles/port_ui.dir/port_ui_autogen/mocs_compilation.cpp.o
+[62/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindow.cpp.o
+[63/252] Building CXX object CMakeFiles/port_ui.dir/src/OpenProfile.cpp.o
+[64/252] Building CXX object CMakeFiles/port_ui.dir/src/PanelOpen.cpp.o
+[65/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowStatistics.cpp.o
+[66/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowEditors.cpp.o
+[67/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowComments.cpp.o
+[68/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowFilesystem.cpp.o
+[69/252] Building CXX object CMakeFiles/port_ui.dir/src/ExternalProcess.cpp.o
+[70/252] Building CXX object CMakeFiles/port_ui.dir/src/ExternalProcessDiscovery.cpp.o
+[71/252] Building CXX object CMakeFiles/port_ui.dir/src/FileToolDialogs.cpp.o
+[72/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowTools.cpp.o
+[73/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowView.cpp.o
+[74/252] Building CXX object CMakeFiles/port_ui.dir/qrc_languages.cpp.o
+[75/252] Building CXX object CMakeFiles/port_ui.dir/qrc_resources.cpp.o
+[76/252] Building CXX object CMakeFiles/port_ui.dir/src/Benchmark.cpp.o
+[77/252] Building CXX object CMakeFiles/port_ui.dir/src/OpenWith.cpp.o
+[78/252] Building CXX object CMakeFiles/port_ui.dir/src/Dialogs.cpp.o
+[79/252] Building CXX object CMakeFiles/port_ui.dir/src/OptionsDialog.cpp.o
+[80/252] Building CXX object CMakeFiles/port_ui.dir/src/UiLanguage.cpp.o
+[81/252] Building CXX object CMakeFiles/port_ui.dir/src/ComboDialog.cpp.o
+[82/252] Building CXX object CMakeFiles/port_ui.dir/src/CopyDialog.cpp.o
+[83/252] Building CXX object CMakeFiles/port_ui.dir/src/CopyInfo.cpp.o
+[84/252] Building CXX object CMakeFiles/port_ui.dir/src/AddressCombo.cpp.o
+[85/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowTransfer.cpp.o
+[86/252] Building CXX object CMakeFiles/port_ui.dir/src/PanelKey.cpp.o
+[87/252] Building CXX object CMakeFiles/port_ui.dir/src/TemporaryFilesDialog.cpp.o
+[88/252] Building CXX object CMakeFiles/port_ui.dir/src/PanelSelection.cpp.o
+[89/252] Building CXX object CMakeFiles/port_ui.dir/src/PanelMenu.cpp.o
+In file included from /REPOSITORY/src/PanelMenu.cpp:90:
+/REPOSITORY/src/upstream/PanelMenu.inc:239:19: warning: unused variable 'item' [-Wunused-variable]
+  239 |         CMenuItem item;
+      |                   ^~~~
+1 warning generated.
+[90/252] Building CXX object CMakeFiles/port_ui.dir/src/TimeText.cpp.o
+[91/252] Building CXX object CMakeFiles/port_ui.dir/src/PanelDrag.cpp.o
+[92/252] Building CXX object CMakeFiles/port_ui.dir/src/VersionControl.cpp.o
+[93/252] Building CXX object CMakeFiles/port_ui.dir/src/MainWindowVersion.cpp.o
+[94/252] Building OBJCXX object CMakeFiles/port_ui.dir/src/PanelIcons.mm.o
+[95/252] Building CXX object CMakeFiles/port_ui.dir/src/FileList.cpp.o
+[96/252] Building CXX object CMakeFiles/port_ui.dir/src/PanelDisplay.cpp.o
+[97/252] Building CXX object CMakeFiles/port_ui.dir/src/CompressionOptionsText.cpp.o
+[98/252] Building CXX object CMakeFiles/port_ui.dir/src/PanelSort.cpp.o
+[99/252] Building CXX object CMakeFiles/port_ui.dir/src/ResourceDialogs.cpp.o
+/REPOSITORY/src/ResourceDialogs.cpp:241:51: warning: missing field '_messageList' initializer [-Wmissing-field-initializers]
+  241 |         CProgressDialog layout{widgets, horizontal}; layout._buttonSizeX = controlRect("IDB_PAUSE").width(); layout._buttonSizeY = controlRect("IDB_PAUSE").height(); layout._messageList.widget = widgets.value(101);
+      |                                                   ^
+1 warning generated.
+[100/252] Building CXX object CMakeFiles/port_ui.dir/src/ProgressText.cpp.o
+[101/252] Building CXX object CMakeFiles/port_ui.dir/src/ProgressPresentation.cpp.o
+/REPOSITORY/src/ProgressPresentation.cpp:109:33: warning: missing field 'selected' initializer [-Wmissing-field-initializers]
+  109 |     } _messageList{&presentation};
+      |                                 ^
+In file included from /REPOSITORY/src/ProgressPresentation.cpp:137:
+/REPOSITORY/src/upstream/ProgressText.inc:70:13: warning: unused function 'ConvertSpeedToString' [-Wunused-function]
+   70 | static void ConvertSpeedToString(UInt64 v, wchar_t *s)
+      |             ^~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[102/252] Building CXX object CMakeFiles/port_ui.dir/qrc_help.cpp.o
+[103/252] Building CXX object CMakeFiles/port_ui.dir/src/ChecksumResultsDialog.cpp.o
+[104/252] Building CXX object CMakeFiles/port_ui.dir/src/LanguageDocument.cpp.o
+In file included from /REPOSITORY/src/LanguageDocument.cpp:78:
+/REPOSITORY/src/upstream/Language.inc:53:1: warning: unused function 'ConvertStringToUInt32' [-Wunused-function]
+   53 | CONVERT_STRING_TO_UINT_FUNC(UInt32, char, Byte)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/REPOSITORY/src/upstream/Language.inc:17:10: note: expanded from macro 'CONVERT_STRING_TO_UINT_FUNC'
+   17 | uintType ConvertStringTo ## uintType(const charType *s, const charType **end) throw() { \
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+<scratch space>:43:1: note: expanded from here
+   43 | ConvertStringToUInt32
+      | ^~~~~~~~~~~~~~~~~~~~~
+In file included from /REPOSITORY/src/LanguageDocument.cpp:78:
+/REPOSITORY/src/upstream/Language.inc:55:1: warning: unused function 'ConvertStringToUInt64' [-Wunused-function]
+   55 | CONVERT_STRING_TO_UINT_FUNC(UInt64, char, Byte)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/REPOSITORY/src/upstream/Language.inc:17:10: note: expanded from macro 'CONVERT_STRING_TO_UINT_FUNC'
+   17 | uintType ConvertStringTo ## uintType(const charType *s, const charType **end) throw() { \
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+<scratch space>:53:1: note: expanded from here
+   53 | ConvertStringToUInt64
+      | ^~~~~~~~~~~~~~~~~~~~~
+In file included from /REPOSITORY/src/LanguageDocument.cpp:78:
+/REPOSITORY/src/upstream/Language.inc:56:1: warning: unused function 'ConvertStringToUInt64' [-Wunused-function]
+   56 | CONVERT_STRING_TO_UINT_FUNC(UInt64, wchar_t, wchar_t)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/REPOSITORY/src/upstream/Language.inc:17:10: note: expanded from macro 'CONVERT_STRING_TO_UINT_FUNC'
+   17 | uintType ConvertStringTo ## uintType(const charType *s, const charType **end) throw() { \
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+<scratch space>:58:1: note: expanded from here
+   58 | ConvertStringToUInt64
+      | ^~~~~~~~~~~~~~~~~~~~~
+In file included from /REPOSITORY/src/LanguageDocument.cpp:78:
+/REPOSITORY/src/upstream/Language.inc:231:13: warning: unused function 'NativeLangString' [-Wunused-function]
+  231 | static void NativeLangString(UString &dest, const wchar_t *s)
+      |             ^~~~~~~~~~~~~~~~
+4 warnings generated.
+[105/252] Building CXX object CMakeFiles/port_ui.dir/src/CompressionMath.cpp.o
+[106/252] Building CXX object CMakeFiles/port_ui.dir/src/OverwriteDialog.cpp.o
+[107/252] Building OBJCXX object CMakeFiles/port_ui.dir/src/HelpLanguage.mm.o
+[108/252] Building CXX object CMakeFiles/port_ui.dir/src/Help.cpp.o
+[109/252] Building CXX object CMakeFiles/port_ui.dir/src/HelpSearch.cpp.o
+[110/252] Linking CXX static library libport_ui.a
+[111/252] Automatic MOC for target SevenZipMac
+[112/252] Automatic MOC for target panel_sort_tests
+[113/252] Automatic MOC for target address_workflow_tests
+[114/252] Automatic MOC for target copy_workflow_tests
+[115/252] Automatic MOC for target command_entry_tests
+[116/252] Automatic MOC for target panel_listing_tests
+[117/252] Automatic MOC for target panel_key_tests
+[118/252] Automatic MOC for target progress_completion_tests
+[119/252] Automatic MOC for target progress_presentation_tests
+[120/252] Automatic MOC for target dialog_resource_tests
+[121/252] Automatic MOC for target language_settings_tests
+[122/252] Automatic MOC for target panel_menu_drag_tests
+[123/252] Automatic MOC for target version_menu_time_tests
+[124/252] Automatic MOC for target benchmark_tests
+[125/252] Automatic MOC for target archive_transfer_tests
+[126/252] Automatic MOC for target panel_selection_tests
+[127/252] Automatic MOC for target native_progress_tests
+[128/252] Automatic MOC for target panel_open_tests
+[129/252] Automatic MOC for target zip_metadata_tests
+[130/252] Automatic MOC for target format_tests
+[131/252] Automatic MOC for target agent_tree_tests
+[132/252] Automatic MOC for target agent_selection_tests
+[133/252] Automatic MOC for target editor_tests
+[134/252] Automatic MOC for target statistics_tests
+[135/252] Automatic MOC for target port_tests
+[136/252] Automatic MOC for target directory_tests
+[137/252] Automatic MOC for target temporary_files_tests
+[138/252] Automatic MOC for target open_as_tests
+[139/252] Automatic MOC for target comment_tests
+[140/252] Automatic MOC for target open_mode_tests
+[141/252] Building CXX object CMakeFiles/SevenZipMac.dir/SevenZipMac_autogen/mocs_compilation.cpp.o
+[142/252] Automatic MOC for target cocoa_menu_tests
+[143/252] Building CXX object CMakeFiles/copy_workflow_tests.dir/copy_workflow_tests_autogen/mocs_compilation.cpp.o
+[144/252] Automatic MOC for target link_tests
+[145/252] Building CXX object CMakeFiles/command_entry_tests.dir/command_entry_tests_autogen/mocs_compilation.cpp.o
+[146/252] Automatic MOC for target property_tests
+[147/252] Building CXX object CMakeFiles/panel_key_tests.dir/panel_key_tests_autogen/mocs_compilation.cpp.o
+[148/252] Automatic MOC for target overwrite_tests
+[149/252] Building CXX object CMakeFiles/address_workflow_tests.dir/address_workflow_tests_autogen/mocs_compilation.cpp.o
+[150/252] Building CXX object CMakeFiles/SevenZipMac.dir/src/main.cpp.o
+[151/252] Linking CXX executable "7-Zip Mac.app/Contents/MacOS/7-Zip Mac"
+[152/252] Building CXX object CMakeFiles/panel_listing_tests.dir/panel_listing_tests_autogen/mocs_compilation.cpp.o
+[153/252] Building CXX object CMakeFiles/command_entry_tests.dir/tests/command-entry.cpp.o
+[154/252] Linking CXX executable command_entry_tests
+[155/252] Building CXX object CMakeFiles/panel_sort_tests.dir/panel_sort_tests_autogen/mocs_compilation.cpp.o
+[156/252] Building CXX object CMakeFiles/copy_workflow_tests.dir/tests/copy-workflow.cpp.o
+[157/252] Linking CXX executable copy_workflow_tests
+[158/252] Building CXX object CMakeFiles/progress_completion_tests.dir/progress_completion_tests_autogen/mocs_compilation.cpp.o
+[159/252] Automatic MOC for target compression_help_tests
+[160/252] Building CXX object CMakeFiles/progress_presentation_tests.dir/progress_presentation_tests_autogen/mocs_compilation.cpp.o
+[161/252] Building CXX object CMakeFiles/panel_key_tests.dir/tests/panel-key.cpp.o
+[162/252] Building CXX object CMakeFiles/address_workflow_tests.dir/tests/address-workflow.cpp.o
+[163/252] Linking CXX executable panel_key_tests
+[164/252] Building CXX object CMakeFiles/dialog_resource_tests.dir/dialog_resource_tests_autogen/mocs_compilation.cpp.o
+[165/252] Linking CXX executable address_workflow_tests
+[166/252] Building CXX object CMakeFiles/language_settings_tests.dir/language_settings_tests_autogen/mocs_compilation.cpp.o
+[167/252] Building CXX object CMakeFiles/panel_listing_tests.dir/tests/panel-listing.cpp.o
+[168/252] Linking CXX executable panel_listing_tests
+[169/252] Building CXX object CMakeFiles/version_menu_time_tests.dir/version_menu_time_tests_autogen/mocs_compilation.cpp.o
+[170/252] Building CXX object CMakeFiles/panel_sort_tests.dir/tests/panel-sort.cpp.o
+[171/252] Linking CXX executable panel_sort_tests
+[172/252] Building CXX object CMakeFiles/panel_menu_drag_tests.dir/panel_menu_drag_tests_autogen/mocs_compilation.cpp.o
+[173/252] Building CXX object CMakeFiles/progress_completion_tests.dir/tests/progress-completion.cpp.o
+[174/252] Linking CXX executable progress_completion_tests
+[175/252] Building CXX object CMakeFiles/panel_open_tests.dir/panel_open_tests_autogen/mocs_compilation.cpp.o
+[176/252] Building CXX object CMakeFiles/progress_presentation_tests.dir/tests/progress-presentation.cpp.o
+[177/252] Linking CXX executable progress_presentation_tests
+[178/252] Building CXX object CMakeFiles/panel_selection_tests.dir/panel_selection_tests_autogen/mocs_compilation.cpp.o
+[179/252] Building CXX object CMakeFiles/dialog_resource_tests.dir/tests/dialog-resources.cpp.o
+[180/252] Linking CXX executable dialog_resource_tests
+[181/252] Building CXX object CMakeFiles/benchmark_tests.dir/benchmark_tests_autogen/mocs_compilation.cpp.o
+[182/252] Building CXX object CMakeFiles/language_settings_tests.dir/tests/language-settings.cpp.o
+[183/252] Linking CXX executable language_settings_tests
+[184/252] Building CXX object CMakeFiles/archive_transfer_tests.dir/archive_transfer_tests_autogen/mocs_compilation.cpp.o
+[185/252] Building CXX object CMakeFiles/version_menu_time_tests.dir/tests/version-menu-time.cpp.o
+[186/252] Linking CXX executable version_menu_time_tests
+[187/252] Building CXX object CMakeFiles/native_progress_tests.dir/native_progress_tests_autogen/mocs_compilation.cpp.o
+[188/252] Building CXX object CMakeFiles/panel_menu_drag_tests.dir/tests/panel-menu-drag.cpp.o
+[189/252] Linking CXX executable panel_menu_drag_tests
+[190/252] Building CXX object CMakeFiles/zip_metadata_tests.dir/zip_metadata_tests_autogen/mocs_compilation.cpp.o
+[191/252] Building CXX object CMakeFiles/panel_open_tests.dir/tests/panel-open.cpp.o
+[192/252] Building CXX object CMakeFiles/benchmark_tests.dir/tests/benchmark.cpp.o
+[193/252] Building CXX object CMakeFiles/panel_selection_tests.dir/tests/panel-selection.cpp.o
+[194/252] Linking CXX executable panel_open_tests
+[195/252] Building CXX object CMakeFiles/format_tests.dir/format_tests_autogen/mocs_compilation.cpp.o
+[196/252] Linking CXX executable benchmark_tests
+[197/252] Linking CXX executable panel_selection_tests
+[198/252] Building CXX object CMakeFiles/agent_tree_tests.dir/agent_tree_tests_autogen/mocs_compilation.cpp.o
+[199/252] Building CXX object CMakeFiles/agent_selection_tests.dir/agent_selection_tests_autogen/mocs_compilation.cpp.o
+[200/252] Building CXX object CMakeFiles/archive_transfer_tests.dir/tests/archive-transfer.cpp.o
+[201/252] Linking CXX executable archive_transfer_tests
+[202/252] Building CXX object CMakeFiles/port_tests.dir/port_tests_autogen/mocs_compilation.cpp.o
+[203/252] Building CXX object CMakeFiles/native_progress_tests.dir/tests/native-progress.cpp.o
+[204/252] Linking CXX executable native_progress_tests
+[205/252] Building CXX object CMakeFiles/zip_metadata_tests.dir/tests/zip-metadata.cpp.o
+[206/252] Building CXX object CMakeFiles/agent_tree_tests.dir/tests/agent-tree.cpp.o
+[207/252] Linking CXX executable zip_metadata_tests
+[208/252] Building CXX object CMakeFiles/editor_tests.dir/editor_tests_autogen/mocs_compilation.cpp.o
+[209/252] Linking CXX executable agent_tree_tests
+[210/252] Building CXX object CMakeFiles/statistics_tests.dir/statistics_tests_autogen/mocs_compilation.cpp.o
+[211/252] Building CXX object CMakeFiles/format_tests.dir/tests/formats.cpp.o
+[212/252] Linking CXX executable format_tests
+[213/252] Building CXX object CMakeFiles/directory_tests.dir/directory_tests_autogen/mocs_compilation.cpp.o
+[214/252] Building CXX object CMakeFiles/agent_selection_tests.dir/tests/agent-selection.cpp.o
+[215/252] Linking CXX executable agent_selection_tests
+[216/252] Building CXX object CMakeFiles/temporary_files_tests.dir/temporary_files_tests_autogen/mocs_compilation.cpp.o
+[217/252] Building OBJCXX object CMakeFiles/port_tests.dir/tests/test-activation.mm.o
+[218/252] Building CXX object CMakeFiles/comment_tests.dir/comment_tests_autogen/mocs_compilation.cpp.o
+[219/252] Building CXX object CMakeFiles/port_tests.dir/tests/integration.cpp.o
+[220/252] Linking CXX executable port_tests
+[221/252] Building CXX object CMakeFiles/open_mode_tests.dir/open_mode_tests_autogen/mocs_compilation.cpp.o
+[222/252] Building CXX object CMakeFiles/statistics_tests.dir/tests/folder-statistics.cpp.o
+[223/252] Linking CXX executable statistics_tests
+[224/252] Building CXX object CMakeFiles/open_as_tests.dir/open_as_tests_autogen/mocs_compilation.cpp.o
+[225/252] Building CXX object CMakeFiles/directory_tests.dir/tests/directory-scanner.cpp.o
+[226/252] Building CXX object CMakeFiles/editor_tests.dir/tests/external-edit.cpp.o
+[227/252] Linking CXX executable directory_tests
+[228/252] Linking CXX executable editor_tests
+[229/252] Building CXX object CMakeFiles/link_tests.dir/link_tests_autogen/mocs_compilation.cpp.o
+[230/252] Building CXX object CMakeFiles/property_tests.dir/property_tests_autogen/mocs_compilation.cpp.o
+[231/252] Building CXX object CMakeFiles/temporary_files_tests.dir/tests/temporary-files.cpp.o
+[232/252] Linking CXX executable temporary_files_tests
+[233/252] Building CXX object CMakeFiles/overwrite_tests.dir/overwrite_tests_autogen/mocs_compilation.cpp.o
+[234/252] Building CXX object CMakeFiles/comment_tests.dir/tests/file-comments.cpp.o
+[235/252] Linking CXX executable comment_tests
+[236/252] Building CXX object CMakeFiles/compression_help_tests.dir/compression_help_tests_autogen/mocs_compilation.cpp.o
+[237/252] Building CXX object CMakeFiles/open_mode_tests.dir/tests/archive-open-modes.cpp.o
+[238/252] Linking CXX executable open_mode_tests
+[239/252] Building CXX object CMakeFiles/cocoa_menu_tests.dir/cocoa_menu_tests_autogen/mocs_compilation.cpp.o
+[240/252] Building CXX object CMakeFiles/open_as_tests.dir/tests/open-as.cpp.o
+[241/252] Linking CXX executable open_as_tests
+[242/252] Building CXX object CMakeFiles/link_tests.dir/tests/file-links.cpp.o
+[243/252] Linking CXX executable link_tests
+[244/252] Building CXX object CMakeFiles/overwrite_tests.dir/tests/overwrite.cpp.o
+[245/252] Linking CXX executable overwrite_tests
+[246/252] Building CXX object CMakeFiles/property_tests.dir/tests/properties.cpp.o
+[247/252] Linking CXX executable property_tests
+[248/252] Building OBJCXX object CMakeFiles/cocoa_menu_tests.dir/tests/test-activation.mm.o
+[249/252] Building CXX object CMakeFiles/compression_help_tests.dir/tests/compression-help.cpp.o
+[250/252] Linking CXX executable compression_help_tests
+[251/252] Building OBJCXX object CMakeFiles/cocoa_menu_tests.dir/tests/cocoa-menus.mm.o
+[252/252] Linking CXX executable cocoa_menu_tests
+Source archive verified: 790 tracked regular files; normalized modes; SHA-256 manifest
+/WORK/build/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/WORK/build/7-Zip Mac.app
+
+REPORT: ui-affected.log
+Internal ctest changing into directory: /WORK/build
+UpdateCTestConfiguration  from :/WORK/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/WORK/build/DartConfiguration.tcl
+Test project /WORK/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 9
+    Start  9: dialog_resources
+
+9: Test command: /WORK/build/dialog_resource_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+9: Working Directory: /WORK/build
+9: Environment variables:
+9:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-7ed2aead37c3/build/plugins/platforms/..
+9: Test timeout computed to be: 90
+9: ********* Start testing of DialogResourceTests *********
+9: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+9: PASS   : DialogResourceTests::initTestCase()
+9: PASS   : DialogResourceTests::sourceCoordinatesAndButtonOrder()
+9: PASS   : DialogResourceTests::extractionVisibilityAndGeometry()
+9: PASS   : DialogResourceTests::originalProgressResizeAndState()
+9: PASS   : DialogResourceTests::originalProgressFormatting()
+9: PASS   : DialogResourceTests::originalOptionsSummaryAndModal()
+9: PASS   : DialogResourceTests::originalAboutAndTemporaryLayout()
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 12
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 12
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 14
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 14
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 11
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleIndicFont", script 11
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 11
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 13
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 13
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 20
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 20
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 16
+9: QINFO  : DialogResourceTests::officialLanguageTextFits() qt.text.font.db: OpenType support missing for "Arial", script 16
+9: PASS   : DialogResourceTests::officialLanguageTextFits()
+9: PASS   : DialogResourceTests::defaultLanguageAndSavedChoice()
+9: PASS   : DialogResourceTests::cleanupTestCase()
+9: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 1440ms
+9: ********* Finished testing of DialogResourceTests *********
+1/3 Test  #9: dialog_resources .................   Passed    2.09 sec
+test 10
+    Start 10: language_settings
+
+10: Test command: /WORK/build/language_settings_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+10: Working Directory: /WORK/build
+10: Environment variables:
+10:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-7ed2aead37c3/build/plugins/platforms/..
+10: Test timeout computed to be: 90
+10: ********* Start testing of LanguageSettingsTests *********
+10: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+10: PASS   : LanguageSettingsTests::initTestCase()
+10: PASS   : LanguageSettingsTests::officialFilesAndInformation()
+10: PASS   : LanguageSettingsTests::parserBoundaryAndEscapes()
+10: PASS   : LanguageSettingsTests::missingExtraAndTranslatorInformation()
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 12
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for "Arial", script 12
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 14
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for "Arial", script 14
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 11
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for ".AppleIndicFont", script 11
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for "Arial", script 11
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 13
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for "Arial", script 13
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 20
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for "Arial", script 20
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 16
+10: QINFO  : LanguageSettingsTests::allLanguageControlResources() qt.text.font.db: OpenType support missing for "Arial", script 16
+10: PASS   : LanguageSettingsTests::allLanguageControlResources()
+10: PASS   : LanguageSettingsTests::optionsApplyCancelAndInfo()
+10: PASS   : LanguageSettingsTests::progressStatesAndManualValues()
+10: PASS   : LanguageSettingsTests::menuToolbarAndPropertyIdentity()
+10: PASS   : LanguageSettingsTests::editableBundleLanguageDirectory()
+10: PASS   : LanguageSettingsTests::cleanupTestCase()
+10: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 852ms
+10: ********* Finished testing of LanguageSettingsTests *********
+2/3 Test #10: language_settings ................   Passed    1.36 sec
+test 32
+    Start 32: compression_help
+
+32: Test command: /WORK/build/compression_help_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+32: Working Directory: /WORK/build
+32: Environment variables:
+32:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-7ed2aead37c3/build/plugins/platforms/..
+32: Test timeout computed to be: 120
+32: ********* Start testing of CompressionHelpTests *********
+32: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+32: PASS   : CompressionHelpTests::initTestCase()
+32: PASS   : CompressionHelpTests::defaultsAndMemory()
+32: PASS   : CompressionHelpTests::automaticAndManualPersistence()
+32: PASS   : CompressionHelpTests::officialControlInventory()
+32: PASS   : CompressionHelpTests::formatDraftsCommitAndCancel()
+32: PASS   : CompressionHelpTests::localizedDynamicControls()
+32: PASS   : CompressionHelpTests::originalTimeAndLinkOptions()
+32: PASS   : CompressionHelpTests::explicitLatestTimeOffRoundtrip()
+32: PASS   : CompressionHelpTests::upstreamResetTransitions()
+32: PASS   : CompressionHelpTests::methodGuardAndNearestSavedChoices()
+32: PASS   : CompressionHelpTests::historyAndToolbarInitialFormat()
+32: PASS   : CompressionHelpTests::translatedSolidCommands()
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/LZMA2)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/LZMA)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/PPMd)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/BZip2)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/Copy)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/Deflate)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/Deflate64)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/BZip2)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/LZMA)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/PPMd)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/Copy)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(tar/GNU)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(tar/POSIX)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(wim/Copy)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(xz/LZMA2)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(gzip/Deflate)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(bzip2/BZip2)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(Hash/SHA256)
+32: PASS   : CompressionHelpTests::selectedMethodRoundtrip(Hash/SHA1)
+32: PASS   : CompressionHelpTests::automaticRoundtrip(7z-normal)
+32: PASS   : CompressionHelpTests::automaticRoundtrip(7z-store)
+32: PASS   : CompressionHelpTests::automaticRoundtrip(zip-normal)
+32: PASS   : CompressionHelpTests::automaticRoundtrip(zip-store)
+32: PASS   : CompressionHelpTests::automaticEncryptedArchive()
+32: PASS   : CompressionHelpTests::insufficientMemoryAndPasswordValidation()
+32: PASS   : CompressionHelpTests::helpInventoryAndNavigation()
+32: PASS   : CompressionHelpTests::helpResourceBoundary()
+32: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 12
+32: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 14
+32: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 11
+32: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleIndicFont", script 11
+32: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 13
+32: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 20
+32: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 16
+32: PASS   : CompressionHelpTests::contextualHelpButtons()
+32: PASS   : CompressionHelpTests::fullTextSearch()
+32: PASS   : CompressionHelpTests::helpSearchUiAndPrint()
+32: PASS   : CompressionHelpTests::originalAboutActions()
+32: PASS   : CompressionHelpTests::helpWindowLifetimeAndHistory()
+32: PASS   : CompressionHelpTests::helpHistoryAndOperators()
+32: PASS   : CompressionHelpTests::helpHistoryBounds()
+32: PASS   : CompressionHelpTests::cleanupTestCase()
+32: Totals: 47 passed, 0 failed, 0 skipped, 0 blacklisted, 4233ms
+32: ********* Finished testing of CompressionHelpTests *********
+3/3 Test #32: compression_help .................   Passed    4.71 sec
+
+The following tests passed:
+	dialog_resources
+	language_settings
+	compression_help
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =   8.16 sec
+
+REPORT: cocoa-menus.log
+Internal ctest changing into directory: /WORK/build
+UpdateCTestConfiguration  from :/WORK/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/WORK/build/DartConfiguration.tcl
+Test project /WORK/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 35
+    Start 35: cocoa_menus
+
+35: Test command: /WORK/build/cocoa_menu_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+35: Working Directory: /WORK/build
+35: Environment variables:
+35:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-7ed2aead37c3/build/plugins/platforms/..
+35: Test timeout computed to be: 60
+35: qt.text.font.db: OpenType support missing for "Arial", script 12
+35: qt.text.font.db: OpenType support missing for "Arial", script 14
+35: qt.text.font.db: OpenType support missing for "Arial", script 11
+35: qt.text.font.db: OpenType support missing for "Arial", script 13
+35: qt.text.font.db: OpenType support missing for "Arial", script 20
+35: qt.text.font.db: OpenType support missing for "Arial", script 16
+35: AppKit mouse opened six menus and the file context menu, and invoked About, Rename, Properties and Options; Options Apply and visible-manager FileOpen passed
+1/1 Test #35: cocoa_menus ......................   Passed    3.74 sec
+
+The following tests passed:
+	cocoa_menus
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.75 sec
+
+REPORT: bundle-startup.log
+Owned bundle executable alive after 3 seconds: True
+Private INI files created: 1
+Existing matching native user preferences unchanged: True
+stdout bytes: 0 stderr bytes: 0
+Invalid explicit profile rejected without native fallback: True
+Native user preferences remain unchanged: True
+Only owned processes terminated; physical Finder/Fn/menu input not checked.
+
+REPORT: gui-created-7z.log
+Test exit 0
+
+7-Zip (z) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 50335164 bytes (49 MiB)
+
+Testing archive: /WORK/desktop.7z
+--
+Path = /WORK/desktop.7z
+Type = 7z
+Physical Size = 50335164
+Headers Size = 317
+Method = LZMA2:25
+Solid = +
+Blocks = 1
+
+Everything is Ok
+
+Folders: 2
+Files: 5
+Size:       50331729
+Compressed: 50335164
+Extract exit 0
+
+7-Zip (z) 26.03 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit arm_v:8.5-A locale=C.UTF-8 Threads:8 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 50335164 bytes (49 MiB)
+
+Extracting archive: /WORK/desktop.7z
+--
+Path = /WORK/desktop.7z
+Type = 7z
+Physical Size = 50335164
+Headers Size = 317
+Method = LZMA2:25
+Solid = +
+Blocks = 1
+
+Everything is Ok
+
+Folders: 2
+Files: 5
+Size:       50331729
+Compressed: 50335164
+
+REPORT: gui-created-7z.json
+{
+  "createdThroughGui": true,
+  "archiveBytes": 50335164,
+  "commands": [
+    {
+      "operation": "Test",
+      "exitCode": 0
+    },
+    {
+      "operation": "Extract",
+      "exitCode": 0
+    }
+  ],
+  "sha256MatchedFiles": 5,
+  "matchedDirectories": 2,
+  "largeBytes": 50331648
+}
+
+REPORT: menu-refactor/build.log
+[1/13] Automatic MOC for target port_ui
+[2/12] Building CXX object CMakeFiles/port_ui.dir/src/OpenWith.cpp.o
+[3/12] Linking CXX static library libport_ui.a
+[4/12] Automatic MOC for target cocoa_menu_tests
+[5/11] Linking CXX executable port_tests
+[6/11] Linking CXX executable open_as_tests
+[7/11] Linking CXX executable cocoa_menu_tests
+[8/11] Automatic MOC for target format_tests
+[9/10] Building CXX object CMakeFiles/format_tests.dir/tests/formats.cpp.o
+[10/10] Linking CXX executable format_tests
+
+REPORT: menu-refactor/delivery-commands.log
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-zwsIIX"
+PASS   : Integration::initTestCase()
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 12
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 14
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 11
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 13
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 20
+QINFO  : Integration::openWithSettingsAndDelivery() qt.text.font.db: OpenType support missing for "Arial", script 16
+PASS   : Integration::openWithSettingsAndDelivery()
+PASS   : Integration::openWithArchiveCommands()
+PASS   : Integration::officialChecksumsAndHashFormat()
+PASS   : Integration::openWithCancelAndBusyQueue()
+PASS   : Integration::cleanupTestCase()
+Totals: 6 passed, 0 failed, 0 skipped, 0 blacklisted, 21671ms
+********* Finished testing of Integration *********
+
+REPORT: menu-refactor/open-as-settings.log
+********* Start testing of OpenAsTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : OpenAsTests::initTestCase() Owned Open As fixtures: "/TMP/T/OpenAs-RjbdQA"
+PASS   : OpenAsTests::initTestCase()
+PASS   : OpenAsTests::menuOrderAndIndependentSettings()
+PASS   : OpenAsTests::visibility(archive)
+PASS   : OpenAsTests::visibility(unknown-signature-candidate)
+PASS   : OpenAsTests::visibility(multiple)
+PASS   : OpenAsTests::visibility(folder)
+PASS   : OpenAsTests::visibility(excluded-text)
+QINFO  : OpenAsTests::savedChoiceApplyCancel() qt.text.font.db: OpenType support missing for "Arial", script 12
+QINFO  : OpenAsTests::savedChoiceApplyCancel() qt.text.font.db: OpenType support missing for "Arial", script 14
+QINFO  : OpenAsTests::savedChoiceApplyCancel() qt.text.font.db: OpenType support missing for "Arial", script 11
+QINFO  : OpenAsTests::savedChoiceApplyCancel() qt.text.font.db: OpenType support missing for "Arial", script 13
+QINFO  : OpenAsTests::savedChoiceApplyCancel() qt.text.font.db: OpenType support missing for "Arial", script 20
+QINFO  : OpenAsTests::savedChoiceApplyCancel() qt.text.font.db: OpenType support missing for "Arial", script 16
+PASS   : OpenAsTests::savedChoiceApplyCancel()
+PASS   : OpenAsTests::cleanupTestCase()
+Totals: 9 passed, 0 failed, 0 skipped, 0 blacklisted, 470ms
+********* Finished testing of OpenAsTests *********
+
+REPORT: menu-refactor/context-commands.log
+********* Start testing of FormatTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : FormatTests::initTestCase() Genuine format cases 0 PENDING registration fixtures 0
+PASS   : FormatTests::initTestCase()
+QINFO  : FormatTests::contextCompressionExtraction() Qt context-menu clicks: 7z / ZIP creation, Test, Extract to, Japanese paths and SHA-256 comparison passed
+QINFO  : FormatTests::contextCompressionExtraction() Shared CRC submenu: SHA-256, manifest creation and manifest Test clicks passed
+PASS   : FormatTests::contextCompressionExtraction()
+PASS   : FormatTests::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 6730ms
+********* Finished testing of FormatTests *********
+
+REPORT: menu-refactor/appkit-menus.log
+Internal ctest changing into directory: /DEPS/desktop-verification-20261006.h_4hn8gk/build
+UpdateCTestConfiguration  from :/DEPS/desktop-verification-20261006.h_4hn8gk/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/desktop-verification-20261006.h_4hn8gk/build/DartConfiguration.tcl
+Test project /DEPS/desktop-verification-20261006.h_4hn8gk/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 35
+    Start 35: cocoa_menus
+
+35: Test command: /DEPS/desktop-verification-20261006.h_4hn8gk/build/cocoa_menu_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+35: Working Directory: /DEPS/desktop-verification-20261006.h_4hn8gk/build
+35: Environment variables:
+35:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-7ed2aead37c3/build/plugins/platforms/..
+35: Test timeout computed to be: 60
+35: qt.text.font.db: OpenType support missing for "Arial", script 12
+35: qt.text.font.db: OpenType support missing for "Arial", script 14
+35: qt.text.font.db: OpenType support missing for "Arial", script 11
+35: qt.text.font.db: OpenType support missing for "Arial", script 13
+35: qt.text.font.db: OpenType support missing for "Arial", script 20
+35: qt.text.font.db: OpenType support missing for "Arial", script 16
+35: AppKit mouse opened six menus and the file context menu, and invoked About, Rename, Properties and Options; Options Apply and visible-manager FileOpen passed
+1/1 Test #35: cocoa_menus ......................   Passed    3.38 sec
+
+The following tests passed:
+	cocoa_menus
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.38 sec
+
+REPORT: menu-refactor/application-build.log
+[1/1] Linking CXX executable "7-Zip Mac.app/Contents/MacOS/7-Zip Mac"
+
+REPORT: menu-refactor/package.log
+Source archive verified: 793 tracked regular files; normalized modes; SHA-256 manifest
+/DEPS/desktop-verification-20261006.h_4hn8gk/build/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/DEPS/desktop-verification-20261006.h_4hn8gk/build/7-Zip Mac.app
+
+REPORT: menu-refactor/startup.log
+Owned bundle executable alive after 3 seconds: True
+Private INI files created: 1
+Existing matching native user preferences unchanged: True
+stdout bytes: 0 stderr bytes: 0
+Invalid explicit profile rejected without native fallback: True
+Native user preferences remain unchanged: True
+Only owned processes terminated; physical Finder/Fn/menu input not checked.

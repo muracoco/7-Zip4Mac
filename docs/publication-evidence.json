@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "baseCommit": "91f7f69a006e303a0e7230b1543a1eedf87f2d7c",
+  "licenseByteChecks": 92,
+  "licenseByteMismatches": 0,
+  "privacyAtReviewStart": {
+    "trackedBlobs": 785,
+    "credentialCandidates": 0,
+    "machinePathFiles": 106,
+    "reachableCommits": 82,
+    "historicalUniqueBlobs": 2129,
+    "historicalCredentialCandidates": 0,
+    "historicalMachinePathBlobs": 235
+  },
+  "ownedExportChecks": "PASS",
+  "gitFreeEmptyReleaseBuild": "PASS",
+  "applicationNinjaSteps": 252,
+  "affectedSuites": {
+    "dialog_resources": "PASS",
+    "compression_help": "PASS",
+    "cocoa_accessibility": "PASS"
+  },
+  "affectedSuiteElapsedSeconds": 7.22,
+  "isolatedBundledStartup": "PASS",
+  "originalCheckoutCacheReuse": "PASS",
+  "buildSnapshotBundleSource": {
+    "sourceFiles": 787,
+    "gitFree": true,
+    "bundleSourceMatchesExport": true,
+    "privatePrefixMatches": 0,
+    "machOFiles": 15,
+    "officialIconDeployed": true,
+    "sourceArchiveSha256": "620f87ca1e9cab097a56f50e731f2f766b6d525b14a2bf9917933538c371c185"
+  },
+  "physicalDesktopInput": "PENDING",
+  "published": false,
+  "reports": [
+    {
+      "report": "export-checks.log",
+      "sha256": "23dc5d84cd99d204dec175258d7a057545f29e761d7fc090b1dc545952c62598"
+    },
+    {
+      "report": "snapshot.log",
+      "sha256": "9998c77fa3473f18c53b473a5748b9a63f8823d7f33bf6cdac4fc21150dec3ac"
+    },
+    {
+      "report": "build.log",
+      "sha256": "30bfd9c3e0dbcee9aa6cde2cf4eed117429ea47c26039a6341a634a26fff2014"
+    },
+    {
+      "report": "snapshot-repaired.log",
+      "sha256": "9998c77fa3473f18c53b473a5748b9a63f8823d7f33bf6cdac4fc21150dec3ac"
+    },
+    {
+      "report": "build-repaired.log",
+      "sha256": "8dc1baa244b41852aa943caade570513cc3c78ce433333ab05809f81ca71d6ce"
+    },
+    {
+      "report": "ui-affected.log",
+      "sha256": "009039136cce064a6b59983e3129a42e15f5cbbf368b2b14d9ee111a9d9e88a6"
+    },
+    {
+      "report": "bundle-startup.log",
+      "sha256": "e8665269e42f90872ce9cc5a7a35ed8bac2c26dc24005c8c23ca590eceb82ef2"
+    },
+    {
+      "report": "cache-original-checkout.log",
+      "sha256": "c529e8429d125f01be83df73900fd31b1091ed55a582f901369d7433551ecc9e"
+    }
+  ]
+}

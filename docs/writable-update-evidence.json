@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-06",
+  "basisCommit": "a3914d1b7a40fabb0dea57a2476b4c688a3b888f",
+  "upstream": "7-Zip 26.03",
+  "qt": "6.11.3",
+  "architecture": "arm64",
+  "kind": "Source-defined group; affected incremental build and failed-case repairs",
+  "sourceSHA256": {
+    "src/ArchiveMutation.cpp": "b31388f40383beb8d6e38fd305bdba22d8fbec658a155eff1394693d17e51424",
+    "src/MainWindowArchives.cpp": "a7aa76739061854c3c7cc7fe4bcb9c35e1cc9ac5090c245f9d643c8e69bfdfa3",
+    "src/NativeFolderUpdate.cpp": "1345c6fc18ef943a5accf7e178035e0abd859347bae6f9789eed753c97761f1e",
+    "tests/integration.cpp": "f158e8f81540eb42a92c5e5c28ad68b7fd6731101f4be86c49a375d65a427142",
+    "tests/zip-metadata.cpp": "0e4e350c0956d85fe3807971637e6194694cf81686c864e60f8fd8fddb9781eb",
+    "tests/zip-metadata-fixtures.py": "3e565f561a84ca69e2ac5cd60bc12b1e59c0f1f4c276febf409a421c6718b09d"
+  },
+  "packagedSourceMatchesChangedCodeAndTests": true,
+  "finalDocumentationAndEvidenceAddedAfterPackagedSourceSnapshot": true,
+  "reports": {
+    "zip-metadata-first.log": {
+      "rawSHA256": "82a158cb8b05cf74f2c7282f7c9367385e650e94ede333ace111c531aa1a4321",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/zip-metadata-first.log"
+    },
+    "update-protection-first.log": {
+      "rawSHA256": "f0164c44e7c7580802c9c1b95c26752755c20013d3cddd0476de3a96191ea3eb",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/update-protection-first.log"
+    },
+    "warning-updates-repair.log": {
+      "rawSHA256": "e3d15366ed3e074e9d9fcc90ad583349a085a03dbd1626faa8b087566ee886f9",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/warning-updates-repair.log"
+    },
+    "warning-updates-final.log": {
+      "rawSHA256": "064f1a8a7d3c981a1b695a41e4d9cb9ba53b1c1ad680fc7a5e5f5f0bbb02a9eb",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/warning-updates-final.log"
+    },
+    "error-recovery-final.log": {
+      "rawSHA256": "347e9f8a2690597dcaff750a4a89b973622c281375fdeed9afd20fcfdca7da68",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/error-recovery-final.log"
+    },
+    "application-build.log": {
+      "rawSHA256": "1266acb5b7bd81358fec1d4a2a6d7eb604c67be9ba4393c2cc22196412cd2743",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/application-build.log"
+    },
+    "package.log": {
+      "rawSHA256": "c9b6e8f5936cc162662350533c6268641b6e432b4e5a198935065fd47ba1c143",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/package.log"
+    },
+    "startup.log": {
+      "rawSHA256": "e8665269e42f90872ce9cc5a7a35ed8bac2c26dc24005c8c23ca590eceb82ef2",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/startup.log"
+    }
+  },
+  "buildReports": {
+    "native-build.log": {
+      "rawSHA256": "7561d77f7fecf08bd6f9e96e99b22628bc242b00add4d04ccbc98051f848e02f",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/native-build.log"
+    },
+    "gui-build.log": {
+      "rawSHA256": "3866605f934f2c14e74bab1f83ccc3fa6077de36e1067270d9cf058900241aa7",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/gui-build.log"
+    },
+    "affected-repair-build.log": {
+      "rawSHA256": "c345a321aab794bda1de4a9e49498aea559fa63769f38142b6641fffa91a4ba8",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/affected-repair-build.log"
+    },
+    "test-repair-build.log": {
+      "rawSHA256": "d73302c6bddee33060070e99c572e766f4d4690a7442ce15c8011d1b3fddfd8b",
+      "rawPath": "${DEPS}/writable-update-group-20261006.tqF9BKQW/test-repair-build.log"
+    }
+  },
+  "outcomes": {
+    "zipInitial": {
+      "passed": 13,
+      "failed": 2,
+      "milliseconds": 3182,
+      "failure": "New assertion used console Warning Flags instead of native Warnings"
+    },
+    "warningFirstRepair": {
+      "passed": 2,
+      "failed": 2,
+      "milliseconds": 62284,
+      "failure": "GUI assertion watched directoryLoaded, emitted for filesystem rather than archive listing"
+    },
+    "warningFinal": {
+      "passed": 4,
+      "failed": 0,
+      "milliseconds": 1815
+    },
+    "protectionsInitial": {
+      "passed": 12,
+      "failed": 1,
+      "milliseconds": 5015,
+      "failure": "errorsAndRecovery selected alone depended on another case creating roundtrip.7z"
+    },
+    "recoveryFinal": {
+      "passed": 3,
+      "failed": 0,
+      "milliseconds": 154
+    },
+    "combinedDistinctQtCases": 28,
+    "combinedFunctionalDataCases": 24,
+    "oneUninterruptedPassingRun": false,
+    "sourceBuiltAndSignedAppStartup": true,
+    "sourceArchiveTrackedFiles": 793,
+    "strictMachOFiles": 15,
+    "fullFormatMatrixRerun": false,
+    "freshEmptyReleaseBuild": false,
+    "physicalFinderAcceptance": false
+  },
+  "appPath": "${DEPS}/desktop-verification-20261006.h_4hn8gk/build/7-Zip Mac.app",
+  "artifactSHA256": {
+    "Contents/MacOS/7-Zip Mac": "769949b87e8bc0d5577856e71399158470b114cba767facd887539fd589971a6",
+    "Contents/MacOS/7zz-progress": "3a57c85f44b74112faeaefffce3f4fafa87d73680fe7640cccd12b14603914d4",
+    "Contents/Resources/7zip-mac-port-src.tar.gz": "34357c52267fffc7724089331b83bd8c40f1a8b0cd04d817c2749f2f33d91141"
+  },
+  "remainingGates": "Existing desktop input/Finder/printing/appearance acceptance and conditional final publication are unchanged."
+}

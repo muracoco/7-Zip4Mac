@@ -1,0 +1,337 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: native_metadata_formatter
+
+1: Test command: /DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zip-metadata-tests
+1: Working Directory: /DEPS/build-comments-20261004
+1: Test timeout computed to be: 10000000
+1: PASS: raw CRC upper hex
+1: PASS: raw checksum upper hex
+1: PASS: other raw lower hex
+1: PASS: 64-byte list boundary
+1: PASS: 65-byte list abbreviation
+1: PASS: 256-byte Properties boundary
+1: PASS: 257-byte Properties abbreviation
+1: PASS: empty raw value
+1: PASS: portable NT security descriptor
+1: PASS: short NT security descriptor
+1: PASS: unsupported NT security revision
+1: Native metadata formatter: 11 passed, 0 failed
+1/3 Test  #1: native_metadata_formatter ........   Passed    0.01 sec
+test 11
+    Start 11: archive_open_modes
+
+11: Test command: /DEPS/build-comments-20261004/open_mode_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+11: Working Directory: /DEPS/build-comments-20261004
+11: Environment variables: 
+11:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+11: Test timeout computed to be: 120
+11: ********* Start testing of OpenModeTests *********
+11: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+11: QINFO  : OpenModeTests::initTestCase() Owned open-mode fixtures: "/TMP/T/ArchiveOpenModes-ICWgPS"
+11: PASS   : OpenModeTests::initTestCase()
+11: PASS   : OpenModeTests::oneLevelAndNormalExtraction()
+11: PASS   : OpenModeTests::parserRegionsExtractAndHash()
+11: PASS   : OpenModeTests::oneLevelWritableZip(comment)
+11: PASS   : OpenModeTests::oneLevelWritableZip(create-folder)
+11: PASS   : OpenModeTests::oneLevelWritableZip(replace-file)
+11: PASS   : OpenModeTests::prefixedUpdates(7z)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-data-password)
+11: PASS   : OpenModeTests::prefixedUpdates(7z-header-password)
+11: PASS   : OpenModeTests::prefixedUpdates(zip)
+11: PASS   : OpenModeTests::prefixedUpdates(zip-AES-password)
+11: PASS   : OpenModeTests::prefixedUpdates(tar)
+11: PASS   : OpenModeTests::prefixedUpdates(wim)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(7z)
+11: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(zip)
+11: PASS   : OpenModeTests::updateRejectedLayouts()
+11: PASS   : OpenModeTests::explicitModeFailures(whole-zip-not-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(unrecognized-parser)
+11: PASS   : OpenModeTests::explicitModeFailures(invalid-mode)
+11: PASS   : OpenModeTests::guiOneLevelFocusedAndModeReset()
+11: PASS   : OpenModeTests::guiParserNestedAndRestored()
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(plain-parent)
+11: PASS   : OpenModeTests::guiNestedParserAndPassword(encrypted-parent)
+11: PASS   : OpenModeTests::cleanupTestCase()
+11: Totals: 24 passed, 0 failed, 0 skipped, 0 blacklisted, 8532ms
+11: ********* Finished testing of OpenModeTests *********
+2/3 Test #11: archive_open_modes ...............   Passed    9.26 sec
+test 14
+    Start 14: properties
+
+14: Test command: /DEPS/build-comments-20261004/property_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+14: Working Directory: /DEPS/build-comments-20261004
+14: Environment variables: 
+14:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+14: Test timeout computed to be: 120
+14: ********* Start testing of PropertyTests *********
+14: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+14: PASS   : PropertyTests::initTestCase()
+14: PASS   : PropertyTests::orderedListingAndLayers()
+14: PASS   : PropertyTests::folderIndexImplicitAndFlat()
+14: PASS   : PropertyTests::dialogCopyFullValueAndButtons()
+14: PASS   : PropertyTests::nativeSchemaAndAllColumns()
+14: PASS   : PropertyTests::nativeFlatNameAndPrefixColumns()
+14: PASS   : PropertyTests::nativeEmptyArchiveKeepsSchema()
+14: PASS   : PropertyTests::nativeMultilineCommentsAndLiteralPasswordNames()
+14: PASS   : PropertyTests::nativeWimRawHashAndProxy()
+14: PASS   : PropertyTests::nativeFileTimePrecisionAndUndefinedValues()
+14: PASS   : PropertyTests::nativeTypedIntegersAndRawIdentity()
+14: PASS   : PropertyTests::nativeControlCharacterFilenameRoundTrip()
+14: PASS   : PropertyTests::nativeMetadataDestinationProtection()
+14: PASS   : PropertyTests::guiSingleMultipleUnselectedAndPrefix()
+14: PASS   : PropertyTests::guiNestedAndLayerRestore()
+14: PASS   : PropertyTests::nestedWritebackRefreshesProperties()
+14: PASS   : PropertyTests::singleClickAndFilesystemSubstitute()
+14: PASS   : PropertyTests::destroyAfterClosedProgress()
+14: PASS   : PropertyTests::cleanupTestCase()
+14: Totals: 19 passed, 0 failed, 0 skipped, 0 blacklisted, 3394ms
+14: ********* Finished testing of PropertyTests *********
+3/3 Test #14: properties .......................   Passed    3.95 sec
+
+The following tests passed:
+	native_metadata_formatter
+	archive_open_modes
+	properties
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =  13.22 sec
+
+/TMP/T/7zip-agent-tree.YnGIia/data
+********* Start testing of AgentTreeTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : AgentTreeTests::initTestCase()
+PASS   : AgentTreeTests::zipIdentityPropertiesAndTraversal()
+PASS   : AgentTreeTests::nativeAlternateStreamBinding()
+PASS   : AgentTreeTests::cleanupTestCase()
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 1008ms
+********* Finished testing of AgentTreeTests *********
+
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-wBEleP"
+PASS   : Integration::initTestCase()
+PASS   : Integration::archiveFolderNativeWimImagesAndTimes()
+PASS   : Integration::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 893ms
+********* Finished testing of Integration *********
+
+********* Start testing of FormatTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : FormatTests::initTestCase() Genuine format cases 151 PENDING registration fixtures 0
+PASS   : FormatTests::initTestCase()
+PASS   : FormatTests::inventory()
+PASS   : FormatTests::genuineFormats(tar.tar)
+PASS   : FormatTests::genuineFormats(tar.ova)
+PASS   : FormatTests::genuineFormats(7z.7z)
+PASS   : FormatTests::genuineFormats(zip.zip)
+PASS   : FormatTests::genuineFormats(zip.zipx)
+PASS   : FormatTests::genuineFormats(zip.jar)
+PASS   : FormatTests::genuineFormats(zip.xpi)
+PASS   : FormatTests::genuineFormats(zip.odt)
+PASS   : FormatTests::genuineFormats(zip.ods)
+PASS   : FormatTests::genuineFormats(zip.docx)
+PASS   : FormatTests::genuineFormats(zip.xlsx)
+PASS   : FormatTests::genuineFormats(zip.epub)
+PASS   : FormatTests::genuineFormats(zip.ipa)
+PASS   : FormatTests::genuineFormats(zip.apk)
+PASS   : FormatTests::genuineFormats(zip.appx)
+PASS   : FormatTests::genuineFormats(wim.wim)
+PASS   : FormatTests::genuineFormats(wim.swm)
+PASS   : FormatTests::genuineFormats(wim.esd)
+PASS   : FormatTests::genuineFormats(wim.ppkg)
+PASS   : FormatTests::genuineFormats(gzip.gz)
+PASS   : FormatTests::genuineFormats(gzip.gzip)
+PASS   : FormatTests::genuineFormats(gzip.tgz)
+PASS   : FormatTests::genuineFormats(gzip.tpz)
+PASS   : FormatTests::genuineFormats(gzip.apk)
+PASS   : FormatTests::genuineFormats(bzip2.bz2)
+PASS   : FormatTests::genuineFormats(bzip2.bzip2)
+PASS   : FormatTests::genuineFormats(bzip2.tbz2)
+PASS   : FormatTests::genuineFormats(bzip2.tbz)
+PASS   : FormatTests::genuineFormats(xz.xz)
+PASS   : FormatTests::genuineFormats(xz.txz)
+PASS   : FormatTests::genuineFormats(lzma.lzma)
+PASS   : FormatTests::genuineFormats(lzma86.lzma86)
+PASS   : FormatTests::genuineFormats(zstd.zst)
+PASS   : FormatTests::genuineFormats(zstd.tzst)
+PASS   : FormatTests::genuineFormats(Base64.b64)
+PASS   : FormatTests::genuineFormats(IHex.ihex)
+PASS   : FormatTests::genuineFormats(Ar.ar)
+PASS   : FormatTests::genuineFormats(Ar.a)
+PASS   : FormatTests::genuineFormats(Ar.deb)
+PASS   : FormatTests::genuineFormats(Ar.udeb)
+PASS   : FormatTests::genuineFormats(Ar.lib)
+PASS   : FormatTests::genuineFormats(Cpio.cpio)
+PASS   : FormatTests::genuineFormats(Xar.xar)
+PASS   : FormatTests::genuineFormats(Xar.pkg)
+PASS   : FormatTests::genuineFormats(Xar.xip)
+PASS   : FormatTests::genuineFormats(Z.z)
+PASS   : FormatTests::genuineFormats(Z.taz)
+PASS   : FormatTests::genuineFormats(Cab.cab)
+PASS   : FormatTests::genuineFormats(Lzh.lzh)
+PASS   : FormatTests::genuineFormats(Lzh.lha)
+PASS   : FormatTests::genuineFormats(Rar5.rar)
+PASS   : FormatTests::genuineFormats(Rar.rar)
+PASS   : FormatTests::genuineFormats(Rpm.rpm)
+PASS   : FormatTests::genuineFormats(Hash.sha256)
+PASS   : FormatTests::genuineFormats(Hash.sha512)
+PASS   : FormatTests::genuineFormats(Hash.sha384)
+PASS   : FormatTests::genuineFormats(Hash.sha224)
+PASS   : FormatTests::genuineFormats(Hash.sha512-224)
+PASS   : FormatTests::genuineFormats(Hash.sha512-256)
+PASS   : FormatTests::genuineFormats(Hash.sha3-224)
+PASS   : FormatTests::genuineFormats(Hash.sha3-256)
+PASS   : FormatTests::genuineFormats(Hash.sha3-384)
+PASS   : FormatTests::genuineFormats(Hash.sha3-512)
+PASS   : FormatTests::genuineFormats(Hash.sha1)
+PASS   : FormatTests::genuineFormats(Hash.sha2)
+PASS   : FormatTests::genuineFormats(Hash.sha3)
+PASS   : FormatTests::genuineFormats(Hash.sha)
+PASS   : FormatTests::genuineFormats(Hash.md5)
+PASS   : FormatTests::genuineFormats(Hash.blake2s)
+PASS   : FormatTests::genuineFormats(Hash.blake2b)
+PASS   : FormatTests::genuineFormats(Hash.blake2sp)
+PASS   : FormatTests::genuineFormats(Hash.xxh64)
+PASS   : FormatTests::genuineFormats(Hash.crc32)
+PASS   : FormatTests::genuineFormats(Hash.crc64)
+PASS   : FormatTests::genuineFormats(Hash.cksum)
+PASS   : FormatTests::genuineFormats(Hash.asc)
+PASS   : FormatTests::genuineFormats(Chm.chm)
+PASS   : FormatTests::genuineFormats(Chm.chi)
+PASS   : FormatTests::genuineFormats(Chm.chq)
+PASS   : FormatTests::genuineFormats(Chm.chw)
+PASS   : FormatTests::genuineFormats(Hxs.hxs)
+PASS   : FormatTests::genuineFormats(Hxs.hxi)
+PASS   : FormatTests::genuineFormats(Hxs.hxr)
+PASS   : FormatTests::genuineFormats(Hxs.hxq)
+PASS   : FormatTests::genuineFormats(Hxs.hxw)
+PASS   : FormatTests::genuineFormats(Hxs.lit)
+PASS   : FormatTests::genuineFormats(MsLZ.mslz)
+PASS   : FormatTests::genuineFormats(zip.z01)
+PASS   : FormatTests::genuineFormats(Rar.r00)
+PASS   : FormatTests::genuineFormats(Rar5.r00)
+PASS   : FormatTests::genuineFormats(FAT.fat)
+PASS   : FormatTests::genuineFormats(FAT.img)
+PASS   : FormatTests::genuineFormats(MBR.mbr)
+PASS   : FormatTests::genuineFormats(Sparse.simg)
+PASS   : FormatTests::genuineFormats(Sparse.img)
+PASS   : FormatTests::genuineFormats(APM.apm)
+PASS   : FormatTests::genuineFormats(GPT.gpt)
+PASS   : FormatTests::genuineFormats(GPT.mbr)
+PASS   : FormatTests::genuineFormats(VHD.vhd)
+PASS   : FormatTests::genuineFormats(VHDX.vhdx)
+PASS   : FormatTests::genuineFormats(VHDX.avhdx)
+PASS   : FormatTests::genuineFormats(VDI.vdi)
+PASS   : FormatTests::genuineFormats(QCOW.qcow)
+PASS   : FormatTests::genuineFormats(QCOW.qcow2)
+PASS   : FormatTests::genuineFormats(QCOW.qcow2c)
+PASS   : FormatTests::genuineFormats(VMDK.vmdk)
+PASS   : FormatTests::genuineFormats(CramFS.cramfs)
+PASS   : FormatTests::genuineFormats(LP.lpimg)
+PASS   : FormatTests::genuineFormats(LP.img)
+PASS   : FormatTests::genuineFormats(UEFIf.uefif)
+PASS   : FormatTests::genuineFormats(UEFIc.scap)
+PASS   : FormatTests::genuineFormats(Arj.arj)
+PASS   : FormatTests::genuineFormats(Split.001)
+PASS   : FormatTests::genuineFormats(Compound.msi)
+PASS   : FormatTests::genuineFormats(Compound.msp)
+PASS   : FormatTests::genuineFormats(Compound.msm)
+PASS   : FormatTests::genuineFormats(Compound.doc)
+PASS   : FormatTests::genuineFormats(Compound.xls)
+PASS   : FormatTests::genuineFormats(Compound.ppt)
+PASS   : FormatTests::genuineFormats(Compound.aaf)
+PASS   : FormatTests::genuineFormats(PE.exe)
+PASS   : FormatTests::genuineFormats(PE.dll)
+PASS   : FormatTests::genuineFormats(PE.sys)
+PASS   : FormatTests::genuineFormats(TE.te)
+PASS   : FormatTests::genuineFormats(COFF.obj)
+PASS   : FormatTests::genuineFormats(ELF.elf)
+PASS   : FormatTests::genuineFormats(MachO.macho)
+PASS   : FormatTests::genuineFormats(Mub.mub)
+PASS   : FormatTests::genuineFormats(Ppmd.pmd)
+PASS   : FormatTests::genuineFormats(SWF.swf)
+PASS   : FormatTests::genuineFormats(SWFc.swf)
+PASS   : FormatTests::genuineFormats(FLV.flv)
+PASS   : FormatTests::genuineFormats(Nsis.nsis)
+PASS   : FormatTests::genuineFormats(SquashFS.squashfs)
+PASS   : FormatTests::genuineFormats(Ext.ext2)
+PASS   : FormatTests::genuineFormats(Ext.ext3)
+PASS   : FormatTests::genuineFormats(Ext.ext4)
+PASS   : FormatTests::genuineFormats(Ext.ext)
+PASS   : FormatTests::genuineFormats(Ext.img)
+PASS   : FormatTests::genuineFormats(NTFS.ntfs)
+PASS   : FormatTests::genuineFormats(NTFS.img)
+PASS   : FormatTests::genuineFormats(Iso.iso)
+PASS   : FormatTests::genuineFormats(Iso.img)
+PASS   : FormatTests::genuineFormats(Udf.udf)
+PASS   : FormatTests::genuineFormats(Udf.iso)
+PASS   : FormatTests::genuineFormats(Udf.img)
+PASS   : FormatTests::genuineFormats(APFS.apfs)
+PASS   : FormatTests::genuineFormats(APFS.img)
+PASS   : FormatTests::genuineFormats(HFS.hfs)
+PASS   : FormatTests::genuineFormats(HFS.hfsx)
+PASS   : FormatTests::genuineFormats(Dmg.dmg)
+QINFO  : FormatTests::contextCompressionExtraction() Qt context-menu clicks: 7z / ZIP creation, Test, Extract to, Japanese paths and SHA-256 comparison passed
+PASS   : FormatTests::contextCompressionExtraction()
+PASS   : FormatTests::cleanupTestCase()
+Totals: 155 passed, 0 failed, 0 skipped, 0 blacklisted, 23156ms
+********* Finished testing of FormatTests *********
+Coverage: 151 / 151 registration cases passed
+Format reports: /REPOSITORY/test-results/formats-20261004-231236
+
+********* Start testing of FormatTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : FormatTests::initTestCase() Genuine format cases 151 PENDING registration fixtures 0
+PASS   : FormatTests::initTestCase()
+QINFO  : FormatTests::contextCompressionExtraction() Qt context-menu clicks: 7z / ZIP creation, Test, Extract to, Japanese paths and SHA-256 comparison passed
+PASS   : FormatTests::contextCompressionExtraction()
+PASS   : FormatTests::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 878ms
+********* Finished testing of FormatTests *********
+
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/imageformats/libqico.dylib
+--validated:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/imageformats/libqico.dylib
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/platforms/libqcocoa.dylib
+--validated:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/platforms/libqcocoa.dylib
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/imageformats/libqgif.dylib
+--validated:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/imageformats/libqgif.dylib
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/imageformats/libqjpeg.dylib
+--validated:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/imageformats/libqjpeg.dylib
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/styles/libqmacstyle.dylib
+--validated:/DEPS/build/7-Zip Mac.app/Contents/PlugIns/styles/libqmacstyle.dylib
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/MacOS/7zip-comment
+--validated:/DEPS/build/7-Zip Mac.app/Contents/MacOS/7zip-comment
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/MacOS/7zz
+--validated:/DEPS/build/7-Zip Mac.app/Contents/MacOS/7zz
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/MacOS/7zz-progress
+--validated:/DEPS/build/7-Zip Mac.app/Contents/MacOS/7zz-progress
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtPrintSupport.framework/Versions/Current/.
+--validated:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtPrintSupport.framework/Versions/Current/.
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtDBus.framework/Versions/Current/.
+--validated:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtDBus.framework/Versions/Current/.
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtCore.framework/Versions/Current/.
+--validated:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtCore.framework/Versions/Current/.
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtConcurrent.framework/Versions/Current/.
+--validated:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtConcurrent.framework/Versions/Current/.
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtGui.framework/Versions/Current/.
+--validated:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtGui.framework/Versions/Current/.
+--prepared:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtWidgets.framework/Versions/Current/.
+--validated:/DEPS/build/7-Zip Mac.app/Contents/Frameworks/QtWidgets.framework/Versions/Current/.
+/DEPS/build/7-Zip Mac.app: valid on disk
+/DEPS/build/7-Zip Mac.app: satisfies its Designated Requirement
+
+Packaged helper lists Japanese/implicit-folder metadata successfully.
+LaunchServices startup survived 3 seconds; lsof verifies bundled Cocoa plugin; owned PID 45913
+Physical desktop interaction remains unverified.

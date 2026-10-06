@@ -1,0 +1,249 @@
+
+REPORT build.log
+SHA256 8204d2b2bd261be05581a6254b147ba18ddfab4c140d8b7f358ed71a32a4543a
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+
+REPORT verify.log
+SHA256 7ddfe6f0380dc15e8db66f82c9f0b700c914db78ff1940c79a6ce211516effb3
+33: Totals: 20 passed, 0 failed, 0 skipped, 0 blacklisted, 7718ms
+35: AppKit mouse opened six menus and the file context menu, and invoked About, Rename, Properties and Options; Options Apply and visible-manager FileOpen passed
+91% tests passed, 3 tests failed out of 35
+Total Test time (real) = 623.82 sec
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+application: exit 1 (/DEPS/final-release-20261006.6AROnPsX/reports/application.log)
+agent-tree: exit 0 (/DEPS/final-release-20261006.6AROnPsX/reports/agent-tree.log)
+agent-selection: exit 0 (/DEPS/final-release-20261006.6AROnPsX/reports/agent-selection.log)
+formats: exit 0 (/DEPS/final-release-20261006.6AROnPsX/reports/formats.log)
+bundle-startup: exit 0 (/DEPS/final-release-20261006.6AROnPsX/reports/bundle-startup.log)
+
+REPORT reports/application.log
+SHA256 a09299654f19fb47b28b31e1afb0e0f584c3282007b6488caf3af346770e7390
+1: FAIL!  : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs() 'window.findChild<QAction *>("copyAction")->isEnabled() || list(window)->markedItems().isEmpty()' returned FALSE. ()
+1: Totals: 40 passed, 1 failed, 0 skipped, 0 blacklisted, 58590ms
+FAIL!  : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs() 'window.findChild<QAction *>("copyAction")->isEnabled() || list(window)->markedItems().isEmpty()' returned FALSE. ()
+Totals: 40 passed, 1 failed, 0 skipped, 0 blacklisted, 58590ms
+2: Totals: 27 passed, 0 failed, 0 skipped, 0 blacklisted, 11478ms
+3: Totals: 26 passed, 0 failed, 0 skipped, 0 blacklisted, 17325ms
+4: Totals: 25 passed, 0 failed, 0 skipped, 0 blacklisted, 9220ms
+5: Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 12754ms
+6: Totals: 27 passed, 0 failed, 0 skipped, 0 blacklisted, 803ms
+7: Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 6044ms
+8: Totals: 15 passed, 0 failed, 0 skipped, 0 blacklisted, 1849ms
+9: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 2962ms
+10: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 923ms
+11: Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 2338ms
+12: Totals: 34 passed, 0 failed, 0 skipped, 0 blacklisted, 23724ms
+13: Totals: 27 passed, 0 failed, 0 skipped, 0 blacklisted, 13336ms
+14: Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 4445ms
+17: Totals: 9 passed, 0 failed, 0 skipped, 0 blacklisted, 9080ms
+18: Totals: 30 passed, 0 failed, 0 skipped, 0 blacklisted, 7525ms
+19: Totals: 15 passed, 0 failed, 0 skipped, 0 blacklisted, 10857ms
+20: Totals: 15 passed, 0 failed, 0 skipped, 0 blacklisted, 4683ms
+21: FAIL!  : Integration::guiNavigationAndActions() Compared values are not the same
+21: FAIL!  : Integration::guiEncryptedOpenAndDrop() 'selectedFolder' returned FALSE. ()
+21: FAIL!  : Integration::guiOptionsPersistenceAndBehavior() Compared values are not the same
+21: Totals: 90 passed, 3 failed, 0 skipped, 0 blacklisted, 199583ms
+FAIL!  : Integration::guiNavigationAndActions() Compared values are not the same
+FAIL!  : Integration::guiEncryptedOpenAndDrop() 'selectedFolder' returned FALSE. ()
+FAIL!  : Integration::guiOptionsPersistenceAndBehavior() Compared values are not the same
+Totals: 90 passed, 3 failed, 0 skipped, 0 blacklisted, 199583ms
+22: Totals: 36 passed, 0 failed, 0 skipped, 0 blacklisted, 68263ms
+23: Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 13111ms
+24: Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 7227ms
+25: Totals: 13 passed, 0 failed, 0 skipped, 0 blacklisted, 24811ms
+26: Totals: 32 passed, 0 failed, 0 skipped, 0 blacklisted, 23543ms
+27: Totals: 24 passed, 0 failed, 0 skipped, 0 blacklisted, 10458ms
+28: Totals: 322 passed, 0 failed, 0 skipped, 0 blacklisted, 24044ms
+29: Totals: 19 passed, 0 failed, 0 skipped, 0 blacklisted, 4437ms
+30: FAIL!  : LinkTests::folderBrowse(from) Compared values are not the same
+30: FAIL!  : LinkTests::folderBrowse(to) 'path.endsWith('/')' returned FALSE. ()
+30: Totals: 26 passed, 2 failed, 0 skipped, 0 blacklisted, 5840ms
+FAIL!  : LinkTests::folderBrowse(from) Compared values are not the same
+FAIL!  : LinkTests::folderBrowse(to) 'path.endsWith('/')' returned FALSE. ()
+Totals: 26 passed, 2 failed, 0 skipped, 0 blacklisted, 5840ms
+31: Totals: 19 passed, 0 failed, 0 skipped, 0 blacklisted, 5964ms
+32: Totals: 47 passed, 0 failed, 0 skipped, 0 blacklisted, 4867ms
+33: Totals: 20 passed, 0 failed, 0 skipped, 0 blacklisted, 7718ms
+35: AppKit mouse opened six menus and the file context menu, and invoked About, Rename, Properties and Options; Options Apply and visible-manager FileOpen passed
+91% tests passed, 3 tests failed out of 35
+Total Test time (real) = 623.82 sec
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+
+REPORT reports/agent-tree.log
+SHA256 389b26bea6c628d40b5c289eb332550eb6463a8741f63bc35346276bb2a183f4
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 595ms
+
+REPORT reports/agent-selection.log
+SHA256 bcd4f72f67c2d241233481549ce305c73760a8b7b66fbfe0e5c3fb90db5b4e8b
+Totals: 55 passed, 0 failed, 0 skipped, 0 blacklisted, 24427ms
+
+REPORT reports/formats.log
+SHA256 dfb53b176b2ee669ad3872be2bb2eee0baba9217370738696f2150475e7c310b
+Totals: 155 passed, 0 failed, 0 skipped, 0 blacklisted, 23407ms
+Coverage: 151 / 151 registration cases passed
+
+REPORT reports/bundle-startup.log
+SHA256 e8665269e42f90872ce9cc5a7a35ed8bac2c26dc24005c8c23ca590eceb82ef2
+Owned bundle executable alive after 3 seconds: True
+Private INI files created: 1
+Existing matching native user preferences unchanged: True
+Invalid explicit profile rejected without native fallback: True
+Native user preferences remain unchanged: True
+
+REPORT reports/results.tsv
+SHA256 993937958a6dae3f1f684bbf712d7be20ce6b3dfbb0a1c2ee1f9eba424aae6b5
+application	1
+agent-tree	0
+agent-selection	0
+formats	0
+bundle-startup	0
+
+REPORT repair-group.log
+SHA256 17fe9ecf6c291a330e32b487fc77875df14f84bb520f4c33aecc7595c5b94b45
+1: FAIL!  : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs() 'window.findChild<QAction *>("copyAction", Qt::FindDirectChildrenOnly)->isEnabled()' returned FALSE. ()
+1: Totals: 40 passed, 1 failed, 0 skipped, 0 blacklisted, 38537ms
+FAIL!  : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs() 'window.findChild<QAction *>("copyAction", Qt::FindDirectChildrenOnly)->isEnabled()' returned FALSE. ()
+Totals: 40 passed, 1 failed, 0 skipped, 0 blacklisted, 38537ms
+4: Totals: 25 passed, 0 failed, 0 skipped, 0 blacklisted, 8847ms
+12: Totals: 34 passed, 0 failed, 0 skipped, 0 blacklisted, 23233ms
+14: Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 4342ms
+21: FAIL!  : Integration::safetyPaths() '!fixtures.isEmpty()' returned FALSE. ()
+21: FAIL!  : Integration::rarSelectedExtract() 'result.success' returned FALSE. ()
+21: FAIL!  : Integration::archiveFolderLargeListing() 'QFile::copy(qEnvironmentVariable("PORT_FIXTURES") + "/many-entry.tar", archive)' returned FALSE. ()
+21: FAIL!  : Integration::guiNavigationAndActions() Compared values are not the same
+21: FAIL!  : Integration::guiOptionsPersistenceAndBehavior() '!clicked.isEmpty()' returned FALSE. (The owned folder row must receive the single click.)
+21: Totals: 88 passed, 5 failed, 0 skipped, 0 blacklisted, 159589ms
+FAIL!  : Integration::safetyPaths() '!fixtures.isEmpty()' returned FALSE. ()
+FAIL!  : Integration::rarSelectedExtract() 'result.success' returned FALSE. ()
+FAIL!  : Integration::archiveFolderLargeListing() 'QFile::copy(qEnvironmentVariable("PORT_FIXTURES") + "/many-entry.tar", archive)' returned FALSE. ()
+FAIL!  : Integration::guiNavigationAndActions() Compared values are not the same
+FAIL!  : Integration::guiOptionsPersistenceAndBehavior() '!clicked.isEmpty()' returned FALSE. (The owned folder row must receive the single click.)
+Totals: 88 passed, 5 failed, 0 skipped, 0 blacklisted, 159589ms
+30: FAIL!  : LinkTests::folderBrowse(from) Compared values are not the same
+30: FAIL!  : LinkTests::folderBrowse(to) 'path.endsWith('/')' returned FALSE. ()
+30: Totals: 26 passed, 2 failed, 0 skipped, 0 blacklisted, 5710ms
+FAIL!  : LinkTests::folderBrowse(from) Compared values are not the same
+FAIL!  : LinkTests::folderBrowse(to) 'path.endsWith('/')' returned FALSE. ()
+Totals: 26 passed, 2 failed, 0 skipped, 0 blacklisted, 5710ms
+35: AppKit mouse opened six menus and the file context menu, and invoked About, Rename, Properties and Options; Options Apply and visible-manager FileOpen passed
+57% tests passed, 3 tests failed out of 7
+Total Test time (real) = 246.97 sec
+
+REPORT driver-repair-group.log
+SHA256 513e26206e8db48acd579787af2583dde72fc201077d7371ffa12c397902eb28
+1: FAIL!  : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs() 'window.findChild<QAction *>("copyAction", Qt::FindDirectChildrenOnly)->isEnabled()' returned FALSE. ()
+1: Totals: 40 passed, 1 failed, 0 skipped, 0 blacklisted, 57168ms
+FAIL!  : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs() 'window.findChild<QAction *>("copyAction", Qt::FindDirectChildrenOnly)->isEnabled()' returned FALSE. ()
+Totals: 40 passed, 1 failed, 0 skipped, 0 blacklisted, 57168ms
+0% tests passed, 3 tests failed out of 3
+Total Test time (real) = 237.48 sec
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+
+REPORT affected-copy.log
+SHA256 f7c5323bc366313760c208924eff3771cbf387229d516cdb6f5aba512e82255a
+FAIL!  : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs() 'window.findChild<QAction *>("copyAction", Qt::FindDirectChildrenOnly)->isEnabled()' returned FALSE. ()
+Totals: 2 passed, 1 failed, 0 skipped, 0 blacklisted, 16749ms
+
+REPORT affected-integration.log
+SHA256 3e2d548b5d85f211343740146538c01dc91973b09b2164e88282120c4db7b2aa
+FAIL!  : Integration::guiNavigationAndActions() 'QFileInfo(input + "/created-ui").isDir()' returned FALSE. ()
+Totals: 8 passed, 1 failed, 0 skipped, 0 blacklisted, 23720ms
+
+REPORT affected-links.log
+SHA256 49b76674e0c3b649142d75f5868ad517ca0ea83b5e2e272c8b0ef6b48f9858b2
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 503ms
+
+REPORT copy-focus-diagnostic.log
+SHA256 6a13b8d9c88764e2237a87568bb9de481ed390c53e4a956af0aedb078beb2163
+FAIL!  : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs() 'window.findChild<QAction *>("copyAction", Qt::FindDirectChildrenOnly)->isEnabled()' returned FALSE. (focus=none active=none sourceFocus=0 destinationFocus=0 operated=1 childAction=0)
+Totals: 2 passed, 1 failed, 0 skipped, 0 blacklisted, 16694ms
+
+REPORT final-affected-copy.log
+SHA256 519b554871209c1a3d5df541b3d830d1c1dbae6f11d33df534dc349efeb75f50
+FAIL!  : CopyWorkflowTests::cancelArchiveBetweenPanelsRetainsInputs() 'window.findChild<QAction *>("copyAction", Qt::FindDirectChildrenOnly)->isEnabled()' returned FALSE. (focus=none active=none sourceFocus=0 destinationFocus=0 operated=1 childAction=0)
+Totals: 2 passed, 1 failed, 0 skipped, 0 blacklisted, 16723ms
+
+REPORT final-affected-navigation.log
+SHA256 ae8c2c2a054396b59214c2d3504f13583dd4bb1443cecbdda29852ceb02eea6b
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 6689ms
+
+REPORT focus-batch.log
+SHA256 05728e56b07f042860bd8b11e44e2d44b2af4ac3f5a1eae2853d779ab90d8825
+1: Totals: 41 passed, 0 failed, 0 skipped, 0 blacklisted, 50626ms
+4: Totals: 25 passed, 0 failed, 0 skipped, 0 blacklisted, 4102ms
+100% tests passed, 0 tests failed out of 2
+Total Test time (real) =  55.98 sec
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+
+REPORT native-focus-batch.log
+SHA256 9f6e3b03d9114e2e40e63c9b9f56e5d76d670ced57a37f5e69ede32790c57626
+3: Totals: 26 passed, 0 failed, 0 skipped, 0 blacklisted, 12770ms
+35: AppKit mouse opened six menus and the file context menu, and invoked About, Rename, Properties and Options; Options Apply and visible-manager FileOpen passed
+100% tests passed, 0 tests failed out of 2
+Total Test time (real) =  16.92 sec
+
+REPORT second-candidate/build.log
+SHA256 41ae9f7429dee1020864942ecac8b9029ccaf466d11d1c497379287ececfd100
+[252/252] Linking CXX executable cocoa_menu_tests
+Source archive verified: 803 tracked regular files; normalized modes; SHA-256 manifest
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+
+REPORT second-candidate/bundle-startup.log
+SHA256 e8665269e42f90872ce9cc5a7a35ed8bac2c26dc24005c8c23ca590eceb82ef2
+Owned bundle executable alive after 3 seconds: True
+Private INI files created: 1
+Existing matching native user preferences unchanged: True
+Invalid explicit profile rejected without native fallback: True
+Native user preferences remain unchanged: True
+
+REPORT second-candidate/public-source-review.log
+SHA256 b46d36d7d0d7a2f9616e298565724fbc7e4379a3c74286fc20a378476c14c3cc
+Local snapshot verified: 803 files; 120 documentation files normalized; no Git history or publication
+
+REPORT second-candidate/mnemonic-build.log
+SHA256 a2c704819b36857ecc8333c5f126bc625f8435134447656e063d41521699f1bf
+/REPOSITORY/src/PortStyle.h:20:5: error: use of undeclared identifier 'qt_set_sequence_auto_mnemonic'
+/REPOSITORY/src/PortStyle.h:20:5: error: use of undeclared identifier 'qt_set_sequence_auto_mnemonic'
+/REPOSITORY/src/PortStyle.h:20:5: error: use of undeclared identifier 'qt_set_sequence_auto_mnemonic'
+ninja: build stopped: subcommand failed.
+
+REPORT second-candidate/mnemonic-repaired-build.log
+SHA256 3d0a807e14a25e24f2830221dc6c1635a1fe5d1348ab88eda572973fabf5cfd6
+
+REPORT second-candidate/mnemonic-group.log
+SHA256 1ac936374e3b54d6f61a17dbab08b695fc28966963b2851ad2ac7d7d561c8586
+9: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 1741ms
+10: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 937ms
+32: Totals: 47 passed, 0 failed, 0 skipped, 0 blacklisted, 4773ms
+35: AppKit Alt access keys opened all six original top-level menus
+35: AppKit mouse opened six menus and the file context menu, and invoked About, Rename, Properties and Options; Options Apply and visible-manager FileOpen passed
+100% tests passed, 0 tests failed out of 4
+Total Test time (real) =  12.96 sec
+
+FINAL SOURCE-FROZEN CANDIDATE 07968cd43fbc77e747df9b7bd3a4f9bc5582595d
+
+REPORT final-candidate/final-build.log
+SHA256 70c52b95ad48fb768ff0479ba9381af92c759fae0cbdd772ac35d812b1d7c01f
+[252/252] Linking CXX executable cocoa_menu_tests
+Source archive verified: 803 tracked regular files; normalized modes; SHA-256 manifest
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+
+REPORT final-candidate/final-bundle-startup.log
+SHA256 e8665269e42f90872ce9cc5a7a35ed8bac2c26dc24005c8c23ca590eceb82ef2
+Owned bundle executable alive after 3 seconds: True
+Private INI files created: 1
+Existing matching native user preferences unchanged: True
+stdout bytes: 0 stderr bytes: 0
+Invalid explicit profile rejected without native fallback: True
+Native user preferences remain unchanged: True
+Only owned processes terminated; physical Finder/Fn/menu input not checked.
+
+REPORT final-candidate/final-source-review.log
+SHA256 b46d36d7d0d7a2f9616e298565724fbc7e4379a3c74286fc20a378476c14c3cc
+Local snapshot verified: 803 files; 120 documentation files normalized; no Git history or publication
+
+REPORT final-candidate/final-desktop-operations.json
+SHA256 def9f76a44370d2d087cd75b176de1c0ae60fa5c66a9d7cb6a4a49cd87bd14e7
+Actual desktop Alt+T opened Tools; O opened Options; Cancel returned to the ZIP listing
+Owned application process exited 0; font-script/accessibility warnings retained
+Hardware modifiers, final Finder/context/drag delivery, printing and pixel comparison are not claimed

@@ -1,0 +1,272 @@
+=== Final official folder integration (SSD original / SMB working folder) ===
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-YJZWkY"
+PASS   : Integration::initTestCase()
+PASS   : Integration::archiveFolderCreation(7z)
+PASS   : Integration::archiveFolderCreation(zip)
+PASS   : Integration::archiveFolderCreation(tar)
+PASS   : Integration::archiveFolderCreation(wim)
+PASS   : Integration::archiveFolderCreation(7z-data)
+PASS   : Integration::archiveFolderCreation(7z-headers)
+PASS   : Integration::archiveFolderCreation(zip-AES)
+PASS   : Integration::archiveFolderCreation(zip-ZipCrypto)
+PASS   : Integration::archiveFolderCancelAndProtection()
+PASS   : Integration::archiveFolderNativeWimImagesAndTimes()
+PASS   : Integration::archiveFolderMixedDataPasswords(7z)
+PASS   : Integration::archiveFolderMixedDataPasswords(zip)
+PASS   : Integration::archiveFolderWorkingDirectory()
+PASS   : Integration::archiveFolderLargeListing()
+PASS   : Integration::archiveFolderDiagnosticsAndLimits()
+PASS   : Integration::guiArchiveFolderCreation()
+PASS   : Integration::cleanupTestCase()
+Totals: 18 passed, 0 failed, 0 skipped, 0 blacklisted, 16649ms
+********* Finished testing of Integration *********
+
+=== Final affected regression suites ===
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: native_metadata_formatter
+
+1: Test command: /DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zip-metadata-tests
+1: Working Directory: /DEPS/build-comments-20261004
+1: Test timeout computed to be: 10000000
+1: PASS: raw CRC upper hex
+1: PASS: raw checksum upper hex
+1: PASS: other raw lower hex
+1: PASS: 64-byte list boundary
+1: PASS: 65-byte list abbreviation
+1: PASS: 256-byte Properties boundary
+1: PASS: 257-byte Properties abbreviation
+1: PASS: empty raw value
+1: PASS: portable NT security descriptor
+1: PASS: short NT security descriptor
+1: PASS: unsupported NT security revision
+1: Native metadata formatter: 11 passed, 0 failed
+1/6 Test  #1: native_metadata_formatter ........   Passed    0.01 sec
+test 4
+    Start  4: archive_transfer
+
+4: Test command: /DEPS/build-comments-20261004/archive_transfer_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+4: Working Directory: /DEPS/build-comments-20261004
+4: Environment variables: 
+4:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+4: Test timeout computed to be: 180
+4: ********* Start testing of ArchiveTransferTests *********
+4: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+4: PASS   : ArchiveTransferTests::initTestCase()
+4: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(7z)
+4: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(zip)
+4: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(tar)
+4: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(wim)
+4: PASS   : ArchiveTransferTests::encryptionInherited(7z-header)
+4: PASS   : ArchiveTransferTests::encryptionInherited(zip-AES)
+4: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(7z)
+4: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(zip)
+4: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(tar)
+4: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(wim)
+4: PASS   : ArchiveTransferTests::invalidPrefixAndDuplicateInputs()
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(gzip-copy)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(gzip-move)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(bzip2-copy)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(bzip2-move)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(xz-copy)
+4: PASS   : ArchiveTransferTests::streamCopyAndMove(xz-move)
+4: PASS   : ArchiveTransferTests::moveFileLinkRetainsTarget()
+4: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(7z)
+4: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(zip)
+4: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(tar)
+4: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(wim)
+4: PASS   : ArchiveTransferTests::pauseCancelExistingArchive()
+4: PASS   : ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Copy-context)
+4: PASS   : ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Move-action)
+4: PASS   : ArchiveTransferTests::guiDropIntoFolderFromDifferentParents()
+4: PASS   : ArchiveTransferTests::guiDirectoryLinkMoveRefreshesBothPanels()
+4: PASS   : ArchiveTransferTests::guiVerificationFailureRefreshesCommittedArchive()
+4: PASS   : ArchiveTransferTests::cleanupTestCase()
+4: Totals: 30 passed, 0 failed, 0 skipped, 0 blacklisted, 5627ms
+4: ********* Finished testing of ArchiveTransferTests *********
+2/6 Test  #4: archive_transfer .................   Passed    6.39 sec
+test 5
+    Start  5: native_progress
+
+5: Test command: /DEPS/build-comments-20261004/native_progress_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+5: Working Directory: /DEPS/build-comments-20261004
+5: Environment variables: 
+5:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+5: Test timeout computed to be: 120
+5: ********* Start testing of NativeProgressTests *********
+5: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+5: PASS   : NativeProgressTests::initTestCase()
+5: PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+5: PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+5: PASS   : NativeProgressTests::encryptedAndFailureRecovery()
+5: PASS   : NativeProgressTests::pauseCancelAndReuse()
+5: PASS   : NativeProgressTests::progressLabelsAndLargeValues()
+5: PASS   : NativeProgressTests::workerPauseCancelAndTimeout()
+5: PASS   : NativeProgressTests::workerUnicodeErrorAndSecret()
+5: PASS   : NativeProgressTests::sourceVerificationPauseCancel()
+5: PASS   : NativeProgressTests::sourceVerificationCallbacks()
+5: PASS   : NativeProgressTests::droppedConsumerDoesNotInterruptEngine()
+5: PASS   : NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()
+5: PASS   : NativeProgressTests::cleanupTestCase()
+5: Totals: 13 passed, 0 failed, 0 skipped, 0 blacklisted, 15032ms
+5: ********* Finished testing of NativeProgressTests *********
+3/6 Test  #5: native_progress ..................   Passed   15.69 sec
+test 7
+    Start  7: editor_writeback
+
+7: Test command: /DEPS/build-comments-20261004/editor_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+7: Working Directory: /DEPS/build-comments-20261004
+7: Environment variables: 
+7:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+7: Test timeout computed to be: 180
+7: ********* Start testing of EditorTests *********
+7: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+7: QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "/TMP/T/ExternalEdit-hfDGdL"
+7: PASS   : EditorTests::initTestCase()
+7: PASS   : EditorTests::processWaitsForDescendants()
+7: PASS   : EditorTests::writeBack(7z)
+7: PASS   : EditorTests::writeBack(zip)
+7: PASS   : EditorTests::writeBack(tar)
+7: PASS   : EditorTests::writeBack(wim)
+7: PASS   : EditorTests::writeBack(gzip)
+7: PASS   : EditorTests::writeBack(bzip2)
+7: PASS   : EditorTests::writeBack(xz)
+7: PASS   : EditorTests::writeBack(7z-data-view)
+7: PASS   : EditorTests::writeBack(7z-headers)
+7: PASS   : EditorTests::writeBack(zip-AES)
+7: PASS   : EditorTests::writeBack(zip-ZipCrypto)
+7: PASS   : EditorTests::discardedOrRetained(no)
+7: PASS   : EditorTests::discardedOrRetained(cancel)
+7: PASS   : EditorTests::discardedOrRetained(other-folder)
+7: PASS   : EditorTests::discardedOrRetained(read-only)
+7: PASS   : EditorTests::discardedOrRetained(removed-item)
+7: PASS   : EditorTests::runningEditorSurvivesClose(modified)
+7: PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+7: PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+7: PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+7: PASS   : EditorTests::focusedFileOnly()
+7: PASS   : EditorTests::applicationBundleWaitAndArguments()
+7: PASS   : EditorTests::observedNewSessionChild()
+7: PASS   : EditorTests::nestedEditorWriteBack()
+7: PASS   : EditorTests::updateCancellationRetainsEdit()
+7: PASS   : EditorTests::twoPanelsSerializeWrites()
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+7: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+7: PASS   : EditorTests::cleanupTestCase()
+7: Totals: 32 passed, 0 failed, 0 skipped, 0 blacklisted, 31200ms
+7: ********* Finished testing of EditorTests *********
+4/6 Test  #7: editor_writeback .................   Passed   31.76 sec
+test 10
+    Start 10: file_comments
+
+10: Test command: /DEPS/build-comments-20261004/comment_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+10: Working Directory: /DEPS/build-comments-20261004
+10: Environment variables: 
+10:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+10: Test timeout computed to be: 180
+10: ********* Start testing of CommentTests *********
+10: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+10: QINFO  : CommentTests::initTestCase() Owned comment fixtures: "/TMP/T/FileComments-RusBrL"
+10: PASS   : CommentTests::initTestCase()
+10: PASS   : CommentTests::textPairsCompatibility()
+10: PASS   : CommentTests::filesystemRoundtripAndMetadata()
+10: PASS   : CommentTests::refusedWrites(invalid-utf8)
+10: PASS   : CommentTests::refusedWrites(symlink)
+10: PASS   : CommentTests::refusedWrites(read-only)
+10: PASS   : CommentTests::refusedWrites(hardlink)
+10: PASS   : CommentTests::refusedWrites(duplicate-pairs)
+10: PASS   : CommentTests::refusedWrites(changed)
+10: PASS   : CommentTests::refusedWrites(created)
+10: PASS   : CommentTests::refusedWrites(trim-collision)
+10: PASS   : CommentTests::refusedWrites(quote-name)
+10: PASS   : CommentTests::refusedWrites(newline-value)
+10: PASS   : CommentTests::refusedWrites(permission)
+10: PASS   : CommentTests::refusedWrites(folder-changed)
+10: PASS   : CommentTests::pauseCancelRetainsOriginal()
+10: PASS   : CommentTests::inheritedGroupPreservesOriginal()
+10: PASS   : CommentTests::filesystemFocusedItemAndFlatView()
+10: QINFO  : CommentTests::zipCommentRoundtrip(plain) Independent raw ZIP payload verification passed (including encrypted bytes)
+10: PASS   : CommentTests::zipCommentRoundtrip(plain)
+10: QINFO  : CommentTests::zipCommentRoundtrip(AES) Independent raw ZIP payload verification passed (including encrypted bytes)
+10: PASS   : CommentTests::zipCommentRoundtrip(AES)
+10: QINFO  : CommentTests::zipCommentRoundtrip(ZipCrypto) Independent raw ZIP payload verification passed (including encrypted bytes)
+10: PASS   : CommentTests::zipCommentRoundtrip(ZipCrypto)
+10: PASS   : CommentTests::zipCommentFailureAndCancel()
+10: QINFO  : CommentTests::zipIndependentPayloadVerification(create-bzip2) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+10: PASS   : CommentTests::zipIndependentPayloadVerification(create-bzip2)
+10: QINFO  : CommentTests::zipIndependentPayloadVerification(create-lzma) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+10: PASS   : CommentTests::zipIndependentPayloadVerification(create-lzma)
+10: QINFO  : CommentTests::zipIndependentPayloadVerification(create-zip64) Independent ZIP verification passed: 65539 entries, raw payload/local records, comments and decoded bytes
+10: PASS   : CommentTests::zipIndependentPayloadVerification(create-zip64)
+10: PASS   : CommentTests::zipCryptoDescriptorRetained()
+10: PASS   : CommentTests::zipVirtualFolderNotEditableAndMaximumLength()
+10: PASS   : CommentTests::zipDuplicateNamesCanBeListed()
+10: PASS   : CommentTests::splitZipReadDoesNotRequireDirectHandler()
+10: PASS   : CommentTests::zipGuiCommentAndColumnTransition()
+10: PASS   : CommentTests::cleanupTestCase()
+10: Totals: 31 passed, 0 failed, 0 skipped, 0 blacklisted, 31124ms
+10: ********* Finished testing of CommentTests *********
+5/6 Test #10: file_comments ....................   Passed   31.78 sec
+test 14
+    Start 14: properties
+
+14: Test command: /DEPS/build-comments-20261004/property_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+14: Working Directory: /DEPS/build-comments-20261004
+14: Environment variables: 
+14:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+14: Test timeout computed to be: 120
+14: ********* Start testing of PropertyTests *********
+14: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+14: PASS   : PropertyTests::initTestCase()
+14: PASS   : PropertyTests::orderedListingAndLayers()
+14: PASS   : PropertyTests::folderIndexImplicitAndFlat()
+14: PASS   : PropertyTests::dialogCopyFullValueAndButtons()
+14: PASS   : PropertyTests::nativeSchemaAndAllColumns()
+14: PASS   : PropertyTests::nativeFlatNameAndPrefixColumns()
+14: PASS   : PropertyTests::nativeEmptyArchiveKeepsSchema()
+14: PASS   : PropertyTests::nativeMultilineCommentsAndLiteralPasswordNames()
+14: PASS   : PropertyTests::nativeWimRawHashAndProxy()
+14: PASS   : PropertyTests::nativeFileTimePrecisionAndUndefinedValues()
+14: PASS   : PropertyTests::nativeTypedIntegersAndRawIdentity()
+14: PASS   : PropertyTests::nativeControlCharacterFilenameRoundTrip()
+14: PASS   : PropertyTests::nativeMetadataDestinationProtection()
+14: PASS   : PropertyTests::guiSingleMultipleUnselectedAndPrefix()
+14: PASS   : PropertyTests::guiNestedAndLayerRestore()
+14: PASS   : PropertyTests::nestedWritebackRefreshesProperties()
+14: PASS   : PropertyTests::singleClickAndFilesystemSubstitute()
+14: PASS   : PropertyTests::destroyAfterClosedProgress()
+14: PASS   : PropertyTests::cleanupTestCase()
+14: Totals: 19 passed, 0 failed, 0 skipped, 0 blacklisted, 3326ms
+14: ********* Finished testing of PropertyTests *********
+6/6 Test #14: properties .......................   Passed    3.50 sec
+
+The following tests passed:
+	native_metadata_formatter
+	archive_transfer
+	native_progress
+	editor_writeback
+	file_comments
+	properties
+
+100% tests passed, 0 tests failed out of 6
+
+Total Test time (real) =  89.14 sec
+
+=== Normal app bundle and owned LaunchServices startup ===
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+Owned LaunchServices PID 34731 survived 3 seconds.
+Isolated CFFIXED_USER_HOME and owned fixture directory.
+Bundled Cocoa plugin verified by vmmap.
+Only the owned PID terminated. Physical rendering not verified.

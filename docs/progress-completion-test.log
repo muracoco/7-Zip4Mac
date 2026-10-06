@@ -1,0 +1,336 @@
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: progress_completion
+
+1: Test command: /DEPS/build-comments-20261004/progress_completion_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 120
+1: ********* Start testing of ProgressCompletionTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : ProgressCompletionTests::initTestCase()
+1: FAIL!  : ProgressCompletionTests::originalCompletionPolicy(success-auto-close) Compared values are not the same
+1:    Actual   (view.text.value(2)): "&Close"
+1:    Expected (QString("Close"))  : "Close"
+1:    Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+1: FAIL!  : ProgressCompletionTests::originalCompletionPolicy(test-ok-message) Compared values are not the same
+1:    Actual   (view.text.value(2)): "&Close"
+1:    Expected (QString("Close"))  : "Close"
+1:    Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+1: FAIL!  : ProgressCompletionTests::originalCompletionPolicy(fatal-error-message) Compared values are not the same
+1:    Actual   (view.text.value(2)): "&Close"
+1:    Expected (QString("Close"))  : "Close"
+1:    Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+1: FAIL!  : ProgressCompletionTests::originalCompletionPolicy(file-errors-retain-close) Compared values are not the same
+1:    Actual   (view.text.value(2)): "&Close"
+1:    Expected (QString("Close"))  : "Close"
+1:    Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+1: FAIL!  : ProgressCompletionTests::originalCompletionPolicy(fatal-and-file-errors) Compared values are not the same
+1:    Actual   (view.text.value(2)): "&Close"
+1:    Expected (QString("Close"))  : "Close"
+1:    Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+1: FAIL!  : ProgressCompletionTests::originalCompletionPolicy(cancelled-with-errors-close) Compared values are not the same
+1:    Actual   (view.text.value(2)): "&Close"
+1:    Expected (QString("Close"))  : "Close"
+1:    Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+1: PASS   : ProgressCompletionTests::originalTestAndHashText()
+1: PASS   : ProgressCompletionTests::checksumSelectionCopyDeleteAndDetail()
+1: FAIL!  : ProgressCompletionTests::actualEngineResults(7z) Compared values are not the same
+1:    Actual   (result.completion.hash->hashers.first().groups[0]): "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+1:    Expected (digest)                                           : "BA7816BF8F01CFEA414140DE5DAE2223B00361A396177A9CB410FF61F20015AD"
+1:    Loc: [/REPOSITORY/tests/progress-completion.cpp(83)]
+1: FAIL!  : ProgressCompletionTests::actualEngineResults(zip) Compared values are not the same
+1:    Actual   (result.completion.hash->hashers.first().groups[0]): "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+1:    Expected (digest)                                           : "BA7816BF8F01CFEA414140DE5DAE2223B00361A396177A9CB410FF61F20015AD"
+1:    Loc: [/REPOSITORY/tests/progress-completion.cpp(83)]
+1: PASS   : ProgressCompletionTests::fatalAndFileErrorsAndParentTitle()
+1: PASS   : ProgressCompletionTests::invalidCompletionRecordIsRejected()
+1: PASS   : ProgressCompletionTests::cleanupTestCase()
+1: Totals: 6 passed, 8 failed, 0 skipped, 0 blacklisted, 1776ms
+1: ********* Finished testing of ProgressCompletionTests *********
+1/5 Test  #1: progress_completion ..............***Failed    2.40 sec
+********* Start testing of ProgressCompletionTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : ProgressCompletionTests::initTestCase()
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(success-auto-close) Compared values are not the same
+   Actual   (view.text.value(2)): "&Close"
+   Expected (QString("Close"))  : "Close"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(test-ok-message) Compared values are not the same
+   Actual   (view.text.value(2)): "&Close"
+   Expected (QString("Close"))  : "Close"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(fatal-error-message) Compared values are not the same
+   Actual   (view.text.value(2)): "&Close"
+   Expected (QString("Close"))  : "Close"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(file-errors-retain-close) Compared values are not the same
+   Actual   (view.text.value(2)): "&Close"
+   Expected (QString("Close"))  : "Close"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(fatal-and-file-errors) Compared values are not the same
+   Actual   (view.text.value(2)): "&Close"
+   Expected (QString("Close"))  : "Close"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(cancelled-with-errors-close) Compared values are not the same
+   Actual   (view.text.value(2)): "&Close"
+   Expected (QString("Close"))  : "Close"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(45)]
+PASS   : ProgressCompletionTests::originalTestAndHashText()
+PASS   : ProgressCompletionTests::checksumSelectionCopyDeleteAndDetail()
+FAIL!  : ProgressCompletionTests::actualEngineResults(7z) Compared values are not the same
+   Actual   (result.completion.hash->hashers.first().groups[0]): "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+   Expected (digest)                                           : "BA7816BF8F01CFEA414140DE5DAE2223B00361A396177A9CB410FF61F20015AD"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(83)]
+FAIL!  : ProgressCompletionTests::actualEngineResults(zip) Compared values are not the same
+   Actual   (result.completion.hash->hashers.first().groups[0]): "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+   Expected (digest)                                           : "BA7816BF8F01CFEA414140DE5DAE2223B00361A396177A9CB410FF61F20015AD"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(83)]
+PASS   : ProgressCompletionTests::fatalAndFileErrorsAndParentTitle()
+PASS   : ProgressCompletionTests::invalidCompletionRecordIsRejected()
+PASS   : ProgressCompletionTests::cleanupTestCase()
+Totals: 6 passed, 8 failed, 0 skipped, 0 blacklisted, 1776ms
+********* Finished testing of ProgressCompletionTests *********
+
+test 2
+    Start  2: progress_presentation
+
+2: Test command: /DEPS/build-comments-20261004/progress_presentation_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+2: Working Directory: /DEPS/build-comments-20261004
+2: Environment variables: 
+2:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+2: Test timeout computed to be: 120
+2: ********* Start testing of ProgressPresentationTests *********
+2: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+2: PASS   : ProgressPresentationTests::initTestCase()
+2: PASS   : ProgressPresentationTests::originalStatisticsAndPause()
+2: PASS   : ProgressPresentationTests::originalFileNameAndStatusReduction()
+2: PASS   : ProgressPresentationTests::originalMessagesAndLocalizedErrors()
+2: PASS   : ProgressPresentationTests::widgetPresentationAndLanguage()
+2: PASS   : ProgressPresentationTests::cancelConfirmation(yes-running)
+2: PASS   : ProgressPresentationTests::cancelConfirmation(yes-paused)
+2: PASS   : ProgressPresentationTests::cancelConfirmation(no-running)
+2: PASS   : ProgressPresentationTests::cancelConfirmation(no-paused)
+2: PASS   : ProgressPresentationTests::cancelConfirmation(cancel-running)
+2: PASS   : ProgressPresentationTests::cancelConfirmation(cancel-paused)
+2: PASS   : ProgressPresentationTests::completionDuringConfirmation()
+2: PASS   : ProgressPresentationTests::backgroundChildAndCancel()
+2: PASS   : ProgressPresentationTests::genuineCallbackErrors()
+2: PASS   : ProgressPresentationTests::cleanupTestCase()
+2: Totals: 15 passed, 0 failed, 0 skipped, 0 blacklisted, 1186ms
+2: ********* Finished testing of ProgressPresentationTests *********
+2/5 Test  #2: progress_presentation ............   Passed    1.65 sec
+test 3
+    Start  3: dialog_resources
+
+3: Test command: /DEPS/build-comments-20261004/dialog_resource_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+3: Working Directory: /DEPS/build-comments-20261004
+3: Environment variables: 
+3:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+3: Test timeout computed to be: 90
+3: ********* Start testing of DialogResourceTests *********
+3: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+3: PASS   : DialogResourceTests::initTestCase()
+3: PASS   : DialogResourceTests::sourceCoordinatesAndButtonOrder()
+3: PASS   : DialogResourceTests::extractionVisibilityAndGeometry()
+3: PASS   : DialogResourceTests::originalProgressResizeAndState()
+3: PASS   : DialogResourceTests::originalProgressFormatting()
+3: PASS   : DialogResourceTests::originalOptionsSummaryAndModal()
+3: PASS   : DialogResourceTests::defaultLanguageAndSavedChoice()
+3: PASS   : DialogResourceTests::cleanupTestCase()
+3: Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 343ms
+3: ********* Finished testing of DialogResourceTests *********
+3/5 Test  #3: dialog_resources .................   Passed    0.80 sec
+test 4
+    Start  4: language_settings
+
+4: Test command: /DEPS/build-comments-20261004/language_settings_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+4: Working Directory: /DEPS/build-comments-20261004
+4: Environment variables: 
+4:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+4: Test timeout computed to be: 90
+4: ********* Start testing of LanguageSettingsTests *********
+4: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+4: PASS   : LanguageSettingsTests::initTestCase()
+4: PASS   : LanguageSettingsTests::officialFilesAndInformation()
+4: PASS   : LanguageSettingsTests::parserBoundaryAndEscapes()
+4: PASS   : LanguageSettingsTests::missingExtraAndTranslatorInformation()
+4: PASS   : LanguageSettingsTests::allLanguageControlResources()
+4: PASS   : LanguageSettingsTests::optionsApplyCancelAndInfo()
+4: PASS   : LanguageSettingsTests::progressStatesAndManualValues()
+4: PASS   : LanguageSettingsTests::menuToolbarAndPropertyIdentity()
+4: PASS   : LanguageSettingsTests::editableBundleLanguageDirectory()
+4: PASS   : LanguageSettingsTests::cleanupTestCase()
+4: Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 607ms
+4: ********* Finished testing of LanguageSettingsTests *********
+4/5 Test  #4: language_settings ................   Passed    1.07 sec
+test 13
+    Start 13: native_progress
+
+13: Test command: /DEPS/build-comments-20261004/native_progress_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+13: Working Directory: /DEPS/build-comments-20261004
+13: Environment variables: 
+13:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+13: Test timeout computed to be: 120
+13: ********* Start testing of NativeProgressTests *********
+13: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+13: PASS   : NativeProgressTests::initTestCase()
+13: PASS   : NativeProgressTests::callbacksAndRoundTrip(7z)
+13: PASS   : NativeProgressTests::callbacksAndRoundTrip(zip)
+13: PASS   : NativeProgressTests::encryptedAndFailureRecovery()
+13: PASS   : NativeProgressTests::extractionFailureDialogAndReuse()
+13: PASS   : NativeProgressTests::pauseCancelAndReuse()
+13: PASS   : NativeProgressTests::progressLabelsAndLargeValues()
+13: PASS   : NativeProgressTests::workerPauseCancelAndTimeout()
+13: PASS   : NativeProgressTests::workerUnicodeErrorAndSecret()
+13: PASS   : NativeProgressTests::sourceVerificationPauseCancel()
+13: PASS   : NativeProgressTests::sourceVerificationCallbacks()
+13: PASS   : NativeProgressTests::droppedConsumerDoesNotInterruptEngine()
+13: PASS   : NativeProgressTests::protocolKeepsUInt64AndRejectsInvalidValues()
+13: PASS   : NativeProgressTests::overwriteProtocolFullWidth()
+13: PASS   : NativeProgressTests::cleanupTestCase()
+13: Totals: 15 passed, 0 failed, 0 skipped, 0 blacklisted, 9984ms
+13: ********* Finished testing of NativeProgressTests *********
+5/5 Test #13: native_progress ..................   Passed   10.44 sec
+
+The following tests passed:
+	progress_presentation
+	dialog_resources
+	language_settings
+	native_progress
+
+80% tests passed, 1 tests failed out of 5
+
+Total Test time (real) =  16.38 sec
+
+The following tests FAILED:
+	  1 - progress_completion (Failed)
+Errors while running CTest
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-mFwRlB"
+PASS   : Integration::initTestCase()
+PASS   : Integration::roundtrip(7z)
+PASS   : Integration::roundtrip(zip)
+PASS   : Integration::cancellationAndResponsiveness()
+PASS   : Integration::nestedArchiveNavigation()
+FAIL!  : Integration::nestedArchivePasswordsAndCancel() 'qvariant_cast<ArchiveResult>(finished.last()[0]).cancelled' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(219)]
+FAIL!  : Integration::archivePauseResumeAndCancel() '!window.operationBusy()' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(248)]
+PASS   : Integration::openWithArchiveCommands()
+PASS   : Integration::openWithCancelAndBusyQueue()
+PASS   : Integration::archiveContentsHashes(7z)
+PASS   : Integration::archiveContentsHashes(zip)
+PASS   : Integration::archiveContentsHashes(7z-password)
+PASS   : Integration::archiveContentsHashes(7z-headers)
+PASS   : Integration::archiveContentsHashes(zip-AES)
+PASS   : Integration::guiArchiveFolderCreation()
+PASS   : Integration::cleanupTestCase()
+Totals: 14 passed, 2 failed, 0 skipped, 0 blacklisted, 73600ms
+********* Finished testing of Integration *********
+********* Start testing of ProgressCompletionTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : ProgressCompletionTests::initTestCase()
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(success-auto-close) Compared values are not the same
+   Actual   (view.text.value(102)): "\n\u65E5\u672C\u8A9E.txt"
+   Expected (QString("日本語.txt"))  : "\u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(46)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(test-ok-message) Compared values are not the same
+   Actual   (view.text.value(102)): "\n\u65E5\u672C\u8A9E.txt"
+   Expected (QString("日本語.txt"))  : "\u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(46)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(fatal-error-message) Compared values are not the same
+   Actual   (view.text.value(102)): "\n\u65E5\u672C\u8A9E.txt"
+   Expected (QString("日本語.txt"))  : "\u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(46)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(file-errors-retain-close) Compared values are not the same
+   Actual   (view.text.value(102)): "\n\u65E5\u672C\u8A9E.txt"
+   Expected (QString("日本語.txt"))  : "\u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(46)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(fatal-and-file-errors) Compared values are not the same
+   Actual   (view.text.value(102)): "\n\u65E5\u672C\u8A9E.txt"
+   Expected (QString("日本語.txt"))  : "\u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(46)]
+FAIL!  : ProgressCompletionTests::originalCompletionPolicy(cancelled-with-errors-close) Compared values are not the same
+   Actual   (view.text.value(102)): "\n\u65E5\u672C\u8A9E.txt"
+   Expected (QString("日本語.txt"))  : "\u65E5\u672C\u8A9E.txt"
+   Loc: [/REPOSITORY/tests/progress-completion.cpp(46)]
+PASS   : ProgressCompletionTests::actualEngineResults(7z)
+PASS   : ProgressCompletionTests::actualEngineResults(zip)
+PASS   : ProgressCompletionTests::actualInsideTestSummary()
+PASS   : ProgressCompletionTests::cleanupTestCase()
+Totals: 5 passed, 6 failed, 0 skipped, 0 blacklisted, 1441ms
+********* Finished testing of ProgressCompletionTests *********
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-FnkBMD"
+PASS   : Integration::initTestCase()
+FAIL!  : Integration::nestedArchivePasswordsAndCancel() 'qvariant_cast<ArchiveResult>(finished.last()[0]).cancelled' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(232)]
+PASS   : Integration::archivePauseResumeAndCancel()
+PASS   : Integration::cleanupTestCase()
+Totals: 3 passed, 1 failed, 0 skipped, 0 blacklisted, 5668ms
+********* Finished testing of Integration *********
+********* Start testing of ProgressCompletionTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : ProgressCompletionTests::initTestCase()
+PASS   : ProgressCompletionTests::originalCompletionPolicy(success-auto-close)
+PASS   : ProgressCompletionTests::originalCompletionPolicy(test-ok-message)
+PASS   : ProgressCompletionTests::originalCompletionPolicy(fatal-error-message)
+PASS   : ProgressCompletionTests::originalCompletionPolicy(file-errors-retain-close)
+PASS   : ProgressCompletionTests::originalCompletionPolicy(fatal-and-file-errors)
+PASS   : ProgressCompletionTests::originalCompletionPolicy(cancelled-with-errors-close)
+PASS   : ProgressCompletionTests::cleanupTestCase()
+Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 7ms
+********* Finished testing of ProgressCompletionTests *********
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-EWurdM"
+PASS   : Integration::initTestCase()
+QINFO  : Integration::nestedArchivePasswordsAndCancel() Owned nested Cancel signals: 1
+QINFO  : Integration::nestedArchivePasswordsAndCancel() Owned nested result: 2 true false 0
+QINFO  : Integration::nestedArchivePasswordsAndCancel() Owned nested result: 0 false true 255
+QINFO  : Integration::nestedArchivePasswordsAndCancel() Owned nested result: 0 true false 0
+FAIL!  : Integration::nestedArchivePasswordsAndCancel() 'qvariant_cast<ArchiveResult>(finished.last()[0]).cancelled' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/integration.cpp(234)]
+PASS   : Integration::cleanupTestCase()
+Totals: 2 passed, 1 failed, 0 skipped, 0 blacklisted, 2273ms
+********* Finished testing of Integration *********
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-xRPZOr"
+PASS   : Integration::initTestCase()
+PASS   : Integration::nestedArchivePasswordsAndCancel()
+PASS   : Integration::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 3301ms
+********* Finished testing of Integration *********
+********* Start testing of ProgressCompletionTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : ProgressCompletionTests::initTestCase()
+PASS   : ProgressCompletionTests::actualInsideTestSummary()
+PASS   : ProgressCompletionTests::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 2324ms
+********* Finished testing of ProgressCompletionTests *********
+********* Start testing of Integration *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+QINFO  : Integration::initTestCase() Dedicated fixture directory: "/TMP/T/Integration-KJnkpt"
+PASS   : Integration::initTestCase()
+PASS   : Integration::archiveContentsHashes(7z)
+PASS   : Integration::archiveContentsHashes(zip)
+PASS   : Integration::archiveContentsHashes(7z-password)
+PASS   : Integration::archiveContentsHashes(7z-headers)
+PASS   : Integration::archiveContentsHashes(zip-AES)
+PASS   : Integration::cleanupTestCase()
+Totals: 7 passed, 0 failed, 0 skipped, 0 blacklisted, 47796ms
+********* Finished testing of Integration *********

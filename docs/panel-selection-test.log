@@ -1,0 +1,485 @@
+Official File Manager selection port, 2026-10-05
+
+The first combined run below has a two-panel fixture lookup failure.
+It selected the nested pane twice. The fixture was corrected; the final
+selection-only rerun follows. All eight other suites passed in the combined
+run and were unchanged afterward. Final affected total: 222 passing checks,
+0 failures/skips, including setup/cleanup. Physical input is not verified.
+
+=== Initial combined run ===
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start  1: panel_selection
+
+1: Test command: /DEPS/build-comments-20261004/panel_selection_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 90
+1: ********* Start testing of PanelSelectionTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : PanelSelectionTests::initTestCase()
+1: PASS   : PanelSelectionTests::independentMarks(details)
+1: PASS   : PanelSelectionTests::independentMarks(icons)
+1: PASS   : PanelSelectionTests::insertAndParent(details)
+1: PASS   : PanelSelectionTests::insertAndParent(icons)
+1: PASS   : PanelSelectionTests::shiftArrowMarks(details)
+1: PASS   : PanelSelectionTests::shiftArrowMarks(icons)
+1: PASS   : PanelSelectionTests::ctrlShiftClickRange(details)
+1: PASS   : PanelSelectionTests::ctrlShiftClickRange(icons)
+1: PASS   : PanelSelectionTests::standardSelection(details)
+1: PASS   : PanelSelectionTests::standardSelection(icons)
+1: PASS   : PanelSelectionTests::paintAndSort()
+1: PASS   : PanelSelectionTests::mainWindowRoundtrip(7z)
+1: PASS   : PanelSelectionTests::mainWindowRoundtrip(zip)
+1: FAIL!  : PanelSelectionTests::independentPanelsAndModeSwitch() 'first && second && first != second' returned FALSE. ()
+1:    Loc: [/REPOSITORY/tests/panel-selection.cpp(121)]
+1: PASS   : PanelSelectionTests::cleanupTestCase()
+1: Totals: 15 passed, 1 failed, 0 skipped, 0 blacklisted, 1785ms
+1: ********* Finished testing of PanelSelectionTests *********
+1/9 Test  #1: panel_selection ..................***Failed    2.36 sec
+********* Start testing of PanelSelectionTests *********
+Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+PASS   : PanelSelectionTests::initTestCase()
+PASS   : PanelSelectionTests::independentMarks(details)
+PASS   : PanelSelectionTests::independentMarks(icons)
+PASS   : PanelSelectionTests::insertAndParent(details)
+PASS   : PanelSelectionTests::insertAndParent(icons)
+PASS   : PanelSelectionTests::shiftArrowMarks(details)
+PASS   : PanelSelectionTests::shiftArrowMarks(icons)
+PASS   : PanelSelectionTests::ctrlShiftClickRange(details)
+PASS   : PanelSelectionTests::ctrlShiftClickRange(icons)
+PASS   : PanelSelectionTests::standardSelection(details)
+PASS   : PanelSelectionTests::standardSelection(icons)
+PASS   : PanelSelectionTests::paintAndSort()
+PASS   : PanelSelectionTests::mainWindowRoundtrip(7z)
+PASS   : PanelSelectionTests::mainWindowRoundtrip(zip)
+FAIL!  : PanelSelectionTests::independentPanelsAndModeSwitch() 'first && second && first != second' returned FALSE. ()
+   Loc: [/REPOSITORY/tests/panel-selection.cpp(121)]
+PASS   : PanelSelectionTests::cleanupTestCase()
+Totals: 15 passed, 1 failed, 0 skipped, 0 blacklisted, 1785ms
+********* Finished testing of PanelSelectionTests *********
+
+test 5
+    Start  5: archive_transfer
+
+5: Test command: /DEPS/build-comments-20261004/archive_transfer_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+5: Working Directory: /DEPS/build-comments-20261004
+5: Environment variables: 
+5:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+5: Test timeout computed to be: 180
+5: ********* Start testing of ArchiveTransferTests *********
+5: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+5: PASS   : ArchiveTransferTests::initTestCase()
+5: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(7z)
+5: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(zip)
+5: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(tar)
+5: PASS   : ArchiveTransferTests::copyDefaultsAndLogicalPrefix(wim)
+5: PASS   : ArchiveTransferTests::encryptionInherited(7z-header)
+5: PASS   : ArchiveTransferTests::encryptionInherited(zip-AES)
+5: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(7z)
+5: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(zip)
+5: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(tar)
+5: PASS   : ArchiveTransferTests::moveVerifiesPrefixedRoots(wim)
+5: PASS   : ArchiveTransferTests::invalidPrefixAndDuplicateInputs()
+5: PASS   : ArchiveTransferTests::streamCopyAndMove(gzip-copy)
+5: PASS   : ArchiveTransferTests::streamCopyAndMove(gzip-move)
+5: PASS   : ArchiveTransferTests::streamCopyAndMove(bzip2-copy)
+5: PASS   : ArchiveTransferTests::streamCopyAndMove(bzip2-move)
+5: PASS   : ArchiveTransferTests::streamCopyAndMove(xz-copy)
+5: PASS   : ArchiveTransferTests::streamCopyAndMove(xz-move)
+5: PASS   : ArchiveTransferTests::moveFileLinkRetainsTarget()
+5: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(7z)
+5: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(zip)
+5: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(tar)
+5: PASS   : ArchiveTransferTests::moveDirectoryLinkRetainsTargets(wim)
+5: PASS   : ArchiveTransferTests::pauseCancelExistingArchive()
+5: PASS   : ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Copy-context)
+5: PASS   : ArchiveTransferTests::guiCopyMoveAndDestinationRefresh(Move-action)
+5: PASS   : ArchiveTransferTests::guiDropIntoFolderFromDifferentParents()
+5: PASS   : ArchiveTransferTests::guiDirectoryLinkMoveRefreshesBothPanels()
+5: PASS   : ArchiveTransferTests::guiVerificationFailureRefreshesCommittedArchive()
+5: PASS   : ArchiveTransferTests::cleanupTestCase()
+5: Totals: 30 passed, 0 failed, 0 skipped, 0 blacklisted, 3733ms
+5: ********* Finished testing of ArchiveTransferTests *********
+2/9 Test  #5: archive_transfer .................   Passed    4.21 sec
+test 8
+    Start  8: editor_writeback
+
+8: Test command: /DEPS/build-comments-20261004/editor_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+8: Working Directory: /DEPS/build-comments-20261004
+8: Environment variables: 
+8:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+8: Test timeout computed to be: 180
+8: ********* Start testing of EditorTests *********
+8: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+8: QINFO  : EditorTests::initTestCase() Owned external-editor fixtures: "/TMP/T/ExternalEdit-BYAIMC"
+8: PASS   : EditorTests::initTestCase()
+8: PASS   : EditorTests::processWaitsForDescendants()
+8: PASS   : EditorTests::writeBack(7z)
+8: PASS   : EditorTests::writeBack(zip)
+8: PASS   : EditorTests::writeBack(tar)
+8: PASS   : EditorTests::writeBack(wim)
+8: PASS   : EditorTests::writeBack(gzip)
+8: PASS   : EditorTests::writeBack(bzip2)
+8: PASS   : EditorTests::writeBack(xz)
+8: PASS   : EditorTests::writeBack(7z-data-view)
+8: PASS   : EditorTests::writeBack(7z-headers)
+8: PASS   : EditorTests::writeBack(zip-AES)
+8: PASS   : EditorTests::writeBack(zip-ZipCrypto)
+8: PASS   : EditorTests::discardedOrRetained(no)
+8: PASS   : EditorTests::discardedOrRetained(cancel)
+8: PASS   : EditorTests::discardedOrRetained(other-folder)
+8: PASS   : EditorTests::discardedOrRetained(read-only)
+8: PASS   : EditorTests::discardedOrRetained(removed-item)
+8: PASS   : EditorTests::runningEditorSurvivesClose(modified)
+8: PASS   : EditorTests::runningEditorSurvivesClose(unchanged)
+8: PASS   : EditorTests::shortLauncherLifetime(unchanged-retained)
+8: PASS   : EditorTests::shortLauncherLifetime(later-edit-retained)
+8: PASS   : EditorTests::focusedFileOnly()
+8: PASS   : EditorTests::applicationBundleWaitAndArguments()
+8: PASS   : EditorTests::observedNewSessionChild()
+8: PASS   : EditorTests::nestedEditorWriteBack()
+8: PASS   : EditorTests::updateCancellationRetainsEdit()
+8: PASS   : EditorTests::twoPanelsSerializeWrites()
+8: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(missing-program)
+8: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(nonzero-exit)
+8: PASS   : EditorTests::failedLaunchAndUnchangedCompletion(long-unchanged)
+8: PASS   : EditorTests::cleanupTestCase()
+8: Totals: 32 passed, 0 failed, 0 skipped, 0 blacklisted, 30790ms
+8: ********* Finished testing of EditorTests *********
+3/9 Test  #8: editor_writeback .................   Passed   31.27 sec
+test 9
+    Start  9: folder_statistics
+
+9: Test command: /DEPS/build-comments-20261004/statistics_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+9: Working Directory: /DEPS/build-comments-20261004
+9: Environment variables: 
+9:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+9: Test timeout computed to be: 120
+9: ********* Start testing of StatisticsTests *********
+9: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+9: QINFO  : StatisticsTests::initTestCase() Owned folder-statistics fixtures: "/TMP/T/FolderStatistics-tnTfcQ"
+9: PASS   : StatisticsTests::initTestCase()
+9: PASS   : StatisticsTests::countsUnicodeHiddenLinksAndSparseFile()
+9: PASS   : StatisticsTests::errorsAndCompletedSibling()
+9: PASS   : StatisticsTests::pauseResumeCancelAndReuse(resume)
+9: PASS   : StatisticsTests::pauseResumeCancelAndReuse(cancel)
+9: PASS   : StatisticsTests::selectedFoldersTakePrecedence(details)
+9: PASS   : StatisticsTests::selectedFoldersTakePrecedence(icons)
+9: PASS   : StatisticsTests::selectedFoldersTakePrecedence(flat)
+9: PASS   : StatisticsTests::guiErrorDoesNotDisplayPartialCounts()
+9: PASS   : StatisticsTests::guiCancelAndClose()
+9: PASS   : StatisticsTests::cleanupTestCase()
+9: Totals: 11 passed, 0 failed, 0 skipped, 0 blacklisted, 8308ms
+9: ********* Finished testing of StatisticsTests *********
+4/9 Test  #9: folder_statistics ................   Passed    9.72 sec
+test 11
+    Start 11: directory_scanner
+
+11: Test command: /DEPS/build-comments-20261004/directory_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+11: Working Directory: /DEPS/build-comments-20261004
+11: Environment variables: 
+11:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+11: Test timeout computed to be: 120
+11: ********* Start testing of DirectoryTests *********
+11: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+11: QINFO  : DirectoryTests::initTestCase() Owned directory fixtures: "/TMP/T/DirectoryScanner-vOcNVx"
+11: PASS   : DirectoryTests::initTestCase()
+11: PASS   : DirectoryTests::metadataAndFlatDoesNotFollowChildLinks()
+11: PASS   : DirectoryTests::scannerSupersedesAndCanBeDestroyed()
+11: QINFO  : DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(normal) Flat false 30,000 rows: elapsed ms 2520 heartbeat ticks 134 maximum event-loop gap ms 857
+11: PASS   : DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(normal)
+11: QINFO  : DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(flat) Flat true 30,000 rows: elapsed ms 2462 heartbeat ticks 134 maximum event-loop gap ms 811
+11: PASS   : DirectoryTests::completeLargeViewKeepsHeartbeatAndHeader(flat)
+11: PASS   : DirectoryTests::cancelDuringRowPreparationAndNavigate()
+11: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 12
+11: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 14
+11: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 11
+11: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 13
+11: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 20
+11: QINFO  : DirectoryTests::refreshOptionsAndManagerRestoreSelection() qt.text.font.db: OpenType support missing for "Arial", script 16
+11: PASS   : DirectoryTests::refreshOptionsAndManagerRestoreSelection()
+11: PASS   : DirectoryTests::failurePreservesPreviousViewAndRecovers()
+11: PASS   : DirectoryTests::archiveExitRefreshAndConsecutiveUp()
+11: PASS   : DirectoryTests::failedStartupCommandRestoresFilesystem()
+11: PASS   : DirectoryTests::openWithMenuSupersedesHiddenStartupScans()
+11: PASS   : DirectoryTests::twoPanelRestoreRemovalAndClose()
+11: PASS   : DirectoryTests::cleanupTestCase()
+11: Totals: 13 passed, 0 failed, 0 skipped, 0 blacklisted, 26248ms
+11: ********* Finished testing of DirectoryTests *********
+5/9 Test #11: directory_scanner ................   Passed   27.72 sec
+test 12
+    Start 12: file_comments
+
+12: Test command: /DEPS/build-comments-20261004/comment_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+12: Working Directory: /DEPS/build-comments-20261004
+12: Environment variables: 
+12:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+12: Test timeout computed to be: 180
+12: ********* Start testing of CommentTests *********
+12: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+12: QINFO  : CommentTests::initTestCase() Owned comment fixtures: "/TMP/T/FileComments-pghcpo"
+12: PASS   : CommentTests::initTestCase()
+12: PASS   : CommentTests::textPairsCompatibility()
+12: PASS   : CommentTests::filesystemRoundtripAndMetadata()
+12: PASS   : CommentTests::refusedWrites(invalid-utf8)
+12: PASS   : CommentTests::refusedWrites(symlink)
+12: PASS   : CommentTests::refusedWrites(read-only)
+12: PASS   : CommentTests::refusedWrites(hardlink)
+12: PASS   : CommentTests::refusedWrites(duplicate-pairs)
+12: PASS   : CommentTests::refusedWrites(changed)
+12: PASS   : CommentTests::refusedWrites(created)
+12: PASS   : CommentTests::refusedWrites(trim-collision)
+12: PASS   : CommentTests::refusedWrites(quote-name)
+12: PASS   : CommentTests::refusedWrites(newline-value)
+12: PASS   : CommentTests::refusedWrites(permission)
+12: PASS   : CommentTests::refusedWrites(folder-changed)
+12: PASS   : CommentTests::pauseCancelRetainsOriginal()
+12: PASS   : CommentTests::inheritedGroupPreservesOriginal()
+12: PASS   : CommentTests::filesystemFocusedItemAndFlatView()
+12: QINFO  : CommentTests::zipCommentRoundtrip(plain) Independent raw ZIP payload verification passed (including encrypted bytes)
+12: PASS   : CommentTests::zipCommentRoundtrip(plain)
+12: QINFO  : CommentTests::zipCommentRoundtrip(AES) Independent raw ZIP payload verification passed (including encrypted bytes)
+12: PASS   : CommentTests::zipCommentRoundtrip(AES)
+12: QINFO  : CommentTests::zipCommentRoundtrip(ZipCrypto) Independent raw ZIP payload verification passed (including encrypted bytes)
+12: PASS   : CommentTests::zipCommentRoundtrip(ZipCrypto)
+12: PASS   : CommentTests::zipCommentFailureAndCancel()
+12: QINFO  : CommentTests::zipIndependentPayloadVerification(create-bzip2) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+12: PASS   : CommentTests::zipIndependentPayloadVerification(create-bzip2)
+12: QINFO  : CommentTests::zipIndependentPayloadVerification(create-lzma) Independent ZIP verification passed: 3 entries, raw payload/local records, comments and decoded bytes
+12: PASS   : CommentTests::zipIndependentPayloadVerification(create-lzma)
+12: QINFO  : CommentTests::zipIndependentPayloadVerification(create-zip64) Independent ZIP verification passed: 65539 entries, raw payload/local records, comments and decoded bytes
+12: PASS   : CommentTests::zipIndependentPayloadVerification(create-zip64)
+12: PASS   : CommentTests::zipCryptoDescriptorRetained()
+12: PASS   : CommentTests::zipVirtualFolderNotEditableAndMaximumLength()
+12: PASS   : CommentTests::zipDuplicateNamesCanBeListed()
+12: PASS   : CommentTests::splitZipReadDoesNotRequireDirectHandler()
+12: PASS   : CommentTests::zipGuiCommentAndColumnTransition()
+12: PASS   : CommentTests::cleanupTestCase()
+12: Totals: 31 passed, 0 failed, 0 skipped, 0 blacklisted, 20593ms
+12: ********* Finished testing of CommentTests *********
+6/9 Test #12: file_comments ....................   Passed   21.11 sec
+test 13
+    Start 13: archive_open_modes
+
+13: Test command: /DEPS/build-comments-20261004/open_mode_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+13: Working Directory: /DEPS/build-comments-20261004
+13: Environment variables: 
+13:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+13: Test timeout computed to be: 120
+13: ********* Start testing of OpenModeTests *********
+13: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+13: QINFO  : OpenModeTests::initTestCase() Owned open-mode fixtures: "/TMP/T/ArchiveOpenModes-gwoRfO"
+13: PASS   : OpenModeTests::initTestCase()
+13: PASS   : OpenModeTests::oneLevelAndNormalExtraction()
+13: PASS   : OpenModeTests::parserRegionsExtractAndHash()
+13: PASS   : OpenModeTests::oneLevelWritableZip(comment)
+13: PASS   : OpenModeTests::oneLevelWritableZip(create-folder)
+13: PASS   : OpenModeTests::oneLevelWritableZip(replace-file)
+13: PASS   : OpenModeTests::prefixedUpdates(7z)
+13: PASS   : OpenModeTests::prefixedUpdates(7z-data-password)
+13: PASS   : OpenModeTests::prefixedUpdates(7z-header-password)
+13: PASS   : OpenModeTests::prefixedUpdates(zip)
+13: PASS   : OpenModeTests::prefixedUpdates(zip-AES-password)
+13: PASS   : OpenModeTests::prefixedUpdates(tar)
+13: PASS   : OpenModeTests::prefixedUpdates(wim)
+13: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(7z)
+13: PASS   : OpenModeTests::prefixedGuiAndNestedWriteback(zip)
+13: PASS   : OpenModeTests::updateRejectedLayouts()
+13: PASS   : OpenModeTests::explicitModeFailures(whole-zip-not-parser)
+13: PASS   : OpenModeTests::explicitModeFailures(unrecognized-parser)
+13: PASS   : OpenModeTests::explicitModeFailures(invalid-mode)
+13: PASS   : OpenModeTests::guiOneLevelFocusedAndModeReset()
+13: PASS   : OpenModeTests::guiParserNestedAndRestored()
+13: PASS   : OpenModeTests::guiNestedParserAndPassword(plain-parent)
+13: PASS   : OpenModeTests::guiNestedParserAndPassword(encrypted-parent)
+13: PASS   : OpenModeTests::cleanupTestCase()
+13: Totals: 24 passed, 0 failed, 0 skipped, 0 blacklisted, 6765ms
+13: ********* Finished testing of OpenModeTests *********
+7/9 Test #13: archive_open_modes ...............   Passed    7.24 sec
+test 17
+    Start 17: properties
+
+17: Test command: /DEPS/build-comments-20261004/property_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+17: Working Directory: /DEPS/build-comments-20261004
+17: Environment variables: 
+17:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+17: Test timeout computed to be: 120
+17: ********* Start testing of PropertyTests *********
+17: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+17: PASS   : PropertyTests::initTestCase()
+17: PASS   : PropertyTests::orderedListingAndLayers()
+17: PASS   : PropertyTests::folderIndexImplicitAndFlat()
+17: PASS   : PropertyTests::dialogCopyFullValueAndButtons()
+17: PASS   : PropertyTests::nativeSchemaAndAllColumns()
+17: PASS   : PropertyTests::nativeFlatNameAndPrefixColumns()
+17: PASS   : PropertyTests::nativeEmptyArchiveKeepsSchema()
+17: PASS   : PropertyTests::nativeMultilineCommentsAndLiteralPasswordNames()
+17: PASS   : PropertyTests::nativeWimRawHashAndProxy()
+17: PASS   : PropertyTests::nativeFileTimePrecisionAndUndefinedValues()
+17: PASS   : PropertyTests::nativeTypedIntegersAndRawIdentity()
+17: PASS   : PropertyTests::nativeControlCharacterFilenameRoundTrip()
+17: PASS   : PropertyTests::nativeMetadataDestinationProtection()
+17: PASS   : PropertyTests::guiSingleMultipleUnselectedAndPrefix()
+17: PASS   : PropertyTests::guiNestedAndLayerRestore()
+17: PASS   : PropertyTests::nestedWritebackRefreshesProperties()
+17: PASS   : PropertyTests::singleClickAndFilesystemSubstitute()
+17: PASS   : PropertyTests::destroyAfterClosedProgress()
+17: PASS   : PropertyTests::cleanupTestCase()
+17: Totals: 19 passed, 0 failed, 0 skipped, 0 blacklisted, 2354ms
+17: ********* Finished testing of PropertyTests *********
+8/9 Test #17: properties .......................   Passed    2.83 sec
+test 18
+    Start 18: compression_help
+
+18: Test command: /DEPS/build-comments-20261004/compression_help_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+18: Working Directory: /DEPS/build-comments-20261004
+18: Environment variables: 
+18:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+18: Test timeout computed to be: 120
+18: ********* Start testing of CompressionHelpTests *********
+18: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+18: PASS   : CompressionHelpTests::initTestCase()
+18: PASS   : CompressionHelpTests::defaultsAndMemory()
+18: PASS   : CompressionHelpTests::automaticAndManualPersistence()
+18: PASS   : CompressionHelpTests::officialControlInventory()
+18: PASS   : CompressionHelpTests::formatDraftsCommitAndCancel()
+18: PASS   : CompressionHelpTests::localizedDynamicControls()
+18: PASS   : CompressionHelpTests::originalTimeAndLinkOptions()
+18: PASS   : CompressionHelpTests::explicitLatestTimeOffRoundtrip()
+18: PASS   : CompressionHelpTests::upstreamResetTransitions()
+18: PASS   : CompressionHelpTests::methodGuardAndNearestSavedChoices()
+18: PASS   : CompressionHelpTests::historyAndToolbarInitialFormat()
+18: PASS   : CompressionHelpTests::translatedSolidCommands()
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/LZMA2)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/LZMA)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/PPMd)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/BZip2)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(7z/Copy)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/Deflate)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/Deflate64)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/BZip2)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/LZMA)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/PPMd)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(zip/Copy)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(tar/GNU)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(tar/POSIX)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(wim/Copy)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(xz/LZMA2)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(gzip/Deflate)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(bzip2/BZip2)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(Hash/SHA256)
+18: PASS   : CompressionHelpTests::selectedMethodRoundtrip(Hash/SHA1)
+18: PASS   : CompressionHelpTests::automaticRoundtrip(7z-normal)
+18: PASS   : CompressionHelpTests::automaticRoundtrip(7z-store)
+18: PASS   : CompressionHelpTests::automaticRoundtrip(zip-normal)
+18: PASS   : CompressionHelpTests::automaticRoundtrip(zip-store)
+18: PASS   : CompressionHelpTests::automaticEncryptedArchive()
+18: PASS   : CompressionHelpTests::insufficientMemoryAndPasswordValidation()
+18: PASS   : CompressionHelpTests::helpInventoryAndNavigation()
+18: PASS   : CompressionHelpTests::helpResourceBoundary()
+18: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 12
+18: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 14
+18: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 11
+18: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleIndicFont", script 11
+18: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 13
+18: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 20
+18: QINFO  : CompressionHelpTests::contextualHelpButtons() qt.text.font.db: OpenType support missing for ".AppleSystemUIFont", script 16
+18: PASS   : CompressionHelpTests::contextualHelpButtons()
+18: PASS   : CompressionHelpTests::fullTextSearch()
+18: PASS   : CompressionHelpTests::helpSearchUiAndPrint()
+18: PASS   : CompressionHelpTests::originalAboutActions()
+18: PASS   : CompressionHelpTests::helpHistoryAndOperators()
+18: PASS   : CompressionHelpTests::helpHistoryBounds()
+18: PASS   : CompressionHelpTests::cleanupTestCase()
+18: Totals: 46 passed, 0 failed, 0 skipped, 0 blacklisted, 3816ms
+18: ********* Finished testing of CompressionHelpTests *********
+9/9 Test #18: compression_help .................   Passed    4.28 sec
+
+The following tests passed:
+	archive_transfer
+	editor_writeback
+	folder_statistics
+	directory_scanner
+	file_comments
+	archive_open_modes
+	properties
+	compression_help
+
+89% tests passed, 1 tests failed out of 9
+
+Total Test time (real) = 110.74 sec
+
+The following tests FAILED:
+	  1 - panel_selection (Failed)
+Errors while running CTest
+
+=== Final selection rerun ===
+Internal ctest changing into directory: /DEPS/build-comments-20261004
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/DEPS/build-comments-20261004/DartConfiguration.tcl
+Test project /DEPS/build-comments-20261004
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: panel_selection
+
+1: Test command: /DEPS/build-comments-20261004/panel_selection_tests "/DEPS/7zip-26.03/CPP/7zip/Bundles/Alone2/b/m_arm64_15/7zz"
+1: Working Directory: /DEPS/build-comments-20261004
+1: Environment variables: 
+1:  PORT_TEST_PLUGIN_ROOT=/DEPS/qt-cocoa-6.11.3-3a3153339370/build/plugins/platforms/..
+1: Test timeout computed to be: 90
+1: ********* Start testing of PanelSelectionTests *********
+1: Config: Using QtTest library 6.11.3, Qt 6.11.3 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 16.0.0 (clang-1600.0.26.3)), macos 26.6.2
+1: PASS   : PanelSelectionTests::initTestCase()
+1: PASS   : PanelSelectionTests::independentMarks(details)
+1: PASS   : PanelSelectionTests::independentMarks(icons)
+1: PASS   : PanelSelectionTests::insertAndParent(details)
+1: PASS   : PanelSelectionTests::insertAndParent(icons)
+1: PASS   : PanelSelectionTests::shiftArrowMarks(details)
+1: PASS   : PanelSelectionTests::shiftArrowMarks(icons)
+1: PASS   : PanelSelectionTests::ctrlShiftClickRange(details)
+1: PASS   : PanelSelectionTests::ctrlShiftClickRange(icons)
+1: PASS   : PanelSelectionTests::standardSelection(details)
+1: PASS   : PanelSelectionTests::standardSelection(icons)
+1: PASS   : PanelSelectionTests::paintAndSort()
+1: PASS   : PanelSelectionTests::mainWindowRoundtrip(7z)
+1: PASS   : PanelSelectionTests::mainWindowRoundtrip(zip)
+1: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 12
+1: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 14
+1: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 11
+1: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 13
+1: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 20
+1: QINFO  : PanelSelectionTests::independentPanelsAndModeSwitch() qt.text.font.db: OpenType support missing for "Arial", script 16
+1: PASS   : PanelSelectionTests::independentPanelsAndModeSwitch()
+1: PASS   : PanelSelectionTests::cleanupTestCase()
+1: Totals: 16 passed, 0 failed, 0 skipped, 0 blacklisted, 1841ms
+1: ********* Finished testing of PanelSelectionTests *********
+1/1 Test #1: panel_selection ..................   Passed    2.30 sec
+
+The following tests passed:
+	panel_selection
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   2.30 sec
+
+=== Packaging and owned startup ===
+/DEPS/build-comments-20261004/7-Zip Mac.app: replacing existing signature
+Bundle dependency check passed: 15 Mach-O files; system/@rpath dependencies only
+/DEPS/build-comments-20261004/7-Zip Mac.app
+Isolated three-second startup alive: True

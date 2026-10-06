@@ -11,3 +11,14 @@ SOURCE-MANIFEST.json
 PUBLICATION-REVIEW.json
 docs/*.log
 docs/*.json
+
+# Local credentials and private key stores
+.env
+.env.*
+!.env.example
+.ssh/
+private-keys/
+id_rsa
+id_ed25519
+*.p12
+*.pfx

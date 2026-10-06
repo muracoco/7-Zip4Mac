@@ -3,7 +3,9 @@
 This is the current inventory for the source-defined implementation groups
 through the TextPairs source refactor transfer/menu restoration and application-local Windows access keys. Older component reports preserve executed
 evidence, including failures; their former remaining-work lists are historical.
-Full parity and publication are **not declared complete** by this inventory.
+The audited portable source-group implementation, tested local 0.2.0 package
+and public source publication are complete. Documented behavior differences and
+hardware/pixel verification limits remain below.
 
 Implementation status, defects and verification limits are separate fields.
 An untested format variant or physical input is not automatically an omitted
@@ -94,8 +96,9 @@ remain distinct from physical hardware or Finder drag observations.
 The source/provenance/license and privacy preparation is recorded in
 [publication-review.md](publication-review.md). A local exporter preserves
 original source/license bytes and keeps internal diagnostic history private.
-Final desktop acceptance, the release commit and the conditionally authorized
-public repository remain pending. The bundle uses QtBase
+At that checkpoint, final desktop acceptance, the release commit and the
+conditionally authorized public repository remained pending; the later 0.2.0
+package and publication results are recorded below. The bundle uses QtBase
 frameworks/plugins; QtSvg is not bundled. QtBase corresponding source, Cocoa
 patches and original 7-Zip/Port sources are included, with normalized source
 file modes and a source SHA-256 manifest.
@@ -108,7 +111,8 @@ snapshot with one English commit and no internal history. Unpacking, CRC, all
 source hashes, strict signatures/dependencies and private-profile startup passed.
 Runtime code is unchanged from `07968cd`; no engine/format regression was repeated.
 The latest external Finder/coordinate attempt was rejected by the UI service.
-Complete desktop acceptance and conditional publication remain pending.
+At that older distribution checkpoint, desktop acceptance and conditional
+publication remained pending.
 
 The subsequent [address text adjustment](address-font-adjustment.md) aligns the
 combo/editor/popup with the actual file-list font (9pt/12pt → 13pt on this Mac).
@@ -148,5 +152,8 @@ address/listing/extraction. Its restored content and timestamps matched the
 required behavior, and the address/list font alignment was visible. The exact
 observed macOS input-method diagnostic is retained separately from unexpected
 stderr; earlier failed checks are not relabeled as passes. See
-[release-0.2.0.md](release-0.2.0.md). Conditional publication awaits GitHub
-authentication; no public repository has been created.
+[release-0.2.0.md](release-0.2.0.md). The conditionally authorized
+[public repository](https://github.com/muracoco/7-Zip4Mac) is now published.
+[publication-complete.md](publication-complete.md) records the exact source-tree
+verification and retained hardware/pixel limits. Documentation written after
+packaging is separate from the source snapshot bundled in the ZIP.

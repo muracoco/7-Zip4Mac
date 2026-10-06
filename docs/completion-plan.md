@@ -1,8 +1,9 @@
 # Completion and publication plan
 
 The active request is portable Windows 7-Zip parity, retaining the requested Mac
-Open With menu and necessary platform substitutions. Completion and public
-publication are **not declared**. This plan describes current work; Git history
+Open With menu and necessary platform substitutions. The audited portable
+source groups, tested local 0.2.0 package and public source publication are
+complete; hardware/pixel equivalence is not claimed. Git history
 and the linked component reports retain earlier milestones and first failures.
 Superseded remaining-work lists in those reports must not create new work.
 
@@ -65,7 +66,7 @@ extraction overwrite/lifecycle, listing/columns, full key/address/creation/Copy
 projection, portable settings, dialogs, Help, Benchmark and drag support must not
 be reimplemented from their historical checkpoint lists.
 
-## Remaining release work
+## Final completed stages and retained limits
 
 1. The actual versioned Finder candidate now completed ZIP Test/Extract to,
    SHA-256 equality, final Manager and parent navigation; Finder text-file routing
@@ -91,12 +92,17 @@ be reimplemented from their historical checkpoint lists.
    See release-0.2.0.md.
 3. Final local source/license/privacy export against `07968cd` passed for 803
    files, preserving code/license bytes and excluding internal history. Matching
-   corresponding source is bundled. Refresh the reviewed public snapshot and
-   corresponding source for the repaired 0.2.0 candidate before publication.
-4. Publish the conditionally authorized public repository after those gates,
-   with English project material and the requested bilingual description.
-   [publication-review.md](publication-review.md) records the completed local
-   review/export/rebuild preparation. Publication has not occurred.
+   corresponding source is bundled. The repaired 0.2.0 distribution now contains
+   the final reviewed 812-file snapshot; ZIP/source/signature/dependency/startup
+   checks passed. The earlier 0.1.0 archive remains a historical artifact.
+4. The conditionally authorized [public repository](https://github.com/muracoco/7-Zip4Mac)
+   is published with English project material, Japanese README and bilingual
+   description. The first complete remote snapshot matched the reviewed local
+   812-file tree exactly after an independent anonymous Git fetch.
+   [publication-complete.md](publication-complete.md) records the completed
+   publication, retained first authentication/CLI push failures and package
+   snapshot distinction. Subsequent closeout edits are documentation only;
+   passing implementation/test groups were not restarted.
 
 Do not claim physical input from Qt/AppKit test events, or a complete Windows
 pixel match from source/resource comparison alone. External UI automation errors

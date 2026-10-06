@@ -4,7 +4,7 @@
 
 Windows版「7-Zip File Manager」の操作感をQt 6 Widgetsで再現する、非公式のmacOSアプリです。C++ / Apple Clang / CMake + Ninjaを使用し、圧縮エンジンは公式7-Zip 26.03のソースからビルドした `7zz` を同梱します。Xcode.app / `.xcodeproj` は不要です。
 
-[0.2.0のローカル候補版](docs/release-0.2.0.md)を作成しました。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書の確認は済んでいます。ソースは [GitHub](https://github.com/muracoco/7-Zip4Mac) で公開します。
+[0.2.0のローカル候補版](docs/release-0.2.0.md)を作成しました。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書を確認し、[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しました。
 
 [2026-10-06の一括確認](docs/release-consolidation.md)に、空ディレクトリからのビルド・全151形式登録・初回の失敗と対象を絞った修正確認を記録しています。0.2.0ではアドレス文字の統一とZIPの未指定日時の修正を加え、再度クリーンビルドしています。
 
@@ -120,7 +120,7 @@ PORT_TEST_REGEX='^(copy_workflow|address_workflow|panel_key)$' ./scripts/test.sh
 
 ## Windows版との既知の差
 
-現行の実装・残差・不具合・実機未確認は [current-status.md](docs/current-status.md)、全コマンドは [final-audit.md](docs/final-audit.md)、設定は [settings-coverage.md](docs/settings-coverage.md) に整理しています。native item操作、親／Flat移動の復元、事前上書き確認・順次展開・終了回復、一覧キーの全dispatch、Copy出力名と列挙は後続の機能群で実装済みです。過去のレポートの旧残作業を再実装対象と扱わないでください。Port独自文言の翻訳、文書化した安全上の制限、model挿入／parseの同期区間と物理入力・外観比較は残ります。Windows固有のOS機構はmacOSの仕組みに置き換えています。利用可能な自動統合確認と公開用ソース整理は完了しています。物理操作の確認と公開は未完了です。
+現行の実装・残差・不具合・実機未確認は [current-status.md](docs/current-status.md)、全コマンドは [final-audit.md](docs/final-audit.md)、設定は [settings-coverage.md](docs/settings-coverage.md) に整理しています。native item操作、親／Flat移動の復元、事前上書き確認・順次展開・終了回復、一覧キーの全dispatch、Copy出力名と列挙は後続の機能群で実装済みです。過去のレポートの旧残作業を再実装対象と扱わないでください。Port独自文言の翻訳、文書化した安全上の制限、model挿入／parseの同期区間と物理入力・外観比較は残ります。Windows固有のOS機構はmacOSの仕組みに置き換えています。利用可能な自動統合確認と公開用ソース整理は完了しています。0.2.0のパッケージとソース公開は完了しています。[公開完了の記録](docs/publication-complete.md)を参照してください。物理入力とWindows画面とのピクセル同一性は未確認です。
 
 Finder Open Withと通常FS右クリックには、上流のOpen archive >（`*` / `#` / `#:e` / `7z` / `zip` / `cab` / `rar`）を追加しました。Optionsで通常Openとは独立して表示を切り替えます。更新前に明示保存した表示設定は維持するため、新項目はOptionsからONにしてください。最下段の「7-Zip ファイルマネージャーで開く」は常に表示されます。
 
@@ -145,12 +145,12 @@ OptionsのSystemはFinderでの関連付け手順を表示します。Windows Ex
 
 `.app/Contents/Resources` にライセンス文書、未改変7-Zip 26.03と公式QtBaseの対応ソース、Qt修正patchを含むPortのビルド可能なソース一式を格納します。初回buildはQtソースを取得してキャッシュします。正式なDeveloper ID署名・notarization・Mac App Store対応は行っていません。現在のMacでad-hoc署名と起動を確認します。
 
-7-Zipの上流確認先: [公式ダウンロード](https://www.7-zip.org/download.html)、[26.03公式リリース](https://github.com/ip7z/7zip/releases/tag/26.03)。ソースの取得URL・SHA-256は `scripts/bootstrap.sh` に固定しています。[公開前の確認](docs/publication-review.md)にライセンス・由来・個人情報の確認と公開用コピーの作成方法を記録しています。公開は残る完成条件を満たした後に行います。
+7-Zipの上流確認先: [公式ダウンロード](https://www.7-zip.org/download.html)、[26.03公式リリース](https://github.com/ip7z/7zip/releases/tag/26.03)。ソースの取得URL・SHA-256は `scripts/bootstrap.sh` に固定しています。[公開前の確認](docs/publication-review.md)にライセンス・由来・個人情報の確認と公開用コピーの作成方法を記録しています。ソース公開は完了しています。配布物と公開ソースの確認結果は[公開完了の記録](docs/publication-complete.md)にまとめています。
 
 ## 今後の改善
 
 現在の実装・差分は [実装一覧](docs/current-status.md) を参照してください。過去の機能群の文書は、当時の検証記録として保持しています。元Agentの更新／編集書き戻し、選択／キー、事前overwrite／展開の終了回復は後続の実装で接続済みです。
 
-残る実機確認はネイティブメニュー、FinderのOpen With／右クリック／ドラッグ、Fn／RightCtrl／Option、印刷と見た目の照合です。Port固有の英語説明、大量一覧の最終model反映／metadata解析の遅延、文書化した安全上の制限は差分として記録しています。Finder Extension／Quick ActionはOpen Withとは別の将来機能です。
+ネイティブメニューのAppKit確認と、実際のFinder Open With経由の圧縮／Test／展開は完了しています。物理的なFinder drag、ハードウェアのFn／RightCtrl／Option、実プリンターとWindows画面とのピクセル比較は未確認です。Port固有の英語説明、大量一覧の最終model反映／metadata解析の遅延、文書化した安全上の制限は差分として記録しています。Finder Extension／Quick ActionはOpen Withとは別の将来機能です。
 
 機能群をまとめて実装してから一括検証し、修正後は失敗・影響箇所だけを再確認します。再現用の全体確認は `./scripts/verify-release.sh --no-focus /absolute/build/path`。デスクトップを使える場合は `--no-focus` を外します。結果は `test-results/release-*` に保存し、物理操作の未確認は別に記録します。

@@ -1,5 +1,10 @@
 # Public source publication — 2026-10-06
 
+**Metadata correction:** the original publication checked file trees, but its
+API-created author/committer fields contained a personal email. The later
+[targeted audit and prevention](git-privacy.md) record this gap; tree equality
+alone is not a privacy check. Past metadata requires a separate history repair.
+
 The reviewed source is public at [muracoco/7-Zip4Mac](https://github.com/muracoco/7-Zip4Mac).
 The repository has English project material, a Japanese README and the requested
 bilingual description. It is an unofficial macOS port, not an official 7-Zip

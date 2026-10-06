@@ -8,7 +8,8 @@ so upstream updates can be checked; they are optional and are not installed.
 
 The app's corresponding Port source archive uses the `build` profile:
 runtime sources, imported adapters, resources, build/import scripts, Qt patches,
-upstream lock, notices and five build/parity/update/license documents. It excludes `tests/`, test runners,
+upstream lock, notices, README/change history and build/feature/parity/update/license
+guides. It excludes `tests/`, test runners,
 release-evaluation tools, historical evaluation documents and raw diagnostic outputs. `source-archive.py
 --developer` can explicitly export the development suite. A source archive
 without Git metadata can still rebuild using its SHA-256 inventory manifest.

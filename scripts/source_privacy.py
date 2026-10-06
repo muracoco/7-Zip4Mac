@@ -18,7 +18,8 @@ TEMP_PATH = re.compile(rb'(?:/private)?/var/folders/[A-Za-z0-9_-]+/[A-Za-z0-9_-]
 def normalized(root, name, data):
     # Diagnostics stay intact locally. Only the documentation copy is redacted;
     # upstream resources, licenses, imported bodies and patches retain bytes.
-    if not (name.startswith('docs/') or name in {'README.md', 'README.ja.md'}):
+    if not (name.startswith('docs/') or name in {'README.md', 'README.ja.md',
+                                              'CHANGELOG.md', 'CHANGELOG.ja.md', 'SECURITY.md'}):
         return data
     deps = Path(os.environ.get('SEVENZIP_DEPS_DIR', Path.home() / '.cache/7zip-mac-port'))
     data = data.replace(str(root).encode(), b'/REPOSITORY')

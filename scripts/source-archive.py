@@ -15,15 +15,19 @@ from source_privacy import checked
 
 DIRECTORIES = {'src', 'scripts', 'resources', 'tests', 'licenses', 'docs', 'qt-cocoa', 'upstream'}
 FILES = {'CMakeLists.txt', 'README.md', 'README.ja.md', 'LICENSE', '.gitignore', '.gitattributes'}
+DOCUMENTATION_FILES = {'CHANGELOG.md', 'CHANGELOG.ja.md'}
+DEVELOPER_FILES = {'AGENTS.md', 'SECURITY.md'}
 MANIFEST = 'SOURCE-MANIFEST.json'
 BUILD_DOCS = {'windows-parity.md', 'upstream-updates.md', 'distribution.md',
-              'license-audit-follow-up.md', 'maintenance-verification.md'}
+              'license-audit-follow-up.md', 'maintenance-verification.md',
+              'building.md', 'features.md'}
 
 
 def permitted(name):
     path = PurePosixPath(name)
     return (not path.is_absolute() and '..' not in path.parts
-            and (name in FILES or len(path.parts) > 1 and path.parts[0] in DIRECTORIES)
+            and (name in FILES | DOCUMENTATION_FILES | DEVELOPER_FILES
+                 or len(path.parts) > 1 and path.parts[0] in DIRECTORIES)
             and not (path.parts[0] == 'docs' and path.suffix in {'.log', '.json'})
             and '__pycache__' not in path.parts and not name.endswith('.pyc'))
 
@@ -31,6 +35,8 @@ def permitted(name):
 def build_source(name):
     """Corresponding source for the app, with developer-only fixtures excluded."""
     path = PurePosixPath(name)
+    if name in DEVELOPER_FILES or name == 'scripts/git-privacy.py' or name.startswith('scripts/git-hooks/'):
+        return False
     if path.parts[0] == 'tests':
         return False
     if path.parts[0] == 'docs' and path.name not in BUILD_DOCS:

@@ -1,0 +1,5 @@
+#!/bin/sh
+# SPDX-License-Identifier: LGPL-3.0-or-later
+set -eu
+root=$(git rev-parse --show-toplevel)
+exec python3 "$root/scripts/git-privacy.py" --root "$root" identity

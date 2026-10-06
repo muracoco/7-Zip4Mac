@@ -17,6 +17,8 @@
 #include <QPlainTextEdit>
 #include <QFile>
 #include <QFileInfo>
+#include <QDir>
+#include <QProcess>
 #include <QTabWidget>
 #include <QCheckBox>
 #include <QDialogButtonBox>
@@ -59,11 +61,83 @@ int main(int argc, char **argv) {
     QCoreApplication::setAttribute(Qt::AA_MacDontSwapCtrlAndMeta);
     QCoreApplication::setAttribute(Qt::AA_DontUseNativeDialogs);
     QApplication app(argc, argv); applyPortAppearance(app);
+    app.setQuitOnLastWindowClosed(false);
     app.setOrganizationName("SevenZipMacPortTests"); app.setApplicationName("Cocoa menu regression");
     QTemporaryDir temp; if (!temp.isValid()) return 1;
     QSettings::setDefaultFormat(QSettings::IniFormat); QSettings::setPath(QSettings::IniFormat, QSettings::UserScope, temp.filePath("preferences"));
     QFile fixture(temp.filePath("menu file.txt")); if (!fixture.open(QIODevice::WriteOnly) || fixture.write("menu test") != 9) return 1; fixture.close();
     MainWindow window(QString::fromLocal8Bit(argv[1])); window.openPath(temp.path());
+    if (argc > 3 && QByteArray(argv[2]) == "--hidden-open-with-only") {
+        const auto format = QString::fromLocal8Bit(argv[3]);
+        const auto source = temp.filePath("input"), destination = temp.filePath("here");
+        if (!QDir().mkpath(source + "/empty folder") || !QDir().mkpath(destination)) return 1;
+        const QByteArray payload("Open With lifecycle\n");
+        for (int i = 0; i < 513; ++i) {
+            QFile file(source + '/' + (i == 512 ? QString("日本語 space.txt") : QString::number(i) + ".txt"));
+            if (!file.open(QIODevice::WriteOnly) || file.write(payload) != payload.size()) return 1;
+        }
+        const auto archive = destination + "/archive." + format;
+        QProcess create; create.setWorkingDirectory(source);
+        create.start(QString::fromLocal8Bit(argv[1]), {"a", "-t" + format, "-mx=0", archive, "--", "."});
+        if (!create.waitForFinished(10000) || create.exitCode() != 0) return 1;
+        NSWindow *nativeParent = reinterpret_cast<NSView *>(window.winId()).window;
+        OpenWithController launcher(&window, true);
+        auto backend = window.findChild<SevenZipProcessBackend *>();
+        bool chosen = false, completed = false, success = false, ghost = false, timedOut = false;
+        QObject::connect(backend, &ArchiveBackend::finished, &window, [&](ArchiveResult result) {
+            if (result.operation == ArchiveOperation::Extract) { completed = true; success = result.success; }
+        });
+        QTimer observer; observer.setInterval(5);
+        QObject::connect(&observer, &QTimer::timeout, &window, [&] {
+            if (nativeParent.visible || window.isVisible()) ghost = true;
+            if (!chosen && launcher.currentMenu()) {
+                chosen = true;
+                launcher.currentMenu()->findChild<QPushButton *>("openWith_here")->click();
+            }
+        }); observer.start();
+        QTimer watchdog; watchdog.setSingleShot(true); watchdog.setInterval(10000);
+        QObject::connect(&watchdog, &QTimer::timeout, &app, [&] { timedOut = true; app.quit(); }); watchdog.start();
+        launcher.enqueue({archive}); app.exec(); observer.stop(); watchdog.stop();
+        if (!chosen || !completed || !success || ghost || timedOut || window.operationBusy()) {
+            qCritical() << "Hidden Open With lifecycle failed" << chosen << completed << success << ghost << timedOut;
+            return 1;
+        }
+        for (int i = 0; i < 513; ++i) {
+            QFile file(destination + '/' + (i == 512 ? QString("日本語 space.txt") : QString::number(i) + ".txt"));
+            if (!file.open(QIODevice::ReadOnly) || file.readAll() != payload) return 1;
+        }
+        if (!QFileInfo(destination + "/empty folder").isDir()) return 1;
+        qInfo() << "Hidden Open With" << format << "extracted 513 files and exited without a ghost window";
+        return 0;
+    }
+    if (argc > 2 && QByteArray(argv[2]) == "--hidden-progress-only") {
+        // QFileOpen leaves the File Manager hidden. A Cocoa sheet can order
+        // that native parent onscreen without showing any of its Qt contents.
+        NSWindow *nativeParent = reinterpret_cast<NSView *>(window.winId()).window;
+        if (window.isVisible() || nativeParent.visible) return 1;
+        ProgressDialog progress("Extract", fixture.fileName(), &window);
+        progress.show(); QTest::qWait(100);
+        NSWindow *nativeProgress = reinterpret_cast<NSView *>(progress.winId()).window;
+        const bool hiddenParentWasOrdered = nativeParent.visible;
+        if (!progress.isVisible() || !nativeProgress.visible) return 1;
+        progress.finishFile({}); QTest::qWait(100);
+        if (hiddenParentWasOrdered || nativeParent.visible || window.isVisible()) {
+            qCritical() << "Open With progress ordered a hidden native File Manager window";
+            return 1;
+        }
+        window.show(); QTest::qWait(100);
+        ProgressDialog visibleProgress("Extract", fixture.fileName(), &window);
+        visibleProgress.show(); QTest::qWait(100);
+        NSWindow *visibleNativeProgress = reinterpret_cast<NSView *>(visibleProgress.winId()).window;
+        if (!nativeParent.visible || nativeParent.attachedSheet != visibleNativeProgress) {
+            qCritical() << "Visible File Manager progress lost its native sheet";
+            return 1;
+        }
+        visibleProgress.finishFile({}); QTest::qWait(100);
+        if (!nativeParent.visible || nativeParent.attachedSheet) return 1;
+        qInfo() << "Hidden-manager progress did not order its parent; visible-manager sheet remained intact";
+        return 0;
+    }
     window.show(); window.raise(); window.activateWindow();
     if (!activateTestWindow(&window)) { qCritical() << "Test window did not activate"; return 1; }
     auto bar = window.menuBar();

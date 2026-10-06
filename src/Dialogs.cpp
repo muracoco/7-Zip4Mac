@@ -430,7 +430,11 @@ void ExtractDialog::accept() {
 
 ProgressDialog::ProgressDialog(QString operation, QString targetPath, QWidget *parent) : QDialog(parent), target(targetPath) {
     titleWindow = parent ? parent->window() : nullptr;
-    setObjectName("progressDialog"); operationTitle = operation; setProperty("uiManagedTitle", true); setWindowTitle(operation); resize(620, 370); setWindowModality(Qt::WindowModal);
+    setObjectName("progressDialog"); operationTitle = operation; setProperty("uiManagedTitle", true); setWindowTitle(operation); resize(620, 370);
+    // Cocoa orders the parent NSWindow onscreen when attaching a sheet. Finder
+    // operations have a deliberately hidden manager, so use a standalone modal
+    // dialog there and retain the sheet for an already visible File Manager.
+    setWindowModality(titleWindow && titleWindow->isVisible() ? Qt::WindowModal : Qt::ApplicationModal);
     connect(this, &QDialog::finished, this, [this] {
         titleRestored = true;
         if (titleWindow && !appliedTitlePrefix.isEmpty()) {

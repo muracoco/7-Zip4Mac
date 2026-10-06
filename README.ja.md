@@ -4,7 +4,9 @@
 
 Windows版「7-Zip File Manager」の操作感をQt 6 Widgetsで再現する、非公式のmacOSアプリです。C++ / Apple Clang / CMake + Ninjaを使用し、圧縮エンジンは公式7-Zip 26.03のソースからビルドした `7zz` を同梱します。Xcode.app / `.xcodeproj` は不要です。
 
-[0.2.0のローカル候補版](docs/release-0.2.0.md)を作成しました。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書を確認し、[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しました。
+[0.2.1の修正版](docs/open-with-extract-here-fix.md)を作成しました。OS非依存のコマンド・設定群は実装済みです。Windows固有の処理、見た目・入力の未確認事項は[差分表](docs/windows-parity.md)へ記録しています。公開用ソースとライセンス文書を確認し、[GitHub](https://github.com/muracoco/7-Zip4Mac)で公開しました。
+
+0.2.1では「このアプリケーションで開く」→「ここに展開」の完了後に空のFile Managerウインドウが残る不具合を修正しました。非表示の親にCocoa sheetを付けないようにし、単独操作の終了処理も修正しています。
 
 [2026-10-06の一括確認](docs/release-consolidation.md)に、空ディレクトリからのビルド・全151形式登録・初回の失敗と対象を絞った修正確認を記録しています。0.2.0ではアドレス文字の統一とZIPの未指定日時の修正を加え、再度クリーンビルドしています。
 

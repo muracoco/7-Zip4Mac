@@ -157,3 +157,16 @@ stderr; earlier failed checks are not relabeled as passes. See
 [publication-complete.md](publication-complete.md) records the exact source-tree
 verification and retained hardware/pixel limits. Documentation written after
 packaging is separate from the source snapshot bundled in the ZIP.
+
+
+## 0.2.1 desktop extraction hotfix
+
+A later user report reproduced a real blank native window after standalone
+Finder Open With → Extract Here. The 0.2.0 desktop acceptance had not checked
+that particular completion/lifetime; successful extraction hashes did not prove
+correct window behavior. The hidden-parent sheet and one-shot idle-exit paths
+are now repaired. The affected native regression first failed, then four CTest
+suites and two affected integration functions passed. Installed 0.2.1 actual
+Finder extraction restored all 1,292 files with matching SHA-256 and no orphan
+operation window/process. See [repair and retained evidence](open-with-extract-here-fix.md).
+The engine, unrelated passing groups and older release receipts are unchanged.

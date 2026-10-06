@@ -53,6 +53,6 @@ private:
     bool quitWhenIdle;
     bool received = false;
     QStringList pending;
-    QTimer timer;
+    QTimer timer, idleExitTimer;
     QPointer<OpenWithMenu> menu;
 };

@@ -180,18 +180,25 @@ OpenWithMenu::OpenWithMenu(QStringList paths, QWidget *parent) : QDialog(parent)
 }
 OpenWithController::OpenWithController(MainWindow *w, bool quit) : QObject(w), window(w), quitWhenIdle(quit) {
     qApp->installEventFilter(this); timer.setSingleShot(true); timer.setInterval(100); connect(&timer, &QTimer::timeout, this, &OpenWithController::flush);
+    idleExitTimer.setSingleShot(true); idleExitTimer.setInterval(150);
+    connect(&idleExitTimer, &QTimer::timeout, this, [this] {
+        if (hasRequests()) return;
+        // A hidden-manager operation can outlive the menu's closing event;
+        // completion can also leave a filesystem refresh in progress.
+        if (window->operationBusy()) { checkIdleExit(); return; }
+        for (auto widget : QApplication::topLevelWidgets()) if (widget->isVisible()) return;
+        qApp->quit();
+    });
     if (quitWhenIdle) connect(qApp, &QApplication::lastWindowClosed, this, &OpenWithController::checkIdleExit);
 }
 void OpenWithController::checkIdleExit() {
     if (!quitWhenIdle) return;
-    QTimer::singleShot(150, this, [this] {
-        if (hasRequests() || window->operationBusy()) return;
-        for (auto widget : QApplication::topLevelWidgets()) if (widget->isVisible()) return;
-        qApp->quit();
-    });
+    idleExitTimer.start();
 }
 bool OpenWithController::eventFilter(QObject *object, QEvent *e) {
-    if (e->type() == QEvent::Close) checkIdleExit();
+    if (e->type() == QEvent::Close || e->type() == QEvent::Hide) {
+        if (auto widget = qobject_cast<QWidget *>(object); widget && widget->isWindow()) checkIdleExit();
+    }
     if (object == qApp && e->type() == QEvent::FileOpen) {
         auto open = static_cast<QFileOpenEvent *>(e); const auto url = open->url();
         if (url.isLocalFile()) enqueue({url.toLocalFile()}); else if (url.isEmpty() && !open->file().isEmpty()) enqueue({open->file()});

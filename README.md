@@ -4,7 +4,9 @@
 
 An unofficial macOS port of the Windows **7-Zip File Manager** interface, written in C++ with Qt 6 Widgets. The official 7-Zip **26.03** source-built `7zz` is bundled as the archive engine. It uses Apple Clang, CMake and Ninja; Xcode.app and Xcode projects are unnecessary.
 
-**Status:** local 0.2.0 candidate for the tested Mac. The portable command/settings groups are implemented; Windows host mechanisms and remaining visual/input verification limits are documented in the [command audit](docs/final-audit.md) and [parity inventory](docs/windows-parity.md). Engine capability, implemented UI and tested format coverage are separate claims. Source repository: [muracoco/7-Zip4Mac](https://github.com/muracoco/7-Zip4Mac).
+**Status:** local 0.2.1 maintenance build for the tested Mac. The portable command/settings groups are implemented; Windows host mechanisms and remaining visual/input verification limits are documented in the [command audit](docs/final-audit.md) and [parity inventory](docs/windows-parity.md). Engine capability, implemented UI and tested format coverage are separate claims. Source repository: [muracoco/7-Zip4Mac](https://github.com/muracoco/7-Zip4Mac).
+
+The [0.2.1 extraction hotfix](docs/open-with-extract-here-fix.md) fixes a blank native File Manager window left by standalone Open With operations, and their idle-exit lifecycle. The unchanged archive engine and affected native/GUI checks are documented separately.
 
 The [2026-10-06 consolidated checkpoint](docs/release-consolidation.md) records the empty build, 151 format registrations, initial failures and affected repairs. The [0.2.0 candidate](docs/release-0.2.0.md) adds aligned address typography, actual versioned Finder routing, and a repaired ZIP omitted-timestamp path, with another empty build and affected verification. [Local publication review](docs/publication-review.md) covers notices, corresponding source and privacy.
 
